@@ -1,0 +1,28 @@
+/*!
+    == RETINA CSS ==
+*/
+
+@media
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+and (max-width: @phone-mw) {
+
+    /* Penser à bien surcharger le selecteur CSS par rapport au frontOffice */
+    body #content .retina {
+        /*
+            Si dans le .less du frontoffice, j'ai un élément qui a pour propriété css :
+            el {
+                background-image : url('mon-image.png');
+            }
+            et que mon-image.png mesure 200*200px dans le dossier image,
+            alors les css retina sera :
+        */
+        background-image:url("@{imgPath}/retina/mon-image@2x.png");
+        /* Réduire de moitié le background-size */
+        background-size : 100px 100px;
+    }
+
+}

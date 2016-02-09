@@ -1,0 +1,38 @@
+/* ******* */
+/** LISTS **/
+/* ******* */
+
+/* ********************* */
+
+/* Specific for Drupal : reset list style margin, padding & border */
+.item-list ul li {._reset;}
+
+ul, dl, ol {
+    color:@text-mc; /* defined in settings.less */
+
+    /* Specific for Drupal */
+    li.leaf {
+        background-image:none;
+        list-style:none;
+        ._reset;
+    }
+
+
+    /* dotted lists */
+    &.dotted {
+        li,dd,dt {
+            position:relative;
+            padding-left:15px;
+
+            &:before {
+                ._fa('\f111'); /* .fa(string) defined in core/functions.less */
+                font-size:0.4rem;
+                position:absolute;
+                left:0px;
+                top:10px;
+            }
+        }
+    }
+}
+
+ol li {list-style:decimal inside}

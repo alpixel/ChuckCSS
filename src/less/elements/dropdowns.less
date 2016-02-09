@@ -1,0 +1,53 @@
+/* ********************* */
+/** BOOTSTRAP DROPDOWNS **/
+/* ********************* */
+
+/* ********************* */
+
+.dropdown {
+    ._inline;
+
+    button {
+        padding-right:15px;
+
+        /* override .btn > i default css */
+        i {
+            margin-left:10px;
+            margin-right:0;
+        }
+    }
+
+    ul {
+        ._reset;
+        margin-top:2px;
+
+        &[data-position="right"] {
+            left:inherit;
+            right:0;
+        }
+
+        li {
+            &.divider {
+                height: 1px;
+                margin:0;
+                overflow: hidden;
+                background-color: #e1e1e1;
+            }
+
+            a {
+                display:block;
+                padding:10px 15px;
+
+                &.delete {
+                    background-color:@red;
+                    color:white;
+                }
+
+                &.accept {
+                    background-color:@green;
+                    color:white;
+                }
+            }
+        }
+    }
+}

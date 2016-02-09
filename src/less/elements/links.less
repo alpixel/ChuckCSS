@@ -1,0 +1,72 @@
+/* ******* */
+/** LINKS **/
+/* ******* */
+
+/* ********************* */
+
+/*
+    - General links & buttons styles.
+
+    /* - - -
+    /!\ : you can override ._btn bg-color in functions.less : ._btn(@bg, @bgHover); /!\
+    /* - - -
+
+*/
+
+button,
+a {
+    text-decoration: none;
+    color:@links-mc;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        outline:0;
+    }
+
+
+    &.btn {
+        ._inline; /* set 'inline-block' display */
+        background-color:@links-btn-bg; /* defined in settings.less */
+        ._border-radius(unit(@links-btn-br,px));
+        text-align:center;
+        color:@links-btn-tc;
+        border:0;
+        line-height:@links-btn-lh;
+        padding:0 30px;
+        ._transition;
+
+
+        &:hover {
+            background-color:darken(@links-btn-bg,5%);
+        }
+
+
+
+        /* Links with icon */
+        &.icon {
+            /* default : icon is on the left */
+            i {
+                margin-right: 10px;
+            }
+
+            &-right {
+                i {
+                    margin-left:10px;
+                    margin-right: 0px;
+                }
+            }
+
+        }
+
+        /* Thins buttons, .btn links */
+        &.thin {
+            font-size:@links-btn-thin-fs;
+        }
+
+        /* Fats buttons, .btn links */
+		&.fat {
+            font-size:@links-btn-fat-fs;
+		}
+    }
+}

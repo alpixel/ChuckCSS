@@ -1,0 +1,33 @@
+/* ****************** */
+/** BOOTSTRAP MODALS **/
+/* ****************** */
+
+/* ********************* */
+
+/*
+    - Simply override default bootstrap modals stylesheet
+*/
+
+.modal {
+    &-header {
+        ._clearfix;
+
+        button {
+            float:right;
+            color:@red;
+            background:transparent;
+            border:0;
+            font-size:@text-fs*1.5;
+        }
+
+        .modal-title {
+            text-transform:none;
+            color:@gray;
+        }
+    }
+
+    &-footer {
+        ._clearfix;
+        text-align:center;
+    }
+}

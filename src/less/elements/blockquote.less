@@ -1,0 +1,40 @@
+/* ************* */
+/** BLOCKQUOTES **/
+/* ************* */
+
+/* ********************* */
+
+blockquote {
+    ._reset;
+    padding:5px 5px 5px 30px;
+    border-left:4px solid @blockquotes-bc;
+    font-style:italic;
+
+    /* Quoted blockquote : show quote icon from FontAwesome */
+    &.quoted {
+        position:relative;
+        padding-left:50px;
+
+        &:before {
+            position:absolute;
+            left:11px;
+            top:9px;
+            ._fa('\f10d'); /* .fa('string') / defined in core/functions.less */
+            font-size:@text-fs;
+            color:@blockquotes-ic;
+        }
+    }
+
+    /* Footer on Blockquote */
+    footer {
+        font-style:normal;
+        font-size:80%;
+        color:@blockquotes-footer-tc;
+        padding-top:10px;
+
+        &:before {
+            ._fa('\f105', 100%, @blockquotes-footer-tc);
+            margin-right:5px;
+        }
+    }
+}

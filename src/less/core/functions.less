@@ -1,0 +1,771 @@
+/*!
+    == FUNCTIONS / MIXINS ==
+*/
+
+/*
+** Functions/mixins list **
+    ._tablet | ._phone
+    ._border-radius
+    ._box-shadow
+    ._bg-vertical | ._bg-horizontal
+    ._opacity
+    ._transition
+    ._rotate | ._scale | ._translate3d | ._skew
+    ._inline
+    ._displayTable
+    ._clearfix
+    ._box-sizing
+    ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
+    ._placeHold
+    ._reset
+    ._uppercase
+    ._inside
+    ._fa
+    ._io
+    ._cover
+    ._truncate
+    ._btn
+    ._flexbox | ._flex-order | ._flex | ._align-self
+*/
+
+/* *****
+    @name : ._tablet & ._phone
+    @description : A second way for responsive integration (with media/phone.les and media/tablet.less files) . Apply rules for media queries tablet and phone
+    @params : @rules (CSS rules)
+
+    @exemple :
+      el {
+        background-color:white; // Default : Apply a white bg-color to the <el>
+
+        ._tablet({
+          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens <= @tablet-mw defined in settings.less
+        }); // don't forget the ;
+
+        ._phone({
+          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens <= @phone-mw defined in settings.less
+        }); // don't forget the ;
+      }
+
+***** */
+._tablet(@rules) {
+    @media screen and (max-width: @tablet-mw) {
+        @rules();
+    }
+}
+._phone(@rules) {
+    @media screen and (max-width: @phone-mw) {
+        @rules();
+    }
+}
+
+/* *****
+    @name : ._border-radius
+    @description : apply the border-radius property to a DOM element
+    @params : @radius (pixels)
+
+    @exemple :
+      el {
+        ._border-radius(5px 0 0 5px); // Will apply a border-radius:5px 0 0 5px to <el>
+      }
+***** */
+._border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+/* *****
+    @name : ._box-shadow
+    @description : apply the box-shadow property to a DOM element
+    @values : string (see exemples below)
+
+    @exemples :
+      el {
+        ._box-shadow('1px 1px 5px 0px rgba(0,0,0,0.5) inset, 1px 1px 5px 0px rgba(0,0,0,0.5)'); //  Multi-values
+        ._box-shadow('1px 1px 5px 0px rgba(0,0,0,0.5) inset'); //  Single Value
+        ._box-shadow('none'); //  Reset value
+      }
+***** */
+._box-shadow (@values) {
+  -webkit-box-shadow: e(@values);
+  -kthml-box-shadow: e(@values);
+  -moz-box-shadow: e(@values);
+  -o-box-shadow: e(@values);
+  box-shadow: e(@values);
+}
+/* *****
+    @name : background-gradient : horizontal || vertical
+    @description : apply a grandient background color to a DOM element
+    @params : @from (rgba or HEXA code), @to (rgba or HEXA code)
+
+    NOTICE : For others background-gradients (diagonal, radial, transparent, etc...), please use the generator.
+    @Generator : http://www.colorzilla.com/gradient-editor/
+***** */
+._bg-vertical(@from:#000, @to:#fff) {
+  background: @from; /* Old browsers */
+  background: -moz-linear-gradient(top,  @from 0%,  @to 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from), color-stop(100%, @to)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  @from 0%, @to 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  @from 0%, @to 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  @from 0%, @to 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  @from 0%, @to 100%); /* W3C */
+}
+._bg-horizontal(@from:#000, @to:#fff) {
+  background: @from; /* Old browsers */
+  background: -moz-linear-gradient(left,  @from 0%,  @to 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,@from), color-stop(100%, @to)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  @from 0%, @to 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  @from 0%, @to 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  @from 0%, @to 100%); /* IE10+ */
+  background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
+}
+/* *****
+    @name : ._opacity
+    @description : apply the opacity property to a DOM element
+    @params : @opacity (0-1)
+
+    @exemple :
+      el {
+        ._opacity(0.5); // Apply a half-opacity (0.5) to <el>
+      }
+***** */
+._opacity(@opacity:1) when (isnumber(@opacity)) {
+  @opacityIE : @opacity*100;
+  -moz-opacity:@opacity;
+  opacity:@opacity;
+  -o-opacity:@opacity;
+  -ms-filter:"alpha(opacity=@{opacityIE})";
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=@opacityIE);
+  filter:alpha(opacity=@opacityIE);
+  zoom: 1;
+}
+/* *****
+    @name : ._transition
+    @description : animate a DOM element with transition property
+    @params : @duration (0 - ∞ seconds), @property (all or css rules), @effect (easing effects or Cubic-bezier curve), @delay (0 - ∞ seconds)
+    @Generator for custom & cool Cubic-Bezier effects : http://cubic-bezier.com/
+
+    @exemple :
+      a {
+        .opacity(0.5); // Default, apply a half-opacity to <a>
+        ._transition; // Animate <a> on hover (all CSS properties)
+        ._transition(0.4, opacity); // Animate only opacity on hover with a duration of 0.4s
+
+        &:hover {
+          background-color:red;
+          ._opacity(1); // Animate opacity with smoothy animation
+        }
+      }
+***** */
+.transition {._transition;}
+._transition(@duration:.2s, @property:all, @effect:ease-out, @delay:0s) {
+  transition:@arguments;
+  -webkit-transition:@arguments;
+  -moz-transition:@arguments;
+  -o-transition:@arguments;
+  -ms-transition:@arguments;
+}
+/* *****
+    @name : ._transform
+    @description : Apply transform property to a DOM element
+    @params : CSS3 transform effects : you can pass a 2D or 3D transform function in parameters : ._rotate, ._scale, ._translate, ._skew
+
+    NOTICE : You can call multi-times 2D or 3D transform function
+
+    @exemple :
+      el {
+        ._skew('',10deg,10deg);
+        ._rotate(45deg);
+      }
+
+    will compile to
+    el {
+        -webkit-transform: skew(10deg, 10deg) rotate(45deg);
+        -moz-transform: skew(10deg, 10deg) rotate(45deg);
+        -ms-transform: skew(10deg, 10deg) rotate(45deg);
+        -o-transform: skew(10deg, 10deg) rotate(45deg);
+        transform: skew(10deg, 10deg) rotate(45deg);
+    }
+***** */
+._transform(...) {
+  -webkit-transform+_: @arguments;
+  -moz-transform+_: @arguments;
+  -ms-transform+_: @arguments;
+  -o-transform+_: @arguments;
+  transform+_: @arguments;
+}
+/* *****
+    @exemples :
+      el {
+        ._rotate(5deg); // Default, <el> has a 5deg rotation when displayed.
+
+        ._rotate(-10deg, 'X'); // Apply a -10deg rotation on X axis only
+
+        ._rotate(-10deg, 'X', 200); // Apply a -10deg rotation on X axis only with a 200 perspective
+      }
+***** */
+._rotate(@deg:10deg, @axis:~'',@perspective : ~'') {
+  /* Not perspective */
+  & when not (isnumber(@perspective)) {
+    ._transform(~"rotate@{axis}(@{deg})");
+  }
+  /* Perspective */
+  & when (isnumber(@perspective)) {
+    ._transform(~"perspective(@{perspective}) rotate@{axis}(@{deg})");
+  }
+}
+/* *****
+    @exemples :
+      el {
+        ._scale; // Default, <el> is scaled 1.2
+
+        ._scale(0.8); // Only one value = <el> is scaled X & Y (0.8)
+
+        ._scale(.8, 1.3); // Two values = <el> is scaled 0.8 on X axis & 1.3 on Y axis
+      }
+***** */
+._scale(@x:~'', @y:~'', @default : 1.2) {
+  /* X != Y */
+  & when (isnumber(@y)) and (isnumber(@x)) and not (@x = @y) {
+    ._transform(scale(@x,@y));
+  }
+  /* X only */
+  & when (isnumber(@x)) and not (isnumber(@y)) {
+    ._transform(scale(@x));
+  }
+  /* X & Y empty : default value */
+  & when not (isnumber(@y)) and not (isnumber(@x)) {
+    ._transform(scale(@default));
+  }
+}
+/* *****
+    @exemples :
+      el {
+        ._translate; // Default, <el> is translated to 10px on X, Y & Z axis
+
+        ._translate(5px); // Default, <el> is translated to 5px on X, Y & Z axis
+
+        ._translate(15px, 5px, 0px); // Default, <el> is translated to 15px on X axis, 5px on Y axis, 0px on Z axis
+      }
+***** */
+._translate(@x:10px, @y:10px, @z:10px) {
+    ._transform(translate3d(@x, @y, @z));
+}
+/* *****
+    @exemples :
+      el {
+        ._skew; // Non-sens :/ Params are required
+
+        ._skew('X', 10deg); // <el> is skewed to 10deg on X axis
+
+        ._skew('X', 10deg, 5deg); // <el> is skewed to 10deg on X axis & 5deg to Y axis
+      }
+***** */
+._skew(@axis:~'', @x:~'', @y:~'') {
+  /* X only */
+  & when (isstring(@axis)) and (isnumber(@x)) and not (isnumber(@y)) {
+    ._transform(~"skew@{axis}(@{x})");
+  }
+  /* Y only */
+  & when (isstring(@axis)) and (isnumber(@y)) and not (isnumber(@x)) {
+    ._transform(~"skew@{axis}(@{y})");
+  }
+  /* X and Y : no @axis */
+  & when (isnumber(@y)) and (isnumber(@x)) {
+    ._transform(~"skew(@{x}, @{y})");
+  }
+}
+
+/* *****
+    @name : ._inline
+    @description : Set the element display as an inline-block element with IE7 fix
+    @wtf : why called it "._inline" to apply "inline-block" property ? Because ._inline-block is too long ... ¯\_(ツ)_/¯
+
+    @exemple :
+      p {
+          ._inline; // <p>, a block element is now shown as an inline-block element
+      }
+***** */
+.inline {._inline;}
+._inline() {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+/* *****
+    @name : ._displayTable
+    @description : Show elements as Table view
+
+    @exemple :
+      el {
+          ._displayTable; // <el> is now shown as a table element. All direct children will have a table-cell display
+      }
+***** */
+.displayTable {._displayTable;}
+._displayTable(@layout : fixed) {
+    ._reset;
+    display:table;
+    table-layout:@layout;
+    width:100%;
+
+    /* Display direct children as table-cell */
+    &>* {
+        list-style:none;
+        display:table-cell;
+        vertical-align:middle;
+        ._reset;
+    }
+}
+/* *****
+    @name : ._clearfix
+    @description : reset floated elements
+***** */
+.clearfix {._clearfix;}
+._clearfix() {
+    zoom:1;
+    &:before,
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        overflow: hidden
+    }
+    &:after {clear: both}
+}
+/* *****
+    @name : ._box-sizing
+    @description : apply box-sizing property to a DOM element
+    @params : @boxmodel (content-box | border-box | inherit);
+
+    @exemple :
+      el {
+          ._box-sizing(border-box);
+      }
+***** */
+._box-sizing(@boxmodel:content-box) {
+    -webkit-box-sizing: @boxmodel; /* <= IOS4 && Android <= 2.3 */
+    -moz-box-sizing: @boxmodel; /* FF <= 28 */
+    box-sizing: @boxmodel;
+}
+/* *****
+    @name : ._filter
+    @params : all CSS3 filters : blur, grayscale, drop-shadow, sepia, brightness, constrast, invert...
+    @full exemples : http://html5-demos.appspot.com/static/css/filters/index.html
+
+    NOTICE : You can call multi-times filters funtions
+
+    @exemple :
+      el {
+        // The 2 lines below...
+        ._filter(blur(1px));
+        ._filter(sepia(1));
+
+        // ...are the same as
+        ._filter(blur(1px) sepia(1));
+      }
+
+      will compile to :
+      el {
+          -webkit-filter: blur(1px) sepia(1);
+          -moz-filter: blur(1px) sepia(1);
+          -ms-filter: blur(1px) sepia(1);
+          -o-filter: blur(1px) sepia(1);
+          filter: blur(1px) sepia(1);
+      }
+***** */
+._filter(...) {
+    -webkit-filter+_: @arguments;
+    -moz-filter+_: @arguments;
+    -ms-filter+_: @arguments;
+    -o-filter+_: @arguments;
+    filter+_: @arguments;
+}
+/* *****
+    @name : ._placeHold
+    @description : Replace non-images by real images during frontend development
+    @params : @w & @h (image width & height)
+
+    @exemple :
+      img {
+        ._placeHold(150, 150); // This <img /> will be replaced by an image with sizes 150px*150px from placehold.it or lorempixel.it. Usefull for integration works
+      }
+***** */
+._placeHold(@w,@h,@unitW:px,@unitH:px) when (isnumber(@w)) and (isnumber(@h)) {
+    @width : unit(@w, @unitW);
+    @height : unit(@h, @unitH);
+    width:@width;
+    height:@height;
+
+    /* For images showing sizes, use placehold.it */
+    //background:url("http://placehold.it/@{w}x@{h}") no-repeat center center;
+
+    /* For images showing real pictures, use lorempixel.it */
+    background:url("http://lorempixel.com/@{w}/@{h}") no-repeat center center;
+}
+/* *****
+    @name : ._reset
+    @description : reset margin, border & padding properties in one function
+
+    @exemple :
+      el {
+        ._reset; // Let be safe that <el> has no border, no padding, mo margin
+      }
+***** */
+._reset() {
+  padding:0;
+  margin:0;
+  border:0;
+}
+/* *****
+    @name : ._uppercase
+    @description : set string to uppercase
+    @wtf : just because it's boring to write the whole property
+***** */
+._uppercase() {
+  text-transform:uppercase;
+}
+/* *****
+    @name : ._inside
+    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
+    @params : @width
+
+    @exemple :
+      el {
+        ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
+      }
+***** */
+.inside{._inside;}
+._inside(@width:1400px) when (isnumber(@width)) {
+    width: @width;
+    margin:0 auto;
+    ._clearfix;
+    ._transition(.2s,width);
+}
+/* *****
+    @name : ._fa
+    @description : Generate fontAwesome icon
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at http://fortawesome.github.io/Font-Awesome/icons/
+
+    @exemple :
+      el:before {
+        .fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
+      }
+***** */
+._fa(@content, @size:10pt, @color:#000){
+  ._inline;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size:@size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:@color;
+  content:@content;
+}
+/* *****
+    @name : ._io
+    @description : Generate Ionicons icon
+    @params : @content (unicode from Ionicon i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at http://ionicons.com/cheatsheet.html
+
+     @exemple :
+      el:before {
+        .io('\f101'); // The icon "ion-alter" from Ionicons will be displayed in the el:before element
+      }
+***** */
+._io(@content, @size:10pt, @color:#000){
+  ._inline;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size:@size;
+  color:@color;
+  content:@content;
+}
+/* *****
+    @name : ._cover
+    @description : display background-image as cover css3 property
+
+    @exemple :
+      el {
+        background-image : url('path_to_image/img.jpg');
+        ._cover;
+      }
+***** */
+._cover() {
+  -webkit-background-size: cover; /* Chrome et Safari */
+  -moz-background-size: cover; /* Firefox */
+  -o-background-size: cover; /* Opera */
+  background-size: cover; /* Standard */
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:100% 100%\9; /* <= IE8 */
+  background-position: center top\9; /* <= IE8 */
+}
+/* *****
+    @name : ._truncate
+    @description : add ellipsis to an element with specifid width;
+    @params : @width (pixels)
+
+    @exemple :
+      el {
+        ._truncate(200px); // <el> will be truncate at 200px
+      }
+***** */
+._truncate(@width : 200px) when (ispixel(@width)) {
+  width:@width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* *****
+    @name : ._btn
+    @description : generate btn links with unlimited background colors
+    @params : @bg (button color (rgba, hexa)), @bgHover (button hover color (rgba, hexa))
+
+    @exemple :
+      button {
+        // 2 colors
+        ._btn(@red, @green); // <button> will be displayed with a red bg-color, and a green bg-color on hover (with smoothy animation)
+
+        // 1 color
+        ._btn(@red); // <button> will be displayed with a red bg-color, and a darken (10%) red bg-color on hover (with smoothy animation)
+      }
+***** */
+._setBtnBgHover(@bg) {
+  @bgHover : darken(@bg,10%);
+
+  &:hover {
+    background-color:@bgHover;
+  }
+}
+._btn(@bg : @links-btn-bg, @bgHover :~'') when (iscolor(@bg)) {
+  background-color:@bg;
+
+  /* If Hover is specified */
+  & when (iscolor(@bgHover)) {
+    &:hover {
+      background-color:@bgHover;
+    }
+  }
+  /* else */
+  & when not (iscolor(@bgHover)) {
+    /* Hover color will be @bg but 10% darken */
+    ._setBtnBgHover(@bg);
+  }
+}
+
+
+/* *****
+    @name : ._flexbox
+    @description : generate flexbox display
+    @params :
+      - @direction : row | row-reverse | column | column-reverse
+      - @wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
+      - @justify : flex-start | flex-end | center | space-between | space-around
+      - @align : flex-start | flex-end | center | baseline | stretch
+      - @align-content : flex-start | flex-end | center | space-between | space-around | stretch
+      - @display : flex | inline-flex
+
+    @exemple :
+      el {
+          ._flexbox(row,wrap,center);
+      }
+***** */
+._flexbox(@direction : row, @wrap : nowrap, @justify : space-between, @align : stretch, @align-content : stretch, @display: flex) {
+
+    /* Flexbox display */
+    display: -webkit-box;
+    display: ~"-moz-box";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-webkit-@{display}";
+    display: @display;
+    display:box;
+
+    /* Direction */
+    -webkit-flex-direction : @direction;
+    -moz-flex-direction : @direction;
+    -ms-flex-direction : @direction;
+    flex-direction : @direction;
+
+    /* Flex line wrapping */
+    -webkit-flex-wrap: @wrap;
+    -moz-flex-wrap: @wrap;
+    -ms-flex-wrap: @wrap;
+    flex-wrap: @wrap;
+
+    /* Main axis alignment */
+    -webkit-justify-content: @justify;
+    -moz-justify-content: @justify;
+    -ms-justify-content: @justify;
+    -ms-flex-pack: @justify;
+    justify-content: @justify;
+
+    // old IE :/
+    & when (@justify = space-between), (@justify = space-around) {
+      -ms-flex-pack: justify;
+    }
+
+    /* Cross-axis alignment */
+    -webkit-align-items: @align;
+    -moz-align-items: @align;
+    -ms-align-items: @align;
+    -ms-flex-align: @align;
+    align-items: @align;
+
+    /* Packing Flex Lines */
+    -webkit-align-content: @align-content;
+    -moz-align-content: @align-content;
+    -ms-align-content: @align-content;
+    -ms-flex-line-pack: @align-content;
+    align-content: @align-content;
+}
+/* *****
+    @name : ._flex
+    @description : flex-grow, flex-shrink, flex-basis properties
+    @params : (grow shrink basis)
+
+    @exemple :
+      .parent {
+        ._flexbox;
+
+        .child {
+          ._flex(0 0 250px);
+        }
+      }
+***** */
+._flex(...) {
+  -webkit-box-flex: @arguments;
+  -moz-box-flex: @arguments;
+  -webkit-flex: @arguments;
+  -ms-flex: @arguments;
+  flex: @arguments;
+}
+/* *****
+    @name : ._flex-order
+    @description : positionning order for childs elements in flexbox container
+    @params : int (negative allowed)
+
+    @exemple :
+      .parent {
+        ._flexbox;
+
+        .child {
+          ._flex(0 auto);
+
+          &:nth-child(1) {
+            ._flex-order:2; // this child will be displayed last
+          }
+
+          &:nth-child(2) {
+            ._flex-order:-1; // this child will be displayed before all others children
+          }
+        }
+      }
+***** */
+._flex-order(@order: 0) {
+  -webkit-box-ordinal-group: @order;
+  -moz-box-ordinal-group: @order;
+  -ms-flex-order: @order;
+  -webkit-order: @order;
+  order: @order;
+}
+/* *****
+    @name : ._align-self
+    @description : positionning a child element in cross axis
+    @params : flex-start | flex-end | center | baseline | stretch
+
+    @exemple :
+      .parent {
+        ._flexbox;
+
+        .child {
+          ._flex(0 auto);
+
+          &:nth-child(2) {
+            ._align-self(flex-end); // this child will be displayed with property align-self:flex-end
+          }
+        }
+      }
+***** */
+._align-self(@align: auto) {
+  -webkit-align-self: @align;
+  -moz-align-self: @align;
+  -ms-align-self: @align;
+  align-self: @align;
+}
+
+
+
+/*
+==============================================
+alpixel animation
+  * "X" of ALPIXEL on footer
+==============================================
+*/
+._alpixel(){
+  animation-name: alpixel;
+  -webkit-animation-name: alpixel;
+
+  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.6s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+@keyframes alpixel {
+  0% {
+    transform: translate3d(0,0,0) scaleY(1);
+  }
+  60%{
+    transform: translate3d(0,-50%,0) scaleY(1.1);
+  }
+  70%{
+    transform: translate3d(0,0,0) scaleY(0.95) scaleX(1.05);
+  }
+  80%{
+    transform: translate3d(0,0,0) scaleY(1.05) scaleX(1);
+  }
+  90%{
+    transform: translate3d(0,0,0) scaleY(0.95) scaleX(1);
+  }
+  100%{
+    transform: translate3d(0,0,0) scaleY(1) scaleX(1);
+  }
+}
+@-webkit-keyframes alpixel {
+  0% {
+    -webkit-transform: translate3d(0,0%,0) scaleY(1);
+  }
+  60%{
+    -webkit-transform: translate3d(0,-50%,0) scaleY(1.1);
+  }
+  70%{
+    -webkit-transform: translate3d(0,0,0) scaleY(0.95) scaleX(1.05);
+  }
+  80%{
+    -webkit-transform: translate3d(0,0,0) scaleY(1.05) scaleX(1);
+  }
+  90%{
+    -webkit-transform: translate3d(0,0,0) scaleY(0.95) scaleX(1);
+  }
+  100%{
+    -webkit-transform: translate3d(0,0,0) scaleY(1) scaleX(1);
+  }
+}
+

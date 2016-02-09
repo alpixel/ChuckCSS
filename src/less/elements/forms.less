@@ -1,0 +1,240 @@
+/* ******* */
+/** FORMS **/
+/* ******* */
+
+/* ********************* */
+
+
+form {
+    /* Reset margin, padding, border */
+    ._reset;
+
+    .form {
+
+        /*
+            Parent element : containe label + input, textarea, select, etc...
+
+            <div class="form-item">
+                <label>...</label>
+                <input ... />
+            </div>
+        */
+        &-item {
+            ._clearfix;
+            margin:10px 0;
+        }
+
+
+        /*
+            - Radio && Checkbox inputs
+
+            <div class="form-item">
+                <div class="form-radio">
+                    <label>
+                        Mister
+                        <input type="radio" name="gender" value="mister" />
+                    </label>
+                </div>
+                <div class="form-radio">
+                    <label>
+                        Madam
+                        <input type="radio" name="gender" value="madam" checked="checked" />
+                    </label>
+                </div>
+            </div>
+        */
+        &-checkbox,
+        &-radio {
+            ._inline;
+            position:relative;
+
+            &.block {
+                display:block;
+            }
+
+            /* Disabled radio or checkbox inputs */
+            &.disabled {
+                label {
+                    cursor:not-allowed;
+                    ._opacity(0.5);
+
+                    &:before {
+                        ._fa('\f05e'); /* .fa() mixin declared in core/functions.less file */
+                        margin-right:10px;
+                        font-size:11pt;
+                    }
+                }
+            }
+
+            label {
+                cursor:pointer;
+            }
+
+            /* Sort input of viewport */
+            input {
+                position:absolute;
+                left:-9999em;
+            }
+        }
+
+        /*
+            - Specific for checkbox inputs
+        */
+        &-checkbox {
+            /* label with FontAwesome */
+            label {
+                &.checked {
+                    &:before {
+                        ._fa('\f046'); /* .fa() mixin declared in core/functions.less file */
+                        font-size:11pt;
+                    }
+                }
+
+                &:before {
+                    ._fa('\f096'); /* .fa() mixin declared in core/functions.less file */
+                    margin-right:10px;
+                    font-size:11pt;
+                }
+            }
+        }
+
+        /*
+            - Specific for radio inputs
+        */
+
+        &-radio {
+            /* label with FontAwesome */
+            label {
+                &.checked {
+                    &:before {
+                        ._fa('\f111'); /* .fa() mixin declared in core/functions.less file */
+                        font-size:11pt;
+                    }
+                }
+
+                &:before {
+                    ._fa('\f10c'); /* .fa() mixin declared in core/functions.less file */
+                    margin-right:10px;
+                    font-size:11pt;
+                }
+            }
+        }
+    }
+
+
+    /*
+        - Label
+    */
+    label {
+        ._inline;
+        vertical-align: middle;
+        padding-right:10px;
+        font-weight:400;
+
+        &.block {
+            display:block;
+            line-height:2em;
+        }
+    }
+
+
+    /*
+        - input
+        - textarea
+    */
+    textarea,
+    input {
+        ._inline;
+        vertical-align: middle;
+        background-color:@input-bg; /* defined in settings.less */
+        ._box-shadow('inset 0px 0px 100px 100px @{input-bg}'); /* Hack for Chrome : remove auto-filled bg yellow color */
+        padding:0 15px;
+        border:0;
+        ._border-radius(unit(@input-br,px)); /* defined in settings.less */
+        resize:none;
+        height: @input-lh; /* defined in settings.less */
+        line-height:1;
+
+        /* Hack IE8 and < */
+        @line-height-IE : @input-lh;
+        line-height:~"@{line-height-IE}\9"; /* hot fix IE 8 */
+
+
+        &:focus {
+            outline:none;
+        }
+
+        &.error {
+            ._box-shadow('none');
+            background-color:lighten(@red,50%);
+
+            /* placeholder color */
+            &::-moz-placeholder {color:@red;}
+            &::-ms-input-placeholder {color:@red;}
+            &::-webkit-input-placeholder {color:@red;}
+        }
+
+        /* number : fix right padding */
+        &[type="number"] {
+            padding-right:0;
+        }
+
+        /* disabled element */
+        &[disabled] {
+            cursor:not-allowed;
+            ._opacity(0.5);
+        }
+
+        /* Placeholder color */
+        &::-moz-placeholder {color:@gray;}
+        &::-ms-input-placeholder {color:@gray;}
+        &::-webkit-input-placeholder {color:@gray;}
+    }
+
+    /*
+        - Specific for textareas
+    */
+    textarea {
+        padding:10px 15px;
+        line-height:1.5;
+        min-height:110px;
+        width:100%;
+        vertical-align: top;
+    }
+
+    /*
+        - select
+    */
+    select {
+        padding:0 0 0 15px;
+        border:0;
+        background-color:@input-bg;
+        ._border-radius(unit(@input-br,px));
+        height: @input-lh;
+        line-height:1;
+
+        /* Hack IE8 & < */
+        height:inherit\9;
+        padding:10px 5px 10px 15px\9;
+    }
+
+    /*
+        - Submit btns
+    */
+    input[type="submit"],
+    button[type="submit"] {
+        cursor:pointer;
+        ._box-shadow('none');
+        ._border-radius(0px);
+        color:white;
+        border:0;
+        height: @input-lh;
+        padding:0 30px;
+        ._transition;
+        ._uppercase;
+
+        /* Here define the bg-color and hover bg-color ! */
+        /* ._btn(bg-color, (opt) bg-color-hover); // ._btn() mixin declared in core/functions.less file */
+        ._btn(@submit-bg,@orange);
+    }
+}

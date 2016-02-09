@@ -1,0 +1,16 @@
+.DS_Store
+.buildpath
+*.sublime-*
+.project
+.settings
+_notes
+composer.lock
+.grunt
+node_modules
+Gruntfile.js.*
+.sass-cache
+._*
+vendor
+vendor/*
+bower.*
+.bowerrc

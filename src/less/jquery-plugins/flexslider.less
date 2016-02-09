@@ -1,0 +1,190 @@
+/*
+ * jQuery FlexSlider v2.4.0
+ * http://www.woothemes.com/flexslider/
+ */
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+
+.flexslider {
+    position: relative;
+    zoom: 1;
+    width:100%;
+    overflow:hidden;
+
+
+    .slides {
+        zoom: 1;
+        display: block;
+        z-index:48;
+        position:relative;
+
+         &:after {
+            ._clearfix;
+        }
+
+        &>li {
+            ._reset;
+            display: none;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+            * {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            img {
+                display:block;
+                margin:0 auto;
+                max-width:100%;
+            }
+        }
+    }
+}
+
+.flex-viewport {
+    max-height: 2000px;
+    height:100%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+/* Pagination bottom */
+.flex-control-paging {
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    bottom:10px;
+    z-index:999;
+
+    li {
+        margin: 0 7px;
+        ._inline;
+
+        a {
+            width: 14px;
+            height: 14px;
+            display: block;
+            background-color:white;
+            cursor: pointer;
+            text-indent: -9999px;
+            ._border-radius(50%);
+
+            &.flex-active,
+            &:hover {
+                background: @text-mc;
+            }
+        }
+    }
+}
+
+/* Arrows left/right */
+.flex-direction-nav {
+    *height: 0;
+
+    a  {
+        display: block;
+        margin:0;
+        position: absolute;
+        top:0;
+        height:100%;
+        width:100px;
+        z-index: 49;
+        overflow: hidden;
+        cursor: pointer;
+        ._transition;
+        font-size:25pt;
+        color:white;
+        text-align:center;
+
+        &:hover {color:@links-btn-bg;}
+        &.flex-prev { left: 0px; }
+        &.flex-next { right: 0px; }
+
+        i {
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-15px;
+            margin-top:-10px;
+        }
+    }
+}
+
+
+/* Flexslider loader */
+.flexLoader {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:999;
+
+    .spinner {
+        @loaderWidth : 50px;
+        @loaderHeight : 50px;
+        @loaderWeight : 10px;
+        @loaderSpeed : 1.2s;
+        background-color:white;
+        position:absolute;
+        z-index:9998;
+        top:50%;
+        left:50%;
+        width:@loaderWidth;
+        height:@loaderWidth;
+        border-radius: 50%;
+        margin-top:-(@loaderWidth/2);
+        margin-left:-(@loaderWidth/2);
+        border-top: @loaderWeight solid @green;
+        border-bottom: @loaderWeight solid @green;
+        border-left: @loaderWeight solid @red;
+        border-right: @loaderWeight solid @red;
+        -webkit-animation: spinner @loaderSpeed infinite linear;
+        animation: spinner @loaderSpeed infinite linear;
+    }
+}
+
+
+/*
+==============================================
+Animation for flexslider loader
+==============================================
+*/
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
