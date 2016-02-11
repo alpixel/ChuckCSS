@@ -12,7 +12,6 @@
     /* - - -
 
 */
-
 button,
 a {
     text-decoration: none;
@@ -27,37 +26,29 @@ a {
 
     &.btn {
         ._inline; /* set 'inline-block' display */
-        ._btn(@links-btn-bg); /* Generate Background-color and background-color hover css */
         ._border-radius(unit(@links-btn-br,px));
+        ._btn(@links-btn-bg); /* Generate Background-color and background-color hover css */
+        ._transition;
         text-align:center;
         color:@links-btn-tc;
         border:0;
         line-height:@links-btn-lh;
         padding:0 30px;
-        ._transition;
-
 
         &:hover {
+            border:0;
             color:@links-btn-hover-tc;
-            background-color:darken(@links-btn-bg,5%);
         }
 
 
-
         /* Links with icon */
-        &.icon {
-            /* default : icon is on the left */
-            i {
-                margin-right: 10px;
-            }
+        i {
+            margin-right: 10px;
 
-            &-right {
-                i {
-                    margin-left:10px;
-                    margin-right: 0px;
-                }
+            &.right {
+                margin-left:10px;
+                margin-right: 0px;
             }
-
         }
 
         /* Thins buttons, .btn links */
@@ -66,8 +57,24 @@ a {
         }
 
         /* Fats buttons, .btn links */
-		&.fat {
+        &.fat {
             font-size:@links-btn-fat-fs;
-		}
+        }
+    }
+}
+
+
+button {
+    ._inline; /* set 'inline-block' display */
+    ._border-radius(unit(@links-btn-br,px));
+    background-color:white;
+    ._transition;
+    border:1px solid @gray-li;
+    text-align:center;
+    line-height:@links-btn-lh;
+    padding:0 15px;
+
+    &:hover {
+        border:1px solid @gray;
     }
 }
