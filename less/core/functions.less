@@ -358,11 +358,11 @@
     @exemple :
       el {
         // The 2 lines below...
-        ._filter(blur(1px));
-        ._filter(sepia(1));
+        ._filter(blur(1px)); // Apply blur effect
+        ._filter(sepia(1)); // Apply sepia effect
 
         // ...are the same as
-        ._filter(blur(1px) sepia(1));
+        ._filter(blur(1px) sepia(1)); // Apply blur and sepia effects
       }
 
       will compile to :
@@ -450,7 +450,7 @@
 
     @exemple :
       el:before {
-        .fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
+        ._fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
       }
 ***** */
 ._fa(@content, @size:10pt, @color:#000){
@@ -473,7 +473,7 @@
 
      @exemple :
       el:before {
-        .io('\f101'); // The icon "ion-alter" from Ionicons will be displayed in the el:before element
+        ._io('\f101'); // The icon "ion-alter" from Ionicons will be displayed in the el:before element
       }
 ***** */
 ._io(@content, @size:10pt, @color:#000){
