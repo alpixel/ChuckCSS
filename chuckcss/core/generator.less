@@ -184,16 +184,7 @@
             ._btn(@colorValue);
         }
     }
-
-    // Grids
-    .columns {
-        margin-bottom:50px;
-        .cc-@{colorName} {
-            background-color:@colorValue;
-            color:white;
-        }
-    }
-
+    
     /* Badges */
     span.cc {
         &-@{colorName} {
@@ -460,7 +451,6 @@
 
     ._generateColumns((@iterator + 1));
 }
-._generateColumns; // Launch _generateColumns
 
 
 /* *****

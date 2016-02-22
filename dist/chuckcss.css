@@ -2,7 +2,7 @@
 /*
     == ChuckCSS ==
     @Author : ALPIXEL : Fresh & French Web Agency (http://www.alpixel.fr)
-    @Licence : WTFPL (http://www.wtfpl.net/ ~ "Do What The Fuck You Want to Public License" : https://fr.wikipedia.org/wiki/WTFPL)
+    @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
     @Beer : If you love it, you can pay us a beer at : paypal@alpixel.fr
 */
 /*
@@ -1270,8 +1270,6 @@ h6,
   font-weight: 400;
   color: #3a3a3a;
   /* defined in settings.less */
-  font-family: 'Open Sans', sans-serif;
-  /* font-family : defined in settings.less */
 }
 h1 small,
 .h1-like small,
@@ -2532,6 +2530,1174 @@ form button[type="submit"][class*="ion-"]:before {
     - General Grids
 */
 .columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-1 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 1 / 12 - 0.05px);
+  max-width: calc(100% * 1 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-1 {
+  margin-left: calc(100% * 1 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-1,
+.columns .column.cc-1 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 1 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 1 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-1,
+.columns .column.cc-offset-1 {
+  margin-left: calc(100% * 1 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-2 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 2 / 12 - 0.05px);
+  max-width: calc(100% * 2 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-2 {
+  margin-left: calc(100% * 2 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-2,
+.columns .column.cc-2 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 2 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 2 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-2,
+.columns .column.cc-offset-2 {
+  margin-left: calc(100% * 2 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-3 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 3 / 12 - 0.05px);
+  max-width: calc(100% * 3 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-3 {
+  margin-left: calc(100% * 3 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-3,
+.columns .column.cc-3 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 3 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 3 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-3,
+.columns .column.cc-offset-3 {
+  margin-left: calc(100% * 3 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-4 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 4 / 12 - 0.05px);
+  max-width: calc(100% * 4 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-4 {
+  margin-left: calc(100% * 4 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-4,
+.columns .column.cc-4 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 4 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 4 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-4,
+.columns .column.cc-offset-4 {
+  margin-left: calc(100% * 4 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-5 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 5 / 12 - 0.05px);
+  max-width: calc(100% * 5 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-5 {
+  margin-left: calc(100% * 5 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-5,
+.columns .column.cc-5 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 5 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 5 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-5,
+.columns .column.cc-offset-5 {
+  margin-left: calc(100% * 5 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-6 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 6 / 12 - 0.05px);
+  max-width: calc(100% * 6 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-6 {
+  margin-left: calc(100% * 6 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-6,
+.columns .column.cc-6 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 6 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 6 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-6,
+.columns .column.cc-offset-6 {
+  margin-left: calc(100% * 6 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-7 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 7 / 12 - 0.05px);
+  max-width: calc(100% * 7 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-7 {
+  margin-left: calc(100% * 7 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-7,
+.columns .column.cc-7 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 7 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 7 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-7,
+.columns .column.cc-offset-7 {
+  margin-left: calc(100% * 7 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-8 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 8 / 12 - 0.05px);
+  max-width: calc(100% * 8 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-8 {
+  margin-left: calc(100% * 8 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-8,
+.columns .column.cc-8 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 8 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 8 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-8,
+.columns .column.cc-offset-8 {
+  margin-left: calc(100% * 8 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-9 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 9 / 12 - 0.05px);
+  max-width: calc(100% * 9 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-9 {
+  margin-left: calc(100% * 9 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-9,
+.columns .column.cc-9 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 9 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 9 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-9,
+.columns .column.cc-offset-9 {
+  margin-left: calc(100% * 9 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-10 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 10 / 12 - 0.05px);
+  max-width: calc(100% * 10 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-10 {
+  margin-left: calc(100% * 10 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-10,
+.columns .column.cc-10 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 10 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 10 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-10,
+.columns .column.cc-offset-10 {
+  margin-left: calc(100% * 10 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-11 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 11 / 12 - 0.05px);
+  max-width: calc(100% * 11 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-11 {
+  margin-left: calc(100% * 11 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-11,
+.columns .column.cc-11 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 11 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 11 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-11,
+.columns .column.cc-offset-11 {
+  margin-left: calc(100% * 11 / 12 + 20px/2  - 0.05px);
+}
+.columns {
+  /* NO GUTTERS */
+  /* GUTTERS */
+}
+.columns.cc-no-gutter .column.cc {
+  /* Width calculations without gutters */
+  /* Offsets calculations without gutters */
+}
+.columns.cc-no-gutter .column.cc-12 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 12 / 12 - 0.05px);
+  max-width: calc(100% * 12 / 12  - 0.05px);
+}
+.columns.cc-no-gutter .column.cc-offset-12 {
+  margin-left: calc(100% * 12 / 12  - 0.05px);
+}
+.columns.cc-gutter .column.cc,
+.columns .column.cc {
+  /* Width calculations with gutters */
+  /* Offsets calculations with gutters */
+}
+.columns.cc-gutter .column.cc-12,
+.columns .column.cc-12 {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% * 12 / 12 - 20px  - 0.05px);
+  max-width: calc(100% * 12 / 12 - 20px  - 0.05px);
+}
+.columns.cc-gutter .column.cc-offset-12,
+.columns .column.cc-offset-12 {
+  margin-left: calc(100% * 12 / 12 + 20px/2  - 0.05px);
+}
+@media screen and (max-width: 1200px) {
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-1-t {
+    width: calc(100% * 1 / 12);
+    max-width: calc(100% * 1 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-1-t {
+    margin-left: calc(100% * 1 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-1-t,
+  .columns .column.cc-1-t {
+    width: calc(100% * 1 / 12 - 20px);
+    max-width: calc(100% * 1 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-1-t,
+  .columns .column.cc-offset-1-t {
+    margin-left: calc(100% * 1 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-2-t {
+    width: calc(100% * 2 / 12);
+    max-width: calc(100% * 2 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-2-t {
+    margin-left: calc(100% * 2 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-2-t,
+  .columns .column.cc-2-t {
+    width: calc(100% * 2 / 12 - 20px);
+    max-width: calc(100% * 2 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-2-t,
+  .columns .column.cc-offset-2-t {
+    margin-left: calc(100% * 2 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-3-t {
+    width: calc(100% * 3 / 12);
+    max-width: calc(100% * 3 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-3-t {
+    margin-left: calc(100% * 3 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-3-t,
+  .columns .column.cc-3-t {
+    width: calc(100% * 3 / 12 - 20px);
+    max-width: calc(100% * 3 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-3-t,
+  .columns .column.cc-offset-3-t {
+    margin-left: calc(100% * 3 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-4-t {
+    width: calc(100% * 4 / 12);
+    max-width: calc(100% * 4 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-4-t {
+    margin-left: calc(100% * 4 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-4-t,
+  .columns .column.cc-4-t {
+    width: calc(100% * 4 / 12 - 20px);
+    max-width: calc(100% * 4 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-4-t,
+  .columns .column.cc-offset-4-t {
+    margin-left: calc(100% * 4 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-5-t {
+    width: calc(100% * 5 / 12);
+    max-width: calc(100% * 5 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-5-t {
+    margin-left: calc(100% * 5 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-5-t,
+  .columns .column.cc-5-t {
+    width: calc(100% * 5 / 12 - 20px);
+    max-width: calc(100% * 5 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-5-t,
+  .columns .column.cc-offset-5-t {
+    margin-left: calc(100% * 5 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-6-t {
+    width: calc(100% * 6 / 12);
+    max-width: calc(100% * 6 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-6-t {
+    margin-left: calc(100% * 6 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-6-t,
+  .columns .column.cc-6-t {
+    width: calc(100% * 6 / 12 - 20px);
+    max-width: calc(100% * 6 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-6-t,
+  .columns .column.cc-offset-6-t {
+    margin-left: calc(100% * 6 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-7-t {
+    width: calc(100% * 7 / 12);
+    max-width: calc(100% * 7 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-7-t {
+    margin-left: calc(100% * 7 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-7-t,
+  .columns .column.cc-7-t {
+    width: calc(100% * 7 / 12 - 20px);
+    max-width: calc(100% * 7 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-7-t,
+  .columns .column.cc-offset-7-t {
+    margin-left: calc(100% * 7 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-8-t {
+    width: calc(100% * 8 / 12);
+    max-width: calc(100% * 8 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-8-t {
+    margin-left: calc(100% * 8 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-8-t,
+  .columns .column.cc-8-t {
+    width: calc(100% * 8 / 12 - 20px);
+    max-width: calc(100% * 8 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-8-t,
+  .columns .column.cc-offset-8-t {
+    margin-left: calc(100% * 8 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-9-t {
+    width: calc(100% * 9 / 12);
+    max-width: calc(100% * 9 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-9-t {
+    margin-left: calc(100% * 9 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-9-t,
+  .columns .column.cc-9-t {
+    width: calc(100% * 9 / 12 - 20px);
+    max-width: calc(100% * 9 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-9-t,
+  .columns .column.cc-offset-9-t {
+    margin-left: calc(100% * 9 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-10-t {
+    width: calc(100% * 10 / 12);
+    max-width: calc(100% * 10 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-10-t {
+    margin-left: calc(100% * 10 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-10-t,
+  .columns .column.cc-10-t {
+    width: calc(100% * 10 / 12 - 20px);
+    max-width: calc(100% * 10 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-10-t,
+  .columns .column.cc-offset-10-t {
+    margin-left: calc(100% * 10 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-11-t {
+    width: calc(100% * 11 / 12);
+    max-width: calc(100% * 11 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-11-t {
+    margin-left: calc(100% * 11 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-11-t,
+  .columns .column.cc-11-t {
+    width: calc(100% * 11 / 12 - 20px);
+    max-width: calc(100% * 11 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-11-t,
+  .columns .column.cc-offset-11-t {
+    margin-left: calc(100% * 11 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for tablets devices */
+  }
+  .columns.cc-no-gutter .column.cc-12-t {
+    width: calc(100% * 12 / 12);
+    max-width: calc(100% * 12 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-12-t {
+    margin-left: calc(100% * 12 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for tablets devices */
+  }
+  .columns.cc-gutter .column.cc-12-t,
+  .columns .column.cc-12-t {
+    width: calc(100% * 12 / 12 - 20px);
+    max-width: calc(100% * 12 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-12-t,
+  .columns .column.cc-offset-12-t {
+    margin-left: calc(100% * 12 / 12 + 20px/2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-1-s {
+    width: calc(100% * 1 / 12);
+    max-width: calc(100% * 1 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-1-s {
+    margin-left: calc(100% * 1 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-1-s,
+  .columns .column.cc-1-s {
+    width: calc(100% * 1 / 12 - 20px);
+    max-width: calc(100% * 1 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-1-s,
+  .columns .column.cc-offset-1-s {
+    margin-left: calc(100% * 1 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-2-s {
+    width: calc(100% * 2 / 12);
+    max-width: calc(100% * 2 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-2-s {
+    margin-left: calc(100% * 2 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-2-s,
+  .columns .column.cc-2-s {
+    width: calc(100% * 2 / 12 - 20px);
+    max-width: calc(100% * 2 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-2-s,
+  .columns .column.cc-offset-2-s {
+    margin-left: calc(100% * 2 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-3-s {
+    width: calc(100% * 3 / 12);
+    max-width: calc(100% * 3 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-3-s {
+    margin-left: calc(100% * 3 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-3-s,
+  .columns .column.cc-3-s {
+    width: calc(100% * 3 / 12 - 20px);
+    max-width: calc(100% * 3 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-3-s,
+  .columns .column.cc-offset-3-s {
+    margin-left: calc(100% * 3 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-4-s {
+    width: calc(100% * 4 / 12);
+    max-width: calc(100% * 4 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-4-s {
+    margin-left: calc(100% * 4 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-4-s,
+  .columns .column.cc-4-s {
+    width: calc(100% * 4 / 12 - 20px);
+    max-width: calc(100% * 4 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-4-s,
+  .columns .column.cc-offset-4-s {
+    margin-left: calc(100% * 4 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-5-s {
+    width: calc(100% * 5 / 12);
+    max-width: calc(100% * 5 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-5-s {
+    margin-left: calc(100% * 5 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-5-s,
+  .columns .column.cc-5-s {
+    width: calc(100% * 5 / 12 - 20px);
+    max-width: calc(100% * 5 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-5-s,
+  .columns .column.cc-offset-5-s {
+    margin-left: calc(100% * 5 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-6-s {
+    width: calc(100% * 6 / 12);
+    max-width: calc(100% * 6 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-6-s {
+    margin-left: calc(100% * 6 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-6-s,
+  .columns .column.cc-6-s {
+    width: calc(100% * 6 / 12 - 20px);
+    max-width: calc(100% * 6 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-6-s,
+  .columns .column.cc-offset-6-s {
+    margin-left: calc(100% * 6 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-7-s {
+    width: calc(100% * 7 / 12);
+    max-width: calc(100% * 7 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-7-s {
+    margin-left: calc(100% * 7 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-7-s,
+  .columns .column.cc-7-s {
+    width: calc(100% * 7 / 12 - 20px);
+    max-width: calc(100% * 7 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-7-s,
+  .columns .column.cc-offset-7-s {
+    margin-left: calc(100% * 7 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-8-s {
+    width: calc(100% * 8 / 12);
+    max-width: calc(100% * 8 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-8-s {
+    margin-left: calc(100% * 8 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-8-s,
+  .columns .column.cc-8-s {
+    width: calc(100% * 8 / 12 - 20px);
+    max-width: calc(100% * 8 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-8-s,
+  .columns .column.cc-offset-8-s {
+    margin-left: calc(100% * 8 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-9-s {
+    width: calc(100% * 9 / 12);
+    max-width: calc(100% * 9 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-9-s {
+    margin-left: calc(100% * 9 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-9-s,
+  .columns .column.cc-9-s {
+    width: calc(100% * 9 / 12 - 20px);
+    max-width: calc(100% * 9 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-9-s,
+  .columns .column.cc-offset-9-s {
+    margin-left: calc(100% * 9 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-10-s {
+    width: calc(100% * 10 / 12);
+    max-width: calc(100% * 10 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-10-s {
+    margin-left: calc(100% * 10 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-10-s,
+  .columns .column.cc-10-s {
+    width: calc(100% * 10 / 12 - 20px);
+    max-width: calc(100% * 10 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-10-s,
+  .columns .column.cc-offset-10-s {
+    margin-left: calc(100% * 10 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-11-s {
+    width: calc(100% * 11 / 12);
+    max-width: calc(100% * 11 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-11-s {
+    margin-left: calc(100% * 11 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-11-s,
+  .columns .column.cc-11-s {
+    width: calc(100% * 11 / 12 - 20px);
+    max-width: calc(100% * 11 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-11-s,
+  .columns .column.cc-offset-11-s {
+    margin-left: calc(100% * 11 / 12 + 20px/2);
+  }
+  .columns {
+    /* NO GUTTERS */
+    /* GUTTERS */
+  }
+  .columns.cc-no-gutter .column.cc {
+    /* Width calculations without gutters */
+    /* Offsets calculations without gutters for phones devices */
+  }
+  .columns.cc-no-gutter .column.cc-12-s {
+    width: calc(100% * 12 / 12);
+    max-width: calc(100% * 12 / 12);
+  }
+  .columns.cc-no-gutter .column.cc-offset-12-s {
+    margin-left: calc(100% * 12 / 12);
+  }
+  .columns.cc-gutter .column.cc,
+  .columns .column.cc {
+    /* Width calculations with gutters */
+    /* Offsets calculations with gutters for phones devices */
+  }
+  .columns.cc-gutter .column.cc-12-s,
+  .columns .column.cc-12-s {
+    width: calc(100% * 12 / 12 - 20px);
+    max-width: calc(100% * 12 / 12 - 20px);
+  }
+  .columns.cc-gutter .column.cc-offset-12-s,
+  .columns .column.cc-offset-12-s {
+    margin-left: calc(100% * 12 / 12 + 20px/2);
+  }
+}
+.columns {
   /* Flexbox display */
   display: -webkit-box;
   display: -moz-box;
@@ -3683,13 +4849,6 @@ form.cc-primary input[type="submit"]:hover,
 form.cc-primary button[type="submit"]:hover {
   background-color: #1a98bd;
 }
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-primary {
-  background-color: #29b7e1;
-  color: white;
-}
 /* Badges */
 span.cc-primary {
   background-color: #29b7e1;
@@ -3906,13 +5065,6 @@ form.cc-green button[type="submit"] {
 form.cc-green input[type="submit"]:hover,
 form.cc-green button[type="submit"]:hover {
   background-color: #63872b;
-}
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-green {
-  background-color: #80ae37;
-  color: white;
 }
 /* Badges */
 span.cc-green {
@@ -4131,13 +5283,6 @@ form.cc-red input[type="submit"]:hover,
 form.cc-red button[type="submit"]:hover {
   background-color: #961010;
 }
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-red {
-  background-color: #c41515;
-  color: white;
-}
 /* Badges */
 span.cc-red {
   background-color: #c41515;
@@ -4354,13 +5499,6 @@ form.cc-gray button[type="submit"] {
 form.cc-gray input[type="submit"]:hover,
 form.cc-gray button[type="submit"]:hover {
   background-color: #a1a1a1;
-}
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-gray {
-  background-color: #bababa;
-  color: white;
 }
 /* Badges */
 span.cc-gray {
@@ -4579,13 +5717,6 @@ form.cc-blue input[type="submit"]:hover,
 form.cc-blue button[type="submit"]:hover {
   background-color: #217dbb;
 }
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-blue {
-  background-color: #3498db;
-  color: white;
-}
 /* Badges */
 span.cc-blue {
   background-color: #3498db;
@@ -4802,13 +5933,6 @@ form.cc-purple button[type="submit"] {
 form.cc-purple input[type="submit"]:hover,
 form.cc-purple button[type="submit"]:hover {
   background-color: #703688;
-}
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-purple {
-  background-color: #8e44ad;
-  color: white;
 }
 /* Badges */
 span.cc-purple {
@@ -5027,13 +6151,6 @@ form.cc-orange input[type="submit"]:hover,
 form.cc-orange button[type="submit"]:hover {
   background-color: #c87f0a;
 }
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-orange {
-  background-color: #f39c12;
-  color: white;
-}
 /* Badges */
 span.cc-orange {
   background-color: #f39c12;
@@ -5250,13 +6367,6 @@ form.cc-yellow button[type="submit"] {
 form.cc-yellow input[type="submit"]:hover,
 form.cc-yellow button[type="submit"]:hover {
   background-color: #c29d0b;
-}
-.columns {
-  margin-bottom: 50px;
-}
-.columns .cc-yellow {
-  background-color: #f1c40f;
-  color: white;
 }
 /* Badges */
 span.cc-yellow {
@@ -6152,474 +7262,6 @@ span.badge[class*="ion-"]:before {
     @name : ._generateColumns
     @description : Generate columns width in flexbox parent
 ***** */
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-1 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 1 / 12 - 0.05px);
-  max-width: calc(100% * 1 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-1 {
-  margin-left: calc(100% * 1 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-1,
-.columns .column.cc-1 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 1 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 1 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-1,
-.columns .column.cc-offset-1 {
-  margin-left: calc(100% * 1 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-2 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 2 / 12 - 0.05px);
-  max-width: calc(100% * 2 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-2 {
-  margin-left: calc(100% * 2 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-2,
-.columns .column.cc-2 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 2 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 2 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-2,
-.columns .column.cc-offset-2 {
-  margin-left: calc(100% * 2 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-3 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 3 / 12 - 0.05px);
-  max-width: calc(100% * 3 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-3 {
-  margin-left: calc(100% * 3 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-3,
-.columns .column.cc-3 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 3 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 3 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-3,
-.columns .column.cc-offset-3 {
-  margin-left: calc(100% * 3 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-4 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 4 / 12 - 0.05px);
-  max-width: calc(100% * 4 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-4 {
-  margin-left: calc(100% * 4 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-4,
-.columns .column.cc-4 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 4 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 4 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-4,
-.columns .column.cc-offset-4 {
-  margin-left: calc(100% * 4 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-5 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 5 / 12 - 0.05px);
-  max-width: calc(100% * 5 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-5 {
-  margin-left: calc(100% * 5 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-5,
-.columns .column.cc-5 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 5 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 5 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-5,
-.columns .column.cc-offset-5 {
-  margin-left: calc(100% * 5 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-6 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 6 / 12 - 0.05px);
-  max-width: calc(100% * 6 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-6 {
-  margin-left: calc(100% * 6 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-6,
-.columns .column.cc-6 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 6 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 6 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-6,
-.columns .column.cc-offset-6 {
-  margin-left: calc(100% * 6 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-7 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 7 / 12 - 0.05px);
-  max-width: calc(100% * 7 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-7 {
-  margin-left: calc(100% * 7 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-7,
-.columns .column.cc-7 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 7 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 7 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-7,
-.columns .column.cc-offset-7 {
-  margin-left: calc(100% * 7 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-8 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 8 / 12 - 0.05px);
-  max-width: calc(100% * 8 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-8 {
-  margin-left: calc(100% * 8 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-8,
-.columns .column.cc-8 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 8 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 8 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-8,
-.columns .column.cc-offset-8 {
-  margin-left: calc(100% * 8 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-9 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 9 / 12 - 0.05px);
-  max-width: calc(100% * 9 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-9 {
-  margin-left: calc(100% * 9 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-9,
-.columns .column.cc-9 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 9 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 9 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-9,
-.columns .column.cc-offset-9 {
-  margin-left: calc(100% * 9 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-10 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 10 / 12 - 0.05px);
-  max-width: calc(100% * 10 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-10 {
-  margin-left: calc(100% * 10 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-10,
-.columns .column.cc-10 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 10 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 10 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-10,
-.columns .column.cc-offset-10 {
-  margin-left: calc(100% * 10 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-11 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 11 / 12 - 0.05px);
-  max-width: calc(100% * 11 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-11 {
-  margin-left: calc(100% * 11 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-11,
-.columns .column.cc-11 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 11 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 11 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-11,
-.columns .column.cc-offset-11 {
-  margin-left: calc(100% * 11 / 12 + 20px/2  - 0.05px);
-}
-.columns {
-  /* NO GUTTERS */
-  /* GUTTERS */
-}
-.columns.cc-no-gutter .column.cc {
-  /* Width calculations without gutters */
-  /* Offsets calculations without gutters */
-}
-.columns.cc-no-gutter .column.cc-12 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 12 / 12 - 0.05px);
-  max-width: calc(100% * 12 / 12  - 0.05px);
-}
-.columns.cc-no-gutter .column.cc-offset-12 {
-  margin-left: calc(100% * 12 / 12  - 0.05px);
-}
-.columns.cc-gutter .column.cc,
-.columns .column.cc {
-  /* Width calculations with gutters */
-  /* Offsets calculations with gutters */
-}
-.columns.cc-gutter .column.cc-12,
-.columns .column.cc-12 {
-  -webkit-box-flex: 0 0 auto;
-  -moz-box-flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: calc(100% * 12 / 12 - 20px  - 0.05px);
-  max-width: calc(100% * 12 / 12 - 20px  - 0.05px);
-}
-.columns.cc-gutter .column.cc-offset-12,
-.columns .column.cc-offset-12 {
-  margin-left: calc(100% * 12 / 12 + 20px/2  - 0.05px);
-}
 /* *****
     @name : ._generateTabletColumns
     @description : Generate responsive tablet columns width in flexbox parent
@@ -6648,354 +7290,6 @@ span.badge[class*="ion-"]:before {
 */
 /* Tablets */
 @media screen and (max-width: 1200px) {
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-1-t {
-    width: calc(100% * 1 / 12);
-    max-width: calc(100% * 1 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-1-t {
-    margin-left: calc(100% * 1 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-1-t,
-  .columns .column.cc-1-t {
-    width: calc(100% * 1 / 12 - 20px);
-    max-width: calc(100% * 1 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-1-t,
-  .columns .column.cc-offset-1-t {
-    margin-left: calc(100% * 1 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-2-t {
-    width: calc(100% * 2 / 12);
-    max-width: calc(100% * 2 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-2-t {
-    margin-left: calc(100% * 2 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-2-t,
-  .columns .column.cc-2-t {
-    width: calc(100% * 2 / 12 - 20px);
-    max-width: calc(100% * 2 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-2-t,
-  .columns .column.cc-offset-2-t {
-    margin-left: calc(100% * 2 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-3-t {
-    width: calc(100% * 3 / 12);
-    max-width: calc(100% * 3 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-3-t {
-    margin-left: calc(100% * 3 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-3-t,
-  .columns .column.cc-3-t {
-    width: calc(100% * 3 / 12 - 20px);
-    max-width: calc(100% * 3 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-3-t,
-  .columns .column.cc-offset-3-t {
-    margin-left: calc(100% * 3 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-4-t {
-    width: calc(100% * 4 / 12);
-    max-width: calc(100% * 4 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-4-t {
-    margin-left: calc(100% * 4 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-4-t,
-  .columns .column.cc-4-t {
-    width: calc(100% * 4 / 12 - 20px);
-    max-width: calc(100% * 4 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-4-t,
-  .columns .column.cc-offset-4-t {
-    margin-left: calc(100% * 4 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-5-t {
-    width: calc(100% * 5 / 12);
-    max-width: calc(100% * 5 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-5-t {
-    margin-left: calc(100% * 5 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-5-t,
-  .columns .column.cc-5-t {
-    width: calc(100% * 5 / 12 - 20px);
-    max-width: calc(100% * 5 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-5-t,
-  .columns .column.cc-offset-5-t {
-    margin-left: calc(100% * 5 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-6-t {
-    width: calc(100% * 6 / 12);
-    max-width: calc(100% * 6 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-6-t {
-    margin-left: calc(100% * 6 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-6-t,
-  .columns .column.cc-6-t {
-    width: calc(100% * 6 / 12 - 20px);
-    max-width: calc(100% * 6 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-6-t,
-  .columns .column.cc-offset-6-t {
-    margin-left: calc(100% * 6 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-7-t {
-    width: calc(100% * 7 / 12);
-    max-width: calc(100% * 7 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-7-t {
-    margin-left: calc(100% * 7 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-7-t,
-  .columns .column.cc-7-t {
-    width: calc(100% * 7 / 12 - 20px);
-    max-width: calc(100% * 7 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-7-t,
-  .columns .column.cc-offset-7-t {
-    margin-left: calc(100% * 7 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-8-t {
-    width: calc(100% * 8 / 12);
-    max-width: calc(100% * 8 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-8-t {
-    margin-left: calc(100% * 8 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-8-t,
-  .columns .column.cc-8-t {
-    width: calc(100% * 8 / 12 - 20px);
-    max-width: calc(100% * 8 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-8-t,
-  .columns .column.cc-offset-8-t {
-    margin-left: calc(100% * 8 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-9-t {
-    width: calc(100% * 9 / 12);
-    max-width: calc(100% * 9 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-9-t {
-    margin-left: calc(100% * 9 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-9-t,
-  .columns .column.cc-9-t {
-    width: calc(100% * 9 / 12 - 20px);
-    max-width: calc(100% * 9 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-9-t,
-  .columns .column.cc-offset-9-t {
-    margin-left: calc(100% * 9 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-10-t {
-    width: calc(100% * 10 / 12);
-    max-width: calc(100% * 10 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-10-t {
-    margin-left: calc(100% * 10 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-10-t,
-  .columns .column.cc-10-t {
-    width: calc(100% * 10 / 12 - 20px);
-    max-width: calc(100% * 10 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-10-t,
-  .columns .column.cc-offset-10-t {
-    margin-left: calc(100% * 10 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-11-t {
-    width: calc(100% * 11 / 12);
-    max-width: calc(100% * 11 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-11-t {
-    margin-left: calc(100% * 11 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-11-t,
-  .columns .column.cc-11-t {
-    width: calc(100% * 11 / 12 - 20px);
-    max-width: calc(100% * 11 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-11-t,
-  .columns .column.cc-offset-11-t {
-    margin-left: calc(100% * 11 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for tablets devices */
-  }
-  .columns.cc-no-gutter .column.cc-12-t {
-    width: calc(100% * 12 / 12);
-    max-width: calc(100% * 12 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-12-t {
-    margin-left: calc(100% * 12 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for tablets devices */
-  }
-  .columns.cc-gutter .column.cc-12-t,
-  .columns .column.cc-12-t {
-    width: calc(100% * 12 / 12 - 20px);
-    max-width: calc(100% * 12 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-12-t,
-  .columns .column.cc-offset-12-t {
-    margin-left: calc(100% * 12 / 12 + 20px/2);
-  }
   .inside {
     width: 708px;
     margin: 0 auto;
@@ -7025,354 +7319,6 @@ span.badge[class*="ion-"]:before {
 */
 /* Phones */
 @media screen and (max-width: 767px) {
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-1-s {
-    width: calc(100% * 1 / 12);
-    max-width: calc(100% * 1 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-1-s {
-    margin-left: calc(100% * 1 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-1-s,
-  .columns .column.cc-1-s {
-    width: calc(100% * 1 / 12 - 20px);
-    max-width: calc(100% * 1 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-1-s,
-  .columns .column.cc-offset-1-s {
-    margin-left: calc(100% * 1 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-2-s {
-    width: calc(100% * 2 / 12);
-    max-width: calc(100% * 2 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-2-s {
-    margin-left: calc(100% * 2 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-2-s,
-  .columns .column.cc-2-s {
-    width: calc(100% * 2 / 12 - 20px);
-    max-width: calc(100% * 2 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-2-s,
-  .columns .column.cc-offset-2-s {
-    margin-left: calc(100% * 2 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-3-s {
-    width: calc(100% * 3 / 12);
-    max-width: calc(100% * 3 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-3-s {
-    margin-left: calc(100% * 3 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-3-s,
-  .columns .column.cc-3-s {
-    width: calc(100% * 3 / 12 - 20px);
-    max-width: calc(100% * 3 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-3-s,
-  .columns .column.cc-offset-3-s {
-    margin-left: calc(100% * 3 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-4-s {
-    width: calc(100% * 4 / 12);
-    max-width: calc(100% * 4 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-4-s {
-    margin-left: calc(100% * 4 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-4-s,
-  .columns .column.cc-4-s {
-    width: calc(100% * 4 / 12 - 20px);
-    max-width: calc(100% * 4 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-4-s,
-  .columns .column.cc-offset-4-s {
-    margin-left: calc(100% * 4 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-5-s {
-    width: calc(100% * 5 / 12);
-    max-width: calc(100% * 5 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-5-s {
-    margin-left: calc(100% * 5 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-5-s,
-  .columns .column.cc-5-s {
-    width: calc(100% * 5 / 12 - 20px);
-    max-width: calc(100% * 5 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-5-s,
-  .columns .column.cc-offset-5-s {
-    margin-left: calc(100% * 5 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-6-s {
-    width: calc(100% * 6 / 12);
-    max-width: calc(100% * 6 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-6-s {
-    margin-left: calc(100% * 6 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-6-s,
-  .columns .column.cc-6-s {
-    width: calc(100% * 6 / 12 - 20px);
-    max-width: calc(100% * 6 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-6-s,
-  .columns .column.cc-offset-6-s {
-    margin-left: calc(100% * 6 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-7-s {
-    width: calc(100% * 7 / 12);
-    max-width: calc(100% * 7 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-7-s {
-    margin-left: calc(100% * 7 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-7-s,
-  .columns .column.cc-7-s {
-    width: calc(100% * 7 / 12 - 20px);
-    max-width: calc(100% * 7 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-7-s,
-  .columns .column.cc-offset-7-s {
-    margin-left: calc(100% * 7 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-8-s {
-    width: calc(100% * 8 / 12);
-    max-width: calc(100% * 8 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-8-s {
-    margin-left: calc(100% * 8 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-8-s,
-  .columns .column.cc-8-s {
-    width: calc(100% * 8 / 12 - 20px);
-    max-width: calc(100% * 8 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-8-s,
-  .columns .column.cc-offset-8-s {
-    margin-left: calc(100% * 8 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-9-s {
-    width: calc(100% * 9 / 12);
-    max-width: calc(100% * 9 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-9-s {
-    margin-left: calc(100% * 9 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-9-s,
-  .columns .column.cc-9-s {
-    width: calc(100% * 9 / 12 - 20px);
-    max-width: calc(100% * 9 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-9-s,
-  .columns .column.cc-offset-9-s {
-    margin-left: calc(100% * 9 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-10-s {
-    width: calc(100% * 10 / 12);
-    max-width: calc(100% * 10 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-10-s {
-    margin-left: calc(100% * 10 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-10-s,
-  .columns .column.cc-10-s {
-    width: calc(100% * 10 / 12 - 20px);
-    max-width: calc(100% * 10 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-10-s,
-  .columns .column.cc-offset-10-s {
-    margin-left: calc(100% * 10 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-11-s {
-    width: calc(100% * 11 / 12);
-    max-width: calc(100% * 11 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-11-s {
-    margin-left: calc(100% * 11 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-11-s,
-  .columns .column.cc-11-s {
-    width: calc(100% * 11 / 12 - 20px);
-    max-width: calc(100% * 11 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-11-s,
-  .columns .column.cc-offset-11-s {
-    margin-left: calc(100% * 11 / 12 + 20px/2);
-  }
-  .columns {
-    /* NO GUTTERS */
-    /* GUTTERS */
-  }
-  .columns.cc-no-gutter .column.cc {
-    /* Width calculations without gutters */
-    /* Offsets calculations without gutters for phones devices */
-  }
-  .columns.cc-no-gutter .column.cc-12-s {
-    width: calc(100% * 12 / 12);
-    max-width: calc(100% * 12 / 12);
-  }
-  .columns.cc-no-gutter .column.cc-offset-12-s {
-    margin-left: calc(100% * 12 / 12);
-  }
-  .columns.cc-gutter .column.cc,
-  .columns .column.cc {
-    /* Width calculations with gutters */
-    /* Offsets calculations with gutters for phones devices */
-  }
-  .columns.cc-gutter .column.cc-12-s,
-  .columns .column.cc-12-s {
-    width: calc(100% * 12 / 12 - 20px);
-    max-width: calc(100% * 12 / 12 - 20px);
-  }
-  .columns.cc-gutter .column.cc-offset-12-s,
-  .columns .column.cc-offset-12-s {
-    margin-left: calc(100% * 12 / 12 + 20px/2);
-  }
   .inside {
     width: 100%;
     margin: 0 auto;
