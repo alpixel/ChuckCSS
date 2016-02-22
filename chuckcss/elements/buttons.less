@@ -1,0 +1,180 @@
+/* ***************** */
+/** LINKS / BUTTONS **/
+/* ***************** */
+
+/* ********************* */
+
+/*
+    - General links & buttons styles.
+
+    /* - - -
+    /!\ : you can override ._btn bg-color in functions.less : ._btn(@bg, @bgHover); /!\
+    /* - - -
+
+*/
+
+/* Simple HTML links */
+a {
+    text-decoration: none;
+    color:@links-tc;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        outline:0;
+    }
+}
+
+/* Buttons && buttons-like HTML links */
+a.btn,
+button {
+    ._inline;
+    color:@links-tc;
+    padding:3px 10px;
+    line-height:@links-btn-lh;
+    border:1px solid @gray-li;
+    text-align:center;
+    font-size: @links-fs;
+    ._border-radius(unit(@links-btn-br,px));
+    ._btn(white, white);
+    ._transition;
+
+    &:focus,
+    &:active,
+    &:visited {
+        outline:none;
+    }
+
+    /* hover : default, change border-color */
+    &:hover {
+        border-color:@gray;
+    }
+
+
+    &.cc {
+        /* Thins buttons, .btn links */
+        &-thin {
+            font-size:@links-btn-thin-fs;
+
+            &[class*="fa-"],
+            &[class*="ion-"] {
+                &:before {
+                    font-size:inherit;
+                    margin-right:7px;
+                }
+            }
+
+            i:before {
+                font-size:inherit;
+                margin-right:7px;
+            }
+
+            &.icon-right:before {
+                margin-right:0;
+            }
+
+            /* Thin Loading buttons */
+            &.cc-loading {
+                &:before {
+                    width: 10px;
+                    height: 10px;
+                    margin-top:-5px;
+                    margin-left:-5px;
+                }
+            }
+        }
+
+        /* Fats buttons, .btn links */
+        &-fat {
+            font-size:@links-btn-fat-fs;
+
+            &[class*="fa-"],
+            &[class*="ion-"] {
+                &:before {
+                    font-size:inherit;
+                }
+            }
+            i:before { font-size:inherit;}
+
+            /* Thin Loading buttons */
+            &.cc-loading {
+                &:before {
+                    width: 24px;
+                    height: 24px;
+                    margin-top:-12px;
+                    margin-left:-12px;
+                }
+            }              
+        }
+
+        /* disabled */
+        &-disabled {
+            ._opacity(0.5);
+            cursor:not-allowed; /* old browser */
+            pointer-events:none;
+        }
+
+        /* Loading buttons */
+        &-loading {
+            position:relative;
+            color:transparent !important;
+            cursor:not-allowed; 
+            pointer-events:none;
+
+            &::-moz-selection {
+                background: transparent;
+                color:transparent;
+            }
+            &::selection {
+                background: transparent;
+                color:transparent;
+            }
+
+            &:before {
+                display:block;
+                border:2px solid @gray-li;
+                border-top-color: @gray-li;
+                border-right-color: lighten(@gray-li,50%);
+                border-bottom-color: lighten(@gray-li,50%);
+                border-left-color: lighten(@gray-li,50%);
+                ._border-radius(50%);
+                content: " ";
+                width: 16px;
+                height: 16px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                margin-top:-8px;
+                margin-left:-8px;
+                ._loading-spin;
+            }
+            
+        }
+    }
+
+    /* Icon right */
+    &.icon-right {
+        position:relative;
+        ._flex-display(inline-flex);
+        ._flex-justify(space-between);
+        ._flex-align-content(center);
+        ._flex-align-items(center);
+
+        i:before,
+        &:before {
+            ._flex-order(2);
+            margin:0 0 0 10px;
+        }
+    }
+}
+
+
+/* Hack Firefox for .cion-right on button elements (hide icon) */
+@-moz-document url-prefix() {
+    button.icon-right {
+        ._inline;
+        &:before {
+            display:none;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+/* ******* */
+/** LISTS **/
+/* ******* */
+
+/* ********************* */
+
+/* Specific for Drupal : reset list style margin, padding & border */
+.item-list ul li {._reset;}
+
+
+ul, dl, ol {
+    color:@text-mc; /* defined in settings.less */
+    margin:@helper-ma;
+
+    &.cc-no-margin {
+        margin:0;
+    }
+}
+
+/* ul */
+ul {
+    li {
+        list-style:disc outside;
+
+        /* Specific for Drupal */
+        &.leaf {
+            background-image:none;
+            list-style:none;
+            ._reset;
+        }
+    }
+
+    
+    &.cc {
+        &-unstyled {
+            li {
+                list-style:none;
+            }
+        }
+
+        /* Horizontal lists */
+        &-horizontal {
+            li {
+                ._inline;
+                margin:0 20px;
+
+                &[class*="fa-"],
+                &[class*="ion-"] {
+                    margin-left:40px;
+
+                    &.icon-right {
+                        margin-left:20px;
+                        position:relative;
+                        ._flex-display(inline-flex);
+                        ._flex-justify(space-between);
+                        ._flex-align-content(center);
+                        ._flex-align-items(center);
+
+                        &:before {
+                            ._flex-order(2);
+                            margin:0 0 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+/* Ordered lists */
+ol {
+    li {
+        list-style:decimal outside;
+        ._reset;
+
+        &:before {
+            display:none;
+        }
+    }
+}

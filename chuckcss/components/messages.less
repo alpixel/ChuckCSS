@@ -1,0 +1,80 @@
+/* ********** */
+/** MESSAGES **/
+/* ********** */
+
+/* ********************* */
+
+/*
+    - General messages styles
+    - types : warning, error, success, info = status
+
+    <div class="message message-type">
+        ...
+    </div>
+*/
+
+.message {
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    border-left-width:7px;
+    margin:20px 0;
+    position:relative;
+    //._border-radius(unit(@alert-br,px));
+
+    /* Links inside .message elements */
+    a {
+        text-decoration:underline;
+    }
+
+    /* List : add margin-left */
+    ul {
+        width:90%;
+        margin:15px auto;
+    }
+
+    /* Messages types */
+    /* Alerts types */
+    &-primary {
+        border-color:@primary;
+        color:@primary;
+
+        p,div,ul,
+        button.close,
+        a {
+            color:@primary;
+        }
+    }
+    &-status,
+    &-info {
+        border-color: @alert-in-bc;
+        color:@alert-in-tc;
+
+        p,div,ul, a {
+            color:@alert-in-tc;
+        }
+    }
+    &-warning {
+        border-color: @alert-wa-bc;
+        color:@alert-wa-tc;
+
+        p, div, ul, a {
+            color:@alert-wa-tc;
+        }
+    }
+    &-error {
+        border-color: @alert-er-bc;
+        color:@alert-er-tc;
+
+        p, div, ul, a {
+            color:@alert-er-tc;
+        }
+    }
+    &-success {
+        border-color: @alert-su-bc;
+        color:@alert-su-tc;
+
+        p, div, ul, a {
+            color:@alert-su-tc;
+        }
+    }
+}

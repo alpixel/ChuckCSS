@@ -1,0 +1,64 @@
+/* ************* */
+/** BLOCKQUOTES **/
+/* ************* */
+
+/* ********************* */
+
+blockquote {
+    ._reset;
+    padding:5px 5px 5px 30px;
+    border-left:4px solid @blockquotes-bc;
+    font-style:italic;
+    margin:2em 0;
+
+
+
+    &.cc {
+        /* Quoted blockquote : show quote icon from FontAwesome */
+        &-quoted {
+            position:relative;
+            padding-left:50px;
+
+            &:before {
+                position:absolute;
+                left:11px;
+                top:9px;
+                ._fa('\f10d'); /* ._fa('string') / defined in core/functions.less */
+                font-size:@text-fs;
+                color:@blockquotes-ic;
+            }
+        }
+
+        /* Reverse blockquote : right alignment */
+        &-reverse {
+            text-align:right;
+            padding:5px 30px 5px 5px;
+            border-left:0;
+            border-right:4px solid @blockquotes-bc;
+
+            &.cc-quoted {
+                padding-left:0;
+                padding-right:50px;
+
+                &:before {
+                    left:inherit;
+                    right:11px;
+                }
+            }
+        }
+    }
+
+
+    /* Footer on Blockquote */
+    footer {
+        font-style:normal;
+        font-size:80%;
+        color:@blockquotes-footer-tc;
+        padding-top:10px;
+
+        &:before {
+            ._fa('\f105', 100%, @blockquotes-footer-tc); /* ._fa('string') / defined in core/functions.less */
+            margin-right:5px;
+        }
+    }
+}

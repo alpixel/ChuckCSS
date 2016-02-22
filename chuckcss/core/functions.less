@@ -25,7 +25,7 @@
     ._cover
     ._truncate
     ._btn
-    ._flexbox | ._flex-order | ._flex | ._align-self
+    ._flex-... | ._flex-order | ._flex | ._align-self
 */
 
 /* *****
@@ -47,16 +47,27 @@
       }
 
 ***** */
-._tablet(@rules) {
-    @media screen and (max-width: @tablet-mw) {
-        @rules();
-    }
-}
 ._phone(@rules) {
     @media screen and (max-width: @phone-mw) {
         @rules();
     }
 }
+._tablet(@rules) {
+    @media screen and (max-width: @tablet-mw) {
+        @rules();
+    }
+}
+._tabletUp(@rules) {
+    @media screen and (min-width: (@phone-mw+1)) {
+        @rules();
+    }
+}
+._desktop(@rules) {
+    @media screen and (min-width: (@tablet-mw+1)) {
+        @rules();
+    }
+}
+
 
 /* *****
     @name : ._border-radius
@@ -568,23 +579,23 @@
 
 
 /* *****
-    @name : ._flexbox
-    @description : generate flexbox display
+    @name : ._flex-
+    @description : generate flexbox
     @params :
-      - @direction : row | row-reverse | column | column-reverse
-      - @wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
-      - @justify : flex-start | flex-end | center | space-between | space-around
-      - @align : flex-start | flex-end | center | baseline | stretch
-      - @align-content : flex-start | flex-end | center | space-between | space-around | stretch
-      - @display : flex | inline-flex
+      - -direction : row | row-reverse | column | column-reverse
+      - -wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
+      - -justify : flex-start | flex-end | center | space-between | space-around
+      - -align : flex-start | flex-end | center | baseline | stretch
+      - -align-content : flex-start | flex-end | center | space-between | space-around | stretch
+      - -display : flex | inline-flex
 
     @exemple :
       el {
-          ._flexbox(row,wrap,center);
+          ._flex-display;
+          ._flex-direction(column);
       }
 ***** */
-._flexbox(@direction : row, @wrap : nowrap, @justify : space-between, @align : stretch, @align-content : stretch, @display: flex) {
-
+._flex-display(@display:flex) {
     /* Flexbox display */
     display: -webkit-box;
     display: ~"-moz-box";
@@ -592,19 +603,25 @@
     display: ~"-webkit-@{display}";
     display: @display;
     display:box;
+}
 
+._flex-direction(@direction:row) {
     /* Direction */
     -webkit-flex-direction : @direction;
     -moz-flex-direction : @direction;
     -ms-flex-direction : @direction;
     flex-direction : @direction;
+}
 
+._flex-wrap(@wrap:nowrap) {
     /* Flex line wrapping */
     -webkit-flex-wrap: @wrap;
     -moz-flex-wrap: @wrap;
     -ms-flex-wrap: @wrap;
     flex-wrap: @wrap;
+}
 
+._flex-justify(@justify:flex-start) {
     /* Main axis alignment */
     -webkit-justify-content: @justify;
     -moz-justify-content: @justify;
@@ -616,14 +633,18 @@
     & when (@justify = space-between), (@justify = space-around) {
       -ms-flex-pack: justify;
     }
+}
 
+._flex-align-items(@align:stretch) {
     /* Cross-axis alignment */
     -webkit-align-items: @align;
     -moz-align-items: @align;
     -ms-align-items: @align;
     -ms-flex-align: @align;
     align-items: @align;
+}
 
+._flex-align-content(@align-content:stretch) {
     /* Packing Flex Lines */
     -webkit-align-content: @align-content;
     -moz-align-content: @align-content;
@@ -631,6 +652,8 @@
     -ms-flex-line-pack: @align-content;
     align-content: @align-content;
 }
+
+
 /* *****
     @name : ._flex
     @description : flex-grow, flex-shrink, flex-basis properties
@@ -638,7 +661,7 @@
 
     @exemple :
       .parent {
-        ._flexbox;
+        ._flex-display;
 
         .child {
           ._flex(0 0 250px);
@@ -659,17 +682,17 @@
 
     @exemple :
       .parent {
-        ._flexbox;
+        ._flex-display;
 
         .child {
           ._flex(0 auto);
 
           &:nth-child(1) {
-            ._flex-order:2; // this child will be displayed last
+            ._flex-order(1); // this child will be displayed last
           }
 
           &:nth-child(2) {
-            ._flex-order:-1; // this child will be displayed before all others children
+            ._flex-order(-1); // this child will be displayed before all others children
           }
         }
       }
@@ -688,84 +711,20 @@
 
     @exemple :
       .parent {
-        ._flexbox;
+        ._flex-display;
 
         .child {
           ._flex(0 auto);
 
           &:nth-child(2) {
-            ._align-self(flex-end); // this child will be displayed with property align-self:flex-end
+            ._flex-align-self(flex-end); // this child will be displayed with property align-self:flex-end
           }
         }
       }
 ***** */
-._align-self(@align: auto) {
+._flex-align-self(@align: auto) {
   -webkit-align-self: @align;
   -moz-align-self: @align;
   -ms-align-self: @align;
   align-self: @align;
 }
-
-
-
-/*
-==============================================
-alpixel animation
-  * "X" of ALPIXEL on footer
-==============================================
-*/
-._alpixel(){
-  animation-name: alpixel;
-  -webkit-animation-name: alpixel;
-
-  animation-duration: 0.6s;
-  -webkit-animation-duration: 0.6s;
-
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-
-  transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-}
-@keyframes alpixel {
-  0% {
-    transform: translate3d(0,0,0) scaleY(1);
-  }
-  60%{
-    transform: translate3d(0,-50%,0) scaleY(1.1);
-  }
-  70%{
-    transform: translate3d(0,0,0) scaleY(0.95) scaleX(1.05);
-  }
-  80%{
-    transform: translate3d(0,0,0) scaleY(1.05) scaleX(1);
-  }
-  90%{
-    transform: translate3d(0,0,0) scaleY(0.95) scaleX(1);
-  }
-  100%{
-    transform: translate3d(0,0,0) scaleY(1) scaleX(1);
-  }
-}
-@-webkit-keyframes alpixel {
-  0% {
-    -webkit-transform: translate3d(0,0%,0) scaleY(1);
-  }
-  60%{
-    -webkit-transform: translate3d(0,-50%,0) scaleY(1.1);
-  }
-  70%{
-    -webkit-transform: translate3d(0,0,0) scaleY(0.95) scaleX(1.05);
-  }
-  80%{
-    -webkit-transform: translate3d(0,0,0) scaleY(1.05) scaleX(1);
-  }
-  90%{
-    -webkit-transform: translate3d(0,0,0) scaleY(0.95) scaleX(1);
-  }
-  100%{
-    -webkit-transform: translate3d(0,0,0) scaleY(1) scaleX(1);
-  }
-}
-

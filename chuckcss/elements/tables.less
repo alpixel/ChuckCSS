@@ -1,0 +1,140 @@
+/* ******** */
+/** TABLES **/
+/* ******** */
+
+/* ********************* */
+
+table {
+    width:100%;
+    border-collapse: collapse;
+    margin:10px 0;
+
+    /* headers default style */
+    /* note : "thead td" has no sense but that is the way some WYSIWYG editros generates tables headers */
+    thead {
+        td,th {
+            font-weight:400;
+            font-size:@text-fs *(4/3);
+            padding:@tables-cells-padding; /* defined in settings.less */
+            border:0;
+            border-bottom:2px solid @tables-ending;
+            text-align:left;
+            vertical-align:top;
+        }
+    }
+
+
+    /* Cells default style */
+    tbody {
+        /* Add color line after last line */
+        tr:last-child td {
+            border-bottom-width:3px;
+        }
+
+        td {
+            padding:@tables-cells-padding; /* defined in settings.less */
+            border-bottom:1px solid @tables-ending; /* defined in settings.less */
+            vertical-align:middle;
+        }
+    }
+
+
+
+    &.cc {
+
+        /* Layout fixed tables */
+        &-equal-cols {
+            table-layout:fixed;
+        }
+
+            /* Striped tables : horizontal */
+        &-striped {
+            tbody tr:nth-child(2n+1) td {
+                background-color:@tables-striped-even; /* defined in settings.less */
+            }
+            tbody tr:nth-child(2n) td {
+                background-color:@tables-striped-odd; /* defined in settings.less */
+            }
+        }
+
+        /* Striped tables : vertical */
+        &-striped-col {
+            tbody tr td:nth-child(2n+1) {
+                background-color:@tables-striped-even; /* defined in settings.less */
+            }
+            tbody tr td:nth-child(2n) {
+                background-color:@tables-striped-odd; /* defined in settings.less */
+            }
+        }
+
+        /* hovered : highlight the hovered line */
+        &-hovered {
+            tbody tr:hover td {
+                background-color:@tables-hover-bg; /* defined in settings.less */
+            }
+        }
+
+        /* Top alignment cells */
+        &-valign-top {
+            tbody td {
+                vertical-align: top;
+            }
+        }
+
+        /* Bordered table */
+        &-bordered {
+            thead {
+                td,th {
+                    border:1px solid  @tables-ending;
+                    border-bottom-width:2px;
+                }
+            }
+
+            tbody {
+                tr {
+                    &:last-child td {
+                        border-bottom-width:3px;
+                    }
+                    td {
+                        border:1px solid  @tables-ending;
+                    }
+                }
+            }
+        }
+
+        /* Unbordered tables */
+        &-unbordered {
+            tbody,
+            thead {
+                tr {
+                    &:last-child td,
+                    td,th {
+                        border:0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* RESPONSIVE TABLES */
+    ._phone({
+        display:block;
+        overflow-x:auto;
+        width:100%;
+
+        thead {
+            td,th {
+                font-size:@text-fs;
+            }
+        }
+
+        tbody {
+            td {
+                font-size:@text-fs*9/10;
+            }
+        }
+
+
+    });
+}

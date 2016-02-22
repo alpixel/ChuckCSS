@@ -1,0 +1,113 @@
+/* ******** */
+/** ALERTS **/
+/* ******** */
+
+/* ********************* */
+
+/*
+    - General alerts styles
+    - types : warning, error, success, info = status
+
+    <div class="alert alert-type">
+        ...
+    </div>
+*/
+
+.alert {
+    padding: 15px;
+    padding-right:45px;
+    border: 1px solid transparent;
+    margin:20px 0;
+    position:relative;
+    ._border-radius(unit(@alert-br,px));
+
+    /* Links inside .message elements */
+    a {
+        text-decoration:underline;
+    }
+
+    /* List : add margin-left */
+    ul {
+        width:90%;
+        margin:15px auto;
+    }
+
+    /* Close icon to the right */
+    button.close {
+        ._reset;
+        display:block;
+        position:absolute;
+        right:0px;
+        top:0px;
+        padding:15px;
+        height:100%;
+        background-color:transparent;
+
+        i {
+            ._reset;
+
+            &:before {
+                ._reset;
+                font-size:@text-fs*1.5;
+            }
+        }
+    }
+
+    /* Alerts types */
+    &-primary {
+        background-color: lighten(@primary,70%);
+        border-color: lighten(@primary,60%);
+        color:@primary;
+
+        p,div,ul,
+        button.close,
+        a {
+            color:@primary;
+        }
+    }
+    &-status,
+    &-info {
+        background-color: @alert-in-bg;
+        border-color: @alert-in-bc;
+        color:@alert-in-tc;
+
+        p,div,ul,
+        button.close,
+        a {
+            color:@alert-in-tc;
+        }
+    }
+    &-warning {
+        background-color: @alert-wa-bg;
+        border-color: @alert-wa-bc;
+        color:@alert-wa-tc;
+
+        p,div,ul,
+        button.close,
+        a {
+            color:@alert-wa-tc;
+        }
+    }
+    &-error {
+        background-color: @alert-er-bg;
+        border-color: @alert-er-bc;
+        color:@alert-er-tc;
+
+        p,div,ul,
+        button.close,
+        a {
+            color:@alert-er-tc;
+        }
+    }
+    &-success {
+        background-color: @alert-su-bg;
+        border-color: @alert-su-bc;
+        color:@alert-su-tc;
+
+        p,div,ul,
+        button.close,
+        a {
+            color:@alert-su-tc;
+        }
+    }
+}

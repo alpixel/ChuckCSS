@@ -1,0 +1,51 @@
+/* ******** */
+/** BADGES **/
+/* ******** */
+
+/* ********************* */
+
+/*
+    - General badges styles
+    
+
+    <span class="badge">...</span>
+*/
+
+span.badge {
+    ._inline;
+    position:relative;
+    top:-1px;
+    background-color:@gray-da;
+    color:white;
+    padding:0 8px;
+    ._border-radius(10px);
+    font-size:@text-fs*5/6;
+    margin-left:5px;
+
+    i {
+        &:before {
+            ._reset;
+        }
+    }
+
+    /* Thin buttons */
+    button.cc-thin &,
+    a.btn.cc-thin & {
+        font-size:@links-btn-thin-fs;
+        top:0;  
+
+        &:before {
+            font-size:@links-btn-thin-fs;
+        }
+    }
+
+    /* Fat buttons */
+    button.cc-fat &,
+    a.btn.cc-fat & {
+        font-size:@links-btn-fat-fs*5/6;
+
+        &:before {
+            font-size:@links-btn-fat-fs*5/6;
+        }
+    }
+}

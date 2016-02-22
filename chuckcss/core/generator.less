@@ -1,0 +1,565 @@
+/*!
+    == GENERATORS ==
+*/
+
+/*
+** Mixins list **
+    ._generateColorsClass
+    ._generatePaddingMarginClass
+    ._generateIcons
+    ._generateColumns
+    _generateTabletColumns
+    _generatePhoneColumns
+*/
+
+/* *****
+    @name : ._generateColorsClass
+    @description : Generate colors styles when using "cc-{color}" class on an element
+    @params : @aColors : array built in settings.less file
+***** */
+._generateColorsClass(@iterator:1) when(@iterator <= length(@aColors)) {
+    @colorName: extract(extract(@aColors, @iterator),1);
+    @colorValue : extract(extract(@aColors, @iterator),2);
+
+    /* texts */
+    h1,h2,h3,h4,h5,h6,
+    p,div,
+    i,a {
+        &.cc{
+            &-@{colorName} {
+                color: @colorValue;
+
+                small {
+                     color:lighten(@colorValue,10%)
+                }
+            }
+
+            &-bg-@{colorName} {
+                color:white;
+                background-color:@colorValue;
+            }
+        }
+
+    }
+
+    /* lists */
+    li.cc-@{colorName}:before {
+        color: @colorValue;
+    }
+
+    /* blockquotes */
+    blockquote.cc-@{colorName} {
+        border-left:4px solid @colorValue;
+
+        &.cc {
+            &-quoted:before {
+                color:@colorValue;
+            }
+            &-reverse {
+                border-right-color:@colorValue;
+            }
+        }
+    }
+
+    /* Tables */
+    table {
+        &.cc-@{colorName} {
+            thead td, thead th {
+                background-color:@colorValue;
+                color:white;
+                border-bottom-color:darken(@colorValue,20%);
+            }
+
+            tbody tr td {
+                border-bottom:1px solid @colorValue;
+            }
+
+            /* Bordered & Colored tables */
+            &.cc-bordered {
+                thead {
+                    td,th {
+                        border-color:darken(@colorValue,10%);
+                    }
+                }
+
+                tbody tr td {
+                    border-color:darken(@colorValue,10%);
+                }
+            }
+        }
+
+
+        tbody tr {
+            &.cc-@{colorName} {
+                background-color:@colorValue;
+                color:white;
+                border-bottom:0
+            }
+        }
+    }
+
+
+
+    /* Links / Buttons */
+    a.btn,
+    button {
+        &.cc-@{colorName} {
+            color:@links-btn-tc;
+            ._btn(@colorValue);
+            border-color:@colorValue;
+
+            &:hover {
+                color:@links-btn-hover-tc;
+                border-color:@colorValue;
+            }
+
+            /* Loading buttons : show white loader */
+            &.cc-loading:before {
+                border-color:white rgba(255,255,255,0.2) rgba(255,255,255,0.2) rgba(255,255,255,0.2);
+            }
+
+            /* Outlined buttons / links */
+            &.cc-outlined {
+                color:@colorValue;
+                ._btn(white,white);
+                border:1px solid @colorValue;
+
+                &:hover {
+                    border-color:darken(@colorValue,20%);
+                    color:darken(@colorValue,20%);
+                }
+
+                /* Loading + outlined buttons */
+                &.cc-loading {
+                    color:transparent;
+
+                    &:before {
+                        border-color: @colorValue lighten(@colorValue,30%) lighten(@colorValue,30%) lighten(@colorValue,30%);
+                    }
+                }
+            }
+
+            span.badge {
+                background-color:white;
+                color:@colorValue;
+            }
+        }
+    }
+
+
+    /* Colored forms */
+    form.cc-@{colorName} {
+
+        .form {
+            &-radio,
+            &-checkbox {
+                /* label with FontAwesome */
+                label.checked:before {
+                    color:@colorValue;
+                }
+            }
+
+            &-ps {
+                span {
+                    background-color:@colorValue;
+
+                    &:last-child {
+                        background-color:@colorValue;
+                    }
+                }
+            }
+        }
+
+        select,
+        textarea,
+        input {
+            &:focus {
+                border-color:@colorValue;
+            }
+        }
+
+        input[type="submit"],
+        button[type="submit"] {
+            ._btn(@colorValue);
+        }
+    }
+
+    // Grids
+    .columns {
+        margin-bottom:50px;
+        .cc-@{colorName} {
+            background-color:@colorValue;
+            color:white;
+        }
+    }
+
+    /* Badges */
+    span.cc {
+        &-@{colorName} {
+            background-color:@colorValue;
+            color:white;
+        }
+    }
+
+    /* Tabs */
+    .tabs {
+
+        &.cc-@{colorName} {
+
+            &.cc {
+                &-bordered {
+                    &>li {
+                        &:hover,
+                        &.active {
+                            a:not(.btn) {
+                                border-color: @colorValue @colorValue white @colorValue;
+                            }
+                        }
+                    }
+                }
+                &-pills {
+                    &>li {
+                        &.active,
+                        &:hover {
+                            a:not(.btn) {
+                                background-color:@colorValue;
+                                border-top:1px solid @colorValue;
+                                border-bottom:1px solid @colorValue;
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        
+
+            &>li {
+                /* Active child */
+                &:hover,
+                &.active {
+                    a:not(.btn) {
+                        color:@colorValue;
+                        border-bottom-color:@colorValue;
+                    }
+                }
+            }
+        }
+
+        /* Phone */
+        ._phone({
+            &.cc-@{colorName} {
+                &.cc {
+                    &-bordered {
+                        &>li {                   
+                            &:hover,
+                            &.active {
+                                border-color:@colorValue transparent transparent;
+                                
+                                &+li {
+                                    border-color:@colorValue transparent transparent;
+                                }
+                            }
+
+                            &:last-child {
+                                &:hover,
+                                &.active {
+                                    border-color:@colorValue transparent;
+                                }
+                            }
+                        }
+                    }
+
+                    &-pills {
+                        &>li {
+                            &:nth-child(1) {
+                                &.active,
+                                &:hover {
+                                    a:not(.btn){
+                                        border-top-width:1px;
+                                        border-left-color:@colorValue;
+                                    }
+                                }
+                            }
+
+                            &.active,
+                            &:hover {
+                                a:not(.btn){
+                                   border-top-width:0px;
+                                    border-color:@colorValue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    ._generateColorsClass((@iterator + 1));
+}
+._generateColorsClass; // Launch _generateColorsClass
+
+
+
+/* *****
+    @name : ._generatePaddingMarginClass
+    @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
+***** */
+._generatePaddingMarginClass(@iterator:0) when(@iterator <= 25) {
+
+    .cc {
+        &-pa-@{iterator} {
+            padding:unit(@iterator,px);
+        }
+        &-pat-@{iterator} {
+            padding-top:unit(@iterator,px);
+        }
+        &-par-@{iterator} {
+            padding-right:unit(@iterator,px);
+        }
+        &-pab-@{iterator} {
+            padding-bottom:unit(@iterator,px);
+        }
+        &-pal-@{iterator} {
+            padding-left:unit(@iterator,px);
+        }
+        &-ma-@{iterator} {
+            margin:unit(@iterator,px);
+        }
+        &-mat-@{iterator} {
+            margin-top:unit(@iterator,px);
+        }
+        &-mar-@{iterator} {
+            margin-right:unit(@iterator,px);
+        }
+        &-mab-@{iterator} {
+            margin-bottom:unit(@iterator,px);
+        }
+        &-mal-@{iterator} {
+            margin-left:unit(@iterator,px);
+        }
+    }
+
+    ._generatePaddingMarginClass((@iterator + 1));
+}
+._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
+
+
+
+/* *****
+    @name : ._generateIcons
+    @description : Generate icons  when using fa- & -ion class
+    @Used : in alerts, buttons, lists, messages, badges
+***** */
+._generateIcons() {
+
+    [class*="fa-"],
+    [class*="ion-"] {
+
+        /* Icon */
+        &:before {
+            ._inline;
+            font-size:@text-fs;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            text-rendering: auto;
+            speak: none;
+            margin-right: 10px;
+        }
+
+        li& {
+            list-style:none;
+            position:relative;
+
+            &:before {
+                position:absolute;
+                left: -20px;
+                top: 4px;
+            }
+
+            /* Override horizontal lists */
+            ul.cc-horizontal & {
+                &:before {
+                    position:static;
+                }
+            }
+        }
+
+        span.badge& {
+            &:before {
+                margin-right:0;
+            }
+        }
+    }
+
+    /* Ionicons */
+    [class*="ion-"] {
+        &:before {
+            font-family: "Ionicons";
+        }
+    }
+
+    /* FontAwesome */
+    [class*="fa-"] {
+        &:before {
+            font-family: "FontAwesome";
+        }
+    }
+}
+._generateIcons; // Launch _generateIcons
+
+
+/* *****
+    @name : ._generateColumns
+    @description : Generate columns width in flexbox parent
+***** */
+._generateColumns(@iterator:1) when(@iterator <= @cols-total) {
+
+    .columns {
+
+        /* NO GUTTERS */
+        &.cc-no-gutter .column {
+            &.cc {
+                /* Width calculations without gutters */
+                &-@{iterator} {
+                    ._flex(0 0 auto);
+                    width: ~'calc(100% * @{iterator} / @{cols-total} - 0.05px)'; // Substract 0.05px for IE compatibilities
+                    max-width: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+                }
+
+                /* Offsets calculations without gutters */
+                &-offset-@{iterator} {
+                    margin-left: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+                }
+            }
+        }
+
+        /* GUTTERS */
+        &.cc-gutter .column,
+        .column {
+            &.cc {
+                /* Width calculations with gutters */
+                &-@{iterator} {
+                    ._flex(0 0 auto);
+                    width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+                    max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+                }
+                /* Offsets calculations with gutters */
+                &-offset-@{iterator} {
+                    margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
+                }
+            }
+        }
+    }
+
+    ._generateColumns((@iterator + 1));
+}
+._generateColumns; // Launch _generateColumns
+
+
+/* *****
+    @name : ._generateTabletColumns
+    @description : Generate responsive tablet columns width in flexbox parent
+***** */
+._generateTabletColumns(@iterator:1) when(@iterator <= @cols-total) {
+
+    .columns {
+
+        /* NO GUTTERS */
+        &.cc-no-gutter .column {
+            &.cc{
+                /* Width calculations without gutters */
+                &-@{iterator} {
+                    &-t {
+                        width: ~'calc(100% * @{iterator} / @{cols-total})';
+                        max-width: ~'calc(100% * @{iterator} / @{cols-total})';
+                    }
+                }
+
+                /* Offsets calculations without gutters for tablets devices */
+                &-offset-@{iterator}-t {
+                    margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
+                }
+            }
+        }
+
+
+        /* GUTTERS */
+        &.cc-gutter .column,
+        .column {
+            &.cc {
+                /* Width calculations with gutters */
+                &-@{iterator} {
+                    &-t {
+                        width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+                        max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+                    }
+                }
+
+                /* Offsets calculations with gutters for tablets devices */
+                &-offset-@{iterator}-t {
+                    margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
+                }
+            }
+        }
+    }
+
+    ._generateTabletColumns((@iterator + 1));
+}
+
+
+
+/* *****
+    @name : ._generatePhoneColumns
+    @description : Generate responsive smartphone columns width in flexbox parent
+***** */
+._generatePhoneColumns(@iterator:1) when(@iterator <= @cols-total) {
+
+    .columns {
+
+        /* NO GUTTERS */
+        &.cc-no-gutter .column {
+            &.cc {
+                /* Width calculations without gutters */
+                &-@{iterator} {
+                    &-s {
+                        width: ~'calc(100% * @{iterator} / @{cols-total})';
+                        max-width: ~'calc(100% * @{iterator} / @{cols-total})';
+                    }
+                }
+
+                /* Offsets calculations without gutters for phones devices */
+                &-offset-@{iterator}-s {
+                    margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
+                }
+            }
+        }
+
+        /* GUTTERS */
+        &.cc-gutter .column,
+        .column {
+            &.cc {
+                /* Width calculations with gutters */
+                &-@{iterator} {
+                    &-s {
+                        width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+                        max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+                    }
+                }
+
+                /* Offsets calculations with gutters for phones devices */
+                &-offset-@{iterator}-s {
+                    margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
+                }
+
+            }
+        }
+    }
+
+    ._generatePhoneColumns((@iterator + 1));
+}

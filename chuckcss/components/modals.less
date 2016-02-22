@@ -1,0 +1,167 @@
+/* ******** */
+/** MODALS **/
+/* ******** */
+
+/* ********************* */
+
+/*
+    - General tabs
+    
+
+     <div id="modal-id" class="modal">
+            <div class="modal-close">
+                <button><i class="ion-ios-close"></i></buttton>
+            </div>
+
+
+            <div class="modal-overlay"></div>
+
+
+            <div class="modal-content">
+                <p>
+                    Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef. Frankfurter turkey pork salami strip steak meatball bacon spare ribs. Chicken brisket venison capicola beef prosciutto shoulder picanha pork sausage leberkas tail hamburger salami tri-tip. Short ribs sausage meatloaf pig fatback. Shankle jerky tail, strip steak porchetta alcatra cupim pork ball tip.
+                </p>
+            </div>
+        </div>
+*/
+
+body.opened-modal {
+    overflow:hidden !important;
+}
+
+/* Modal wrapper */
+.modal {
+    ._flex-display;
+    ._flex-justify(center);
+    ._flex-align-items(center);
+    z-index:-1;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    ._opacity(0);
+
+    /* Shown modal */
+    &.active {
+        ._opacity(1);
+        z-index:99;
+
+        .modal-content {
+            ._opacity(1);
+            ._scale(1);
+            top:0px;
+        }
+
+        .modal-close {
+            ._transition(0.3s, top, ease-out, 0.3s);
+            top:20px;
+        }
+    }
+
+
+    /* Sizes */
+    &.modal {
+        &-large {
+            .modal-content {
+                width:80%;
+            }
+        }
+        &-small {
+            .modal-content {
+                width:30%
+            }
+        }
+    }
+
+    /* Close button */
+    &-close {
+        ._reset;
+        position:fixed;
+        top:-60px;
+        left:50%;
+        z-index:98;
+        background:none;
+        ._border-radius(100%);
+        line-height:inherit;
+        background-color:transparent;
+        width:40px;
+        height:40px;
+        margin-left:-20px;    
+        
+
+        &:after,
+        &:before {
+            ._inline;
+            content:' ';
+            width:19px;
+            height:3px;
+            background-color:white;
+            
+            ._border-radius(4px);
+            position:absolute;
+            top:19px;
+            left:10px;
+        }
+        &:before {
+            ._rotate(-45deg);
+        }
+        &:after {
+            ._rotate(45deg);
+        }
+
+        &:hover {
+            background-color:lighten(@red,25%);
+        }
+    }
+
+    /* Content */
+    &-content {
+        width:50%;
+        max-height:80vh;
+        overflow-y:auto;
+        overflow-x:hidden;
+        background-color:white;
+        z-index:99;
+        ._border-radius(4px);
+        ._opacity(0);
+        ._transition;
+        ._scale(0.5);
+        
+        .modal-body,
+        .modal-footer,
+        .modal-header {
+            padding:20px;
+        }
+
+        .modal-header {
+            border-bottom:1px solid #cecece;
+            color:@gray;
+            ._uppercase;
+        }
+
+        .modal-footer {
+            border-top:1px solid #cecece;
+        }
+    }
+
+    /* Overlay */
+    &-overlay {
+        position:fixed;
+        background-color:rgba(0,0,0,0.85);
+        top:0px;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        z-index:97;
+    }
+
+
+    
+    /* Responsive */
+    ._phone({
+        .modal-content {
+            width:90% !important;
+        }
+    });
+}
