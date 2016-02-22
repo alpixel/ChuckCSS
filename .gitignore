@@ -12,6 +12,4 @@ Gruntfile.js.*
 ._*
 vendor
 vendor/*
-bower.*
-.bowerrc
 bower_components
