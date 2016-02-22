@@ -8,12 +8,14 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "dist/chuckcss.min.css": "chuckcss/front.less"
+          "dist/chuckcss.min.css": "chuckcss/front.less",
+          "dist/print.css": "chuckcss/media/print.less"
         }
       },
       development: {
         files: {
-          "dist/chuckcss.css": "chuckcss/front.less"
+          "dist/chuckcss.css": "chuckcss/front.less",
+          "dist/print.css": "chuckcss/media/print.less"
         }
       }
     },
