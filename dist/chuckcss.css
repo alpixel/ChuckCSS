@@ -1820,13 +1820,12 @@ blockquote.cc-quoted:before {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 10pt;
+  font-size: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
   content: '\f10d';
   /* ._fa('string') / defined in core/functions.less */
-  font-size: 1.4rem;
   color: #29b7e1;
 }
 blockquote.cc-reverse {
@@ -2223,7 +2222,6 @@ form label {
   vertical-align: middle;
   padding-right: 10px;
   font-weight: 400;
-  font-size: 1.4rem;
 }
 form label.block {
   display: block;
@@ -3584,6 +3582,7 @@ blockquote.cc-primary.cc-quoted:before {
   color: #29b7e1;
 }
 blockquote.cc-primary.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #29b7e1;
 }
 /* Tables */
@@ -3807,6 +3806,7 @@ blockquote.cc-green.cc-quoted:before {
   color: #80ae37;
 }
 blockquote.cc-green.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #80ae37;
 }
 /* Tables */
@@ -4030,6 +4030,7 @@ blockquote.cc-red.cc-quoted:before {
   color: #c41515;
 }
 blockquote.cc-red.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #c41515;
 }
 /* Tables */
@@ -4253,6 +4254,7 @@ blockquote.cc-gray.cc-quoted:before {
   color: #bababa;
 }
 blockquote.cc-gray.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #bababa;
 }
 /* Tables */
@@ -4476,6 +4478,7 @@ blockquote.cc-blue.cc-quoted:before {
   color: #3498db;
 }
 blockquote.cc-blue.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #3498db;
 }
 /* Tables */
@@ -4699,6 +4702,7 @@ blockquote.cc-purple.cc-quoted:before {
   color: #8e44ad;
 }
 blockquote.cc-purple.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #8e44ad;
 }
 /* Tables */
@@ -4922,6 +4926,7 @@ blockquote.cc-orange.cc-quoted:before {
   color: #f39c12;
 }
 blockquote.cc-orange.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #f39c12;
 }
 /* Tables */
@@ -5145,6 +5150,7 @@ blockquote.cc-yellow.cc-quoted:before {
   color: #f1c40f;
 }
 blockquote.cc-yellow.cc-reverse {
+  border-left-width: 0px;
   border-right-color: #f1c40f;
 }
 /* Tables */
