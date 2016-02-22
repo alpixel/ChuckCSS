@@ -1,3 +1,0 @@
-/*!
-    == PRINT CSS ==
-*/@media print{body{margin:0;padding:0;border:0;font-family:Serif;font-size:15pt;color:black;background-color:white}.modal,#main-menu,#main-header,#main-footer,#cookies,#outdated{display:none !important}a{text-decoration:none}a:active,a:hover,a:visited,a:focus{text-decoration:none}div,dl,dd,dt,p,ul,li,ol{margin:0;padding:0;border:0;list-style:none}div,p{text-align:justify;margin:2pt 1pt 6pt 0;font-size:12pt;color:#000}p,blockquote{orphans:3;widows:3}blockquote,ul,ol{page-break-inside:avoid}}
