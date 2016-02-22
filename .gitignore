@@ -14,3 +14,4 @@ vendor
 vendor/*
 bower.*
 .bowerrc
+bower_components
