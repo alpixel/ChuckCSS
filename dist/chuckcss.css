@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/*!
+/*
     == ChuckCSS ==
     @Author : ALPIXEL : Fresh & French Web Agency (http://www.alpixel.fr)
     @Licence : WTFPL (http://www.wtfpl.net/ ~ "Do What The Fuck You Want to Public License" : https://fr.wikipedia.org/wiki/WTFPL)
     @Beer : If you love it, you can pay us a beer at : paypal@alpixel.fr
 */
-/*!
+/*
     settings.less : set your vars, colors, fonts, etc...
 */
-/*!
+/*
     * SETTINGS.LESS
     ~ Configuration file
 
@@ -258,14 +258,14 @@
         ._myFont(400,@text-fs);
     }
 */
-/*!
+/*
     * IMPORT CORE FILES *
     • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
     • functions.less : main usefull functions|mixins for integration project
     • animations.less : keyframes file
     • base.less : base file with <html>, <body> styles
 */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
@@ -620,7 +620,7 @@ td,
 th {
   padding: 0;
 }
-/*!
+/*
     == FUNCTIONS / MIXINS ==
 */
 /*
@@ -1069,7 +1069,7 @@ th {
         }
       }
 ***** */
-/*!
+/*
     == ANIMATIONS ==
 */
 /*
@@ -1120,7 +1120,7 @@ th {
     /* Perspective */
   }
 }
-/*!
+/*
     == DESKTOP / GENERAL CSS ==
 */
 html {
@@ -1188,7 +1188,7 @@ ol {
   text-shadow: none;
   color: white;
 }
-/*!
+/*
     == FUNCTIONS / MIXINS ==
 */
 .cc-txt-left {
@@ -1259,7 +1259,7 @@ ol {
 .cc-mal {
   margin-left: 15px;
 }
-/*!
+/*
     * /elements/ - IMPORTS FILES *
 */
 /* ******** */
@@ -2413,7 +2413,7 @@ form input[type="submit"][class*="ion-"]:before,
 form button[type="submit"][class*="ion-"]:before {
   margin-right: 15px;
 }
-/*!
+/*
     * /components/ - IMPORTS FILES *
 */
 /* ******** */
@@ -3512,12 +3512,12 @@ body.opened-modal {
     width: 90% !important;
   }
 }
-/*!
+/*
     * IMPORT GENERATOR FILE *
     • generator.less : Engine generator for colors, grids, icons...
     /!\ Called after elements and others components for CSS ordering
 */
-/*!
+/*
     == GENERATORS ==
 */
 /*
@@ -6636,7 +6636,7 @@ span.badge[class*="ion-"]:before {
     @name : ._generatePhoneColumns
     @description : Generate responsive smartphone columns width in flexbox parent
 ***** */
-/*!
+/*
     * YOUR OWN STYLESHEETS FILES BELOW
 
     * Here should go your own CSS styles or @import your own .less files
@@ -6651,7 +6651,7 @@ span.badge[class*="ion-"]:before {
 /*
     import tablet .less stylesheet
 */
-/*!
+/*
     == TABLETS DEVICES CSS ==
 */
 /* Tablets */
@@ -7028,7 +7028,7 @@ span.badge[class*="ion-"]:before {
 /*
     import phone .less stylesheet
 */
-/*!
+/*
     == PHONES DEVICES CSS ==
 */
 /* Phones */
@@ -7406,6 +7406,6 @@ span.badge[class*="ion-"]:before {
     import retina .less stylesheet
     Media queries for retina devices
 */
-/*!
+/*
     == RETINA CSS ==
 */
