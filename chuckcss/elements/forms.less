@@ -101,10 +101,10 @@ form {
                 vertical-align: middle;
                 height: @input-lh;
                 line-height:@input-lh;
-                font-size:@input-fs;
                 background-color:@prefix-bg;
                 padding:@prefix-padding;
                 color:@prefix-tc;
+                font-size:@input-fs;
 
                 /* Specific for Suffix */
                 &:last-child {
@@ -139,7 +139,6 @@ form {
             ._inline;
             position:relative;
             margin-right:1em;
-            font-size:@input-fs;
 
             &.block {
                 display:block;
@@ -154,7 +153,7 @@ form {
                     ._opacity(0.5);
 
                     &:before {
-                        ._fa('\f05e', 1.5rem); /* ._fa() mixin declared in core/functions.less file */
+                        ._fa('\f05e', inherit); /* ._fa() mixin declared in core/functions.less file */
                         margin-right:3px;
                     }
                 }
@@ -197,12 +196,12 @@ form {
             label {
                 &.checked {
                     &:before {
-                        ._io('\f373', 1.5rem, @form-mc); /* ._io() mixin declared in core/functions.less file */
+                        ._io('\f373', inherit, @form-mc); /* ._io() mixin declared in core/functions.less file */
                     }
                 }
 
                 &:before {
-                    ._io('\f372', 1.5rem, @gray-da); /* ._io() mixin declared in core/functions.less file */
+                    ._io('\f372', inherit, @gray-da); /* ._io() mixin declared in core/functions.less file */
                     margin-right:3px;
                 }
             }
@@ -218,12 +217,12 @@ form {
                 &.checked {
 
                     &:before {
-                        ._io('\f3a7', 1.5rem, @form-mc); /* ._io() mixin declared in core/functions.less file */
+                        ._io('\f3a7', inherit, @form-mc); /* ._io() mixin declared in core/functions.less file */
                     }
                 }
 
                 &:before {
-                    ._io('\f3a6', 1.5rem, @gray-da); /* ._io() mixin declared in core/functions.less file */
+                    ._io('\f3a6', inherit, @gray-da); /* ._io() mixin declared in core/functions.less file */
                     margin-right:3px;
                 }
             }
@@ -333,8 +332,8 @@ form {
         height: @input-lh;
         line-height:1;
         border:1px solid @input-bc;
-        font-size:@input-fs;
         vertical-align: middle;
+        font-size:@input-fs;
         ._box-shadow('inset 0px 1px 2px 0px rgba(0,0,0,0.1)');
         ._border-radius(unit(@input-br,px));
         ._transition;
@@ -359,7 +358,6 @@ form {
         border:0;
         height: @input-lh;
         padding:0 30px;
-        font-size:@text-fs;
         vertical-align: middle;
         ._transition;
         ._uppercase;

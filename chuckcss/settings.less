@@ -105,7 +105,7 @@
     -- @ Texts @ --
 */
 @text-mc: #3a3a3a;                      /* Texts ~ Main color (hexa, rgb, rgba...) */
-@text-fs-old : 14px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
+@text-fs-old :15px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
 @text-fs: unit(@text-fs-old/10,rem);    /* Textes font-size (applied to <body>) */
 @text-lh : 1.5;                         /* Texts line-height */
 
@@ -134,22 +134,22 @@
     * HTML
         <Hn>My Heading title</Hn>
 */
-@title-mc : @text-mc;               /* Hn ~ Titles main color */
-@title-h1-fs : 3.2rem;              /* ~= 32px */
-@title-h1-lh : @title-h1-fs*(3/2);  /* ~= 4.8rem ~= 48px */
-@title-h2-fs : 2.8rem;              /* ~= 28px */
-@title-h2-lh : @title-h2-fs*(3/2);  /* ~= 4.2rem ~= 42px */
-@title-h3-fs : 2.4rem;              /* ~= 24px */
-@title-h3-lh : @title-h3-fs*(3/2);  /* ~= 3.6rem ~= 36px */
-@title-h4-fs : 2.0rem;              /* ~= 20px */
-@title-h4-lh : @title-h4-fs*(3/2);  /* ~= 3.0rem ~= 30px */
-@title-h5-fs : 1.8rem;              /* ~= 18px */
-@title-h5-lh : @title-h5-fs*(3/2);  /* ~= 2.7rem ~= 27px */
-@title-h6-fs : 1.6rem;              /* ~= 16px */
-@title-h6-lh : @title-h6-fs*(3/2);  /* ~= 2.4rem ~= 24px */
+@title-mc : @text-mc; /* Hn ~ Titles main color */
+@title-h1-fs : @text-fs*2.5;
+@title-h1-lh : @title-h1-fs*(3/2);
+@title-h2-fs : @text-fs*2;
+@title-h2-lh : @title-h2-fs*(3/2);
+@title-h3-fs : @text-fs*1.75;
+@title-h3-lh : @title-h3-fs*(3/2);
+@title-h4-fs : @text-fs*1.5;
+@title-h4-lh : @title-h4-fs*(3/2);
+@title-h5-fs : @text-fs*1.3;
+@title-h5-lh : @title-h5-fs*(3/2);
+@title-h6-fs : @text-fs*1.2;
+@title-h6-lh : @title-h6-fs*(3/2);
 
-@subtitle-mc : lighten(@title-mc,40%);/* Subtitle font-color */
-@subtitle-fs : 70%;                 /* Subtitle font-color */
+@subtitle-mc : lighten(@title-mc,40%);  /* Subtitle font-color */
+@subtitle-fs : 70%;                     /* Subtitle font-color */
 
 
 
@@ -186,7 +186,7 @@
 
 @input-bg : white;              /* Input ~ bg-color */
 @input-fs : @text-fs * (9/10);  /* Input ~ font-size = @text-fs (can be changed by custom value) */
-@input-lh : 40px;               /* Input ~ line-height (Submit buttons too) */
+@input-lh : @text-fs*2.8;               /* Input ~ line-height (Submit buttons too) */
 @input-bc : #ddd;               /* Input border-color */
 @input-br : 3;                  /* Input ~ border-radius (in px) */
 

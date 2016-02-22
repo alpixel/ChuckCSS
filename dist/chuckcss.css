@@ -93,18 +93,6 @@
         <Hn>My Heading title</Hn>
 */
 /* Hn ~ Titles main color */
-/* ~= 32px */
-/* ~= 4.8rem ~= 48px */
-/* ~= 28px */
-/* ~= 4.2rem ~= 42px */
-/* ~= 24px */
-/* ~= 3.6rem ~= 36px */
-/* ~= 20px */
-/* ~= 3.0rem ~= 30px */
-/* ~= 18px */
-/* ~= 2.7rem ~= 27px */
-/* ~= 16px */
-/* ~= 2.4rem ~= 24px */
 /* Subtitle font-color */
 /* Subtitle font-color */
 /*
@@ -1134,9 +1122,9 @@ body {
   /* reset padding, margin, border ~ defined in core/functions.less */
   font-family: 'Open Sans', sans-serif;
   /* main font ~ defined in settings.less */
-  font-size: 14px;
+  font-size: 15px;
   /* old font-size for olds browsers ~ defined in settings.less */
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   /* ~= 1.4rem ~ defined in settings.less (calculation based on @text-fs-old value) */
   line-height: 1.5;
   /* defined in settings.less */
@@ -1304,44 +1292,44 @@ h6 small,
 }
 .h1-like,
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.75rem;
   /* defined in settings.less */
-  line-height: 4.8rem;
+  line-height: 5.625rem;
   /* defined in settings.less */
 }
 .h2-like,
 h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   /* defined in settings.less */
-  line-height: 4.2rem;
+  line-height: 4.5rem;
   /* defined in settings.less */
 }
 .h3-like,
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.625rem;
   /* defined in settings.less */
-  line-height: 3.6rem;
+  line-height: 3.9375rem;
   /* defined in settings.less */
 }
 .h4-like,
 h4 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   /* defined in settings.less */
-  line-height: 3rem;
+  line-height: 3.375rem;
   /* defined in settings.less */
 }
 .h5-like,
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.95rem;
   /* defined in settings.less */
-  line-height: 2.7rem;
+  line-height: 2.925rem;
   /* defined in settings.less */
 }
 .h6-like,
 h6 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   /* defined in settings.less */
-  line-height: 2.4rem;
+  line-height: 2.7rem;
   /* defined in settings.less */
 }
 /* ***************** */
@@ -1377,7 +1365,7 @@ button {
   line-height: 1.8;
   border: 1px solid #d3d3d3;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1419,7 +1407,7 @@ button.cc {
 }
 a.btn.cc-thin,
 button.cc-thin {
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   /* Thin Loading buttons */
 }
 a.btn.cc-thin[class*="fa-"]:before,
@@ -1447,7 +1435,7 @@ button.cc-thin.cc-loading:before {
 }
 a.btn.cc-fat,
 button.cc-fat {
-  font-size: 1.82rem;
+  font-size: 1.95rem;
   /* Thin Loading buttons */
 }
 a.btn.cc-fat[class*="fa-"]:before,
@@ -1598,7 +1586,7 @@ table {
 table thead td,
 table thead th {
   font-weight: 400;
-  font-size: 1.86666667rem;
+  font-size: 2rem;
   padding: 7px;
   /* defined in settings.less */
   border: 0;
@@ -1681,10 +1669,10 @@ table.cc-unbordered thead tr th {
   }
   table thead td,
   table thead th {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   table tbody td {
-    font-size: 1.26rem;
+    font-size: 1.35rem;
   }
 }
 /* ******* */
@@ -2041,12 +2029,12 @@ form .form-ps span {
   *display: inline;
   zoom: 1;
   vertical-align: middle;
-  height: 40px;
-  line-height: 40px;
-  font-size: 1.26rem;
+  height: 4.2rem;
+  line-height: 4.2rem;
   background-color: #29b7e1;
   padding: 0 15px;
   color: white;
+  font-size: 1.35rem;
   /* Specific for Suffix */
 }
 form .form-ps span:last-child {
@@ -2061,7 +2049,6 @@ form .form-radio {
   zoom: 1;
   position: relative;
   margin-right: 1em;
-  font-size: 1.26rem;
   /* Disabled radio or checkbox inputs */
   /* Sort input of viewport */
 }
@@ -2092,7 +2079,7 @@ form .form-radio.disabled label:before {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
@@ -2148,7 +2135,7 @@ form .form-checkbox label.checked:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.5rem;
+  font-size: inherit;
   color: #29b7e1;
   content: '\f373';
   /* ._io() mixin declared in core/functions.less file */
@@ -2167,7 +2154,7 @@ form .form-checkbox label:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.5rem;
+  font-size: inherit;
   color: #a1a1a1;
   content: '\f372';
   /* ._io() mixin declared in core/functions.less file */
@@ -2190,7 +2177,7 @@ form .form-radio label.checked:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.5rem;
+  font-size: inherit;
   color: #29b7e1;
   content: '\f3a7';
   /* ._io() mixin declared in core/functions.less file */
@@ -2209,7 +2196,7 @@ form .form-radio label:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.5rem;
+  font-size: inherit;
   color: #a1a1a1;
   content: '\f3a6';
   /* ._io() mixin declared in core/functions.less file */
@@ -2247,16 +2234,16 @@ form input {
   padding: 0 15px;
   border: 1px solid #ddd;
   resize: none;
-  height: 40px;
+  height: 4.2rem;
   line-height: 1;
-  font-size: 1.26rem;
+  font-size: 1.35rem;
   transition: 0.2s all ease-out 0s;
   -webkit-transition: 0.2s all ease-out 0s;
   -moz-transition: 0.2s all ease-out 0s;
   -o-transition: 0.2s all ease-out 0s;
   -ms-transition: 0.2s all ease-out 0s;
   /* Hack IE8 and < */
-  line-height: 40px\9;
+  line-height: 4.199999999999999rem\9;
   /* hot fix IE 8 */
   /* Error inputs */
   /* number : fix right padding */
@@ -2337,11 +2324,11 @@ form textarea {
 form select {
   padding: 0 0 0 15px;
   background-color: white;
-  height: 40px;
+  height: 4.2rem;
   line-height: 1;
   border: 1px solid #ddd;
-  font-size: 1.26rem;
   vertical-align: middle;
+  font-size: 1.35rem;
   -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
   -kthml-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
@@ -2370,9 +2357,8 @@ form button[type="submit"] {
   cursor: pointer;
   color: white;
   border: 0;
-  height: 40px;
+  height: 4.2rem;
   padding: 0 30px;
-  font-size: 1.4rem;
   vertical-align: middle;
   transition: 0.2s all ease-out 0s;
   -webkit-transition: 0.2s all ease-out 0s;
@@ -2470,7 +2456,7 @@ form button[type="submit"][class*="ion-"]:before {
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: 2.1rem;
+  font-size: 2.25rem;
 }
 .alert-primary {
   background-color: #ffffff;
@@ -2908,7 +2894,7 @@ span.badge {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  font-size: 1.16666667rem;
+  font-size: 1.25rem;
   margin-left: 5px;
   /* Thin buttons */
   /* Fat buttons */
@@ -2920,20 +2906,20 @@ span.badge i:before {
 }
 button.cc-thin span.badge,
 a.btn.cc-thin span.badge {
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   top: 0;
 }
 button.cc-thin span.badge:before,
 a.btn.cc-thin span.badge:before {
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 }
 button.cc-fat span.badge,
 a.btn.cc-fat span.badge {
-  font-size: 1.51666667rem;
+  font-size: 1.625rem;
 }
 button.cc-fat span.badge:before,
 a.btn.cc-fat span.badge:before {
-  font-size: 1.51666667rem;
+  font-size: 1.625rem;
 }
 /* ****** */
 /** TABS **/
@@ -6122,7 +6108,7 @@ span.cc-yellow {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
