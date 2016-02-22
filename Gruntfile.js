@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     less: {
-      development: {
+      production: {
         options: {
           compress: true,
           yuicompress: true,
@@ -9,6 +9,11 @@ module.exports = function(grunt) {
         },
         files: {
           "dist/chuckcss.min.css": "chuckcss/front.less"
+        }
+      },
+      development: {
+        files: {
+          "dist/chuckcss.css": "chuckcss/front.less"
         }
       }
     },
