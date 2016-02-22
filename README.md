@@ -1,2 +1,4 @@
-# ChuckCSS-less
-A CSS Starter-Kit for front-end developments with LESS
+# ChuckCSS
+Responsive & Fresh CSS framework based on Flexbox grids
+
+ChuckCSS is under [MIT Licence](https://opensource.org/licenses/MIT)
