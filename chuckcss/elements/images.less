@@ -1,0 +1,28 @@
+/* ******** */
+/** IMAGES **/
+/* ******** */
+
+/* ********************* */
+img {
+    vertical-align:bottom;
+    max-width:100%;
+    height:auto;
+
+    &.cc {
+        /* No responsive images */
+        &-no-responsive {
+            max-width:inherit;
+        }
+
+        // Filters
+        &-sepia {
+            ._filter(sepia(1));
+        }
+        &-grayscale {
+            ._filter(grayscale(1));
+        }
+        &-blur {
+            ._filter(blur(5px));
+        }
+    }
+}
