@@ -35,6 +35,7 @@ button {
     border:1px solid @gray-li;
     text-align:center;
     font-size: @links-fs;
+    vertical-align:middle;
     ._border-radius(unit(@links-btn-br,px));
     ._btn(white, white);
     ._transition;
@@ -104,7 +105,7 @@ button {
                     margin-top:-12px;
                     margin-left:-12px;
                 }
-            }              
+            }
         }
 
         /* disabled */
@@ -118,7 +119,7 @@ button {
         &-loading {
             position:relative;
             color:transparent !important;
-            cursor:not-allowed; 
+            cursor:not-allowed;
             pointer-events:none;
 
             &::-moz-selection {
@@ -148,7 +149,7 @@ button {
                 margin-left:-8px;
                 ._loading-spin;
             }
-            
+
         }
     }
 

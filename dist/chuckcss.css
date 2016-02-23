@@ -1270,6 +1270,8 @@ h6,
   font-weight: 400;
   color: #3a3a3a;
   /* defined in settings.less */
+  font-family: 'Open Sans', sans-serif;
+  /* font-family : defined in settings.less */
 }
 h1 small,
 .h1-like small,
@@ -1283,6 +1285,7 @@ h5 small,
 .h5-like small,
 h6 small,
 .h6-like small {
+  font-weight: 400;
   color: #a0a0a0;
   /* defined in settings.less */
   font-size: 70%;
@@ -1364,6 +1367,7 @@ button {
   border: 1px solid #d3d3d3;
   text-align: center;
   font-size: 1.5rem;
+  vertical-align: middle;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1719,13 +1723,8 @@ ul.cc-horizontal li {
   zoom: 1;
   margin: 0 20px;
 }
-ul.cc-horizontal li[class*="fa-"],
-ul.cc-horizontal li[class*="ion-"] {
-  margin-left: 40px;
-}
 ul.cc-horizontal li[class*="fa-"].icon-right,
 ul.cc-horizontal li[class*="ion-"].icon-right {
-  margin-left: 20px;
   position: relative;
   /* Flexbox display */
   display: -webkit-box;
@@ -2201,6 +2200,9 @@ form .form-radio label:before {
   margin-right: 3px;
 }
 form label {
+  padding: 0;
+  margin: 0;
+  border: 0;
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -2444,6 +2446,13 @@ form button[type="submit"][class*="ion-"]:before {
   padding: 15px;
   height: 100%;
   background-color: transparent;
+  -moz-opacity: 1;
+  opacity: 1;
+  -o-opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+  zoom: 1;
 }
 .alert button.close i {
   padding: 0;
@@ -4042,7 +4051,7 @@ form button[type="submit"][class*="ion-"]:before {
 /* ********************* */
 /*
     - General badges styles
-    
+
 
     <span class="badge">...</span>
 */
@@ -4062,6 +4071,9 @@ span.badge {
   border-radius: 10px;
   font-size: 1.25rem;
   margin-left: 5px;
+  text-align: center;
+  min-width: 20px;
+  vertical-align: baseline;
   /* Thin buttons */
   /* Fat buttons */
 }
@@ -4439,7 +4451,7 @@ a.btn.cc-fat span.badge:before {
 /* ********************* */
 /*
     - General tabs
-    
+
 
      <div id="modal-id" class="modal">
             <div class="modal-close">
@@ -4481,6 +4493,11 @@ body.opened-modal {
   -ms-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-shadow: none;
+  -kthml-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
   z-index: -1;
   position: fixed;
   top: 0px;
@@ -4723,6 +4740,10 @@ a.cc-bg-primary {
   background-color: #29b7e1;
 }
 /* lists */
+li.cc-bg-primary {
+  background-color: #29b7e1;
+  color: white;
+}
 li.cc-primary:before {
   color: #29b7e1;
 }
@@ -4940,6 +4961,10 @@ a.cc-bg-green {
   background-color: #80ae37;
 }
 /* lists */
+li.cc-bg-green {
+  background-color: #80ae37;
+  color: white;
+}
 li.cc-green:before {
   color: #80ae37;
 }
@@ -5157,6 +5182,10 @@ a.cc-bg-red {
   background-color: #c41515;
 }
 /* lists */
+li.cc-bg-red {
+  background-color: #c41515;
+  color: white;
+}
 li.cc-red:before {
   color: #c41515;
 }
@@ -5374,6 +5403,10 @@ a.cc-bg-gray {
   background-color: #bababa;
 }
 /* lists */
+li.cc-bg-gray {
+  background-color: #bababa;
+  color: white;
+}
 li.cc-gray:before {
   color: #bababa;
 }
@@ -5591,6 +5624,10 @@ a.cc-bg-blue {
   background-color: #3498db;
 }
 /* lists */
+li.cc-bg-blue {
+  background-color: #3498db;
+  color: white;
+}
 li.cc-blue:before {
   color: #3498db;
 }
@@ -5808,6 +5845,10 @@ a.cc-bg-purple {
   background-color: #8e44ad;
 }
 /* lists */
+li.cc-bg-purple {
+  background-color: #8e44ad;
+  color: white;
+}
 li.cc-purple:before {
   color: #8e44ad;
 }
@@ -6025,6 +6066,10 @@ a.cc-bg-orange {
   background-color: #f39c12;
 }
 /* lists */
+li.cc-bg-orange {
+  background-color: #f39c12;
+  color: white;
+}
 li.cc-orange:before {
   color: #f39c12;
 }
@@ -6242,6 +6287,10 @@ a.cc-bg-yellow {
   background-color: #f1c40f;
 }
 /* lists */
+li.cc-bg-yellow {
+  background-color: #f1c40f;
+  color: white;
+}
 li.cc-yellow:before {
   color: #f1c40f;
 }
@@ -7218,7 +7267,6 @@ span.cc-yellow {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -7347,3 +7395,19 @@ span.badge[class*="ion-"]:before {
 /*
     == RETINA CSS ==
 */
+@media only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), and (max-width: 767px) {
+  /* Penser à bien surcharger le selecteur CSS par rapport au frontOffice */
+  body #content .retina {
+    /*
+            Si dans le .less du frontoffice, j'ai un élément qui a pour propriété css :
+            el {
+                background-image : url('mon-image.png');
+            }
+            et que mon-image.png mesure 200*200px dans le dossier image,
+            alors les css retina sera :
+        */
+    background-image: url("../img/retina/mon-image@2x.png");
+    /* Réduire de moitié le background-size */
+    background-size: 100px 100px;
+  }
+}

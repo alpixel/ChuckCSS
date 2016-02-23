@@ -6,7 +6,7 @@
 
 /*
     - General tabs
-    
+
 
      <div id="modal-id" class="modal">
             <div class="modal-close">
@@ -34,6 +34,7 @@ body.opened-modal {
     ._flex-display;
     ._flex-justify(center);
     ._flex-align-items(center);
+    ._box-shadow('none');
     z-index:-1;
     position:fixed;
     top:0px;
@@ -87,8 +88,8 @@ body.opened-modal {
         background-color:transparent;
         width:40px;
         height:40px;
-        margin-left:-20px;    
-        
+        margin-left:-20px;
+
 
         &:after,
         &:before {
@@ -97,7 +98,7 @@ body.opened-modal {
             width:19px;
             height:3px;
             background-color:white;
-            
+
             ._border-radius(4px);
             position:absolute;
             top:19px;
@@ -127,7 +128,7 @@ body.opened-modal {
         ._opacity(0);
         ._transition;
         ._scale(0.5);
-        
+
         .modal-body,
         .modal-footer,
         .modal-header {
@@ -157,7 +158,7 @@ body.opened-modal {
     }
 
 
-    
+
     /* Responsive */
     ._phone({
         .modal-content {

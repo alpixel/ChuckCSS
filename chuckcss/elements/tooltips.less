@@ -1,0 +1,54 @@
+/* ******************** */
+/** BOOTSTRAP TOOLTIPS **/
+/* ******************** */
+
+/* ********************* */
+
+/*
+    - Simply override default bootstrap tooltip stylesheet
+*/
+._setTooltipBgColor(@color) {
+    // Wrapper for the tooltip content
+    .tooltip-inner {
+        background-color: @color;
+    }
+    &.top,
+    &.top-left,
+    &.top-right {
+        .tooltip-arrow {
+            border-top-color: @color;
+        }
+    }
+    &.right .tooltip-arrow {
+        border-right-color: @color;
+    }
+    &.left .tooltip-arrow {
+        border-left-color: @color;
+    }
+    &.bottom-right,
+    &.bottom-left,
+    &.bottom {
+        .tooltip-arrow {
+            border-bottom-color: @color;
+        }
+    }
+}
+
+.tooltip {
+
+    /* 'error' class is used in .error inputs to show ERRORS (red bg color) tooltips ! */
+    &.error {
+        ._setTooltipBgColor(@red);
+
+        background-color:transparent; /* Drupal */
+        background-image:none; /* Drupal */
+    }
+
+    /* 'success' class is used to show SUCCESS for exemple (green bg color) tooltips ! */
+    &.success {
+        ._setTooltipBgColor(@green);
+
+        background-color:transparent; /* Drupal */
+        background-image:none; /* Drupal */
+    }
+}

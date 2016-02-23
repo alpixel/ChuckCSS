@@ -43,9 +43,16 @@
     }
 
     /* lists */
-    li.cc-@{colorName}:before {
-        color: @colorValue;
+    li {
+        &.cc-bg-@{colorName} {
+            background-color:@colorValue;
+            color:white;
+        }
+        &.cc-@{colorName}:before {
+            color: @colorValue;
+        }
     }
+
 
     /* blockquotes */
     blockquote.cc-@{colorName} {
@@ -184,7 +191,7 @@
             ._btn(@colorValue);
         }
     }
-    
+
     /* Badges */
     span.cc {
         &-@{colorName} {
@@ -351,7 +358,6 @@
         /* Icon */
         &:before {
             ._inline;
-            font-size:@text-fs;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             line-height: 1;
@@ -413,7 +419,6 @@
 ._generateColumns(@iterator:1) when(@iterator <= @cols-total) {
 
     .columns {
-
         /* NO GUTTERS */
         &.cc-no-gutter .column {
             &.cc {
@@ -451,6 +456,7 @@
 
     ._generateColumns((@iterator + 1));
 }
+
 
 
 /* *****
