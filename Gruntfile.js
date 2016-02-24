@@ -10,14 +10,14 @@ module.exports = function(grunt) {
         files: {
           "dist/chuckcss.min.css": "chuckcss/front.less",
           "dist/bootstrap-override.min.css": "chuckcss/bootstrap/bootstrap-override.less",
-          "dist/print.css": "chuckcss/media/print.less"
+          "dist/print.css": "chuckcss/print.less"
         }
       },
       development: {
         files: {
           "dist/bootstrap.css": "chuckcss/bootstrap/bootstrap-override.less",
           "dist/chuckcss.css": "chuckcss/front.less",
-          "dist/print.css": "chuckcss/media/print.less"
+          "dist/print.css": "chuckcss/print.less"
         }
       }
     },

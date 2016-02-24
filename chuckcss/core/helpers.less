@@ -15,6 +15,26 @@
         // ! paddings and margins are generated in generators.less file
     }
 
+    // Paddings
+    &-pa {
+        padding:@helper-pa;
+        &t {padding-top:@helper-pat;}
+        &r {padding-right:@helper-par;}
+        &b {padding-bottom:@helper-pab;}
+        &l {padding-left:@helper-pal;}
+    }
+
+    // Margins
+    &-ma {
+        margin:@helper-ma;
+        &t {margin-top:@helper-mat;}
+        &r {margin-right:@helper-mar;}
+        &b {margin-bottom:@helper-mab;}
+        &l {margin-left:@helper-mal;}
+    }
+
+
+
     // Visibility
     &-hidden {
         &-s {
@@ -40,24 +60,33 @@
     &-inline {._inline;}
     &-inside{._inside;}
     &-displayTable{._displayTable;}
-
-    // Paddings
-    &-pa {
-        padding:@helper-pa;
-        &t {padding-top:@helper-pat;}
-        &r {padding-right:@helper-par;}
-        &b {padding-bottom:@helper-pab;}
-        &l {padding-left:@helper-pal;}
+    &-centered {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
     }
 
-    // Margins
-    &-ma {
-        margin:@helper-ma;
-        &t {margin-top:@helper-mat;}
-        &r {margin-right:@helper-mar;}
-        &b {margin-bottom:@helper-mab;}
-        &l {margin-left:@helper-mal;}
+    /* Width */
+    // All width are generated in generator.less file
+    // Specific width
+    &-w-quarter {
+        width:25.00%;
     }
+    &-w-third {
+        width:33.333%;
+    }
+    &-w-half {
+        width:50.00%
+    }
+    &-w-twothird {
+        width:66.666%;
+    }
+    &-w-threequarter {
+        width:75.00%;
+    }
+
+
+
 }
 
 .clearfix {._clearfix;}

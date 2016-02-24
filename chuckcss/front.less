@@ -71,20 +71,80 @@
 *-- OR  --*
 
 @import "website/homepage"; // considering you have created a 'website' folder with a 'homepage.less' file inside
+@import "media/tablet"; // considering you have created a 'media' folder with a 'tablet.less' file inside
 */
+/*
+    == ChuckCSS ==
+    @Author : ALPIXEL : Fresh & French Web Agency (http://www.alpixel.fr)
+    @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
+    @Beer : If you love it, you can pay us a beer at : paypal@alpixel.fr
+*/
+@charset "UTF-8";
+
+
 
 /*
-    import tablet .less stylesheet
+    settings.less : set your vars, colors, fonts, etc...
 */
-@import "media/tablet";
+@import "settings";
+
 
 /*
-    import phone .less stylesheet
+    * IMPORT CORE FILES *
+    • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
+    • functions.less : main usefull functions|mixins for integration project
+    • animations.less : keyframes file
+    • base.less : base file with <html>, <body> styles
 */
-@import "media/phone";
+@import "core/normalize";
+@import "core/functions";
+@import "core/animations";
+@import "core/base"; // <==== <html> & <body>
+@import "core/helpers";
+
+
 
 /*
-    import retina .less stylesheet
-    Media queries for retina devices
+    * /elements/ - IMPORTS FILES *
 */
-@import "media/retina";
+@import "elements/titles";
+@import "elements/buttons";
+@import "elements/tables";
+@import "elements/lists";
+@import "elements/blockquote";
+@import "elements/forms";
+@import "elements/images";
+
+
+/*
+    * /components/ - IMPORTS FILES *
+*/
+@import "components/alerts";
+@import "components/grids";
+@import "components/messages";
+@import "components/badges";
+@import "components/tabs";
+@import "components/modals";
+
+
+
+/*
+    * IMPORT GENERATOR FILE *
+    • generator.less : Engine generator for colors, grids, icons...
+    /!\ Called after elements and others components for CSS ordering
+*/
+@import "core/generator";
+
+/*
+    * YOUR OWN STYLESHEETS FILES BELOW
+
+    * Here should go your own CSS styles or @import your own .less files
+.el {
+    ... my LESS inspiration
+}
+
+*-- OR  --*
+
+@import "website/homepage"; // considering you have created a 'website' folder with a 'homepage.less' file inside
+@import "media/tablet"; // considering you have created a 'media' folder with a 'tablet.less' file inside
+*/
