@@ -97,7 +97,7 @@ form {
             }
 
             span {
-                .inline;
+                ._inline;
                 vertical-align: middle;
                 height: @input-lh;
                 line-height:@input-lh;
@@ -122,14 +122,14 @@ form {
             <div class="form-item">
                 <div class="form-radio">
                     <label>
-                        Mister
                         <input type="radio" name="gender" value="1" />
+                        Mister
                     </label>
                 </div>
                 <div class="form-radio">
                     <label>
-                        Madam
                         <input type="radio" name="gender" value="2" checked="checked" />
+                        Madam
                     </label>
                 </div>
             </div>
@@ -152,15 +152,15 @@ form {
                     pointer-events:none;
                     ._opacity(0.5);
 
-                    &:before {
-                        ._fa('\f05e', inherit); /* ._fa() mixin declared in core/functions.less file */
-                        margin-right:3px;
+                    input {
+                        ._opacity(0.8);
                     }
                 }
             }
 
             label {
                 cursor:pointer;
+                position:relative;
 
                 &.checked.error,
                 &.error {
@@ -181,10 +181,33 @@ form {
                 }
             }
 
-            /* Sort input of viewport */
+            /* Change viewport appearance */
             input {
-                position:absolute;
-                left:-9999em;
+                -webkit-appearance:none;
+                -moz-appearance:none;
+                appearance:none;
+                border:1px solid @input-bc;
+                background-color:white;
+                width:14px;
+                height:14px;
+                margin:0 5px 0 0;
+                position:relative;
+                top:1px;
+                vertical-align: baseline;
+
+                &:focus {
+                    outline:none;
+                    border-color:@input-bc;
+                }
+
+                &:before {
+                    content:' ';
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    margin:-3px 0 0 -3px;
+
+                }
             }
         }
 
@@ -192,17 +215,22 @@ form {
             - Specific for checkbox inputs
         */
         &-checkbox {
-            /* label with FontAwesome */
-            label {
-                &.checked {
-                    &:before {
-                        ._io('\f373', inherit, @form-mc); /* ._io() mixin declared in core/functions.less file */
-                    }
+            input {
+                &:before {
+                    display:none;
+                    width:6px;
+                    height:4px;
+                    border-left:1px solid white;
+                    border-bottom:1px solid white;
                 }
 
-                &:before {
-                    ._io('\f372', inherit, @gray-da); /* ._io() mixin declared in core/functions.less file */
-                    margin-right:3px;
+                &:checked {
+                    background-color:@form-mc;
+                    border-color:@form-mc;
+                    &:before {
+                        display:block;
+                        ._rotate(-45deg);
+                    }
                 }
             }
         }
@@ -210,20 +238,23 @@ form {
         /*
             - Specific for radio inputs
         */
-
         &-radio {
-            /* label with FontAwesome */
-            label {
-                &.checked {
+            input {
+                ._border-radius(100%);
 
-                    &:before {
-                        ._io('\f3a7', inherit, @form-mc); /* ._io() mixin declared in core/functions.less file */
-                    }
-                }
 
                 &:before {
-                    ._io('\f3a6', inherit, @gray-da); /* ._io() mixin declared in core/functions.less file */
-                    margin-right:3px;
+                    display:block;
+                    width:6px;
+                    height:6px;
+                    ._border-radius(100%);
+                    background-color:transparent;
+                }
+
+                &:checked {
+                    &:before {
+                        background-color:@form-mc;
+                    }
                 }
             }
         }

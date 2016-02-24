@@ -44,12 +44,14 @@
 
     /* lists */
     li {
-        &.cc-bg-@{colorName} {
-            background-color:@colorValue;
-            color:white;
-        }
-        &.cc-@{colorName}:before {
-            color: @colorValue;
+        &.cc {
+            &-bg-@{colorName} {
+                background-color:@colorValue;
+                color:white;
+            }
+            &-@{colorName}:before {
+                color: @colorValue;
+            }
         }
     }
 
@@ -102,27 +104,11 @@
 
 
         tbody tr {
-            &.cc-@{colorName} {
+            &.cc-bg-@{colorName} {
                 td {
                     background-color:@colorValue;
                     color:white;
                     border-bottom:0;
-
-                    /* Show form radio and checkbox white */
-                    .form-checkbox,
-                    .form-radio {
-                        label {
-                            &.checked {
-                                &:before {
-                                    color:white;
-                                }
-                            }
-
-                            &:before {
-                                color:white;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -181,13 +167,27 @@
     form.cc-@{colorName} {
 
         .form {
-            &-radio,
-            &-checkbox {
-                /* label with FontAwesome */
-                label.checked:before {
-                    color:@colorValue;
+            &-checkbox input {
+                &:focus {
+                    border-color:@input-bc;
+                }
+                &:checked {
+                    background-color:@colorValue;
+                    border-color:@colorValue;
                 }
             }
+
+            &-radio input {
+                &:focus {
+                    border-color:@input-bc;
+                }
+                &:checked {
+                    &:before {
+                        background-color:@colorValue;
+                    }
+                }
+            }
+
 
             &-ps {
                 span {
@@ -326,7 +326,7 @@
     @name : ._generatePaddingMarginClass
     @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
 ***** */
-._generatePaddingMarginClass(@iterator:0) when(@iterator <= 25) {
+._generatePaddingMarginClass(@iterator:0) when(@iterator <= 30) {
 
     .cc {
         &-pa-@{iterator} {
@@ -361,7 +361,7 @@
         }
     }
 
-    ._generatePaddingMarginClass((@iterator + 1));
+    ._generatePaddingMarginClass((@iterator + 2));
 }
 ._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
 

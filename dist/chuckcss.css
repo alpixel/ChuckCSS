@@ -145,7 +145,7 @@
 /* success */
 /* error */
 /* warning */
-/* status / info */
+/* info */
 /*
     -- @ Blockquotes @ --
     * HTML
@@ -620,17 +620,17 @@ th {
     ._box-shadow
     ._bg-vertical | ._bg-horizontal
     ._opacity
+    ._clearfix
+    ._displayTable
+    ._inline
+    ._inside
     ._transition
     ._rotate | ._scale | ._translate3d | ._skew
-    ._inline
-    ._displayTable
-    ._clearfix
     ._box-sizing
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._placeHold
     ._reset
     ._uppercase
-    ._inside
     ._fa
     ._io
     ._cover
@@ -698,6 +698,39 @@ th {
       }
 ***** */
 /* *****
+    @name : ._clearfix
+    @description : reset floated elements
+***** */
+/* *****
+    @name : ._displayTable
+    @description : Show elements as Table view
+
+    @exemple :
+      el {
+          ._displayTable; // <el> is now shown as a table element. All direct children will have a table-cell display
+      }
+***** */
+/* *****
+    @name : ._inline
+    @description : Set the element display as an inline-block element with IE7 fix
+    @wtf : why called it "._inline" to apply "inline-block" property ? Because ._inline-block is too long ... ¯\_(ツ)_/¯
+
+    @exemple :
+      p {
+          ._inline; // <p>, a block element is now shown as an inline-block element
+      }
+***** */
+/* *****
+    @name : ._inside
+    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
+    @params : @width
+
+    @exemple :
+      el {
+        ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
+      }
+***** */
+/* *****
     @name : ._transition
     @description : animate a DOM element with transition property
     @params : @duration (0 - ∞ seconds), @property (all or css rules), @effect (easing effects or Cubic-bezier curve), @delay (0 - ∞ seconds)
@@ -715,13 +748,6 @@ th {
         }
       }
 ***** */
-.transition {
-  transition: 0.2s all ease-out 0s;
-  -webkit-transition: 0.2s all ease-out 0s;
-  -moz-transition: 0.2s all ease-out 0s;
-  -o-transition: 0.2s all ease-out 0s;
-  -ms-transition: 0.2s all ease-out 0s;
-}
 /* *****
     @name : ._transform
     @description : Apply transform property to a DOM element
@@ -785,64 +811,6 @@ th {
       }
 ***** */
 /* *****
-    @name : ._inline
-    @description : Set the element display as an inline-block element with IE7 fix
-    @wtf : why called it "._inline" to apply "inline-block" property ? Because ._inline-block is too long ... ¯\_(ツ)_/¯
-
-    @exemple :
-      p {
-          ._inline; // <p>, a block element is now shown as an inline-block element
-      }
-***** */
-.inline {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
-/* *****
-    @name : ._displayTable
-    @description : Show elements as Table view
-
-    @exemple :
-      el {
-          ._displayTable; // <el> is now shown as a table element. All direct children will have a table-cell display
-      }
-***** */
-.displayTable {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  /* Display direct children as table-cell */
-}
-.displayTable > * {
-  list-style: none;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-/* *****
-    @name : ._clearfix
-    @description : reset floated elements
-***** */
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.clearfix:after {
-  clear: both;
-}
-/* *****
     @name : ._box-sizing
     @description : apply box-sizing property to a DOM element
     @params : @boxmodel (content-box | border-box | inherit);
@@ -902,36 +870,6 @@ th {
     @description : set string to uppercase
     @wtf : just because it's boring to write the whole property
 ***** */
-/* *****
-    @name : ._inside
-    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
-    @params : @width
-
-    @exemple :
-      el {
-        ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
-      }
-***** */
-.inside {
-  width: 1400px;
-  margin: 0 auto;
-  zoom: 1;
-  transition: 0.2s width ease-out 0s;
-  -webkit-transition: 0.2s width ease-out 0s;
-  -moz-transition: 0.2s width ease-out 0s;
-  -o-transition: 0.2s width ease-out 0s;
-  -ms-transition: 0.2s width ease-out 0s;
-}
-.inside:before,
-.inside:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.inside:after {
-  clear: both;
-}
 /* *****
     @name : ._fa
     @description : Generate fontAwesome icon
@@ -1179,7 +1117,7 @@ ol {
   color: white;
 }
 /*
-    == FUNCTIONS / MIXINS ==
+    == HELPERS ==
 */
 .cc-txt-left {
   text-align: left;
@@ -1219,6 +1157,43 @@ ol {
   *display: inline;
   zoom: 1;
 }
+.cc-inside {
+  width: 1200px;
+  margin: 0 auto;
+  zoom: 1;
+  transition: 0.2s width ease-out 0s;
+  -webkit-transition: 0.2s width ease-out 0s;
+  -moz-transition: 0.2s width ease-out 0s;
+  -o-transition: 0.2s width ease-out 0s;
+  -ms-transition: 0.2s width ease-out 0s;
+}
+.cc-inside:before,
+.cc-inside:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cc-inside:after {
+  clear: both;
+}
+.cc-displayTable {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  /* Display direct children as table-cell */
+}
+.cc-displayTable > * {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 .cc-pa {
   padding: 15px;
 }
@@ -1248,6 +1223,19 @@ ol {
 }
 .cc-mal {
   margin-left: 15px;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
 }
 /*
     * /elements/ - IMPORTS FILES *
@@ -1563,7 +1551,7 @@ button.icon-right:before {
   order: 2;
   margin: 0 0 0 10px;
 }
-/* Hack Firefox for .cion-right on button elements (hide icon) */
+/* Hack Firefox for .icon-right on button elements (hide icon) */
 @-moz-document url-prefix() {
   button.icon-right {
     display: inline-block;
@@ -1896,14 +1884,14 @@ form .form {
             <div class="form-item">
                 <div class="form-radio">
                     <label>
-                        Mister
                         <input type="radio" name="gender" value="1" />
+                        Mister
                     </label>
                 </div>
                 <div class="form-radio">
                     <label>
-                        Madam
                         <input type="radio" name="gender" value="2" checked="checked" />
+                        Madam
                     </label>
                 </div>
             </div>
@@ -2042,7 +2030,7 @@ form .form-radio {
   position: relative;
   margin-right: 1em;
   /* Disabled radio or checkbox inputs */
-  /* Sort input of viewport */
+  /* Change viewport appearance */
 }
 form .form-checkbox.block,
 form .form-radio.block {
@@ -2062,26 +2050,20 @@ form .form-radio.disabled label {
   filter: alpha(opacity=50);
   zoom: 1;
 }
-form .form-checkbox.disabled label:before,
-form .form-radio.disabled label:before {
-  display: inline-block;
-  *display: inline;
+form .form-checkbox.disabled label input,
+form .form-radio.disabled label input {
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  -o-opacity: 0.8;
+  -ms-filter: "alpha(opacity=80)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
   zoom: 1;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #000;
-  content: '\f05e';
-  /* ._fa() mixin declared in core/functions.less file */
-  margin-right: 3px;
 }
 form .form-checkbox label,
 form .form-radio label {
   cursor: pointer;
+  position: relative;
 }
 form .form-checkbox label.checked.error,
 form .form-radio label.checked.error,
@@ -2107,92 +2089,72 @@ form .form-radio label::selection {
 }
 form .form-checkbox input,
 form .form-radio input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ddd;
+  background-color: white;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 1px;
+  vertical-align: baseline;
+}
+form .form-checkbox input:focus,
+form .form-radio input:focus {
+  outline: none;
+  border-color: #ddd;
+}
+form .form-checkbox input:before,
+form .form-radio input:before {
+  content: ' ';
   position: absolute;
-  left: -9999em;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -3px;
 }
-form .form-checkbox {
-  /* label with FontAwesome */
+form .form-checkbox input:before {
+  display: none;
+  width: 6px;
+  height: 4px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
 }
-form .form-checkbox label.checked:before {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  font-family: "Ionicons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: inherit;
-  color: #29b7e1;
-  content: '\f373';
-  /* ._io() mixin declared in core/functions.less file */
+form .form-checkbox input:checked {
+  background-color: #29b7e1;
+  border-color: #29b7e1;
 }
-form .form-checkbox label:before {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  font-family: "Ionicons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: inherit;
-  color: #a1a1a1;
-  content: '\f372';
-  /* ._io() mixin declared in core/functions.less file */
-  margin-right: 3px;
+form .form-checkbox input:checked:before {
+  display: block;
+  /* Not perspective */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* Perspective */
 }
-form .form-radio {
-  /* label with FontAwesome */
+form .form-radio input {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
 }
-form .form-radio label.checked:before {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  font-family: "Ionicons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: inherit;
-  color: #29b7e1;
-  content: '\f3a7';
-  /* ._io() mixin declared in core/functions.less file */
+form .form-radio input:before {
+  display: block;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  background-color: transparent;
 }
-form .form-radio label:before {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  font-family: "Ionicons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: inherit;
-  color: #a1a1a1;
-  content: '\f3a6';
-  /* ._io() mixin declared in core/functions.less file */
-  margin-right: 3px;
+form .form-radio input:checked:before {
+  background-color: #29b7e1;
 }
 form label {
   padding: 0;
@@ -2519,7 +2481,7 @@ img.cc-blur-hover:hover {
 /* ********************* */
 /*
     - General alerts styles
-    - types : warning, error, success, info = status
+    - types : warning, error, success, info
 
     <div class="alert alert-type">
         ...
@@ -2579,8 +2541,8 @@ img.cc-blur-hover:hover {
   font-size: 2.25rem;
 }
 .alert-primary {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #e9f8fc;
+  border-color: #d3f0f9;
   color: #29b7e1;
 }
 .alert-primary p,
@@ -2590,21 +2552,15 @@ img.cc-blur-hover:hover {
 .alert-primary a {
   color: #29b7e1;
 }
-.alert-status,
 .alert-info {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #3a87ad;
 }
-.alert-status p,
 .alert-info p,
-.alert-status div,
 .alert-info div,
-.alert-status ul,
 .alert-info ul,
-.alert-status button.close,
 .alert-info button.close,
-.alert-status a,
 .alert-info a {
   color: #3a87ad;
 }
@@ -4389,7 +4345,7 @@ img.cc-blur-hover:hover {
 /* ********************* */
 /*
     - General messages styles
-    - types : warning, error, success, info = status
+    - types : warning, error, success, info
 
     <div class="message message-type">
         ...
@@ -4404,7 +4360,6 @@ img.cc-blur-hover:hover {
   /* Links inside .message elements */
   /* List : add margin-left */
   /* Messages types */
-  /* Alerts types */
 }
 .message a {
   text-decoration: underline;
@@ -4424,18 +4379,13 @@ img.cc-blur-hover:hover {
 .message-primary a {
   color: #29b7e1;
 }
-.message-status,
 .message-info {
   border-color: #bce8f1;
   color: #3a87ad;
 }
-.message-status p,
 .message-info p,
-.message-status div,
 .message-info div,
-.message-status ul,
 .message-info ul,
-.message-status a,
 .message-info a {
   color: #3a87ad;
 }
@@ -5217,19 +5167,10 @@ table.cc-primary.cc-bordered thead th {
 table.cc-primary.cc-bordered tbody tr td {
   border-color: #1a98bd;
 }
-table tbody tr.cc-primary td {
+table tbody tr.cc-bg-primary td {
   background-color: #29b7e1;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-primary td .form-checkbox label.checked:before,
-table tbody tr.cc-primary td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-primary td .form-checkbox label:before,
-table tbody tr.cc-primary td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-primary,
@@ -5288,13 +5229,18 @@ button.cc-primary span.badge {
   color: #29b7e1;
 }
 /* Colored forms */
-form.cc-primary .form-radio,
-form.cc-primary .form-checkbox {
-  /* label with FontAwesome */
+form.cc-primary .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-primary .form-radio label.checked:before,
-form.cc-primary .form-checkbox label.checked:before {
-  color: #29b7e1;
+form.cc-primary .form-checkbox input:checked {
+  background-color: #29b7e1;
+  border-color: #29b7e1;
+}
+form.cc-primary .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-primary .form-radio input:checked:before {
+  background-color: #29b7e1;
 }
 form.cc-primary .form-ps span {
   background-color: #29b7e1;
@@ -5451,19 +5397,10 @@ table.cc-green.cc-bordered thead th {
 table.cc-green.cc-bordered tbody tr td {
   border-color: #63872b;
 }
-table tbody tr.cc-green td {
+table tbody tr.cc-bg-green td {
   background-color: #80ae37;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-green td .form-checkbox label.checked:before,
-table tbody tr.cc-green td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-green td .form-checkbox label:before,
-table tbody tr.cc-green td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-green,
@@ -5522,13 +5459,18 @@ button.cc-green span.badge {
   color: #80ae37;
 }
 /* Colored forms */
-form.cc-green .form-radio,
-form.cc-green .form-checkbox {
-  /* label with FontAwesome */
+form.cc-green .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-green .form-radio label.checked:before,
-form.cc-green .form-checkbox label.checked:before {
-  color: #80ae37;
+form.cc-green .form-checkbox input:checked {
+  background-color: #80ae37;
+  border-color: #80ae37;
+}
+form.cc-green .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-green .form-radio input:checked:before {
+  background-color: #80ae37;
 }
 form.cc-green .form-ps span {
   background-color: #80ae37;
@@ -5685,19 +5627,10 @@ table.cc-red.cc-bordered thead th {
 table.cc-red.cc-bordered tbody tr td {
   border-color: #961010;
 }
-table tbody tr.cc-red td {
+table tbody tr.cc-bg-red td {
   background-color: #c41515;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-red td .form-checkbox label.checked:before,
-table tbody tr.cc-red td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-red td .form-checkbox label:before,
-table tbody tr.cc-red td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-red,
@@ -5756,13 +5689,18 @@ button.cc-red span.badge {
   color: #c41515;
 }
 /* Colored forms */
-form.cc-red .form-radio,
-form.cc-red .form-checkbox {
-  /* label with FontAwesome */
+form.cc-red .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-red .form-radio label.checked:before,
-form.cc-red .form-checkbox label.checked:before {
-  color: #c41515;
+form.cc-red .form-checkbox input:checked {
+  background-color: #c41515;
+  border-color: #c41515;
+}
+form.cc-red .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-red .form-radio input:checked:before {
+  background-color: #c41515;
 }
 form.cc-red .form-ps span {
   background-color: #c41515;
@@ -5836,240 +5774,6 @@ span.cc-red {
   .tabs.cc-red.cc-pills > li:hover a:not(.btn) {
     border-top-width: 0px;
     border-color: #c41515;
-  }
-}
-/* texts */
-h1.cc-gray,
-h2.cc-gray,
-h3.cc-gray,
-h4.cc-gray,
-h5.cc-gray,
-h6.cc-gray,
-p.cc-gray,
-div.cc-gray,
-i.cc-gray,
-a.cc-gray {
-  color: #bababa;
-}
-h1.cc-gray small,
-h2.cc-gray small,
-h3.cc-gray small,
-h4.cc-gray small,
-h5.cc-gray small,
-h6.cc-gray small,
-p.cc-gray small,
-div.cc-gray small,
-i.cc-gray small,
-a.cc-gray small {
-  color: #d3d3d3;
-}
-h1.cc-bg-gray,
-h2.cc-bg-gray,
-h3.cc-bg-gray,
-h4.cc-bg-gray,
-h5.cc-bg-gray,
-h6.cc-bg-gray,
-p.cc-bg-gray,
-div.cc-bg-gray,
-i.cc-bg-gray,
-a.cc-bg-gray {
-  color: white;
-  background-color: #bababa;
-}
-/* lists */
-li.cc-bg-gray {
-  background-color: #bababa;
-  color: white;
-}
-li.cc-gray:before {
-  color: #bababa;
-}
-/* blockquotes */
-blockquote.cc-gray {
-  border-left: 4px solid #bababa;
-}
-blockquote.cc-gray.cc-quoted:before {
-  color: #bababa;
-}
-blockquote.cc-gray.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #bababa;
-}
-/* Tables */
-table.cc-gray {
-  /* Bordered & Colored tables */
-}
-table.cc-gray thead td,
-table.cc-gray tfoot td,
-table.cc-gray thead th,
-table.cc-gray tfoot th {
-  background-color: #bababa;
-  color: white;
-  border-bottom-color: #878787;
-}
-table.cc-gray tbody tr td {
-  border-bottom: 1px solid #bababa;
-}
-table.cc-gray.cc-bordered tfoot td,
-table.cc-gray.cc-bordered thead td,
-table.cc-gray.cc-bordered tfoot th,
-table.cc-gray.cc-bordered thead th {
-  border-color: #a1a1a1;
-}
-table.cc-gray.cc-bordered tbody tr td {
-  border-color: #a1a1a1;
-}
-table tbody tr.cc-gray td {
-  background-color: #bababa;
-  color: white;
-  border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-gray td .form-checkbox label.checked:before,
-table tbody tr.cc-gray td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-gray td .form-checkbox label:before,
-table tbody tr.cc-gray td .form-radio label:before {
-  color: white;
-}
-/* Links / Buttons */
-a.btn.cc-gray,
-button.cc-gray {
-  color: white;
-  background-color: #bababa;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-  border-color: #bababa;
-  /* Loading buttons : show white loader */
-  /* Outlined buttons / links */
-}
-a.btn.cc-gray:hover,
-button.cc-gray:hover {
-  background-color: #a1a1a1;
-}
-a.btn.cc-gray:hover,
-button.cc-gray:hover {
-  color: white;
-  border-color: #bababa;
-}
-a.btn.cc-gray.cc-loading:before,
-button.cc-gray.cc-loading:before {
-  border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
-}
-a.btn.cc-gray.cc-outlined,
-button.cc-gray.cc-outlined {
-  color: #bababa;
-  background-color: white;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #bababa;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-gray.cc-outlined:hover,
-button.cc-gray.cc-outlined:hover {
-  background-color: white;
-}
-a.btn.cc-gray.cc-outlined:hover,
-button.cc-gray.cc-outlined:hover {
-  border-color: #878787;
-  color: #878787;
-}
-a.btn.cc-gray.cc-outlined.cc-loading,
-button.cc-gray.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-gray.cc-outlined.cc-loading:before,
-button.cc-gray.cc-outlined.cc-loading:before {
-  border-color: #bababa #ffffff #ffffff #ffffff;
-}
-a.btn.cc-gray span.badge,
-button.cc-gray span.badge {
-  background-color: white;
-  color: #bababa;
-}
-/* Colored forms */
-form.cc-gray .form-radio,
-form.cc-gray .form-checkbox {
-  /* label with FontAwesome */
-}
-form.cc-gray .form-radio label.checked:before,
-form.cc-gray .form-checkbox label.checked:before {
-  color: #bababa;
-}
-form.cc-gray .form-ps span {
-  background-color: #bababa;
-}
-form.cc-gray .form-ps span:last-child {
-  background-color: #bababa;
-}
-form.cc-gray select:focus,
-form.cc-gray textarea:focus,
-form.cc-gray input:focus {
-  border-color: #bababa;
-}
-form.cc-gray input[type="submit"],
-form.cc-gray button[type="submit"] {
-  background-color: #bababa;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-gray input[type="submit"]:hover,
-form.cc-gray button[type="submit"]:hover {
-  background-color: #a1a1a1;
-}
-/* Badges */
-span.cc-gray {
-  background-color: #bababa;
-  color: white;
-}
-/* Tabs */
-.tabs {
-  /* Phone */
-}
-.tabs.cc-gray.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-gray.cc-bordered > li.active a:not(.btn) {
-  border-color: #bababa #bababa white #bababa;
-}
-.tabs.cc-gray.cc-pills > li.active a:not(.btn),
-.tabs.cc-gray.cc-pills > li:hover a:not(.btn) {
-  background-color: #bababa;
-  border-top: 1px solid #bababa;
-  border-bottom: 1px solid #bababa;
-  color: white;
-}
-.tabs.cc-gray > li {
-  /* Active child */
-}
-.tabs.cc-gray > li:hover a:not(.btn),
-.tabs.cc-gray > li.active a:not(.btn) {
-  color: #bababa;
-  border-bottom-color: #bababa;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-gray.cc-bordered > li:hover,
-  .tabs.cc-gray.cc-bordered > li.active {
-    border-color: #bababa transparent transparent;
-  }
-  .tabs.cc-gray.cc-bordered > li:hover + li,
-  .tabs.cc-gray.cc-bordered > li.active + li {
-    border-color: #bababa transparent transparent;
-  }
-  .tabs.cc-gray.cc-bordered > li:last-child:hover,
-  .tabs.cc-gray.cc-bordered > li:last-child.active {
-    border-color: #bababa transparent;
-  }
-  .tabs.cc-gray.cc-pills > li:nth-child(1).active a:not(.btn),
-  .tabs.cc-gray.cc-pills > li:nth-child(1):hover a:not(.btn) {
-    border-top-width: 1px;
-    border-left-color: #bababa;
-  }
-  .tabs.cc-gray.cc-pills > li.active a:not(.btn),
-  .tabs.cc-gray.cc-pills > li:hover a:not(.btn) {
-    border-top-width: 0px;
-    border-color: #bababa;
   }
 }
 /* texts */
@@ -6153,19 +5857,10 @@ table.cc-blue.cc-bordered thead th {
 table.cc-blue.cc-bordered tbody tr td {
   border-color: #217dbb;
 }
-table tbody tr.cc-blue td {
+table tbody tr.cc-bg-blue td {
   background-color: #3498db;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-blue td .form-checkbox label.checked:before,
-table tbody tr.cc-blue td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-blue td .form-checkbox label:before,
-table tbody tr.cc-blue td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-blue,
@@ -6224,13 +5919,18 @@ button.cc-blue span.badge {
   color: #3498db;
 }
 /* Colored forms */
-form.cc-blue .form-radio,
-form.cc-blue .form-checkbox {
-  /* label with FontAwesome */
+form.cc-blue .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-blue .form-radio label.checked:before,
-form.cc-blue .form-checkbox label.checked:before {
-  color: #3498db;
+form.cc-blue .form-checkbox input:checked {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+form.cc-blue .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-blue .form-radio input:checked:before {
+  background-color: #3498db;
 }
 form.cc-blue .form-ps span {
   background-color: #3498db;
@@ -6387,19 +6087,10 @@ table.cc-purple.cc-bordered thead th {
 table.cc-purple.cc-bordered tbody tr td {
   border-color: #703688;
 }
-table tbody tr.cc-purple td {
+table tbody tr.cc-bg-purple td {
   background-color: #8e44ad;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-purple td .form-checkbox label.checked:before,
-table tbody tr.cc-purple td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-purple td .form-checkbox label:before,
-table tbody tr.cc-purple td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-purple,
@@ -6458,13 +6149,18 @@ button.cc-purple span.badge {
   color: #8e44ad;
 }
 /* Colored forms */
-form.cc-purple .form-radio,
-form.cc-purple .form-checkbox {
-  /* label with FontAwesome */
+form.cc-purple .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-purple .form-radio label.checked:before,
-form.cc-purple .form-checkbox label.checked:before {
-  color: #8e44ad;
+form.cc-purple .form-checkbox input:checked {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+}
+form.cc-purple .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-purple .form-radio input:checked:before {
+  background-color: #8e44ad;
 }
 form.cc-purple .form-ps span {
   background-color: #8e44ad;
@@ -6621,19 +6317,10 @@ table.cc-orange.cc-bordered thead th {
 table.cc-orange.cc-bordered tbody tr td {
   border-color: #c87f0a;
 }
-table tbody tr.cc-orange td {
+table tbody tr.cc-bg-orange td {
   background-color: #f39c12;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-orange td .form-checkbox label.checked:before,
-table tbody tr.cc-orange td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-orange td .form-checkbox label:before,
-table tbody tr.cc-orange td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-orange,
@@ -6692,13 +6379,18 @@ button.cc-orange span.badge {
   color: #f39c12;
 }
 /* Colored forms */
-form.cc-orange .form-radio,
-form.cc-orange .form-checkbox {
-  /* label with FontAwesome */
+form.cc-orange .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-orange .form-radio label.checked:before,
-form.cc-orange .form-checkbox label.checked:before {
-  color: #f39c12;
+form.cc-orange .form-checkbox input:checked {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+form.cc-orange .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-orange .form-radio input:checked:before {
+  background-color: #f39c12;
 }
 form.cc-orange .form-ps span {
   background-color: #f39c12;
@@ -6855,19 +6547,10 @@ table.cc-yellow.cc-bordered thead th {
 table.cc-yellow.cc-bordered tbody tr td {
   border-color: #c29d0b;
 }
-table tbody tr.cc-yellow td {
+table tbody tr.cc-bg-yellow td {
   background-color: #f1c40f;
   color: white;
   border-bottom: 0;
-  /* Show form radio and checkbox white */
-}
-table tbody tr.cc-yellow td .form-checkbox label.checked:before,
-table tbody tr.cc-yellow td .form-radio label.checked:before {
-  color: white;
-}
-table tbody tr.cc-yellow td .form-checkbox label:before,
-table tbody tr.cc-yellow td .form-radio label:before {
-  color: white;
 }
 /* Links / Buttons */
 a.btn.cc-yellow,
@@ -6926,13 +6609,18 @@ button.cc-yellow span.badge {
   color: #f1c40f;
 }
 /* Colored forms */
-form.cc-yellow .form-radio,
-form.cc-yellow .form-checkbox {
-  /* label with FontAwesome */
+form.cc-yellow .form-checkbox input:focus {
+  border-color: #ddd;
 }
-form.cc-yellow .form-radio label.checked:before,
-form.cc-yellow .form-checkbox label.checked:before {
-  color: #f1c40f;
+form.cc-yellow .form-checkbox input:checked {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+form.cc-yellow .form-radio input:focus {
+  border-color: #ddd;
+}
+form.cc-yellow .form-radio input:checked:before {
+  background-color: #f1c40f;
 }
 form.cc-yellow .form-ps span {
   background-color: #f1c40f;
@@ -7042,36 +6730,6 @@ span.cc-yellow {
 .cc-mal-0 {
   margin-left: 0px;
 }
-.cc-pa-1 {
-  padding: 1px;
-}
-.cc-pat-1 {
-  padding-top: 1px;
-}
-.cc-par-1 {
-  padding-right: 1px;
-}
-.cc-pab-1 {
-  padding-bottom: 1px;
-}
-.cc-pal-1 {
-  padding-left: 1px;
-}
-.cc-ma-1 {
-  margin: 1px;
-}
-.cc-mat-1 {
-  margin-top: 1px;
-}
-.cc-mar-1 {
-  margin-right: 1px;
-}
-.cc-mab-1 {
-  margin-bottom: 1px;
-}
-.cc-mal-1 {
-  margin-left: 1px;
-}
 .cc-pa-2 {
   padding: 2px;
 }
@@ -7101,36 +6759,6 @@ span.cc-yellow {
 }
 .cc-mal-2 {
   margin-left: 2px;
-}
-.cc-pa-3 {
-  padding: 3px;
-}
-.cc-pat-3 {
-  padding-top: 3px;
-}
-.cc-par-3 {
-  padding-right: 3px;
-}
-.cc-pab-3 {
-  padding-bottom: 3px;
-}
-.cc-pal-3 {
-  padding-left: 3px;
-}
-.cc-ma-3 {
-  margin: 3px;
-}
-.cc-mat-3 {
-  margin-top: 3px;
-}
-.cc-mar-3 {
-  margin-right: 3px;
-}
-.cc-mab-3 {
-  margin-bottom: 3px;
-}
-.cc-mal-3 {
-  margin-left: 3px;
 }
 .cc-pa-4 {
   padding: 4px;
@@ -7162,36 +6790,6 @@ span.cc-yellow {
 .cc-mal-4 {
   margin-left: 4px;
 }
-.cc-pa-5 {
-  padding: 5px;
-}
-.cc-pat-5 {
-  padding-top: 5px;
-}
-.cc-par-5 {
-  padding-right: 5px;
-}
-.cc-pab-5 {
-  padding-bottom: 5px;
-}
-.cc-pal-5 {
-  padding-left: 5px;
-}
-.cc-ma-5 {
-  margin: 5px;
-}
-.cc-mat-5 {
-  margin-top: 5px;
-}
-.cc-mar-5 {
-  margin-right: 5px;
-}
-.cc-mab-5 {
-  margin-bottom: 5px;
-}
-.cc-mal-5 {
-  margin-left: 5px;
-}
 .cc-pa-6 {
   padding: 6px;
 }
@@ -7221,36 +6819,6 @@ span.cc-yellow {
 }
 .cc-mal-6 {
   margin-left: 6px;
-}
-.cc-pa-7 {
-  padding: 7px;
-}
-.cc-pat-7 {
-  padding-top: 7px;
-}
-.cc-par-7 {
-  padding-right: 7px;
-}
-.cc-pab-7 {
-  padding-bottom: 7px;
-}
-.cc-pal-7 {
-  padding-left: 7px;
-}
-.cc-ma-7 {
-  margin: 7px;
-}
-.cc-mat-7 {
-  margin-top: 7px;
-}
-.cc-mar-7 {
-  margin-right: 7px;
-}
-.cc-mab-7 {
-  margin-bottom: 7px;
-}
-.cc-mal-7 {
-  margin-left: 7px;
 }
 .cc-pa-8 {
   padding: 8px;
@@ -7282,36 +6850,6 @@ span.cc-yellow {
 .cc-mal-8 {
   margin-left: 8px;
 }
-.cc-pa-9 {
-  padding: 9px;
-}
-.cc-pat-9 {
-  padding-top: 9px;
-}
-.cc-par-9 {
-  padding-right: 9px;
-}
-.cc-pab-9 {
-  padding-bottom: 9px;
-}
-.cc-pal-9 {
-  padding-left: 9px;
-}
-.cc-ma-9 {
-  margin: 9px;
-}
-.cc-mat-9 {
-  margin-top: 9px;
-}
-.cc-mar-9 {
-  margin-right: 9px;
-}
-.cc-mab-9 {
-  margin-bottom: 9px;
-}
-.cc-mal-9 {
-  margin-left: 9px;
-}
 .cc-pa-10 {
   padding: 10px;
 }
@@ -7341,36 +6879,6 @@ span.cc-yellow {
 }
 .cc-mal-10 {
   margin-left: 10px;
-}
-.cc-pa-11 {
-  padding: 11px;
-}
-.cc-pat-11 {
-  padding-top: 11px;
-}
-.cc-par-11 {
-  padding-right: 11px;
-}
-.cc-pab-11 {
-  padding-bottom: 11px;
-}
-.cc-pal-11 {
-  padding-left: 11px;
-}
-.cc-ma-11 {
-  margin: 11px;
-}
-.cc-mat-11 {
-  margin-top: 11px;
-}
-.cc-mar-11 {
-  margin-right: 11px;
-}
-.cc-mab-11 {
-  margin-bottom: 11px;
-}
-.cc-mal-11 {
-  margin-left: 11px;
 }
 .cc-pa-12 {
   padding: 12px;
@@ -7402,36 +6910,6 @@ span.cc-yellow {
 .cc-mal-12 {
   margin-left: 12px;
 }
-.cc-pa-13 {
-  padding: 13px;
-}
-.cc-pat-13 {
-  padding-top: 13px;
-}
-.cc-par-13 {
-  padding-right: 13px;
-}
-.cc-pab-13 {
-  padding-bottom: 13px;
-}
-.cc-pal-13 {
-  padding-left: 13px;
-}
-.cc-ma-13 {
-  margin: 13px;
-}
-.cc-mat-13 {
-  margin-top: 13px;
-}
-.cc-mar-13 {
-  margin-right: 13px;
-}
-.cc-mab-13 {
-  margin-bottom: 13px;
-}
-.cc-mal-13 {
-  margin-left: 13px;
-}
 .cc-pa-14 {
   padding: 14px;
 }
@@ -7461,36 +6939,6 @@ span.cc-yellow {
 }
 .cc-mal-14 {
   margin-left: 14px;
-}
-.cc-pa-15 {
-  padding: 15px;
-}
-.cc-pat-15 {
-  padding-top: 15px;
-}
-.cc-par-15 {
-  padding-right: 15px;
-}
-.cc-pab-15 {
-  padding-bottom: 15px;
-}
-.cc-pal-15 {
-  padding-left: 15px;
-}
-.cc-ma-15 {
-  margin: 15px;
-}
-.cc-mat-15 {
-  margin-top: 15px;
-}
-.cc-mar-15 {
-  margin-right: 15px;
-}
-.cc-mab-15 {
-  margin-bottom: 15px;
-}
-.cc-mal-15 {
-  margin-left: 15px;
 }
 .cc-pa-16 {
   padding: 16px;
@@ -7522,36 +6970,6 @@ span.cc-yellow {
 .cc-mal-16 {
   margin-left: 16px;
 }
-.cc-pa-17 {
-  padding: 17px;
-}
-.cc-pat-17 {
-  padding-top: 17px;
-}
-.cc-par-17 {
-  padding-right: 17px;
-}
-.cc-pab-17 {
-  padding-bottom: 17px;
-}
-.cc-pal-17 {
-  padding-left: 17px;
-}
-.cc-ma-17 {
-  margin: 17px;
-}
-.cc-mat-17 {
-  margin-top: 17px;
-}
-.cc-mar-17 {
-  margin-right: 17px;
-}
-.cc-mab-17 {
-  margin-bottom: 17px;
-}
-.cc-mal-17 {
-  margin-left: 17px;
-}
 .cc-pa-18 {
   padding: 18px;
 }
@@ -7581,36 +6999,6 @@ span.cc-yellow {
 }
 .cc-mal-18 {
   margin-left: 18px;
-}
-.cc-pa-19 {
-  padding: 19px;
-}
-.cc-pat-19 {
-  padding-top: 19px;
-}
-.cc-par-19 {
-  padding-right: 19px;
-}
-.cc-pab-19 {
-  padding-bottom: 19px;
-}
-.cc-pal-19 {
-  padding-left: 19px;
-}
-.cc-ma-19 {
-  margin: 19px;
-}
-.cc-mat-19 {
-  margin-top: 19px;
-}
-.cc-mar-19 {
-  margin-right: 19px;
-}
-.cc-mab-19 {
-  margin-bottom: 19px;
-}
-.cc-mal-19 {
-  margin-left: 19px;
 }
 .cc-pa-20 {
   padding: 20px;
@@ -7642,36 +7030,6 @@ span.cc-yellow {
 .cc-mal-20 {
   margin-left: 20px;
 }
-.cc-pa-21 {
-  padding: 21px;
-}
-.cc-pat-21 {
-  padding-top: 21px;
-}
-.cc-par-21 {
-  padding-right: 21px;
-}
-.cc-pab-21 {
-  padding-bottom: 21px;
-}
-.cc-pal-21 {
-  padding-left: 21px;
-}
-.cc-ma-21 {
-  margin: 21px;
-}
-.cc-mat-21 {
-  margin-top: 21px;
-}
-.cc-mar-21 {
-  margin-right: 21px;
-}
-.cc-mab-21 {
-  margin-bottom: 21px;
-}
-.cc-mal-21 {
-  margin-left: 21px;
-}
 .cc-pa-22 {
   padding: 22px;
 }
@@ -7701,36 +7059,6 @@ span.cc-yellow {
 }
 .cc-mal-22 {
   margin-left: 22px;
-}
-.cc-pa-23 {
-  padding: 23px;
-}
-.cc-pat-23 {
-  padding-top: 23px;
-}
-.cc-par-23 {
-  padding-right: 23px;
-}
-.cc-pab-23 {
-  padding-bottom: 23px;
-}
-.cc-pal-23 {
-  padding-left: 23px;
-}
-.cc-ma-23 {
-  margin: 23px;
-}
-.cc-mat-23 {
-  margin-top: 23px;
-}
-.cc-mar-23 {
-  margin-right: 23px;
-}
-.cc-mab-23 {
-  margin-bottom: 23px;
-}
-.cc-mal-23 {
-  margin-left: 23px;
 }
 .cc-pa-24 {
   padding: 24px;
@@ -7762,35 +7090,95 @@ span.cc-yellow {
 .cc-mal-24 {
   margin-left: 24px;
 }
-.cc-pa-25 {
-  padding: 25px;
+.cc-pa-26 {
+  padding: 26px;
 }
-.cc-pat-25 {
-  padding-top: 25px;
+.cc-pat-26 {
+  padding-top: 26px;
 }
-.cc-par-25 {
-  padding-right: 25px;
+.cc-par-26 {
+  padding-right: 26px;
 }
-.cc-pab-25 {
-  padding-bottom: 25px;
+.cc-pab-26 {
+  padding-bottom: 26px;
 }
-.cc-pal-25 {
-  padding-left: 25px;
+.cc-pal-26 {
+  padding-left: 26px;
 }
-.cc-ma-25 {
-  margin: 25px;
+.cc-ma-26 {
+  margin: 26px;
 }
-.cc-mat-25 {
-  margin-top: 25px;
+.cc-mat-26 {
+  margin-top: 26px;
 }
-.cc-mar-25 {
-  margin-right: 25px;
+.cc-mar-26 {
+  margin-right: 26px;
 }
-.cc-mab-25 {
-  margin-bottom: 25px;
+.cc-mab-26 {
+  margin-bottom: 26px;
 }
-.cc-mal-25 {
-  margin-left: 25px;
+.cc-mal-26 {
+  margin-left: 26px;
+}
+.cc-pa-28 {
+  padding: 28px;
+}
+.cc-pat-28 {
+  padding-top: 28px;
+}
+.cc-par-28 {
+  padding-right: 28px;
+}
+.cc-pab-28 {
+  padding-bottom: 28px;
+}
+.cc-pal-28 {
+  padding-left: 28px;
+}
+.cc-ma-28 {
+  margin: 28px;
+}
+.cc-mat-28 {
+  margin-top: 28px;
+}
+.cc-mar-28 {
+  margin-right: 28px;
+}
+.cc-mab-28 {
+  margin-bottom: 28px;
+}
+.cc-mal-28 {
+  margin-left: 28px;
+}
+.cc-pa-30 {
+  padding: 30px;
+}
+.cc-pat-30 {
+  padding-top: 30px;
+}
+.cc-par-30 {
+  padding-right: 30px;
+}
+.cc-pab-30 {
+  padding-bottom: 30px;
+}
+.cc-pal-30 {
+  padding-left: 30px;
+}
+.cc-ma-30 {
+  margin: 30px;
+}
+.cc-mat-30 {
+  margin-top: 30px;
+}
+.cc-mar-30 {
+  margin-right: 30px;
+}
+.cc-mab-30 {
+  margin-bottom: 30px;
+}
+.cc-mal-30 {
+  margin-left: 30px;
 }
 /* *****
     @name : ._generateIcons

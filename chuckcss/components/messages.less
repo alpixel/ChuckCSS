@@ -6,7 +6,7 @@
 
 /*
     - General messages styles
-    - types : warning, error, success, info = status
+    - types : warning, error, success, info
 
     <div class="message message-type">
         ...
@@ -19,7 +19,6 @@
     border-left-width:7px;
     margin:20px 0;
     position:relative;
-    //._border-radius(unit(@alert-br,px));
 
     /* Links inside .message elements */
     a {
@@ -33,7 +32,6 @@
     }
 
     /* Messages types */
-    /* Alerts types */
     &-primary {
         border-color:@primary;
         color:@primary;
@@ -44,7 +42,6 @@
             color:@primary;
         }
     }
-    &-status,
     &-info {
         border-color: @alert-in-bc;
         color:@alert-in-tc;

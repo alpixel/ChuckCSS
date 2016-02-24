@@ -9,17 +9,17 @@
     ._box-shadow
     ._bg-vertical | ._bg-horizontal
     ._opacity
+    ._clearfix
+    ._displayTable
+    ._inline
+    ._inside
     ._transition
     ._rotate | ._scale | ._translate3d | ._skew
-    ._inline
-    ._displayTable
-    ._clearfix
     ._box-sizing
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._placeHold
     ._reset
     ._uppercase
-    ._inside
     ._fa
     ._io
     ._cover
@@ -151,6 +151,81 @@
   filter:alpha(opacity=@opacityIE);
   zoom: 1;
 }
+
+/* *****
+    @name : ._clearfix
+    @description : reset floated elements
+***** */
+._clearfix() {
+    zoom:1;
+    &:before,
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        overflow: hidden
+    }
+    &:after {clear: both}
+}
+
+/* *****
+    @name : ._displayTable
+    @description : Show elements as Table view
+
+    @exemple :
+      el {
+          ._displayTable; // <el> is now shown as a table element. All direct children will have a table-cell display
+      }
+***** */
+._displayTable(@layout : fixed) {
+    ._reset;
+    display:table;
+    table-layout:@layout;
+    width:100%;
+
+    /* Display direct children as table-cell */
+    &>* {
+        list-style:none;
+        display:table-cell;
+        vertical-align:middle;
+        ._reset;
+    }
+}
+
+
+/* *****
+    @name : ._inline
+    @description : Set the element display as an inline-block element with IE7 fix
+    @wtf : why called it "._inline" to apply "inline-block" property ? Because ._inline-block is too long ... ¯\_(ツ)_/¯
+
+    @exemple :
+      p {
+          ._inline; // <p>, a block element is now shown as an inline-block element
+      }
+***** */
+._inline() {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+
+/* *****
+    @name : ._inside
+    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
+    @params : @width
+
+    @exemple :
+      el {
+        ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
+      }
+***** */
+._inside(@width:1200px) when (isnumber(@width)) {
+    width: @width;
+    margin:0 auto;
+    ._clearfix;
+    ._transition(.2s,width);
+}
 /* *****
     @name : ._transition
     @description : animate a DOM element with transition property
@@ -169,7 +244,6 @@
         }
       }
 ***** */
-.transition {._transition;}
 ._transition(@duration:.2s, @property:all, @effect:ease-out, @delay:0s) {
   transition:@arguments;
   -webkit-transition:@arguments;
@@ -288,62 +362,9 @@
   }
 }
 
-/* *****
-    @name : ._inline
-    @description : Set the element display as an inline-block element with IE7 fix
-    @wtf : why called it "._inline" to apply "inline-block" property ? Because ._inline-block is too long ... ¯\_(ツ)_/¯
 
-    @exemple :
-      p {
-          ._inline; // <p>, a block element is now shown as an inline-block element
-      }
-***** */
-.inline {._inline;}
-._inline() {
-    display:inline-block;
-    *display:inline;
-    zoom:1;
-}
-/* *****
-    @name : ._displayTable
-    @description : Show elements as Table view
 
-    @exemple :
-      el {
-          ._displayTable; // <el> is now shown as a table element. All direct children will have a table-cell display
-      }
-***** */
-.displayTable {._displayTable;}
-._displayTable(@layout : fixed) {
-    ._reset;
-    display:table;
-    table-layout:@layout;
-    width:100%;
 
-    /* Display direct children as table-cell */
-    &>* {
-        list-style:none;
-        display:table-cell;
-        vertical-align:middle;
-        ._reset;
-    }
-}
-/* *****
-    @name : ._clearfix
-    @description : reset floated elements
-***** */
-.clearfix {._clearfix;}
-._clearfix() {
-    zoom:1;
-    &:before,
-    &:after {
-        content: ".";
-        display: block;
-        height: 0;
-        overflow: hidden
-    }
-    &:after {clear: both}
-}
 /* *****
     @name : ._box-sizing
     @description : apply box-sizing property to a DOM element
@@ -436,23 +457,7 @@
 ._uppercase() {
   text-transform:uppercase;
 }
-/* *****
-    @name : ._inside
-    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
-    @params : @width
 
-    @exemple :
-      el {
-        ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
-      }
-***** */
-.inside{._inside;}
-._inside(@width:1400px) when (isnumber(@width)) {
-    width: @width;
-    margin:0 auto;
-    ._clearfix;
-    ._transition(.2s,width);
-}
 /* *****
     @name : ._fa
     @description : Generate fontAwesome icon
