@@ -4575,6 +4575,7 @@ a.btn.cc-fat span.badge:before {
 }
 .tabs.cc-pills {
   border: 0;
+  /* Centered pills */
 }
 .tabs.cc-pills.cc-unchained > li {
   margin-left: 20px;
@@ -4607,6 +4608,21 @@ a.btn.cc-fat span.badge:before {
 .tabs.cc-pills.cc-unchained > li.active a:not(.btn),
 .tabs.cc-pills.cc-unchained > li:hover a:not(.btn) {
   border: 1px solid #29b7e1;
+}
+.tabs.cc-pills.cc-centered {
+  /* Flexbox display */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: box;
+  /* Main axis alignment */
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .tabs.cc-pills > li {
   margin: 0;
