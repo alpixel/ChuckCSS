@@ -72,10 +72,13 @@
     /* Tables */
     table {
         &.cc-@{colorName} {
-            thead td, thead th {
-                background-color:@colorValue;
-                color:white;
-                border-bottom-color:darken(@colorValue,20%);
+            thead,
+            tfoot {
+                td,th {
+                    background-color:@colorValue;
+                    color:white;
+                    border-bottom-color:darken(@colorValue,20%);
+                }
             }
 
             tbody tr td {
@@ -84,6 +87,7 @@
 
             /* Bordered & Colored tables */
             &.cc-bordered {
+                tfoot,
                 thead {
                     td,th {
                         border-color:darken(@colorValue,10%);
@@ -99,9 +103,27 @@
 
         tbody tr {
             &.cc-@{colorName} {
-                background-color:@colorValue;
-                color:white;
-                border-bottom:0
+                td {
+                    background-color:@colorValue;
+                    color:white;
+                    border-bottom:0;
+
+                    /* Show form radio and checkbox white */
+                    .form-checkbox,
+                    .form-radio {
+                        label {
+                            &.checked {
+                                &:before {
+                                    color:white;
+                                }
+                            }
+
+                            &:before {
+                                color:white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
