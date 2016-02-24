@@ -4529,7 +4529,7 @@ a.btn.cc-fat span.badge:before {
 /* ********************* */
 /*
     - General tabs
-    
+
 
     <ul class="tabs">
         <li>...</li>
@@ -4552,9 +4552,11 @@ a.btn.cc-fat span.badge:before {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   line-height: 2.25;
-  border-bottom: 1px solid #d3d3d3;
   /* Tablet */
   /* Phone */
+}
+.tabs.cc-underlined {
+  border-bottom: 1px solid #d3d3d3;
 }
 .tabs.cc-centered {
   /* Main axis alignment */
@@ -4587,6 +4589,9 @@ a.btn.cc-fat span.badge:before {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: center;
+}
+.tabs.cc-bordered {
+  border-bottom: 1px solid #d3d3d3;
 }
 .tabs.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-bordered > li.active a:not(.btn) {
@@ -4787,11 +4792,17 @@ a.btn.cc-fat span.badge:before {
     flex-direction: column;
     border-bottom-width: 0px;
   }
+  .tabs.cc-underlined {
+    border-bottom-width: 0px;
+  }
   .tabs.cc-centered li {
     text-align: center;
   }
   .tabs.cc-right li {
     text-align: right;
+  }
+  .tabs.cc-bordered {
+    border-bottom-width: 0px;
   }
   .tabs.cc-bordered > li {
     border: 1px solid transparent;

@@ -6,7 +6,7 @@
 
 /*
     - General tabs
-    
+
 
     <ul class="tabs">
         <li>...</li>
@@ -18,9 +18,12 @@
     ._flex-display;
     ._flex-wrap(wrap);
     line-height:@text-lh*1.5;
-    border-bottom:1px solid @gray-li;
+
 
     &.cc {
+        &-underlined {
+            border-bottom:1px solid @gray-li;
+        }
         &-centered {
             ._flex-justify(center);
         }
@@ -36,6 +39,8 @@
             }
         }
         &-bordered {
+            border-bottom:1px solid @gray-li;
+
             &>li {
 
                 &:hover,
@@ -101,7 +106,7 @@
                             border-left-color:@gray-li;
                         }
                     }
-                    
+
                     a:not(.btn) {
                         ._border-radius(3px 0 0 3px);
                     }
@@ -157,7 +162,7 @@
 
     &>li {
         list-style:none;
-        margin-left:20px;       
+        margin-left:20px;
 
         /* Delete margin on first child */
         &:nth-child(1){margin-left:0}
@@ -230,6 +235,9 @@
         border-bottom-width:0px;
 
         &.cc {
+            &-underlined {
+                border-bottom-width:0px;
+            }
             &-centered {
                 li {
                     text-align:center;
@@ -242,17 +250,18 @@
             }
 
             &-bordered {
+                border-bottom-width:0px;
                 &>li {
                     border:1px solid transparent;
 
                     a:not(.btn) {
                         border:0 !important;
                     }
-                    
+
                     &:hover,
                     &.active {
                         border-color:@primary transparent transparent;
-                        
+
                         &+li {
                             border-color:@primary transparent transparent;
                         }
