@@ -43,6 +43,22 @@
                 ._transition;
             }
         }
+        &-masonry {
+            display:block;
+            margin:0;
+            -webkit-column-gap: @cols-masonry-gap; /* Chrome, Safari, Opera */
+            -moz-column-gap: @cols-masonry-gap; /* Firefox */
+            column-gap: @cols-masonry-gap;
+
+            &.cc-no-gutter .column,
+            .column {
+                ._inline;
+                width:100%;
+                max-width:100%;
+                ._flex(none);
+                margin:@cols-masonry-gap/2 0;
+            }
+        }
     }
 
 

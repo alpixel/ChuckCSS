@@ -474,6 +474,15 @@
                 }
             }
         }
+
+        /* Masonry layout */
+        &.cc-masonry.cc {
+            &-@{iterator} {
+                -webkit-column-count: @iterator; /* Chrome, Safari, Opera */
+                -moz-column-count: @iterator; /* Firefox */
+                column-count: @iterator;
+            }
+        }
     }
 
     ._generateColumns((@iterator + 1));
@@ -526,6 +535,15 @@
                 }
             }
         }
+
+        /* Masonry layout */
+        &.cc-masonry.cc {
+            &-@{iterator}-t {
+                -webkit-column-count: @iterator; /* Chrome, Safari, Opera */
+                -moz-column-count: @iterator; /* Firefox */
+                column-count: @iterator;
+            }
+        }
     }
 
     ._generateTabletColumns((@iterator + 1));
@@ -576,6 +594,15 @@
                     margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
                 }
 
+            }
+        }
+
+        /* Masonry layout */
+        &.cc-masonry.cc {
+            &-@{iterator}-s {
+                -webkit-column-count: @iterator; /* Chrome, Safari, Opera */
+                -moz-column-count: @iterator; /* Firefox */
+                column-count: @iterator;
             }
         }
     }
