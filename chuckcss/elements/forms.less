@@ -21,12 +21,17 @@ form {
         */
         &-item {
             ._clearfix;
-            margin:10px 0;
+            margin:0.8em 0;
 
             /* Display as inline-block */
             &.inline {
-                margin-right:1em;
+                ._inline;
+                margin-left:1em;
                 vertical-align: middle;
+
+                &:nth-child(1) {
+                    margin-left:0;
+                }
             }
 
 
@@ -268,7 +273,7 @@ form {
         ._reset;
         ._inline;
         vertical-align: middle;
-        padding-right:10px;
+        padding-right:0.8em;
         font-weight:400;
 
         &.block {
@@ -289,7 +294,7 @@ form {
         ._border-radius(unit(@input-br,px));
         vertical-align: middle;
         background-color:@input-bg;
-        padding:0 15px;
+        padding:0 1em;
         border:1px solid @input-bc;
         resize:none;
         height: @input-lh;
@@ -348,7 +353,7 @@ form {
         - Specific for textareas
     */
     textarea {
-        padding:10px 15px;
+        padding:0.8em 1em;
         line-height:1.5;
         min-height:110px;
         vertical-align: top;
@@ -359,7 +364,7 @@ form {
         - select
     */
     select {
-        padding:0 0 0 15px;
+        padding:0 0 0 1em;
         background-color:@input-bg;
         height: @input-lh;
         line-height:1;
@@ -372,7 +377,7 @@ form {
 
         /* Hack IE8 & < */
         height:inherit\9;
-        padding:10px 5px 10px 15px\9;
+        padding:0.8em 0.3em 0.8em 1em\9;
 
         &:focus {
             outline:none;
@@ -389,7 +394,7 @@ form {
         color:white;
         border:0;
         height: @input-lh;
-        padding:0 30px;
+        padding:0 2em;
         vertical-align: middle;
         ._transition;
         ._uppercase;
@@ -399,10 +404,10 @@ form {
 
         &[class*="fa-"],
         &[class*="ion-"] {
-            padding-left:20px;
+            padding-left:1.5em;
 
             &:before {
-                margin-right:15px;
+                margin-right:1em;
             }
         }
     }

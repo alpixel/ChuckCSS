@@ -104,9 +104,9 @@
     -- @ Texts @ --
 */
 @text-mc: #3a3a3a;                      /* Texts ~ Main color (hexa, rgb, rgba...) */
-@text-fs-old :15px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
+@text-fs-old : 15px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
 @text-fs: unit(@text-fs-old/10,rem);    /* Textes font-size (applied to <body>) */
-@text-lh : 1.5;                         /* Texts line-height */
+@text-lh : 1.5;                         /* Texts line-height : ~= font-size*1.5 */
 
 
 
@@ -120,7 +120,7 @@
 @links-fs : @text-fs;               /* Links ~ Font-size */
 @links-btn-tc : white;              /* Links ~ buttons text color when colorized */
 @links-btn-hover-tc : white;        /* Links ~ buttons text color on hover when colorized */
-@links-btn-lh : 1.8;                /* Links ~ buttons line-height */
+@links-btn-lh : 1.8;                /* Links ~ buttons line-height : ~= font-size*1.8 */
 @links-btn-br : 3;                  /* Links ~ buttons border-radius (in px) */
 @links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn cc-thin"> line-height */
 @links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn cc-fat"> line-height */
@@ -168,7 +168,7 @@
             </tbody>
         </table>
 */
-@tables-cells-padding : 7px;    /* <th> & <td> padding */
+@tables-cells-padding : 0.5em;    /* <th> & <td> padding */
 @tables-ending : #e0e0e0;       /* Line below tables */
 @tables-striped-even : #ffffff; /* Even lines bg-color */
 @tables-striped-odd : #f0f0f0;  /* Odd lines bg-color */
@@ -193,7 +193,7 @@
 @submit-bg : @primary;          /* Submit input/button bg-color */
 
 @prefix-bg : @primary;          /* Prefix bgColor */
-@prefix-padding : 0 15px;       /* Prefix padding */
+@prefix-padding : 0 1.2em;        /* Prefix padding */
 @prefix-tc : white;             /* Prefix text color */
 
 @suffix-bg : @prefix-bg;           /* Suffix bgColor */
@@ -252,28 +252,28 @@
             <div class="column cc-6">6 columns</div>
         </div>
 */
-@cols-gutter : 20px; /* Gutter between 2 cols = Each column margin-left & margin-right */
+@cols-gutter : 2em; /* Gutter between 2 cols = Each column margin-left & margin-right */
 @cols-total : 12; /* Total of cols in grid */
-@cols-pa : 15px; /* Each column padding  */
-@cols-ma-top : 5px; /* Each column margin top */
+@cols-pa : 1em; /* Each column padding  */
+@cols-ma-top : 0.3em; /* Each column margin top */
 @cols-ma-bottom : @cols-ma-top; /* Each column margin bottom */
-@cols-masonry-gap : 20px; /* Gap between each column with masonry layout */
+@cols-masonry-gap : 1.5em; /* Gap between each column with masonry layout */
 
 
 
 /*
     -- @ Helpers @ --
 */
-@helper-pa : 15px;      /* Used for helpers cc-pa */
-@helper-pat : 15px;     /* Used for helpers cc-pat */
-@helper-par : 15px;     /* Used for helpers cc-par */
-@helper-pab : 15px;     /* Used for helpers cc-pab */
-@helper-pal : 15px;     /* Used for helpers cc-pal */
-@helper-ma : 15px;      /* Used for helpers cc-ma */
-@helper-mat : 15px;     /* Used for helpers cc-mat */
-@helper-mar : 15px;     /* Used for helpers cc-mar */
-@helper-mab : 15px;     /* Used for helpers cc-mab */
-@helper-mal : 15px;     /* Used for helpers cc-mal */
+@helper-pa : 1em;      /* Used for helpers cc-pa */
+@helper-pat : 1em;     /* Used for helpers cc-pat */
+@helper-par : 1em;     /* Used for helpers cc-par */
+@helper-pab : 1em;     /* Used for helpers cc-pab */
+@helper-pal : 1em;     /* Used for helpers cc-pal */
+@helper-ma : 1em;      /* Used for helpers cc-ma */
+@helper-mat : 1em;     /* Used for helpers cc-mat */
+@helper-mar : 1em;     /* Used for helpers cc-mar */
+@helper-mab : 1em;     /* Used for helpers cc-mab */
+@helper-mal : 1em;     /* Used for helpers cc-mal */
 
 
 /*

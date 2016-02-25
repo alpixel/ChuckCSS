@@ -14,32 +14,32 @@
 */
 
 .alert {
-    padding: 15px;
+    padding: 1em;
     padding-right:45px;
     border: 1px solid transparent;
-    margin:20px 0;
+    margin:1.5em 0;
     position:relative;
     ._border-radius(unit(@alert-br,px));
 
-    /* Links inside .message elements */
+    /* Links inside a .alert element */
     a {
         text-decoration:underline;
     }
 
-    /* List : add margin-left */
+    /* List : add margin */
     ul {
         width:90%;
-        margin:15px auto;
+        margin:1em auto;
     }
 
-    /* Close icon to the right */
+    /* Closed icon */
     button.close {
         ._reset;
         display:block;
         position:absolute;
         right:0px;
         top:0px;
-        padding:15px;
+        padding:1em;
         height:100%;
         background-color:transparent;
         ._opacity(1);
