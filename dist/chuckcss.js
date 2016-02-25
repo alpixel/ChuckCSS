@@ -1,35 +1,5 @@
 ;(function($) {
-
-    /*
-        @name : checkRadio
-        @function : check or uncheck checkbox & radio inputs
-        @params : no params
-    */
-    function checkRadio() {
-        if($('input[type="radio"], input[type="checkbox"]').length) {
-            $('input[type="radio"], input[type="checkbox"]').each(function(i,el){
-                if($(this).is(':checked'))
-                    $(this).parent().addClass('checked'); // add .checked class to <label>
-                else
-                    $(this).parent().removeClass('checked'); // remove .checked class to <label>
-            });
-        }
-    }
-
-
     $(function(){
-        /*!
-            -- @ CHECK RADIO && CHECKBOX INPUTS @ --
-        */
-        if($('input[type="radio"], input[type="checkbox"]').length) {
-            /* DOM ready : Check radio if already checked */
-            checkRadio();
-
-            $('input[type="radio"], input[type="checkbox"]').on('click',function(e){
-                checkRadio();
-            });
-        }
-
 
         /*!
             -- @ Close alerts @ --
