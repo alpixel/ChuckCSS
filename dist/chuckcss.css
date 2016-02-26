@@ -1600,7 +1600,7 @@ table tfoot th,
 table thead th {
   font-weight: 400;
   font-size: 1.5rem;
-  padding: 0.5em;
+  padding: 8px;
   /* defined in settings.less */
   border: 0;
   border-bottom: 1px solid #e0e0e0;
@@ -1612,7 +1612,7 @@ table tfoot td {
   border: 0;
 }
 table tbody td {
-  padding: 0.5em;
+  padding: 8px;
   /* defined in settings.less */
   border-bottom: 1px solid #e0e0e0;
   /* defined in settings.less */
