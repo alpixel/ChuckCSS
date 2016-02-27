@@ -4314,6 +4314,13 @@ img.cc-blur-hover:hover {
   -ms-align-self: stretch;
   align-self: stretch;
 }
+.columns .column.cc-w-auto {
+  -webkit-box-flex: 0 0 auto;
+  -moz-box-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
 @media screen and (max-width: 1200px) {
   .columns.cc-gutter .column.cc-no-offset-t,
   .columns .column.cc-no-offset-t {
@@ -7257,7 +7264,7 @@ li[class*="ion-"] {
 li[class*="fa-"]:before,
 li[class*="ion-"]:before {
   position: absolute;
-  left: -20px;
+  left: -1.3em;
   top: 4px;
 }
 ul.cc-horizontal li[class*="fa-"]:before,
