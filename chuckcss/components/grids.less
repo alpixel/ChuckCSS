@@ -59,6 +59,12 @@
                 margin:@cols-masonry-gap/2 0;
             }
         }
+        &-spaceless {
+            &>.column {
+                margin-top:0;
+                margin-bottom:0;
+            }
+        }
     }
 
 
@@ -104,6 +110,9 @@
                     &-center {._flex-align-self(center);}
                     &-stretch {._flex-align-self(stretch);}
                 }
+            }
+            &-w-auto {
+                ._flex(0 0 auto);
             }
         }
     }
