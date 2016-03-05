@@ -4200,6 +4200,10 @@ img.cc-blur-hover:hover {
   flex: none;
   margin: 0.75em 0;
 }
+.columns.cc-spaceless > .column {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .columns .column {
   padding: 0;
   margin: 0;
@@ -4220,6 +4224,9 @@ img.cc-blur-hover:hover {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   padding: 2em 1em;
+}
+.columns .column.columns.cc-no-gutter {
+  padding: 0;
 }
 .columns .column.cc-first {
   -webkit-box-ordinal-group: -1;
