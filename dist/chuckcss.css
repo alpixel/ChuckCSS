@@ -4329,6 +4329,8 @@ img.cc-blur-hover:hover {
   flex: 0 0 auto;
 }
 @media screen and (max-width: 1200px) {
+  .columns.cc-gutter .column.cc-offset-0-t,
+  .columns .column.cc-offset-0-t,
   .columns.cc-gutter .column.cc-no-offset-t,
   .columns .column.cc-no-offset-t {
     margin-left: 1em;
@@ -4349,11 +4351,14 @@ img.cc-blur-hover:hover {
     -webkit-order: 2;
     order: 2;
   }
+  .columns.cc-no-gutter .column.cc-offset-0-t,
   .columns.cc-no-gutter .column.cc-no-offset-t {
     margin-left: 0;
   }
 }
 @media screen and (max-width: 767px) {
+  .columns.cc-gutter .column.cc-offset-0-s,
+  .columns .column.cc-offset-0-s,
   .columns.cc-gutter .column.cc-no-offset-s,
   .columns .column.cc-no-offset-s {
     margin-left: 1em;
@@ -4374,6 +4379,7 @@ img.cc-blur-hover:hover {
     -webkit-order: 3;
     order: 3;
   }
+  .columns.cc-no-gutter .column.cc-offset-0-s,
   .columns.cc-no-gutter .column.cc-no-offset-s {
     margin-left: 0;
   }
