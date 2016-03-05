@@ -5257,7 +5257,7 @@ button.cc-primary.cc-loading:before {
 a.btn.cc-primary.cc-outlined,
 button.cc-primary.cc-outlined {
   color: #29b7e1;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #29b7e1;
@@ -5265,7 +5265,7 @@ button.cc-primary.cc-outlined {
 }
 a.btn.cc-primary.cc-outlined:hover,
 button.cc-primary.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-primary.cc-outlined:hover,
 button.cc-primary.cc-outlined:hover {
@@ -5487,7 +5487,7 @@ button.cc-green.cc-loading:before {
 a.btn.cc-green.cc-outlined,
 button.cc-green.cc-outlined {
   color: #80ae37;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #80ae37;
@@ -5495,7 +5495,7 @@ button.cc-green.cc-outlined {
 }
 a.btn.cc-green.cc-outlined:hover,
 button.cc-green.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-green.cc-outlined:hover,
 button.cc-green.cc-outlined:hover {
@@ -5717,7 +5717,7 @@ button.cc-red.cc-loading:before {
 a.btn.cc-red.cc-outlined,
 button.cc-red.cc-outlined {
   color: #c41515;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #c41515;
@@ -5725,7 +5725,7 @@ button.cc-red.cc-outlined {
 }
 a.btn.cc-red.cc-outlined:hover,
 button.cc-red.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-red.cc-outlined:hover,
 button.cc-red.cc-outlined:hover {
@@ -5947,7 +5947,7 @@ button.cc-blue.cc-loading:before {
 a.btn.cc-blue.cc-outlined,
 button.cc-blue.cc-outlined {
   color: #3498db;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #3498db;
@@ -5955,7 +5955,7 @@ button.cc-blue.cc-outlined {
 }
 a.btn.cc-blue.cc-outlined:hover,
 button.cc-blue.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-blue.cc-outlined:hover,
 button.cc-blue.cc-outlined:hover {
@@ -6177,7 +6177,7 @@ button.cc-purple.cc-loading:before {
 a.btn.cc-purple.cc-outlined,
 button.cc-purple.cc-outlined {
   color: #8e44ad;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #8e44ad;
@@ -6185,7 +6185,7 @@ button.cc-purple.cc-outlined {
 }
 a.btn.cc-purple.cc-outlined:hover,
 button.cc-purple.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-purple.cc-outlined:hover,
 button.cc-purple.cc-outlined:hover {
@@ -6407,7 +6407,7 @@ button.cc-orange.cc-loading:before {
 a.btn.cc-orange.cc-outlined,
 button.cc-orange.cc-outlined {
   color: #f39c12;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #f39c12;
@@ -6415,7 +6415,7 @@ button.cc-orange.cc-outlined {
 }
 a.btn.cc-orange.cc-outlined:hover,
 button.cc-orange.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-orange.cc-outlined:hover,
 button.cc-orange.cc-outlined:hover {
@@ -6637,7 +6637,7 @@ button.cc-yellow.cc-loading:before {
 a.btn.cc-yellow.cc-outlined,
 button.cc-yellow.cc-outlined {
   color: #f1c40f;
-  background-color: white;
+  background-color: transparent;
   /* If Hover is specified */
   /* else */
   border: 1px solid #f1c40f;
@@ -6645,7 +6645,7 @@ button.cc-yellow.cc-outlined {
 }
 a.btn.cc-yellow.cc-outlined:hover,
 button.cc-yellow.cc-outlined:hover {
-  background-color: white;
+  background-color: transparent;
 }
 a.btn.cc-yellow.cc-outlined:hover,
 button.cc-yellow.cc-outlined:hover {
