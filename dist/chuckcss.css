@@ -1060,7 +1060,7 @@ body {
   margin: 0;
   border: 0;
   /* reset padding, margin, border ~ defined in core/functions.less */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Nueu', sans-serif;
   /* main font ~ defined in settings.less */
   font-size: 15px;
   /* old font-size for olds browsers ~ defined in settings.less */
@@ -1279,8 +1279,6 @@ h6,
   font-weight: 400;
   color: #3a3a3a;
   /* defined in settings.less */
-  font-family: 'Open Sans', sans-serif;
-  /* font-family : defined in settings.less */
 }
 h1 small,
 .h1-like small,
