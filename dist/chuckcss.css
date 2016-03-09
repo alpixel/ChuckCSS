@@ -1177,6 +1177,11 @@ ol {
 .cc-hidden-d {
   display: none !important;
 }
+@media screen and (max-width: 1200px) {
+  .cc-hidden-d {
+    display: block !important;
+  }
+}
 @media screen and (min-width: 768px) {
   .cc-s-only {
     display: none !important;
@@ -4199,6 +4204,10 @@ img.cc-blur-hover:hover {
   -ms-flex: none;
   flex: none;
   margin: 0.75em 0;
+}
+.columns.cc-spaceless > .column {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .columns .column {
   padding: 0;
