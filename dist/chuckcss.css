@@ -1164,6 +1164,9 @@ ol {
 .cc-mal {
   margin-left: 1em;
 }
+.cc-hidden {
+  display: none !important;
+}
 @media screen and (max-width: 767px) {
   .cc-hidden-s {
     display: none !important;
