@@ -997,6 +997,7 @@ th {
         }
       }
 ***** */
+/* These are the conditional mixins for the different syntax for IE10 Flexbox */
 /*
     == ANIMATIONS ==
 */
@@ -1546,12 +1547,12 @@ button.icon-right {
   display: inline-flex;
   display: box;
   /* Main axis alignment */
+  -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
   /* Packing Flex Lines */
   -webkit-align-content: center;
   -moz-align-content: center;
@@ -1742,12 +1743,12 @@ ul.cc-horizontal li[class*="ion-"].icon-right {
   display: inline-flex;
   display: box;
   /* Main axis alignment */
+  -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
   /* Packing Flex Lines */
   -webkit-align-content: center;
   -moz-align-content: center;
@@ -4113,6 +4114,7 @@ img.cc-blur-hover:hover {
 }
 .columns.cc-no-multiligne {
   /* Flex line wrapping */
+  -ms-flex-wrap: none;
   -webkit-flex-wrap: nowrap;
   -moz-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
@@ -4127,6 +4129,7 @@ img.cc-blur-hover:hover {
 }
 .columns.cc-justify-starting {
   /* Main axis alignment */
+  -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   -moz-justify-content: flex-start;
   -ms-justify-content: flex-start;
@@ -4135,6 +4138,7 @@ img.cc-blur-hover:hover {
 }
 .columns.cc-justify-ending {
   /* Main axis alignment */
+  -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
   -ms-justify-content: flex-end;
@@ -4151,21 +4155,21 @@ img.cc-blur-hover:hover {
 }
 .columns.cc-justify-spacing {
   /* Main axis alignment */
+  -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
 }
 .columns.cc-justify-equal-spacing {
   /* Main axis alignment */
+  -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
   -ms-justify-content: space-around;
   -ms-flex-pack: space-around;
   justify-content: space-around;
-  -ms-flex-pack: justify;
 }
 .columns.cc-no-gutter {
   margin: 0;
@@ -4267,6 +4271,7 @@ img.cc-blur-hover:hover {
   display: flex;
   display: box;
   /* Cross-axis alignment */
+  -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   -ms-align-items: flex-start;
@@ -4297,6 +4302,7 @@ img.cc-blur-hover:hover {
   display: flex;
   display: box;
   /* Cross-axis alignment */
+  -ms-flex-align: end;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   -ms-align-items: flex-end;
@@ -4304,24 +4310,28 @@ img.cc-blur-hover:hover {
   align-items: flex-end;
 }
 .columns .column.cc-align-self-top {
+  -ms-flex-item-align: start;
   -webkit-align-self: flex-start;
   -moz-align-self: flex-start;
   -ms-align-self: flex-start;
   align-self: flex-start;
 }
 .columns .column.cc-align-self-bottom {
+  -ms-flex-item-align: end;
   -webkit-align-self: flex-end;
   -moz-align-self: flex-end;
   -ms-align-self: flex-end;
   align-self: flex-end;
 }
 .columns .column.cc-align-self-center {
+  -ms-flex-item-align: center;
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-align-self: center;
   align-self: center;
 }
 .columns .column.cc-align-self-stretch {
+  -ms-flex-item-align: stretch;
   -webkit-align-self: stretch;
   -moz-align-self: stretch;
   -ms-align-self: stretch;
@@ -4568,6 +4578,7 @@ a.btn.cc-fat span.badge:before {
 }
 .tabs.cc-right {
   /* Main axis alignment */
+  -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
   -ms-justify-content: flex-end;
@@ -4784,6 +4795,7 @@ a.btn.cc-fat span.badge:before {
   }
   .tabs.cc-right-t {
     /* Main axis alignment */
+    -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
     -ms-justify-content: flex-end;
