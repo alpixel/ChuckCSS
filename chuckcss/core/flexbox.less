@@ -1,0 +1,242 @@
+/*
+    == FLEXBOX / FLEXBOX MIXINS ==
+*/
+
+
+/* *****
+    @name : ._flex-*
+    @description : generate flexbox
+    @params :
+      - -direction : row | row-reverse | column | column-reverse
+      - -wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
+      - -justify : flex-start | flex-end | center | space-between | space-around
+      - -align : flex-start | flex-end | center | baseline | stretch
+      - -align-content : flex-start | flex-end | center | space-between | space-around | stretch
+      - -display : flex | inline-flex
+
+    @exemple :
+      el {
+          ._flex-display;
+          ._flex-direction(column);
+      }
+***** */
+._flex-display(@display:flex) {
+    /* Flexbox display */
+    display: -webkit-box;
+    display: ~"-moz-box";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-webkit-@{display}";
+    display: @display;
+    display:box;
+}
+
+._flex-direction(@direction:row) {
+    /* Direction */
+
+    -webkit-flex-direction : @direction;
+    -moz-flex-direction : @direction;
+    -ms-flex-direction : @direction;
+    flex-direction : @direction;
+}
+
+._flex-wrap(@wrap:nowrap) {
+    /* Flex line wrapping */
+    ._ms-flex-wrap(@wrap); // IE10
+    -webkit-flex-wrap: @wrap;
+    -moz-flex-wrap: @wrap;
+    -ms-flex-wrap: @wrap;
+    flex-wrap: @wrap;
+}
+
+._flex-justify(@justify:flex-start) {
+    /* Main axis alignment */
+    ._ms-flex-justify-content(@justify); // IE10
+    -webkit-justify-content: @justify;
+    -moz-justify-content: @justify;
+    -ms-justify-content: @justify;
+    -ms-flex-pack: @justify;
+    justify-content: @justify;
+}
+
+._flex-align-items(@align:stretch) {
+    /* Cross-axis alignment */
+    ._ms-flex-align-items(@align);
+    -webkit-align-items: @align;
+    -moz-align-items: @align;
+    -ms-align-items: @align;
+    -ms-flex-align: @align;
+    align-items: @align;
+}
+
+._flex-align-content(@align-content:stretch) {
+    /* Packing Flex Lines */
+    ._ms-flex-align-content(@align-content);
+    -webkit-align-content: @align-content;
+    -moz-align-content: @align-content;
+    -ms-align-content: @align-content;
+    -ms-flex-line-pack: @align-content;
+    align-content: @align-content;
+}
+
+
+/* *****
+    @name : ._flex
+    @description : flex-grow, flex-shrink, flex-basis properties
+    @params : (grow shrink basis)
+
+    @exemple :
+      .parent {
+        ._flex-display;
+
+        .child {
+          ._flex(0 0 250px);
+        }
+      }
+***** */
+._flex(...) {
+  -webkit-box-flex: @arguments;
+  -moz-box-flex: @arguments;
+  -webkit-flex: @arguments;
+  -ms-flex: @arguments;
+  flex: @arguments;
+}
+/* *****
+    @name : ._flex-order
+    @description : positionning order for childs elements in flexbox container
+    @params : int (negative allowed)
+
+    @exemple :
+      .parent {
+        ._flex-display;
+
+        .child {
+          ._flex(0 auto);
+
+          &:nth-child(1) {
+            ._flex-order(1); // this child will be displayed last
+          }
+
+          &:nth-child(2) {
+            ._flex-order(-1); // this child will be displayed before all others children
+          }
+        }
+      }
+***** */
+._flex-order(@order: 0) {
+  -webkit-box-ordinal-group: @order;
+  -moz-box-ordinal-group: @order;
+  -ms-flex-order: @order;
+  -webkit-order: @order;
+  order: @order;
+}
+/* *****
+    @name : ._align-self
+    @description : positionning a child element in cross axis
+    @params : flex-start | flex-end | center | baseline | stretch
+
+    @exemple :
+      .parent {
+        ._flex-display;
+
+        .child {
+          ._flex(0 auto);
+
+          &:nth-child(2) {
+            ._flex-align-self(flex-end); // this child will be displayed with property align-self:flex-end
+          }
+        }
+      }
+***** */
+._flex-align-self(@align: auto) {
+._ms-flex-align-self(@align);
+  -webkit-align-self: @align;
+  -moz-align-self: @align;
+  -ms-align-self: @align;
+  align-self: @align;
+}
+
+
+
+/*
+    == HACK IE10 ==
+*/
+/* JUSTIFY-CONTENT HACK */
+._ms-flex-justify-content(@justify) when (@justify = space-between) {
+    -ms-flex-pack: justify;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = space-around) {
+    -ms-flex-pack: distribute;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = flex-start) {
+    -ms-flex-pack: start;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = flex-end) {
+    -ms-flex-pack: end;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = center) {
+    -ms-flex-pack: center;
+}
+
+
+/* ALIGN-CONTENT HACK */
+._ms-flex-align-content(@align) when (@align = space-between) {
+    -ms-flex-line-pack: justify;
+}
+
+._ms-flex-align-content(@align) when (@align = space-around) {
+    -ms-flex-line-pack: distribute;
+}
+
+._ms-flex-align-content(@align) when (@align = flex-start) {
+    -ms-flex-line-pack: start;
+}
+
+._ms-flex-align-content(@align) when (@align = flex-end) {
+    -ms-flex-line-pack: end;
+}
+
+._ms-flex-align-content(@align) when (@align = center), (@align = stretch) {
+    -ms-flex-line-pack: @align;
+}
+
+
+/* ALIGN-ITEMS HACK */
+._ms-flex-align-items(@align) when (@align = flex-start) {
+    -ms-flex-align: start;
+}
+
+._ms-flex-align-items(@align) when (@align = flex-end) {
+    -ms-flex-align: end;
+}
+
+._ms-flex-align-items(@align) when (@align = center), (@align = baseline), (@align = stretch) {
+    -ms-flex-align: @align;
+}
+
+
+/* ALIGN-SELF HACK */
+._ms-flex-align-self(@align) when (@align = flex-start) {
+    -ms-flex-item-align: start;
+}
+
+._ms-flex-align-self(@align) when (@align = flex-end) {
+    -ms-flex-item-align: end;
+}
+
+._ms-flex-align-self(@align) when (@align = auto), (@align = center), (@align = baseline), (@align = stretch) {
+    -ms-flex-item-align: @align;
+}
+
+
+/* WRAP HACK */
+._ms-flex-wrap(@wrap) when (@wrap = nowrap) {
+    -ms-flex-wrap: none;
+}
+
+._ms-flex-wrap(@wrap) when (@wrap = wrap), (@wrap = wrap-reverse) {
+    -ms-flex-wrap: @wrap;
+}
