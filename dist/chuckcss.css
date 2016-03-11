@@ -636,7 +636,6 @@ th {
     ._cover
     ._truncate
     ._btn
-    ._flex-... | ._flex-order | ._flex | ._align-self
 */
 /* *****
     @name : ._tablet & ._phone
@@ -926,8 +925,11 @@ th {
         ._btn(@red); // <button> will be displayed with a red bg-color, and a darken (10%) red bg-color on hover (with smoothy animation)
       }
 ***** */
+/*
+    == FLEXBOX / FLEXBOX MIXINS ==
+*/
 /* *****
-    @name : ._flex-
+    @name : ._flex-*
     @description : generate flexbox
     @params :
       - -direction : row | row-reverse | column | column-reverse
@@ -997,7 +999,14 @@ th {
         }
       }
 ***** */
-/* These are the conditional mixins for the different syntax for IE10 Flexbox */
+/*
+    == HACK IE10 ==
+*/
+/* JUSTIFY-CONTENT HACK */
+/* ALIGN-CONTENT HACK */
+/* ALIGN-ITEMS HACK */
+/* ALIGN-SELF HACK */
+/* WRAP HACK */
 /*
     == ANIMATIONS ==
 */
