@@ -1970,6 +1970,9 @@ form .form-item.chained {
   /* Submit button */
   /* Input with prefix/suffix */
 }
+form .form-item.chained label {
+  font-size: 1.5rem;
+}
 form .form-item.chained input {
   /* Middles inputs */
   -webkit-border-radius: 0px;
