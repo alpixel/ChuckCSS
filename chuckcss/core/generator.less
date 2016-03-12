@@ -505,11 +505,10 @@
         &.cc-no-gutter .column {
             &.cc{
                 /* Width calculations without gutters */
-                &-@{iterator} {
-                    &-t {
-                        width: ~'calc(100% * @{iterator} / @{cols-total})';
-                        max-width: ~'calc(100% * @{iterator} / @{cols-total})';
-                    }
+                &-@{iterator}-t {
+                    ._flex(0 0 auto);
+                    width: ~'calc(100% * @{iterator} / @{cols-total})';
+                    max-width: ~'calc(100% * @{iterator} / @{cols-total})';
                 }
 
                 /* Offsets calculations without gutters for tablets devices */
@@ -525,11 +524,10 @@
         .column {
             &.cc {
                 /* Width calculations with gutters */
-                &-@{iterator} {
-                    &-t {
-                        width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                        max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                    }
+                &-@{iterator}-t {
+                    ._flex(0 0 auto);
+                    width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+                    max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
                 }
 
                 /* Offsets calculations with gutters for tablets devices */
@@ -566,11 +564,10 @@
         &.cc-no-gutter .column {
             &.cc {
                 /* Width calculations without gutters */
-                &-@{iterator} {
-                    &-s {
-                        width: ~'calc(100% * @{iterator} / @{cols-total})';
-                        max-width: ~'calc(100% * @{iterator} / @{cols-total})';
-                    }
+                &-@{iterator}-s {
+                    ._flex(0 0 auto);
+                    width: ~'calc(100% * @{iterator} / @{cols-total})';
+                    max-width: ~'calc(100% * @{iterator} / @{cols-total})';
                 }
 
                 /* Offsets calculations without gutters for phones devices */
@@ -585,11 +582,10 @@
         .column {
             &.cc {
                 /* Width calculations with gutters */
-                &-@{iterator} {
-                    &-s {
-                        width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                        max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                    }
+                &-@{iterator}-s {
+                    ._flex(0 0 auto);
+                    width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+                    max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
                 }
 
                 /* Offsets calculations with gutters for phones devices */
