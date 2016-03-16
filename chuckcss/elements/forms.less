@@ -40,6 +40,10 @@ form {
                 font-size:0; // Collpase inputs */
                 @border-radius : unit(@input-br,px); /* Border-radius calculation */
 
+                label {
+                    font-size:@text-fs;
+                }
+
                 input {
                     /* Middles inputs */
                     ._border-radius(0px);
@@ -298,7 +302,6 @@ form {
         border:1px solid @input-bc;
         resize:none;
         height: @input-lh;
-        line-height:1;
         font-size:@input-fs;
         ._transition;
 

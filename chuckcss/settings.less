@@ -282,8 +282,6 @@
 @imgPath : '../img'; /* Path of images files */
 
 
-
-
 /*
     -- @ FONTS MIXINS @ --
     "Here define the fonts"
@@ -291,9 +289,7 @@
     * LESS call
         .font(){font-family:'My font',sans-serif;}
 */
-/* Ex. below, the "Open Sans" fonts from Google Fonts (included into <head>) */
 .helvetica() {font-family: 'Helvetica Nueu', sans-serif;}
-
 
 
 /*
@@ -301,51 +297,3 @@
     "Here define the 'fonts' folder path"
 */
 @fontPath : '../fonts';     /* Path of fonts files */
-
-
-
-/*
-    -- @ FONT-FACE @ --
-    "Here include your custom font-face"
-*/
-/*
-    // EXEMPLE
-
-    -- 400 : normal --
-    @font-face {
-        font-family: 'myFont';
-        src: url('@{fontPath}/FONT_NAME.eot');
-        src: url('@{fontPath}/FONT_NAME.eot?#iefix') format('embedded-opentype'),
-             url('@{fontPath}/FONT_NAME.woff2') format('woff2'),
-             url('@{fontPath}/FONT_NAME.woff') format('woff'),
-             url('@{fontPath}/FONT_NAME.ttf') format('truetype'),
-             url('@{fontPath}/FONT_NAME.svg#dinblack') format('svg');
-        font-weight: 400;
-        font-style: normal;
-    }
-    -- 700 : bold --
-    @font-face {
-        font-family: 'myFont';
-        src: url('@{fontPath}/FONT_NAME_BOLD.eot');
-        src: url('@{fontPath}/FONT_NAME_BOLD.eot?#iefix') format('embedded-opentype'),
-             url('@{fontPath}/FONT_NAME_BOLD.woff2') format('woff2'),
-             url('@{fontPath}/FONT_NAME_BOLD.woff') format('woff'),
-             url('@{fontPath}/FONT_NAME_BOLD.ttf') format('truetype'),
-             url('@{fontPath}/FONT_NAME_BOLD.svg#dinblack') format('svg');
-        font-weight: 700;
-        font-style: normal;
-    }
-
-    -- mixin : call your custom font --
-    * Can be declared into "-- @ FONTS MIXINS @ --" section *
-    ._myFont(@weight:400,@size:@text-fs){
-        font-family: 'myFont';
-        font-weight:@weight;
-        font-size:@size;
-    }
-
-    * Now, you can use this font into your CSS *
-    body {
-        ._myFont(400,@text-fs);
-    }
-*/

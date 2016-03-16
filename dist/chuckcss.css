@@ -1,12 +1,11 @@
 @charset "UTF-8";
 /*
     == ChuckCSS ==
-    @Author : ALPIXEL : Fresh & French Web Agency (http://www.alpixel.fr)
+    @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
-    @Beer : If you love it, you can pay us a beer at : paypal@alpixel.fr
 */
 /*
-    settings.less : set your vars, colors, fonts, etc...
+    settings.less
 */
 /*
     * SETTINGS.LESS
@@ -197,63 +196,18 @@
     * LESS call
         .font(){font-family:'My font',sans-serif;}
 */
-/* Ex. below, the "Open Sans" fonts from Google Fonts (included into <head>) */
 /*
     -- @ FONTS PATH @ --
     "Here define the 'fonts' folder path"
 */
 /* Path of fonts files */
 /*
-    -- @ FONT-FACE @ --
-    "Here include your custom font-face"
-*/
-/*
-    // EXEMPLE
-
-    -- 400 : normal --
-    @font-face {
-        font-family: 'myFont';
-        src: url('@{fontPath}/FONT_NAME.eot');
-        src: url('@{fontPath}/FONT_NAME.eot?#iefix') format('embedded-opentype'),
-             url('@{fontPath}/FONT_NAME.woff2') format('woff2'),
-             url('@{fontPath}/FONT_NAME.woff') format('woff'),
-             url('@{fontPath}/FONT_NAME.ttf') format('truetype'),
-             url('@{fontPath}/FONT_NAME.svg#dinblack') format('svg');
-        font-weight: 400;
-        font-style: normal;
-    }
-    -- 700 : bold --
-    @font-face {
-        font-family: 'myFont';
-        src: url('@{fontPath}/FONT_NAME_BOLD.eot');
-        src: url('@{fontPath}/FONT_NAME_BOLD.eot?#iefix') format('embedded-opentype'),
-             url('@{fontPath}/FONT_NAME_BOLD.woff2') format('woff2'),
-             url('@{fontPath}/FONT_NAME_BOLD.woff') format('woff'),
-             url('@{fontPath}/FONT_NAME_BOLD.ttf') format('truetype'),
-             url('@{fontPath}/FONT_NAME_BOLD.svg#dinblack') format('svg');
-        font-weight: 700;
-        font-style: normal;
-    }
-
-    -- mixin : call your custom font --
-    * Can be declared into "-- @ FONTS MIXINS @ --" section *
-    ._myFont(@weight:400,@size:@text-fs){
-        font-family: 'myFont';
-        font-weight:@weight;
-        font-size:@size;
-    }
-
-    * Now, you can use this font into your CSS *
-    body {
-        ._myFont(400,@text-fs);
-    }
-*/
-/*
     * IMPORT CORE FILES *
     • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
     • functions.less : main usefull functions|mixins for integration project
     • animations.less : keyframes file
     • base.less : base file with <html>, <body> styles
+    • helpers.less : text and blocks helpers
 */
 /* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -636,7 +590,6 @@ th {
     ._cover
     ._truncate
     ._btn
-    ._flex-... | ._flex-order | ._flex | ._align-self
 */
 /* *****
     @name : ._tablet & ._phone
@@ -926,8 +879,11 @@ th {
         ._btn(@red); // <button> will be displayed with a red bg-color, and a darken (10%) red bg-color on hover (with smoothy animation)
       }
 ***** */
+/*
+    == FLEXBOX / FLEXBOX MIXINS ==
+*/
 /* *****
-    @name : ._flex-
+    @name : ._flex-*
     @description : generate flexbox
     @params :
       - -direction : row | row-reverse | column | column-reverse
@@ -997,7 +953,14 @@ th {
         }
       }
 ***** */
-/* IE10 HACKS Flexbox */
+/*
+    == HACK IE10 ==
+*/
+/* JUSTIFY-CONTENT HACK */
+/* ALIGN-CONTENT HACK */
+/* ALIGN-ITEMS HACK */
+/* ALIGN-SELF HACK */
+/* WRAP HACK */
 /*
     == ANIMATIONS ==
 */
@@ -1962,6 +1925,9 @@ form .form-item.chained {
   /* Submit button */
   /* Input with prefix/suffix */
 }
+form .form-item.chained label {
+  font-size: 1.5rem;
+}
 form .form-item.chained input {
   /* Middles inputs */
   -webkit-border-radius: 0px;
@@ -2225,7 +2191,6 @@ form input {
   border: 1px solid #ddd;
   resize: none;
   height: 4.2rem;
-  line-height: 1;
   font-size: 1.35rem;
   transition: 0.2s all ease-out 0s;
   -webkit-transition: 0.2s all ease-out 0s;
@@ -2392,7 +2357,6 @@ form button[type="submit"][class*="ion-"]:before {
 /* ******** */
 /* ********************* */
 img {
-  vertical-align: bottom;
   max-width: 100%;
   height: auto;
 }
@@ -2400,6 +2364,7 @@ img.cc {
   /* No responsive images */
   /* Bordered */
   /* Shadowed image */
+  /** Experimental | removed to ChuckCSS V1 **/
   /* Reset filter on hover */
 }
 img.cc-no-responsive {
@@ -2427,83 +2392,6 @@ img.cc-shadowed {
   -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
   -o-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
   box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
-}
-img.cc-no-hover {
-  transition: 0.2s all ease-out 0s;
-  -webkit-transition: 0.2s all ease-out 0s;
-  -moz-transition: 0.2s all ease-out 0s;
-  -o-transition: 0.2s all ease-out 0s;
-  -ms-transition: 0.2s all ease-out 0s;
-}
-img.cc-no-hover:hover {
-  -webkit-filter: sepia(0) grayscale(0) blur(0px);
-  -moz-filter: sepia(0) grayscale(0) blur(0px);
-  -ms-filter: sepia(0) grayscale(0) blur(0px);
-  -o-filter: sepia(0) grayscale(0) blur(0px);
-  filter: sepia(0) grayscale(0) blur(0px);
-}
-img.cc-sepia {
-  -webkit-filter: sepia(1);
-  -moz-filter: sepia(1);
-  -ms-filter: sepia(1);
-  -o-filter: sepia(1);
-  filter: sepia(1);
-}
-img.cc-sepia-hover {
-  transition: 0.2s all ease-out 0s;
-  -webkit-transition: 0.2s all ease-out 0s;
-  -moz-transition: 0.2s all ease-out 0s;
-  -o-transition: 0.2s all ease-out 0s;
-  -ms-transition: 0.2s all ease-out 0s;
-}
-img.cc-sepia-hover:hover {
-  -webkit-filter: sepia(1);
-  -moz-filter: sepia(1);
-  -ms-filter: sepia(1);
-  -o-filter: sepia(1);
-  filter: sepia(1);
-}
-img.cc-grayscale {
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
-}
-img.cc-grayscale-hover {
-  transition: 0.2s all ease-out 0s;
-  -webkit-transition: 0.2s all ease-out 0s;
-  -moz-transition: 0.2s all ease-out 0s;
-  -o-transition: 0.2s all ease-out 0s;
-  -ms-transition: 0.2s all ease-out 0s;
-}
-img.cc-grayscale-hover:hover {
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
-}
-img.cc-blur {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -ms-filter: blur(5px);
-  -o-filter: blur(5px);
-  filter: blur(5px);
-}
-img.cc-blur-hover {
-  transition: 0.2s all ease-out 0s;
-  -webkit-transition: 0.2s all ease-out 0s;
-  -moz-transition: 0.2s all ease-out 0s;
-  -o-transition: 0.2s all ease-out 0s;
-  -ms-transition: 0.2s all ease-out 0s;
-}
-img.cc-blur-hover:hover {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -ms-filter: blur(5px);
-  -o-filter: blur(5px);
-  filter: blur(5px);
 }
 /*
     * /components/ - IMPORTS FILES *
@@ -3215,6 +3103,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-1-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 1 / 12);
     max-width: calc(100% * 1 / 12);
   }
@@ -3228,6 +3121,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-1-t,
   .columns .column.cc-1-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 1 / 12 - 2em);
     max-width: calc(100% * 1 / 12 - 2em);
   }
@@ -3252,6 +3150,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-2-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 2 / 12);
     max-width: calc(100% * 2 / 12);
   }
@@ -3265,6 +3168,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-2-t,
   .columns .column.cc-2-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 2 / 12 - 2em);
     max-width: calc(100% * 2 / 12 - 2em);
   }
@@ -3289,6 +3197,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-3-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 3 / 12);
     max-width: calc(100% * 3 / 12);
   }
@@ -3302,6 +3215,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-3-t,
   .columns .column.cc-3-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 3 / 12 - 2em);
     max-width: calc(100% * 3 / 12 - 2em);
   }
@@ -3326,6 +3244,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-4-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 4 / 12);
     max-width: calc(100% * 4 / 12);
   }
@@ -3339,6 +3262,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-4-t,
   .columns .column.cc-4-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 4 / 12 - 2em);
     max-width: calc(100% * 4 / 12 - 2em);
   }
@@ -3363,6 +3291,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-5-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 5 / 12);
     max-width: calc(100% * 5 / 12);
   }
@@ -3376,6 +3309,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-5-t,
   .columns .column.cc-5-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 5 / 12 - 2em);
     max-width: calc(100% * 5 / 12 - 2em);
   }
@@ -3400,6 +3338,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-6-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 6 / 12);
     max-width: calc(100% * 6 / 12);
   }
@@ -3413,6 +3356,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-6-t,
   .columns .column.cc-6-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 6 / 12 - 2em);
     max-width: calc(100% * 6 / 12 - 2em);
   }
@@ -3437,6 +3385,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-7-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 7 / 12);
     max-width: calc(100% * 7 / 12);
   }
@@ -3450,6 +3403,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-7-t,
   .columns .column.cc-7-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 7 / 12 - 2em);
     max-width: calc(100% * 7 / 12 - 2em);
   }
@@ -3474,6 +3432,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-8-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 8 / 12);
     max-width: calc(100% * 8 / 12);
   }
@@ -3487,6 +3450,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-8-t,
   .columns .column.cc-8-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 8 / 12 - 2em);
     max-width: calc(100% * 8 / 12 - 2em);
   }
@@ -3511,6 +3479,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-9-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 9 / 12);
     max-width: calc(100% * 9 / 12);
   }
@@ -3524,6 +3497,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-9-t,
   .columns .column.cc-9-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 9 / 12 - 2em);
     max-width: calc(100% * 9 / 12 - 2em);
   }
@@ -3548,6 +3526,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-10-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 10 / 12);
     max-width: calc(100% * 10 / 12);
   }
@@ -3561,6 +3544,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-10-t,
   .columns .column.cc-10-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 10 / 12 - 2em);
     max-width: calc(100% * 10 / 12 - 2em);
   }
@@ -3585,6 +3573,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-11-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 11 / 12);
     max-width: calc(100% * 11 / 12);
   }
@@ -3598,6 +3591,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-11-t,
   .columns .column.cc-11-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 11 / 12 - 2em);
     max-width: calc(100% * 11 / 12 - 2em);
   }
@@ -3622,6 +3620,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for tablets devices */
   }
   .columns.cc-no-gutter .column.cc-12-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 12 / 12);
     max-width: calc(100% * 12 / 12);
   }
@@ -3635,6 +3638,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-12-t,
   .columns .column.cc-12-t {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 12 / 12 - 2em);
     max-width: calc(100% * 12 / 12 - 2em);
   }
@@ -3661,6 +3669,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-1-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 1 / 12);
     max-width: calc(100% * 1 / 12);
   }
@@ -3674,6 +3687,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-1-s,
   .columns .column.cc-1-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 1 / 12 - 2em);
     max-width: calc(100% * 1 / 12 - 2em);
   }
@@ -3698,6 +3716,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-2-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 2 / 12);
     max-width: calc(100% * 2 / 12);
   }
@@ -3711,6 +3734,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-2-s,
   .columns .column.cc-2-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 2 / 12 - 2em);
     max-width: calc(100% * 2 / 12 - 2em);
   }
@@ -3735,6 +3763,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-3-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 3 / 12);
     max-width: calc(100% * 3 / 12);
   }
@@ -3748,6 +3781,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-3-s,
   .columns .column.cc-3-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 3 / 12 - 2em);
     max-width: calc(100% * 3 / 12 - 2em);
   }
@@ -3772,6 +3810,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-4-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 4 / 12);
     max-width: calc(100% * 4 / 12);
   }
@@ -3785,6 +3828,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-4-s,
   .columns .column.cc-4-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 4 / 12 - 2em);
     max-width: calc(100% * 4 / 12 - 2em);
   }
@@ -3809,6 +3857,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-5-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 5 / 12);
     max-width: calc(100% * 5 / 12);
   }
@@ -3822,6 +3875,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-5-s,
   .columns .column.cc-5-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 5 / 12 - 2em);
     max-width: calc(100% * 5 / 12 - 2em);
   }
@@ -3846,6 +3904,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-6-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 6 / 12);
     max-width: calc(100% * 6 / 12);
   }
@@ -3859,6 +3922,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-6-s,
   .columns .column.cc-6-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 6 / 12 - 2em);
     max-width: calc(100% * 6 / 12 - 2em);
   }
@@ -3883,6 +3951,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-7-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 7 / 12);
     max-width: calc(100% * 7 / 12);
   }
@@ -3896,6 +3969,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-7-s,
   .columns .column.cc-7-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 7 / 12 - 2em);
     max-width: calc(100% * 7 / 12 - 2em);
   }
@@ -3920,6 +3998,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-8-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 8 / 12);
     max-width: calc(100% * 8 / 12);
   }
@@ -3933,6 +4016,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-8-s,
   .columns .column.cc-8-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 8 / 12 - 2em);
     max-width: calc(100% * 8 / 12 - 2em);
   }
@@ -3957,6 +4045,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-9-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 9 / 12);
     max-width: calc(100% * 9 / 12);
   }
@@ -3970,6 +4063,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-9-s,
   .columns .column.cc-9-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 9 / 12 - 2em);
     max-width: calc(100% * 9 / 12 - 2em);
   }
@@ -3994,6 +4092,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-10-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 10 / 12);
     max-width: calc(100% * 10 / 12);
   }
@@ -4007,6 +4110,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-10-s,
   .columns .column.cc-10-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 10 / 12 - 2em);
     max-width: calc(100% * 10 / 12 - 2em);
   }
@@ -4031,6 +4139,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-11-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 11 / 12);
     max-width: calc(100% * 11 / 12);
   }
@@ -4044,6 +4157,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-11-s,
   .columns .column.cc-11-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 11 / 12 - 2em);
     max-width: calc(100% * 11 / 12 - 2em);
   }
@@ -4068,6 +4186,11 @@ img.cc-blur-hover:hover {
     /* Offsets calculations without gutters for phones devices */
   }
   .columns.cc-no-gutter .column.cc-12-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 12 / 12);
     max-width: calc(100% * 12 / 12);
   }
@@ -4081,6 +4204,11 @@ img.cc-blur-hover:hover {
   }
   .columns.cc-gutter .column.cc-12-s,
   .columns .column.cc-12-s {
+    -webkit-box-flex: 0 0 auto;
+    -moz-box-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: calc(100% * 12 / 12 - 2em);
     max-width: calc(100% * 12 / 12 - 2em);
   }
@@ -5177,6 +5305,11 @@ h5.cc-primary,
 h6.cc-primary,
 p.cc-primary,
 div.cc-primary,
+section.cc-primary,
+aside.cc-primary,
+header.cc-primary,
+footer.cc-primary,
+span.cc-primary,
 i.cc-primary,
 a.cc-primary {
   color: #29b7e1;
@@ -5189,6 +5322,11 @@ h5.cc-primary small,
 h6.cc-primary small,
 p.cc-primary small,
 div.cc-primary small,
+section.cc-primary small,
+aside.cc-primary small,
+header.cc-primary small,
+footer.cc-primary small,
+span.cc-primary small,
 i.cc-primary small,
 a.cc-primary small {
   color: #56c6e7;
@@ -5201,6 +5339,11 @@ h5.cc-bg-primary,
 h6.cc-bg-primary,
 p.cc-bg-primary,
 div.cc-bg-primary,
+section.cc-bg-primary,
+aside.cc-bg-primary,
+header.cc-bg-primary,
+footer.cc-bg-primary,
+span.cc-bg-primary,
 i.cc-bg-primary,
 a.cc-bg-primary {
   color: white;
@@ -5255,8 +5398,8 @@ table tbody tr.cc-bg-primary td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-primary,
-button.cc-primary {
+a.btn.cc-bg-primary,
+button.cc-bg-primary {
   color: white;
   background-color: #29b7e1;
   /* If Hover is specified */
@@ -5266,21 +5409,21 @@ button.cc-primary {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-primary:hover,
-button.cc-primary:hover {
+a.btn.cc-bg-primary:hover,
+button.cc-bg-primary:hover {
   background-color: #1a98bd;
 }
-a.btn.cc-primary:hover,
-button.cc-primary:hover {
+a.btn.cc-bg-primary:hover,
+button.cc-bg-primary:hover {
   color: white;
   border-color: #29b7e1;
 }
-a.btn.cc-primary.cc-loading:before,
-button.cc-primary.cc-loading:before {
+a.btn.cc-bg-primary.cc-loading:before,
+button.cc-bg-primary.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-primary.cc-outlined,
-button.cc-primary.cc-outlined {
+a.btn.cc-bg-primary.cc-outlined,
+button.cc-bg-primary.cc-outlined {
   color: #29b7e1;
   background-color: transparent;
   /* If Hover is specified */
@@ -5288,25 +5431,25 @@ button.cc-primary.cc-outlined {
   border: 1px solid #29b7e1;
   /* Loading + outlined buttons */
 }
-a.btn.cc-primary.cc-outlined:hover,
-button.cc-primary.cc-outlined:hover {
+a.btn.cc-bg-primary.cc-outlined:hover,
+button.cc-bg-primary.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-primary.cc-outlined:hover,
-button.cc-primary.cc-outlined:hover {
+a.btn.cc-bg-primary.cc-outlined:hover,
+button.cc-bg-primary.cc-outlined:hover {
   border-color: #147490;
   color: #147490;
 }
-a.btn.cc-primary.cc-outlined.cc-loading,
-button.cc-primary.cc-outlined.cc-loading {
+a.btn.cc-bg-primary.cc-outlined.cc-loading,
+button.cc-bg-primary.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-primary.cc-outlined.cc-loading:before,
-button.cc-primary.cc-outlined.cc-loading:before {
+a.btn.cc-bg-primary.cc-outlined.cc-loading:before,
+button.cc-bg-primary.cc-outlined.cc-loading:before {
   border-color: #29b7e1 #afe4f4 #afe4f4 #afe4f4;
 }
-a.btn.cc-primary span.badge,
-button.cc-primary span.badge {
+a.btn.cc-bg-primary span.badge,
+button.cc-bg-primary span.badge {
   background-color: white;
   color: #29b7e1;
 }
@@ -5345,11 +5488,6 @@ form.cc-primary button[type="submit"] {
 form.cc-primary input[type="submit"]:hover,
 form.cc-primary button[type="submit"]:hover {
   background-color: #1a98bd;
-}
-/* Badges */
-span.cc-primary {
-  background-color: #29b7e1;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -5407,6 +5545,11 @@ h5.cc-green,
 h6.cc-green,
 p.cc-green,
 div.cc-green,
+section.cc-green,
+aside.cc-green,
+header.cc-green,
+footer.cc-green,
+span.cc-green,
 i.cc-green,
 a.cc-green {
   color: #80ae37;
@@ -5419,6 +5562,11 @@ h5.cc-green small,
 h6.cc-green small,
 p.cc-green small,
 div.cc-green small,
+section.cc-green small,
+aside.cc-green small,
+header.cc-green small,
+footer.cc-green small,
+span.cc-green small,
 i.cc-green small,
 a.cc-green small {
   color: #9ac850;
@@ -5431,6 +5579,11 @@ h5.cc-bg-green,
 h6.cc-bg-green,
 p.cc-bg-green,
 div.cc-bg-green,
+section.cc-bg-green,
+aside.cc-bg-green,
+header.cc-bg-green,
+footer.cc-bg-green,
+span.cc-bg-green,
 i.cc-bg-green,
 a.cc-bg-green {
   color: white;
@@ -5485,8 +5638,8 @@ table tbody tr.cc-bg-green td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-green,
-button.cc-green {
+a.btn.cc-bg-green,
+button.cc-bg-green {
   color: white;
   background-color: #80ae37;
   /* If Hover is specified */
@@ -5496,21 +5649,21 @@ button.cc-green {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-green:hover,
-button.cc-green:hover {
+a.btn.cc-bg-green:hover,
+button.cc-bg-green:hover {
   background-color: #63872b;
 }
-a.btn.cc-green:hover,
-button.cc-green:hover {
+a.btn.cc-bg-green:hover,
+button.cc-bg-green:hover {
   color: white;
   border-color: #80ae37;
 }
-a.btn.cc-green.cc-loading:before,
-button.cc-green.cc-loading:before {
+a.btn.cc-bg-green.cc-loading:before,
+button.cc-bg-green.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-green.cc-outlined,
-button.cc-green.cc-outlined {
+a.btn.cc-bg-green.cc-outlined,
+button.cc-bg-green.cc-outlined {
   color: #80ae37;
   background-color: transparent;
   /* If Hover is specified */
@@ -5518,25 +5671,25 @@ button.cc-green.cc-outlined {
   border: 1px solid #80ae37;
   /* Loading + outlined buttons */
 }
-a.btn.cc-green.cc-outlined:hover,
-button.cc-green.cc-outlined:hover {
+a.btn.cc-bg-green.cc-outlined:hover,
+button.cc-bg-green.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-green.cc-outlined:hover,
-button.cc-green.cc-outlined:hover {
+a.btn.cc-bg-green.cc-outlined:hover,
+button.cc-bg-green.cc-outlined:hover {
   border-color: #47601f;
   color: #47601f;
 }
-a.btn.cc-green.cc-outlined.cc-loading,
-button.cc-green.cc-outlined.cc-loading {
+a.btn.cc-bg-green.cc-outlined.cc-loading,
+button.cc-bg-green.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-green.cc-outlined.cc-loading:before,
-button.cc-green.cc-outlined.cc-loading:before {
+a.btn.cc-bg-green.cc-outlined.cc-loading:before,
+button.cc-bg-green.cc-outlined.cc-loading:before {
   border-color: #80ae37 #c7e09e #c7e09e #c7e09e;
 }
-a.btn.cc-green span.badge,
-button.cc-green span.badge {
+a.btn.cc-bg-green span.badge,
+button.cc-bg-green span.badge {
   background-color: white;
   color: #80ae37;
 }
@@ -5575,11 +5728,6 @@ form.cc-green button[type="submit"] {
 form.cc-green input[type="submit"]:hover,
 form.cc-green button[type="submit"]:hover {
   background-color: #63872b;
-}
-/* Badges */
-span.cc-green {
-  background-color: #80ae37;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -5637,6 +5785,11 @@ h5.cc-red,
 h6.cc-red,
 p.cc-red,
 div.cc-red,
+section.cc-red,
+aside.cc-red,
+header.cc-red,
+footer.cc-red,
+span.cc-red,
 i.cc-red,
 a.cc-red {
   color: #c41515;
@@ -5649,6 +5802,11 @@ h5.cc-red small,
 h6.cc-red small,
 p.cc-red small,
 div.cc-red small,
+section.cc-red small,
+aside.cc-red small,
+header.cc-red small,
+footer.cc-red small,
+span.cc-red small,
 i.cc-red small,
 a.cc-red small {
   color: #e82424;
@@ -5661,6 +5819,11 @@ h5.cc-bg-red,
 h6.cc-bg-red,
 p.cc-bg-red,
 div.cc-bg-red,
+section.cc-bg-red,
+aside.cc-bg-red,
+header.cc-bg-red,
+footer.cc-bg-red,
+span.cc-bg-red,
 i.cc-bg-red,
 a.cc-bg-red {
   color: white;
@@ -5715,8 +5878,8 @@ table tbody tr.cc-bg-red td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-red,
-button.cc-red {
+a.btn.cc-bg-red,
+button.cc-bg-red {
   color: white;
   background-color: #c41515;
   /* If Hover is specified */
@@ -5726,21 +5889,21 @@ button.cc-red {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-red:hover,
-button.cc-red:hover {
+a.btn.cc-bg-red:hover,
+button.cc-bg-red:hover {
   background-color: #961010;
 }
-a.btn.cc-red:hover,
-button.cc-red:hover {
+a.btn.cc-bg-red:hover,
+button.cc-bg-red:hover {
   color: white;
   border-color: #c41515;
 }
-a.btn.cc-red.cc-loading:before,
-button.cc-red.cc-loading:before {
+a.btn.cc-bg-red.cc-loading:before,
+button.cc-bg-red.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-red.cc-outlined,
-button.cc-red.cc-outlined {
+a.btn.cc-bg-red.cc-outlined,
+button.cc-bg-red.cc-outlined {
   color: #c41515;
   background-color: transparent;
   /* If Hover is specified */
@@ -5748,25 +5911,25 @@ button.cc-red.cc-outlined {
   border: 1px solid #c41515;
   /* Loading + outlined buttons */
 }
-a.btn.cc-red.cc-outlined:hover,
-button.cc-red.cc-outlined:hover {
+a.btn.cc-bg-red.cc-outlined:hover,
+button.cc-bg-red.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-red.cc-outlined:hover,
-button.cc-red.cc-outlined:hover {
+a.btn.cc-bg-red.cc-outlined:hover,
+button.cc-bg-red.cc-outlined:hover {
   border-color: #680b0b;
   color: #680b0b;
 }
-a.btn.cc-red.cc-outlined.cc-loading,
-button.cc-red.cc-outlined.cc-loading {
+a.btn.cc-bg-red.cc-outlined.cc-loading,
+button.cc-bg-red.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-red.cc-outlined.cc-loading:before,
-button.cc-red.cc-outlined.cc-loading:before {
+a.btn.cc-bg-red.cc-outlined.cc-loading:before,
+button.cc-bg-red.cc-outlined.cc-loading:before {
   border-color: #c41515 #f18181 #f18181 #f18181;
 }
-a.btn.cc-red span.badge,
-button.cc-red span.badge {
+a.btn.cc-bg-red span.badge,
+button.cc-bg-red span.badge {
   background-color: white;
   color: #c41515;
 }
@@ -5805,11 +5968,6 @@ form.cc-red button[type="submit"] {
 form.cc-red input[type="submit"]:hover,
 form.cc-red button[type="submit"]:hover {
   background-color: #961010;
-}
-/* Badges */
-span.cc-red {
-  background-color: #c41515;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -5867,6 +6025,11 @@ h5.cc-blue,
 h6.cc-blue,
 p.cc-blue,
 div.cc-blue,
+section.cc-blue,
+aside.cc-blue,
+header.cc-blue,
+footer.cc-blue,
+span.cc-blue,
 i.cc-blue,
 a.cc-blue {
   color: #3498db;
@@ -5879,6 +6042,11 @@ h5.cc-blue small,
 h6.cc-blue small,
 p.cc-blue small,
 div.cc-blue small,
+section.cc-blue small,
+aside.cc-blue small,
+header.cc-blue small,
+footer.cc-blue small,
+span.cc-blue small,
 i.cc-blue small,
 a.cc-blue small {
   color: #5faee3;
@@ -5891,6 +6059,11 @@ h5.cc-bg-blue,
 h6.cc-bg-blue,
 p.cc-bg-blue,
 div.cc-bg-blue,
+section.cc-bg-blue,
+aside.cc-bg-blue,
+header.cc-bg-blue,
+footer.cc-bg-blue,
+span.cc-bg-blue,
 i.cc-bg-blue,
 a.cc-bg-blue {
   color: white;
@@ -5945,8 +6118,8 @@ table tbody tr.cc-bg-blue td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-blue,
-button.cc-blue {
+a.btn.cc-bg-blue,
+button.cc-bg-blue {
   color: white;
   background-color: #3498db;
   /* If Hover is specified */
@@ -5956,21 +6129,21 @@ button.cc-blue {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-blue:hover,
-button.cc-blue:hover {
+a.btn.cc-bg-blue:hover,
+button.cc-bg-blue:hover {
   background-color: #217dbb;
 }
-a.btn.cc-blue:hover,
-button.cc-blue:hover {
+a.btn.cc-bg-blue:hover,
+button.cc-bg-blue:hover {
   color: white;
   border-color: #3498db;
 }
-a.btn.cc-blue.cc-loading:before,
-button.cc-blue.cc-loading:before {
+a.btn.cc-bg-blue.cc-loading:before,
+button.cc-bg-blue.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-blue.cc-outlined,
-button.cc-blue.cc-outlined {
+a.btn.cc-bg-blue.cc-outlined,
+button.cc-bg-blue.cc-outlined {
   color: #3498db;
   background-color: transparent;
   /* If Hover is specified */
@@ -5978,25 +6151,25 @@ button.cc-blue.cc-outlined {
   border: 1px solid #3498db;
   /* Loading + outlined buttons */
 }
-a.btn.cc-blue.cc-outlined:hover,
-button.cc-blue.cc-outlined:hover {
+a.btn.cc-bg-blue.cc-outlined:hover,
+button.cc-bg-blue.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-blue.cc-outlined:hover,
-button.cc-blue.cc-outlined:hover {
+a.btn.cc-bg-blue.cc-outlined:hover,
+button.cc-bg-blue.cc-outlined:hover {
   border-color: #196090;
   color: #196090;
 }
-a.btn.cc-blue.cc-outlined.cc-loading,
-button.cc-blue.cc-outlined.cc-loading {
+a.btn.cc-bg-blue.cc-outlined.cc-loading,
+button.cc-bg-blue.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-blue.cc-outlined.cc-loading:before,
-button.cc-blue.cc-outlined.cc-loading:before {
+a.btn.cc-bg-blue.cc-outlined.cc-loading:before,
+button.cc-bg-blue.cc-outlined.cc-loading:before {
   border-color: #3498db #b6daf2 #b6daf2 #b6daf2;
 }
-a.btn.cc-blue span.badge,
-button.cc-blue span.badge {
+a.btn.cc-bg-blue span.badge,
+button.cc-bg-blue span.badge {
   background-color: white;
   color: #3498db;
 }
@@ -6035,11 +6208,6 @@ form.cc-blue button[type="submit"] {
 form.cc-blue input[type="submit"]:hover,
 form.cc-blue button[type="submit"]:hover {
   background-color: #217dbb;
-}
-/* Badges */
-span.cc-blue {
-  background-color: #3498db;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -6097,6 +6265,11 @@ h5.cc-purple,
 h6.cc-purple,
 p.cc-purple,
 div.cc-purple,
+section.cc-purple,
+aside.cc-purple,
+header.cc-purple,
+footer.cc-purple,
+span.cc-purple,
 i.cc-purple,
 a.cc-purple {
   color: #8e44ad;
@@ -6109,6 +6282,11 @@ h5.cc-purple small,
 h6.cc-purple small,
 p.cc-purple small,
 div.cc-purple small,
+section.cc-purple small,
+aside.cc-purple small,
+header.cc-purple small,
+footer.cc-purple small,
+span.cc-purple small,
 i.cc-purple small,
 a.cc-purple small {
   color: #a563c1;
@@ -6121,6 +6299,11 @@ h5.cc-bg-purple,
 h6.cc-bg-purple,
 p.cc-bg-purple,
 div.cc-bg-purple,
+section.cc-bg-purple,
+aside.cc-bg-purple,
+header.cc-bg-purple,
+footer.cc-bg-purple,
+span.cc-bg-purple,
 i.cc-bg-purple,
 a.cc-bg-purple {
   color: white;
@@ -6175,8 +6358,8 @@ table tbody tr.cc-bg-purple td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-purple,
-button.cc-purple {
+a.btn.cc-bg-purple,
+button.cc-bg-purple {
   color: white;
   background-color: #8e44ad;
   /* If Hover is specified */
@@ -6186,21 +6369,21 @@ button.cc-purple {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-purple:hover,
-button.cc-purple:hover {
+a.btn.cc-bg-purple:hover,
+button.cc-bg-purple:hover {
   background-color: #703688;
 }
-a.btn.cc-purple:hover,
-button.cc-purple:hover {
+a.btn.cc-bg-purple:hover,
+button.cc-bg-purple:hover {
   color: white;
   border-color: #8e44ad;
 }
-a.btn.cc-purple.cc-loading:before,
-button.cc-purple.cc-loading:before {
+a.btn.cc-bg-purple.cc-loading:before,
+button.cc-bg-purple.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-purple.cc-outlined,
-button.cc-purple.cc-outlined {
+a.btn.cc-bg-purple.cc-outlined,
+button.cc-bg-purple.cc-outlined {
   color: #8e44ad;
   background-color: transparent;
   /* If Hover is specified */
@@ -6208,25 +6391,25 @@ button.cc-purple.cc-outlined {
   border: 1px solid #8e44ad;
   /* Loading + outlined buttons */
 }
-a.btn.cc-purple.cc-outlined:hover,
-button.cc-purple.cc-outlined:hover {
+a.btn.cc-bg-purple.cc-outlined:hover,
+button.cc-bg-purple.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-purple.cc-outlined:hover,
-button.cc-purple.cc-outlined:hover {
+a.btn.cc-bg-purple.cc-outlined:hover,
+button.cc-bg-purple.cc-outlined:hover {
   border-color: #522764;
   color: #522764;
 }
-a.btn.cc-purple.cc-outlined.cc-loading,
-button.cc-purple.cc-outlined.cc-loading {
+a.btn.cc-bg-purple.cc-outlined.cc-loading,
+button.cc-bg-purple.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-purple.cc-outlined.cc-loading:before,
-button.cc-purple.cc-outlined.cc-loading:before {
+a.btn.cc-bg-purple.cc-outlined.cc-loading:before,
+button.cc-bg-purple.cc-outlined.cc-loading:before {
   border-color: #8e44ad #cfacde #cfacde #cfacde;
 }
-a.btn.cc-purple span.badge,
-button.cc-purple span.badge {
+a.btn.cc-bg-purple span.badge,
+button.cc-bg-purple span.badge {
   background-color: white;
   color: #8e44ad;
 }
@@ -6265,11 +6448,6 @@ form.cc-purple button[type="submit"] {
 form.cc-purple input[type="submit"]:hover,
 form.cc-purple button[type="submit"]:hover {
   background-color: #703688;
-}
-/* Badges */
-span.cc-purple {
-  background-color: #8e44ad;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -6327,6 +6505,11 @@ h5.cc-orange,
 h6.cc-orange,
 p.cc-orange,
 div.cc-orange,
+section.cc-orange,
+aside.cc-orange,
+header.cc-orange,
+footer.cc-orange,
+span.cc-orange,
 i.cc-orange,
 a.cc-orange {
   color: #f39c12;
@@ -6339,6 +6522,11 @@ h5.cc-orange small,
 h6.cc-orange small,
 p.cc-orange small,
 div.cc-orange small,
+section.cc-orange small,
+aside.cc-orange small,
+header.cc-orange small,
+footer.cc-orange small,
+span.cc-orange small,
 i.cc-orange small,
 a.cc-orange small {
   color: #f5b043;
@@ -6351,6 +6539,11 @@ h5.cc-bg-orange,
 h6.cc-bg-orange,
 p.cc-bg-orange,
 div.cc-bg-orange,
+section.cc-bg-orange,
+aside.cc-bg-orange,
+header.cc-bg-orange,
+footer.cc-bg-orange,
+span.cc-bg-orange,
 i.cc-bg-orange,
 a.cc-bg-orange {
   color: white;
@@ -6405,8 +6598,8 @@ table tbody tr.cc-bg-orange td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-orange,
-button.cc-orange {
+a.btn.cc-bg-orange,
+button.cc-bg-orange {
   color: white;
   background-color: #f39c12;
   /* If Hover is specified */
@@ -6416,21 +6609,21 @@ button.cc-orange {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-orange:hover,
-button.cc-orange:hover {
+a.btn.cc-bg-orange:hover,
+button.cc-bg-orange:hover {
   background-color: #c87f0a;
 }
-a.btn.cc-orange:hover,
-button.cc-orange:hover {
+a.btn.cc-bg-orange:hover,
+button.cc-bg-orange:hover {
   color: white;
   border-color: #f39c12;
 }
-a.btn.cc-orange.cc-loading:before,
-button.cc-orange.cc-loading:before {
+a.btn.cc-bg-orange.cc-loading:before,
+button.cc-bg-orange.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-orange.cc-outlined,
-button.cc-orange.cc-outlined {
+a.btn.cc-bg-orange.cc-outlined,
+button.cc-bg-orange.cc-outlined {
   color: #f39c12;
   background-color: transparent;
   /* If Hover is specified */
@@ -6438,25 +6631,25 @@ button.cc-orange.cc-outlined {
   border: 1px solid #f39c12;
   /* Loading + outlined buttons */
 }
-a.btn.cc-orange.cc-outlined:hover,
-button.cc-orange.cc-outlined:hover {
+a.btn.cc-bg-orange.cc-outlined:hover,
+button.cc-bg-orange.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-orange.cc-outlined:hover,
-button.cc-orange.cc-outlined:hover {
+a.btn.cc-bg-orange.cc-outlined:hover,
+button.cc-bg-orange.cc-outlined:hover {
   border-color: #976008;
   color: #976008;
 }
-a.btn.cc-orange.cc-outlined.cc-loading,
-button.cc-orange.cc-outlined.cc-loading {
+a.btn.cc-bg-orange.cc-outlined.cc-loading,
+button.cc-bg-orange.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-orange.cc-outlined.cc-loading:before,
-button.cc-orange.cc-outlined.cc-loading:before {
+a.btn.cc-bg-orange.cc-outlined.cc-loading:before,
+button.cc-bg-orange.cc-outlined.cc-loading:before {
   border-color: #f39c12 #fad9a4 #fad9a4 #fad9a4;
 }
-a.btn.cc-orange span.badge,
-button.cc-orange span.badge {
+a.btn.cc-bg-orange span.badge,
+button.cc-bg-orange span.badge {
   background-color: white;
   color: #f39c12;
 }
@@ -6495,11 +6688,6 @@ form.cc-orange button[type="submit"] {
 form.cc-orange input[type="submit"]:hover,
 form.cc-orange button[type="submit"]:hover {
   background-color: #c87f0a;
-}
-/* Badges */
-span.cc-orange {
-  background-color: #f39c12;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -6557,6 +6745,11 @@ h5.cc-yellow,
 h6.cc-yellow,
 p.cc-yellow,
 div.cc-yellow,
+section.cc-yellow,
+aside.cc-yellow,
+header.cc-yellow,
+footer.cc-yellow,
+span.cc-yellow,
 i.cc-yellow,
 a.cc-yellow {
   color: #f1c40f;
@@ -6569,6 +6762,11 @@ h5.cc-yellow small,
 h6.cc-yellow small,
 p.cc-yellow small,
 div.cc-yellow small,
+section.cc-yellow small,
+aside.cc-yellow small,
+header.cc-yellow small,
+footer.cc-yellow small,
+span.cc-yellow small,
 i.cc-yellow small,
 a.cc-yellow small {
   color: #f4d03f;
@@ -6581,6 +6779,11 @@ h5.cc-bg-yellow,
 h6.cc-bg-yellow,
 p.cc-bg-yellow,
 div.cc-bg-yellow,
+section.cc-bg-yellow,
+aside.cc-bg-yellow,
+header.cc-bg-yellow,
+footer.cc-bg-yellow,
+span.cc-bg-yellow,
 i.cc-bg-yellow,
 a.cc-bg-yellow {
   color: white;
@@ -6635,8 +6838,8 @@ table tbody tr.cc-bg-yellow td {
   border-bottom: 0;
 }
 /* Links / Buttons */
-a.btn.cc-yellow,
-button.cc-yellow {
+a.btn.cc-bg-yellow,
+button.cc-bg-yellow {
   color: white;
   background-color: #f1c40f;
   /* If Hover is specified */
@@ -6646,21 +6849,21 @@ button.cc-yellow {
   /* Loading buttons : show white loader */
   /* Outlined buttons / links */
 }
-a.btn.cc-yellow:hover,
-button.cc-yellow:hover {
+a.btn.cc-bg-yellow:hover,
+button.cc-bg-yellow:hover {
   background-color: #c29d0b;
 }
-a.btn.cc-yellow:hover,
-button.cc-yellow:hover {
+a.btn.cc-bg-yellow:hover,
+button.cc-bg-yellow:hover {
   color: white;
   border-color: #f1c40f;
 }
-a.btn.cc-yellow.cc-loading:before,
-button.cc-yellow.cc-loading:before {
+a.btn.cc-bg-yellow.cc-loading:before,
+button.cc-bg-yellow.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
 }
-a.btn.cc-yellow.cc-outlined,
-button.cc-yellow.cc-outlined {
+a.btn.cc-bg-yellow.cc-outlined,
+button.cc-bg-yellow.cc-outlined {
   color: #f1c40f;
   background-color: transparent;
   /* If Hover is specified */
@@ -6668,25 +6871,25 @@ button.cc-yellow.cc-outlined {
   border: 1px solid #f1c40f;
   /* Loading + outlined buttons */
 }
-a.btn.cc-yellow.cc-outlined:hover,
-button.cc-yellow.cc-outlined:hover {
+a.btn.cc-bg-yellow.cc-outlined:hover,
+button.cc-bg-yellow.cc-outlined:hover {
   background-color: transparent;
 }
-a.btn.cc-yellow.cc-outlined:hover,
-button.cc-yellow.cc-outlined:hover {
+a.btn.cc-bg-yellow.cc-outlined:hover,
+button.cc-bg-yellow.cc-outlined:hover {
   border-color: #927608;
   color: #927608;
 }
-a.btn.cc-yellow.cc-outlined.cc-loading,
-button.cc-yellow.cc-outlined.cc-loading {
+a.btn.cc-bg-yellow.cc-outlined.cc-loading,
+button.cc-bg-yellow.cc-outlined.cc-loading {
   color: transparent;
 }
-a.btn.cc-yellow.cc-outlined.cc-loading:before,
-button.cc-yellow.cc-outlined.cc-loading:before {
+a.btn.cc-bg-yellow.cc-outlined.cc-loading:before,
+button.cc-bg-yellow.cc-outlined.cc-loading:before {
   border-color: #f1c40f #f9e8a0 #f9e8a0 #f9e8a0;
 }
-a.btn.cc-yellow span.badge,
-button.cc-yellow span.badge {
+a.btn.cc-bg-yellow span.badge,
+button.cc-bg-yellow span.badge {
   background-color: white;
   color: #f1c40f;
 }
@@ -6725,11 +6928,6 @@ form.cc-yellow button[type="submit"] {
 form.cc-yellow input[type="submit"]:hover,
 form.cc-yellow button[type="submit"]:hover {
   background-color: #c29d0b;
-}
-/* Badges */
-span.cc-yellow {
-  background-color: #f1c40f;
-  color: white;
 }
 /* Tabs */
 .tabs {
@@ -8278,46 +8476,6 @@ span.badge[class*="ion-"]:before {
 .cc-h-1500px {
   height: 1500px;
 }
-/*
-    * YOUR OWN STYLESHEETS FILES BELOW
-
-    * Here should go your own CSS styles or @import your own .less files
-.el {
-    ... my LESS inspiration
-}
-
-*-- OR  --*
-
-@import "website/homepage"; // considering you have created a 'website' folder with a 'homepage.less' file inside
-@import "media/tablet"; // considering you have created a 'media' folder with a 'tablet.less' file inside
-*/
-/*
-    == ChuckCSS ==
-    @Author : ALPIXEL : Fresh & French Web Agency (http://www.alpixel.fr)
-    @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
-    @Beer : If you love it, you can pay us a beer at : paypal@alpixel.fr
-*/
-/*
-    settings.less : set your vars, colors, fonts, etc...
-*/
-/*
-    * IMPORT CORE FILES *
-    • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
-    • functions.less : main usefull functions|mixins for integration project
-    • animations.less : keyframes file
-    • base.less : base file with <html>, <body> styles
-*/
-/*
-    * /elements/ - IMPORTS FILES *
-*/
-/*
-    * /components/ - IMPORTS FILES *
-*/
-/*
-    * IMPORT GENERATOR FILE *
-    • generator.less : Engine generator for colors, grids, icons...
-    /!\ Called after elements and others components for CSS ordering
-*/
 /*
     * YOUR OWN STYLESHEETS FILES BELOW
 
