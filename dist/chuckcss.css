@@ -4304,10 +4304,10 @@ img.cc-shadowed {
   margin: 0;
 }
 .columns.cc-no-gutter .column {
-  margin: 0.3em 0 0.3em;
+  margin: 0em 0 0em;
 }
 .columns.cc-gutter .column {
-  margin: 0.3em 1em 0.3em;
+  margin: 0em 1em 0em;
 }
 .columns.cc-animated .column {
   transition: 0.2s all ease-out 0s;
@@ -4348,7 +4348,7 @@ img.cc-shadowed {
   margin: 0;
   border: 0;
   padding: 1em;
-  margin: 0.3em 1em 0.3em;
+  margin: 0em 1em 0em;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
