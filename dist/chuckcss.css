@@ -1273,44 +1273,44 @@ h6 small,
 }
 .h1-like,
 h1 {
-  font-size: 3.75rem;
+  font-size: 2.5em;
   /* defined in settings.less */
-  line-height: 5.625rem;
+  line-height: 3.75em;
   /* defined in settings.less */
 }
 .h2-like,
 h2 {
-  font-size: 3rem;
+  font-size: 2em;
   /* defined in settings.less */
-  line-height: 4.5rem;
+  line-height: 3em;
   /* defined in settings.less */
 }
 .h3-like,
 h3 {
-  font-size: 2.625rem;
+  font-size: 1.75em;
   /* defined in settings.less */
-  line-height: 3.9375rem;
+  line-height: 2.625em;
   /* defined in settings.less */
 }
 .h4-like,
 h4 {
-  font-size: 2.25rem;
+  font-size: 1.5em;
   /* defined in settings.less */
-  line-height: 3.375rem;
+  line-height: 2.25em;
   /* defined in settings.less */
 }
 .h5-like,
 h5 {
-  font-size: 1.95rem;
+  font-size: 1.3em;
   /* defined in settings.less */
-  line-height: 2.925rem;
+  line-height: 1.95em;
   /* defined in settings.less */
 }
 .h6-like,
 h6 {
-  font-size: 1.8rem;
+  font-size: 1.2em;
   /* defined in settings.less */
-  line-height: 2.7rem;
+  line-height: 1.8em;
   /* defined in settings.less */
 }
 /* ***************** */
