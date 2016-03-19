@@ -1086,6 +1086,7 @@ ol {
 */
 .cc {
   /* Width */
+  /* Clearfix */
 }
 .cc-txt-left {
   text-align: left;
@@ -1215,6 +1216,19 @@ ol {
 }
 .cc-w-threequarter {
   width: 75.00%;
+}
+.cc-clearfix {
+  zoom: 1;
+}
+.cc-clearfix:before,
+.cc-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cc-clearfix:after {
+  clear: both;
 }
 .clearfix {
   zoom: 1;
