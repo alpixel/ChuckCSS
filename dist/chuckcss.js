@@ -17,7 +17,7 @@
             -- @ Modals @ --
         */
         /* Open modal */
-        $('button.modal-open').on('click',function(e){
+        $('.modal-open').on('click',function(e){
             e.preventDefault();
 
             var modal = $(this).data('target');
