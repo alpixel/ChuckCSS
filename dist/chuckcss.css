@@ -1167,22 +1167,11 @@ ol {
 .cc-inside {
   width: 1200px;
   margin: 0 auto;
-  zoom: 1;
   transition: 0.2s width ease-out 0s;
   -webkit-transition: 0.2s width ease-out 0s;
   -moz-transition: 0.2s width ease-out 0s;
   -o-transition: 0.2s width ease-out 0s;
   -ms-transition: 0.2s width ease-out 0s;
-}
-.cc-inside:before,
-.cc-inside:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.cc-inside:after {
-  clear: both;
 }
 .cc-displayTable {
   margin-left: 0;
