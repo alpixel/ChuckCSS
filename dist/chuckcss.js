@@ -34,9 +34,10 @@
             .find('.modal-overlay')
             .add('.modal .modal-close')
             .on('click',function(e) {
+                e.preventDefault();
 
-                if($(this).parent().hasClass('active'))
-                    $(this).parent().removeClass('active');
+                if($(this).parents('.modal').hasClass('active'))
+                    $(this).parents('.modal').removeClass('active');
 
                 if(!$('.modal.active').length)
                     $('body').removeClass('opened-modal');
