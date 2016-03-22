@@ -2172,6 +2172,9 @@ form label.block {
   display: block;
   line-height: 2em;
 }
+form label.error {
+  color: #c41515;
+}
 form textarea,
 form input {
   display: inline-block;
