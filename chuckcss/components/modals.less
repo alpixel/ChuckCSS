@@ -58,6 +58,10 @@ body.opened-modal {
             ._transition(0.3s, top, ease-out, 0.3s);
             top:20px;
         }
+
+        .modal-overlay {
+            background-color:rgba(0,0,0,0.85);
+        }
     }
 
 
@@ -149,7 +153,7 @@ body.opened-modal {
     /* Overlay */
     &-overlay {
         position:fixed;
-        background-color:rgba(0,0,0,0.85);
+        background-color:transparent;
         top:0px;
         left:0px;
         right:0px;

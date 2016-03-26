@@ -5151,6 +5151,9 @@ body.opened-modal {
   -ms-transition: 0.3s top ease-out 0.3s;
   top: 20px;
 }
+.modal.active .modal-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+}
 .modal.modal-large .modal-content {
   width: 80%;
 }
@@ -5264,7 +5267,7 @@ body.opened-modal {
 }
 .modal-overlay {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: transparent;
   top: 0px;
   left: 0px;
   right: 0px;
