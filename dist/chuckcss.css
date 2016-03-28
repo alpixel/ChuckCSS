@@ -1514,12 +1514,11 @@ button.icon-right {
   display: inline-flex;
   display: box;
   /* Main axis alignment */
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   /* Packing Flex Lines */
   -webkit-align-content: center;
   -moz-align-content: center;
