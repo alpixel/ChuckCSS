@@ -4716,6 +4716,15 @@ a.btn.cc-fat span.badge:before {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.tabs.cc-left {
+  /* Main axis alignment */
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+}
 .tabs.cc-right {
   /* Main axis alignment */
   -ms-flex-pack: end;
@@ -4914,6 +4923,7 @@ a.btn.cc-fat span.badge:before {
   }
   .tabs.cc {
     /* Stretch on tablet */
+    /* Left on tablet */
     /* Right on tablet */
     /* Centered on tablet */
   }
@@ -4932,6 +4942,15 @@ a.btn.cc-fat span.badge:before {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     text-align: center;
+  }
+  .tabs.cc-left-t {
+    /* Main axis alignment */
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
   }
   .tabs.cc-right-t {
     /* Main axis alignment */

@@ -28,6 +28,9 @@
             ._flex-display;
             ._flex-justify(center);
         }
+        &-left {
+            ._flex-justify(flex-start);
+        }
         &-right {
             ._flex-justify(flex-end);
         }
@@ -221,6 +224,11 @@
                     ._flex(1 0 auto);
                     text-align:center;
                 }
+            }
+
+            /* Left on tablet */
+            &-left-t {
+                ._flex-justify(flex-start);
             }
 
             /* Right on tablet */
