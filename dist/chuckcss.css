@@ -593,7 +593,7 @@ th {
 */
 /* *****
     @name : ._tablet & ._phone
-    @description : A second way for responsive integration (with media/phone.les and media/tablet.less files) . Apply rules for media queries tablet and phone
+    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
     @params : @rules (CSS rules)
 
     @exemple :
@@ -1276,44 +1276,44 @@ h6 small,
 }
 .h1-like,
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   /* defined in settings.less */
-  line-height: 3.75em;
+  line-height: 2.2em;
   /* defined in settings.less */
 }
 .h2-like,
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   /* defined in settings.less */
-  line-height: 3em;
+  line-height: 1.98em;
   /* defined in settings.less */
 }
 .h3-like,
 h3 {
-  font-size: 1.75em;
+  font-size: 1.6em;
   /* defined in settings.less */
-  line-height: 2.625em;
+  line-height: 1.84em;
   /* defined in settings.less */
 }
 .h4-like,
 h4 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   /* defined in settings.less */
-  line-height: 2.25em;
+  line-height: 1.61em;
   /* defined in settings.less */
 }
 .h5-like,
 h5 {
   font-size: 1.3em;
   /* defined in settings.less */
-  line-height: 1.95em;
+  line-height: 1.495em;
   /* defined in settings.less */
 }
 .h6-like,
 h6 {
   font-size: 1.2em;
   /* defined in settings.less */
-  line-height: 1.8em;
+  line-height: 1.38em;
   /* defined in settings.less */
 }
 /* ***************** */
