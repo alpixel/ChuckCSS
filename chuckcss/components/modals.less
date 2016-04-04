@@ -57,6 +57,11 @@ body.opened-modal {
         .modal-close {
             ._transition(0.3s, top, ease-out, 0.3s);
             top:20px;
+
+            // Set top to 8px on phone devices
+            ._phone({
+                top:8px;
+            });
         }
 
         .modal-overlay {
@@ -77,6 +82,13 @@ body.opened-modal {
                 width:30%
             }
         }
+
+        // Set width 90% on phone devices.
+        ._phone({
+            .modal-content {
+                width:90% !important;
+            }
+        });
     }
 
     /* Close button */
@@ -160,13 +172,4 @@ body.opened-modal {
         bottom:0px;
         z-index:97;
     }
-
-
-
-    /* Responsive */
-    ._phone({
-        .modal-content {
-            width:90% !important;
-        }
-    });
 }

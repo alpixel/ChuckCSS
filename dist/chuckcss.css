@@ -5147,7 +5147,6 @@ body.opened-modal {
   /* Close button */
   /* Content */
   /* Overlay */
-  /* Responsive */
 }
 .modal.active {
   -moz-opacity: 1;
@@ -5185,6 +5184,11 @@ body.opened-modal {
   -ms-transition: 0.3s top ease-out 0.3s;
   top: 20px;
 }
+@media screen and (max-width: 767px) {
+  .modal.active .modal-close {
+    top: 8px;
+  }
+}
 .modal.active .modal-overlay {
   background-color: rgba(0, 0, 0, 0.85);
 }
@@ -5193,6 +5197,11 @@ body.opened-modal {
 }
 .modal.modal-small .modal-content {
   width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .modal.modal .modal-content {
+    width: 90% !important;
+  }
 }
 .modal-close {
   padding: 0;
@@ -5307,11 +5316,6 @@ body.opened-modal {
   right: 0px;
   bottom: 0px;
   z-index: 97;
-}
-@media screen and (max-width: 767px) {
-  .modal .modal-content {
-    width: 90% !important;
-  }
 }
 /*
     * IMPORT GENERATOR FILE *
