@@ -8,12 +8,12 @@ html {
 }
 
 body {
-    ._reset; /* reset padding, margin, border ~ defined in core/functions.less */
-    .helvetica; /* main font ~ defined in settings.less */
-    font-size: @text-fs-old; /* old font-size for olds browsers ~ defined in settings.less */
-    font-size: @text-fs; /* ~= 1.4rem ~ defined in settings.less (calculation based on @text-fs-old value) */
-    line-height: @text-lh; /* defined in settings.less */
-    color: @text-mc; /* text-color ~ defined in settings.less */
+    ._reset;
+    ._helvetica;
+    font-size: @text-fs-old;
+    font-size: @text-fs;
+    line-height: @text-lh;
+    color: @text-mc;
     overflow-x: hidden;
     ._box-sizing(border-box);
 
@@ -34,12 +34,12 @@ div,dl,dd,dt,p,ul,li,ol {
 
 /* define text selection */
 ::-moz-selection {
-    background: @text-mc; /* defined in settings.less */
+    background: @text-mc;
     text-shadow: none;
     color:white;
 }
 ::selection {
-    background: @text-mc; /* defined in settings.less */
+    background: @text-mc;
     text-shadow: none;
     color:white;
 }

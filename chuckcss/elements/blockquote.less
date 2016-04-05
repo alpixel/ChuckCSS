@@ -14,7 +14,6 @@ blockquote {
 
 
     &.cc {
-        /* Quoted blockquote : show quote icon from FontAwesome */
         &-quoted {
             position:relative;
             padding-left:3.5em;
@@ -23,7 +22,7 @@ blockquote {
                 position:absolute;
                 left:11px;
                 top:9px;
-                ._fa('\f10d', inherit); /* ._fa('string') / defined in core/functions.less */
+                ._fa('\f10d', inherit);
                 color:@blockquotes-ic;
             }
         }
@@ -56,7 +55,7 @@ blockquote {
         padding-top:1em;
 
         &:before {
-            ._fa('\f105', 100%, @blockquotes-footer-tc); /* ._fa('string') / defined in core/functions.less */
+            ._fa('\f105', 100%, @blockquotes-footer-tc);
             margin-right:5px;
         }
     }

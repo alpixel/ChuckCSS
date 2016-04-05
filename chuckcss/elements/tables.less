@@ -16,7 +16,7 @@ table {
         td,th {
             font-weight:400;
             font-size:@text-fs;
-            padding:@tables-cells-pa; /* defined in settings.less */
+            padding:@tables-cells-pa;
             border:0;
             border-bottom:1px solid @tables-ending;
             text-align:left;
@@ -34,14 +34,15 @@ table {
     /* Cells default style */
     tbody {
         td {
-            padding:@tables-cells-pa; /* defined in settings.less */
-            border-bottom:1px solid @tables-ending; /* defined in settings.less */
+            padding:@tables-cells-pa;
+            border-bottom:1px solid @tables-ending;
             vertical-align:middle;
         }
     }
 
 
 
+    // Specific ChuckCSS styles
     &.cc {
 
         /* Layout fixed tables */
@@ -52,27 +53,27 @@ table {
             /* Striped tables : horizontal */
         &-striped {
             tbody tr:nth-child(2n+1) td {
-                background-color:@tables-striped-even; /* defined in settings.less */
+                background-color:@tables-striped-even;
             }
             tbody tr:nth-child(2n) td {
-                background-color:@tables-striped-odd; /* defined in settings.less */
+                background-color:@tables-striped-odd;
             }
         }
 
         /* Striped tables : vertical */
         &-striped-col {
             tbody tr td:nth-child(2n+1) {
-                background-color:@tables-striped-even; /* defined in settings.less */
+                background-color:@tables-striped-even;
             }
             tbody tr td:nth-child(2n) {
-                background-color:@tables-striped-odd; /* defined in settings.less */
+                background-color:@tables-striped-odd;
             }
         }
 
         /* hovered : highlight the hovered line */
         &-hovered {
             tbody tr:hover td {
-                background-color:@tables-hover-bg; /* defined in settings.less */
+                background-color:@tables-hover-bg;
             }
         }
 

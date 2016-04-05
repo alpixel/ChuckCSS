@@ -21,7 +21,7 @@
         "-na" : name (colors only)
         "-mw" : max-width (media queries)
         "-pa" : padding (for grid columns, and helpers paddings and margins)
-        "-ma" : margin (for gris containers, and helpers paddings and margins)
+        "-ma" : margin (for grid containers, and helpers paddings and margins)
 */
 
 
@@ -41,9 +41,9 @@
 */
 /* Primary color */
 @primary : #29b7e1;
-@primary-na : primary;
-@primary-li : lighten(@primary,10%);
-@primary-da : darken(@primary,10%);
+@primary-na : primary; /* Name of the color, for @aColors array */
+@primary-li : lighten(@primary,10%); /* Lighten primary */
+@primary-da : darken(@primary,10%); /* Lighten primary */
 
 // Green
 @green : #80ae37;
@@ -122,8 +122,8 @@
 @links-btn-hover-tc : white;        /* Links ~ buttons text color on hover when colorized */
 @links-btn-lh : 1.8;                /* Links ~ buttons line-height : ~= font-size*1.8 */
 @links-btn-br : 3;                  /* Links ~ buttons border-radius (in px) */
-@links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn cc-thin"> line-height */
-@links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn cc-fat"> line-height */
+@links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn cc-thin"> font-size */
+@links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn cc-fat"> font-size */
 
 
 
@@ -168,7 +168,7 @@
             </tbody>
         </table>
 */
-@tables-cells-pa : 8px;    /* <th> & <td> padding */
+@tables-cells-pa : 8px;         /* <th> & <td> padding */
 @tables-ending : #e0e0e0;       /* Line below tables */
 @tables-striped-even : #ffffff; /* Even lines bg-color */
 @tables-striped-odd : #f0f0f0;  /* Odd lines bg-color */
@@ -193,12 +193,12 @@
 @submit-bg : @primary;          /* Submit input/button bg-color */
 
 @prefix-bg : @primary;          /* Prefix bgColor */
-@prefix-pa : 0 1.2em;        /* Prefix padding */
+@prefix-pa : 0 1.2em;           /* Prefix padding */
 @prefix-tc : white;             /* Prefix text color */
 
-@suffix-bg : @prefix-bg;           /* Suffix bgColor */
-@suffix-pa : @prefix-pa; /* Suffix padding */
-@suffix-tc : @prefix-tc;           /* Suffix text color */
+@suffix-bg : @prefix-bg;        /* Suffix bgColor */
+@suffix-pa : @prefix-pa;        /* Suffix padding */
+@suffix-tc : @prefix-tc;        /* Suffix text color */
 
 
 
@@ -277,23 +277,25 @@
 
 
 /*
-    -- @ Images @ --
-*/
-@imgPath : '../img'; /* Path of images files */
-
-
-/*
     -- @ FONTS MIXINS @ --
     "Here define the fonts"
 
     * LESS call
         .font(){font-family:'My font',sans-serif;}
 */
-.helvetica() {font-family: 'Helvetica Nueu', sans-serif;}
+._helvetica() {font-family: 'Helvetica Neue', sans-serif;}
+
+
+/*
+    -- @ Images @ --
+    NOTE : This var is not used in ChuckCSS but i usefull for front-end developments
+*/
+@imgPath : '../img'; /* Path of images files */
 
 
 /*
     -- @ FONTS PATH @ --
     "Here define the 'fonts' folder path"
+    NOTE : This var is not used in ChuckCSS but i usefull for front-end developments
 */
 @fontPath : '../fonts';     /* Path of fonts files */
