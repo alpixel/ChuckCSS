@@ -6,6 +6,7 @@
     "grunt-contrib-concat": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-less": "latest",
+    "grunt-autoprefixer": "latest",
     "grunt-contrib-watch": "latest"
   },
   "devDependencies": {
