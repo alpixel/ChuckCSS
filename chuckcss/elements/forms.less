@@ -349,6 +349,13 @@ form {
             ._opacity(0.5);
         }
 
+        /* Reset type file input */
+        &[type="file"] {
+            ._reset;
+            height:inherit;
+            ._box-shadow('none');
+        }
+
         /* Placeholder color */
         &::-moz-placeholder {color:@gray;}
         &::-ms-input-placeholder {color:@gray;}

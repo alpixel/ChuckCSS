@@ -2069,6 +2069,7 @@ form input {
   /* Error inputs */
   /* number : fix right padding */
   /* disabled element */
+  /* Reset type file input */
   /* Placeholder color */
 }
 form textarea:focus,
@@ -2115,6 +2116,14 @@ form input[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   filter: alpha(opacity=50);
   zoom: 1;
+}
+form textarea[type="file"],
+form input[type="file"] {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: inherit;
+  box-shadow: none;
 }
 form textarea::-moz-placeholder,
 form input::-moz-placeholder {
