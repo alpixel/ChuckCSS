@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       },
       development: {
         files: {
-          "dist/bootstrap.css": "chuckcss/bootstrap/bootstrap-override.less",
+          "dist/bootstrap-override.css": "chuckcss/bootstrap/bootstrap-override.less",
           "dist/chuckcss.css": "chuckcss/front.less",
           "dist/print.css": "chuckcss/print.less"
         }
@@ -26,7 +26,9 @@ module.exports = function(grunt) {
             files: {
                 'dist/chuckcss.css': 'dist/chuckcss.css',
                 'dist/chuckcss.min.css': 'dist/chuckcss.min.css',
-                "dist/print.css" : "dist/print.css"
+                "dist/print.css" : "dist/print.css",
+                "dist/bootstrap-override.min.css" : "dist/bootstrap-override.min.css",
+                "dist/bootstrap-override.css" : "dist/bootstrap-override.css",
             }
         }
     },
