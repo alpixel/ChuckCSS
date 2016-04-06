@@ -84,10 +84,6 @@
       }
 ***** */
 ._border-radius (@radius: 5px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  -ms-border-radius: @radius;
-  -o-border-radius: @radius;
   border-radius: @radius;
 }
 /* *****
@@ -103,10 +99,6 @@
       }
 ***** */
 ._box-shadow (@values) {
-  -webkit-box-shadow: e(@values);
-  -kthml-box-shadow: e(@values);
-  -moz-box-shadow: e(@values);
-  -o-box-shadow: e(@values);
   box-shadow: e(@values);
 }
 /* *****
@@ -119,20 +111,10 @@
 ***** */
 ._bg-vertical(@from:#000, @to:#fff) {
   background: @from; /* Old browsers */
-  background: -moz-linear-gradient(top,  @from 0%,  @to 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from), color-stop(100%, @to)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  @from 0%, @to 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  @from 0%, @to 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  @from 0%, @to 100%); /* IE10+ */
   background: linear-gradient(to bottom,  @from 0%, @to 100%); /* W3C */
 }
 ._bg-horizontal(@from:#000, @to:#fff) {
   background: @from; /* Old browsers */
-  background: -moz-linear-gradient(left,  @from 0%,  @to 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,@from), color-stop(100%, @to)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  @from 0%, @to 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left,  @from 0%, @to 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left,  @from 0%, @to 100%); /* IE10+ */
   background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
 }
 /* *****
@@ -147,10 +129,7 @@
 ***** */
 ._opacity(@opacity:1) when (isnumber(@opacity)) {
   @opacityIE : @opacity*100;
-  -moz-opacity:@opacity;
   opacity:@opacity;
-  -o-opacity:@opacity;
-  -ms-filter:"alpha(opacity=@{opacityIE})";
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=@opacityIE);
   filter:alpha(opacity=@opacityIE);
   zoom: 1;
@@ -249,10 +228,6 @@
 ***** */
 ._transition(@duration:.2s, @property:all, @effect:ease-out, @delay:0s) {
   transition:@arguments;
-  -webkit-transition:@arguments;
-  -moz-transition:@arguments;
-  -o-transition:@arguments;
-  -ms-transition:@arguments;
 }
 /* *****
     @name : ._transform
@@ -278,10 +253,6 @@
 ***** */
 ._transform(...) {
   -webkit-transform+_: @arguments;
-  -moz-transform+_: @arguments;
-  -ms-transform+_: @arguments;
-  -o-transform+_: @arguments;
-  transform+_: @arguments;
 }
 /* *****
     @exemples :
@@ -379,8 +350,6 @@
       }
 ***** */
 ._box-sizing(@boxmodel:content-box) {
-    -webkit-box-sizing: @boxmodel; /* <= IOS4 && Android <= 2.3 */
-    -moz-box-sizing: @boxmodel; /* FF <= 28 */
     box-sizing: @boxmodel;
 }
 /* *****
@@ -410,10 +379,6 @@
       }
 ***** */
 ._filter(...) {
-    -webkit-filter+_: @arguments;
-    -moz-filter+_: @arguments;
-    -ms-filter+_: @arguments;
-    -o-filter+_: @arguments;
     filter+_: @arguments;
 }
 /* *****

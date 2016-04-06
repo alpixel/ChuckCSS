@@ -22,58 +22,35 @@
 ***** */
 ._flex-display(@display:flex) {
     /* Flexbox display */
-    display: -webkit-box;
-    display: ~"-moz-box";
-    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
-    display: ~"-webkit-@{display}";
     display: @display;
-    display:box;
 }
 
 ._flex-direction(@direction:row) {
     /* Direction */
-    -webkit-flex-direction : @direction;
-    -moz-flex-direction : @direction;
-    -ms-flex-direction : @direction;
     flex-direction : @direction;
 }
 
 ._flex-wrap(@wrap:nowrap) {
     /* Flex line wrapping */
     ._ms-flex-wrap(@wrap); // IE10
-    -webkit-flex-wrap: @wrap;
-    -moz-flex-wrap: @wrap;
-    -ms-flex-wrap: @wrap;
     flex-wrap: @wrap;
 }
 
 ._flex-justify(@justify:flex-start) {
     /* Main axis alignment */
     ._ms-flex-justify-content(@justify); // IE10
-    -webkit-justify-content: @justify;
-    -moz-justify-content: @justify;
-    -ms-justify-content: @justify;
-    -ms-flex-pack: @justify;
     justify-content: @justify;
 }
 
 ._flex-align-items(@align:stretch) {
     /* Cross-axis alignment */
     ._ms-flex-align-items(@align);
-    -webkit-align-items: @align;
-    -moz-align-items: @align;
-    -ms-align-items: @align;
-    -ms-flex-align: @align;
     align-items: @align;
 }
 
 ._flex-align-content(@align-content:stretch) {
     /* Packing Flex Lines */
     ._ms-flex-align-content(@align-content);
-    -webkit-align-content: @align-content;
-    -moz-align-content: @align-content;
-    -ms-align-content: @align-content;
-    -ms-flex-line-pack: @align-content;
     align-content: @align-content;
 }
 
@@ -93,10 +70,6 @@
       }
 ***** */
 ._flex(...) {
-  -webkit-box-flex: @arguments;
-  -moz-box-flex: @arguments;
-  -webkit-flex: @arguments;
-  -ms-flex: @arguments;
   flex: @arguments;
 }
 /* *****
@@ -122,10 +95,6 @@
       }
 ***** */
 ._flex-order(@order: 0) {
-  -webkit-box-ordinal-group: @order;
-  -moz-box-ordinal-group: @order;
-  -ms-flex-order: @order;
-  -webkit-order: @order;
   order: @order;
 }
 /* *****
@@ -148,9 +117,6 @@
 ***** */
 ._flex-align-self(@align: auto) {
 ._ms-flex-align-self(@align);
-  -webkit-align-self: @align;
-  -moz-align-self: @align;
-  -ms-align-self: @align;
   align-self: @align;
 }
 

@@ -21,11 +21,19 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    autoprefixer: {
+        dist: {
+            files: {
+                'dist/chuckcss.css': 'dist/chuckcss.css',
+                'dist/chuckcss.min.css': 'dist/chuckcss.min.css',
+                "dist/print.css" : "dist/print.css"
+            }
+        }
+    },
     watch: {
       styles: {
         files: ['chuckcss/*.less','chuckcss/**/*.less'],
-        tasks: ['less'],
+        tasks: ['less', 'autoprefixer'],
         options: {
           nospawn: true
         }
@@ -35,6 +43,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.registerTask('default', ['watch']);
 
 
