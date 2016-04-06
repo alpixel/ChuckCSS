@@ -209,6 +209,10 @@
             &:focus {
                 border-color:@colorValue;
             }
+
+            &.error:focus {
+                border-color:lighten(@red,10%);
+            }
         }
 
         input[type="submit"],
