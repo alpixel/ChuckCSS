@@ -244,15 +244,11 @@
 
     will compile to
     el {
-        -webkit-transform: skew(10deg, 10deg) rotate(45deg);
-        -moz-transform: skew(10deg, 10deg) rotate(45deg);
-        -ms-transform: skew(10deg, 10deg) rotate(45deg);
-        -o-transform: skew(10deg, 10deg) rotate(45deg);
         transform: skew(10deg, 10deg) rotate(45deg);
     }
 ***** */
 ._transform(...) {
-  -webkit-transform+_: @arguments;
+  transform+_: @arguments;
 }
 /* *****
     @exemples :
@@ -371,10 +367,6 @@
 
       will compile to :
       el {
-          -webkit-filter: blur(1px) sepia(1);
-          -moz-filter: blur(1px) sepia(1);
-          -ms-filter: blur(1px) sepia(1);
-          -o-filter: blur(1px) sepia(1);
           filter: blur(1px) sepia(1);
       }
 ***** */

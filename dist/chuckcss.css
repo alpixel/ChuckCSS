@@ -730,10 +730,6 @@ textarea {
 
     will compile to
     el {
-        -webkit-transform: skew(10deg, 10deg) rotate(45deg);
-        -moz-transform: skew(10deg, 10deg) rotate(45deg);
-        -ms-transform: skew(10deg, 10deg) rotate(45deg);
-        -o-transform: skew(10deg, 10deg) rotate(45deg);
         transform: skew(10deg, 10deg) rotate(45deg);
     }
 ***** */
@@ -806,10 +802,6 @@ textarea {
 
       will compile to :
       el {
-          -webkit-filter: blur(1px) sepia(1);
-          -moz-filter: blur(1px) sepia(1);
-          -ms-filter: blur(1px) sepia(1);
-          -o-filter: blur(1px) sepia(1);
           filter: blur(1px) sepia(1);
       }
 ***** */
@@ -990,11 +982,13 @@ textarea {
   from {
     /* Not perspective */
     -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
     /* Perspective */
   }
   to {
     /* Not perspective */
     -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     /* Perspective */
   }
 }
@@ -1002,11 +996,13 @@ textarea {
   from {
     /* Not perspective */
     -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
     /* Perspective */
   }
   to {
     /* Not perspective */
     -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     /* Perspective */
   }
 }
@@ -2013,6 +2009,7 @@ form .form-checkbox input:checked:before {
   display: block;
   /* Not perspective */
   -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   /* Perspective */
 }
 form .form-radio input {
@@ -4705,6 +4702,7 @@ body.opened-modal {
   /* X != Y */
   /* X only */
   -webkit-transform: scale(1);
+          transform: scale(1);
   /* X & Y empty : default value */
   top: 0px;
 }
@@ -4765,11 +4763,13 @@ body.opened-modal {
 .modal-close:before {
   /* Not perspective */
   -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   /* Perspective */
 }
 .modal-close:after {
   /* Not perspective */
   -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   /* Perspective */
 }
 .modal-close:hover {
@@ -4792,6 +4792,7 @@ body.opened-modal {
   /* X != Y */
   /* X only */
   -webkit-transform: scale(0.5);
+          transform: scale(0.5);
   /* X & Y empty : default value */
 }
 .modal-content .modal-body,
