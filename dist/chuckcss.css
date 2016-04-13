@@ -932,7 +932,7 @@ textarea {
           ._flex(0 auto);
 
           &:nth-child(1) {
-            ._flex-order(1); // this child will be displayed last
+            ._flex-order(2); // this child will be displayed last
           }
 
           &:nth-child(2) {
@@ -961,13 +961,90 @@ textarea {
 ***** */
 /*
     == HACK IE10 ==
-    @ NOTE : Thanks to autoprefixer, the functions below are no longer used.
+    @ NOTE : Thanks to autoprefixer, the functions below are no longer used
 */
-/* JUSTIFY-CONTENT HACK */
-/* ALIGN-CONTENT HACK */
-/* ALIGN-ITEMS HACK */
-/* ALIGN-SELF HACK */
-/* WRAP HACK */
+/*
+// JUSTIFY-CONTENT HACK
+._ms-flex-justify-content(@justify) when (@justify = space-between) {
+    -ms-flex-pack: justify;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = space-around) {
+    -ms-flex-pack: distribute;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = flex-start) {
+    -ms-flex-pack: start;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = flex-end) {
+    -ms-flex-pack: end;
+}
+
+._ms-flex-justify-content(@justify) when (@justify = center) {
+    -ms-flex-pack: center;
+}
+
+
+// ALIGN-CONTENT HACK
+._ms-flex-align-content(@align) when (@align = space-between) {
+    -ms-flex-line-pack: justify;
+}
+
+._ms-flex-align-content(@align) when (@align = space-around) {
+    -ms-flex-line-pack: distribute;
+}
+
+._ms-flex-align-content(@align) when (@align = flex-start) {
+    -ms-flex-line-pack: start;
+}
+
+._ms-flex-align-content(@align) when (@align = flex-end) {
+    -ms-flex-line-pack: end;
+}
+
+._ms-flex-align-content(@align) when (@align = center), (@align = stretch) {
+    -ms-flex-line-pack: @align;
+}
+
+
+// ALIGN-ITEMS HACK
+._ms-flex-align-items(@align) when (@align = flex-start) {
+    -ms-flex-align: start;
+}
+
+._ms-flex-align-items(@align) when (@align = flex-end) {
+    -ms-flex-align: end;
+}
+
+._ms-flex-align-items(@align) when (@align = center), (@align = baseline), (@align = stretch) {
+    -ms-flex-align: @align;
+}
+
+
+// ALIGN-SELF HACK
+._ms-flex-align-self(@align) when (@align = flex-start) {
+    -ms-flex-item-align: start;
+}
+
+._ms-flex-align-self(@align) when (@align = flex-end) {
+    -ms-flex-item-align: end;
+}
+
+._ms-flex-align-self(@align) when (@align = auto), (@align = center), (@align = baseline), (@align = stretch) {
+    -ms-flex-item-align: @align;
+}
+
+
+// WRAP HACK
+._ms-flex-wrap(@wrap) when (@wrap = nowrap) {
+    -ms-flex-wrap: none;
+}
+
+._ms-flex-wrap(@wrap) when (@wrap = wrap), (@wrap = wrap-reverse) {
+    -ms-flex-wrap: @wrap;
+}
+*/
 /*
     == ANIMATIONS ==
 */
@@ -1452,21 +1529,17 @@ button.cc-loading:before {
 a.btn.icon-right,
 button.icon-right {
   position: relative;
-  /* Flexbox display */
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /* Main axis alignment */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* Packing Flex Lines */
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  /* Cross-axis alignment */
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1630,21 +1703,17 @@ ul.cc-horizontal li {
 ul.cc-horizontal li[class*="fa-"].icon-right,
 ul.cc-horizontal li[class*="ion-"].icon-right {
   position: relative;
-  /* Flexbox display */
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /* Main axis alignment */
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* Packing Flex Lines */
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
-  /* Cross-axis alignment */
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -3910,12 +3979,10 @@ img.cc-shadowed {
   }
 }
 .columns {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Flex line wrapping */
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -3924,13 +3991,11 @@ img.cc-shadowed {
   /* PHONE rules */
 }
 .columns.cc-no-multiligne {
-  /* Flex line wrapping */
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
 .columns.cc-reverse {
-  /* Direction */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
@@ -3938,35 +4003,30 @@ img.cc-shadowed {
           flex-direction: row-reverse;
 }
 .columns.cc-justify-starting {
-  /* Main axis alignment */
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 .columns.cc-justify-ending {
-  /* Main axis alignment */
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 .columns.cc-justify-centering {
-  /* Main axis alignment */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .columns.cc-justify-spacing {
-  /* Main axis alignment */
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .columns.cc-justify-equal-spacing {
-  /* Main axis alignment */
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -4053,36 +4113,30 @@ img.cc-shadowed {
   margin-right: auto;
 }
 .columns .column.cc-align-top {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Cross-axis alignment */
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 .columns .column.cc-align-center {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Cross-axis alignment */
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .columns .column.cc-align-bottom {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Cross-axis alignment */
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -4311,12 +4365,10 @@ a.btn.cc-fat span.badge:before {
   padding: 0;
   margin: 0;
   border: 0;
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Flex line wrapping */
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -4328,33 +4380,28 @@ a.btn.cc-fat span.badge:before {
   border-bottom: 1px solid #d3d3d3;
 }
 .tabs.cc-centered {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Main axis alignment */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .tabs.cc-left {
-  /* Main axis alignment */
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 .tabs.cc-right {
-  /* Main axis alignment */
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 .tabs.cc-stretch {
-  /* Main axis alignment */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -4406,12 +4453,10 @@ a.btn.cc-fat span.badge:before {
   border: 1px solid #29b7e1;
 }
 .tabs.cc-pills.cc-centered {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Main axis alignment */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -4506,7 +4551,6 @@ a.btn.cc-fat span.badge:before {
     /* Centered on tablet */
   }
   .tabs.cc-stretch-t {
-    /* Main axis alignment */
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -4520,21 +4564,18 @@ a.btn.cc-fat span.badge:before {
     text-align: center;
   }
   .tabs.cc-left-t {
-    /* Main axis alignment */
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .tabs.cc-right-t {
-    /* Main axis alignment */
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .tabs.cc-centered-t {
-    /* Main axis alignment */
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -4543,7 +4584,6 @@ a.btn.cc-fat span.badge:before {
 }
 @media screen and (max-width: 767px) {
   .tabs {
-    /* Direction */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -4656,17 +4696,14 @@ body.opened-modal {
 }
 /* Modal wrapper */
 .modal {
-  /* Flexbox display */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /* Main axis alignment */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* Cross-axis alignment */
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
