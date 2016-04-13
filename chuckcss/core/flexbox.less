@@ -7,12 +7,12 @@
     @name : ._flex-*
     @description : generate flexbox
     @params :
+      - -display : flex | inline-flex
       - -direction : row | row-reverse | column | column-reverse
       - -wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
       - -justify : flex-start | flex-end | center | space-between | space-around
       - -align : flex-start | flex-end | center | baseline | stretch
       - -align-content : flex-start | flex-end | center | space-between | space-around | stretch
-      - -display : flex | inline-flex
 
     @exemple :
       el {
@@ -32,25 +32,25 @@
 
 ._flex-wrap(@wrap:nowrap) {
     /* Flex line wrapping */
-    ._ms-flex-wrap(@wrap); // IE10
+    //._ms-flex-wrap(@wrap); // IE10
     flex-wrap: @wrap;
 }
 
 ._flex-justify(@justify:flex-start) {
     /* Main axis alignment */
-    ._ms-flex-justify-content(@justify); // IE10
+    //._ms-flex-justify-content(@justify); // IE10
     justify-content: @justify;
 }
 
 ._flex-align-items(@align:stretch) {
     /* Cross-axis alignment */
-    ._ms-flex-align-items(@align);
+    //._ms-flex-align-items(@align);
     align-items: @align;
 }
 
 ._flex-align-content(@align-content:stretch) {
     /* Packing Flex Lines */
-    ._ms-flex-align-content(@align-content);
+    //._ms-flex-align-content(@align-content);
     align-content: @align-content;
 }
 
@@ -116,7 +116,7 @@
       }
 ***** */
 ._flex-align-self(@align: auto) {
-._ms-flex-align-self(@align);
+    //._ms-flex-align-self(@align);
   align-self: @align;
 }
 
@@ -124,6 +124,7 @@
 
 /*
     == HACK IE10 ==
+    @ NOTE : Thanks to autoprefixer, the functions below are no longer used.
 */
 /* JUSTIFY-CONTENT HACK */
 ._ms-flex-justify-content(@justify) when (@justify = space-between) {

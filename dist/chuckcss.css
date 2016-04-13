@@ -892,12 +892,12 @@ textarea {
     @name : ._flex-*
     @description : generate flexbox
     @params :
+      - -display : flex | inline-flex
       - -direction : row | row-reverse | column | column-reverse
       - -wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
       - -justify : flex-start | flex-end | center | space-between | space-around
       - -align : flex-start | flex-end | center | baseline | stretch
       - -align-content : flex-start | flex-end | center | space-between | space-around | stretch
-      - -display : flex | inline-flex
 
     @exemple :
       el {
@@ -961,6 +961,7 @@ textarea {
 ***** */
 /*
     == HACK IE10 ==
+    @ NOTE : Thanks to autoprefixer, the functions below are no longer used.
 */
 /* JUSTIFY-CONTENT HACK */
 /* ALIGN-CONTENT HACK */
@@ -1457,18 +1458,18 @@ button.icon-right {
   display: -ms-inline-flexbox;
   display: inline-flex;
   /* Main axis alignment */
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   /* Packing Flex Lines */
-  -ms-flex-line-pack: center;
   -webkit-align-content: center;
+      -ms-flex-line-pack: center;
           align-content: center;
   /* Cross-axis alignment */
-  -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 a.btn.icon-right i:before,
@@ -1635,18 +1636,18 @@ ul.cc-horizontal li[class*="ion-"].icon-right {
   display: -ms-inline-flexbox;
   display: inline-flex;
   /* Main axis alignment */
-  -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
           justify-content: space-between;
   /* Packing Flex Lines */
-  -ms-flex-line-pack: center;
   -webkit-align-content: center;
+      -ms-flex-line-pack: center;
           align-content: center;
   /* Cross-axis alignment */
-  -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 ul.cc-horizontal li[class*="fa-"].icon-right:before,
@@ -3915,8 +3916,8 @@ img.cc-shadowed {
   display: -ms-flexbox;
   display: flex;
   /* Flex line wrapping */
-  -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin: 0 -1em;
   /* TABLET rules */
@@ -3924,8 +3925,8 @@ img.cc-shadowed {
 }
 .columns.cc-no-multiligne {
   /* Flex line wrapping */
-  -ms-flex-wrap: none;
   -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
 .columns.cc-reverse {
@@ -3938,36 +3939,36 @@ img.cc-shadowed {
 }
 .columns.cc-justify-starting {
   /* Main axis alignment */
-  -ms-flex-pack: start;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
 }
 .columns.cc-justify-ending {
   /* Main axis alignment */
-  -ms-flex-pack: end;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
           justify-content: flex-end;
 }
 .columns.cc-justify-centering {
   /* Main axis alignment */
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .columns.cc-justify-spacing {
   /* Main axis alignment */
-  -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .columns.cc-justify-equal-spacing {
   /* Main axis alignment */
-  -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
           justify-content: space-around;
 }
 .columns.cc-no-gutter {
@@ -4058,9 +4059,9 @@ img.cc-shadowed {
   display: -ms-flexbox;
   display: flex;
   /* Cross-axis alignment */
-  -ms-flex-align: start;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
+      -ms-flex-align: start;
           align-items: flex-start;
 }
 .columns .column.cc-align-center {
@@ -4070,9 +4071,9 @@ img.cc-shadowed {
   display: -ms-flexbox;
   display: flex;
   /* Cross-axis alignment */
-  -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 .columns .column.cc-align-bottom {
@@ -4082,29 +4083,29 @@ img.cc-shadowed {
   display: -ms-flexbox;
   display: flex;
   /* Cross-axis alignment */
-  -ms-flex-align: end;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
+      -ms-flex-align: end;
           align-items: flex-end;
 }
 .columns .column.cc-align-self-top {
-  -ms-flex-item-align: start;
   -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
           align-self: flex-start;
 }
 .columns .column.cc-align-self-bottom {
-  -ms-flex-item-align: end;
   -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
           align-self: flex-end;
 }
 .columns .column.cc-align-self-center {
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+      -ms-flex-item-align: center;
           align-self: center;
 }
 .columns .column.cc-align-self-stretch {
-  -ms-flex-item-align: stretch;
   -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
           align-self: stretch;
 }
 .columns .column.cc-w-auto {
@@ -4316,8 +4317,8 @@ a.btn.cc-fat span.badge:before {
   display: -ms-flexbox;
   display: flex;
   /* Flex line wrapping */
-  -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   line-height: 2.25;
   /* Tablet rules */
@@ -4333,30 +4334,30 @@ a.btn.cc-fat span.badge:before {
   display: -ms-flexbox;
   display: flex;
   /* Main axis alignment */
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .tabs.cc-left {
   /* Main axis alignment */
-  -ms-flex-pack: start;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
 }
 .tabs.cc-right {
   /* Main axis alignment */
-  -ms-flex-pack: end;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
           justify-content: flex-end;
 }
 .tabs.cc-stretch {
   /* Main axis alignment */
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .tabs.cc-stretch > li {
@@ -4411,9 +4412,9 @@ a.btn.cc-fat span.badge:before {
   display: -ms-flexbox;
   display: flex;
   /* Main axis alignment */
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 .tabs.cc-pills > li {
@@ -4506,9 +4507,9 @@ a.btn.cc-fat span.badge:before {
   }
   .tabs.cc-stretch-t {
     /* Main axis alignment */
-    -ms-flex-pack: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
+        -ms-flex-pack: center;
             justify-content: center;
   }
   .tabs.cc-stretch-t > li {
@@ -4520,23 +4521,23 @@ a.btn.cc-fat span.badge:before {
   }
   .tabs.cc-left-t {
     /* Main axis alignment */
-    -ms-flex-pack: start;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .tabs.cc-right-t {
     /* Main axis alignment */
-    -ms-flex-pack: end;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .tabs.cc-centered-t {
     /* Main axis alignment */
-    -ms-flex-pack: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
+        -ms-flex-pack: center;
             justify-content: center;
   }
 }
@@ -4661,14 +4662,14 @@ body.opened-modal {
   display: -ms-flexbox;
   display: flex;
   /* Main axis alignment */
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+      -ms-flex-pack: center;
           justify-content: center;
   /* Cross-axis alignment */
-  -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
+      -ms-flex-align: center;
           align-items: center;
   box-shadow: none;
   z-index: -1;
