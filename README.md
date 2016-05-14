@@ -25,6 +25,10 @@ $ bower install ChuckCSS
 Full documentation on [ChuckCSS website]
 
 
+### Issues
+To report any problems or improvements, please [open an issue on Github]
+
+
 ### License
 Code copyright 2016 Mickaël SURREL for [ALPIXEL].
 ChuckCSS is under [MIT License].
@@ -34,6 +38,7 @@ ChuckCSS is under [MIT License].
 [Autoprefixer]: <https://github.com/postcss/autoprefixer>
 [MIT License]: <https://opensource.org/licenses/MIT>
 [ChuckCSS website]: <http://www.chuckcss.io/>
+[open an issue on Github]: <https://github.com/alpixel/ChuckCSS/issues/new>
 [Normalize.css]: <https://necolas.github.io/normalize.css/>
 [Bower]: <http://bower.io/search/?q=ChuckCSS>
 [ALPIXEL]: <https://github.com/alpixel>
