@@ -1,10 +1,24 @@
 {
   "name": "ChuckCSS",
   "version": "1.0.1",
-  "authors": [
-    "ALPIXEL <dev@alpixel.fr>"
-  ],
+  "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
+  "author": {
+    "name": "Mickael SURREL <ALPIXEL>",
+    "email": "contact@alpixel.fr"
+  },
   "license": "MIT",
+  "keywords": [
+    "CSS",
+    "framework",
+    "flexbox",
+    "grids",
+    "less",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alpixel/ChuckCSS.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
@@ -21,7 +35,6 @@
     "jquery": "~2.2.0"
   },
   "homepage": "https://github.com/alpixel/ChuckCSS",
-  "description": "Responsive & Modern CSS framework with Flexbox grids",
   "main" : [
     "chuckcss/front.less"
   ]
