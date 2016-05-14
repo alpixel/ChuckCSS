@@ -1,13 +1,20 @@
 {
   "name": "ChuckCSS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
   "author": {
     "name": "Mickael SURREL",
     "email": "contact@alpixel.fr"
   },
-  "license":"MIT",
-  "keywords": ["CSS", "framework", "flexbox", "grids", "less", "responsive"],
+  "license": "MIT",
+  "keywords": [
+    "CSS",
+    "framework",
+    "flexbox",
+    "grids",
+    "less",
+    "responsive"
+  ],
   "main": "chuckcss/front.less",
   "repository": {
     "type": "git",
@@ -17,7 +24,7 @@
     "url": "https://github.com/alpixel/ChuckCSS/issues"
   },
   "dependencies": {
-    "grunt-autoprefixer": "^3.0.4", 
+    "grunt-autoprefixer": "^3.0.4",
     "grunt-cli": "latest",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-less": "latest",
