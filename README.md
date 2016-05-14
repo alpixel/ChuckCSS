@@ -1,8 +1,11 @@
 # [ChuckCSS](http://www.chuckcss.io/)
 ![alt text][logo]
 
-A responsive CSS framework, compiled with [LESS] and [Autoprefixer], based on FlexBox grids.
-ChuckCSS include [Normalize.css]
+A responsive CSS framework :
+- compiled with [LESS]
+- compiled with [Autoprefixer]
+- based on FlexBox grids
+- including [Normalize.css]
 
 **ChuckCSS include plenty of features :**
 * Flexbox grids
