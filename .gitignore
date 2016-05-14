@@ -13,3 +13,5 @@ Gruntfile.js.*
 vendor
 vendor/*
 bower_components
+npm-debug.log
+npm-debug.*
