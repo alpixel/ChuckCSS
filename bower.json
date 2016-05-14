@@ -2,7 +2,7 @@
   "name": "ChuckCSS",
   "version": "1.0.1",
   "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
-  "author": {
+  "authors": {
     "name": "Mickael SURREL <ALPIXEL>",
     "email": "contact@alpixel.fr"
   },
