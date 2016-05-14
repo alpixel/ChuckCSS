@@ -17,13 +17,13 @@ A responsive CSS framework :
 
 
 ### Installation
-You need [Bower] installed globally:
+Install ChuckCSS with [Bower]:
 
 ```sh
 $ bower install ChuckCSS
 ```
 
-You also can install via [NPM]
+Install ChuckCSS with [NPM]:
 ```sh
 $ npm install ChuckCSS
 ```
