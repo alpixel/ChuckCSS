@@ -4,7 +4,6 @@
 A responsive CSS framework :
 - compiled with [LESS]
 - compiled with [Autoprefixer]
-- based on FlexBox grids
 - including [Normalize.css]
 
 **ChuckCSS include plenty of features :**
