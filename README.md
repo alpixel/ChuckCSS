@@ -23,6 +23,11 @@ You need [Bower] installed globally:
 $ bower install ChuckCSS
 ```
 
+You also can install via [NPM]
+```sh
+$ npm install ChuckCSS
+```
+
 ### Documentation
 Full documentation on [ChuckCSS website]
 
@@ -45,3 +50,4 @@ ChuckCSS is under [MIT License].
 [Bower]: <http://bower.io/search/?q=ChuckCSS>
 [ALPIXEL]: <https://github.com/alpixel>
 [logo]: http://www.chuckcss.io/img/chuckcss-github-logo.jpg "ChuckCSS framework"
+[NPM]: <https://www.npmjs.com/package/ChuckCSS>

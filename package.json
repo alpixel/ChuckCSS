@@ -7,7 +7,7 @@
     "email": "contact@alpixel.fr"
   },
   "license":"MIT",
-  "keywords": ["CSS", "framework", "ChuckCSS", "flexbox", "grids", "less", "responsive"],
+  "keywords": ["CSS", "framework", "flexbox", "grids", "less", "responsive"],
   "main": "chuckcss/front.less",
   "repository": {
     "type": "git",
