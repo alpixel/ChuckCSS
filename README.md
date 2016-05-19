@@ -1,4 +1,4 @@
-# [ChuckCSS](http://www.chuckcss.io/)
+# [ChuckCSS](http://alpixel.github.io/ChuckCSS-io/)
 ![alt text][logo]
 
 A responsive CSS framework :
