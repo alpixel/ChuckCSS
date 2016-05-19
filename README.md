@@ -44,7 +44,7 @@ ChuckCSS is under [MIT License].
 [LESS]: <http://lesscss.org/>
 [Autoprefixer]: <https://github.com/postcss/autoprefixer>
 [MIT License]: <https://opensource.org/licenses/MIT>
-[ChuckCSS website]: <http://www.chuckcss.io/>
+[ChuckCSS website]: <http://alpixel.github.io/ChuckCSS-io/>
 [open an issue on Github]: <https://github.com/alpixel/ChuckCSS/issues/new>
 [Normalize.css]: <https://necolas.github.io/normalize.css/>
 [Bower]: <http://bower.io/search/?q=ChuckCSS>
