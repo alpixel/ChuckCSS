@@ -49,5 +49,5 @@ ChuckCSS is under [MIT License].
 [Normalize.css]: <https://necolas.github.io/normalize.css/>
 [Bower]: <http://bower.io/search/?q=ChuckCSS>
 [ALPIXEL]: <https://github.com/alpixel>
-[logo]: http://www.chuckcss.io/img/chuckcss-github-logo.jpg "ChuckCSS framework"
+[logo]: http://alpixel.github.io/ChuckCSS-io/img/chuckcss-github-logo.jpg "ChuckCSS framework"
 [NPM]: <https://www.npmjs.com/package/ChuckCSS>
