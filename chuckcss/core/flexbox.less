@@ -21,11 +21,6 @@
       }
 ***** */
 ._flex-display(@display:flex) {
-     /* Flexbox display */
-    display: -webkit-box;
-    display: ~"-moz-box";
-    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
-    display: ~"-webkit-@{display}";
     display: @display;
 }
 
