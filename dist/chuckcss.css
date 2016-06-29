@@ -583,7 +583,7 @@ textarea {
 */
 /*
 ** Functions/mixins list **
-    ._tablet | ._phone
+    ._tablet, ._phone, etc...
     ._border-radius
     ._box-shadow
     ._bg-vertical | ._bg-horizontal
@@ -593,6 +593,7 @@ textarea {
     ._inline
     ._inside
     ._transition
+    ._transform
     ._rotate | ._scale | ._translate3d | ._skew
     ._box-sizing
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
@@ -606,7 +607,7 @@ textarea {
     ._btn
 */
 /* *****
-    @name : ._tablet & ._phone
+    @name : ._tablet, ._phone and others media queries
     @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
     @params : @rules (CSS rules)
 
