@@ -18,15 +18,6 @@
     margin:0 -@cols-gutter/2;
 
     &.cc {
-        &-no-multiligne {._flex-wrap(nowrap);}
-        &-reverse{._flex-direction(row-reverse);}
-        &-justify {
-            &-starting      {._flex-justify(flex-start);}
-            &-ending        {._flex-justify(flex-end);}
-            &-centering     {._flex-justify(center);}
-            &-spacing       {._flex-justify(space-between);}
-            &-equal-spacing {._flex-justify(space-around);}
-        }
         &-no-gutter {
             margin:0;
             .column {
@@ -36,31 +27,6 @@
         &-gutter {
             .column {
                 margin:@cols-ma-top @cols-gutter/2 @cols-ma-bottom;
-            }
-        }
-        &-animated {
-            .column {
-                ._transition;
-            }
-        }
-        &-masonry {
-            display:block;
-            margin:0;
-            column-gap: @cols-masonry-gap;
-
-            &.cc-no-gutter .column,
-            .column {
-                ._inline;
-                width:100%;
-                max-width:100%;
-                ._flex(none);
-                margin:@cols-masonry-gap/2 0;
-            }
-        }
-        &-spaceless {
-            &>.column {
-                margin-top:0;
-                margin-bottom:0;
             }
         }
     }
@@ -75,46 +41,10 @@
 
         /* Nested columns */
         &.columns {
-            ._flex(1);
             padding:@cols-gutter @cols-gutter/2;
 
             &.cc-no-gutter {
                 padding:0;
-            }
-        }
-
-        &.cc {
-            &-first {._flex-order(-1);}
-            &-last {._flex-order(1);}
-            &-right {margin-left:auto;}
-            &-left {margin-right:auto;}
-            &-center {
-                margin-left:auto;
-                margin-right:auto;
-            }
-            &-align {
-                &-top {
-                    ._flex-display;
-                    ._flex-align-items(flex-start);
-                }
-                &-center {
-                    ._flex-display;
-                    ._flex-align-items(center);
-                }
-                &-bottom {
-                    ._flex-display;
-                    ._flex-align-items(flex-end);
-                }
-
-                &-self {
-                    &-top {._flex-align-self(flex-start);}
-                    &-bottom {._flex-align-self(flex-end);}
-                    &-center {._flex-align-self(center);}
-                    &-stretch {._flex-align-self(stretch);}
-                }
-            }
-            &-w-auto {
-                ._flex(0 0 auto);
             }
         }
     }

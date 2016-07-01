@@ -29,22 +29,18 @@
 }
 
 ._flex-wrap(@wrap:nowrap) {
-    //._ms-flex-wrap(@wrap); // IE10
     flex-wrap: @wrap;
 }
 
 ._flex-justify(@justify:flex-start) {
-    //._ms-flex-justify-content(@justify); // IE10
     justify-content: @justify;
 }
 
 ._flex-align-items(@align:stretch) {
-    //._ms-flex-align-items(@align);
     align-items: @align;
 }
 
 ._flex-align-content(@align-content:stretch) {
-    //._ms-flex-align-content(@align-content);
     align-content: @align-content;
 }
 
@@ -89,7 +85,7 @@
       }
 ***** */
 ._flex-order(@order: 0) {
-  order: @order;
+    order: @order;
 }
 /* *****
     @name : ._align-self
@@ -110,98 +106,5 @@
       }
 ***** */
 ._flex-align-self(@align: auto) {
-    //._ms-flex-align-self(@align);
-  align-self: @align;
+    align-self: @align;
 }
-
-
-
-
-
-/*
-    == HACK IE10 ==
-    @ NOTE : Thanks to autoprefixer, the functions below are no longer used
-*/
-
-/*
-// JUSTIFY-CONTENT HACK
-._ms-flex-justify-content(@justify) when (@justify = space-between) {
-    -ms-flex-pack: justify;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = space-around) {
-    -ms-flex-pack: distribute;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = flex-start) {
-    -ms-flex-pack: start;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = flex-end) {
-    -ms-flex-pack: end;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = center) {
-    -ms-flex-pack: center;
-}
-
-
-// ALIGN-CONTENT HACK
-._ms-flex-align-content(@align) when (@align = space-between) {
-    -ms-flex-line-pack: justify;
-}
-
-._ms-flex-align-content(@align) when (@align = space-around) {
-    -ms-flex-line-pack: distribute;
-}
-
-._ms-flex-align-content(@align) when (@align = flex-start) {
-    -ms-flex-line-pack: start;
-}
-
-._ms-flex-align-content(@align) when (@align = flex-end) {
-    -ms-flex-line-pack: end;
-}
-
-._ms-flex-align-content(@align) when (@align = center), (@align = stretch) {
-    -ms-flex-line-pack: @align;
-}
-
-
-// ALIGN-ITEMS HACK
-._ms-flex-align-items(@align) when (@align = flex-start) {
-    -ms-flex-align: start;
-}
-
-._ms-flex-align-items(@align) when (@align = flex-end) {
-    -ms-flex-align: end;
-}
-
-._ms-flex-align-items(@align) when (@align = center), (@align = baseline), (@align = stretch) {
-    -ms-flex-align: @align;
-}
-
-
-// ALIGN-SELF HACK
-._ms-flex-align-self(@align) when (@align = flex-start) {
-    -ms-flex-item-align: start;
-}
-
-._ms-flex-align-self(@align) when (@align = flex-end) {
-    -ms-flex-item-align: end;
-}
-
-._ms-flex-align-self(@align) when (@align = auto), (@align = center), (@align = baseline), (@align = stretch) {
-    -ms-flex-item-align: @align;
-}
-
-
-// WRAP HACK
-._ms-flex-wrap(@wrap) when (@wrap = nowrap) {
-    -ms-flex-wrap: none;
-}
-
-._ms-flex-wrap(@wrap) when (@wrap = wrap), (@wrap = wrap-reverse) {
-    -ms-flex-wrap: @wrap;
-}
-*/

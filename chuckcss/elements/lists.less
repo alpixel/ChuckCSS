@@ -29,41 +29,6 @@ ul {
             ._reset;
         }
     }
-
-
-    &.cc {
-        &-unstyled {
-            li {
-                list-style:none;
-            }
-        }
-
-        /* Horizontal lists */
-        &-horizontal {
-            li {
-                ._inline;
-                margin:0 1.5em;
-
-                &[class*="fa-"],
-                &[class*="ion-"] {
-                    &.icon-right {
-                        position:relative;
-                        ._flex-display(inline-flex);
-                        ._flex-justify(space-between);
-                        ._flex-align-content(center);
-                        ._flex-align-items(center);
-
-                        &:before {
-                            ._flex-order(2);
-                            margin:0 0 0 0.8em;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
 }
 
 

@@ -10,9 +10,6 @@
     ._generateColumns
     ._generateTabletColumns
     ._generatePhoneColumns
-    ._generatePercentWidth
-    ._generateFixedWidth
-    ._generateFixedHeight
 */
 
 /* *****
@@ -322,51 +319,6 @@
 
 
 /* *****
-    @name : ._generatePaddingMarginClass
-    @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
-***** */
-._generatePaddingMarginClass(@iterator:0) when(@iterator <= 30) {
-
-    .cc {
-        &-pa-@{iterator} {
-            padding:unit(@iterator,px);
-        }
-        &-pat-@{iterator} {
-            padding-top:unit(@iterator,px);
-        }
-        &-par-@{iterator} {
-            padding-right:unit(@iterator,px);
-        }
-        &-pab-@{iterator} {
-            padding-bottom:unit(@iterator,px);
-        }
-        &-pal-@{iterator} {
-            padding-left:unit(@iterator,px);
-        }
-        &-ma-@{iterator} {
-            margin:unit(@iterator,px);
-        }
-        &-mat-@{iterator} {
-            margin-top:unit(@iterator,px);
-        }
-        &-mar-@{iterator} {
-            margin-right:unit(@iterator,px);
-        }
-        &-mab-@{iterator} {
-            margin-bottom:unit(@iterator,px);
-        }
-        &-mal-@{iterator} {
-            margin-left:unit(@iterator,px);
-        }
-    }
-
-    ._generatePaddingMarginClass((@iterator + 2));
-}
-._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
-
-
-
-/* *****
     @name : ._generateIcons
     @description : Generate icons  when using fa- & -ion class
     @Used : in alerts, buttons, lists, messages, badges
@@ -473,13 +425,6 @@
                 }
             }
         }
-
-        /* Masonry layout */
-        &.cc-masonry.cc {
-            &-@{iterator} {
-                column-count: @iterator;
-            }
-        }
     }
 
     ._generateColumns((@iterator + 1));
@@ -528,13 +473,6 @@
                 &-offset-@{iterator}-t {
                     margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
                 }
-            }
-        }
-
-        /* Masonry layout */
-        &.cc-masonry.cc {
-            &-@{iterator}-t {
-                column-count: @iterator;
             }
         }
     }
@@ -587,62 +525,7 @@
 
             }
         }
-
-        /* Masonry layout */
-        &.cc-masonry.cc {
-            &-@{iterator}-s {
-                column-count: @iterator;
-            }
-        }
     }
 
     ._generatePhoneColumns((@iterator + 1));
 }
-
-
-/* *****
-    @name : ._generatePercentWidth
-    @description : Generate width for block helpers in %
-***** */
-._generatePercentWidth(@iterator:0) when(@iterator <= 100) {
-    .cc {
-        &-w-@{iterator} {
-            width:unit(@iterator,%);
-        }
-    }
-
-    ._generatePercentWidth(@iterator + 10);
-}
-._generatePercentWidth; // Launch _generatePercentWidth
-
-
-/* *****
-    @name : ._generateFixedWidth
-    @description : Generate width for block helpers in px
-***** */
-._generateFixedWidth(@iterator:0) when(@iterator <= 1500) {
-    .cc {
-        &-w-@{iterator}px {
-            width:unit(@iterator,px);
-        }
-    }
-
-    ._generateFixedWidth(@iterator + 10);
-}
-._generateFixedWidth; // Launch _generateFixedWidth
-
-
-/* *****
-    @name : ._generateFixedHeight
-    @description : Generate width for block helpers in px
-***** */
-._generateFixedHeight(@iterator:0) when(@iterator <= 1500) {
-    .cc {
-        &-h-@{iterator}px {
-            height:unit(@iterator,px);
-        }
-    }
-
-    ._generateFixedHeight(@iterator + 10);
-}
-._generateFixedHeight; // Launch _generateFixedHeight

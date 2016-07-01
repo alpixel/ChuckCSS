@@ -30,6 +30,13 @@ module.exports = function(grunt) {
                 "dist/bootstrap-override.min.css" : "dist/bootstrap-override.min.css",
                 "dist/bootstrap-override.css" : "dist/bootstrap-override.css",
             }
+        },
+        options: {
+            browsers : [
+                '> 1%',
+                'last 2 versions',
+                'Safari 8'
+            ]
         }
     },
     watch: {

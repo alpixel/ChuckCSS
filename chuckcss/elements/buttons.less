@@ -53,61 +53,6 @@ button {
 
 
     &.cc {
-        /* Thins buttons, .btn links */
-        &-thin {
-            font-size:@links-btn-thin-fs;
-
-            &[class*="fa-"],
-            &[class*="ion-"] {
-                &:before {
-                    font-size:inherit;
-                    margin-right:7px;
-                }
-            }
-
-            i:before {
-                font-size:inherit;
-                margin-right:7px;
-            }
-
-            &.icon-right:before {
-                margin-right:0;
-            }
-
-            /* Thin Loading buttons */
-            &.cc-loading {
-                &:before {
-                    width: 10px;
-                    height: 10px;
-                    margin-top:-5px;
-                    margin-left:-5px;
-                }
-            }
-        }
-
-        /* Fats buttons, .btn links */
-        &-fat {
-            font-size:@links-btn-fat-fs;
-
-            &[class*="fa-"],
-            &[class*="ion-"] {
-                &:before {
-                    font-size:inherit;
-                }
-            }
-            i:before { font-size:inherit;}
-
-            /* Thin Loading buttons */
-            &.cc-loading {
-                &:before {
-                    width: 24px;
-                    height: 24px;
-                    margin-top:-12px;
-                    margin-left:-12px;
-                }
-            }
-        }
-
         /* disabled */
         &-disabled {
             ._opacity(0.5);
@@ -149,33 +94,6 @@ button {
                 margin-left:-8px;
                 ._loading-spin;
             }
-
-        }
-    }
-
-    /* Icon right */
-    &.icon-right {
-        position:relative;
-        ._flex-display(inline-flex);
-        ._flex-justify(center);
-        ._flex-align-content(center);
-        ._flex-align-items(center);
-
-        i:before,
-        &:before {
-            ._flex-order(2);
-            margin:0 0 0 0.8em;
-        }
-    }
-}
-
-
-/* Hack Firefox for .icon-right on button elements (hide icon) */
-@-moz-document url-prefix() {
-    button.icon-right {
-        ._inline;
-        &:before {
-            display:none;
         }
     }
 }
