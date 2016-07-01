@@ -3551,23 +3551,6 @@ i.cc-primary,
 a.cc-primary {
   color: #29b7e1;
 }
-h1.cc-primary small,
-h2.cc-primary small,
-h3.cc-primary small,
-h4.cc-primary small,
-h5.cc-primary small,
-h6.cc-primary small,
-p.cc-primary small,
-div.cc-primary small,
-section.cc-primary small,
-aside.cc-primary small,
-header.cc-primary small,
-footer.cc-primary small,
-span.cc-primary small,
-i.cc-primary small,
-a.cc-primary small {
-  color: #56c6e7;
-}
 h1.cc-bg-primary,
 h2.cc-bg-primary,
 h3.cc-bg-primary,
@@ -3586,54 +3569,6 @@ a.cc-bg-primary {
   color: white;
   background-color: #29b7e1;
 }
-/* lists */
-li.cc-bg-primary {
-  background-color: #29b7e1;
-  color: white;
-}
-li.cc-primary:before {
-  color: #29b7e1;
-}
-/* blockquotes */
-blockquote.cc-primary {
-  border-left: 4px solid #29b7e1;
-}
-blockquote.cc-primary.cc-quoted:before {
-  color: #29b7e1;
-}
-blockquote.cc-primary.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #29b7e1;
-}
-/* Tables */
-table.cc-primary {
-  /* Bordered & Colored tables */
-}
-table.cc-primary thead td,
-table.cc-primary tfoot td,
-table.cc-primary thead th,
-table.cc-primary tfoot th {
-  background-color: #29b7e1;
-  color: white;
-  border-bottom-color: #147490;
-}
-table.cc-primary tbody tr td {
-  border-bottom: 1px solid #29b7e1;
-}
-table.cc-primary.cc-bordered tfoot td,
-table.cc-primary.cc-bordered thead td,
-table.cc-primary.cc-bordered tfoot th,
-table.cc-primary.cc-bordered thead th {
-  border-color: #1a98bd;
-}
-table.cc-primary.cc-bordered tbody tr td {
-  border-color: #1a98bd;
-}
-table tbody tr.cc-bg-primary td {
-  background-color: #29b7e1;
-  color: white;
-  border-bottom: 0;
-}
 /* Links / Buttons */
 a.btn.cc-bg-primary,
 button.cc-bg-primary {
@@ -3644,7 +3579,6 @@ button.cc-bg-primary {
   /* Hover color will be @bg but 10% darken */
   border-color: #29b7e1;
   /* Loading buttons : show white loader */
-  /* Outlined buttons / links */
 }
 a.btn.cc-bg-primary:hover,
 button.cc-bg-primary:hover {
@@ -3658,125 +3592,6 @@ button.cc-bg-primary:hover {
 a.btn.cc-bg-primary.cc-loading:before,
 button.cc-bg-primary.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
-}
-a.btn.cc-bg-primary.cc-outlined,
-button.cc-bg-primary.cc-outlined {
-  color: #29b7e1;
-  background-color: transparent;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #29b7e1;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-bg-primary.cc-outlined:hover,
-button.cc-bg-primary.cc-outlined:hover {
-  background-color: transparent;
-}
-a.btn.cc-bg-primary.cc-outlined:hover,
-button.cc-bg-primary.cc-outlined:hover {
-  border-color: #147490;
-  color: #147490;
-}
-a.btn.cc-bg-primary.cc-outlined.cc-loading,
-button.cc-bg-primary.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-bg-primary.cc-outlined.cc-loading:before,
-button.cc-bg-primary.cc-outlined.cc-loading:before {
-  border-color: #29b7e1 #afe4f4 #afe4f4 #afe4f4;
-}
-a.btn.cc-bg-primary span.badge,
-button.cc-bg-primary span.badge {
-  background-color: white;
-  color: #29b7e1;
-}
-/* Colored forms */
-form.cc-primary .form-checkbox input:focus {
-  border-color: #ddd;
-}
-form.cc-primary .form-checkbox input:checked {
-  background-color: #29b7e1;
-  border-color: #29b7e1;
-}
-form.cc-primary .form-radio input:focus {
-  border-color: #ddd;
-}
-form.cc-primary .form-radio input:checked:before {
-  background-color: #29b7e1;
-}
-form.cc-primary .form-ps span {
-  background-color: #29b7e1;
-}
-form.cc-primary .form-ps span:last-child {
-  background-color: #29b7e1;
-}
-form.cc-primary select:focus,
-form.cc-primary textarea:focus,
-form.cc-primary input:focus {
-  border-color: #29b7e1;
-}
-form.cc-primary select.error:focus,
-form.cc-primary textarea.error:focus,
-form.cc-primary input.error:focus {
-  border-color: #e82424;
-}
-form.cc-primary input[type="submit"],
-form.cc-primary button[type="submit"] {
-  background-color: #29b7e1;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-primary input[type="submit"]:hover,
-form.cc-primary button[type="submit"]:hover {
-  background-color: #1a98bd;
-}
-/* Tabs */
-.tabs {
-  /* Phone */
-}
-.tabs.cc-primary.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-primary.cc-bordered > li.active a:not(.btn) {
-  border-color: #29b7e1 #29b7e1 white #29b7e1;
-}
-.tabs.cc-primary.cc-pills > li.active a:not(.btn),
-.tabs.cc-primary.cc-pills > li:hover a:not(.btn) {
-  background-color: #29b7e1;
-  border-top: 1px solid #29b7e1;
-  border-bottom: 1px solid #29b7e1;
-  color: white;
-}
-.tabs.cc-primary > li {
-  /* Active child */
-}
-.tabs.cc-primary > li:hover a:not(.btn),
-.tabs.cc-primary > li.active a:not(.btn) {
-  color: #29b7e1;
-  border-bottom-color: #29b7e1;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-primary.cc-bordered > li:hover,
-  .tabs.cc-primary.cc-bordered > li.active {
-    border-color: #29b7e1 transparent transparent;
-  }
-  .tabs.cc-primary.cc-bordered > li:hover + li,
-  .tabs.cc-primary.cc-bordered > li.active + li {
-    border-color: #29b7e1 transparent transparent;
-  }
-  .tabs.cc-primary.cc-bordered > li:last-child:hover,
-  .tabs.cc-primary.cc-bordered > li:last-child.active {
-    border-color: #29b7e1 transparent;
-  }
-  .tabs.cc-primary.cc-pills > li:nth-child(1).active a:not(.btn),
-  .tabs.cc-primary.cc-pills > li:nth-child(1):hover a:not(.btn) {
-    border-top-width: 1px;
-    border-left-color: #29b7e1;
-  }
-  .tabs.cc-primary.cc-pills > li.active a:not(.btn),
-  .tabs.cc-primary.cc-pills > li:hover a:not(.btn) {
-    border-top-width: 0px;
-    border-color: #29b7e1;
-  }
 }
 /* texts */
 h1.cc-red,
@@ -3796,23 +3611,6 @@ i.cc-red,
 a.cc-red {
   color: #c41515;
 }
-h1.cc-red small,
-h2.cc-red small,
-h3.cc-red small,
-h4.cc-red small,
-h5.cc-red small,
-h6.cc-red small,
-p.cc-red small,
-div.cc-red small,
-section.cc-red small,
-aside.cc-red small,
-header.cc-red small,
-footer.cc-red small,
-span.cc-red small,
-i.cc-red small,
-a.cc-red small {
-  color: #e82424;
-}
 h1.cc-bg-red,
 h2.cc-bg-red,
 h3.cc-bg-red,
@@ -3831,54 +3629,6 @@ a.cc-bg-red {
   color: white;
   background-color: #c41515;
 }
-/* lists */
-li.cc-bg-red {
-  background-color: #c41515;
-  color: white;
-}
-li.cc-red:before {
-  color: #c41515;
-}
-/* blockquotes */
-blockquote.cc-red {
-  border-left: 4px solid #c41515;
-}
-blockquote.cc-red.cc-quoted:before {
-  color: #c41515;
-}
-blockquote.cc-red.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #c41515;
-}
-/* Tables */
-table.cc-red {
-  /* Bordered & Colored tables */
-}
-table.cc-red thead td,
-table.cc-red tfoot td,
-table.cc-red thead th,
-table.cc-red tfoot th {
-  background-color: #c41515;
-  color: white;
-  border-bottom-color: #680b0b;
-}
-table.cc-red tbody tr td {
-  border-bottom: 1px solid #c41515;
-}
-table.cc-red.cc-bordered tfoot td,
-table.cc-red.cc-bordered thead td,
-table.cc-red.cc-bordered tfoot th,
-table.cc-red.cc-bordered thead th {
-  border-color: #961010;
-}
-table.cc-red.cc-bordered tbody tr td {
-  border-color: #961010;
-}
-table tbody tr.cc-bg-red td {
-  background-color: #c41515;
-  color: white;
-  border-bottom: 0;
-}
 /* Links / Buttons */
 a.btn.cc-bg-red,
 button.cc-bg-red {
@@ -3889,7 +3639,6 @@ button.cc-bg-red {
   /* Hover color will be @bg but 10% darken */
   border-color: #c41515;
   /* Loading buttons : show white loader */
-  /* Outlined buttons / links */
 }
 a.btn.cc-bg-red:hover,
 button.cc-bg-red:hover {
@@ -3903,125 +3652,6 @@ button.cc-bg-red:hover {
 a.btn.cc-bg-red.cc-loading:before,
 button.cc-bg-red.cc-loading:before {
   border-color: white rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
-}
-a.btn.cc-bg-red.cc-outlined,
-button.cc-bg-red.cc-outlined {
-  color: #c41515;
-  background-color: transparent;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #c41515;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-bg-red.cc-outlined:hover,
-button.cc-bg-red.cc-outlined:hover {
-  background-color: transparent;
-}
-a.btn.cc-bg-red.cc-outlined:hover,
-button.cc-bg-red.cc-outlined:hover {
-  border-color: #680b0b;
-  color: #680b0b;
-}
-a.btn.cc-bg-red.cc-outlined.cc-loading,
-button.cc-bg-red.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-bg-red.cc-outlined.cc-loading:before,
-button.cc-bg-red.cc-outlined.cc-loading:before {
-  border-color: #c41515 #f18181 #f18181 #f18181;
-}
-a.btn.cc-bg-red span.badge,
-button.cc-bg-red span.badge {
-  background-color: white;
-  color: #c41515;
-}
-/* Colored forms */
-form.cc-red .form-checkbox input:focus {
-  border-color: #ddd;
-}
-form.cc-red .form-checkbox input:checked {
-  background-color: #c41515;
-  border-color: #c41515;
-}
-form.cc-red .form-radio input:focus {
-  border-color: #ddd;
-}
-form.cc-red .form-radio input:checked:before {
-  background-color: #c41515;
-}
-form.cc-red .form-ps span {
-  background-color: #c41515;
-}
-form.cc-red .form-ps span:last-child {
-  background-color: #c41515;
-}
-form.cc-red select:focus,
-form.cc-red textarea:focus,
-form.cc-red input:focus {
-  border-color: #c41515;
-}
-form.cc-red select.error:focus,
-form.cc-red textarea.error:focus,
-form.cc-red input.error:focus {
-  border-color: #e82424;
-}
-form.cc-red input[type="submit"],
-form.cc-red button[type="submit"] {
-  background-color: #c41515;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-red input[type="submit"]:hover,
-form.cc-red button[type="submit"]:hover {
-  background-color: #961010;
-}
-/* Tabs */
-.tabs {
-  /* Phone */
-}
-.tabs.cc-red.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-red.cc-bordered > li.active a:not(.btn) {
-  border-color: #c41515 #c41515 white #c41515;
-}
-.tabs.cc-red.cc-pills > li.active a:not(.btn),
-.tabs.cc-red.cc-pills > li:hover a:not(.btn) {
-  background-color: #c41515;
-  border-top: 1px solid #c41515;
-  border-bottom: 1px solid #c41515;
-  color: white;
-}
-.tabs.cc-red > li {
-  /* Active child */
-}
-.tabs.cc-red > li:hover a:not(.btn),
-.tabs.cc-red > li.active a:not(.btn) {
-  color: #c41515;
-  border-bottom-color: #c41515;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-red.cc-bordered > li:hover,
-  .tabs.cc-red.cc-bordered > li.active {
-    border-color: #c41515 transparent transparent;
-  }
-  .tabs.cc-red.cc-bordered > li:hover + li,
-  .tabs.cc-red.cc-bordered > li.active + li {
-    border-color: #c41515 transparent transparent;
-  }
-  .tabs.cc-red.cc-bordered > li:last-child:hover,
-  .tabs.cc-red.cc-bordered > li:last-child.active {
-    border-color: #c41515 transparent;
-  }
-  .tabs.cc-red.cc-pills > li:nth-child(1).active a:not(.btn),
-  .tabs.cc-red.cc-pills > li:nth-child(1):hover a:not(.btn) {
-    border-top-width: 1px;
-    border-left-color: #c41515;
-  }
-  .tabs.cc-red.cc-pills > li.active a:not(.btn),
-  .tabs.cc-red.cc-pills > li:hover a:not(.btn) {
-    border-top-width: 0px;
-    border-color: #c41515;
-  }
 }
 /* *****
     @name : ._generateIcons
@@ -4063,10 +3693,6 @@ li[class*="ion-"]:before {
 ul.cc-horizontal li[class*="fa-"]:before,
 ul.cc-horizontal li[class*="ion-"]:before {
   position: static;
-}
-span.badge[class*="fa-"]:before,
-span.badge[class*="ion-"]:before {
-  margin-right: 0;
 }
 /* Ionicons */
 [class*="ion-"]:before {
