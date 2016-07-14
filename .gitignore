@@ -4,15 +4,7 @@
 .project
 .settings
 _notes
-composer.lock
 .grunt
 node_modules
-Gruntfile.js.*
-.sass-cache
 ._*
-vendor
-vendor/*
 bower_components
-npm-debug.log
-npm-debug.*
-memo.txt
