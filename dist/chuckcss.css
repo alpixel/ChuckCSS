@@ -3684,7 +3684,7 @@ body.opened-modal {
   border-top: 1px solid #cecece;
 }
 .modal-overlay {
-  position: fixed;
+  position: absolute;
   background-color: transparent;
   top: 0px;
   left: 0px;
