@@ -26,7 +26,7 @@
                 $('body').addClass('opened-modal');
                 $('#'+modal).addClass('active');
             } else {
-                alert('ChuckCSS error : modal with attribute id="'+modal+'" is not defined!');
+                alert('ChuckCSS error : modal with attribute id="'+modal+'" does not exist!');
             }
         });
         /* Close modal */
