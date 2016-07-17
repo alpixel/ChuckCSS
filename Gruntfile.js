@@ -17,7 +17,8 @@ module.exports = function(grunt) {
         files: {
           "dist/bootstrap-override.css": "chuckcss/bootstrap/bootstrap-override.less",
           "dist/chuckcss.css": "chuckcss/front.less",
-          "dist/print.css": "chuckcss/print.less"
+          "dist/print.css": "chuckcss/print.less",
+          "tests/test.css": "tests/test.less"
         }
       }
     },
@@ -37,7 +38,7 @@ module.exports = function(grunt) {
     },
     watch: {
       styles: {
-        files: ['chuckcss/*.less','chuckcss/**/*.less'],
+        files: ['chuckcss/*.less','chuckcss/**/*.less', 'tests/test.less'],
         tasks: ['less', 'autoprefixer'],
         options: {
           nospawn: true

@@ -28,8 +28,6 @@
   ],
   "dependencies": {
     "jquery": "~2.2.0",
-    "font-awesome": "4.*",
-    "ionicons": "2.*"
   },
   "resolutions": {
     "jquery": "~2.2.0"
