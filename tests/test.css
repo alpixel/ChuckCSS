@@ -4383,6 +4383,7 @@ body.opened-modal {
   /* Close button */
   /* Content */
   /* Overlay */
+  /* Fixed Header/Footer */
 }
 .modal.active {
   opacity: 1;
@@ -4400,7 +4401,6 @@ body.opened-modal {
   /* X only */
   transform: scale(1);
   /* X & Y empty : default value */
-  top: 0px;
 }
 .modal.active .modal-close {
   transition: 0.3s top ease-out 0.3s;
@@ -4506,7 +4506,21 @@ body.opened-modal {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  width: 100vw;
+  height: 100vh;
   z-index: 97;
+}
+.modal[data-fixed-hf] .modal-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.modal[data-fixed-hf] .modal-footer,
+.modal[data-fixed-hf] .modal-header {
+  flex-shrink: 0;
+}
+.modal[data-fixed-hf] .wrap-modal-body {
+  overflow-y: auto;
 }
 /*
     * IMPORT GENERATOR FILE *
@@ -7758,7 +7772,7 @@ span.badge[class*="ion-"]:before {
 **   OR   ***
 @import "website/homepage"; // considering you have created a 'website' folder with a 'homepage.less' file inside
 */
-body {
+body.test {
   background-color: #f8f8f8;
   padding: 50px;
   background-image: url('http://www.hdwallpapers.in/walls/hdtv_vector_designs-HD.jpg');
@@ -7773,11 +7787,11 @@ body {
   /* <= IE8 */
 }
 @media screen and (max-width: 767px) {
-  body {
+  body.test {
     font-size: 1.3rem;
   }
 }
-body > section {
+body.test > section {
   border: 1px solid #eeeeee;
   background-color: white;
   padding: 30px;
@@ -7786,60 +7800,60 @@ body > section {
   /* header */
   /* content */
 }
-body > section header {
+body.test > section header {
   position: relative;
   overflow: hidden;
 }
-body > section header .title {
+body.test > section header .title {
   text-align: center;
 }
-body > section header .description {
+body.test > section header .description {
   border-bottom: 1px dashed #cecece;
   color: #a1a1a1;
   padding: 10px 0;
   text-align: center;
 }
-body > section header .description strong {
+body.test > section header .description strong {
   color: #29b7e1;
 }
-body > section header .description .btn.active {
+body.test > section header .description .btn.active {
   background-color: #196090;
   border-color: #196090;
 }
-body > section .main {
+body.test > section .main {
   padding: 30px 0;
   display: none;
   /* Specific for buttons */
 }
-body > section .main.active {
+body.test > section .main.active {
   display: block;
 }
-body > section .main .title {
+body.test > section .main .title {
   font-weight: 600;
   color: #217dbb;
   padding-bottom: 10px;
   border-bottom: 2px solid #217dbb;
   margin: 50px 0 20px;
 }
-body > section .main pre {
+body.test > section .main pre {
   outline: 3px dashed #272727;
   margin-top: 30px;
 }
-body > section .main.cc-buttons p {
+body.test > section .main.cc-buttons p {
   margin: 1em 0 2em;
 }
-body > section .main .columns {
+body.test > section .main .columns {
   margin-bottom: 20px;
 }
-body > section.tests p {
+body.test > section.tests p {
   background-color: black;
   color: white;
 }
 @media screen and (max-width: 767px) {
-  body {
+  body.test {
     padding: 0;
   }
-  body > section {
+  body.test > section {
     width: 95%;
     margin: 0 auto 40px;
   }

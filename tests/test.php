@@ -21,15 +21,6 @@
     </head>
 
     <body class="test">
-        <section class="tests">
-            <div class="main active">
-                <p>
-                    Coucou je suis une icone
-                </p>
-            </div>
-        </section>
-
-
         <section class="components">
             <header>
                 <h2 class="title">Components</h2>
@@ -45,7 +36,7 @@
                 </p>
             </header>
 
-            <div class="main cc-modals">
+            <div class="main cc-modals active">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -77,6 +68,7 @@
                     <button data-target="modal-id-large" class="modal-open">Launch large modal</button>
                     <button data-target="modal-id-small" class="modal-open">Launch small modal</button>
                     <button data-target="modal-id-long" class="modal-open">Launch modal with long content</button>
+                    <button data-target="modal-id-long-fixed-header" class="modal-open">Fixed Header / Footer</button>
                 </div>
 
                 <div class="cc-mat-20">
@@ -813,7 +805,6 @@
             </div>
         </section>
 
-
         <section class="helpers">
             <header>
                 <h2 class="title">Helpers</h2>
@@ -985,7 +976,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="grids">
             <header>
@@ -1811,7 +1801,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="elements">
             <header>
@@ -3541,7 +3530,6 @@
                     <img src="http://lorempixel.com/600/300" alt="My alt text" class="cc-no-hover cc-sepia"/>
                 </p>
             </div>
-
         </section>
 
 
@@ -3672,6 +3660,61 @@
                         <button type="submit" class="fa-save">Save</button>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div id="modal-id-long-fixed-header" class="modal" data-fixed-hf>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a default modal (50% width) with fixed header
+                </div>
+
+
+                <section class="wrap-modal-body">
+                    <div class="modal-body">
+                        <pre class="HTML">
+                            <code class="language-less">&lt;div id="modal-id" class="modal" data-fixed-hf>
+                                    &lt;div class="modal-content">
+                                        &lt;div class="modal-header">
+                                        &lt;/div>
+                                        &lt;section class="wrap-modal-body">
+                                            &lt;div class="modal-body">
+                                            &lt;/div>
+                                        &lt;/section>
+                                        &lt;div class="modal-footer">
+                                        &lt;/div>
+                                    &lt;/div>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                        <p>
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                        </p>
+                        <div class="form-item">
+                            <label>Label</label>
+                            <input type="text" placeholder="placeholder" />
+                        </div>
+                    </div>
+                </section>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-green fa-save">Save</button>
+                    <a href="#" class="btn cc-thin cc-bg-red">Annuler</a>
+                </div>
+                
             </div>
         </div>
         <div id="modal-id-no-closable" class="modal" data-disabled-overlay>
