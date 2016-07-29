@@ -3580,7 +3580,6 @@ body.opened-modal {
   -webkit-transform: scale(1);
           transform: scale(1);
   /* X & Y empty : default value */
-  top: 0px;
 }
 .modal.active .modal-close {
   -webkit-transition: 0.3s top ease-out 0.3s;
@@ -3691,6 +3690,8 @@ body.opened-modal {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  width: 100vw;
+  height: 100vh;
   z-index: 97;
 }
 .modal[data-fixed-hf] .modal-content {

@@ -34,7 +34,7 @@
   "resolutions": {
     "jquery": "~2.2.0"
   },
-  "homepage": "https://github.com/alpixel/ChuckCSS",
+  "homepage": "https://www.chuckcss.io",
   "main": [
     "chuckcss/front.less"
   ]
