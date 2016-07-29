@@ -4250,6 +4250,19 @@ img.cc-shadowed {
   margin-top: 0;
   margin-bottom: 0;
 }
+.columns.cc-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.columns.cc-vertical .column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
 .columns .column {
   padding: 0;
   margin: 0;

@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>ChuckCSS.io | Tests</title>
         <!--<base href="http://devbox.local/" />-->
-        <base href="file:///D:/WKS/ChuckCSS/tests/" />
+        <base href="http://alpixel.rocks/mickael/workspace/ChuckCSS/" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" href="../dist/bootstrap-override.min.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" href="../dist/chuckcss.min.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" href="prism.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" href="test.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="dist/bootstrap-override.min.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="dist/chuckcss.min.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="tests/prism.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="tests/test.css" type="text/css" media="screen" charset="utf-8" />
     </head>
 
     <body class="test">
@@ -36,7 +36,7 @@
                 </p>
             </header>
 
-            <div class="main cc-modals active">
+            <div class="main cc-modals">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -1191,7 +1191,7 @@
                 </div>
             </div>
 
-            <div class="main cc-grids">
+            <div class="main cc-grids active">
                 <h3 class="title">Grids 1 - @cols-total</h3>
                 <pre class="HTML">
                     <code class="language-less">
@@ -1799,6 +1799,35 @@
                         </div>
                     </div>
                 </div>
+
+
+                <h3 class="title">Vertical columns</h3>
+                <pre class="HTML">
+                    <code class="language-less">
+                        // Positioning columns
+                        div class="columns cc-vertical"
+                        -- div class="column"
+                        -- div class="column"
+                        -- div class="column"
+                        -- div class="column"
+                    </code>
+                </pre>
+
+                <div class="columns cc-vertical">
+                    <div class="column cc-bg-blue cc-6 cc-offset-2 cc-offset-6-t cc-offset-0-s cc-12-s">
+                        Aliquet turpis enim turpis magna quis, sagittis placerat diam platea, dis amet, placerat.
+                    </div>
+                    <div class="column cc-bg-orange cc-6">
+                        Aliquet turpis enim turpis magna quis, sagittis placerat diam platea, dis amet, placerat, et! Dapibus sed ultricies ut lectus et! Ac magnis nec urna ridiculus, augue aenean porttitor sit tincidunt, penatibus sit, adipiscing proin pulvinar mid placerat mid, odio.
+                    </div>
+                    <div class="column cc-bg-blue">
+                        Aliquet turpis enim turpis magna quis, sagittis placerat diam platea, dis amet, placerat, et! Dapibus sed ultricies ut lectus et!
+                    </div>
+                    <div class="column cc-bg-orange">
+                        Aliquet turpis enim turpis magna quis, sagittis placerat diam platea, dis amet, placerat, et! Dapibus sed ultricies ut lectus et! Ac magnis nec urna ridiculus, augue aenean porttitor sit tincidunt...
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -3714,7 +3743,7 @@
                     <button type="submit" class="cc-bg-green fa-save">Save</button>
                     <a href="#" class="btn cc-thin cc-bg-red">Annuler</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-id-no-closable" class="modal" data-disabled-overlay>
@@ -3796,9 +3825,9 @@
         </div>
 
         <!-- Javascripts -->
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="prism.js"></script>
-        <script type="text/javascript" src="../dist/chuckcss.js"></script>
-        <script type="text/javascript" src="test.js"></script>
+        <script type="text/javascript" src="tests/jquery.min.js"></script>
+        <script type="text/javascript" src="tests/prism.js"></script>
+        <script type="text/javascript" src="dist/chuckcss.js"></script>
+        <script type="text/javascript" src="tests/test.js"></script>
     </body>
 </html>
