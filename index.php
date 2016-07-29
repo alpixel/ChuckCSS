@@ -3570,7 +3570,6 @@
                             div class="cc cc-2"
                             div class="cc cc-3"
                             ...
-                            div class="cc cc-12"
                     </code>
                 </pre>
 
@@ -3584,7 +3583,7 @@
                     <div class="dot dot-7"></div>
                     <div class="dot dot-8"></div>
                     <div class="dot dot-9"></div>
-                    <div class="dot dot-10"></div>
+<!--                     <div class="dot dot-10"></div>
                     <div class="dot dot-11"></div>
                     <div class="dot dot-12"></div>
                     <div class="dot dot-13"></div>
@@ -3592,7 +3591,7 @@
                     <div class="dot dot-15"></div>
                     <div class="dot dot-16"></div>
                     <div class="dot dot-17"></div>
-                    <div class="dot dot-18"></div>
+                    <div class="dot dot-18"></div> -->
                 </div>
             </div>
         </section>
