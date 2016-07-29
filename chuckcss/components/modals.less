@@ -185,11 +185,13 @@ body.opened-modal {
             ._flex-direction(column);
         }
         .modal-footer,
-        .modal-header {
-            flex-shrink:0;
+        .modal-header,
+        .wrap-modal-body {
+            ._flex(1 0 auto);
         }
         .wrap-modal-body {
             overflow-y: auto;
+            flex-shrink:1;
         }
     }
 }
