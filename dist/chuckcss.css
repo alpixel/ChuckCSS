@@ -1828,118 +1828,178 @@ img {
 /* ********************* */
 .cc-loader .dot.dot-2 {
   /* Not perspective */
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
   /* Perspective */
 }
 .cc-loader .dot.dot-2:before {
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
+  -webkit-animation-delay: 0.027777777777777776s;
+          animation-delay: 0.027777777777777776s;
 }
 .cc-loader .dot.dot-3 {
+  /* Not perspective */
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-3:before {
+  -webkit-animation-delay: 0.05555555555555555s;
+          animation-delay: 0.05555555555555555s;
+}
+.cc-loader .dot.dot-4 {
   /* Not perspective */
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-3:before {
-  -webkit-animation-delay: -0.5499999999999999s;
-          animation-delay: -0.5499999999999999s;
-}
-.cc-loader .dot.dot-4 {
-  /* Not perspective */
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  /* Perspective */
-}
 .cc-loader .dot.dot-4:before {
-  -webkit-animation-delay: -0.49999999999999994s;
-          animation-delay: -0.49999999999999994s;
+  -webkit-animation-delay: 0.08333333333333333s;
+          animation-delay: 0.08333333333333333s;
 }
 .cc-loader .dot.dot-5 {
+  /* Not perspective */
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-5:before {
+  -webkit-animation-delay: 0.1111111111111111s;
+          animation-delay: 0.1111111111111111s;
+}
+.cc-loader .dot.dot-6 {
+  /* Not perspective */
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-6:before {
+  -webkit-animation-delay: 0.1388888888888889s;
+          animation-delay: 0.1388888888888889s;
+}
+.cc-loader .dot.dot-7 {
   /* Not perspective */
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-5:before {
-  -webkit-animation-delay: -0.44999999999999996s;
-          animation-delay: -0.44999999999999996s;
+.cc-loader .dot.dot-7:before {
+  -webkit-animation-delay: 0.16666666666666669s;
+          animation-delay: 0.16666666666666669s;
 }
-.cc-loader .dot.dot-6 {
+.cc-loader .dot.dot-8 {
   /* Not perspective */
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-6:before {
-  -webkit-animation-delay: -0.39999999999999997s;
-          animation-delay: -0.39999999999999997s;
+.cc-loader .dot.dot-8:before {
+  -webkit-animation-delay: 0.19444444444444448s;
+          animation-delay: 0.19444444444444448s;
 }
-.cc-loader .dot.dot-7 {
+.cc-loader .dot.dot-9 {
+  /* Not perspective */
+  -webkit-transform: rotate(160deg);
+          transform: rotate(160deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-9:before {
+  -webkit-animation-delay: 0.22222222222222227s;
+          animation-delay: 0.22222222222222227s;
+}
+.cc-loader .dot.dot-10 {
   /* Not perspective */
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-7:before {
-  -webkit-animation-delay: -0.35s;
-          animation-delay: -0.35s;
+.cc-loader .dot.dot-10:before {
+  -webkit-animation-delay: 0.25000000000000006s;
+          animation-delay: 0.25000000000000006s;
 }
-.cc-loader .dot.dot-8 {
+.cc-loader .dot.dot-11 {
   /* Not perspective */
-  -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-8:before {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+.cc-loader .dot.dot-11:before {
+  -webkit-animation-delay: 0.27777777777777785s;
+          animation-delay: 0.27777777777777785s;
 }
-.cc-loader .dot.dot-9 {
+.cc-loader .dot.dot-12 {
+  /* Not perspective */
+  -webkit-transform: rotate(220deg);
+          transform: rotate(220deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-12:before {
+  -webkit-animation-delay: 0.30555555555555564s;
+          animation-delay: 0.30555555555555564s;
+}
+.cc-loader .dot.dot-13 {
   /* Not perspective */
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-9:before {
-  -webkit-animation-delay: -0.25s;
-          animation-delay: -0.25s;
+.cc-loader .dot.dot-13:before {
+  -webkit-animation-delay: 0.3333333333333334s;
+          animation-delay: 0.3333333333333334s;
 }
-.cc-loader .dot.dot-10 {
+.cc-loader .dot.dot-14 {
   /* Not perspective */
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(260deg);
+          transform: rotate(260deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-10:before {
-  -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
+.cc-loader .dot.dot-14:before {
+  -webkit-animation-delay: 0.3611111111111112s;
+          animation-delay: 0.3611111111111112s;
 }
-.cc-loader .dot.dot-11 {
+.cc-loader .dot.dot-15 {
+  /* Not perspective */
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-15:before {
+  -webkit-animation-delay: 0.388888888888889s;
+          animation-delay: 0.388888888888889s;
+}
+.cc-loader .dot.dot-16 {
   /* Not perspective */
   -webkit-transform: rotate(300deg);
           transform: rotate(300deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-11:before {
-  -webkit-animation-delay: -0.15000000000000002s;
-          animation-delay: -0.15000000000000002s;
+.cc-loader .dot.dot-16:before {
+  -webkit-animation-delay: 0.4166666666666668s;
+          animation-delay: 0.4166666666666668s;
 }
-.cc-loader .dot.dot-12 {
+.cc-loader .dot.dot-17 {
   /* Not perspective */
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
+  -webkit-transform: rotate(320deg);
+          transform: rotate(320deg);
   /* Perspective */
 }
-.cc-loader .dot.dot-12:before {
-  -webkit-animation-delay: -0.10000000000000003s;
-          animation-delay: -0.10000000000000003s;
+.cc-loader .dot.dot-17:before {
+  -webkit-animation-delay: 0.4444444444444446s;
+          animation-delay: 0.4444444444444446s;
+}
+.cc-loader .dot.dot-18 {
+  /* Not perspective */
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+  /* Perspective */
+}
+.cc-loader .dot.dot-18:before {
+  -webkit-animation-delay: 0.4722222222222224s;
+          animation-delay: 0.4722222222222224s;
 }
 .cc-loader {
   margin: 50px auto;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 .cc-loader .dot {
@@ -1957,8 +2017,8 @@ img {
   height: 15%;
   background-color: #c41515;
   border-radius: 100%;
-  -webkit-animation: loaderDots 0.6s infinite ease-in-out both;
-          animation: loaderDots 0.6s infinite ease-in-out both;
+  -webkit-animation: loaderDots 0.5s infinite ease-in-out both;
+          animation: loaderDots 0.5s infinite ease-in-out both;
 }
 /*
     * /components/ - IMPORTS FILES *
