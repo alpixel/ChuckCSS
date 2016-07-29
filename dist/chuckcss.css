@@ -4919,6 +4919,7 @@ body.opened-modal {
   /* Close button */
   /* Content */
   /* Overlay */
+  /* Fixed Header/Footer */
 }
 .modal.active {
   opacity: 1;
@@ -4937,7 +4938,6 @@ body.opened-modal {
   -webkit-transform: scale(1);
           transform: scale(1);
   /* X & Y empty : default value */
-  top: 0px;
 }
 .modal.active .modal-close {
   -webkit-transition: 0.3s top ease-out 0.3s;
@@ -5048,7 +5048,30 @@ body.opened-modal {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  width: 100vw;
+  height: 100vh;
   z-index: 97;
+}
+.modal[data-fixed-hf] .modal-content {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal[data-fixed-hf] .modal-footer,
+.modal[data-fixed-hf] .modal-header {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.modal[data-fixed-hf] .wrap-modal-body {
+  overflow-y: auto;
 }
 /*
     * IMPORT GENERATOR FILE *
