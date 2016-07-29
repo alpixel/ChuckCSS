@@ -1191,7 +1191,7 @@
                 </div>
             </div>
 
-            <div class="main cc-grids active">
+            <div class="main cc-grids">
                 <h3 class="title">Grids 1 - @cols-total</h3>
                 <pre class="HTML">
                     <code class="language-less">
@@ -1846,6 +1846,7 @@
                     <a href="#" data-rel="cc-forms" class="btn cc-bg-red">Forms</a>
                     <a href="#" data-rel="cc-buttons" class="btn cc-bg-red">Links/Buttons</a>
                     <a href="#" data-rel="cc-images" class="btn cc-bg-red">Images</a>
+                    <a href="#" data-rel="cc-loading" class="btn cc-bg-red">Loader</a>
                 </p>
             </header>
 
@@ -3558,6 +3559,41 @@
                     Image below reset the sepia filter <strong>on hover</strong><br /><br />
                     <img src="http://lorempixel.com/600/300" alt="My alt text" class="cc-no-hover cc-sepia"/>
                 </p>
+            </div>
+
+            <div class="main cc-loading active">
+                <h3 class="title">Loader</h3>
+                <pre class="HTML">
+                    <code class="language-less">
+                        div class="cc-loader"
+                            div class="cc cc-1"
+                            div class="cc cc-2"
+                            div class="cc cc-3"
+                            ...
+                            div class="cc cc-12"
+                    </code>
+                </pre>
+
+                <div class="cc-loader">
+                    <div class="dot dot-1"></div>
+                    <div class="dot dot-2"></div>
+                    <div class="dot dot-3"></div>
+                    <div class="dot dot-4"></div>
+                    <div class="dot dot-5"></div>
+                    <div class="dot dot-6"></div>
+                    <div class="dot dot-7"></div>
+                    <div class="dot dot-8"></div>
+                    <div class="dot dot-9"></div>
+                    <div class="dot dot-10"></div>
+                    <div class="dot dot-11"></div>
+                    <div class="dot dot-12"></div>
+                    <div class="dot dot-13"></div>
+                    <div class="dot dot-14"></div>
+                    <div class="dot dot-15"></div>
+                    <div class="dot dot-16"></div>
+                    <div class="dot dot-17"></div>
+                    <div class="dot dot-18"></div>
+                </div>
             </div>
         </section>
 
