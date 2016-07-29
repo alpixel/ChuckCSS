@@ -174,4 +174,20 @@ body.opened-modal {
         bottom:0px;
         z-index:97;
     }
+
+    /* Fixed Header/Footer */
+    &[data-fixed-hf] {
+        .modal-content {
+            overflow:hidden;
+            ._flex-display;
+            ._flex-direction(column);
+        }
+        .modal-footer,
+        .modal-header {
+            flex-shrink:0;
+        }
+        .wrap-modal-body {
+            overflow-y: auto;
+        }
+    }
 }
