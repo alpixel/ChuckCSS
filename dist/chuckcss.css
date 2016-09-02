@@ -1123,7 +1123,7 @@ ol {
   width: 1200px;
   margin: 0 auto;
   -webkit-transition: 0.2s width ease-out 0s;
-          transition: 0.2s width ease-out 0s;
+  transition: 0.2s width ease-out 0s;
 }
 .cc-clearfix {
   zoom: 1;
@@ -1231,7 +1231,7 @@ button {
   /* If Hover is specified */
   /* else */
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* hover : default, change border-color */
 }
 a.btn:hover,
@@ -1678,7 +1678,7 @@ form input {
   height: 4.2rem;
   font-size: 1.35rem;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* Hack IE8 and < */
   line-height: 4.199999999999999rem\9;
   /* hot fix IE 8 */
@@ -1771,7 +1771,7 @@ form select {
   box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
   border-radius: 0px;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* Hack IE8 & < */
   height: inherit\9;
   padding: 0.8em 0.3em 0.8em 1em\9;
@@ -1789,7 +1789,7 @@ form button[type="submit"] {
   padding: 0 2em;
   vertical-align: middle;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   text-transform: uppercase;
   box-shadow: none;
   border-radius: 0px;
@@ -3583,7 +3583,7 @@ body.opened-modal {
 }
 .modal.active .modal-close {
   -webkit-transition: 0.3s top ease-out 0.3s;
-          transition: 0.3s top ease-out 0.3s;
+  transition: 0.3s top ease-out 0.3s;
   top: 20px;
 }
 @media screen and (max-width: 767px) {
@@ -3663,7 +3663,7 @@ body.opened-modal {
   filter: alpha(opacity=0);
   zoom: 1;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* X != Y */
   /* X only */
   -webkit-transform: scale(0.5);
