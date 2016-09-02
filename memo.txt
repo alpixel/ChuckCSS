@@ -1,0 +1,24 @@
+========
+How to Update ChuckCSS on NPM, GIT, BOWER
+========
+
+1. Make changes in the code (bug fix, enhancement, etc..)
+
+2. Update the version string in package.json and bower.json by hand to 1.x.x.
+
+3. git commit -am "MY FABULOUS COMMENT"
+
+4. git tag -a v1.x.x -m "My Fabulous message"
+
+5. git push origin master && git push --tags
+
+6. npm publish
+
+
+
+
+=== Check version on BOWER ===
+$ bower info ChuckCSS
+
+=== Chuck version on NPM ===
+$ npm dist-tag ls ChuckCSS
