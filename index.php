@@ -3566,9 +3566,9 @@
                 <pre class="HTML">
                     <code class="language-less">
                         div class="cc-loader"
-                            div class="cc cc-1"
-                            div class="cc cc-2"
-                            div class="cc cc-3"
+                            -- div class="dot dot-1"
+                            -- div class="dot dot-2"
+                            -- div class="dot dot-3"
                             ...
                     </code>
                 </pre>

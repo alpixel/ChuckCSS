@@ -1,5 +1,5 @@
 {
-  "name": "ChuckCSS",
+  "name": "chuckcss",
   "version": "1.0.3",
   "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
   "authors": {
@@ -27,9 +27,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.2.0",
-  },
-  "resolutions": {
     "jquery": "~2.2.0"
   },
   "homepage": "https://www.chuckcss.io",

@@ -90,7 +90,7 @@
       }
 ***** */
 ._border-radius (@radius: 5px) {
-  border-radius: @radius;
+    border-radius: @radius;
 }
 /* *****
     @name : ._box-shadow
@@ -105,7 +105,7 @@
       }
 ***** */
 ._box-shadow (@values) {
-  box-shadow: e(@values);
+    box-shadow: e(@values);
 }
 /* *****
     @name : background-gradient : horizontal || vertical
@@ -116,12 +116,12 @@
     @Generator : http://www.colorzilla.com/gradient-editor/
 ***** */
 ._bg-vertical(@from:#000, @to:#fff) {
-  background: @from; /* Old browsers */
-  background: linear-gradient(to bottom,  @from 0%, @to 100%); /* W3C */
+      background: @from; /* Old browsers */
+      background: linear-gradient(to bottom,  @from 0%, @to 100%); /* W3C */
 }
 ._bg-horizontal(@from:#000, @to:#fff) {
-  background: @from; /* Old browsers */
-  background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
+      background: @from; /* Old browsers */
+      background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
 }
 /* *****
     @name : ._opacity
@@ -134,11 +134,11 @@
       }
 ***** */
 ._opacity(@opacity:1) when (isnumber(@opacity)) {
-  @opacityIE : @opacity*100;
-  opacity:@opacity;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=@opacityIE);
-  filter:alpha(opacity=@opacityIE);
-  zoom: 1;
+      @opacityIE : @opacity*100;
+      opacity:@opacity;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=@opacityIE);
+      filter:alpha(opacity=@opacityIE);
+      zoom: 1;
 }
 /* *****
     @name : ._clearfix
@@ -227,7 +227,7 @@
       }
 ***** */
 ._transition(@duration:.2s, @property:all, @effect:ease-out, @delay:0s) {
-  transition:@arguments;
+    transition:@arguments;
 }
 /* *****
     @name : ._transform
@@ -248,7 +248,7 @@
     }
 ***** */
 ._transform(...) {
-  transform+_: @arguments;
+    transform+_: @arguments;
 }
 /* *****
     @exemples :
@@ -261,14 +261,14 @@
       }
 ***** */
 ._rotate(@deg:10deg, @axis:~'',@perspective : ~'') {
-  /* Not perspective */
-  & when not (isnumber(@perspective)) {
-    ._transform(~"rotate@{axis}(@{deg})");
-  }
-  /* Perspective */
-  & when (isnumber(@perspective)) {
-    ._transform(~"perspective(@{perspective}) rotate@{axis}(@{deg})");
-  }
+    /* Not perspective */
+    & when not (isnumber(@perspective)) {
+        ._transform(~"rotate@{axis}(@{deg})");
+    }
+    /* Perspective */
+    & when (isnumber(@perspective)) {
+        ._transform(~"perspective(@{perspective}) rotate@{axis}(@{deg})");
+    }
 }
 /* *****
     @exemples :
@@ -281,18 +281,18 @@
       }
 ***** */
 ._scale(@x:~'', @y:~'', @default : 1.2) {
-  /* X != Y */
-  & when (isnumber(@y)) and (isnumber(@x)) and not (@x = @y) {
-    ._transform(scale(@x,@y));
-  }
-  /* X only */
-  & when (isnumber(@x)) and not (isnumber(@y)) {
-    ._transform(scale(@x));
-  }
-  /* X & Y empty : default value */
-  & when not (isnumber(@y)) and not (isnumber(@x)) {
-    ._transform(scale(@default));
-  }
+    /* X != Y */
+    & when (isnumber(@y)) and (isnumber(@x)) and not (@x = @y) {
+        ._transform(scale(@x,@y));
+    }
+    /* X only */
+    & when (isnumber(@x)) and not (isnumber(@y)) {
+        ._transform(scale(@x));
+    }
+    /* X & Y empty : default value */
+    & when not (isnumber(@y)) and not (isnumber(@x)) {
+        ._transform(scale(@default));
+    }
 }
 /* *****
     @exemples :
@@ -318,18 +318,18 @@
       }
 ***** */
 ._skew(@axis:~'', @x:~'', @y:~'') {
-  /* X only */
-  & when (isstring(@axis)) and (isnumber(@x)) and not (isnumber(@y)) {
-    ._transform(~"skew@{axis}(@{x})");
-  }
-  /* Y only */
-  & when (isstring(@axis)) and (isnumber(@y)) and not (isnumber(@x)) {
-    ._transform(~"skew@{axis}(@{y})");
-  }
-  /* X and Y : no @axis */
-  & when (isnumber(@y)) and (isnumber(@x)) {
-    ._transform(~"skew(@{x}, @{y})");
-  }
+    /* X only */
+    & when (isstring(@axis)) and (isnumber(@x)) and not (isnumber(@y)) {
+        ._transform(~"skew@{axis}(@{x})");
+    }
+    /* Y only */
+    & when (isstring(@axis)) and (isnumber(@y)) and not (isnumber(@x)) {
+        ._transform(~"skew@{axis}(@{y})");
+    }
+    /* X and Y : no @axis */
+    & when (isnumber(@y)) and (isnumber(@x)) {
+        ._transform(~"skew(@{x}, @{y})");
+    }
 }
 
 
@@ -405,9 +405,9 @@
       }
 ***** */
 ._reset() {
-  padding:0;
-  margin:0;
-  border:0;
+    padding:0;
+    margin:0;
+    border:0;
 }
 /* *****
     @name : ._uppercase
@@ -415,7 +415,7 @@
     @wtf : just because it's boring to write the whole property
 ***** */
 ._uppercase() {
-  text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 /* *****
@@ -430,16 +430,16 @@
       }
 ***** */
 ._fa(@content, @size:10pt, @color:#000){
-  ._inline;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size:@size;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color:@color;
-  content:@content;
+    ._inline;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:@color;
+    content:@content;
 }
 /* *****
     @name : ._io
@@ -453,20 +453,20 @@
       }
 ***** */
 ._io(@content, @size:10pt, @color:#000){
-  ._inline;
-  font-family: "Ionicons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size:@size;
-  color:@color;
-  content:@content;
+    ._inline;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:@size;
+    color:@color;
+    content:@content;
 }
 /* *****
     @name : ._cover
@@ -479,12 +479,12 @@
       }
 ***** */
 ._cover() {
-  background-size: cover; /* Standard */
-  background-repeat:no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size:100% 100%\9; /* <= IE8 */
-  background-position: center top\9; /* <= IE8 */
+    background-size: cover; /* Standard */
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:100% 100%\9; /* <= IE8 */
+    background-position: center top\9; /* <= IE8 */
 }
 /* *****
     @name : ._truncate
@@ -497,10 +497,10 @@
       }
 ***** */
 ._truncate(@width : 200px) when (ispixel(@width)) {
-  width:@width;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    width:@width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* *****
     @name : ._btn
@@ -517,24 +517,24 @@
       }
 ***** */
 ._setBtnBgHover(@bg) {
-  @bgHover : darken(@bg,10%);
+    @bgHover : darken(@bg,10%);
 
-  &:hover {
-    background-color:@bgHover;
-  }
+    &:hover {
+        background-color:@bgHover;
+    }
 }
 ._btn(@bg : @links-btn-bg, @bgHover :~'') when (iscolor(@bg)) {
-  background-color:@bg;
+    background-color:@bg;
 
-  /* If Hover is specified */
-  & when (iscolor(@bgHover)) {
-    &:hover {
-      background-color:@bgHover;
+    /* If Hover is specified */
+    & when (iscolor(@bgHover)) {
+        &:hover {
+            background-color:@bgHover;
+        }
     }
-  }
-  /* else */
-  & when not (iscolor(@bgHover)) {
-    /* Hover color will be @bg but 10% darken */
-    ._setBtnBgHover(@bg);
-  }
+    /* else */
+    & when not (iscolor(@bgHover)) {
+        /* Hover color will be @bg but 10% darken */
+        ._setBtnBgHover(@bg);
+    }
 }

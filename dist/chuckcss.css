@@ -1281,7 +1281,7 @@ ol {
   width: 1200px;
   margin: 0 auto;
   -webkit-transition: 0.2s width ease-out 0s;
-          transition: 0.2s width ease-out 0s;
+  transition: 0.2s width ease-out 0s;
 }
 .cc-displayTable {
   margin-left: 0;
@@ -1438,7 +1438,7 @@ button {
   /* If Hover is specified */
   /* else */
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* hover : default, change border-color */
   /* Icon right */
 }
@@ -2173,7 +2173,7 @@ form input {
   height: 4.2rem;
   font-size: 1.35rem;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* Hack IE8 and < */
   line-height: 4.199999999999999rem\9;
   /* hot fix IE 8 */
@@ -2266,7 +2266,7 @@ form select {
   box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
   border-radius: 3px;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* Hack IE8 & < */
   height: inherit\9;
   padding: 0.8em 0.3em 0.8em 1em\9;
@@ -2284,7 +2284,7 @@ form button[type="submit"] {
   padding: 0 2em;
   vertical-align: middle;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   text-transform: uppercase;
   box-shadow: none;
   border-radius: 3px;
@@ -2353,8 +2353,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-2:before {
-  -webkit-animation-delay: 0.041666666666666664s;
-          animation-delay: 0.041666666666666664s;
+  -webkit-animation-delay: 0.08333333333333333s;
+          animation-delay: 0.08333333333333333s;
 }
 .cc-loader .dot.dot-3 {
   /* Not perspective */
@@ -2363,8 +2363,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-3:before {
-  -webkit-animation-delay: 0.08333333333333333s;
-          animation-delay: 0.08333333333333333s;
+  -webkit-animation-delay: 0.16666666666666666s;
+          animation-delay: 0.16666666666666666s;
 }
 .cc-loader .dot.dot-4 {
   /* Not perspective */
@@ -2373,8 +2373,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-4:before {
-  -webkit-animation-delay: 0.125s;
-          animation-delay: 0.125s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 .cc-loader .dot.dot-5 {
   /* Not perspective */
@@ -2383,8 +2383,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-5:before {
-  -webkit-animation-delay: 0.16666666666666666s;
-          animation-delay: 0.16666666666666666s;
+  -webkit-animation-delay: 0.3333333333333333s;
+          animation-delay: 0.3333333333333333s;
 }
 .cc-loader .dot.dot-6 {
   /* Not perspective */
@@ -2393,8 +2393,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-6:before {
-  -webkit-animation-delay: 0.20833333333333331s;
-          animation-delay: 0.20833333333333331s;
+  -webkit-animation-delay: 0.41666666666666663s;
+          animation-delay: 0.41666666666666663s;
 }
 .cc-loader .dot.dot-7 {
   /* Not perspective */
@@ -2403,8 +2403,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-7:before {
-  -webkit-animation-delay: 0.24999999999999997s;
-          animation-delay: 0.24999999999999997s;
+  -webkit-animation-delay: 0.49999999999999994s;
+          animation-delay: 0.49999999999999994s;
 }
 .cc-loader .dot.dot-8 {
   /* Not perspective */
@@ -2413,8 +2413,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-8:before {
-  -webkit-animation-delay: 0.29166666666666663s;
-          animation-delay: 0.29166666666666663s;
+  -webkit-animation-delay: 0.5833333333333333s;
+          animation-delay: 0.5833333333333333s;
 }
 .cc-loader .dot.dot-9 {
   /* Not perspective */
@@ -2423,8 +2423,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-9:before {
-  -webkit-animation-delay: 0.3333333333333333s;
-          animation-delay: 0.3333333333333333s;
+  -webkit-animation-delay: 0.6666666666666666s;
+          animation-delay: 0.6666666666666666s;
 }
 .cc-loader .dot.dot-10 {
   /* Not perspective */
@@ -2433,8 +2433,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-10:before {
-  -webkit-animation-delay: 0.375s;
-          animation-delay: 0.375s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 .cc-loader .dot.dot-11 {
   /* Not perspective */
@@ -2443,8 +2443,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-11:before {
-  -webkit-animation-delay: 0.4166666666666667s;
-          animation-delay: 0.4166666666666667s;
+  -webkit-animation-delay: 0.8333333333333334s;
+          animation-delay: 0.8333333333333334s;
 }
 .cc-loader .dot.dot-12 {
   /* Not perspective */
@@ -2453,8 +2453,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-12:before {
-  -webkit-animation-delay: 0.45833333333333337s;
-          animation-delay: 0.45833333333333337s;
+  -webkit-animation-delay: 0.9166666666666667s;
+          animation-delay: 0.9166666666666667s;
 }
 .cc-loader {
   margin: 50px auto;
@@ -2477,8 +2477,8 @@ img.cc-shadowed {
   height: 15%;
   background-color: #29b7e1;
   border-radius: 100%;
-  -webkit-animation: loaderDots 0.5s infinite ease-in-out both;
-          animation: loaderDots 0.5s infinite ease-in-out both;
+  -webkit-animation: loaderDots 1s infinite ease-in-out both;
+          animation: loaderDots 1s infinite ease-in-out both;
 }
 /*
     * /components/ - IMPORTS FILES *
@@ -4224,7 +4224,7 @@ img.cc-shadowed {
 }
 .columns.cc-animated .column {
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
 }
 .columns.cc-masonry {
   display: block;
@@ -4713,7 +4713,7 @@ a.btn.cc-fat span.badge:before {
   position: relative;
   top: 1px;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
 }
 .tabs > li a.btn,
 .tabs > li button {
@@ -4941,7 +4941,7 @@ body.opened-modal {
 }
 .modal.active .modal-close {
   -webkit-transition: 0.3s top ease-out 0.3s;
-          transition: 0.3s top ease-out 0.3s;
+  transition: 0.3s top ease-out 0.3s;
   top: 20px;
 }
 @media screen and (max-width: 767px) {
@@ -5021,7 +5021,7 @@ body.opened-modal {
   filter: alpha(opacity=0);
   zoom: 1;
   -webkit-transition: 0.2s all ease-out 0s;
-          transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
   /* X != Y */
   /* X only */
   -webkit-transform: scale(0.5);
