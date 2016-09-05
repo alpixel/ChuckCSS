@@ -15,8 +15,8 @@
 
 .tabs {
     ._reset;
-    ._flex-display;
-    ._flex-wrap(wrap);
+    display:flex;
+    flex-wrap:wrap;
     line-height:@text-lh*1.5;
 
 
@@ -25,20 +25,20 @@
             border-bottom:1px solid @gray-li;
         }
         &-centered {
-            ._flex-display;
-            ._flex-justify(center);
+            display:flex;
+            justify-content:center;
         }
         &-left {
-            ._flex-justify(flex-start);
+            justify-content:flex-start;
         }
         &-right {
-            ._flex-justify(flex-end);
+            justify-content:flex-end;
         }
         &-stretch {
-            ._flex-justify(center);
+            justify-content:center;
 
             &>li {
-                ._flex(1 0 auto);
+                flex:1 0 auto;
                 text-align:center;
             }
         }
@@ -53,7 +53,7 @@
                         border-width:1px;
                         border-style:solid;
                         border-color: @primary @primary white @primary;
-                        ._border-radius(3px 3px 0 0);
+                        border-radius:3px 3px 0 0;
                     }
                 }
             }
@@ -68,7 +68,7 @@
                     &:last-child,
                     &:nth-child(1) {
                         a:not(.btn) {
-                            ._border-radius(3px);
+                            border-radius:3px;
                         }
 
                         &.active,
@@ -84,7 +84,7 @@
 
                     a:not(.btn) {
                         border:1px solid @gray-li;
-                        ._border-radius(3px);
+                        border-radius:3px;
                     }
 
                     &.active,
@@ -98,8 +98,8 @@
 
             /* Centered pills */
             &.cc-centered {
-                ._flex-display;
-                ._flex-justify(center);
+                display:flex;
+                justify-content:center;
             }
 
             &>li {
@@ -116,27 +116,27 @@
                     }
 
                     a:not(.btn) {
-                        ._border-radius(3px 0 0 3px);
+                        border-radius:3px 0 0 3px;
                     }
 
                     // Right
                     &.cc-last {
                         a:not(.btn) {
-                            ._border-radius(3px);
+                            border-radius:3px;
                         }
                     }
                 }
 
                 &:last-child {
                     a:not(.btn) {
-                        ._border-radius(0 3px 3px 0);
+                        border-radius:0 3px 3px 0;
                         border-right-width:1px;
                     }
 
                     // Right
                     &.cc-last {
                         a:not(.btn) {
-                            ._border-radius(3px);
+                            border-radius:3px;
                         }
                     }
                 }
@@ -200,12 +200,12 @@
 
         // Pulled right item
         &.cc-last {
-            ._flex-order(1);
+            order:1;
             margin-left:auto;
 
             .cc-pills& a {
                 border-width:1px;
-                ._border-radius(3px);
+                border-radius:3px;
             }
         }
     }
@@ -218,27 +218,27 @@
         &.cc {
             /* Stretch on tablet */
             &-stretch-t {
-                ._flex-justify(center);
+                justify-content:center;
 
                 &>li {
-                    ._flex(1 0 auto);
+                    flex:1 0 auto;
                     text-align:center;
                 }
             }
 
             /* Left on tablet */
             &-left-t {
-                ._flex-justify(flex-start);
+                justify-content:flex-start;
             }
 
             /* Right on tablet */
             &-right-t {
-                ._flex-justify(flex-end);
+                justify-content:flex-end;
             }
 
             /* Centered on tablet */
             &-centered-t {
-                ._flex-justify(center);
+                justify-content:center;
             }
         }
     });
@@ -246,7 +246,7 @@
 
     /* Phone rules */
     ._phone({
-        ._flex-direction(column);
+        flex-direction:column;
         border-bottom-width:0px;
 
         &.cc {
@@ -295,13 +295,13 @@
                 &>li {
                     a:not(.btn){
                         border-width:0px 1px 1px;
-                        ._border-radius(0px);
+                        border-radius:0px;
                     }
 
                     &:nth-child(1) {
                         a:not(.btn){
                             border-top-width:1px;
-                            ._border-radius(3px 3px 0px 0px);
+                            border-radius:3px 3px 0px 0px;
                         }
 
                         &.active,
@@ -314,7 +314,7 @@
                     }
                     &:last-child {
                         a:not(.btn){
-                            ._border-radius(0 0 3px 3px);
+                            border-radius:0 0 3px 3px;
                         }
                     }
 
@@ -342,14 +342,14 @@
 
         &>li {
             margin-left:0!important;
-            ._flex(1 0 100%);
+            flex:1 0 100%;
 
             a:not(.btn) {
                 top:0px;
             }
 
             &.cc-last {
-                ._flex-order(0);
+                order:0;
             }
         }
     });

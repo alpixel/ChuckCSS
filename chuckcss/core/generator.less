@@ -445,7 +445,7 @@
             &.cc {
                 /* Width calculations without gutters */
                 &-@{iterator} {
-                    ._flex(0 0 auto);
+                    flex:0 0 auto;
                     width: ~'calc(100% * @{iterator} / @{cols-total} - 0.05px)'; // Substract 0.05px for IE compatibilities
                     max-width: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
                 }
@@ -463,7 +463,7 @@
             &.cc {
                 /* Width calculations with gutters */
                 &-@{iterator} {
-                    ._flex(0 0 auto);
+                    flex:0 0 auto;
                     width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
                     max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
                 }
@@ -500,7 +500,7 @@
             &.cc{
                 /* Width calculations without gutters */
                 &-@{iterator}-t {
-                    ._flex(0 0 auto);
+                    flex:0 0 auto;
                     width: ~'calc(100% * @{iterator} / @{cols-total})';
                     max-width: ~'calc(100% * @{iterator} / @{cols-total})';
                 }
@@ -519,7 +519,7 @@
             &.cc {
                 /* Width calculations with gutters */
                 &-@{iterator}-t {
-                    ._flex(0 0 auto);
+                    flex:0 0 auto;
                     width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
                     max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
                 }
@@ -557,7 +557,7 @@
             &.cc {
                 /* Width calculations without gutters */
                 &-@{iterator}-s {
-                    ._flex(0 0 auto);
+                    flex:0 0 auto;
                     width: ~'calc(100% * @{iterator} / @{cols-total})';
                     max-width: ~'calc(100% * @{iterator} / @{cols-total})';
                 }
@@ -575,7 +575,7 @@
             &.cc {
                 /* Width calculations with gutters */
                 &-@{iterator}-s {
-                    ._flex(0 0 auto);
+                    flex:0 0 auto;
                     width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
                     max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
                 }

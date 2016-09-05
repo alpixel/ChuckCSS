@@ -590,11 +590,8 @@ textarea {
 */
 /*
 ** Functions/mixins list **
-    ._tablet, ._phone, etc...
-    ._border-radius
     ._box-shadow
     ._bg-vertical | ._bg-horizontal
-    ._opacity
     ._clearfix
     ._displayTable
     ._inline
@@ -602,7 +599,6 @@ textarea {
     ._transition
     ._transform
     ._rotate | ._scale | ._translate3d | ._skew
-    ._box-sizing
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._placeHold
     ._reset
@@ -614,63 +610,12 @@ textarea {
     ._btn
 */
 /* *****
-    @name : ._tablet, ._phone and others media queries
-    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
-    @params : @rules (CSS rules)
-
-    @exemple :
-      el {
-        background-color:white; // Default : Apply a white bg-color to the <el>
-
-        ._tablet({
-          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens <= @tablet-mw defined in settings.less
-        }); // don't forget the ;
-
-        ._phone({
-          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens <= @phone-mw defined in settings.less
-        }); // don't forget the ;
-      }
-
-***** */
-/* *****
-    @name : ._border-radius
-    @description : apply the border-radius property to a DOM element
-    @params : @radius (pixels)
-
-    @exemple :
-      el {
-        ._border-radius(5px 0 0 5px); // Will apply a border-radius:5px 0 0 5px to <el>
-      }
-***** */
-/* *****
-    @name : ._box-shadow
-    @description : apply the box-shadow property to a DOM element
-    @values : string (see exemples below)
-
-    @exemples :
-      el {
-        ._box-shadow('1px 1px 5px 0px rgba(0,0,0,0.5) inset, 1px 1px 5px 0px rgba(0,0,0,0.5)'); //  Multi-values
-        ._box-shadow('1px 1px 5px 0px rgba(0,0,0,0.5) inset'); //  Single Value
-        ._box-shadow('none'); //  Reset value
-      }
-***** */
-/* *****
     @name : background-gradient : horizontal || vertical
     @description : apply a grandient background color to a DOM element
     @params : @from (rgba or HEXA code), @to (rgba or HEXA code)
 
     NOTICE : For others background-gradients (diagonal, radial, transparent, etc...), please use the generator.
     @Generator : http://www.colorzilla.com/gradient-editor/
-***** */
-/* *****
-    @name : ._opacity
-    @description : apply the opacity property to a DOM element
-    @params : @opacity (0-1)
-
-    @exemple :
-      el {
-        ._opacity(0.5); // Apply a half-opacity (0.5) to <el>
-      }
 ***** */
 /* *****
     @name : ._clearfix
@@ -713,13 +658,13 @@ textarea {
 
     @exemple :
       a {
-        .opacity(0.5); // Default, apply a half-opacity to <a>
+        opacity0.5; // Default, apply a half-opacity to <a>
         ._transition; // Animate <a> on hover (all CSS properties)
         ._transition(0.4, opacity); // Animate only opacity on hover with a duration of 0.4s
 
         &:hover {
           background-color:red;
-          ._opacity(1); // Animate opacity with smoothy animation
+          opacity:1; // Animate opacity with smoothy animation
         }
       }
 ***** */
@@ -779,16 +724,6 @@ textarea {
         ._skew('X', 10deg); // <el> is skewed to 10deg on X axis
 
         ._skew('X', 10deg, 5deg); // <el> is skewed to 10deg on X axis & 5deg to Y axis
-      }
-***** */
-/* *****
-    @name : ._box-sizing
-    @description : apply box-sizing property to a DOM element
-    @params : @boxmodel (content-box | border-box | inherit);
-
-    @exemple :
-      el {
-          ._box-sizing(border-box);
       }
 ***** */
 /* *****
@@ -894,165 +829,27 @@ textarea {
       }
 ***** */
 /*
-    == FLEXBOX / FLEXBOX MIXINS ==
+    == RESPONSIVE / MEDIA QUERIES ==
 */
 /* *****
-    @name : ._flex-*
-    @description : generate flexbox
-    @params :
-      - -display : flex | inline-flex
-      - -direction : row | row-reverse | column | column-reverse
-      - -wrap : nowrap (single line) | wrap (multi-line) | wrap-reverse (multi-line)
-      - -justify : flex-start | flex-end | center | space-between | space-around
-      - -align : flex-start | flex-end | center | baseline | stretch
-      - -align-content : flex-start | flex-end | center | space-between | space-around | stretch
+    @name : ._tablet, ._phone and others media queries
+    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
+    @params : @rules (CSS rules)
 
     @exemple :
       el {
-          ._flex-display;
-          ._flex-direction(column);
+        background-color:white; // Default : Apply a white bg-color to the <el>
+
+        ._tablet({
+          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens <= @tablet-mw defined in settings.less
+        }); // don't forget the ;
+
+        ._phone({
+          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens <= @phone-mw defined in settings.less
+        }); // don't forget the ;
       }
+
 ***** */
-/* *****
-    @name : ._flex
-    @description : flex-grow, flex-shrink, flex-basis properties
-    @params : (grow shrink basis)
-
-    @exemple :
-      .parent {
-        ._flex-display;
-
-        .child {
-          ._flex(0 0 250px);
-        }
-      }
-***** */
-/* *****
-    @name : ._flex-order
-    @description : positionning order for childs elements in flexbox container
-    @params : int (negative allowed)
-
-    @exemple :
-      .parent {
-        ._flex-display;
-
-        .child {
-          ._flex(0 auto);
-
-          &:nth-child(1) {
-            ._flex-order(2); // this child will be displayed last
-          }
-
-          &:nth-child(2) {
-            ._flex-order(-1); // this child will be displayed before all others children
-          }
-        }
-      }
-***** */
-/* *****
-    @name : ._align-self
-    @description : positionning a child element in cross axis
-    @params : flex-start | flex-end | center | baseline | stretch
-
-    @exemple :
-      .parent {
-        ._flex-display;
-
-        .child {
-          ._flex(0 auto);
-
-          &:nth-child(2) {
-            ._flex-align-self(flex-end); // this child will be displayed with property align-self:flex-end
-          }
-        }
-      }
-***** */
-/*
-    == HACK IE10 ==
-    @ NOTE : Thanks to autoprefixer, the functions below are no longer used
-*/
-/*
-// JUSTIFY-CONTENT HACK
-._ms-flex-justify-content(@justify) when (@justify = space-between) {
-    -ms-flex-pack: justify;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = space-around) {
-    -ms-flex-pack: distribute;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = flex-start) {
-    -ms-flex-pack: start;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = flex-end) {
-    -ms-flex-pack: end;
-}
-
-._ms-flex-justify-content(@justify) when (@justify = center) {
-    -ms-flex-pack: center;
-}
-
-
-// ALIGN-CONTENT HACK
-._ms-flex-align-content(@align) when (@align = space-between) {
-    -ms-flex-line-pack: justify;
-}
-
-._ms-flex-align-content(@align) when (@align = space-around) {
-    -ms-flex-line-pack: distribute;
-}
-
-._ms-flex-align-content(@align) when (@align = flex-start) {
-    -ms-flex-line-pack: start;
-}
-
-._ms-flex-align-content(@align) when (@align = flex-end) {
-    -ms-flex-line-pack: end;
-}
-
-._ms-flex-align-content(@align) when (@align = center), (@align = stretch) {
-    -ms-flex-line-pack: @align;
-}
-
-
-// ALIGN-ITEMS HACK
-._ms-flex-align-items(@align) when (@align = flex-start) {
-    -ms-flex-align: start;
-}
-
-._ms-flex-align-items(@align) when (@align = flex-end) {
-    -ms-flex-align: end;
-}
-
-._ms-flex-align-items(@align) when (@align = center), (@align = baseline), (@align = stretch) {
-    -ms-flex-align: @align;
-}
-
-
-// ALIGN-SELF HACK
-._ms-flex-align-self(@align) when (@align = flex-start) {
-    -ms-flex-item-align: start;
-}
-
-._ms-flex-align-self(@align) when (@align = flex-end) {
-    -ms-flex-item-align: end;
-}
-
-._ms-flex-align-self(@align) when (@align = auto), (@align = center), (@align = baseline), (@align = stretch) {
-    -ms-flex-item-align: @align;
-}
-
-
-// WRAP HACK
-._ms-flex-wrap(@wrap) when (@wrap = nowrap) {
-    -ms-flex-wrap: none;
-}
-
-._ms-flex-wrap(@wrap) when (@wrap = wrap), (@wrap = wrap-reverse) {
-    -ms-flex-wrap: @wrap;
-}
-*/
 /*
     == ANIMATIONS ==
 */
@@ -1101,15 +898,9 @@ textarea {
   39%,
   100% {
     opacity: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-    filter: alpha(opacity=0);
-    zoom: 1;
   }
   40% {
     opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-    filter: alpha(opacity=100);
-    zoom: 1;
   }
 }
 @keyframes loaderDots {
@@ -1117,15 +908,9 @@ textarea {
   39%,
   100% {
     opacity: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-    filter: alpha(opacity=0);
-    zoom: 1;
   }
   40% {
     opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-    filter: alpha(opacity=100);
-    zoom: 1;
   }
 }
 /*
@@ -1518,9 +1303,6 @@ button.cc-fat.cc-loading:before {
 a.btn.cc-disabled,
 button.cc-disabled {
   opacity: 0.5;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  zoom: 1;
   cursor: not-allowed;
   /* old browser */
   pointer-events: none;
@@ -2043,16 +1825,10 @@ form .form-radio.disabled label {
   /* old browser */
   pointer-events: none;
   opacity: 0.5;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  zoom: 1;
 }
 form .form-checkbox.disabled label input,
 form .form-radio.disabled label input {
   opacity: 0.8;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
-  zoom: 1;
 }
 form .form-checkbox label,
 form .form-radio label {
@@ -2163,7 +1939,7 @@ form input {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   vertical-align: middle;
   background-color: white;
@@ -2224,9 +2000,6 @@ form input[disabled] {
   /* old browser */
   pointer-events: none;
   opacity: 0.5;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  zoom: 1;
 }
 form textarea[type="file"],
 form input[type="file"] {
@@ -2263,7 +2036,7 @@ form select {
   border: 1px solid #ddd;
   vertical-align: middle;
   font-size: 1.35rem;
-  box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
@@ -2340,7 +2113,7 @@ img.cc-shadowed {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
 /* ******** */
 /** LOADER **/
@@ -2353,8 +2126,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-2:before {
-  -webkit-animation-delay: 0.041666666666666664s;
-          animation-delay: 0.041666666666666664s;
+  -webkit-animation-delay: 0.08333333333333333s;
+          animation-delay: 0.08333333333333333s;
 }
 .cc-loader .dot.dot-3 {
   /* Not perspective */
@@ -2363,8 +2136,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-3:before {
-  -webkit-animation-delay: 0.08333333333333333s;
-          animation-delay: 0.08333333333333333s;
+  -webkit-animation-delay: 0.16666666666666666s;
+          animation-delay: 0.16666666666666666s;
 }
 .cc-loader .dot.dot-4 {
   /* Not perspective */
@@ -2373,8 +2146,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-4:before {
-  -webkit-animation-delay: 0.125s;
-          animation-delay: 0.125s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 .cc-loader .dot.dot-5 {
   /* Not perspective */
@@ -2383,8 +2156,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-5:before {
-  -webkit-animation-delay: 0.16666666666666666s;
-          animation-delay: 0.16666666666666666s;
+  -webkit-animation-delay: 0.3333333333333333s;
+          animation-delay: 0.3333333333333333s;
 }
 .cc-loader .dot.dot-6 {
   /* Not perspective */
@@ -2393,8 +2166,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-6:before {
-  -webkit-animation-delay: 0.20833333333333331s;
-          animation-delay: 0.20833333333333331s;
+  -webkit-animation-delay: 0.41666666666666663s;
+          animation-delay: 0.41666666666666663s;
 }
 .cc-loader .dot.dot-7 {
   /* Not perspective */
@@ -2403,8 +2176,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-7:before {
-  -webkit-animation-delay: 0.24999999999999997s;
-          animation-delay: 0.24999999999999997s;
+  -webkit-animation-delay: 0.49999999999999994s;
+          animation-delay: 0.49999999999999994s;
 }
 .cc-loader .dot.dot-8 {
   /* Not perspective */
@@ -2413,8 +2186,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-8:before {
-  -webkit-animation-delay: 0.29166666666666663s;
-          animation-delay: 0.29166666666666663s;
+  -webkit-animation-delay: 0.5833333333333333s;
+          animation-delay: 0.5833333333333333s;
 }
 .cc-loader .dot.dot-9 {
   /* Not perspective */
@@ -2423,8 +2196,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-9:before {
-  -webkit-animation-delay: 0.3333333333333333s;
-          animation-delay: 0.3333333333333333s;
+  -webkit-animation-delay: 0.6666666666666666s;
+          animation-delay: 0.6666666666666666s;
 }
 .cc-loader .dot.dot-10 {
   /* Not perspective */
@@ -2433,8 +2206,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-10:before {
-  -webkit-animation-delay: 0.375s;
-          animation-delay: 0.375s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 .cc-loader .dot.dot-11 {
   /* Not perspective */
@@ -2443,8 +2216,8 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-11:before {
-  -webkit-animation-delay: 0.4166666666666667s;
-          animation-delay: 0.4166666666666667s;
+  -webkit-animation-delay: 0.8333333333333334s;
+          animation-delay: 0.8333333333333334s;
 }
 .cc-loader .dot.dot-12 {
   /* Not perspective */
@@ -2453,13 +2226,13 @@ img.cc-shadowed {
   /* Perspective */
 }
 .cc-loader .dot.dot-12:before {
-  -webkit-animation-delay: 0.45833333333333337s;
-          animation-delay: 0.45833333333333337s;
+  -webkit-animation-delay: 0.9166666666666667s;
+          animation-delay: 0.9166666666666667s;
 }
 .cc-loader {
   margin: 50px auto;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   position: relative;
 }
 .cc-loader .dot {
@@ -2477,8 +2250,8 @@ img.cc-shadowed {
   height: 15%;
   background-color: #29b7e1;
   border-radius: 100%;
-  -webkit-animation: loaderDots 0.5s infinite ease-in-out both;
-          animation: loaderDots 0.5s infinite ease-in-out both;
+  -webkit-animation: loaderDots 1s infinite ease-in-out both;
+          animation: loaderDots 1s infinite ease-in-out both;
 }
 /*
     * /components/ - IMPORTS FILES *
@@ -2526,9 +2299,6 @@ img.cc-shadowed {
   height: 100%;
   background-color: transparent;
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  filter: alpha(opacity=100);
-  zoom: 1;
 }
 .alert button.close i {
   padding: 0;
@@ -4168,6 +3938,11 @@ img.cc-shadowed {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0 -1em;
   /* TABLET rules */
   /* PHONE rules */
@@ -4270,9 +4045,9 @@ img.cc-shadowed {
   padding: 1em;
   margin: 0em 1em 0em;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 1 0%;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
   /* Nested columns */
 }
 .columns .column.columns {
@@ -4911,9 +4686,6 @@ body.opened-modal {
   left: 0px;
   right: 0px;
   opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-  filter: alpha(opacity=0);
-  zoom: 1;
   /* Shown modal */
   /* Sizes */
   /* Close button */
@@ -4923,16 +4695,10 @@ body.opened-modal {
 }
 .modal.active {
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  filter: alpha(opacity=100);
-  zoom: 1;
   z-index: 99;
 }
 .modal.active .modal-content {
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  filter: alpha(opacity=100);
-  zoom: 1;
   /* X != Y */
   /* X only */
   -webkit-transform: scale(1);
@@ -5017,9 +4783,6 @@ body.opened-modal {
   z-index: 99;
   border-radius: 4px;
   opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-  filter: alpha(opacity=0);
-  zoom: 1;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   /* X != Y */

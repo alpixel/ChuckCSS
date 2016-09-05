@@ -48,13 +48,13 @@ ul {
                 &[class*="ion-"] {
                     &.icon-right {
                         position:relative;
-                        ._flex-display(inline-flex);
-                        ._flex-justify(space-between);
-                        ._flex-align-content(center);
-                        ._flex-align-items(center);
+                        display:inline-flex;
+                        justify-content:space-between;
+                        align-content:center;
+                        align-items:center;
 
                         &:before {
-                            ._flex-order(2);
+                            order:2;
                             margin:0 0 0 0.8em;
                         }
                     }

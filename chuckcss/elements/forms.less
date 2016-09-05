@@ -46,22 +46,22 @@ form {
 
                 input {
                     /* Middles inputs */
-                    ._border-radius(0px);
+                    border-radius:0px;
 
                     /* First input */
                     &:first-of-type {
-                        ._border-radius(@border-radius 0px 0px @border-radius);
+                        border-radius:@border-radius 0px 0px @border-radius;
                     }
 
                     /* Last input */
                     &:last-child{
-                        ._border-radius(0px @border-radius @border-radius 0px);
+                        border-radius:0px @border-radius @border-radius 0px;
                     }
                 }
 
                 /* Submit button */
                 button[type="submit"] {
-                    ._border-radius(0px @border-radius @border-radius 0px);
+                    border-radius:0px @border-radius @border-radius 0px;
                 }
 
                 /* Input with prefix/suffix */
@@ -71,7 +71,7 @@ form {
 
                     & + input[type="submit"],
                     & + button[type="submit"] {
-                        ._border-radius(@border-radius);
+                        border-radius:@border-radius;
                     }
                 }
             }
@@ -96,13 +96,13 @@ form {
             vertical-align: middle;
 
             :first-child {
-                ._border-radius(@border-radius 0px 0px @border-radius);
+                border-radius:@border-radius 0px 0px @border-radius;
             }
             :last-child {
-                ._border-radius(0px @border-radius @border-radius 0px);
+                border-radius:0px @border-radius @border-radius 0px;
             }
             input:not(:first-child):not(:last-child) {
-                ._border-radius(0px);
+                border-radius:0px;
             }
 
             span {
@@ -159,10 +159,10 @@ form {
                 label {
                     cursor:not-allowed; /* old browser */
                     pointer-events:none;
-                    ._opacity(0.5);
+                    opacity:0.5;
 
                     input {
-                        ._opacity(0.8);
+                        opacity:0.8;
                     }
                 }
             }
@@ -247,14 +247,14 @@ form {
         */
         &-radio {
             input {
-                ._border-radius(100%);
+                border-radius:100%;
 
 
                 &:before {
                     display:block;
                     width:6px;
                     height:6px;
-                    ._border-radius(100%);
+                    border-radius:100%;
                     background-color:transparent;
                 }
 
@@ -297,8 +297,8 @@ form {
     textarea,
     input {
         ._inline;
-        ._box-shadow('inset 0px 1px 2px 0px rgba(0,0,0,0.1)');
-        ._border-radius(unit(@input-br,px));
+        box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.1);
+        border-radius:unit(@input-br,px);
         vertical-align: middle;
         background-color:@input-bg;
         padding:0 1em;
@@ -320,7 +320,7 @@ form {
 
         /* Error inputs */
         &.error {
-            ._box-shadow('none');
+            box-shadow:none;
             background-color:lighten(@red,50%);
             border-color:lighten(@red,40%);
             color:@red-da;
@@ -346,14 +346,14 @@ form {
         &[disabled] {
             cursor:not-allowed; /* old browser */
             pointer-events:none;
-            ._opacity(0.5);
+            opacity:0.5;
         }
 
         /* Reset type file input */
         &[type="file"] {
             ._reset;
             height:inherit;
-            ._box-shadow('none');
+            box-shadow:none;
         }
 
         /* Placeholder color */
@@ -384,8 +384,8 @@ form {
         border:1px solid @input-bc;
         vertical-align: middle;
         font-size:@input-fs;
-        ._box-shadow('inset 0px 1px 2px 0px rgba(0,0,0,0.1)');
-        ._border-radius(unit(@input-br,px));
+        box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.1);
+        border-radius:unit(@input-br,px);
         ._transition;
 
         /* Hack IE8 & < */
@@ -411,8 +411,8 @@ form {
         vertical-align: middle;
         ._transition;
         ._uppercase;
-        ._box-shadow('none');
-        ._border-radius(unit(@input-br,px));
+        box-shadow:none;
+        border-radius:unit(@input-br,px);
         ._btn(@submit-bg);
 
         &[class*="fa-"],
