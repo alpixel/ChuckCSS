@@ -36,7 +36,7 @@ button {
     text-align:center;
     font-size: @links-fs;
     vertical-align:middle;
-    ._border-radius(unit(@links-btn-br,px));
+    border-radius:unit(@links-btn-br,px);
     ._btn(white, white);
     ._transition;
 
@@ -55,7 +55,7 @@ button {
     &.cc {
         /* disabled */
         &-disabled {
-            ._opacity(0.5);
+            opacity:0.5;
             cursor:not-allowed; /* old browser */
             pointer-events:none;
         }
@@ -83,7 +83,7 @@ button {
                 border-right-color: lighten(@gray-li,50%);
                 border-bottom-color: lighten(@gray-li,50%);
                 border-left-color: lighten(@gray-li,50%);
-                ._border-radius(50%);
+                border-radius:100%;
                 content: " ";
                 width: 16px;
                 height: 16px;

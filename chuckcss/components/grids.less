@@ -13,8 +13,8 @@
 ._phone({._generatePhoneColumns;}); // Launch _generatePhoneColumns
 
 .columns {
-    ._flex-display;
-    ._flex-wrap(wrap);
+    display:flex;
+    flex-wrap:wrap;
     margin:0 -@cols-gutter/2;
 
     &.cc {
@@ -37,7 +37,7 @@
         ._reset;
         padding:@cols-pa;
         margin:@cols-ma-top @cols-gutter/2 @cols-ma-bottom;
-        ._flex(1);
+        flex:1 1 0%;
 
         /* Nested columns */
         &.columns {
@@ -60,11 +60,11 @@
             }
 
             &-first-t {
-                ._flex-order(-2);
+                order:-2;
             }
 
             &-last-t {
-                ._flex-order(2);
+                order:2;
             }
         }
 
@@ -86,11 +86,11 @@
             }
 
             &-first-s {
-                ._flex-order(-3);
+                order:-3;
             }
 
             &-last-s {
-                ._flex-order(3);
+                order:3;
             }
         }
 

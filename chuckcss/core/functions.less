@@ -4,11 +4,7 @@
 
 /*
 ** Functions/mixins list **
-    ._tablet, ._phone, etc...
-    ._border-radius
-    ._box-shadow
     ._bg-vertical | ._bg-horizontal
-    ._opacity
     ._clearfix
     ._displayTable
     ._inline
@@ -16,7 +12,6 @@
     ._transition
     ._transform
     ._rotate | ._scale | ._translate3d | ._skew
-    ._box-sizing
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._placeHold
     ._reset
@@ -28,85 +23,7 @@
     ._btn
 */
 
-/* *****
-    @name : ._tablet, ._phone and others media queries
-    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
-    @params : @rules (CSS rules)
 
-    @exemple :
-      el {
-        background-color:white; // Default : Apply a white bg-color to the <el>
-
-        ._tablet({
-          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens <= @tablet-mw defined in settings.less
-        }); // don't forget the ;
-
-        ._phone({
-          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens <= @phone-mw defined in settings.less
-        }); // don't forget the ;
-      }
-
-***** */
-// For screens < 767px
-._phone(@rules) {
-    @media screen and (max-width: @phone-mw) {
-        @rules();
-    }
-}
-// For screens < 1200px
-._tablet(@rules) {
-    @media screen and (max-width: @tablet-mw) {
-        @rules();
-    }
-}
-// For screens >= 768px
-._tabletUp(@rules) {
-    @media screen and (min-width: (@phone-mw+1)) {
-        @rules();
-    }
-}
-// For screens >= 1201px
-._desktop(@rules) {
-    @media screen and (min-width: (@tablet-mw+1)) {
-        @rules();
-    }
-}
-// For IE only
-._ie(@rules) {
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        @rules();
-    }
-}
-
-
-/* *****
-    @name : ._border-radius
-    @description : apply the border-radius property to a DOM element
-    @params : @radius (pixels)
-
-    @exemple :
-      el {
-        ._border-radius(5px 0 0 5px); // Will apply a border-radius:5px 0 0 5px to <el>
-      }
-***** */
-._border-radius (@radius: 5px) {
-  border-radius: @radius;
-}
-/* *****
-    @name : ._box-shadow
-    @description : apply the box-shadow property to a DOM element
-    @values : string (see exemples below)
-
-    @exemples :
-      el {
-        ._box-shadow('1px 1px 5px 0px rgba(0,0,0,0.5) inset, 1px 1px 5px 0px rgba(0,0,0,0.5)'); //  Multi-values
-        ._box-shadow('1px 1px 5px 0px rgba(0,0,0,0.5) inset'); //  Single Value
-        ._box-shadow('none'); //  Reset value
-      }
-***** */
-._box-shadow (@values) {
-  box-shadow: e(@values);
-}
 /* *****
     @name : background-gradient : horizontal || vertical
     @description : apply a grandient background color to a DOM element
@@ -116,30 +33,14 @@
     @Generator : http://www.colorzilla.com/gradient-editor/
 ***** */
 ._bg-vertical(@from:#000, @to:#fff) {
-  background: @from; /* Old browsers */
-  background: linear-gradient(to bottom,  @from 0%, @to 100%); /* W3C */
+      background: @from; /* Old browsers */
+      background: linear-gradient(to bottom,  @from 0%, @to 100%); /* W3C */
 }
 ._bg-horizontal(@from:#000, @to:#fff) {
-  background: @from; /* Old browsers */
-  background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
+      background: @from; /* Old browsers */
+      background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
 }
-/* *****
-    @name : ._opacity
-    @description : apply the opacity property to a DOM element
-    @params : @opacity (0-1)
 
-    @exemple :
-      el {
-        ._opacity(0.5); // Apply a half-opacity (0.5) to <el>
-      }
-***** */
-._opacity(@opacity:1) when (isnumber(@opacity)) {
-  @opacityIE : @opacity*100;
-  opacity:@opacity;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=@opacityIE);
-  filter:alpha(opacity=@opacityIE);
-  zoom: 1;
-}
 /* *****
     @name : ._clearfix
     @description : reset floated elements
@@ -216,18 +117,18 @@
 
     @exemple :
       a {
-        .opacity(0.5); // Default, apply a half-opacity to <a>
+        opacity0.5; // Default, apply a half-opacity to <a>
         ._transition; // Animate <a> on hover (all CSS properties)
         ._transition(0.4, opacity); // Animate only opacity on hover with a duration of 0.4s
 
         &:hover {
           background-color:red;
-          ._opacity(1); // Animate opacity with smoothy animation
+          opacity:1; // Animate opacity with smoothy animation
         }
       }
 ***** */
 ._transition(@duration:.2s, @property:all, @effect:ease-out, @delay:0s) {
-  transition:@arguments;
+    transition:@arguments;
 }
 /* *****
     @name : ._transform
@@ -248,7 +149,7 @@
     }
 ***** */
 ._transform(...) {
-  transform+_: @arguments;
+    transform+_: @arguments;
 }
 /* *****
     @exemples :
@@ -261,14 +162,14 @@
       }
 ***** */
 ._rotate(@deg:10deg, @axis:~'',@perspective : ~'') {
-  /* Not perspective */
-  & when not (isnumber(@perspective)) {
-    ._transform(~"rotate@{axis}(@{deg})");
-  }
-  /* Perspective */
-  & when (isnumber(@perspective)) {
-    ._transform(~"perspective(@{perspective}) rotate@{axis}(@{deg})");
-  }
+    /* Not perspective */
+    & when not (isnumber(@perspective)) {
+        ._transform(~"rotate@{axis}(@{deg})");
+    }
+    /* Perspective */
+    & when (isnumber(@perspective)) {
+        ._transform(~"perspective(@{perspective}) rotate@{axis}(@{deg})");
+    }
 }
 /* *****
     @exemples :
@@ -281,18 +182,18 @@
       }
 ***** */
 ._scale(@x:~'', @y:~'', @default : 1.2) {
-  /* X != Y */
-  & when (isnumber(@y)) and (isnumber(@x)) and not (@x = @y) {
-    ._transform(scale(@x,@y));
-  }
-  /* X only */
-  & when (isnumber(@x)) and not (isnumber(@y)) {
-    ._transform(scale(@x));
-  }
-  /* X & Y empty : default value */
-  & when not (isnumber(@y)) and not (isnumber(@x)) {
-    ._transform(scale(@default));
-  }
+    /* X != Y */
+    & when (isnumber(@y)) and (isnumber(@x)) and not (@x = @y) {
+        ._transform(scale(@x,@y));
+    }
+    /* X only */
+    & when (isnumber(@x)) and not (isnumber(@y)) {
+        ._transform(scale(@x));
+    }
+    /* X & Y empty : default value */
+    & when not (isnumber(@y)) and not (isnumber(@x)) {
+        ._transform(scale(@default));
+    }
 }
 /* *****
     @exemples :
@@ -318,36 +219,23 @@
       }
 ***** */
 ._skew(@axis:~'', @x:~'', @y:~'') {
-  /* X only */
-  & when (isstring(@axis)) and (isnumber(@x)) and not (isnumber(@y)) {
-    ._transform(~"skew@{axis}(@{x})");
-  }
-  /* Y only */
-  & when (isstring(@axis)) and (isnumber(@y)) and not (isnumber(@x)) {
-    ._transform(~"skew@{axis}(@{y})");
-  }
-  /* X and Y : no @axis */
-  & when (isnumber(@y)) and (isnumber(@x)) {
-    ._transform(~"skew(@{x}, @{y})");
-  }
+    /* X only */
+    & when (isstring(@axis)) and (isnumber(@x)) and not (isnumber(@y)) {
+        ._transform(~"skew@{axis}(@{x})");
+    }
+    /* Y only */
+    & when (isstring(@axis)) and (isnumber(@y)) and not (isnumber(@x)) {
+        ._transform(~"skew@{axis}(@{y})");
+    }
+    /* X and Y : no @axis */
+    & when (isnumber(@y)) and (isnumber(@x)) {
+        ._transform(~"skew(@{x}, @{y})");
+    }
 }
 
 
 
 
-/* *****
-    @name : ._box-sizing
-    @description : apply box-sizing property to a DOM element
-    @params : @boxmodel (content-box | border-box | inherit);
-
-    @exemple :
-      el {
-          ._box-sizing(border-box);
-      }
-***** */
-._box-sizing(@boxmodel:content-box) {
-    box-sizing: @boxmodel;
-}
 /* *****
     @name : ._filter
     @params : all CSS3 filters : blur, grayscale, drop-shadow, sepia, brightness, constrast, invert...
@@ -405,9 +293,9 @@
       }
 ***** */
 ._reset() {
-  padding:0;
-  margin:0;
-  border:0;
+    padding:0;
+    margin:0;
+    border:0;
 }
 /* *****
     @name : ._uppercase
@@ -415,7 +303,7 @@
     @wtf : just because it's boring to write the whole property
 ***** */
 ._uppercase() {
-  text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 /* *****
@@ -430,16 +318,16 @@
       }
 ***** */
 ._fa(@content, @size:10pt, @color:#000){
-  ._inline;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size:@size;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color:@color;
-  content:@content;
+    ._inline;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:@color;
+    content:@content;
 }
 /* *****
     @name : ._io
@@ -453,20 +341,20 @@
       }
 ***** */
 ._io(@content, @size:10pt, @color:#000){
-  ._inline;
-  font-family: "Ionicons";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size:@size;
-  color:@color;
-  content:@content;
+    ._inline;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:@size;
+    color:@color;
+    content:@content;
 }
 /* *****
     @name : ._cover
@@ -479,12 +367,12 @@
       }
 ***** */
 ._cover() {
-  background-size: cover; /* Standard */
-  background-repeat:no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size:100% 100%\9; /* <= IE8 */
-  background-position: center top\9; /* <= IE8 */
+    background-size: cover; /* Standard */
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:100% 100%\9; /* <= IE8 */
+    background-position: center top\9; /* <= IE8 */
 }
 /* *****
     @name : ._truncate
@@ -497,10 +385,10 @@
       }
 ***** */
 ._truncate(@width : 200px) when (ispixel(@width)) {
-  width:@width;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    width:@width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* *****
     @name : ._btn
@@ -517,24 +405,24 @@
       }
 ***** */
 ._setBtnBgHover(@bg) {
-  @bgHover : darken(@bg,10%);
+    @bgHover : darken(@bg,10%);
 
-  &:hover {
-    background-color:@bgHover;
-  }
+    &:hover {
+        background-color:@bgHover;
+    }
 }
 ._btn(@bg : @links-btn-bg, @bgHover :~'') when (iscolor(@bg)) {
-  background-color:@bg;
+    background-color:@bg;
 
-  /* If Hover is specified */
-  & when (iscolor(@bgHover)) {
-    &:hover {
-      background-color:@bgHover;
+    /* If Hover is specified */
+    & when (iscolor(@bgHover)) {
+        &:hover {
+            background-color:@bgHover;
+        }
     }
-  }
-  /* else */
-  & when not (iscolor(@bgHover)) {
-    /* Hover color will be @bg but 10% darken */
-    ._setBtnBgHover(@bg);
-  }
+    /* else */
+    & when not (iscolor(@bgHover)) {
+        /* Hover color will be @bg but 10% darken */
+        ._setBtnBgHover(@bg);
+    }
 }
