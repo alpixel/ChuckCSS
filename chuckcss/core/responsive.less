@@ -1,0 +1,53 @@
+/*
+    == RESPONSIVE / MEDIA QUERIES ==
+*/
+
+/* *****
+    @name : ._tablet, ._phone and others media queries
+    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
+    @params : @rules (CSS rules)
+
+    @exemple :
+      el {
+        background-color:white; // Default : Apply a white bg-color to the <el>
+
+        ._tablet({
+          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens <= @tablet-mw defined in settings.less
+        }); // don't forget the ;
+
+        ._phone({
+          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens <= @phone-mw defined in settings.less
+        }); // don't forget the ;
+      }
+
+***** */
+// For screens <= 767px
+._phone(@rules) {
+    @media screen and (max-width: @phone-mw) {
+        @rules();
+    }
+}
+// For screens <= 1200px
+._tablet(@rules) {
+    @media screen and (max-width: @tablet-mw) {
+        @rules();
+    }
+}
+// For screens >= 768px
+._tabletUp(@rules) {
+    @media screen and (min-width: (@phone-mw+1)) {
+        @rules();
+    }
+}
+// For screens >= 1201px
+._desktop(@rules) {
+    @media screen and (min-width: (@tablet-mw+1)) {
+        @rules();
+    }
+}
+// For IE only
+._ie(@rules) {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @rules();
+    }
+}

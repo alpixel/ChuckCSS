@@ -80,9 +80,26 @@ gulp.task('chuckcss_print', function() {
         .pipe(gulp.dest('dist/'));
 });
 
+/*
+    * TEST FILE (index)
+*/
+gulp.task('test', function() {
+    gulp.src('tests/test.less')
+        .pipe(less())
+        .pipe(cssnano({
+            'postcss-minify-font-values': true
+        }))
+        .pipe(autoprefixer({
+            browsers:"> 1%, last 2 versions, Safari >= 8"
+        }))
+        .pipe(rename({basename: 'test'}))
+        .pipe(gulp.dest('tests/'));
+});
+
 gulp.task('watch', function() {
     gulp.watch('chuckcss/**/*.less', ['chuckcss_minify_less', 'chuckcss_less']);
     gulp.watch('chuckcss/print.less', ['chuckcss_print']);
+    gulp.watch('tests/test.less', ['test']);
     gulp.watch('chuckcss/bootstrap/**/*.less', ['chuckcss_bootstrap', 'chuckcss_minify_bootstrap']);
 });
 
@@ -91,5 +108,6 @@ gulp.task('default', [
   'chuckcss_minify_less',
   'chuckcss_print',
   'chuckcss_bootstrap',
-  'chuckcss_minify_bootstrap'
+  'chuckcss_minify_bootstrap',
+  'test'
 ]);

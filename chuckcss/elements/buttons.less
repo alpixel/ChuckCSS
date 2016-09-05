@@ -36,7 +36,7 @@ button {
     text-align:center;
     font-size: @links-fs;
     vertical-align:middle;
-    ._border-radius(unit(@links-btn-br,px));
+    border-radius:unit(@links-btn-br,px);
     ._btn(white, white);
     ._transition;
 
@@ -110,7 +110,7 @@ button {
 
         /* disabled */
         &-disabled {
-            ._opacity(0.5);
+            opacity:0.5;
             cursor:not-allowed; /* old browser */
             pointer-events:none;
         }
@@ -138,7 +138,7 @@ button {
                 border-right-color: lighten(@gray-li,50%);
                 border-bottom-color: lighten(@gray-li,50%);
                 border-left-color: lighten(@gray-li,50%);
-                ._border-radius(50%);
+                border-radius :50%;
                 content: " ";
                 width: 16px;
                 height: 16px;
@@ -156,14 +156,14 @@ button {
     /* Icon right */
     &.icon-right {
         position:relative;
-        ._flex-display(inline-flex);
-        ._flex-justify(center);
-        ._flex-align-content(center);
-        ._flex-align-items(center);
+        display:inline-flex;
+        justify-content:center;
+        align-content:center;
+        align-items:center;
 
         i:before,
         &:before {
-            ._flex-order(2);
+            order:2;
             margin:0 0 0 0.8em;
         }
     }
