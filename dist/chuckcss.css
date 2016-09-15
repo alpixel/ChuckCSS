@@ -890,7 +890,7 @@ textarea {
   }
 }
 /* *****
-    @name : ._loader
+    @name : loaderDots
     @description : animate standart loader
 ***** */
 @-webkit-keyframes loaderDots {
@@ -911,6 +911,66 @@ textarea {
   }
   40% {
     opacity: 1;
+  }
+}
+/* *****
+    @name : checkdio
+    @description : animate radio & checkox inputs when checked
+***** */
+@-webkit-keyframes checkdio {
+  0% {
+    opacity: .4;
+    /* X != Y */
+    /* X only */
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    /* X & Y empty : default value */
+  }
+  10% {
+    /* X != Y */
+    /* X only */
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    /* X & Y empty : default value */
+  }
+  90% {
+    /* X != Y */
+    /* X only */
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    /* X & Y empty : default value */
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes checkdio {
+  0% {
+    opacity: .4;
+    /* X != Y */
+    /* X only */
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    /* X & Y empty : default value */
+  }
+  10% {
+    /* X != Y */
+    /* X only */
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    /* X & Y empty : default value */
+  }
+  90% {
+    /* X != Y */
+    /* X only */
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    /* X & Y empty : default value */
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*
@@ -1894,6 +1954,8 @@ form .form-checkbox input:before {
 form .form-checkbox input:checked {
   background-color: #29b7e1;
   border-color: #29b7e1;
+  -webkit-animation: checkdio 0.25s ease-out;
+          animation: checkdio 0.25s ease-out;
 }
 form .form-checkbox input:checked:before {
   display: block;
@@ -1911,6 +1973,10 @@ form .form-radio input:before {
   height: 6px;
   border-radius: 100%;
   background-color: transparent;
+}
+form .form-radio input:checked {
+  -webkit-animation: checkdio 0.25s ease-out;
+          animation: checkdio 0.25s ease-out;
 }
 form .form-radio input:checked:before {
   background-color: #29b7e1;

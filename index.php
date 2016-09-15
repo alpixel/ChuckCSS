@@ -2863,7 +2863,7 @@
                 </table>
             </div>
 
-            <div class="main cc-forms">
+            <div class="main cc-forms active">
                 <h3 class="title">Forms</h3>
 
                 <pre class="HTML">
@@ -3561,7 +3561,7 @@
                 </p>
             </div>
 
-            <div class="main cc-loading active">
+            <div class="main cc-loading">
                 <h3 class="title">Loader</h3>
                 <pre class="HTML">
                     <code class="language-less">
