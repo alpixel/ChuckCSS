@@ -12,28 +12,39 @@
     @description : animate loading buttons
 ***** */
 ._loading-spin(@duration:1s){
-  animation-name: loading-spin;
-  animation-duration: @duration;
-  animation-timing-function: linear;
-  transform-origin: 50% 50%;
-  animation-iteration-count: infinite;
+    animation-name: loading-spin;
+    animation-duration: @duration;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
 }
 @keyframes loading-spin {
-  from {._rotate(0deg);}
-  to{._rotate(360deg);}
+    from {._rotate(0deg);}
+    to{._rotate(360deg);}
 }
-
+@-webkit-keyframes loading-spin {
+    from {._rotate(0deg);}
+    to{._rotate(360deg);}
+}
 
 
 /* *****
-    @name : loaderDots
-    @description : animate standart loader dots
+    @name : loader Dots
+    @description : animate dots loader
 ***** */
 @keyframes loaderDots {
-  0%, 39%, 100% { opacity:0; }
-  40% { opacity:1; }
+    0%, 39%, 100% { opacity:0 }
+    40% { opacity:1; }
 }
 
+/* *****
+    @name : loader Spinner
+    @description : animate spinner loader
+***** */
+@keyframes loaderSpinner {
+    0% { ._rotate(0deg) }
+    100% { ._rotate(360deg) }
+}
 
 
 /* *****

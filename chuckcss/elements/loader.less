@@ -4,23 +4,7 @@
 
 /* ********************* */
 
-
-// <div class="cc-loader">
-//     <div class="dot dot-1"></div>
-//     <div class="dot dot-2"></div>
-//     <div class="dot dot-3"></div>
-//     <div class="dot dot-4"></div>
-//     <div class="dot dot-5"></div>
-//     <div class="dot dot-6"></div>
-//     <div class="dot dot-7"></div>
-//     <div class="dot dot-8"></div>
-//     <div class="dot dot-9"></div>
-//     <div class="dot dot-10"></div>
-//     <div class="dot dot-11"></div>
-//     <div class="dot dot-12"></div>
-// </div>
-
-._generateDotsLoader(@iterator, @loaderTimer, @loaderRadius) when(@iterator <= @dots-count) {
+._generateDotsLoader(@iterator, @loaderTimer, @loaderRadius) when(@iterator <= @loader-dots-count) {
     .cc-loader .dot.dot-@{iterator} {
         ._rotate(~"@{loaderRadius}deg");
 
@@ -29,16 +13,30 @@
         }
     }
 
-    ._generateDotsLoader(@iterator + 1 , @loader-animation-delay + @loaderTimer, @loaderRadius + @loader-radius);
+    ._generateDotsLoader(@iterator + 1 , @loader-dots-animation-delay + @loaderTimer, @loaderRadius + @loader-dots-radius);
 }
-._generateDotsLoader(2, @loader-animation-delay, @loader-radius);
+._generateDotsLoader(2, @loader-dots-animation-delay, @loader-dots-radius);
 
 .cc-loader {
     margin: 50px auto;
-    width: 80px;
-    height: 80px;
+    width: unit(@loader-wi,px);
+    height: unit(@loader-he,px);
     position: relative;
 
+    // <div class="cc-loader">
+    //     <div class="dot dot-1"></div>
+    //     <div class="dot dot-2"></div>
+    //     <div class="dot dot-3"></div>
+    //     <div class="dot dot-4"></div>
+    //     <div class="dot dot-5"></div>
+    //     <div class="dot dot-6"></div>
+    //     <div class="dot dot-7"></div>
+    //     <div class="dot dot-8"></div>
+    //     <div class="dot dot-9"></div>
+    //     <div class="dot dot-10"></div>
+    //     <div class="dot dot-11"></div>
+    //     <div class="dot dot-12"></div>
+    // </div>
     .dot {
         width: 100%;
         height: 100%;
@@ -52,9 +50,56 @@
             margin: 0 auto;
             width: 15%;
             height: 15%;
-            background-color: @dots-bg;
+            background-color:@loader-bg;
             border-radius:100%;
             animation: ~"loaderDots @{loader-speed}s infinite ease-in-out both";
+        }
+    }
+
+
+    // <div class="cc-loader">
+    //     <div class="spinner"></div>
+    // </div>
+    .spinner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius:50%;
+        border-color:@loader-bg transparent transparent transparent;
+        border-width:unit(@loader-spinner-bw, px);
+        border-style:solid;
+        animation: ~"loaderSpinner @{loader-speed}s infinite linear";
+        transform-origin:center center;
+
+        &:before,
+        &:after {
+            display:block;
+            position:absolute;
+            content:' ';
+            border-color:@loader-bg transparent transparent transparent;
+            border-width:unit(@loader-spinner-bw, px);
+            border-style:solid;
+            border-radius:50%;
+        }
+
+        &:before {
+            top:5%;
+            left:5%;
+            right:5%;
+            bottom:5%;
+            @speed : @loader-speed * 1.5;
+            animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
+        }
+
+        &:after {
+            top:14%;
+            left:14%;
+            right:14%;
+            bottom:14%;
+            @speed : @loader-speed * 0.75;
+            animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
         }
     }
 }
