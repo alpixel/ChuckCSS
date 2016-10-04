@@ -2342,33 +2342,29 @@ img.cc-shadowed {
   -webkit-transform-origin: center center;
           transform-origin: center center;
 }
-.cc-loader .spinner:before {
+.cc-loader .spinner:before,
+.cc-loader .spinner:after {
   display: block;
   position: absolute;
+  content: ' ';
+  border-color: #29b7e1 transparent transparent transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+}
+.cc-loader .spinner:before {
   top: 5%;
   left: 5%;
   right: 5%;
   bottom: 5%;
-  content: ' ';
-  border-color: #29b7e1 transparent transparent transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 50%;
   -webkit-animation: loaderSpinner 1.5s infinite ease-in-out;
           animation: loaderSpinner 1.5s infinite ease-in-out;
 }
 .cc-loader .spinner:after {
-  display: block;
-  position: absolute;
   top: 14%;
   left: 14%;
   right: 14%;
   bottom: 14%;
-  content: ' ';
-  border-color: #29b7e1 transparent transparent transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 50%;
   -webkit-animation: loaderSpinner 0.75s infinite ease-in-out;
           animation: loaderSpinner 0.75s infinite ease-in-out;
 }
