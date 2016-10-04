@@ -15,6 +15,7 @@
         "-mc" : main-color
         "-bg" : background-color
         "-bc" : border-color
+        "-bw" : border-width
         "-tc" : text-color
         "-ic" : icon color
         "-su" : success
@@ -77,9 +78,6 @@
 /* Texts line-height : ~= font-size*1.5 */
 /*
     -- @ Links @ --
-    * HTML
-        <a href="#" class="btn">My button link</a>
-        <button class="btn">My button</button>
 */
 /* Links ~ Text color */
 /* Links ~ Font-size */
@@ -91,27 +89,12 @@
 /* <a class="btn cc-fat"> font-size */
 /*
     -- @ Titles @ --
-    * HTML
-        <Hn>My Heading title</Hn>
 */
 /* Hn ~ Titles main color */
 /* Subtitle font-color */
 /* Subtitle font-color */
 /*
     -- @ Tables @ --
-    * HTML
-        <table class="hover colored"> // exemple
-            <thead>
-                <tr>
-                    <th>My Head lind</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lorem Ipsum</td>
-                </tr>
-            </tbody>
-        </table>
 */
 /* <th> & <td> padding */
 /* Line below tables */
@@ -121,8 +104,6 @@
 /* <thead><th> main color */
 /*
     -- @ Forms @ --
-    * HTML
-        Read all exemples in elements/forms.less file
 */
 /* Primary color for forms elements */
 /* Input ~ bg-color */
@@ -138,36 +119,25 @@
 /* Suffix padding */
 /* Suffix text color */
 /*
-    -- @ Alerts @ --
-    * HTML
-        <div class="alert alert-error">...</div>
-        <div class="alert alert-success">...</div>
-*/
-/* Alerts border-radius (pixel)
-/* success */
-/* error */
-/* warning */
-/* info */
-/*
     -- @ Blockquotes @ --
-    * HTML
-        <blockquote class="quoted">
-            <p>A odio tristique cum aliquam, integer? Etiam. A odio tristique cum aliquam, integer? Etiam. A odio tristique cum aliquam, integer? Etiam.A odio tristique cum aliquam, integer? Etiam.</p>
-            <footer>
-                Someone famous in <cite title="Les hackis pour la vie">Les hackis pour la vie</cite>
-            </footer>
-        </blockquote>
 */
 /* Blockquote ~ border-left color */
 /* Blockquote ~ FontAwesome icon color (only for <blockquote.quoted>) */
 /* Blockquote ~ footer text-color */
 /*
+    -- @ Alerts @ --
+*/
+/* Alerts border-radius (in pixel)
+/* success */
+/* error */
+/* warning */
+/* info */
+/*
+    -- @ Badges @ --
+*/
+/* Badges - border-radius in pixel */
+/*
     -- @ Grids @ --
-    * HTML
-        <div class="columns">
-            <div class="column cc-6">6 columns</div>
-            <div class="column cc-6">6 columns</div>
-        </div>
 */
 /* Gutter between 2 cols = Each column margin-left & margin-right */
 /* Total of cols in grid */
@@ -191,10 +161,17 @@
 /*
     -- @ Loader @ --
 */
-/* Background-color of each dot */
-/* Number of dots */
-/* Calculation of each dot radius */
-/* Calculation of each dot delay-animation */
+/* general */
+/* Loader main color */
+/* Loader wrapper width (in pixels) */
+/* Loader wrapper height (in pixels) */
+/* Loader speed animation (in seconds) */
+/* dots */
+/* Loader dots : nb of dots */
+/* Loader dots : Calculation of each dot radius */
+/* Loader dots  :Calculation of each dot animation delay */
+/* spinner */
+/* Loader spinner : border-width */
 /*
     -- @ FONTS MIXINS @ --
     "Here define the fonts"
@@ -890,8 +867,8 @@ textarea {
   }
 }
 /* *****
-    @name : ._loader
-    @description : animate standart loader
+    @name : loader Dots
+    @description : animate dots loader
 ***** */
 @-webkit-keyframes loaderDots {
   0%,
@@ -911,6 +888,38 @@ textarea {
   }
   40% {
     opacity: 1;
+  }
+}
+/* *****
+    @name : loader Spinner
+    @description : animate spinner loader
+***** */
+@-webkit-keyframes loaderSpinner {
+  0% {
+    /* Not perspective */
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    /* Perspective */
+  }
+  100% {
+    /* Not perspective */
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    /* Perspective */
+  }
+}
+@keyframes loaderSpinner {
+  0% {
+    /* Not perspective */
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    /* Perspective */
+  }
+  100% {
+    /* Not perspective */
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    /* Perspective */
   }
 }
 /* *****
@@ -1810,13 +1819,13 @@ form .form-item.chained input {
   /* Last input */
 }
 form .form-item.chained input:first-of-type {
-  border-radius: 3px 0px 0px 3px;
+  border-radius: 1px 0px 0px 1px;
 }
 form .form-item.chained input:last-child {
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 1px 1px 0px;
 }
 form .form-item.chained button[type="submit"] {
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 1px 1px 0px;
 }
 form .form-item.chained .form-ps {
   display: inline-block;
@@ -1826,7 +1835,7 @@ form .form-item.chained .form-ps {
 }
 form .form-item.chained .form-ps + input[type="submit"],
 form .form-item.chained .form-ps + button[type="submit"] {
-  border-radius: 3px;
+  border-radius: 1px;
 }
 form .form-ps {
   font-size: 0;
@@ -1838,10 +1847,10 @@ form .form-ps {
   vertical-align: middle;
 }
 form .form-ps :first-child {
-  border-radius: 3px 0px 0px 3px;
+  border-radius: 1px 0px 0px 1px;
 }
 form .form-ps :last-child {
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 1px 1px 0px;
 }
 form .form-ps input:not(:first-child):not(:last-child) {
   border-radius: 0px;
@@ -2006,7 +2015,7 @@ form input {
   *display: inline;
   zoom: 1;
   box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 1px;
   vertical-align: middle;
   background-color: white;
   padding: 0 1em;
@@ -2103,7 +2112,7 @@ form select {
   vertical-align: middle;
   font-size: 1.35rem;
   box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 1px;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   /* Hack IE8 & < */
@@ -2126,7 +2135,7 @@ form button[type="submit"] {
   transition: 0.2s all ease-out 0s;
   text-transform: uppercase;
   box-shadow: none;
-  border-radius: 3px;
+  border-radius: 1px;
   background-color: #29b7e1;
   /* If Hover is specified */
   /* else */
@@ -2297,8 +2306,8 @@ img.cc-shadowed {
 }
 .cc-loader {
   margin: 50px auto;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   position: relative;
 }
 .cc-loader .dot {
@@ -2318,6 +2327,47 @@ img.cc-shadowed {
   border-radius: 100%;
   -webkit-animation: loaderDots 1s infinite ease-in-out both;
           animation: loaderDots 1s infinite ease-in-out both;
+}
+.cc-loader .spinner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  border-color: #29b7e1 transparent transparent transparent;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-animation: loaderSpinner 1s infinite linear;
+          animation: loaderSpinner 1s infinite linear;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.cc-loader .spinner:before,
+.cc-loader .spinner:after {
+  display: block;
+  position: absolute;
+  content: ' ';
+  border-color: #29b7e1 transparent transparent transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+}
+.cc-loader .spinner:before {
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  -webkit-animation: loaderSpinner 1.5s infinite ease-in-out;
+          animation: loaderSpinner 1.5s infinite ease-in-out;
+}
+.cc-loader .spinner:after {
+  top: 14%;
+  left: 14%;
+  right: 14%;
+  bottom: 14%;
+  -webkit-animation: loaderSpinner 0.75s infinite ease-in-out;
+          animation: loaderSpinner 0.75s infinite ease-in-out;
 }
 /*
     * /components/ - IMPORTS FILES *
@@ -2340,7 +2390,7 @@ img.cc-shadowed {
   border: 1px solid transparent;
   margin: 1.5em 0;
   position: relative;
-  border-radius: 3px;
+  border-radius: 2px;
   /* Links inside a .alert element */
   /* List : add margin */
   /* Closed icon */
@@ -4354,7 +4404,7 @@ span.badge {
   background-color: #a1a1a1;
   color: white;
   padding: 0 0.5em;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.25rem;
   margin-left: 5px;
   text-align: center;
