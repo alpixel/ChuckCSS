@@ -6,6 +6,7 @@
         "-mc" : main-color
         "-bg" : background-color
         "-bc" : border-color
+        "-bw" : border-width
         "-tc" : text-color
         "-ic" : icon color
         "-su" : success
@@ -112,9 +113,6 @@
 
 /*
     -- @ Links @ --
-    * HTML
-        <a href="#" class="btn">My button link</a>
-        <button class="btn">My button</button>
 */
 @links-tc : @text-mc;               /* Links ~ Text color */
 @links-fs : @text-fs;               /* Links ~ Font-size */
@@ -130,8 +128,6 @@
 
 /*
     -- @ Titles @ --
-    * HTML
-        <Hn>My Heading title</Hn>
 */
 @title-mc : @text-mc; /* Hn ~ Titles main color */
 @title-h1-fs : 2em;
@@ -154,19 +150,6 @@
 
 /*
     -- @ Tables @ --
-    * HTML
-        <table class="hover colored"> // exemple
-            <thead>
-                <tr>
-                    <th>My Head lind</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lorem Ipsum</td>
-                </tr>
-            </tbody>
-        </table>
 */
 @tables-cells-pa : 8px;         /* <th> & <td> padding */
 @tables-ending : #e0e0e0;       /* Line below tables */
@@ -179,8 +162,6 @@
 
 /*
     -- @ Forms @ --
-    * HTML
-        Read all exemples in elements/forms.less file
 */
 @form-mc : @primary;            /* Primary color for forms elements */
 
@@ -188,7 +169,7 @@
 @input-fs : @text-fs * (9/10);  /* Input ~ font-size = @text-fs (can be changed by custom value) */
 @input-lh : @text-fs*2.8;               /* Input ~ line-height (Submit buttons too) */
 @input-bc : #ddd;               /* Input border-color */
-@input-br : 3;                  /* Input ~ border-radius (in px) */
+@input-br : 1;                  /* Input ~ border-radius (in px) */
 
 @submit-bg : @primary;          /* Submit input/button bg-color */
 
@@ -203,12 +184,18 @@
 
 
 /*
-    -- @ Alerts @ --
-    * HTML
-        <div class="alert alert-error">...</div>
-        <div class="alert alert-success">...</div>
+    -- @ Blockquotes @ --
 */
-@alert-br : 3; /* Alerts border-radius (pixel)
+@blockquotes-bc : @primary;         /* Blockquote ~ border-left color */
+@blockquotes-ic : @blockquotes-bc;  /* Blockquote ~ FontAwesome icon color (only for <blockquote.quoted>) */
+@blockquotes-footer-tc : @gray;     /* Blockquote ~ footer text-color */
+
+
+
+/*
+    -- @ Alerts @ --
+*/
+@alert-br : 2; /* Alerts border-radius (in pixel)
 /* success */
 @alert-su-bg : #dff0d8;
 @alert-su-bc : #d6e9c6;
@@ -229,28 +216,14 @@
 
 
 /*
-    -- @ Blockquotes @ --
-    * HTML
-        <blockquote class="quoted">
-            <p>A odio tristique cum aliquam, integer? Etiam. A odio tristique cum aliquam, integer? Etiam. A odio tristique cum aliquam, integer? Etiam.A odio tristique cum aliquam, integer? Etiam.</p>
-            <footer>
-                Someone famous in <cite title="Les hackis pour la vie">Les hackis pour la vie</cite>
-            </footer>
-        </blockquote>
+    -- @ Badges @ --
 */
-@blockquotes-bc : @primary;         /* Blockquote ~ border-left color */
-@blockquotes-ic : @blockquotes-bc;  /* Blockquote ~ FontAwesome icon color (only for <blockquote.quoted>) */
-@blockquotes-footer-tc : @gray;     /* Blockquote ~ footer text-color */
+@badges-br : 5;         /* Badges - border-radius in pixel */
 
 
 
 /*
     -- @ Grids @ --
-    * HTML
-        <div class="columns">
-            <div class="column cc-6">6 columns</div>
-            <div class="column cc-6">6 columns</div>
-        </div>
 */
 @cols-gutter : 2em; /* Gutter between 2 cols = Each column margin-left & margin-right */
 @cols-total : 12; /* Total of cols in grid */
@@ -280,11 +253,19 @@
 /*
     -- @ Loader @ --
 */
-@dots-bg : @primary; /* Background-color of each dot */
-@dots-count : 12; /* Number of dots */
-@loader-radius : 360 / @dots-count; /* Calculation of each dot radius */
-@loader-speed : 1; /* Calculation of each dot delay-animation */
-@loader-animation-delay : @loader-speed / @dots-count; // Calculation of each dot animation delay
+/* general */
+@loader-bg : @primary; /* Loader main color */
+@loader-wi : 60; /* Loader wrapper width (in pixels) */
+@loader-he : @loader-wi; /* Loader wrapper height (in pixels) */
+@loader-speed : 1; /* Loader speed animation (in seconds) */
+/* dots */
+@loader-dots-count : 12; /* Loader dots : nb of dots */
+@loader-dots-radius : 360 / @loader-dots-count; /* Loader dots : Calculation of each dot radius */
+@loader-dots-animation-delay : @loader-speed / @loader-dots-count; /* Loader dots  :Calculation of each dot animation delay */
+/* spinner */
+@loader-spinner-bw : 2; /* Loader spinner : border-width */
+
+
 
 
 /*

@@ -2863,7 +2863,7 @@
                 </table>
             </div>
 
-            <div class="main cc-forms active">
+            <div class="main cc-forms">
                 <h3 class="title">Forms</h3>
 
                 <pre class="HTML">
@@ -3561,7 +3561,7 @@
                 </p>
             </div>
 
-            <div class="main cc-loading">
+            <div class="main cc-loading active">
                 <h3 class="title">Loader</h3>
                 <pre class="HTML">
                     <code class="language-less">
@@ -3586,12 +3586,17 @@
                     <div class="dot dot-10"></div>
                     <div class="dot dot-11"></div>
                     <div class="dot dot-12"></div>
-                    <!-- <div class="dot dot-13"></div>
-                    <div class="dot dot-14"></div>
-                    <div class="dot dot-15"></div>
-                    <div class="dot dot-16"></div>
-                    <div class="dot dot-17"></div>
-                    <div class="dot dot-18"></div> -->
+                </div>
+
+                <pre class="HTML">
+                    <code class="language-less">
+                        div class="cc-loader"
+                            -- div class="spinner"
+                    </code>
+                </pre>
+
+                <div class="cc-loader">
+                    <div class="spinner"></div>
                 </div>
             </div>
         </section>

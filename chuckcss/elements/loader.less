@@ -20,7 +20,7 @@
 //     <div class="dot dot-12"></div>
 // </div>
 
-._generateDotsLoader(@iterator, @loaderTimer, @loaderRadius) when(@iterator <= @dots-count) {
+._generateDotsLoader(@iterator, @loaderTimer, @loaderRadius) when(@iterator <= @loader-dots-count) {
     .cc-loader .dot.dot-@{iterator} {
         ._rotate(~"@{loaderRadius}deg");
 
@@ -29,14 +29,14 @@
         }
     }
 
-    ._generateDotsLoader(@iterator + 1 , @loader-animation-delay + @loaderTimer, @loaderRadius + @loader-radius);
+    ._generateDotsLoader(@iterator + 1 , @loader-dots-animation-delay + @loaderTimer, @loaderRadius + @loader-dots-radius);
 }
-._generateDotsLoader(2, @loader-animation-delay, @loader-radius);
+._generateDotsLoader(2, @loader-dots-animation-delay, @loader-dots-radius);
 
 .cc-loader {
     margin: 50px auto;
-    width: 40px;
-    height: 40px;
+    width: unit(@loader-wi,px);
+    height: unit(@loader-he,px);
     position: relative;
 
     .dot {
@@ -52,9 +52,59 @@
             margin: 0 auto;
             width: 15%;
             height: 15%;
-            background-color: @dots-bg;
+            background-color:@loader-bg;
             border-radius:100%;
             animation: ~"loaderDots @{loader-speed}s infinite ease-in-out both";
+        }
+    }
+
+    .spinner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius:50%;
+        border-color:@loader-bg transparent transparent transparent;
+        border-width:unit(@loader-spinner-bw, px);
+        border-style:solid;
+        animation: ~"loaderSpinner @{loader-speed}s infinite linear";
+        transform-origin:center center;
+
+        &:before {
+            display:block;
+            position:absolute;
+            top:5%;
+            left:5%;
+            right:5%;
+            bottom:5%;
+            content:' ';
+            border-color:@loader-bg transparent transparent transparent;
+            border-width:unit(@loader-spinner-bw, px);
+            border-style:solid;
+            border-radius:50%;
+
+            @speed : @loader-speed * 1.5;
+            animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
+
+        }
+
+        &:after {
+            display:block;
+            position:absolute;
+            top:14%;
+            left:14%;
+            right:14%;
+            bottom:14%;
+            content:' ';
+            border-color:@loader-bg transparent transparent transparent;
+            border-width:unit(@loader-spinner-bw, px);
+            border-style:solid;
+            border-radius:50%;
+
+            @speed : @loader-speed * 0.75;
+            animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
+
         }
     }
 }
