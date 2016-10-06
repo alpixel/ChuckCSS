@@ -164,7 +164,7 @@
 /* general */
 /* Loader main color */
 /* Loader wrapper width (in pixels) */
-/* Loader wrapper height (in pixels) */
+/* Loader wrapper height (in pixels) : recommended width = height */
 /* Loader speed animation (in seconds) */
 /* dots */
 /* Loader dots : nb of dots */
@@ -1219,7 +1219,7 @@ h5 small,
 h6 small,
 .h6-like small {
   font-weight: 400;
-  color: #a0a0a0;
+  color: #7a7a7a;
   font-size: 70%;
 }
 .h1-like,
@@ -4139,19 +4139,6 @@ img.cc-shadowed {
 .columns.cc-spaceless > .column {
   margin-top: 0;
   margin-bottom: 0;
-}
-.columns.cc-vertical {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.columns.cc-vertical .column {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
 }
 .columns .column {
   padding: 0;
