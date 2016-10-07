@@ -13,6 +13,7 @@ A responsive CSS framework :
 * Modals
 * Alerts & messages
 * Tabs
+* Loaders
 * ...
 
 
