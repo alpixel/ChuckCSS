@@ -2,11 +2,6 @@
     == ANIMATIONS ==
 */
 
-/*
-** Animations list **
-    ._loading-spin
-*/
-
 /* *****
     @name : ._loading-spin
     @description : animate loading buttons
@@ -29,7 +24,7 @@
 
 
 /* *****
-    @name : loader Dots
+    @name : loaderDots
     @description : animate dots loader
 ***** */
 @keyframes loaderDots {
@@ -38,7 +33,7 @@
 }
 
 /* *****
-    @name : loader Spinner
+    @name : loaderSpinner
     @description : animate spinner loader
 ***** */
 @keyframes loaderSpinner {
@@ -46,6 +41,19 @@
     100% { ._rotate(360deg) }
 }
 
+
+/* *****
+    @name : loaderCaterpillar
+    @description : animate caterpillar loader
+***** */
+@keyframes loaderCaterpillar{
+  0% { left: 100px; top:0}
+  80% { left: 0; top:0;}
+  85% { left: 0; top: -20px; width: 20px; height: 20px;}
+  90% { width: 40px; height: 15px; }
+  95% { left: 100px; top: -20px; width: 20px; height: 20px;}
+  100% { left: 100px; top:0; }
+}
 
 /* *****
     @name : checkdio

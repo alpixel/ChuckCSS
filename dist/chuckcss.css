@@ -821,10 +821,6 @@ textarea {
 /*
     == ANIMATIONS ==
 */
-/*
-** Animations list **
-    ._loading-spin
-*/
 /* *****
     @name : ._loading-spin
     @description : animate loading buttons
@@ -858,7 +854,7 @@ textarea {
   }
 }
 /* *****
-    @name : loader Dots
+    @name : loaderDots
     @description : animate dots loader
 ***** */
 @-webkit-keyframes loaderDots {
@@ -882,7 +878,7 @@ textarea {
   }
 }
 /* *****
-    @name : loader Spinner
+    @name : loaderSpinner
     @description : animate spinner loader
 ***** */
 @-webkit-keyframes loaderSpinner {
@@ -911,6 +907,70 @@ textarea {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     /* Perspective */
+  }
+}
+/* *****
+    @name : loaderCaterpillar
+    @description : animate caterpillar loader
+***** */
+@-webkit-keyframes loaderCaterpillar {
+  0% {
+    left: 100px;
+    top: 0;
+  }
+  80% {
+    left: 0;
+    top: 0;
+  }
+  85% {
+    left: 0;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  90% {
+    width: 40px;
+    height: 15px;
+  }
+  95% {
+    left: 100px;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 100px;
+    top: 0;
+  }
+}
+@keyframes loaderCaterpillar {
+  0% {
+    left: 100px;
+    top: 0;
+  }
+  80% {
+    left: 0;
+    top: 0;
+  }
+  85% {
+    left: 0;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  90% {
+    width: 40px;
+    height: 15px;
+  }
+  95% {
+    left: 100px;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 100px;
+    top: 0;
   }
 }
 /* *****
@@ -1963,6 +2023,41 @@ img {
   bottom: 14%;
   -webkit-animation: loaderSpinner 0.75s infinite ease-in-out;
           animation: loaderSpinner 0.75s infinite ease-in-out;
+}
+.cc-loader.caterpillar {
+  height: 20px;
+  width: 100px;
+}
+.cc-loader.caterpillar .chain {
+  width: 20px;
+  height: 20px;
+  background-color: #29b7e1;
+  border-radius: 50%;
+  position: absolute;
+}
+.cc-loader.caterpillar .chain-1 {
+  -webkit-animation: loaderCaterpillar 2s linear infinite;
+          animation: loaderCaterpillar 2s linear infinite;
+}
+.cc-loader.caterpillar .chain-2 {
+  left: 20px;
+  -webkit-animation: loaderCaterpillar 2s linear infinite -0.4s;
+          animation: loaderCaterpillar 2s linear infinite -0.4s;
+}
+.cc-loader.caterpillar .chain-3 {
+  left: 40px;
+  -webkit-animation: loaderCaterpillar 2s linear infinite -0.8s;
+          animation: loaderCaterpillar 2s linear infinite -0.8s;
+}
+.cc-loader.caterpillar .chain-4 {
+  left: 60px;
+  -webkit-animation: loaderCaterpillar 2s linear infinite -1.2s;
+          animation: loaderCaterpillar 2s linear infinite -1.2s;
+}
+.cc-loader.caterpillar .chain-5 {
+  left: 80px;
+  -webkit-animation: loaderCaterpillar 2s linear infinite -1.6s;
+          animation: loaderCaterpillar 2s linear infinite -1.6s;
 }
 /*
     * /components/ - IMPORTS FILES *
