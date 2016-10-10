@@ -102,4 +102,48 @@
             animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
         }
     }
+
+
+    // <div class="cc-loader caterpillar">
+    //     <div class="chain chain-1"></div>
+    //     <div class="chain chain-2"></div>
+    //     <div class="chain chain-3"></div>
+    //     <div class="chain chain-4"></div>
+    //     <div class="chain chain-5"></div>
+    // </div>
+    &.caterpillar {
+        height: 20px;
+        width: 100px;
+
+        // Caterpillar loader speed is 2 times lower than other loaders.
+        @speed : @loader-speed * 2;
+
+        .chain{
+            width: 20px;
+            height: 20px;
+            background-color: @loader-bg;
+            border-radius: 50%;
+            position: absolute;
+
+            &-1 {
+                animation: loaderCaterpillar ~"@{speed}s" linear infinite;
+            }
+            &-2 {
+                left:20px;
+                animation: loaderCaterpillar ~"@{speed}s" linear infinite -.4s;
+            }
+            &-3 {
+                left:40px;
+                animation: loaderCaterpillar ~"@{speed}s" linear infinite -.8s;
+            }
+            &-4 {
+                left:60px;
+                animation: loaderCaterpillar ~"@{speed}s" linear infinite -1.2s;
+            }
+            &-5 {
+                left:80px;
+                animation: loaderCaterpillar ~"@{speed}s" linear infinite -1.6s;
+            }
+        }
+    }
 }

@@ -3598,6 +3598,24 @@
                 <div class="cc-loader">
                     <div class="spinner"></div>
                 </div>
+
+                <pre class="HTML">
+                    <code class="language-less">
+                        div class="cc-loader caterpillar"
+                            -- div class="chain chain-1"
+                            -- div class="chain chain-2"
+                            ...
+                            -- div class="chain chain-5"
+                    </code>
+                </pre>
+
+                <div class="cc-loader caterpillar">
+                    <div class="chain chain-1"></div>
+                    <div class="chain chain-2"></div>
+                    <div class="chain chain-3"></div>
+                    <div class="chain chain-4"></div>
+                    <div class="chain chain-5"></div>
+                </div>
             </div>
         </section>
 
