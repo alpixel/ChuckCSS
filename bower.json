@@ -4,7 +4,7 @@
   "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
   "authors": {
     "name": "Mickael SURREL <ALPIXEL>",
-    "email": "contact@alpixel.fr"
+    "email": "contact+chuckcss@alpixel.fr"
   },
   "license": "MIT",
   "keywords": [
@@ -28,6 +28,8 @@
   ],
   "dependencies": {
     "jquery": "~2.2.0"
+    "font-awesome": "4.*",
+    "ionicons": "2.*"
   },
   "homepage": "https://www.chuckcss.io",
   "main": [
