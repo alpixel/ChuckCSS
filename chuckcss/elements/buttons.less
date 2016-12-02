@@ -28,7 +28,7 @@ a {
 /* Buttons && buttons-like HTML links */
 a.btn,
 button {
-    ._inline;
+    display:inline-block;
     color:@links-tc;
     padding:0.25em 0.8em;
     line-height:@links-btn-lh;
@@ -173,7 +173,7 @@ button {
 /* Hack Firefox for .icon-right on button elements (hide icon) */
 @-moz-document url-prefix() {
     button.icon-right {
-        ._inline;
+        display:inline-block;
         &:before {
             display:none;
         }

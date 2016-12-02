@@ -39,32 +39,6 @@ gulp.task('chuckcss_less', function() {
 
 
 /*
-    * BOOTSTRAP OVERRIDE
-*/
-gulp.task('chuckcss_minify_bootstrap', function() {
-    gulp.src('chuckcss/bootstrap/bootstrap-override.less')
-        .pipe(less())
-        .pipe(cssnano({
-            'postcss-minify-font-values': true
-        }))
-        .pipe(autoprefixer({
-            browsers:"> 1%, last 2 versions, Safari >= 8"
-        }))
-        .pipe(rename({basename: 'bootstrap-override', suffix: '.min'}))
-        .pipe(gulp.dest('dist/'));
-});
-gulp.task('chuckcss_bootstrap', function() {
-    gulp.src('chuckcss/bootstrap/bootstrap-override')
-        .pipe(less())
-        .pipe(autoprefixer({
-            browsers:"> 1%, last 2 versions, Safari >= 8"
-        }))
-        .pipe(rename({basename: 'bootstrap-override'}))
-        .pipe(gulp.dest('dist/'));
-});
-
-
-/*
     * PRINT FILE
 */
 gulp.task('chuckcss_print', function() {
@@ -83,13 +57,10 @@ gulp.task('chuckcss_print', function() {
 gulp.task('watch', function() {
     gulp.watch('chuckcss/**/*.less', ['chuckcss_minify_less', 'chuckcss_less']);
     gulp.watch('chuckcss/print.less', ['chuckcss_print']);
-    gulp.watch('chuckcss/bootstrap/**/*.less', ['chuckcss_bootstrap', 'chuckcss_minify_bootstrap']);
 });
 
 gulp.task('default', [
   'chuckcss_less',
   'chuckcss_minify_less',
-  'chuckcss_print',
-  'chuckcss_bootstrap',
-  'chuckcss_minify_bootstrap'
+  'chuckcss_print'
 ]);

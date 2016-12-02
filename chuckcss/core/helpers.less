@@ -1,9 +1,16 @@
 /*
     == HELPERS ==
 */
-.clearfix {._clearfix;}
-
 .cc {
+
+    &-block {display:block}
+    &-inline {display:inline-block;}
+    &-inside{._inside;}
+    &-centered {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
     // Texts
     &-txt {
@@ -38,39 +45,50 @@
 
     // Visibility
     &-hidden {
-        display:none !important;
+        display:none;
 
         &-s {
             ._phone({
-                display:none !important;
+                display:none;
             });
         }
         &-t {
             ._tablet({
-                display:none !important;
+                display:none;
+            });
+            ._phone({
+                display:block;
             });
         }
         &-d {
-            display:none !important;
+            display:none;
 
             ._tablet({
-                display:block !important;
+                display:block;
             });
         }
     }
-    &-s-only {
-        ._tabletUp({
-            display:none !important;
+
+    // Show element on desktop only!
+    &-d-only {
+        ._tablet({
+            display:none;
         });
     }
-    &-block {display:block}
-    &-inline {._inline;}
-    &-inside{._inside;}
-    &-displayTable{._displayTable;}
-    &-centered {
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
+    // Show element on tablet only!
+    &-t-only {
+        ._desktop({
+            display:none;
+        });
+        ._phone({
+            display:none;
+        });
+    }
+    // Show element on phone only!
+    &-s-only {
+        ._tabletUp({
+            display:none;
+        });
     }
 
     /* Width */

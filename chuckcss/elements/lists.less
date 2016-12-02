@@ -11,10 +11,6 @@
 ul, dl, ol {
     color:@text-mc;
     margin:@helper-ma;
-
-    &.cc-no-margin {
-        margin:0;
-    }
 }
 
 /* ul */
@@ -24,14 +20,15 @@ ul {
 
         /* Specific for Drupal */
         &.leaf {
+            ._reset;
             background-image:none;
             list-style:none;
-            ._reset;
         }
     }
 
 
     &.cc {
+        /* Unstyled lists */
         &-unstyled {
             li {
                 list-style:none;
@@ -41,7 +38,7 @@ ul {
         /* Horizontal lists */
         &-horizontal {
             li {
-                ._inline;
+                display:inline-block;
                 margin:0 1.5em;
 
                 &[class*="fa-"],
@@ -62,8 +59,6 @@ ul {
             }
         }
     }
-
-
 }
 
 
