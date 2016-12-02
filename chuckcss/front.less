@@ -1,11 +1,10 @@
 /*
     == ChuckCSS ==
+    A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
     @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
 */
 @charset "UTF-8";
-
-
 
 /*
     settings.less
@@ -14,9 +13,10 @@
 
 
 /*
-    * IMPORT CORE FILES *
+    * /core/ - IMPORT CORE FILES *
     • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
     • functions.less : main usefull functions|mixins for integration project
+    • responsive.less : responsive mixins
     • animations.less : keyframes file
     • base.less : base file with <html>, <body> styles
     • helpers.less : text and blocks helpers
@@ -27,8 +27,6 @@
 @import "core/animations";
 @import "core/base"; // <==== <html> & <body>
 @import "core/helpers";
-
-
 
 /*
     * /elements/ - IMPORTS FILES *
@@ -42,7 +40,6 @@
 @import "elements/images";
 @import "elements/loader";
 
-
 /*
     * /components/ - IMPORTS FILES *
 */
@@ -53,24 +50,9 @@
 @import "components/tabs";
 @import "components/modals";
 
-
-
 /*
     * IMPORT GENERATOR FILE *
     • generator.less : Engine generator for colors, grids, icons...
-    /!\ Called after elements and others components for CSS ordering
+    /!\ Import this file after elements and others components
 */
 @import "core/generator";
-
-
-
-/*
-    * YOUR OWN STYLESHEETS FILES BELOW
-
-    * Here should go your own CSS styles or @import your own .less files
-.el {
-    ... my LESS inspiration
-}
-**   OR   ***
-@import "website/homepage"; // considering you have created a 'website' folder with a 'homepage.less' file inside
-*/

@@ -4,17 +4,13 @@
 
 /*
 ** Functions/mixins list **
-    ._box-shadow
     ._bg-vertical | ._bg-horizontal
     ._clearfix
-    ._displayTable
-    ._inline
     ._inside
     ._transition
     ._transform
-    ._rotate | ._scale | ._translate3d | ._skew
+    ._rotate | ._scale | ._translate | ._skew
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
-    ._placeHold
     ._reset
     ._uppercase
     ._fa
@@ -41,11 +37,11 @@
       background: @from; /* Old browsers */
       background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
 }
-
 /* *****
     @name : ._clearfix
     @description : reset floated elements
 ***** */
+.clearfix {._clearfix;}
 ._clearfix() {
     zoom:1;
     &:before,
@@ -56,44 +52,6 @@
         overflow: hidden
     }
     &:after {clear: both}
-}
-/* *****
-    @name : ._displayTable
-    @description : Show elements as Table view
-
-    @exemple :
-      el {
-          ._displayTable; // <el> is now shown as a table element. All direct children will have a table-cell display
-      }
-***** */
-._displayTable(@layout : fixed) {
-    margin-left:0;
-    margin-right:0;
-    display:table;
-    table-layout:@layout;
-    width:100%;
-
-    /* Display direct children as table-cell */
-    &>* {
-        list-style:none;
-        display:table-cell;
-        vertical-align:middle;
-    }
-}
-/* *****
-    @name : ._inline
-    @description : Set the element display as an inline-block element with IE7 fix
-    @wtf : why called it "._inline" to apply "inline-block" property ? Because ._inline-block is too long ... ¯\_(ツ)_/¯
-
-    @exemple :
-      p {
-          ._inline; // <p>, a block element is now shown as an inline-block element
-      }
-***** */
-._inline() {
-    display:inline-block;
-    *display:inline;
-    zoom:1;
 }
 /* *****
     @name : ._inside
@@ -233,10 +191,6 @@
         ._transform(~"skew(@{x}, @{y})");
     }
 }
-
-
-
-
 /* *****
     @name : ._filter
     @params : all CSS3 filters : blur, grayscale, drop-shadow, sepia, brightness, constrast, invert...
@@ -263,28 +217,6 @@
     filter+_: @arguments;
 }
 /* *****
-    @name : ._placeHold
-    @description : Replace non-images by real images during frontend development
-    @params : @w & @h (image width & height)
-
-    @exemple :
-      img {
-        ._placeHold(150, 150); // This <img /> will be replaced by an image with sizes 150px*150px from placehold.it or lorempixel.it. Usefull for integration works
-      }
-***** */
-._placeHold(@w,@h,@unitW:px,@unitH:px) when (isnumber(@w)) and (isnumber(@h)) {
-    @width : unit(@w, @unitW);
-    @height : unit(@h, @unitH);
-    width:@width;
-    height:@height;
-
-    /* For images showing sizes, use placehold.it */
-    //background:url("http://placehold.it/@{w}x@{h}") no-repeat center center;
-
-    /* For images showing real pictures, use lorempixel.it */
-    background:url("http://lorempixel.com/@{w}/@{h}") no-repeat center center;
-}
-/* *****
     @name : ._reset
     @description : reset margin, border & padding properties in one function
 
@@ -306,7 +238,6 @@
 ._uppercase() {
     text-transform:uppercase;
 }
-
 /* *****
     @name : ._fa
     @description : Generate fontAwesome icon
@@ -319,7 +250,7 @@
       }
 ***** */
 ._fa(@content, @size:10pt, @color:#000){
-    ._inline;
+    display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -342,7 +273,7 @@
       }
 ***** */
 ._io(@content, @size:10pt, @color:#000){
-    ._inline;
+    display: inline-block;
     font-family: "Ionicons";
     speak: none;
     font-style: normal;

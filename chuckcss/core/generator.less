@@ -11,8 +11,6 @@
     ._generateTabletColumns
     ._generatePhoneColumns
     ._generatePercentWidth
-    ._generateFixedWidth
-    ._generateFixedHeight
 */
 
 /* *****
@@ -26,7 +24,7 @@
 
     /* texts */
     h1,h2,h3,h4,h5,h6,
-    p,div,section,aside,header,footer,
+    p,div,section,aside,header,footer,article,main,
     span,i,a {
         &.cc{
             &-@{colorName} {
@@ -325,7 +323,7 @@
     @name : ._generatePaddingMarginClass
     @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
 ***** */
-._generatePaddingMarginClass(@iterator:0) when(@iterator <= 30) {
+._generatePaddingMarginClass(@iterator:0) when(@iterator <= 50) {
 
     .cc {
         &-pa-@{iterator} {
@@ -378,7 +376,7 @@
 
         /* Icon */
         &:before {
-            ._inline;
+            display:inline-block;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             line-height: 1;
@@ -433,52 +431,49 @@
 ._generateIcons; // Launch _generateIcons
 
 
+
 /* *****
     @name : ._generateColumns
     @description : Generate columns width in flexbox parent
 ***** */
 ._generateColumns(@iterator:1) when(@iterator <= @cols-total) {
 
-    .columns {
-        /* NO GUTTERS */
-        &.cc-no-gutter .column {
-            &.cc {
-                /* Width calculations without gutters */
-                &-@{iterator} {
-                    flex:0 0 auto;
-                    width: ~'calc(100% * @{iterator} / @{cols-total} - 0.05px)'; // Substract 0.05px for IE compatibilities
-                    max-width: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-                }
 
-                /* Offsets calculations without gutters */
-                &-offset-@{iterator} {
-                    margin-left: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-                }
-            }
+    /* NO GUTTERS */
+    .columns.cc-no-gutter > .cc {
+        /* Width calculations without gutters */
+        &-@{iterator} {
+            flex:0 0 auto;
+            width: ~'calc(100% * @{iterator} / @{cols-total} - 0.05px)'; // Substract 0.05px for IE compatibilities
+            max-width: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
         }
 
-        /* GUTTERS */
-        &.cc-gutter .column,
-        .column {
-            &.cc {
-                /* Width calculations with gutters */
-                &-@{iterator} {
-                    flex:0 0 auto;
-                    width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-                    max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-                }
-                /* Offsets calculations with gutters */
-                &-offset-@{iterator} {
-                    margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
-                }
-            }
+        /* Offsets calculations without gutters */
+        &-offset-@{iterator} {
+            margin-left: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
         }
+    }
 
-        /* Masonry layout */
-        &.cc-masonry.cc {
-            &-@{iterator} {
-                column-count: @iterator;
-            }
+    /* GUTTERS */
+    .columns.cc-gutter > .cc,
+    .columns > .cc {
+        /* Width calculations with gutters */
+        &-@{iterator} {
+            flex:0 0 auto;
+            width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+            max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+        }
+        /* Offsets calculations with gutters */
+        &-offset-@{iterator} {
+            margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
+        }
+    }
+
+
+    /* Masonry layout */
+    .columns.cc-masonry.cc {
+        &-@{iterator} {
+            column-count: @iterator;
         }
     }
 
@@ -493,51 +488,46 @@
 ***** */
 ._generateTabletColumns(@iterator:1) when(@iterator <= @cols-total) {
 
-    .columns {
-
-        /* NO GUTTERS */
-        &.cc-no-gutter .column {
-            &.cc{
-                /* Width calculations without gutters */
-                &-@{iterator}-t {
-                    flex:0 0 auto;
-                    width: ~'calc(100% * @{iterator} / @{cols-total})';
-                    max-width: ~'calc(100% * @{iterator} / @{cols-total})';
-                }
-
-                /* Offsets calculations without gutters for tablets devices */
-                &-offset-@{iterator}-t {
-                    margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
-                }
-            }
+    /* NO GUTTERS */
+    .columns.cc-no-gutter > .cc{
+        /* Width calculations without gutters */
+        &-@{iterator}-t {
+            flex:0 0 auto;
+            width: ~'calc(100% * @{iterator} / @{cols-total})';
+            max-width: ~'calc(100% * @{iterator} / @{cols-total})';
         }
 
-
-        /* GUTTERS */
-        &.cc-gutter .column,
-        .column {
-            &.cc {
-                /* Width calculations with gutters */
-                &-@{iterator}-t {
-                    flex:0 0 auto;
-                    width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                    max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                }
-
-                /* Offsets calculations with gutters for tablets devices */
-                &-offset-@{iterator}-t {
-                    margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
-                }
-            }
-        }
-
-        /* Masonry layout */
-        &.cc-masonry.cc {
-            &-@{iterator}-t {
-                column-count: @iterator;
-            }
+        /* Offsets calculations without gutters for tablets devices */
+        &-offset-@{iterator}-t {
+            margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
         }
     }
+
+
+    /* GUTTERS */
+    .columns.cc-gutter > .cc,
+    .columns > .cc {
+
+        /* Width calculations with gutters */
+        &-@{iterator}-t {
+            flex:0 0 auto;
+            width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+            max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+        }
+
+        /* Offsets calculations with gutters for tablets devices */
+        &-offset-@{iterator}-t {
+            margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
+        }
+    }
+
+    /* Masonry layout */
+    .columns.cc-masonry.cc {
+        &-@{iterator}-t {
+            column-count: @iterator;
+        }
+    }
+
 
     ._generateTabletColumns((@iterator + 1));
 }
@@ -550,54 +540,50 @@
 ***** */
 ._generatePhoneColumns(@iterator:1) when(@iterator <= @cols-total) {
 
-    .columns {
 
-        /* NO GUTTERS */
-        &.cc-no-gutter .column {
-            &.cc {
-                /* Width calculations without gutters */
-                &-@{iterator}-s {
-                    flex:0 0 auto;
-                    width: ~'calc(100% * @{iterator} / @{cols-total})';
-                    max-width: ~'calc(100% * @{iterator} / @{cols-total})';
-                }
-
-                /* Offsets calculations without gutters for phones devices */
-                &-offset-@{iterator}-s {
-                    margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
-                }
-            }
+    /* NO GUTTERS */
+    .columns.cc-no-gutter > .cc {
+        /* Width calculations without gutters */
+        &-@{iterator}-s {
+            flex:0 0 auto;
+            width: ~'calc(100% * @{iterator} / @{cols-total})';
+            max-width: ~'calc(100% * @{iterator} / @{cols-total})';
         }
 
-        /* GUTTERS */
-        &.cc-gutter .column,
-        .column {
-            &.cc {
-                /* Width calculations with gutters */
-                &-@{iterator}-s {
-                    flex:0 0 auto;
-                    width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                    max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-                }
-
-                /* Offsets calculations with gutters for phones devices */
-                &-offset-@{iterator}-s {
-                    margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
-                }
-
-            }
-        }
-
-        /* Masonry layout */
-        &.cc-masonry.cc {
-            &-@{iterator}-s {
-                column-count: @iterator;
-            }
+        /* Offsets calculations without gutters for phones devices */
+        &-offset-@{iterator}-s {
+            margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
         }
     }
 
+
+    /* GUTTERS */
+    .columns.cc-gutter > .cc,
+    .columns > .cc {
+        /* Width calculations with gutters */
+        &-@{iterator}-s {
+            flex:0 0 auto;
+            width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+            max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
+        }
+
+        /* Offsets calculations with gutters for phones devices */
+        &-offset-@{iterator}-s {
+            margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
+        }
+    }
+
+    /* Masonry layout */
+    .columns.cc-masonry.cc {
+        &-@{iterator}-s {
+            column-count: @iterator;
+        }
+    }
+
+
     ._generatePhoneColumns((@iterator + 1));
 }
+
 
 
 /* *****
@@ -611,38 +597,6 @@
         }
     }
 
-    ._generatePercentWidth(@iterator + 10);
+    ._generatePercentWidth(@iterator + 5);
 }
 ._generatePercentWidth; // Launch _generatePercentWidth
-
-
-/* *****
-    @name : ._generateFixedWidth
-    @description : Generate width for block helpers in px
-***** */
-._generateFixedWidth(@iterator:0) when(@iterator <= 1500) {
-    .cc {
-        &-w-@{iterator}px {
-            width:unit(@iterator,px);
-        }
-    }
-
-    ._generateFixedWidth(@iterator + 10);
-}
-._generateFixedWidth; // Launch _generateFixedWidth
-
-
-/* *****
-    @name : ._generateFixedHeight
-    @description : Generate width for block helpers in px
-***** */
-._generateFixedHeight(@iterator:0) when(@iterator <= 1500) {
-    .cc {
-        &-h-@{iterator}px {
-            height:unit(@iterator,px);
-        }
-    }
-
-    ._generateFixedHeight(@iterator + 10);
-}
-._generateFixedHeight; // Launch _generateFixedHeight

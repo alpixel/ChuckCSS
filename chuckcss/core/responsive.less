@@ -12,40 +12,58 @@
         background-color:white; // Default : Apply a white bg-color to the <el>
 
         ._tablet({
-          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens <= @tablet-mw defined in settings.less
+          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens
         }); // don't forget the ;
 
         ._phone({
-          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens <= @phone-mw defined in settings.less
+          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens
         }); // don't forget the ;
       }
 
 ***** */
+// For screens <= 359px
+._tiny(@rules) {
+    @media screen and (max-width: (@tiny-mw - 1)) {
+        @rules();
+    }
+}
+
+// For screens > 360px
+._phoneUp(@rules) {
+    @media screen and (min-width: @tiny-mw) {
+        @rules();
+    }
+}
+
 // For screens <= 767px
 ._phone(@rules) {
     @media screen and (max-width: @phone-mw) {
         @rules();
     }
 }
+
+// For screens > 768px
+._tabletUp(@rules) {
+    @media screen and (min-width: (@phone-mw+1)) {
+        @rules();
+    }
+}
+
 // For screens <= 1200px
 ._tablet(@rules) {
     @media screen and (max-width: @tablet-mw) {
         @rules();
     }
 }
-// For screens >= 768px
-._tabletUp(@rules) {
-    @media screen and (min-width: (@phone-mw+1)) {
-        @rules();
-    }
-}
-// For screens >= 1201px
+
+// For screens > 1201px
 ._desktop(@rules) {
     @media screen and (min-width: (@tablet-mw+1)) {
         @rules();
     }
 }
-// For IE only
+
+// For IE only -- Yo_oY
 ._ie(@rules) {
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         @rules();

@@ -1,1 +1,605 @@
-body.test{background-color:#f8f8f8;padding:50px;background-image:url(http://hdwallpapers.in/walls/hdtv_vector_designs-HD.jpg);background-size:cover;background-repeat:no-repeat;background-position:50%;background-attachment:fixed;background-size:100% 100%\9;background-position:50% top\9}@media screen and (max-width:767px){body.test{font-size:1.3rem}}body.test>section{border:1px solid #eee;background-color:#fff;padding:30px;margin-bottom:50px;box-shadow:0 2px 1px 0 rgba(0,0,0,.2)}body.test>section header{position:relative;overflow:hidden}body.test>section header .title{text-align:center}body.test>section header .description{border-bottom:1px dashed #cecece;color:#a1a1a1;padding:10px 0;text-align:center}body.test>section header .description strong{color:#29b7e1}body.test>section header .description .btn.active{background-color:#196090;border-color:#196090}body.test>section .main{padding:30px 0;display:none}body.test>section .main.active{display:block}body.test>section .main .title{font-weight:600;color:#217dbb;padding-bottom:10px;border-bottom:2px solid #217dbb;margin:50px 0 20px}body.test>section .main pre{outline:3px dashed #272727;margin-top:30px}body.test>section .main.cc-buttons p{margin:1em 0 2em}body.test>section .main .columns{margin-bottom:20px}body.test>section.tests p{background-color:#000;color:#fff}@media screen and (max-width:767px){body.test{padding:0}body.test>section{width:95%;margin:0 auto 40px}}.columns .cc-primary{background-color:#29b7e1;color:#fff}.columns .cc-green{background-color:#80ae37;color:#fff}.columns .cc-red{background-color:#c41515;color:#fff}.columns .cc-blue{background-color:#3498db;color:#fff}.columns .cc-purple{background-color:#8e44ad;color:#fff}.columns .cc-orange{background-color:#f39c12;color:#fff}.columns .cc-yellow{background-color:#f1c40f;color:#fff}
+/*
+    * SETTINGS.LESS
+    ~ Configuration file
+
+    * HOW TO UNDERSTAND VAR SUFFIX ?
+
+        "-bc" : border-color
+        "-bg" : background-color
+        "-br" : border-radius
+        "-bw" : border-width
+        "-da" : dark (colors only)
+        "-er" : error
+        "-fs" : font-size (fonts only)
+        "-he" : height
+        "-ic" : icon color
+        "-in" : info
+        "-lh" : line-height
+        "-li" : light (colors only)
+        "-ma" : margin (for grid containers, and helpers paddings and margins)
+        "-mc" : main-color
+        "-mw" : max-width (media queries)
+        "-na" : name (colors only)
+        "-pa" : padding (for grid columns, and helpers paddings and margins)
+        "-tc" : text-color
+        "-su" : success
+        "-wa" : warning
+*/
+/* ********* */
+/* VARIABLES */
+/* ********* */
+/*
+    -- @ Media Queries @ --
+*/
+/* Max-width for very small screens */
+/* Max-width for phones devices */
+/* Max-width for tablet devices */
+/*
+    -- @ Colors @ --
+*/
+/* Primary color */
+/* Name of the color, for @aColors array */
+/* Lighten primary */
+/* Darken primary */
+/* Name of the color, for @aColors array */
+/* Lighten green */
+/* Darken green */
+/* Name of the color, for @aColors array */
+/* Lighten red */
+/* Darken red */
+/* Name of the color, for @aColors array */
+/* Lighten gray */
+/* Darken gray */
+/* Name of the color, for @aColors array */
+/* Lighten blue */
+/* Darken blue */
+/* Name of the color, for @aColors array */
+/* Lighten purple */
+/* Darken purple */
+/* Name of the color, for @aColors array */
+/* Lighten orange */
+/* Darken orange */
+/* Name of the color, for @aColors array */
+/* Lighten yellow */
+/* Darken yellow */
+/*
+    -- @ Texts @ --
+*/
+/* Texts ~ Main color (hexa, rgb, rgba...) */
+/* Texts font-size ~ Used for old browsers that doesn't support rem units */
+/* Textes font-size (applied to <body>) */
+/* Texts line-height : ~= font-size*1.5 */
+/*
+    -- @ Links @ --
+*/
+/* Links ~ Text color */
+/* Links ~ Font-size */
+/* Links ~ buttons text color when colorized */
+/* Links ~ buttons text color on hover when colorized */
+/* Links ~ buttons line-height : ~= font-size*1.8 */
+/* Links ~ buttons border-radius (in px) */
+/* <a class="btn cc-thin"> font-size */
+/* <a class="btn cc-fat"> font-size */
+/*
+    -- @ Titles @ --
+*/
+/* Hn ~ Titles main color */
+/* Subtitle font-color */
+/* Subtitle font-color */
+/*
+    -- @ Tables @ --
+*/
+/* <th> & <td> padding */
+/* Line below tables */
+/* Even lines bg-color */
+/* Odd lines bg-color */
+/* Hovered lines bg-color (only for table.hovered) */
+/* <thead><th> main color */
+/*
+    -- @ Forms @ --
+*/
+/* Primary color for forms elements */
+/* Input ~ bg-color */
+/* Input ~ font-size = @text-fs (can be changed by custom value) */
+/* Input ~ line-height (Submit buttons too) */
+/* Input border-color */
+/* Input ~ border-radius (in px) */
+/* Submit input/button bg-color */
+/* Prefix bgColor */
+/* Prefix padding */
+/* Prefix text color */
+/* Suffix bgColor */
+/* Suffix padding */
+/* Suffix text color */
+/*
+    -- @ Blockquotes @ --
+*/
+/* Blockquote ~ border-left color */
+/* Blockquote ~ FontAwesome icon color (only for <blockquote.quoted>) */
+/* Blockquote ~ footer text-color */
+/*
+    -- @ Alerts @ --
+*/
+/* Alerts border-radius (in pixel)
+/* success */
+/* error */
+/* warning */
+/* info */
+/*
+    -- @ Badges @ --
+*/
+/* Badges - border-radius in pixel */
+/*
+    -- @ Grids @ --
+*/
+/* Gutter between 2 cols = Each column margin-left & margin-right */
+/* Total of cols in grid */
+/* Each column padding  */
+/* Each column margin top */
+/* Each column margin bottom */
+/* Gap between each column with masonry layout */
+/*
+    -- @ Helpers @ --
+*/
+/* Used for helpers cc-pa */
+/* Used for helpers cc-pat */
+/* Used for helpers cc-par */
+/* Used for helpers cc-pab */
+/* Used for helpers cc-pal */
+/* Used for helpers cc-ma */
+/* Used for helpers cc-mat */
+/* Used for helpers cc-mar */
+/* Used for helpers cc-mab */
+/* Used for helpers cc-mal */
+/*
+    -- @ Loader @ --
+*/
+/* general */
+/* Loader main color */
+/* Loader wrapper width (in pixels) */
+/* Loader wrapper height (in pixels) : recommended width = height */
+/* Loader speed animation (in seconds) */
+/* Dots loader vars */
+/* Loader dots : nb of dots */
+/* Loader dots : Calculation of each dot radius */
+/* Loader dots  :Calculation of each dot animation delay */
+/* Spinner loader vars */
+/* Loader spinner : border-width */
+/*
+    -- @ FONTS MIXINS @ --
+    * LESS call
+        .font(){font-family:'My font',sans-serif;}
+*/
+/* Used for <body> (default font) */
+/*
+    -- @ Images @ --
+    NOTE : This var is not used in ChuckCSS but i usefull for front-end developments
+*/
+/* Path of images files */
+/*
+    -- @ FONTS PATH @ --
+    "Here define the 'fonts' folder path"
+    NOTE : This var is not used in ChuckCSS but i usefull for front-end developments
+*/
+/* Path of fonts files */
+/*
+    == FUNCTIONS / MIXINS ==
+*/
+/*
+** Functions/mixins list **
+    ._bg-vertical | ._bg-horizontal
+    ._clearfix
+    ._inside
+    ._transition
+    ._transform
+    ._rotate | ._scale | ._translate | ._skew
+    ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
+    ._reset
+    ._uppercase
+    ._fa
+    ._io
+    ._cover
+    ._truncate
+    ._btn
+*/
+/* *****
+    @name : background-gradient : horizontal || vertical
+    @description : apply a grandient background color to a DOM element
+    @params : @from (rgba or HEXA code), @to (rgba or HEXA code)
+
+    NOTICE : For others background-gradients (diagonal, radial, transparent, etc...), please use the generator.
+    @Generator : http://www.colorzilla.com/gradient-editor/
+***** */
+/* *****
+    @name : ._clearfix
+    @description : reset floated elements
+***** */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+/* *****
+    @name : ._inside
+    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
+    @params : @width
+
+    @exemple :
+      el {
+        ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
+      }
+***** */
+/* *****
+    @name : ._transition
+    @description : animate a DOM element with transition property
+    @params : @duration (0 - ∞ seconds), @property (all or css rules), @effect (easing effects or Cubic-bezier curve), @delay (0 - ∞ seconds)
+    @Generator for custom & cool Cubic-Bezier effects : http://cubic-bezier.com/
+
+    @exemple :
+      a {
+        opacity0.5; // Default, apply a half-opacity to <a>
+        ._transition; // Animate <a> on hover (all CSS properties)
+        ._transition(0.4, opacity); // Animate only opacity on hover with a duration of 0.4s
+
+        &:hover {
+          background-color:red;
+          opacity:1; // Animate opacity with smoothy animation
+        }
+      }
+***** */
+/* *****
+    @name : ._transform
+    @description : Apply transform property to a DOM element
+    @params : CSS3 transform effects : you can pass a 2D or 3D transform function in parameters : ._rotate, ._scale, ._translate, ._skew
+
+    NOTICE : You can call multi-times 2D or 3D transform function
+
+    @exemple :
+      el {
+        ._skew('',10deg,10deg);
+        ._rotate(45deg);
+      }
+
+    will compile to
+    el {
+        transform: skew(10deg, 10deg) rotate(45deg);
+    }
+***** */
+/* *****
+    @exemples :
+      el {
+        ._rotate(5deg); // Default, <el> has a 5deg rotation when displayed.
+
+        ._rotate(-10deg, 'X'); // Apply a -10deg rotation on X axis only
+
+        ._rotate(-10deg, 'X', 200); // Apply a -10deg rotation on X axis only with a 200 perspective
+      }
+***** */
+/* *****
+    @exemples :
+      el {
+        ._scale; // Default, <el> is scaled 1.2
+
+        ._scale(0.8); // Only one value = <el> is scaled X & Y (0.8)
+
+        ._scale(.8, 1.3); // Two values = <el> is scaled 0.8 on X axis & 1.3 on Y axis
+      }
+***** */
+/* *****
+    @exemples :
+      el {
+        ._translate; // Default, <el> is translated to 10px on X, Y & Z axis
+
+        ._translate(5px); // Default, <el> is translated to 5px on X, Y & Z axis
+
+        ._translate(15px, 5px, 0px); // Default, <el> is translated to 15px on X axis, 5px on Y axis, 0px on Z axis
+      }
+***** */
+/* *****
+    @exemples :
+      el {
+        ._skew; // Non-sens :/ Params are required
+
+        ._skew('X', 10deg); // <el> is skewed to 10deg on X axis
+
+        ._skew('X', 10deg, 5deg); // <el> is skewed to 10deg on X axis & 5deg to Y axis
+      }
+***** */
+/* *****
+    @name : ._filter
+    @params : all CSS3 filters : blur, grayscale, drop-shadow, sepia, brightness, constrast, invert...
+    @full exemples : http://html5-demos.appspot.com/static/css/filters/index.html
+
+    NOTICE : You can call multi-times filters funtions
+
+    @exemple :
+      el {
+        // The 2 lines below...
+        ._filter(blur(1px)); // Apply blur effect
+        ._filter(sepia(1)); // Apply sepia effect
+
+        // ...are the same as
+        ._filter(blur(1px) sepia(1)); // Apply blur and sepia effects
+      }
+
+      will compile to :
+      el {
+          filter: blur(1px) sepia(1);
+      }
+***** */
+/* *****
+    @name : ._reset
+    @description : reset margin, border & padding properties in one function
+
+    @exemple :
+      el {
+        ._reset; // Let be safe that <el> has no border, no padding, mo margin
+      }
+***** */
+/* *****
+    @name : ._uppercase
+    @description : set string to uppercase
+    @wtf : just because it's boring to write the whole property
+***** */
+/* *****
+    @name : ._fa
+    @description : Generate fontAwesome icon
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at http://fortawesome.github.io/Font-Awesome/icons/
+
+    @exemple :
+      el:before {
+        ._fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
+      }
+***** */
+/* *****
+    @name : ._io
+    @description : Generate Ionicons icon
+    @params : @content (unicode from Ionicon i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at http://ionicons.com/cheatsheet.html
+
+     @exemple :
+      el:before {
+        ._io('\f101'); // The icon "ion-alter" from Ionicons will be displayed in the el:before element
+      }
+***** */
+/* *****
+    @name : ._cover
+    @description : display background-image as cover css3 property
+
+    @exemple :
+      el {
+        background-image : url('path_to_image/img.jpg');
+        ._cover;
+      }
+***** */
+/* *****
+    @name : ._truncate
+    @description : add ellipsis to an element with specifid width;
+    @params : @width (pixels)
+
+    @exemple :
+      el {
+        ._truncate(200px); // <el> will be truncate at 200px
+      }
+***** */
+/* *****
+    @name : ._btn
+    @description : generate btn links with unlimited background colors
+    @params : @bg (button color (rgba, hexa)), @bgHover (button hover color (rgba, hexa))
+
+    @exemple :
+      button {
+        // 2 colors
+        ._btn(@red, @green); // <button> will be displayed with a red bg-color, and a green bg-color on hover (with smoothy animation)
+
+        // 1 color
+        ._btn(@red); // <button> will be displayed with a red bg-color, and a darken (10%) red bg-color on hover (with smoothy animation)
+      }
+***** */
+/*
+    == RESPONSIVE / MEDIA QUERIES ==
+*/
+/* *****
+    @name : ._tablet, ._phone and others media queries
+    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
+    @params : @rules (CSS rules)
+
+    @exemple :
+      el {
+        background-color:white; // Default : Apply a white bg-color to the <el>
+
+        ._tablet({
+          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens
+        }); // don't forget the ;
+
+        ._phone({
+          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens
+        }); // don't forget the ;
+      }
+
+***** */
+body.test {
+  background-color: #f8f8f8;
+  padding: 50px;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  /* Standard */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100% 100%\9;
+  /* <= IE8 */
+  background-position: center top\9;
+  /* <= IE8 */
+}
+@media screen and (max-width: 767px) {
+  body.test {
+    font-size: 1.3rem;
+  }
+}
+body.test #main-header {
+  padding-bottom: 50px;
+}
+body.test > section {
+  border: 1px solid #eeeeee;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  /* header */
+  /* content */
+}
+body.test > section header {
+  position: relative;
+  overflow: hidden;
+}
+body.test > section header .title {
+  text-align: center;
+}
+body.test > section header .description {
+  border-bottom: 1px dashed #cecece;
+  color: #a1a1a1;
+  padding: 10px 0;
+  text-align: center;
+}
+body.test > section header .description strong {
+  color: #29b7e1;
+}
+body.test > section header .description .btn.active {
+  background-color: #196090;
+  border-color: #196090;
+}
+body.test > section .main {
+  padding: 30px 0;
+  display: none;
+  /* Specific for buttons */
+}
+body.test > section .main.active {
+  display: block;
+}
+body.test > section .main .title {
+  font-weight: 600;
+  color: #217dbb;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #217dbb;
+  margin: 50px 0 20px;
+}
+body.test > section .main pre {
+  outline: 3px dashed #272727;
+  margin-top: 30px;
+  padding: 15px;
+}
+body.test > section .main.cc-buttons p {
+  margin: 1em 0 2em;
+}
+body.test > section .main .columns {
+  margin-bottom: 20px;
+}
+body.test > section.tests p {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  body.test {
+    padding: 0;
+  }
+  body.test > section {
+    width: 95%;
+    margin: 0 auto 40px;
+  }
+}
+.columns .cc-primary {
+  background-color: #29b7e1;
+  color: white;
+}
+.columns .cc-green {
+  background-color: #80ae37;
+  color: white;
+}
+.columns .cc-red {
+  background-color: #c41515;
+  color: white;
+}
+.columns .cc-blue {
+  background-color: #3498db;
+  color: white;
+}
+.columns .cc-purple {
+  background-color: #8e44ad;
+  color: white;
+}
+.columns .cc-orange {
+  background-color: #f39c12;
+  color: white;
+}
+.columns .cc-yellow {
+  background-color: #f1c40f;
+  color: white;
+}
+/*
+==============================================
+alpixel animation
+  * "X" of ALPIXEL on footer
+==============================================
+*/
+@-webkit-keyframes alpixel {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1);
+            transform: translate3d(0, 0, 0) scaleY(1);
+  }
+  60% {
+    -webkit-transform: translate3d(0, -50%, 0) scaleY(1.1);
+            transform: translate3d(0, -50%, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
+            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
+  }
+  90% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+}
+@keyframes alpixel {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1);
+            transform: translate3d(0, 0, 0) scaleY(1);
+  }
+  60% {
+    -webkit-transform: translate3d(0, -50%, 0) scaleY(1.1);
+            transform: translate3d(0, -50%, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
+            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
+  }
+  90% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+            transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+}
