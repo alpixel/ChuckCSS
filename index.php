@@ -1895,12 +1895,12 @@
                             &lt;div class="cc-blue cc-3">Centered&lt;/div>
                             &lt;div class="cc-blue cc-3">Centered&lt;/div>
                         &lt;/div>
-                        &lt;div class="columns cc-justify-space-between">
+                        &lt;div class="columns cc-justify-between">
                             &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
                             &lt;div class="cc-blue cc-5">Spacing on 100% width&lt;/div>
                             &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
                         &lt;/div>
-                        &lt;div class="columns cc-justify-space-around">
+                        &lt;div class="columns cc-justify-around">
                             &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
                             &lt;div class="cc-blue cc-5">Equal spacing&lt;/div>
                             &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
@@ -1915,12 +1915,12 @@
                     <div class="cc-blue cc-3">Centered</div>
                     <div class="cc-blue cc-3">Centered</div>
                 </div>
-                <div class="columns cc-justify-space-between">
+                <div class="columns cc-justify-between">
                     <div class="cc-blue cc-3">Spacing on 100% width</div>
                     <div class="cc-blue cc-5">Spacing on 100% width</div>
                     <div class="cc-blue cc-3">Spacing on 100% width</div>
                 </div>
-                <div class="columns cc-justify-space-around">
+                <div class="columns cc-justify-around">
                     <div class="cc-blue cc-3">Equal spacing</div>
                     <div class="cc-blue cc-5">Equal spacing</div>
                     <div class="cc-blue cc-3">Equal spacing</div>
