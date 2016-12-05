@@ -3666,13 +3666,13 @@ img.cc-shadowed {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.columns.cc-justify-space-between {
+.columns.cc-justify-between {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.columns.cc-justify-space-around {
+.columns.cc-justify-around {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
