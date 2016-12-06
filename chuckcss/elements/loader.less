@@ -2,8 +2,10 @@
 /** LOADER **/
 /* ******** */
 
-/* ********************* */
-
+/* *****
+    @name : ._generateDotsLoader
+    @description : Generate dots loader
+***** */
 ._generateDotsLoader(@iterator, @loaderTimer, @loaderRadius) when(@iterator <= @loader-dots-count) {
     .cc-loader .dot.dot-@{iterator} {
         ._rotate(~"@{loaderRadius}deg");
@@ -16,6 +18,7 @@
     ._generateDotsLoader(@iterator + 1 , @loader-dots-animation-delay + @loaderTimer, @loaderRadius + @loader-dots-radius);
 }
 ._generateDotsLoader(2, @loader-dots-animation-delay, @loader-dots-radius);
+
 
 .cc-loader {
     margin: 50px auto;

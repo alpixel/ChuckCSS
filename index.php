@@ -18,6 +18,10 @@
     </head>
 
     <body class="test">
+        <div id="screen-infos">
+            <span class="screen-width">0</span>px<br />
+            "<span class="screen-media">L</span>" screen
+        </div>
         <header id="main-header">
             <div class="columns">
                 <div class="cc-12 cc-txt-center">
@@ -1228,7 +1232,7 @@
                 </div>
             </div>
 
-            <div class="main cc-helpers-blocks">
+            <div class="main cc-helpers-blocks active">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
@@ -1237,15 +1241,17 @@
 
 
                         &lt;h3>Hidden blocks&lt;/h3>
-                        &lt;p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : hide&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-hidden-d cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : show&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-hidden-t cc-pa cc-mat-20 cc-bg-primary">Desktop : show&lt;br />Tablet : hide&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">Desktop : show&lt;br />Tablet : show&lt;br />Phone : hide&lt;/p>
+                        &lt;p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices&lt;/p>
+                        &lt;p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-xs cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
 
                         &lt;h3>Show on device only&lt;/h3>
-                        &lt;p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : hide&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-t-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : show&lt;br />Phone : hide&lt;/p>
-                        &lt;p class="cc-d-only cc-pa cc-mat-20 cc-bg-primary">Desktop : show&lt;br />Tablet : hide&lt;br />Phone : hide&lt;/p>
+                        &lt;p class="cc-l-only cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-m-only cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-xs-only cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
 
                         &lt;h3>Width&lt;/h3>
                         &lt;div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
@@ -1283,15 +1289,19 @@
 
 
                     <h3>Hidden blocks</h3>
-                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : hide<br />Phone : show</p>
-                    <p class="cc-hidden-d cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : show<br />Phone : show</p>
-                    <p class="cc-hidden-t cc-pa cc-mat-20 cc-bg-primary">Desktop : show<br />Tablet : hide<br />Phone : show</p>
-                    <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">Desktop : show<br />Tablet : show<br />Phone : hide</p>
+                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices</p>
+                    <p class="cc-hidden-xl cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : shown<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : shown<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : shown</p>
+                    <p class="cc-hidden-xs cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
 
                     <h3>Show on device only</h3>
-                    <p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : hide<br />Phone : show</p>
-                    <p class="cc-t-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : show<br />Phone : hide</p>
-                    <p class="cc-d-only cc-pa cc-mat-20 cc-bg-primary">Desktop : show<br />Tablet : hide<br />Phone : hide</p>
+                    <p class="cc-l-only cc-pa cc-mat-20 cc-bg-primary">L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-m-only cc-pa cc-mat-20 cc-bg-primary">L : hidden<br />M : shown<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">L : hidden<br />M : hidden<br />S : shown<br />XS : hidden</p>
+                    <p class="cc-xs-only cc-pa cc-mat-20 cc-bg-primary">L : hidden<br />M : hidden<br />S : hidden<br />XS : shown</p>
+
 
                     <h3>Width</h3>
                     <div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">

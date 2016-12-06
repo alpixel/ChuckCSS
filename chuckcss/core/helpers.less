@@ -45,48 +45,68 @@
 
     // Visibility
     &-hidden {
-        display:none;
+        //display:none;
+        opacity:0.3;
 
+        // Hide on XS screens
+        &-xs {
+            ._media-xs-only({
+                //display:none;
+                opacity:0.3;
+            });
+        }
+
+        // Hide on S screens
         &-s {
-            ._phone({
-                display:none;
+            ._media-s-only({
+                //display:none;
+                opacity:0.3;
             });
         }
-        &-t {
-            ._tablet({
-                display:none;
-            });
-            ._phone({
-                display:block;
-            });
-        }
-        &-d {
-            display:none;
 
-            ._tablet({
-                display:block;
+        // Hide on M screens
+        &-m {
+            ._media-m-only({
+                //display:none;
+                opacity:0.3;
+            });
+        }
+
+        // Hide on L screens
+        &-l {
+            ._media-l-only({
+                //display:none;
+                opacity:0.3;
+            });
+        }
+
+        // Hide on screens > 1199px
+        &-xl {
+            ._media-l-up({
+                //display:none;
+                opacity:0.3;
             });
         }
     }
 
     // Show element on desktop only!
     &-d-only {
-        ._tablet({
+        ._media-l({
             display:none;
         });
     }
     // Show element on tablet only!
     &-t-only {
-        ._desktop({
+        ._media-l-up({
             display:none;
         });
-        ._phone({
+        ._media-s({
             display:none;
         });
     }
     // Show element on phone only!
     &-s-only {
-        ._tabletUp({
+        ._media-s-up({
             display:none;
         });
     }

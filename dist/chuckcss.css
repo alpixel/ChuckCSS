@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /*
-    == ChuckCSS ==
-    A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
+    == ChuckCSS Framework ==
+    @What : A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
     @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
+    @Twitter : https://twitter.com/chuckcss
+    @Github : https://github.com/alpixel/ChuckCSS
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
+
 */
 /*
     settings.less
@@ -703,7 +706,7 @@ ol {
   display: inline-block;
 }
 .cc-inside {
-  width: 1200px;
+  width: 1199px;
   margin: 0 auto;
   -webkit-transition: 0.2s width ease-out 0s;
   transition: 0.2s width ease-out 0s;
@@ -756,37 +759,39 @@ ol {
   margin-left: 1em;
 }
 .cc-hidden {
-  display: none;
+  opacity: 0.3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 359px) and (min-width: 0px) {
+  .cc-hidden-xs {
+    opacity: 0.3;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 360px) {
   .cc-hidden-s {
-    display: none;
+    opacity: 0.3;
   }
 }
-@media screen and (max-width: 1200px) {
-  .cc-hidden-t {
-    display: none;
+@media screen and (max-width: 989px) and (min-width: 768px) {
+  .cc-hidden-m {
+    opacity: 0.3;
   }
 }
-@media screen and (max-width: 767px) {
-  .cc-hidden-t {
-    display: block;
+@media screen and (max-width: 1199px) and (min-width: 990px) {
+  .cc-hidden-l {
+    opacity: 0.3;
   }
 }
-.cc-hidden-d {
-  display: none;
-}
-@media screen and (max-width: 1200px) {
-  .cc-hidden-d {
-    display: block;
+@media screen and (min-width: 1200px) {
+  .cc-hidden-xl {
+    opacity: 0.3;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .cc-d-only {
     display: none;
   }
 }
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .cc-t-only {
     display: none;
   }
@@ -835,68 +840,93 @@ ol {
 /* ******** */
 /** TITLES **/
 /* ******** */
-/* ********************* */
+/* *****
+    @name : ._generateTitles
+    @description : Generate title <hn> styles
+***** */
 h1,
-.h1-like,
-h2,
-.h2-like,
-h3,
-.h3-like,
-h4,
-.h4-like,
-h5,
-.h5-like,
-h6,
-.h6-like {
+.h1-like {
+  font-size: 3rem;
+  line-height: 5.4rem;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;
 }
 h1 small,
-.h1-like small,
+.h1-like small {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 70%;
+}
+h2,
+.h2-like {
+  font-size: 2.7rem;
+  line-height: 4.86rem;
+  margin: 0;
+  font-weight: 400;
+  color: #3a3a3a;
+}
 h2 small,
-.h2-like small,
+.h2-like small {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 70%;
+}
+h3,
+.h3-like {
+  font-size: 2.4rem;
+  line-height: 4.32rem;
+  margin: 0;
+  font-weight: 400;
+  color: #3a3a3a;
+}
 h3 small,
-.h3-like small,
+.h3-like small {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 70%;
+}
+h4,
+.h4-like {
+  font-size: 2.1rem;
+  line-height: 3.78rem;
+  margin: 0;
+  font-weight: 400;
+  color: #3a3a3a;
+}
 h4 small,
-.h4-like small,
+.h4-like small {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 70%;
+}
+h5,
+.h5-like {
+  font-size: 1.9rem;
+  line-height: 3.42rem;
+  margin: 0;
+  font-weight: 400;
+  color: #3a3a3a;
+}
 h5 small,
-.h5-like small,
+.h5-like small {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 70%;
+}
+h6,
+.h6-like {
+  font-size: 1.8rem;
+  line-height: 3.24rem;
+  margin: 0;
+  font-weight: 400;
+  color: #3a3a3a;
+}
 h6 small,
 .h6-like small {
   font-weight: 400;
   color: #7a7a7a;
   font-size: 70%;
-}
-.h1-like,
-h1 {
-  font-size: 2em;
-  line-height: 2.2em;
-}
-.h2-like,
-h2 {
-  font-size: 1.8em;
-  line-height: 1.98em;
-}
-.h3-like,
-h3 {
-  font-size: 1.6em;
-  line-height: 1.84em;
-}
-.h4-like,
-h4 {
-  font-size: 1.4em;
-  line-height: 1.61em;
-}
-.h5-like,
-h5 {
-  font-size: 1.3em;
-  line-height: 1.495em;
-}
-.h6-like,
-h6 {
-  font-size: 1.2em;
-  line-height: 1.38em;
 }
 /* ***************** */
 /** LINKS / BUTTONS **/
@@ -1195,7 +1225,6 @@ table.cc-unbordered thead tr th {
 /* ******* */
 /** LISTS **/
 /* ******* */
-/* ********************* */
 /* Specific for Drupal : reset list style margin, padding & border */
 .item-list ul li {
   padding: 0;
@@ -1450,13 +1479,13 @@ form .form-item.chained input {
   /* Last input */
 }
 form .form-item.chained input:first-of-type {
-  border-radius: 1px 0px 0px 1px;
+  border-radius: 2px 0px 0px 2px;
 }
 form .form-item.chained input:last-child {
-  border-radius: 0px 1px 1px 0px;
+  border-radius: 0px 2px 2px 0px;
 }
 form .form-item.chained button[type="submit"] {
-  border-radius: 0px 1px 1px 0px;
+  border-radius: 0px 2px 2px 0px;
 }
 form .form-item.chained .form-ps {
   display: inline-block;
@@ -1464,7 +1493,7 @@ form .form-item.chained .form-ps {
 }
 form .form-item.chained .form-ps + input[type="submit"],
 form .form-item.chained .form-ps + button[type="submit"] {
-  border-radius: 1px;
+  border-radius: 2px;
 }
 form .form-ps {
   font-size: 0;
@@ -1474,10 +1503,10 @@ form .form-ps {
   vertical-align: middle;
 }
 form .form-ps :first-child {
-  border-radius: 1px 0px 0px 1px;
+  border-radius: 2px 0px 0px 2px;
 }
 form .form-ps :last-child {
-  border-radius: 0px 1px 1px 0px;
+  border-radius: 0px 2px 2px 0px;
 }
 form .form-ps input:not(:first-child):not(:last-child) {
   border-radius: 0px;
@@ -1634,7 +1663,7 @@ form textarea,
 form input {
   display: inline-block;
   box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
+  border-radius: 2px;
   vertical-align: middle;
   background-color: white;
   padding: 0 1em;
@@ -1731,7 +1760,7 @@ form select {
   vertical-align: middle;
   font-size: 1.35rem;
   box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
+  border-radius: 2px;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   /* Hack IE8 & < */
@@ -1751,7 +1780,7 @@ form button[type="submit"] {
   padding: 0 2em;
   vertical-align: middle;
   box-shadow: none;
-  border-radius: 1px;
+  border-radius: 2px;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   text-transform: uppercase;
@@ -1779,7 +1808,6 @@ form button[type="submit"][class*="ion-"]:before {
 /* ******** */
 /** IMAGES **/
 /* ******** */
-/* ********************* */
 img {
   max-width: 100%;
   height: auto;
@@ -1788,7 +1816,7 @@ img.cc {
   /* No responsive images */
   /* Bordered */
   /* Shadowed image */
-  /** Experimental | removed to ChuckCSS V1 **/
+  /** Experimental | removed temporarily from ChuckCSS **/
   /* Reset filter on hover */
 }
 img.cc-no-responsive {
@@ -1808,7 +1836,10 @@ img.cc-shadowed {
 /* ******** */
 /** LOADER **/
 /* ******** */
-/* ********************* */
+/* *****
+    @name : ._generateDotsLoader
+    @description : Generate dots loader
+***** */
 .cc-loader .dot.dot-2 {
   /* Not perspective */
   -webkit-transform: rotate(30deg);
@@ -2029,10 +2060,6 @@ img.cc-shadowed {
 /*
     - General alerts styles
     - types : warning, error, success, info
-
-    <div class="alert alert-{type}">
-        ...
-    </div>
 */
 .alert {
   padding: 1em;
@@ -2636,7 +2663,7 @@ img.cc-shadowed {
      -moz-column-count: 12;
           column-count: 12;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   /* NO GUTTERS */
   .columns.cc-no-gutter > .cc {
     /* Width calculations without gutters */
@@ -3633,8 +3660,8 @@ img.cc-shadowed {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin: 0 -1em;
-  /* TABLET rules */
-  /* PHONE rules */
+  /* Large screens rules */
+  /* Small screens rules */
 }
 .columns.cc-no-multiligne {
   -webkit-flex-wrap: nowrap;
@@ -3844,7 +3871,7 @@ img.cc-shadowed {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .columns.cc-gutter > *.cc-offset-0-t,
   .columns > *.cc-offset-0-t,
   .columns.cc-gutter > *.cc-no-offset-t,
@@ -3932,7 +3959,6 @@ img.cc-shadowed {
 .message-primary p,
 .message-primary div,
 .message-primary ul,
-.message-primary button.close,
 .message-primary a {
   color: #29b7e1;
 }
@@ -4051,8 +4077,8 @@ a.btn.cc-fat span.badge:before {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   line-height: 2.25;
-  /* Tablet rules */
-  /* Phone rules */
+  /* Large screens rules */
+  /* Small screens rules */
 }
 .tabs.cc-underlined {
   border-bottom: 1px solid #d3d3d3;
@@ -4218,7 +4244,7 @@ a.btn.cc-fat span.badge:before {
   border-width: 1px;
   border-radius: 3px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .tabs {
     /* H alignments */
   }
@@ -4347,28 +4373,6 @@ a.btn.cc-fat span.badge:before {
 /** MODALS **/
 /* ******** */
 /* ********************* */
-/*
-    - General Modals
-
-
-     <div id="modal-id" class="modal">
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    ...
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    ...
-                </div>
-            </div>
-        </div>
-*/
 body.opened-modal {
   overflow: hidden !important;
 }

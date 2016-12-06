@@ -9,7 +9,7 @@ body.test {
     background-image:url('../img/bg.jpg');
     ._cover;
 
-    ._phone({
+    ._media-s({
         @text-fs-old : 13px;
         @text-fs : 1.3rem;
         font-size: 1.3rem;
@@ -17,6 +17,17 @@ body.test {
 
     #main-header {
         padding-bottom:50px;
+    }
+
+    #screen-infos {
+        z-index:99;
+        position:fixed;
+        right:0;
+        top:0;
+        background-color:@red;
+        color:white;
+        padding:20px;
+        text-align:center;
     }
 
 	&>section {
@@ -96,7 +107,7 @@ body.test {
         }
 	}
 
-    ._phone({
+    ._media-s({
         padding:0;
 
         &>section {
@@ -104,7 +115,6 @@ body.test {
             margin:0 auto 40px;
 
         }
-
     });
 }
 

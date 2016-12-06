@@ -9,8 +9,8 @@
 */
 
 ._generateColumns; // Launch _generateColumns
-._tablet({._generateTabletColumns;}); // Launch _generateTabletColumns
-._phone({._generatePhoneColumns;}); // Launch _generatePhoneColumns
+._media-l({._generateTabletColumns;}); // Launch _generateTabletColumns
+._media-s({._generatePhoneColumns;}); // Launch _generatePhoneColumns
 
 .columns {
     display:flex;
@@ -37,12 +37,12 @@
         &-no-gutter {
             margin:0;
             & > * {
-                margin:@cols-ma-top 0 @cols-ma-bottom;
+                margin:@cols-mat 0 @cols-mab;
             }
         }
         &-gutter {
             & > * {
-                margin:@cols-ma-top @cols-gutter/2 @cols-ma-bottom;
+                margin:@cols-mat @cols-gutter/2 @cols-mab;
             }
         }
         &-masonry {
@@ -72,7 +72,7 @@
     & > * {
         ._reset;
         padding:@cols-pa;
-        margin:@cols-ma-top @cols-gutter/2 @cols-ma-bottom;
+        margin:@cols-mat @cols-gutter/2 @cols-mab;
         flex:1 1 0%;
 
         /* Nested columns */
@@ -122,8 +122,8 @@
     }
 
 
-    /* TABLET rules */
-    ._tablet({
+    /* Large screens rules */
+    ._media-l({
         &.cc-gutter > *.cc,
         & > *.cc {
             &-offset-0-t,
@@ -147,8 +147,8 @@
     });
 
 
-    /* PHONE rules */
-    ._phone({
+    /* Small screens rules */
+    ._media-s({
 
         &.cc-gutter > *.cc,
         & > *.cc {
