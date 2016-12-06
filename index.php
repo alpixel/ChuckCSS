@@ -1232,7 +1232,7 @@
                 </div>
             </div>
 
-            <div class="main cc-helpers-blocks active">
+            <div class="main cc-helpers-blocks">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
@@ -1240,18 +1240,26 @@
                         &lt;p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.&lt;/p>
 
 
-                        &lt;h3>Hidden blocks&lt;/h3>
+                        &lt;h3>Hidden blocks on device ONLY&lt;/h3>
                         &lt;p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices&lt;/p>
-                        &lt;p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
-                        &lt;p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : shown&lt;/p>
-                        &lt;p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
-                        &lt;p class="cc-hidden-xs cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+
+                        &lt;h3>Hidden blocks on devices and less&lt;/h3>
+                        &lt;p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
 
                         &lt;h3>Show on device only&lt;/h3>
-                        &lt;p class="cc-l-only cc-pa cc-mat-20 cc-bg-primary">L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
-                        &lt;p class="cc-m-only cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
-                        &lt;p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
-                        &lt;p class="cc-xs-only cc-pa cc-mat-20 cc-bg-primary">L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
 
                         &lt;h3>Width&lt;/h3>
                         &lt;div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
@@ -1288,19 +1296,26 @@
                     <p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.</p>
 
 
-                    <h3>Hidden blocks</h3>
+                    <h3>Hidden blocks on targeted devices</h3>
                     <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices</p>
-                    <p class="cc-hidden-xl cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : shown<br />S : shown<br />XS : shown</p>
-                    <p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : shown<br />S : shown<br />XS : shown</p>
-                    <p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : shown<br />XS : shown</p>
-                    <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : shown</p>
-                    <p class="cc-hidden-xs cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
+                    <p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : shown<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : shown<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : shown</p>
+                    <p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
 
-                    <h3>Show on device only</h3>
-                    <p class="cc-l-only cc-pa cc-mat-20 cc-bg-primary">L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-m-only cc-pa cc-mat-20 cc-bg-primary">L : hidden<br />M : shown<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">L : hidden<br />M : hidden<br />S : shown<br />XS : hidden</p>
-                    <p class="cc-xs-only cc-pa cc-mat-20 cc-bg-primary">L : hidden<br />M : hidden<br />S : hidden<br />XS : shown</p>
+                    <h3>Hidden blocks on devices and less</h3>
+                    <p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
+
+                    <h3>Show on targeted device</h3>
+                    <p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : shown<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : hidden<br />S : shown<br />XS : hidden</p>
+                    <p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : shown</p>
 
 
                     <h3>Width</h3>
@@ -1371,15 +1386,24 @@
                 </p>
             </header>
 
-            <div class="main cc-grids">
-                <h3 class="title">Grids 1 - @cols-total</h3>
+            <div class="main cc-grids active">
+                <h3 class="title">Basic grid</h3>
                 <pre class="HTML">
                     <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
+                            &lt;div>...&lt;/div>
+                            &lt;div>...&lt;/div>
+                            &lt;div>...&lt;/div>
                             ...
                         &lt;/div>
                     </code>
                 </pre>
+
+                <div class="columns">
+                    <div class="cc-orange">auto</div>
+                    <div class="cc-blue">auto</div>
+                    <div class="cc-orange">auto</div>
+                    <div class="cc-bg-blue cc-2">2</div>
+                </div>
 
                 <div class="columns">
                     <div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
@@ -1393,75 +1417,7 @@
                 </div>
 
                 <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-5">5</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-6">6</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-7">7</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-8">8</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-9">9</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-10">10</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-11">11</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-12">12</div>
+                    <div class="cc-orange cc-4">4</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div>
                 </div>
 
                 <h3 class="title">Offsets</h3>
@@ -1489,19 +1445,19 @@
                     <div class="cc-blue cc-6 cc-offset-1">6 with offset 1</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-2">6 with offset 2</div>
+                    <div class="cc-blue cc-offset-1">auto with offset 1</div>
                 </div>
                 <div class="columns">
                     <div class="cc-blue cc-6 cc-offset-3">6 with offset 3</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-4">6 with offset 4</div>
+                    <div class="cc-blue cc-offset-3">auto with offset 3</div>
                 </div>
                 <div class="columns">
                     <div class="cc-blue cc-6 cc-offset-5">6 with offset 5</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-6">6 with offset 6</div>
+                    <div class="cc-blue cc-offset-5">auto with offset 5</div>
                 </div>
 
 
@@ -1518,17 +1474,12 @@
                         &lt;/div>
 
                         &lt;div class="columns">
-                            &lt;div class="cc-blue cc-3 cc-left">3&lt;/div>
+                            &lt;div class="cc-blue cc-3">3&lt;/div>
                             &lt;div class="cc-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
-                            &lt;div class="cc-blue cc-2 cc-right">2 right&lt;/div>
+                            &lt;div class="cc-blue cc-2">2 right&lt;/div>
                         &lt;/div>
 
                         &lt;div class="columns cc-bg-orange">
-                            &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
-                            &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-bg-orange cc-spaceless">
                             &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
                             &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
                         &lt;/div>
@@ -1558,12 +1509,6 @@
                     <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
                 </div>
 
-                <div class="columns cc-bg-orange cc-spaceless">
-                    <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
-                    <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
-                </div>
-
-
                 <h3 class="title">Orders</h3>
                 <pre class="HTML">
                     <code class="language-markup">&lt;div class="columns">
@@ -1579,128 +1524,6 @@
                     <div class="cc-orange cc-3">3</div>
                     <div class="cc-blue cc-3 cc-first">First displayed but third in HTML</div>
                     <div class="cc-orange cc-3">3</div>
-                </div>
-
-
-                <h3 class="title">Grids 1 - @cols-total (no gutter)</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-gutter">
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">3</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-5">5</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-6">6</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-7">7</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-8">8</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-9">9</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-10">10</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-11">11</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-12">12</div>
                 </div>
 
 
@@ -1774,53 +1597,6 @@
                     </div>
                 </div>
 
-                <h3 class="title">Auto sizes</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-blue cc-6">6&lt;/div>
-                            &lt;div class="cc-orange">auto&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-3">3 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue">Auto ! (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-5">5 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-2">2&lt;/div>
-                            &lt;div class="cc-blue">auto&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-2">2 no gutter&lt;/div>
-                            &lt;div class="cc-blue">auto  no gutter&lt;/div>
-                            &lt;div class="cc-orange cc-1">1  no gutter&lt;/div>
-                            &lt;div class="cc-blue cc-4">4  no gutter&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns">
-                    <div class="cc-blue cc-6">6</div>
-                    <div class="cc-orange">auto</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">3 (no gutter)</div>
-                    <div class="cc-blue">Auto ! (no gutter)</div>
-                    <div class="cc-orange cc-5">5 (no gutter)</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-blue">auto</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-4">4</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-2">2 no gutter</div>
-                    <div class="cc-blue">auto  no gutter</div>
-                    <div class="cc-orange cc-1">1  no gutter</div>
-                    <div class="cc-blue cc-4">4  no gutter</div>
-                </div>
 
 
                 <h3 class="title">No-Multiligne</h3>
@@ -1919,26 +1695,26 @@
                 </pre>
                 <div class="columns cc-justify-end">
                     <div class="cc-blue cc-3">Ending</div>
-                    <div class="cc-blue cc-3">Ending</div>
+                    <div class="cc-orange cc-3">Ending</div>
                 </div>
                 <div class="columns cc-justify-center">
                     <div class="cc-blue cc-3">Centered</div>
-                    <div class="cc-blue cc-3">Centered</div>
+                    <div class="cc-orange cc-3">Centered</div>
                 </div>
                 <div class="columns cc-justify-between">
                     <div class="cc-blue cc-3">Spacing on 100% width</div>
-                    <div class="cc-blue cc-5">Spacing on 100% width</div>
+                    <div class="cc-orange cc-5">Spacing on 100% width</div>
                     <div class="cc-blue cc-3">Spacing on 100% width</div>
                 </div>
                 <div class="columns cc-justify-around">
                     <div class="cc-blue cc-3">Equal spacing</div>
-                    <div class="cc-blue cc-5">Equal spacing</div>
+                    <div class="cc-orange cc-5">Equal spacing</div>
                     <div class="cc-blue cc-3">Equal spacing</div>
                 </div>
 
                 <h3 class="title">Justify content in a column</h3>
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-gutter">
+                    <code class="language-markup">&lt;div class="columns">
                             &lt;div class="cc-orange cc-3">
                                 &lt;p>
                                     Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
@@ -1952,7 +1728,7 @@
                             &lt;/div>
                         &lt;/div>
 
-                        &lt;div class="columns cc-no-gutter">
+                        &lt;div class="columns">
                             &lt;div class="cc-orange cc-3">
                                 &lt;p>
                                     Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
@@ -1966,7 +1742,7 @@
                             &lt;/div>
                         &lt;/div>
 
-                        &lt;div class="columns cc-no-gutter">
+                        &lt;div class="columns">
                             &lt;div class="cc-orange cc-3">
                                 &lt;p>
                                     Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
@@ -1982,7 +1758,7 @@
                     </code>
                 </pre>
 
-                <div class="columns cc-no-gutter">
+                <div class="columns">
                     <div class="cc-orange cc-3">
                         <p>
                             Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
@@ -1996,7 +1772,7 @@
                     </div>
                 </div>
 
-                <div class="columns cc-no-gutter">
+                <div class="columns">
                     <div class="cc-orange cc-3">
                         <p>
                             Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
@@ -2010,7 +1786,7 @@
                     </div>
                 </div>
 
-                <div class="columns cc-no-gutter">
+                <div class="columns">
                     <div class="cc-orange cc-3">
                         <p>
                             Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
@@ -2026,13 +1802,13 @@
 
                 <h3 class="title">Positioning columns</h3>
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-gutter">
+                    <code class="language-markup">&lt;div class="columns">
                             &lt;div class="cc-orange cc-3">
                                 &lt;p>
                                     Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                 &lt;/p>
                             &lt;/div>
-                            &lt;div class="columns cc-gutter cc-blue cc-9">
+                            &lt;div class="columns cc-blue cc-9">
                                 &lt;div class="cc-orange cc-align-self-top cc-3">
                                     &lt;p>
                                         align self top
@@ -2058,13 +1834,13 @@
                     </code>
                 </pre>
 
-                <div class="columns cc-no-gutter">
+                <div class="columns ">
                     <div class="cc-orange cc-3">
                         <p>
                             Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                         </p>
                     </div>
-                    <div class="columns cc-gutter cc-blue cc-9">
+                    <div class="columns cc-blue cc-9">
                         <div class="cc-orange cc-align-self-top cc-3">
                             <p>
                                 align self top
@@ -2092,221 +1868,61 @@
             <div class="main cc-responsive-grids">
                 <h3 class="title">Responsive grids</h3>
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-6">6&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-1">1&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-1">1&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-1">1&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12&lt;/div>
-                            &lt;div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12&lt;/div>
-                            &lt;div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12&lt;/div>
-                        &lt;/div>
+                    <code class="language-markup">
                     </code>
                 </pre>
                 <div class="columns">
-                    <div class="cc-orange cc-6">6</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
+                    <div class="cc-blue cc-6-xl cc-12-l cc-2-m cc-10-s cc-12-xs">6</div>
                 </div>
 
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12</div>
-                    <div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12</div>
-                    <div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12</div>
-                </div>
-
-                <h3 class="title">Delete Offsets on tablets or phones</h3>
+                <h3 class="title">Offsets</h3>
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones&lt;/div>
-                        &lt;/div>
+                    <code class="language-markup">
                     </code>
                 </pre>
                 <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
+                    <div class="cc-orange cc-2">2</div>
+                    <div class="cc-orange cc-2">2</div>
+                    <div class="cc-orange cc-2">2</div>
+                    <div class="cc-orange cc-2">2</div>
+                    <div class="cc-orange cc-2">2</div>
+                    <div class="cc-orange cc-2">2</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets</div>
+                    <div class="cc-blue cc-offset-5 cc-4 cc-offset-4-l cc-offset-3-m cc-offset-2-s cc-offset-1-xs">XL : 5 - L : 4 - M : 3 - S : 2 - XS : 1</div>
                 </div>
 
                 <div class="columns">
                     <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones</div>
-                </div>
-
-
-
-                <h3 class="title">Offsets adjustements</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
+                    <div class="cc-blue cc-4">4</div>
                     <div class="cc-orange cc-4">4</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
+                    <div class="cc-blue cc-offset-4 cc-offset-2-l cc-offset-0-s">No offset on small</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones</div>
+                    <div class="cc-blue cc-3 cc-offset-4 cc-offset-0-m cc-12-s">No offset on medium</div>
                 </div>
 
 
                 <h3 class="title">Positionning</h3>
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-12-s cc-4">First on Desktop&lt;/div>
-                            &lt;div class="cc-blue cc-12-s cc-4 cc-first-t">First on Tablet&lt;/div>
-                            &lt;div class="cc-purple cc-4 cc-12-s cc-first-s">First on Phone&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-12-s cc-4 cc-last-s">Last on Phone&lt;/div>
-                            &lt;div class="cc-blue cc-12-s cc-4 cc-last-t">Last on Tablet&lt;/div>
-                            &lt;div class="cc-purple cc-12-s cc-4">Last on Desktop&lt;/div>
-                        &lt;/div>
+                    <code class="language-markup">
                     </code>
                 </pre>
                 <div class="columns">
-                    <div class="cc-orange cc-12-s cc-4">First on Desktop</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-first-t">First on Tablet</div>
-                    <div class="cc-purple cc-4 cc-12-s cc-first-s">First on Phone</div>
+                    <div class="cc-orange cc-12-s cc-4">XL:1</div>
+                    <div class="cc-blue cc-12-s cc-4 cc-first-l">L:1</div>
+                    <div class="cc-purple cc-4 cc-12-s cc-first-m">M:1</div>
+                    <div class="cc-blue cc-12-s cc-4 cc-first-s">S:1</div>
+                    <div class="cc-purple cc-4 cc-12-s cc-first-xs">XS:1</div>
                 </div>
                 <div class="columns">
-                    <div class="cc-orange cc-12-s cc-4 cc-last-s">Last on Phone</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-last-t">Last on Tablet</div>
-                    <div class="cc-purple cc-12-s cc-4">Last on Desktop</div>
+                    <div class="cc-purple cc-4 cc-12-s cc-last-xs">XS:last</div>
+                    <div class="cc-blue cc-12-s cc-4 cc-last-s">S:last</div>
+                    <div class="cc-purple cc-4 cc-12-s cc-last-m">M:last</div>
+                    <div class="cc-orange cc-4 cc-12-s cc-last-l">L:last</div>
+                    <div class="cc-blue cc-12-s cc-4 cc-last-xl">XL:last</div>
                 </div>
             </div>
 
@@ -2329,9 +1945,9 @@
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="columns cc-masonry cc-6 cc-3-t cc-2-s">
+                <div class="columns cc-masonry cc-6 cc-12-xl cc-3-l cc-2-m cc-1-s">
                     <?php
-                        for ($i=1;$i<25;$i++) {
+                        for ($i=1;$i<50;$i++) {
                             $height = rand(60,350);
                     ?>
                         <div class="<?php if ($i%2==0) echo 'cc-blue'; else echo 'cc-orange';?>" style="height:<?php echo $height;?>px">
