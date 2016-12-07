@@ -3767,36 +3767,6 @@ img.cc-shadowed {
   margin-left: auto;
   margin-right: auto;
 }
-.columns > *.cc-align-top {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.columns > *.cc-align-center {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.columns > *.cc-align-bottom {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
 .columns > *.cc-align-self-top {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
@@ -4540,8 +4510,6 @@ body.opened-modal {
     ._generatePaddingMarginClass
     ._generateIcons
     ._generateColumns
-    ._generateTabletColumns
-    ._generatePhoneColumns
     ._generatePercentWidth
 */
 /* *****

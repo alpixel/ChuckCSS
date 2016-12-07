@@ -1381,548 +1381,573 @@
                 </p>
                 <p class="description">
                     <a href="#" data-rel="cc-grids" class="btn cc-bg-primary">Grids</a>
-                    <a href="#" data-rel="cc-responsive-grids" class="btn cc-bg-primary">Responsive Grids</a>
                     <a href="#" data-rel="cc-masonry-grids" class="btn cc-bg-primary">Masonry layout</a>
                 </p>
             </header>
 
             <div class="main cc-grids active">
-                <h3 class="title">Basic grid</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div>...&lt;/div>
-                            &lt;div>...&lt;/div>
-                            &lt;div>...&lt;/div>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
 
-                <div class="columns">
-                    <div class="cc-orange">auto</div>
-                    <div class="cc-blue">auto</div>
-                    <div class="cc-orange">auto</div>
-                    <div class="cc-bg-blue cc-2">2</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-orange cc-2">2</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-3">3</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div>
-                </div>
-
-                <h3 class="title">Offsets</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-offset-1">1&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-1">6 with offset 1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-1">auto with offset 1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-3">6 with offset 3</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-3">auto with offset 3</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-5">6 with offset 5</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-5">auto with offset 5</div>
-                </div>
-
-
-                <h3 class="title">Alignements</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-blue cc-6 cc-left">6 align left&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-6 cc-right">6 align right&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-6 cc-center">6 align center&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-3">3&lt;/div>
-                            &lt;div class="cc-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
-                            &lt;div class="cc-blue cc-2">2 right&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-bg-orange">
-                            &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
-                            &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-left">6 align left</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-right">6 align right</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-center">6 align center</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-left">3</div>
-                    <div class="cc-blue cc-4 cc-center">4 centered between 3 and 2</div>
-                    <div class="cc-blue cc-2 cc-right">2 right</div>
-                </div>
-
-                <div class="columns cc-bg-orange">
-                    <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
-                    <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
-                </div>
-
-                <h3 class="title">Orders</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-blue cc-3 cc-last">Last displayed but first in HTML&lt;/div>
-                            &lt;div class="cc-orange cc-3">3&lt;/div>
-                            &lt;div class="cc-blue cc-3 cc-first">First displayed but third in HTML&lt;/div>
-                            &lt;div class="cc-orange cc-3">3&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-last">Last displayed but first in HTML</div>
-                    <div class="cc-orange cc-3">3</div>
-                    <div class="cc-blue cc-3 cc-first">First displayed but third in HTML</div>
-                    <div class="cc-orange cc-3">3</div>
-                </div>
-
-
-                <h3 class="title">Nested grids</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-3">3&lt;/div>
-                            &lt;div class="cc-orange cc-9">9&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="columns cc-blue cc-3">
-                                &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
-                                &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
+                <div class="grids-basics">
+                    <h3 class="title">Basic grid</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div>...&lt;/div>
+                                &lt;div>...&lt;/div>
+                                &lt;div>...&lt;/div>
+                                ...
                             &lt;/div>
-                            &lt;div class="cc-orange cc-9 columns">
-                                &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                            &lt;/div>
-                        &lt;/div>
+                        </code>
+                    </pre>
 
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-8">8&lt;/div>
-                            &lt;div class="cc-blue cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="columns cc-orange cc-8">
-                                &lt;div class="cc-blue cc-4 cc-align-self-bottom">4 in 8 .align-self-bottom&lt;/div>
-                                &lt;div class="cc-blue ">auto | Ridiculus ridiculus sit! Sit? ...&lt;/div>
-                                &lt;div class="cc-blue cc-2 cc-align-self-center">2 in 8 .align-self-center&lt;/div>
-                            &lt;/div>
-                            &lt;div class="columns cc-orange cc-4">
-                                &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
-                                &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
-                            &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns">
-                    <div class="cc-orange cc-3">3</div>
-                    <div class="cc-orange cc-9">9</div>
-                </div>
-
-                <div class="columns">
-                    <div class="columns cc-blue cc-3">
-                        <div class="cc-orange cc-6">6 in 3</div>
-                        <div class="cc-orange cc-6">6 in 3</div>
+                    <div class="columns">
+                        <div class="cc-orange">auto</div>
+                        <div class="cc-blue">auto</div>
+                        <div class="cc-orange">auto</div>
+                        <div class="cc-bg-blue cc-2">2</div>
                     </div>
-                    <div class="cc-orange cc-9 columns">
-                        <div class="cc-blue cc-4">4 in 9</div>
-                        <div class="cc-blue cc-4">4 in 9</div>
-                        <div class="cc-blue cc-4">4 in 9</div>
+
+                    <div class="columns">
+                        <div class="cc-orange">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-orange cc-3">3</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-7">7</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-10">10</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
                     </div>
                 </div>
 
-                <div class="columns">
-                    <div class="cc-orange cc-8">8</div>
-                    <div class="cc-blue cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="columns cc-orange cc-8">
-                        <div class="cc-blue cc-4 cc-align-self-bottom">4 in 8 .align-self-bottom</div>
-                        <div class="cc-blue ">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
-                        <div class="cc-blue cc-2 cc-align-self-center">2 in 8 .align-self-center</div>
+                <div class="grids-responsive">
+                    <h3 class="title">Responsive grid</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-2">...&lt;/div>
+                                &lt;div class="cc-5-l">...&lt;/div>
+                                &lt;div class="cc-7-s">...&lt;/div>
+                                ...
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-orange">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
                     </div>
-                    <div class="columns cc-orange cc-4">
-                        <div class="cc-blue cc-6">6 in 4</div>
-                        <div class="cc-blue cc-6">6 in 4</div>
+
+                    <div class="columns">
+                        <div class="cc-orange">auto</div>
+                        <div class="cc-blue cc-5-l cc-2-s">L:5 - S:2</div>
+                        <div class="cc-orange cc-7-s">S:7</div>
                     </div>
                 </div>
 
+                <div class="grids-offset">
+                    <h3 class="title">Offsets</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-orange cc-offset-1 cc-offset-{x}-{letter}">1&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-offset-1">6 with offset 1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-offset-1">auto with offset 1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-4 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-12-s">XL : offset 6<br />L: offset 3<br />M: offset 5<br />S: offset 0 and 100%</div>
+                    </div>
+                </div>
 
+                <div class="grids-ordering">
+                    <h3 class="title">Ordering</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-12-s cc-4">XL:1&lt;/div>
+                                &lt;div class="cc-blue cc-12-s cc-4 cc-first-l">L:1&lt;/div>
+                                &lt;div class="cc-purple cc-4 cc-12-s cc-first-m">M:1&lt;/div>
+                                &lt;div class="cc-blue cc-12-s cc-4 cc-last cc-first-s">All : last - S:1&lt;/div>
+                                &lt;div class="cc-purple cc-4 cc-12-s cc-first cc-first-xs">All : 1 - XS:1&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-orange cc-12-s cc-4">XL:1</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-first-l">L:1</div>
+                        <div class="cc-purple cc-4 cc-12-s cc-first-m">M:1</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-last cc-first-s">All : last - S:1</div>
+                        <div class="cc-purple cc-4 cc-12-s cc-first cc-first-xs">All : 1 - XS:1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-purple cc-4 cc-12-s cc-last-xs">XS:last</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-last-s">S:last</div>
+                        <div class="cc-purple cc-4 cc-12-s cc-last-m">M:last</div>
+                        <div class="cc-orange cc-4 cc-12-s cc-last-l">L:last</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-last-xl">XL:last</div>
+                    </div>
+                </div>
 
-                <h3 class="title">No-Multiligne</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-multiligne">
-                            &lt;div class="cc-blue cc-7">7&lt;/div>
-                            &lt;div class="cc-orange cc-6">6 /!\ TOO LARGE&lt;/div>
-                        &lt;/div>
+                <div class="grids-columns-alignments">
+                    <h3 class="title">Columns Alignments</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-blue cc-6 cc-left">6 align left&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-6 cc-right">6 align right&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-6 cc-center">6 align center&lt;/div>
+                            &lt;/div>
 
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-5">
-                                &lt;div class="columns cc-no-multiligne">
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-3">3&lt;/div>
+                                &lt;div class="cc-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
+                                &lt;div class="cc-blue cc-2">2 right&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns cc-bg-orange">
+                                &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
+                                &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-left">6 align left</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-right">6 align right</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-center">6 align center</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-blue cc-3 cc-left">3</div>
+                        <div class="cc-blue cc-4 cc-center">4 centered between 3 and 2</div>
+                        <div class="cc-blue cc-2 cc-right">2 right</div>
+                    </div>
+
+                    <div class="columns cc-bg-orange">
+                        <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
+                        <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
+                    </div>
+                </div>
+
+                <div class="grids-nested">
+                    <h3 class="title">Nested grids</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">3&lt;/div>
+                                &lt;div class="cc-orange cc-9">9&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="columns cc-blue cc-3">
+                                    &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
+                                    &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
+                                &lt;/div>
+                                &lt;div class="cc-orange cc-9 columns">
+                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
+                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
+                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-8">8&lt;/div>
+                                &lt;div class="cc-blue cc-4">4&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="columns cc-orange cc-8">
+                                    &lt;div class=" cc-4">4 in 8&lt;/div>
+                                    &lt;div class=" ">auto | Ridiculus ridiculus ...&lt;/div>
+                                    &lt;div class=" cc-2">2 in 8&lt;/div>
+                                &lt;/div>
+                                &lt;div class="columns cc-orange cc-4">
+                                    &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
+                                    &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
+                                &lt;/div>
+                            &lt;/div>>
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">3</div>
+                        <div class="cc-blue cc-9">9</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="columns cc-blue cc-3">
+                            <div class="cc-orange cc-6">6 in 3</div>
+                            <div class="cc-orange cc-6">6 in 3</div>
+                        </div>
+                        <div class="cc-orange cc-9 columns">
+                            <div class="cc-blue cc-4">4 in 9</div>
+                            <div class="cc-blue cc-4">4 in 9</div>
+                            <div class="cc-blue cc-4">4 in 9</div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-8">8</div>
+                        <div class="cc-blue cc-4">4</div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns cc-orange cc-8">
+                            <div class=" cc-4">4 in 8</div>
+                            <div class=" ">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
+                            <div class=" cc-2">2 in 8</div>
+                        </div>
+                        <div class="columns cc-orange cc-4">
+                            <div class="cc-blue cc-6">6 in 4</div>
+                            <div class="cc-blue cc-6">6 in 4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grids-no-multiligne">
+                    <h3 class="title">No-Multiligne</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns cc-no-multiligne">
+                                &lt;div class="cc-blue cc-7">7&lt;/div>
+                                &lt;div class="cc-orange cc-6">6 /!\ TOO LARGE&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-5 columns cc-no-multiligne">
                                     &lt;div class="cc-6 cc-orange">6&lt;/div>
                                     &lt;div class="cc-7 cc-orange">7 /!\ too large but on the same line&lt;/div>
                                 &lt;/div>
                             &lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class=" cc-orange cc-7">
-                                &lt;div class="columns cc-no-multiligne">
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3 /!\ too large but on the same line&lt;/div>
-                                &lt;/div>
-                            &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
 
-                <div class="columns cc-no-multiligne">
-                    <div class="cc-blue cc-7">7</div>
-                    <div class="cc-orange cc-6">6 /!\ TOO LARGE</div>
-                </div>
+                        </code>
+                    </pre>
 
-                <div class="columns">
-                    <div class="cc-blue cc-5">
-                        <div class="columns cc-no-multiligne">
+                    <div class="columns cc-no-multiligne">
+                        <div class="cc-blue cc-7">7</div>
+                        <div class="cc-orange cc-6">6 /!\ TOO LARGE</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-blue cc-5 columns cc-no-multiligne">
                             <div class="cc-6 cc-orange">6</div>
                             <div class="cc-7 cc-orange">7 /!\ too large but on the same line</div>
                         </div>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class=" cc-orange cc-7">
-                        <div class="columns cc-no-multiligne">
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3 /!\ too large but on the same line</div>
-                        </div>
+
+                <div class="grids-column-reverse">
+                    <h3 class="title">Columns reverse</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns cc-reverse">
+                                &lt;div class="cc-blue cc-3">First in html&lt;/div>
+                                &lt;div class="cc-orange cc-3">Second in html&lt;/div>
+                                &lt;div class="cc-blue cc-3">Third in html&lt;/div>
+                                &lt;div class="cc-orange cc-3">Fourth in html&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns cc-reverse">
+                        <div class="cc-blue cc-3">First in html</div>
+                        <div class="cc-orange cc-3">Second in html</div>
+                        <div class="cc-blue cc-3">Third in html</div>
+                        <div class="cc-orange cc-3">Fourth in html</div>
                     </div>
                 </div>
 
-                <h3 class="title">Columns reverse</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-reverse">
-                            &lt;div class="cc-blue cc-3">First in html&lt;/div>
-                            &lt;div class="cc-orange cc-3">Second in html&lt;/div>
-                            &lt;div class="cc-blue cc-3">Third in html&lt;/div>
-                            &lt;div class="cc-orange cc-3">Fourth in html&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns cc-reverse">
-                    <div class="cc-blue cc-3">First in html</div>
-                    <div class="cc-orange cc-3">Second in html</div>
-                    <div class="cc-blue cc-3">Third in html</div>
-                    <div class="cc-orange cc-3">Fourth in html</div>
-                </div>
-
-
-                <h3 class="title">Justify columns</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-justify-end">
-                            &lt;div class="cc-blue cc-3">Ending&lt;/div>
-                            &lt;div class="cc-blue cc-3">Ending&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-justify-center">
-                            &lt;div class="cc-blue cc-3">Centered&lt;/div>
-                            &lt;div class="cc-blue cc-3">Centered&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-justify-between">
-                            &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
-                            &lt;div class="cc-blue cc-5">Spacing on 100% width&lt;/div>
-                            &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-justify-around">
-                            &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
-                            &lt;div class="cc-blue cc-5">Equal spacing&lt;/div>
-                            &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns cc-justify-end">
-                    <div class="cc-blue cc-3">Ending</div>
-                    <div class="cc-orange cc-3">Ending</div>
-                </div>
-                <div class="columns cc-justify-center">
-                    <div class="cc-blue cc-3">Centered</div>
-                    <div class="cc-orange cc-3">Centered</div>
-                </div>
-                <div class="columns cc-justify-between">
-                    <div class="cc-blue cc-3">Spacing on 100% width</div>
-                    <div class="cc-orange cc-5">Spacing on 100% width</div>
-                    <div class="cc-blue cc-3">Spacing on 100% width</div>
-                </div>
-                <div class="columns cc-justify-around">
-                    <div class="cc-blue cc-3">Equal spacing</div>
-                    <div class="cc-orange cc-5">Equal spacing</div>
-                    <div class="cc-blue cc-3">Equal spacing</div>
-                </div>
-
-                <h3 class="title">Justify content in a column</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
-                                &lt;/p>
+                <div class="grids-justify-columns">
+                    <h3 class="title">Justify columns</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns cc-justify-end">
+                                &lt;div class="cc-blue cc-3">Ending&lt;/div>
+                                &lt;div class="cc-blue cc-3">Ending&lt;/div>
                             &lt;/div>
-                            &lt;div class="cc-blue cc-9">
-                                &lt;p>
-                                    &lt;strong>TOP CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                                &lt;/p>
+                            &lt;div class="columns cc-justify-center">
+                                &lt;div class="cc-blue cc-3">Centered&lt;/div>
+                                &lt;div class="cc-blue cc-3">Centered&lt;/div>
                             &lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
-                                &lt;/p>
+                            &lt;div class="columns cc-justify-between">
+                                &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-blue cc-5">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
                             &lt;/div>
-                            &lt;div class="cc-align-center cc-blue cc-9">
-                                &lt;p>
-                                    &lt;strong>CENTER ALIGNMENT&lt;/strong>&lt;br />&lt;br />
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                                &lt;/p>
+                            &lt;div class="columns cc-justify-around">
+                                &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
+                                &lt;div class="cc-blue cc-5">Equal spacing&lt;/div>
+                                &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
                             &lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
-                                &lt;/p>
-                            &lt;/div>
-                            &lt;div class="cc-align-bottom cc-blue cc-9">
-                                &lt;p>
-                                    &lt;strong>BOTTOM CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                                &lt;/p>
-                            &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
+                        </code>
+                    </pre>
+                    <div class="columns cc-justify-end">
+                        <div class="cc-blue cc-3">Ending</div>
+                        <div class="cc-orange cc-3">Ending</div>
                     </div>
-                    <div class="cc-blue cc-9">
-                        <p>
-                            <strong>TOP CONTENT ALIGNMENT</strong><br /><br />
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                        </p>
+                    <div class="columns cc-justify-center">
+                        <div class="cc-blue cc-3">Centered</div>
+                        <div class="cc-orange cc-3">Centered</div>
+                    </div>
+                    <div class="columns cc-justify-between">
+                        <div class="cc-blue cc-3">Spacing on 100% width</div>
+                        <div class="cc-orange cc-5">Spacing on 100% width</div>
+                        <div class="cc-blue cc-3">Spacing on 100% width</div>
+                    </div>
+                    <div class="columns cc-justify-around">
+                        <div class="cc-blue cc-3">Equal spacing</div>
+                        <div class="cc-orange cc-5">Equal spacing</div>
+                        <div class="cc-blue cc-3">Equal spacing</div>
                     </div>
                 </div>
 
-                <div class="columns">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
-                    </div>
-                    <div class="cc-align-center cc-blue cc-9">
-                        <p>
-                            <strong>CENTER ALIGNMENT</strong><br /><br />
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
-                    </div>
-                    <div class="cc-align-bottom cc-blue cc-9">
-                        <p>
-                            <strong>BOTTOM CONTENT ALIGNMENT</strong><br /><br />
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                        </p>
-                    </div>
-                </div>
-
-                <h3 class="title">Positioning columns</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
-                                &lt;/p>
-                            &lt;/div>
-                            &lt;div class="columns cc-blue cc-9">
-                                &lt;div class="cc-orange cc-align-self-top cc-3">
+                <div class="grids-align-items">
+                    <h3 class="title">Justify content in a column</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
                                     &lt;p>
-                                        align self top
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
                                 &lt;/div>
-                                &lt;div class="cc-orange cc-align-self-bottom cc-3">
-                                    &lt;p>
-                                        align self bottom
-                                    &lt;/p>
-                                &lt;/div>
-                                &lt;div class="cc-orange cc-align-self-center cc-3">
-                                    &lt;p>
-                                        align self center
-                                    &lt;/p>
-                                &lt;/div>
-                                &lt;div class="cc-orange cc-align-self-stretch cc-3">
-                                    &lt;p>
-                                        align self stretch
+                                &lt;div class="cc-9  columns cc-align-start">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>TOP CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
                                     &lt;/p>
                                 &lt;/div>
                             &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
 
-                <div class="columns ">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
-                    </div>
-                    <div class="columns cc-blue cc-9">
-                        <div class="cc-orange cc-align-self-top cc-3">
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-center columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>CENTER ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-end columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>BOTTOM CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-baseline columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>BASELINE CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-stretch columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>STRETCH CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
                             <p>
-                                align self top
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
                         </div>
-                        <div class="cc-orange cc-align-self-bottom cc-3">
-                            <p>
-                                align self bottom
+                        <div class="cc-9 columns cc-align-start">
+                            <p class="cc-bg-blue">
+                                <strong>TOP CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
                             </p>
                         </div>
-                        <div class="cc-orange cc-align-self-center cc-3">
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
                             <p>
-                                align self center
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
                         </div>
-                        <div class="cc-orange cc-align-self-stretch cc-3">
+                        <div class="cc-align-center columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>CENTER ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
                             <p>
-                                align self stretch
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="cc-align-end columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>BOTTOM CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
+                            <p>
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="cc-align-baseline columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>BASELINE CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
+                            <p>
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="cc-align-stretch columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>STRETCH CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="main cc-responsive-grids">
-                <h3 class="title">Responsive grids</h3>
-                <pre class="HTML">
-                    <code class="language-markup">
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-blue cc-6-xl cc-12-l cc-2-m cc-10-s cc-12-xs">6</div>
-                </div>
+                <div class="grids-align-self">
+                    <h3 class="title">Positioning columns</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="columns cc-blue cc-9">
+                                    &lt;div class="cc-orange cc-align-self-top cc-3">
+                                        &lt;p>
+                                            align self top
+                                        &lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="cc-orange cc-align-self-bottom cc-3">
+                                        &lt;p>
+                                            align self bottom
+                                        &lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="cc-orange cc-align-self-center cc-3">
+                                        &lt;p>
+                                            align self center
+                                        &lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="cc-orange cc-align-self-stretch cc-3">
+                                        &lt;p>
+                                            align self stretch
+                                        &lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
 
-                <h3 class="title">Offsets</h3>
-                <pre class="HTML">
-                    <code class="language-markup">
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-orange cc-2">2</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-5 cc-4 cc-offset-4-l cc-offset-3-m cc-offset-2-s cc-offset-1-xs">XL : 5 - L : 4 - M : 3 - S : 2 - XS : 1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-blue cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-offset-2-l cc-offset-0-s">No offset on small</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-offset-4 cc-offset-0-m cc-12-s">No offset on medium</div>
-                </div>
-
-
-                <h3 class="title">Positionning</h3>
-                <pre class="HTML">
-                    <code class="language-markup">
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-12-s cc-4">XL:1</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-first-l">L:1</div>
-                    <div class="cc-purple cc-4 cc-12-s cc-first-m">M:1</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-first-s">S:1</div>
-                    <div class="cc-purple cc-4 cc-12-s cc-first-xs">XS:1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-purple cc-4 cc-12-s cc-last-xs">XS:last</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-last-s">S:last</div>
-                    <div class="cc-purple cc-4 cc-12-s cc-last-m">M:last</div>
-                    <div class="cc-orange cc-4 cc-12-s cc-last-l">L:last</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-last-xl">XL:last</div>
+                    <div class="columns ">
+                        <div class="cc-orange cc-3">
+                            <p>
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="columns cc-blue cc-9">
+                            <div class="cc-orange cc-align-self-top cc-3">
+                                <p>
+                                    align self top
+                                </p>
+                            </div>
+                            <div class="cc-orange cc-align-self-bottom cc-3">
+                                <p>
+                                    align self bottom
+                                </p>
+                            </div>
+                            <div class="cc-orange cc-align-self-center cc-3">
+                                <p>
+                                    align self center
+                                </p>
+                            </div>
+                            <div class="cc-orange cc-align-self-stretch cc-3">
+                                <p>
+                                    align self stretch
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
