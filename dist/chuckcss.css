@@ -4584,7 +4584,7 @@ form.cc-primary button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-primary.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-primary.cc-bordered > li.active a:not(.btn) {
@@ -4823,7 +4823,7 @@ form.cc-green button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-green.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-green.cc-bordered > li.active a:not(.btn) {
@@ -5062,7 +5062,7 @@ form.cc-red button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-red.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-red.cc-bordered > li.active a:not(.btn) {
@@ -5301,7 +5301,7 @@ form.cc-blue button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-blue.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-blue.cc-bordered > li.active a:not(.btn) {
@@ -5540,7 +5540,7 @@ form.cc-purple button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-purple.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-purple.cc-bordered > li.active a:not(.btn) {
@@ -5779,7 +5779,7 @@ form.cc-orange button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-orange.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-orange.cc-bordered > li.active a:not(.btn) {
@@ -6018,7 +6018,7 @@ form.cc-yellow button[type="submit"]:hover {
 }
 /* Tabs */
 .tabs {
-  /* Small */
+  /* Small screen ruleset */
 }
 .tabs.cc-yellow.cc-bordered > li:hover a:not(.btn),
 .tabs.cc-yellow.cc-bordered > li.active a:not(.btn) {
