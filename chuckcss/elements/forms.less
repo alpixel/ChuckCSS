@@ -311,10 +311,7 @@ form {
         height: @input-lh;
         font-size:@input-fs;
         ._transition;
-
-        /* Hack IE8 and < */
-        @line-height-IE : @input-lh;
-        line-height:~"@{line-height-IE}\9"; /* hot fix IE 8 */
+        line-height:inherit;
 
 
         &:focus {

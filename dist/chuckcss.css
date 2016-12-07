@@ -1644,9 +1644,7 @@ form input {
   font-size: 1.35rem;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
-  /* Hack IE8 and < */
-  line-height: 4.199999999999999rem\9;
-  /* hot fix IE 8 */
+  line-height: inherit;
   /* Error inputs */
   /* number : fix right padding */
   /* disabled element */
