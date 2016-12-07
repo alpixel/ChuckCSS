@@ -17,10 +17,12 @@
         "-lh" : line-height
         "-li" : light (colors only)
         "-ma" : margin (for grid containers, and helpers paddings and margins)
+        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-mc" : main-color
         "-mw" : max-width (media queries)
         "-na" : name (colors only)
         "-pa" : padding (for grid columns, and helpers paddings and margins)
+        "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
         "-su" : success
         "-wa" : warning
@@ -34,12 +36,10 @@
 /*
     -- @ Media Queries @ --
 */
-// Phones
-@tiny-mw : 360px;       /* Max-width for very small screens */
-@phone-mw : 767px;      /* Max-width for phones devices */
-// Tablets
-@tablet-mw : 1200px;    /* Max-width for tablet devices */
-
+@xs-media-mw : 359px;     /* Max-width for xs screens */
+@s-media-mw : 767px;      /* Max-width for small devices */
+@m-media-mw : 989px;      /* Max-width for medium devices */
+@l-media-mw : 1199px;     /* Max-width for large devices */
 
 /*
     -- @ Colors @ --
@@ -133,20 +133,19 @@
 /*
     -- @ Titles @ --
 */
-@title-mc : @text-mc; /* Hn ~ Titles main color */
-@title-h1-fs : 2em;
-@title-h1-lh : @title-h1-fs*1.1;
-@title-h2-fs : 1.8em;
-@title-h2-lh : @title-h2-fs*1.1;
-@title-h3-fs : 1.6em;
-@title-h3-lh : @title-h3-fs*1.15;
-@title-h4-fs : 1.4em;
-@title-h4-lh : @title-h4-fs*1.15;
-@title-h5-fs : 1.3em;
-@title-h5-lh : @title-h5-fs*1.15;
-@title-h6-fs : 1.2em;
-@title-h6-lh : @title-h6-fs*1.15;
-
+@title-mc : @text-mc;                  /* Hn ~ Titles main color */
+@title-h1-fs : 3rem;                // ~= 30px
+@title-h1-lh : @title-h1-fs * 1.8;  // ~= 54px
+@title-h2-fs : 2.7rem;              // ~= 27px
+@title-h2-lh : @title-h2-fs * 1.8;  // ~= 49px
+@title-h3-fs : 2.4rem;              // ~= 24px
+@title-h3-lh : @title-h3-fs * 1.8;  // ~= 43px
+@title-h4-fs : 2.1rem;              // ~= 21px
+@title-h4-lh : @title-h4-fs * 1.8;  // ~= 38px
+@title-h5-fs : 1.9rem;              // ~= 19px
+@title-h5-lh : @title-h5-fs * 1.8;  // ~= 34px
+@title-h6-fs : 1.8rem;              // ~= 18px
+@title-h6-lh : @title-h6-fs * 1.8;  // ~= 32px
 @subtitle-mc : lighten(@title-mc,25%);  /* Subtitle font-color */
 @subtitle-fs : 70%;                     /* Subtitle font-color */
 
@@ -173,7 +172,7 @@
 @input-fs : @text-fs * (9/10);  /* Input ~ font-size = @text-fs (can be changed by custom value) */
 @input-lh : @text-fs*2.8;       /* Input ~ line-height (Submit buttons too) */
 @input-bc : #ddd;               /* Input border-color */
-@input-br : 1;                  /* Input ~ border-radius (in px) */
+@input-br : 2;                  /* Input ~ border-radius (in px) */
 
 @submit-bg : @primary;          /* Submit input/button bg-color */
 
@@ -229,12 +228,12 @@
 /*
     -- @ Grids @ --
 */
-@cols-gutter : 2em;             /* Gutter between 2 cols = Each column margin-left & margin-right */
-@cols-total : 12;               /* Total of cols in grid */
-@cols-pa : 1em;                 /* Each column padding  */
-@cols-ma-top : 0em;             /* Each column margin top */
-@cols-ma-bottom : @cols-ma-top; /* Each column margin bottom */
-@cols-masonry-gap : 1.5em;      /* Gap between each column with masonry layout */
+@cols-gutter : 0em;        /* Gutter between 2 cols = Each column margin-left & margin-right */
+@cols-total : 12;           /* Total of cols in grid */
+@cols-pa : 1em;             /* Each column padding  */
+@cols-mat : 0em;            /* Each column margin top */
+@cols-mab : @cols-mat;      /* Each column margin bottom */
+@cols-masonry-gap : 1.5em;  /* Gap between each column with masonry layout */
 
 
 
@@ -266,7 +265,8 @@
 /* Dots loader vars */
 @loader-dots-count : 12;    /* Loader dots : nb of dots */
 @loader-dots-radius : 360 / @loader-dots-count;     /* Loader dots : Calculation of each dot radius */
-@loader-dots-animation-delay : @loader-speed / @loader-dots-count;      /* Loader dots  :Calculation of each dot animation delay */
+@loader-dots-animation-delay : @loader-speed / @loader-dots-count;      /* Loader dots  : Calculation of each dot animation delay */
+
 /* Spinner loader vars */
 @loader-spinner-bw : 2; /* Loader spinner : border-width */
 

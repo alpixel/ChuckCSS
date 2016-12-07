@@ -17,10 +17,12 @@
         "-lh" : line-height
         "-li" : light (colors only)
         "-ma" : margin (for grid containers, and helpers paddings and margins)
+        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-mc" : main-color
         "-mw" : max-width (media queries)
         "-na" : name (colors only)
         "-pa" : padding (for grid columns, and helpers paddings and margins)
+        "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
         "-su" : success
         "-wa" : warning
@@ -31,9 +33,10 @@
 /*
     -- @ Media Queries @ --
 */
-/* Max-width for very small screens */
-/* Max-width for phones devices */
-/* Max-width for tablet devices */
+/* Max-width for xs screens */
+/* Max-width for small devices */
+/* Max-width for medium devices */
+/* Max-width for large devices */
 /*
     -- @ Colors @ --
 */
@@ -162,7 +165,7 @@
 /* Dots loader vars */
 /* Loader dots : nb of dots */
 /* Loader dots : Calculation of each dot radius */
-/* Loader dots  :Calculation of each dot animation delay */
+/* Loader dots  : Calculation of each dot animation delay */
 /* Spinner loader vars */
 /* Loader spinner : border-width */
 /*
@@ -406,10 +409,10 @@
       }
 ***** */
 /*
-    == RESPONSIVE / MEDIA QUERIES ==
+    equivalent to RESPONSIVE / MEDIA QUERIES equivalent to
 */
 /* *****
-    @name : ._tablet, ._phone and others media queries
+    @name : ._media-{key}
     @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
     @params : @rules (CSS rules)
 
@@ -417,16 +420,23 @@
       el {
         background-color:white; // Default : Apply a white bg-color to the <el>
 
-        ._tablet({
-          background-color:black; // Apply a black bg-color to the <el> on max-width:@tablet-mw screens
-        }); // don't forget the ;
-
-        ._phone({
-          background-color:red; // Apply a red bg-color to the <el> on max-width:@phone-mw screens
+        ._media-xs-up({
+          background-color:red; // Apply a red bg-color to the <el> on screen > 359px
         }); // don't forget the ;
       }
-
 ***** */
+/*
+    * X-Small media
+*/
+/*
+    * Small media
+*/
+/*
+    * Medium media
+*/
+/*
+    * Large media
+*/
 body.test {
   background-color: #f8f8f8;
   padding: 50px;
@@ -448,6 +458,16 @@ body.test {
 }
 body.test #main-header {
   padding-bottom: 50px;
+}
+body.test #screen-infos {
+  z-index: 99;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #c41515;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 body.test > section {
   border: 1px solid #eeeeee;

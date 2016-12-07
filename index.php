@@ -4,7 +4,6 @@
         <!-- META -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>ChuckCSS.io | Tests</title>
-        <!--<base href="http://devbox.local/" />-->
         <base href="http://alpixel.rocks/mickael/workspace/ChuckCSS/" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,6 +17,11 @@
     </head>
 
     <body class="test">
+        <div id="screen-infos">
+            <span class="screen-width">...DIOT...</span>px<br />
+            "<span class="screen-media">...DIOT...</span>" screen
+        </div>
+
         <header id="main-header">
             <div class="columns">
                 <div class="cc-12 cc-txt-center">
@@ -31,6 +35,7 @@
                 </div>
             </div>
         </header>
+
         <section class="components">
             <header>
                 <h2 class="title">Components</h2>
@@ -386,746 +391,411 @@
             </div>
 
             <div class="main cc-tabs">
-                <h3 class="title">Tabs</h3>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-basic">
+                    <h3 class="title">Basics Tabs</h3>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-underlined">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-underlined">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-underlined">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-underlined">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-centered">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-centered">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-alignment">
+                    <h3 class="title">Tabs alignments</h3>
 
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-align-left">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-right">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-right">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                            &lt;ul class="tabs cc-align-center">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-fat cc-underlined">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-fat cc-underlined">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                            &lt;ul class="tabs cc-align-right">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
+                            &lt;ul class="tabs cc-align-stretch">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-align-left">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <ul class="tabs cc-align-center">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-bordered">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-bordered">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <ul class="tabs cc-align-right">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-stretch cc-bordered">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-stretch cc-bordered cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-stretch cc-bordered cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-stretch cc-bordered">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-stretch cc-bordered cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-stretch cc-bordered cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <ul class="tabs cc-align-stretch">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-bordered">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li class="cc-last">&lt;a href="#" class="btn cc-bg-red fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li class="cc-last">&lt;a href="#">&lt;i class="fa fa-times">&lt;/i> Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-bordered">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li class="cc-last"><a href="#"><i class="fa fa-times"></i> Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-thickness">
+                    <h3 class="title">Tabs thickness</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-fat cc-underlined">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-pills ">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li class="cc-last">&lt;a href="#" class="ion-ios-paw">I'm pulled right&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-unchained cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20 cc-stretch">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20 cc-fat cc-stretch">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20 cc-thin cc-stretch">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-centered cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-right cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-pills ">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li class="cc-last"><a href="#" class="ion-ios-paw">I'm pulled right</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-unchained cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-stretch">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-fat cc-stretch">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-thin cc-stretch">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-centered cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                            &lt;ul class="tabs cc-thin cc-mat-20 cc-underlined">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-fat cc-underlined">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-thin cc-mat-20 cc-underlined">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
+                <div class="tabs-bordered">
+                    <h3 class="title">Tabs bordered</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-bordered">
+                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-bordered">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                 <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-stretch-t">
-                            &lt;li>&lt;a href="#" class="fa-user">This tabs is stretch on tablet !&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-centered-t cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">This tabs is centered on tablet !&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-right-t cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">This tabs is right on tablet !&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-unchained cc-stretch-t cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Will be stretch on tablet!&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-stretch-t">
-                    <li><a href="#" class="fa-user">This tabs is stretch on tablet !</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-centered-t cc-mat-20">
-                    <li><a href="#" class="fa-user">This tabs is centered on tablet !</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-right-t cc-mat-20">
-                    <li><a href="#" class="fa-user">This tabs is right on tablet !</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-unchained cc-stretch-t cc-mat-20">
-                    <li><a href="#" class="fa-user">Will be stretch on tablet!</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-li-last">
+                    <h3 class="title">Float &lt;li></h3>
 
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;ul class="tabs">
+                                &lt;li>...&lt;/li>
+                                &lt;li class="active">...&lt;/li>
+                                ...
+                                &lt;li class="cc-last">&lt;a href="#" class="btn cc-bg-red fa-times">Exit!&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs">
+                                &lt;li>...&lt;/li>
+                                &lt;li class="active">...&lt;/li>
+                                ...
+                                &lt;li class="cc-last">&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="btn cc-bg-red ion-ios-paw">First item</a></li>
+                        <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-bordered cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li class="cc-last"><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-green">
-                    </code>
-                </pre>
-                <ul class="tabs cc-underlined cc-green">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-pills">
+                    <h3 class="title">Pills</h3>
 
-                <ul class="tabs cc-mat-20 cc-green">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-centered cc-green cc-mat-20">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-right cc-green  cc-mat-20">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-stretch cc-bordered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-stretch cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-centered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-green cc-mat-20 cc-stretch cc-fat">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-green cc-mat-20 cc-stretch cc-thin">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;ul class="tabs cc-pills">
+                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-unchained cc-mat-20">
+                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-pills">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-unchained cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
+
+                <div class="tabs-responsive">
+                    <h3 class="title">Responsive tabs</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;ul class="tabs cc-align-center-l cc-align-right-xl cc-align-stretch-m">
+                                &lt;li>&lt;a href="#" class="fa-user">Right on XL screens, Align center on L screens, stretch on M !&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-align-center-l cc-align-right-xl cc-align-stretch-m">
+                        <li><a href="#" class="fa-user">Right on XL screens, Align center on L screens, stretch on M !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-center-l cc-mat-20">
+                        <li><a href="#" class="fa-user">Align center on L screens !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-bordered cc-align-right-l cc-mat-20">
+                        <li><a href="#" class="fa-user">Align right on L screens !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-unchained cc-align-stretch-l cc-mat-20">
+                        <li><a href="#" class="fa-user">Align stretch on L screens !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
+
+                <div class="tabs-color">
+                    <h3 class="title">Change main color</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-green">
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-green">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-underlined cc-green cc-mat-20">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-bordered cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-align-stretch cc-bordered cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-mat-20 cc-align-stretch cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-align-center cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-align-right cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="main cc-modals">
@@ -1236,16 +906,26 @@
                         &lt;p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.&lt;/p>
 
 
-                        &lt;h3>Hidden blocks&lt;/h3>
-                        &lt;p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : hide&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-hidden-d cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : show&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-hidden-t cc-pa cc-mat-20 cc-bg-primary">Desktop : show&lt;br />Tablet : hide&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">Desktop : show&lt;br />Tablet : show&lt;br />Phone : hide&lt;/p>
+                        &lt;h3>Hidden blocks on device ONLY&lt;/h3>
+                        &lt;p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices&lt;/p>
+                        &lt;p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
+                        &lt;p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+
+                        &lt;h3>Hidden blocks on devices and less&lt;/h3>
+                        &lt;p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
 
                         &lt;h3>Show on device only&lt;/h3>
-                        &lt;p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : hide&lt;br />Phone : show&lt;/p>
-                        &lt;p class="cc-t-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide&lt;br />Tablet : show&lt;br />Phone : hide&lt;/p>
-                        &lt;p class="cc-d-only cc-pa cc-mat-20 cc-bg-primary">Desktop : show&lt;br />Tablet : hide&lt;br />Phone : hide&lt;/p>
+                        &lt;p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+                        &lt;p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
 
                         &lt;h3>Width&lt;/h3>
                         &lt;div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
@@ -1282,16 +962,27 @@
                     <p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.</p>
 
 
-                    <h3>Hidden blocks</h3>
-                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : hide<br />Phone : show</p>
-                    <p class="cc-hidden-d cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : show<br />Phone : show</p>
-                    <p class="cc-hidden-t cc-pa cc-mat-20 cc-bg-primary">Desktop : show<br />Tablet : hide<br />Phone : show</p>
-                    <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">Desktop : show<br />Tablet : show<br />Phone : hide</p>
+                    <h3>Hidden blocks on targeted devices</h3>
+                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices</p>
+                    <p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : shown<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : shown<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : shown<br />XS : shown</p>
+                    <p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : shown</p>
+                    <p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
 
-                    <h3>Show on device only</h3>
-                    <p class="cc-s-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : hide<br />Phone : show</p>
-                    <p class="cc-t-only cc-pa cc-mat-20 cc-bg-primary">Desktop : hide<br />Tablet : show<br />Phone : hide</p>
-                    <p class="cc-d-only cc-pa cc-mat-20 cc-bg-primary">Desktop : show<br />Tablet : hide<br />Phone : hide</p>
+                    <h3>Hidden blocks on devices and less</h3>
+                    <p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
+
+                    <h3>Show on targeted device</h3>
+                    <p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : shown<br />S : hidden<br />XS : hidden</p>
+                    <p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : hidden<br />S : shown<br />XS : hidden</p>
+                    <p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : shown</p>
+
 
                     <h3>Width</h3>
                     <div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
@@ -1356,947 +1047,573 @@
                 </p>
                 <p class="description">
                     <a href="#" data-rel="cc-grids" class="btn cc-bg-primary">Grids</a>
-                    <a href="#" data-rel="cc-responsive-grids" class="btn cc-bg-primary">Responsive Grids</a>
                     <a href="#" data-rel="cc-masonry-grids" class="btn cc-bg-primary">Masonry layout</a>
                 </p>
             </header>
 
             <div class="main cc-grids">
-                <h3 class="title">Grids 1 - @cols-total</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
 
-                <div class="columns">
-                    <div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-orange cc-2">2</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-3">3</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-5">5</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-6">6</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-7">7</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-8">8</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-9">9</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-10">10</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-11">11</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-12">12</div>
-                </div>
-
-                <h3 class="title">Offsets</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-offset-1">1&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-1">6 with offset 1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-2">6 with offset 2</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-3">6 with offset 3</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-4">6 with offset 4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-5">6 with offset 5</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-offset-6">6 with offset 6</div>
-                </div>
-
-
-                <h3 class="title">Alignements</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-blue cc-6 cc-left">6 align left&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-6 cc-right">6 align right&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-6 cc-center">6 align center&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-3 cc-left">3&lt;/div>
-                            &lt;div class="cc-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
-                            &lt;div class="cc-blue cc-2 cc-right">2 right&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-bg-orange">
-                            &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
-                            &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-bg-orange cc-spaceless">
-                            &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
-                            &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-left">6 align left</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-right">6 align right</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-6 cc-center">6 align center</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-left">3</div>
-                    <div class="cc-blue cc-4 cc-center">4 centered between 3 and 2</div>
-                    <div class="cc-blue cc-2 cc-right">2 right</div>
-                </div>
-
-                <div class="columns cc-bg-orange">
-                    <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
-                    <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
-                </div>
-
-                <div class="columns cc-bg-orange cc-spaceless">
-                    <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
-                    <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
-                </div>
-
-
-                <h3 class="title">Orders</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-blue cc-3 cc-last">Last displayed but first in HTML&lt;/div>
-                            &lt;div class="cc-orange cc-3">3&lt;/div>
-                            &lt;div class="cc-blue cc-3 cc-first">First displayed but third in HTML&lt;/div>
-                            &lt;div class="cc-orange cc-3">3&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-last">Last displayed but first in HTML</div>
-                    <div class="cc-orange cc-3">3</div>
-                    <div class="cc-blue cc-3 cc-first">First displayed but third in HTML</div>
-                    <div class="cc-orange cc-3">3</div>
-                </div>
-
-
-                <h3 class="title">Grids 1 - @cols-total (no gutter)</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-gutter">
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">3</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-5">5</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-6">6</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-7">7</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-8">8</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-9">9</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-10">10</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-11">11</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-12">12</div>
-                </div>
-
-
-                <h3 class="title">Nested grids</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-3">3&lt;/div>
-                            &lt;div class="cc-orange cc-9">9&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="columns cc-blue cc-3">
-                                &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
-                                &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
+                <div class="grids-basics">
+                    <h3 class="title">Basic grid</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div>...&lt;/div>
+                                &lt;div>...&lt;/div>
+                                &lt;div>...&lt;/div>
+                                ...
                             &lt;/div>
-                            &lt;div class="cc-orange cc-9 columns">
-                                &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                            &lt;/div>
-                        &lt;/div>
+                        </code>
+                    </pre>
 
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-8">8&lt;/div>
-                            &lt;div class="cc-blue cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="columns cc-orange cc-8">
-                                &lt;div class="cc-blue cc-4 cc-align-self-bottom">4 in 8 .align-self-bottom&lt;/div>
-                                &lt;div class="cc-blue ">auto | Ridiculus ridiculus sit! Sit? ...&lt;/div>
-                                &lt;div class="cc-blue cc-2 cc-align-self-center">2 in 8 .align-self-center&lt;/div>
-                            &lt;/div>
-                            &lt;div class="columns cc-orange cc-4">
-                                &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
-                                &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
-                            &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns">
-                    <div class="cc-orange cc-3">3</div>
-                    <div class="cc-orange cc-9">9</div>
-                </div>
-
-                <div class="columns">
-                    <div class="columns cc-blue cc-3">
-                        <div class="cc-orange cc-6">6 in 3</div>
-                        <div class="cc-orange cc-6">6 in 3</div>
+                    <div class="columns">
+                        <div class="cc-orange">auto</div>
+                        <div class="cc-blue">auto</div>
+                        <div class="cc-orange">auto</div>
+                        <div class="cc-bg-blue cc-2">2</div>
                     </div>
-                    <div class="cc-orange cc-9 columns">
-                        <div class="cc-blue cc-4">4 in 9</div>
-                        <div class="cc-blue cc-4">4 in 9</div>
-                        <div class="cc-blue cc-4">4 in 9</div>
+
+                    <div class="columns">
+                        <div class="cc-orange">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-orange cc-3">3</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-7">7</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-10">10</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
                     </div>
                 </div>
 
-                <div class="columns">
-                    <div class="cc-orange cc-8">8</div>
-                    <div class="cc-blue cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="columns cc-orange cc-8">
-                        <div class="cc-blue cc-4 cc-align-self-bottom">4 in 8 .align-self-bottom</div>
-                        <div class="cc-blue ">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
-                        <div class="cc-blue cc-2 cc-align-self-center">2 in 8 .align-self-center</div>
+                <div class="grids-responsive">
+                    <h3 class="title">Responsive grid</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-2">...&lt;/div>
+                                &lt;div class="cc-5-l">...&lt;/div>
+                                &lt;div class="cc-7-s">...&lt;/div>
+                                ...
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-orange">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
                     </div>
-                    <div class="columns cc-orange cc-4">
-                        <div class="cc-blue cc-6">6 in 4</div>
-                        <div class="cc-blue cc-6">6 in 4</div>
+
+                    <div class="columns">
+                        <div class="cc-orange">auto</div>
+                        <div class="cc-blue cc-5-l cc-2-s">L:5 - S:2</div>
+                        <div class="cc-orange cc-7-s">S:7</div>
                     </div>
                 </div>
 
-                <h3 class="title">Auto sizes</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-blue cc-6">6&lt;/div>
-                            &lt;div class="cc-orange">auto&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-3">3 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue">Auto ! (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-5">5 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-2">2&lt;/div>
-                            &lt;div class="cc-blue">auto&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-2">2 no gutter&lt;/div>
-                            &lt;div class="cc-blue">auto  no gutter&lt;/div>
-                            &lt;div class="cc-orange cc-1">1  no gutter&lt;/div>
-                            &lt;div class="cc-blue cc-4">4  no gutter&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns">
-                    <div class="cc-blue cc-6">6</div>
-                    <div class="cc-orange">auto</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">3 (no gutter)</div>
-                    <div class="cc-blue">Auto ! (no gutter)</div>
-                    <div class="cc-orange cc-5">5 (no gutter)</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-orange cc-2">2</div>
-                    <div class="cc-blue">auto</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-4">4</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-2">2 no gutter</div>
-                    <div class="cc-blue">auto  no gutter</div>
-                    <div class="cc-orange cc-1">1  no gutter</div>
-                    <div class="cc-blue cc-4">4  no gutter</div>
+                <div class="grids-offset">
+                    <h3 class="title">Offsets</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-orange cc-offset-1 cc-offset-{x}-{letter}">1&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-orange cc-1">1</div>
+                        <div class="cc-blue cc-1">1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-offset-1">6 with offset 1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-offset-1">auto with offset 1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-4 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-12-s">XL : offset 6<br />L: offset 3<br />M: offset 5<br />S: offset 0 and 100%</div>
+                    </div>
                 </div>
 
+                <div class="grids-ordering">
+                    <h3 class="title">Ordering</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-12-s cc-4">XL:1&lt;/div>
+                                &lt;div class="cc-blue cc-12-s cc-4 cc-first-l">L:1&lt;/div>
+                                &lt;div class="cc-purple cc-4 cc-12-s cc-first-m">M:1&lt;/div>
+                                &lt;div class="cc-blue cc-12-s cc-4 cc-last cc-first-s">All : last - S:1&lt;/div>
+                                &lt;div class="cc-purple cc-4 cc-12-s cc-first cc-first-xs">All : 1 - XS:1&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-orange cc-12-s cc-4">XL:1</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-first-l">L:1</div>
+                        <div class="cc-purple cc-4 cc-12-s cc-first-m">M:1</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-last cc-first-s">All : last - S:1</div>
+                        <div class="cc-purple cc-4 cc-12-s cc-first cc-first-xs">All : 1 - XS:1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-purple cc-4 cc-12-s cc-last-xs">XS:last</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-last-s">S:last</div>
+                        <div class="cc-purple cc-4 cc-12-s cc-last-m">M:last</div>
+                        <div class="cc-orange cc-4 cc-12-s cc-last-l">L:last</div>
+                        <div class="cc-blue cc-12-s cc-4 cc-last-xl">XL:last</div>
+                    </div>
+                </div>
 
-                <h3 class="title">No-Multiligne</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-multiligne">
-                            &lt;div class="cc-blue cc-7">7&lt;/div>
-                            &lt;div class="cc-orange cc-6">6 /!\ TOO LARGE&lt;/div>
-                        &lt;/div>
+                <div class="grids-columns-alignments">
+                    <h3 class="title">Columns Alignments</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-blue cc-6 cc-left">6 align left&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-6 cc-right">6 align right&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-6 cc-center">6 align center&lt;/div>
+                            &lt;/div>
 
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-5">
-                                &lt;div class="columns cc-no-multiligne">
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-3">3&lt;/div>
+                                &lt;div class="cc-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
+                                &lt;div class="cc-blue cc-2">2 right&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns cc-bg-orange">
+                                &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
+                                &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-left">6 align left</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-right">6 align right</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-blue cc-6 cc-center">6 align center</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-blue cc-3 cc-left">3</div>
+                        <div class="cc-blue cc-4 cc-center">4 centered between 3 and 2</div>
+                        <div class="cc-blue cc-2 cc-right">2 right</div>
+                    </div>
+
+                    <div class="columns cc-bg-orange">
+                        <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
+                        <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
+                    </div>
+                </div>
+
+                <div class="grids-nested">
+                    <h3 class="title">Nested grids</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">3&lt;/div>
+                                &lt;div class="cc-orange cc-9">9&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="columns cc-blue cc-3">
+                                    &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
+                                    &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
+                                &lt;/div>
+                                &lt;div class="cc-orange cc-9 columns">
+                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
+                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
+                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-8">8&lt;/div>
+                                &lt;div class="cc-blue cc-4">4&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="columns cc-orange cc-8">
+                                    &lt;div class=" cc-4">4 in 8&lt;/div>
+                                    &lt;div class=" ">auto | Ridiculus ridiculus ...&lt;/div>
+                                    &lt;div class=" cc-2">2 in 8&lt;/div>
+                                &lt;/div>
+                                &lt;div class="columns cc-orange cc-4">
+                                    &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
+                                    &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
+                                &lt;/div>
+                            &lt;/div>>
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">3</div>
+                        <div class="cc-blue cc-9">9</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="columns cc-blue cc-3">
+                            <div class="cc-orange cc-6">6 in 3</div>
+                            <div class="cc-orange cc-6">6 in 3</div>
+                        </div>
+                        <div class="cc-orange cc-9 columns">
+                            <div class="cc-blue cc-4">4 in 9</div>
+                            <div class="cc-blue cc-4">4 in 9</div>
+                            <div class="cc-blue cc-4">4 in 9</div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-8">8</div>
+                        <div class="cc-blue cc-4">4</div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns cc-orange cc-8">
+                            <div class=" cc-4">4 in 8</div>
+                            <div class=" ">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
+                            <div class=" cc-2">2 in 8</div>
+                        </div>
+                        <div class="columns cc-orange cc-4">
+                            <div class="cc-blue cc-6">6 in 4</div>
+                            <div class="cc-blue cc-6">6 in 4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grids-no-multiligne">
+                    <h3 class="title">No-Multiligne</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns cc-no-multiligne">
+                                &lt;div class="cc-blue cc-7">7&lt;/div>
+                                &lt;div class="cc-orange cc-6">6 /!\ TOO LARGE&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-blue cc-5 columns cc-no-multiligne">
                                     &lt;div class="cc-6 cc-orange">6&lt;/div>
                                     &lt;div class="cc-7 cc-orange">7 /!\ too large but on the same line&lt;/div>
                                 &lt;/div>
                             &lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class=" cc-orange cc-7">
-                                &lt;div class="columns cc-no-multiligne">
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3&lt;/div>
-                                    &lt;div class="cc-3 cc-blue">3 /!\ too large but on the same line&lt;/div>
-                                &lt;/div>
-                            &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
 
-                <div class="columns cc-no-multiligne">
-                    <div class="cc-blue cc-7">7</div>
-                    <div class="cc-orange cc-6">6 /!\ TOO LARGE</div>
-                </div>
+                        </code>
+                    </pre>
 
-                <div class="columns">
-                    <div class="cc-blue cc-5">
-                        <div class="columns cc-no-multiligne">
+                    <div class="columns cc-no-multiligne">
+                        <div class="cc-blue cc-7">7</div>
+                        <div class="cc-orange cc-6">6 /!\ TOO LARGE</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-blue cc-5 columns cc-no-multiligne">
                             <div class="cc-6 cc-orange">6</div>
                             <div class="cc-7 cc-orange">7 /!\ too large but on the same line</div>
                         </div>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class=" cc-orange cc-7">
-                        <div class="columns cc-no-multiligne">
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3</div>
-                            <div class="cc-3 cc-blue">3 /!\ too large but on the same line</div>
-                        </div>
+
+                <div class="grids-column-reverse">
+                    <h3 class="title">Columns reverse</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns cc-reverse">
+                                &lt;div class="cc-blue cc-3">First in html&lt;/div>
+                                &lt;div class="cc-orange cc-3">Second in html&lt;/div>
+                                &lt;div class="cc-blue cc-3">Third in html&lt;/div>
+                                &lt;div class="cc-orange cc-3">Fourth in html&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns cc-reverse">
+                        <div class="cc-blue cc-3">First in html</div>
+                        <div class="cc-orange cc-3">Second in html</div>
+                        <div class="cc-blue cc-3">Third in html</div>
+                        <div class="cc-orange cc-3">Fourth in html</div>
                     </div>
                 </div>
 
-                <h3 class="title">Columns reverse</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-reverse">
-                            &lt;div class="cc-blue cc-3">First in html&lt;/div>
-                            &lt;div class="cc-orange cc-3">Second in html&lt;/div>
-                            &lt;div class="cc-blue cc-3">Third in html&lt;/div>
-                            &lt;div class="cc-orange cc-3">Fourth in html&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns cc-reverse">
-                    <div class="cc-blue cc-3">First in html</div>
-                    <div class="cc-orange cc-3">Second in html</div>
-                    <div class="cc-blue cc-3">Third in html</div>
-                    <div class="cc-orange cc-3">Fourth in html</div>
-                </div>
-
-
-                <h3 class="title">Justify columns</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-justify-end">
-                            &lt;div class="cc-blue cc-3">Ending&lt;/div>
-                            &lt;div class="cc-blue cc-3">Ending&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-justify-center">
-                            &lt;div class="cc-blue cc-3">Centered&lt;/div>
-                            &lt;div class="cc-blue cc-3">Centered&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-justify-between">
-                            &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
-                            &lt;div class="cc-blue cc-5">Spacing on 100% width&lt;/div>
-                            &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-justify-around">
-                            &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
-                            &lt;div class="cc-blue cc-5">Equal spacing&lt;/div>
-                            &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns cc-justify-end">
-                    <div class="cc-blue cc-3">Ending</div>
-                    <div class="cc-blue cc-3">Ending</div>
-                </div>
-                <div class="columns cc-justify-center">
-                    <div class="cc-blue cc-3">Centered</div>
-                    <div class="cc-blue cc-3">Centered</div>
-                </div>
-                <div class="columns cc-justify-between">
-                    <div class="cc-blue cc-3">Spacing on 100% width</div>
-                    <div class="cc-blue cc-5">Spacing on 100% width</div>
-                    <div class="cc-blue cc-3">Spacing on 100% width</div>
-                </div>
-                <div class="columns cc-justify-around">
-                    <div class="cc-blue cc-3">Equal spacing</div>
-                    <div class="cc-blue cc-5">Equal spacing</div>
-                    <div class="cc-blue cc-3">Equal spacing</div>
-                </div>
-
-                <h3 class="title">Justify content in a column</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
-                                &lt;/p>
+                <div class="grids-justify-columns">
+                    <h3 class="title">Justify columns</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns cc-justify-end">
+                                &lt;div class="cc-blue cc-3">Ending&lt;/div>
+                                &lt;div class="cc-blue cc-3">Ending&lt;/div>
                             &lt;/div>
-                            &lt;div class="cc-blue cc-9">
-                                &lt;p>
-                                    &lt;strong>TOP CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                                &lt;/p>
+                            &lt;div class="columns cc-justify-center">
+                                &lt;div class="cc-blue cc-3">Centered&lt;/div>
+                                &lt;div class="cc-blue cc-3">Centered&lt;/div>
                             &lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
-                                &lt;/p>
+                            &lt;div class="columns cc-justify-between">
+                                &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-blue cc-5">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
                             &lt;/div>
-                            &lt;div class="cc-align-center cc-blue cc-9">
-                                &lt;p>
-                                    &lt;strong>CENTER ALIGNMENT&lt;/strong>&lt;br />&lt;br />
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                                &lt;/p>
+                            &lt;div class="columns cc-justify-around">
+                                &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
+                                &lt;div class="cc-blue cc-5">Equal spacing&lt;/div>
+                                &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
                             &lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip....
-                                &lt;/p>
-                            &lt;/div>
-                            &lt;div class="cc-align-bottom cc-blue cc-9">
-                                &lt;p>
-                                    &lt;strong>BOTTOM CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                                &lt;/p>
-                            &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
+                        </code>
+                    </pre>
+                    <div class="columns cc-justify-end">
+                        <div class="cc-blue cc-3">Ending</div>
+                        <div class="cc-orange cc-3">Ending</div>
                     </div>
-                    <div class="cc-blue cc-9">
-                        <p>
-                            <strong>TOP CONTENT ALIGNMENT</strong><br /><br />
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                        </p>
+                    <div class="columns cc-justify-center">
+                        <div class="cc-blue cc-3">Centered</div>
+                        <div class="cc-orange cc-3">Centered</div>
+                    </div>
+                    <div class="columns cc-justify-between">
+                        <div class="cc-blue cc-3">Spacing on 100% width</div>
+                        <div class="cc-orange cc-5">Spacing on 100% width</div>
+                        <div class="cc-blue cc-3">Spacing on 100% width</div>
+                    </div>
+                    <div class="columns cc-justify-around">
+                        <div class="cc-blue cc-3">Equal spacing</div>
+                        <div class="cc-orange cc-5">Equal spacing</div>
+                        <div class="cc-blue cc-3">Equal spacing</div>
                     </div>
                 </div>
 
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
-                    </div>
-                    <div class="cc-align-center cc-blue cc-9">
-                        <p>
-                            <strong>CENTER ALIGNMENT</strong><br /><br />
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
-                    </div>
-                    <div class="cc-align-bottom cc-blue cc-9">
-                        <p>
-                            <strong>BOTTOM CONTENT ALIGNMENT</strong><br /><br />
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
-                        </p>
-                    </div>
-                </div>
-
-                <h3 class="title">Positioning columns</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-3">
-                                &lt;p>
-                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
-                                &lt;/p>
-                            &lt;/div>
-                            &lt;div class="columns cc-gutter cc-blue cc-9">
-                                &lt;div class="cc-orange cc-align-self-top cc-3">
+                <div class="grids-align-items">
+                    <h3 class="title">Justify content in a column</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
                                     &lt;p>
-                                        align self top
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
                                 &lt;/div>
-                                &lt;div class="cc-orange cc-align-self-bottom cc-3">
-                                    &lt;p>
-                                        align self bottom
-                                    &lt;/p>
-                                &lt;/div>
-                                &lt;div class="cc-orange cc-align-self-center cc-3">
-                                    &lt;p>
-                                        align self center
-                                    &lt;/p>
-                                &lt;/div>
-                                &lt;div class="cc-orange cc-align-self-stretch cc-3">
-                                    &lt;p>
-                                        align self stretch
+                                &lt;div class="cc-9  columns cc-align-start">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>TOP CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
                                     &lt;/p>
                                 &lt;/div>
                             &lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
 
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-3">
-                        <p>
-                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
-                        </p>
-                    </div>
-                    <div class="columns cc-gutter cc-blue cc-9">
-                        <div class="cc-orange cc-align-self-top cc-3">
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-center columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>CENTER ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-end columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>BOTTOM CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-baseline columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>BASELINE CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-align-stretch columns cc-9" style="margin:0;">
+                                    &lt;p class="cc-bg-blue">
+                                        &lt;strong>STRETCH CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
                             <p>
-                                align self top
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
                         </div>
-                        <div class="cc-orange cc-align-self-bottom cc-3">
-                            <p>
-                                align self bottom
+                        <div class="cc-9 columns cc-align-start">
+                            <p class="cc-bg-blue">
+                                <strong>TOP CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
                             </p>
                         </div>
-                        <div class="cc-orange cc-align-self-center cc-3">
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
                             <p>
-                                align self center
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
                         </div>
-                        <div class="cc-orange cc-align-self-stretch cc-3">
+                        <div class="cc-align-center columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>CENTER ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
                             <p>
-                                align self stretch
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="cc-align-end columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>BOTTOM CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
+                            <p>
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="cc-align-baseline columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>BASELINE CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-orange cc-3">
+                            <p>
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="cc-align-stretch columns cc-9" style="margin:0;">
+                            <p class="cc-bg-blue">
+                                <strong>STRETCH CONTENT ALIGNMENT</strong><br /><br />
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="main cc-responsive-grids">
-                <h3 class="title">Responsive grids</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-6">6&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-1">1&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-1">1&lt;/div>
-                            &lt;div class="cc-orange cc-1">1&lt;/div>
-                            &lt;div class="cc-blue cc-1">1&lt;/div>
-                        &lt;/div>
+                <div class="grids-align-self">
+                    <h3 class="title">Positioning columns</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-orange cc-3">
+                                    &lt;p>
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="columns cc-blue cc-9">
+                                    &lt;div class="cc-orange cc-align-self-top cc-3">
+                                        &lt;p>
+                                            align self top
+                                        &lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="cc-orange cc-align-self-bottom cc-3">
+                                        &lt;p>
+                                            align self bottom
+                                        &lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="cc-orange cc-align-self-center cc-3">
+                                        &lt;p>
+                                            align self center
+                                        &lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="cc-orange cc-align-self-stretch cc-3">
+                                        &lt;p>
+                                            align self stretch
+                                        &lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
 
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12&lt;/div>
-                            &lt;div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12&lt;/div>
-                            &lt;div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-6">6</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                    <div class="cc-orange cc-1">1</div>
-                    <div class="cc-blue cc-1">1</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12</div>
-                    <div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-3 cc-9-t cc-12-s">L3, T9, P12</div>
-                    <div class="cc-orange cc-9 cc-3-t cc-12-s">L9, T3, P12</div>
-                </div>
-
-                <h3 class="title">Delete Offsets on tablets or phones</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-no-offset-t">No offset on tablets</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-12-s cc-no-offset-s">No offset on smartphones</div>
-                </div>
-
-
-
-                <h3 class="title">Offsets adjustements</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                            &lt;div class="cc-orange cc-4">4&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones&lt;/div>
-                        &lt;/div>
-
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-blue cc-4">4 (no gutter)&lt;/div>
-                            &lt;div class="cc-orange cc-4">4 (no gutter)&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns cc-no-gutter">
-                            &lt;div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-offset-2-t">Offset 2 on tablets</div>
-                </div>
-
-                <div class="columns">
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                    <div class="cc-orange cc-4">4</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones</div>
-                </div>
-
-                <div class="columns cc-no-gutter">
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                    <div class="cc-blue cc-4">4 (no gutter)</div>
-                    <div class="cc-orange cc-4">4 (no gutter)</div>
-                </div>
-                <div class="columns cc-no-gutter">
-                    <div class="cc-blue cc-offset-4 cc-4 cc-10-s cc-offset-2-s">Offset 2 on smartphones</div>
-                </div>
-
-
-                <h3 class="title">Positionning</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="columns">
-                            &lt;div class="cc-orange cc-12-s cc-4">First on Desktop&lt;/div>
-                            &lt;div class="cc-blue cc-12-s cc-4 cc-first-t">First on Tablet&lt;/div>
-                            &lt;div class="cc-purple cc-4 cc-12-s cc-first-s">First on Phone&lt;/div>
-                        &lt;/div>
-                        &lt;div class="columns">
-                            &lt;div class="cc-orange cc-12-s cc-4 cc-last-s">Last on Phone&lt;/div>
-                            &lt;div class="cc-blue cc-12-s cc-4 cc-last-t">Last on Tablet&lt;/div>
-                            &lt;div class="cc-purple cc-12-s cc-4">Last on Desktop&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns">
-                    <div class="cc-orange cc-12-s cc-4">First on Desktop</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-first-t">First on Tablet</div>
-                    <div class="cc-purple cc-4 cc-12-s cc-first-s">First on Phone</div>
-                </div>
-                <div class="columns">
-                    <div class="cc-orange cc-12-s cc-4 cc-last-s">Last on Phone</div>
-                    <div class="cc-blue cc-12-s cc-4 cc-last-t">Last on Tablet</div>
-                    <div class="cc-purple cc-12-s cc-4">Last on Desktop</div>
+                    <div class="columns ">
+                        <div class="cc-orange cc-3">
+                            <p>
+                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                            </p>
+                        </div>
+                        <div class="columns cc-blue cc-9">
+                            <div class="cc-orange cc-align-self-top cc-3">
+                                <p>
+                                    align self top
+                                </p>
+                            </div>
+                            <div class="cc-orange cc-align-self-bottom cc-3">
+                                <p>
+                                    align self bottom
+                                </p>
+                            </div>
+                            <div class="cc-orange cc-align-self-center cc-3">
+                                <p>
+                                    align self center
+                                </p>
+                            </div>
+                            <div class="cc-orange cc-align-self-stretch cc-3">
+                                <p>
+                                    align self stretch
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -2319,9 +1636,9 @@
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="columns cc-masonry cc-6 cc-3-t cc-2-s">
+                <div class="columns cc-masonry cc-6 cc-12-xl cc-3-l cc-2-m cc-1-s">
                     <?php
-                        for ($i=1;$i<25;$i++) {
+                        for ($i=1;$i<50;$i++) {
                             $height = rand(60,350);
                     ?>
                         <div class="<?php if ($i%2==0) echo 'cc-blue'; else echo 'cc-orange';?>" style="height:<?php echo $height;?>px">
@@ -3478,7 +2795,7 @@
                     <code class="language-markup">&lt;form>
                             &lt;div class="form-item">
                                 &lt;label>Inline label&lt;/label>
-                                &lt;input type="text" placeholder="placeholder" name="" data-toggle="tooltip" data-placement="top" data-title="Ce champ est obligatoire" />
+                                &lt;input type="text" placeholder="placeholder" name="" />
                             &lt;/div>
                             &lt;div class="form-item">
                                 &lt;label class="block">Block Label&lt;/label>
@@ -3490,7 +2807,7 @@
                 <form>
                     <div class="form-item">
                         <label>Inline label</label>
-                        <input type="text" placeholder="placeholder" name="" data-toggle="tooltip" data-placement="top" data-title="Ce champ est obligatoire" />
+                        <input type="text" placeholder="placeholder" name="" />
                     </div>
                     <div class="form-item">
                         <label class="block">Block Label</label>
