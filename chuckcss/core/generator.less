@@ -8,8 +8,6 @@
     ._generatePaddingMarginClass
     ._generateIcons
     ._generateColumns
-    ._generateTabletColumns
-    ._generatePhoneColumns
     ._generatePercentWidth
 */
 
@@ -26,7 +24,7 @@
     h1,h2,h3,h4,h5,h6,
     p,div,section,aside,header,footer,article,main,
     span,i,a {
-        &.cc{
+        &.cc {
             &-@{colorName} {
                 color: @colorValue;
 
@@ -263,47 +261,28 @@
             }
         }
 
-        /* Phone */
-        ._phone({
+        /* Small screen ruleset */
+        ._media-s({
             &.cc-@{colorName} {
                 &.cc {
                     &-bordered {
                         &>li {
                             &:hover,
                             &.active {
-                                border-color:@colorValue transparent transparent;
-
-                                &+li {
-                                    border-color:@colorValue transparent transparent;
-                                }
-                            }
-
-                            &:last-child {
-                                &:hover,
-                                &.active {
-                                    border-color:@colorValue transparent;
+                                a:not(.btn) {
+                                    border-color:@colorValue;
                                 }
                             }
                         }
                     }
 
                     &-pills {
+                        &.cc-unchained > li,
                         &>li {
-                            &:nth-child(1) {
-                                &.active,
-                                &:hover {
-                                    a:not(.btn){
-                                        border-top-width:1px;
-                                        border-left-color:@colorValue;
-                                    }
-                                }
-                            }
-
                             &.active,
                             &:hover {
-                                a:not(.btn){
-                                   border-top-width:0px;
-                                    border-color:@colorValue;
+                                a:not(.btn) {
+                                    border:1px solid @colorValue;
                                 }
                             }
                         }
@@ -358,7 +337,7 @@
         }
     }
 
-    ._generatePaddingMarginClass((@iterator + 2));
+    ._generatePaddingMarginClass((@iterator + 5));
 }
 ._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
 
@@ -436,155 +415,28 @@
     @name : ._generateColumns
     @description : Generate columns width in flexbox parent
 ***** */
-._generateColumns(@iterator:1) when(@iterator <= @cols-total) {
+._generateColumns(@keyWord:~'',@iterator:0) when(@iterator <= @cols-total) {
 
-
-    /* NO GUTTERS */
-    .columns.cc-no-gutter > .cc {
-        /* Width calculations without gutters */
-        &-@{iterator} {
-            flex:0 0 auto;
-            width: ~'calc(100% * @{iterator} / @{cols-total} - 0.05px)'; // Substract 0.05px for IE compatibilities
-            max-width: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-        }
-
-        /* Offsets calculations without gutters */
-        &-offset-@{iterator} {
-            margin-left: ~'calc(100% * @{iterator} / @{cols-total}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-        }
+    .columns > .cc-@{iterator}@{keyWord} {
+        flex:0 0 auto;
+        width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
+        max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
-    /* GUTTERS */
-    .columns.cc-gutter > .cc,
-    .columns > .cc {
-        /* Width calculations with gutters */
-        &-@{iterator} {
-            flex:0 0 auto;
-            width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-            max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
-        }
-        /* Offsets calculations with gutters */
-        &-offset-@{iterator} {
-            margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
-        }
-    }
-
-
-    /* Masonry layout */
-    .columns.cc-masonry.cc {
-        &-@{iterator} {
-            column-count: @iterator;
-        }
-    }
-
-    ._generateColumns((@iterator + 1));
-}
-
-
-
-/* *****
-    @name : ._generateTabletColumns
-    @description : Generate responsive tablet columns width in flexbox parent
-***** */
-._generateTabletColumns(@iterator:1) when(@iterator <= @cols-total) {
-
-    /* NO GUTTERS */
-    .columns.cc-no-gutter > .cc{
-        /* Width calculations without gutters */
-        &-@{iterator}-t {
-            flex:0 0 auto;
-            width: ~'calc(100% * @{iterator} / @{cols-total})';
-            max-width: ~'calc(100% * @{iterator} / @{cols-total})';
-        }
-
-        /* Offsets calculations without gutters for tablets devices */
-        &-offset-@{iterator}-t {
-            margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
-        }
-    }
-
-
-    /* GUTTERS */
-    .columns.cc-gutter > .cc,
-    .columns > .cc {
-
-        /* Width calculations with gutters */
-        &-@{iterator}-t {
-            flex:0 0 auto;
-            width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-            max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-        }
-
-        /* Offsets calculations with gutters for tablets devices */
-        &-offset-@{iterator}-t {
-            margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
-        }
+    /* Offsets calculations with gutters */
+    .columns > .cc-offset-@{iterator}@{keyWord} {
+        margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
     /* Masonry layout */
     .columns.cc-masonry.cc {
-        &-@{iterator}-t {
+        &-@{iterator}@{keyWord} {
             column-count: @iterator;
         }
     }
 
-
-    ._generateTabletColumns((@iterator + 1));
+    ._generateColumns(@keyWord,(@iterator + 1));
 }
-
-
-
-/* *****
-    @name : ._generatePhoneColumns
-    @description : Generate responsive smartphone columns width in flexbox parent
-***** */
-._generatePhoneColumns(@iterator:1) when(@iterator <= @cols-total) {
-
-
-    /* NO GUTTERS */
-    .columns.cc-no-gutter > .cc {
-        /* Width calculations without gutters */
-        &-@{iterator}-s {
-            flex:0 0 auto;
-            width: ~'calc(100% * @{iterator} / @{cols-total})';
-            max-width: ~'calc(100% * @{iterator} / @{cols-total})';
-        }
-
-        /* Offsets calculations without gutters for phones devices */
-        &-offset-@{iterator}-s {
-            margin-left: ~'calc(100% * @{iterator} / @{cols-total})';
-        }
-    }
-
-
-    /* GUTTERS */
-    .columns.cc-gutter > .cc,
-    .columns > .cc {
-        /* Width calculations with gutters */
-        &-@{iterator}-s {
-            flex:0 0 auto;
-            width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-            max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter})';
-        }
-
-        /* Offsets calculations with gutters for phones devices */
-        &-offset-@{iterator}-s {
-            margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2)';
-        }
-    }
-
-    /* Masonry layout */
-    .columns.cc-masonry.cc {
-        &-@{iterator}-s {
-            column-count: @iterator;
-        }
-    }
-
-
-    ._generatePhoneColumns((@iterator + 1));
-}
-
-
 
 /* *****
     @name : ._generatePercentWidth

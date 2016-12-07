@@ -1,8 +1,11 @@
 /*
-    == ChuckCSS ==
-    A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
+    == ChuckCSS Framework ==
+    @What : A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
     @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
+    @Twitter : https://twitter.com/chuckcss
+    @Github : https://github.com/alpixel/ChuckCSS
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
+
 */
 @charset "UTF-8";
 
@@ -11,7 +14,6 @@
 */
 @import (reference) "settings";
 
-
 /*
     * /core/ - IMPORT CORE FILES *
     • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
@@ -19,14 +21,12 @@
     • responsive.less : responsive mixins
     • animations.less : keyframes file
     • base.less : base file with <html>, <body> styles
-    • helpers.less : text and blocks helpers
 */
 @import "core/normalize";
 @import (reference) "core/functions";
 @import (reference) "core/responsive";
 @import "core/animations";
 @import "core/base"; // <==== <html> & <body>
-@import "core/helpers";
 
 /*
     * /elements/ - IMPORTS FILES *
@@ -51,8 +51,10 @@
 @import "components/modals";
 
 /*
-    * IMPORT GENERATOR FILE *
+    * IMPORT GENERATOR & HELPERS FILEs *
     • generator.less : Engine generator for colors, grids, icons...
-    /!\ Import this file after elements and others components
+    • helpers.less : text and blocks helpers
+    /!\ Import this files after elements and others components
 */
 @import "core/generator";
+@import "core/helpers";

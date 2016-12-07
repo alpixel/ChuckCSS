@@ -4,29 +4,6 @@
 
 /* ********************* */
 
-/*
-    - General Modals
-
-
-     <div id="modal-id" class="modal">
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    ...
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    ...
-                </div>
-            </div>
-        </div>
-*/
-
 body.opened-modal {
     overflow:hidden !important;
 }
@@ -59,8 +36,8 @@ body.opened-modal {
             ._transition(0.3s, top, ease-out, 0.3s);
             top:20px;
 
-            // Set top to 8px on phone devices
-            ._phone({
+            // Set top to 8px on small devices
+            ._media-s({
                 top:8px;
             });
         }
@@ -84,10 +61,10 @@ body.opened-modal {
             }
         }
 
-        // Set width 90% on phone devices.
-        ._phone({
+        // Set width 90% on small devices.
+        ._media-s({
             .modal-content {
-                width:90% !important;
+                width:90%;
             }
         });
     }
