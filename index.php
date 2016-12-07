@@ -389,747 +389,403 @@
                 </p>
             </div>
 
-            <div class="main cc-tabs">
-                <h3 class="title">Tabs</h3>
+            <div class="main cc-tabs active">
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-basic">
+                    <h3 class="title">Basics Tabs</h3>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-underlined">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-underlined">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-underlined">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-underlined">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-centered">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-centered">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-alignment">
+                    <h3 class="title">Tabs alignments</h3>
 
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-align-left">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-right">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-right">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                            &lt;ul class="tabs cc-align-center">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-fat cc-underlined">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-fat cc-underlined">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                            &lt;ul class="tabs cc-align-right">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
+                            &lt;ul class="tabs cc-align-stretch">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-align-left">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <ul class="tabs cc-align-center">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-bordered">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-bordered">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <ul class="tabs cc-align-right">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-stretch cc-bordered">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-stretch cc-bordered cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-stretch cc-bordered cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-stretch cc-bordered">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-stretch cc-bordered cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-stretch cc-bordered cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <ul class="tabs cc-align-stretch">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-bordered">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li class="cc-last">&lt;a href="#" class="btn cc-bg-red fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li class="cc-last">&lt;a href="#">&lt;i class="fa fa-times">&lt;/i> Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-bordered">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li class="cc-last"><a href="#"><i class="fa fa-times"></i> Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-thickness">
+                    <h3 class="title">Tabs thickness</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-fat cc-underlined">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-pills ">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li class="cc-last">&lt;a href="#" class="ion-ios-paw">I'm pulled right&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-unchained cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-fat cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-thin cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20 cc-stretch">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20 cc-fat cc-stretch">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-mat-20 cc-thin cc-stretch">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-centered cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-right cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-pills ">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li class="cc-last"><a href="#" class="ion-ios-paw">I'm pulled right</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-unchained cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-fat cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-thin cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-stretch">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-fat cc-stretch">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-thin cc-stretch">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-centered cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                            &lt;ul class="tabs cc-thin cc-mat-20 cc-underlined">
+                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-fat cc-underlined">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-thin cc-mat-20 cc-underlined">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
+                <div class="tabs-bordered">
+                    <h3 class="title">Tabs bordered</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-bordered">
+                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-bordered">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                 <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-stretch-t">
-                            &lt;li>&lt;a href="#" class="fa-user">This tabs is stretch on tablet !&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-centered-t cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">This tabs is centered on tablet !&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-bordered cc-right-t cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">This tabs is right on tablet !&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                        &lt;ul class="tabs cc-pills cc-unchained cc-stretch-t cc-mat-20">
-                            &lt;li>&lt;a href="#" class="fa-user">Will be stretch on tablet!&lt;/a>&lt;/li>
-                            &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul class="tabs cc-stretch-t">
-                    <li><a href="#" class="fa-user">This tabs is stretch on tablet !</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-centered-t cc-mat-20">
-                    <li><a href="#" class="fa-user">This tabs is centered on tablet !</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-right-t cc-mat-20">
-                    <li><a href="#" class="fa-user">This tabs is right on tablet !</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-unchained cc-stretch-t cc-mat-20">
-                    <li><a href="#" class="fa-user">Will be stretch on tablet!</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-li-last">
+                    <h3 class="title">Float &lt;li></h3>
 
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;ul class="tabs">
+                                &lt;li>...&lt;/li>
+                                &lt;li class="active">...&lt;/li>
+                                ...
+                                &lt;li class="cc-last">&lt;a href="#" class="btn cc-bg-red fa-times">Exit!&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs">
+                                &lt;li>...&lt;/li>
+                                &lt;li class="active">...&lt;/li>
+                                ...
+                                &lt;li class="cc-last">&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="btn cc-bg-red ion-ios-paw">First item</a></li>
+                        <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-bordered cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li class="cc-last"><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul class="tabs cc-green">
-                    </code>
-                </pre>
-                <ul class="tabs cc-underlined cc-green">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                <div class="tabs-pills">
+                    <h3 class="title">Pills</h3>
 
-                <ul class="tabs cc-mat-20 cc-green">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-centered cc-green cc-mat-20">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-right cc-green  cc-mat-20">
-                    <li><a href="#">Link 1</a></li>
-                    <li class="active"><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-stretch cc-bordered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-bordered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-mat-20 cc-stretch cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-centered cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-green cc-mat-20">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-green cc-mat-20 cc-stretch cc-fat">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
-                <ul class="tabs cc-pills cc-right cc-green cc-mat-20 cc-stretch cc-thin">
-                    <li><a href="#" class="fa-user">Link 1</a></li>
-                    <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                    <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                    <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    <li><a href="#" class="fa-times">Exit!</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                </ul>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                            &lt;ul class="tabs cc-pills">
+                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-unchained cc-mat-20">
+                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
+                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-pills">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-unchained cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
+
+                <div class="tabs-responsive">
+                    <h3 class="title">Responsive tabs</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-align-center-l cc-align-right-xl cc-align-stretch-m">
+                        <li><a href="#" class="fa-user">This tabs is stretch on tablet !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-center-l cc-mat-20">
+                        <li><a href="#" class="fa-user">This tabs is centered on tablet !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-bordered cc-align-right-l cc-mat-20">
+                        <li><a href="#" class="fa-user">This tabs is right on tablet !</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-unchained cc-align-stretch-l cc-mat-20">
+                        <li><a href="#" class="fa-user">Will be stretch on tablet!</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
+
+                <div class="tabs-color">
+                    <h3 class="title">Change main color</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;ul class="tabs cc-green">
+                        </code>
+                    </pre>
+                    <ul class="tabs cc-green">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-underlined cc-green cc-mat-20">
+                        <li><a href="#">Link 1</a></li>
+                        <li class="active"><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-bordered cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-align-stretch cc-bordered cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-mat-20 cc-align-stretch cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-align-center cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+
+                    <ul class="tabs cc-pills cc-align-right cc-green cc-mat-20">
+                        <li><a href="#" class="fa-user">Link 1</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                        <li><a href="#" class="fa-times">Exit!</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="main cc-modals">
@@ -1385,7 +1041,7 @@
                 </p>
             </header>
 
-            <div class="main cc-grids active">
+            <div class="main cc-grids">
 
                 <div class="grids-basics">
                     <h3 class="title">Basic grid</h3>

@@ -21,14 +21,12 @@
     • responsive.less : responsive mixins
     • animations.less : keyframes file
     • base.less : base file with <html>, <body> styles
-    • helpers.less : text and blocks helpers
 */
 @import "core/normalize";
 @import (reference) "core/functions";
 @import (reference) "core/responsive";
 @import "core/animations";
 @import "core/base"; // <==== <html> & <body>
-@import "core/helpers";
 
 /*
     * /elements/ - IMPORTS FILES *
@@ -53,8 +51,10 @@
 @import "components/modals";
 
 /*
-    * IMPORT GENERATOR FILE *
+    * IMPORT GENERATOR & HELPERS FILEs *
     • generator.less : Engine generator for colors, grids, icons...
-    /!\ Import this file after elements and others components
+    • helpers.less : text and blocks helpers
+    /!\ Import this files after elements and others components
 */
 @import "core/generator";
+@import "core/helpers";

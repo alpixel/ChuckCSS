@@ -269,39 +269,20 @@
                         &>li {
                             &:hover,
                             &.active {
-                                border-color:@colorValue transparent transparent;
-
-                                &+li {
-                                    border-color:@colorValue transparent transparent;
-                                }
-                            }
-
-                            &:last-child {
-                                &:hover,
-                                &.active {
-                                    border-color:@colorValue transparent;
+                                a:not(.btn) {
+                                    border-color:@colorValue;
                                 }
                             }
                         }
                     }
 
                     &-pills {
+                        &.cc-unchained > li,
                         &>li {
-                            &:nth-child(1) {
-                                &.active,
-                                &:hover {
-                                    a:not(.btn){
-                                        border-top-width:1px;
-                                        border-left-color:@colorValue;
-                                    }
-                                }
-                            }
-
                             &.active,
                             &:hover {
-                                a:not(.btn){
-                                   border-top-width:0px;
-                                    border-color:@colorValue;
+                                a:not(.btn) {
+                                    border:1px solid @colorValue;
                                 }
                             }
                         }
