@@ -1,5 +1,6 @@
 # [ChuckCSS](http://chuckcss.io/)
-[![Node version](https://img.shields.io/node/v/ChuckCSS.svg?style=flat)](http://nodejs.org/download/)
+![npm version](https://badge.fury.io/js/ChuckCSS.svg)
+
 ![alt text][logo]
 
 A responsive CSS framework :
