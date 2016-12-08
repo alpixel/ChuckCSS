@@ -1312,44 +1312,44 @@ form .form-item:after {
 form .form-item:after {
   clear: both;
 }
-form .form-item.inline {
+form .form-item.cc-inline {
   display: inline-block;
   margin-left: 1em;
   vertical-align: middle;
 }
-form .form-item.inline:nth-child(1) {
+form .form-item.cc-inline:nth-child(1) {
   margin-left: 0;
 }
-form .form-item.chained {
+form .form-item.cc-chained {
   font-size: 0;
   /* Border-radius calculation */
   /* Submit button */
   /* Input with prefix/suffix */
 }
-form .form-item.chained label {
+form .form-item.cc-chained label {
   font-size: 1.5rem;
 }
-form .form-item.chained input {
+form .form-item.cc-chained input {
   /* Middles inputs */
   border-radius: 0px;
   /* First input */
   /* Last input */
 }
-form .form-item.chained input:first-of-type {
+form .form-item.cc-chained input:first-of-type {
   border-radius: 2px 0px 0px 2px;
 }
-form .form-item.chained input:last-child {
+form .form-item.cc-chained input:last-child {
   border-radius: 0px 2px 2px 0px;
 }
-form .form-item.chained button[type="submit"] {
+form .form-item.cc-chained button[type="submit"] {
   border-radius: 0px 2px 2px 0px;
 }
-form .form-item.chained .form-ps {
+form .form-item.cc-chained .form-ps {
   display: inline-block;
   margin-right: 5px;
 }
-form .form-item.chained .form-ps + input[type="submit"],
-form .form-item.chained .form-ps + button[type="submit"] {
+form .form-item.cc-chained .form-ps + input[type="submit"],
+form .form-item.cc-chained .form-ps + button[type="submit"] {
   border-radius: 2px;
 }
 form .form-ps {

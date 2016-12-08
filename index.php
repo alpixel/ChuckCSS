@@ -2928,7 +2928,7 @@
                                 &lt;textarea name="" placeholder="Your message...">&lt;/textarea>
                             &lt;/div>
                             &lt;div class="clearfix">&lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label>With Prefix and Suffix&lt;/label>
                                 &lt;div class="form-ps">
                                     &lt;span>$&lt;/span>
@@ -2936,14 +2936,14 @@
                                     &lt;span>.00&lt;/span>
                                 &lt;/div>
                             &lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label>Prefix only&lt;/label>
                                 &lt;div class="form-ps">
                                     &lt;span>$&lt;/span>
                                     &lt;input type="text"  placeholder="price" value="" name="" />
                                 &lt;/div>
                             &lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label>Suffix only&lt;/label>
                                 &lt;div class="form-ps">
                                     &lt;input type="text"  placeholder="price" value="" name="" />
@@ -2952,7 +2952,7 @@
                             &lt;/div>
                             &lt;div class="clearfix">&lt;/div>
 
-                            &lt;div class="form-item chained">
+                            &lt;div class="form-item cc-chained">
                                 &lt;label class="block">Chained inputs&lt;/label>
                                 &lt;input type="text" placeholder="placeholder" value="" name="" />
                                 &lt;input type="text" placeholder="placeholder" value="" name="" />
@@ -3080,7 +3080,9 @@
                         <textarea name="" placeholder="Your message..."></textarea>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="form-item inline">
+
+
+                    <div class="form-item cc-inline">
                         <label>With Prefix and Suffix</label>
                         <div class="form-ps">
                             <span>$</span>
@@ -3088,14 +3090,14 @@
                             <span>.00</span>
                         </div>
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label>Prefix only</label>
                         <div class="form-ps">
                             <span>$</span>
                             <input type="text"  placeholder="price" value="" name="" />
                         </div>
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label>Suffix only</label>
                         <div class="form-ps">
                             <input type="text"  placeholder="price" value="" name="" />
@@ -3104,7 +3106,7 @@
                     </div>
                     <div class="clearfix"></div>
 
-                    <div class="form-item chained">
+                    <div class="form-item cc-chained">
                         <label class="block">Chained inputs</label>
                         <input type="text" placeholder="placeholder" value="" name="" />
                         <input type="text" placeholder="placeholder" value="" name="" />
@@ -3123,30 +3125,30 @@
 
                 <pre class="HTML">
                     <code class="language-markup">&lt;form>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label class="">Your name&lt;/label>
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label class="">Your name&lt;/label>
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label class="">Your name&lt;/label>
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
                         &lt;/form>
 
                         &lt;form>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label class="block">Your name&lt;/label>
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label class="block">Your name&lt;/label>
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
-                            &lt;div class="form-item inline">
+                            &lt;div class="form-item cc-inline">
                                 &lt;label class="block">Your name&lt;/label>
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
@@ -3154,30 +3156,30 @@
                     </code>
                 </pre>
                 <form>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label class="">Your name</label>
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label class="">Your name</label>
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label class="">Your name</label>
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
                 </form>
 
                 <form>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label class="block">Your name</label>
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label class="block">Your name</label>
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label class="block">Your name</label>
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
@@ -3300,7 +3302,7 @@
                         <textarea name="" placeholder="Your message..."></textarea>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label>With Prefix and Suffix</label>
                         <div class="form-ps">
                             <span>$</span>
@@ -3308,14 +3310,14 @@
                             <span>.00</span>
                         </div>
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label>Prefix only</label>
                         <div class="form-ps">
                             <span>$</span>
                             <input type="text"  placeholder="price" value="" name="" />
                         </div>
                     </div>
-                    <div class="form-item inline">
+                    <div class="form-item cc-inline">
                         <label>Suffix only</label>
                         <div class="form-ps">
                             <input type="text"  placeholder="price" value="" name="" />
@@ -3324,7 +3326,7 @@
                     </div>
                     <div class="clearfix"></div>
 
-                    <div class="form-item chained">
+                    <div class="form-item cc-chained">
                         <label class="block">Chained inputs</label>
                         <input type="text" placeholder="placeholder" value="" name="" />
                         <input type="text" placeholder="placeholder" value="" name="" />
