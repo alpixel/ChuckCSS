@@ -24,7 +24,7 @@ form {
             margin:0.8em 0;
 
             /* Display as inline-block */
-            &.inline {
+            &.cc-inline {
                 display: inline-block;
                 margin-left:1em;
                 vertical-align: middle;
@@ -36,7 +36,7 @@ form {
 
 
             /* Chained inputs */
-            &.chained {
+            &.cc-chained {
                 font-size:0; // Collpase inputs */
                 @border-radius : unit(@input-br,px); /* Border-radius calculation */
 
@@ -312,7 +312,6 @@ form {
         font-size:@input-fs;
         ._transition;
         line-height:inherit;
-
 
         &:focus {
             outline:none;
