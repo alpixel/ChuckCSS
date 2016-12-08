@@ -1,4 +1,5 @@
-# [ChuckCSS](https://www.chuckcss.io/)
+# [ChuckCSS](http://chuckcss.io/)
+[![Node version](https://img.shields.io/node/v/ChuckCSS.svg?style=flat)](http://nodejs.org/download/)
 ![alt text][logo]
 
 A responsive CSS framework :
@@ -44,10 +45,10 @@ ChuckCSS is under [MIT License].
 [LESS]: <http://lesscss.org/>
 [Autoprefixer]: <https://github.com/postcss/autoprefixer>
 [MIT License]: <https://opensource.org/licenses/MIT>
-[ChuckCSS website]: <https://www.chuckcss.io/>
+[ChuckCSS website]: <http://chuckcss.io/>
 [open an issue on Github]: <https://github.com/alpixel/ChuckCSS/issues/new>
 [Normalize.css]: <https://necolas.github.io/normalize.css/>
 [Bower]: <http://bower.io/search/?q=ChuckCSS>
 [ALPIXEL]: <https://github.com/alpixel>
-[logo]: https://www.chuckcss.io/img/chuckcss-github-logo.jpg "ChuckCSS framework"
+[logo]: http://chuckcss.io/img/chuckcss-github-logo.jpg "ChuckCSS framework"
 [NPM]: <https://www.npmjs.com/package/ChuckCSS>
