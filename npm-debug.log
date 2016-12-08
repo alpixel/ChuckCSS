@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.7.4
+3 info using node@v5.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/var/www/mickael/workspace/ChuckCSS',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/mickael/.npm/ChuckCSS/3.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/mickael/.npm correctMkdir not in flight; initializing
+10 info lifecycle ChuckCSS@3.0.0~prepublish: ChuckCSS@3.0.0
+11 silly lifecycle ChuckCSS@3.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/mickael/.npm/ChuckCSS/3.0.0/package.tgz',
+12 verbose tar pack   '/var/www/mickael/workspace/ChuckCSS' ]
+13 verbose tarball /home/mickael/.npm/ChuckCSS/3.0.0/package.tgz
+14 verbose folder /var/www/mickael/workspace/ChuckCSS
+15 verbose addLocalTarball adding from inside cache /home/mickael/.npm/ChuckCSS/3.0.0/package.tgz
+16 verbose correctMkdir /home/mickael/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd ChuckCSS@3.0.0
+18 verbose afterAdd /home/mickael/.npm/ChuckCSS/3.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/mickael/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/mickael/.npm/ChuckCSS/3.0.0/package/package.json written
+21 silly publish { name: 'ChuckCSS',
+21 silly publish   version: '3.0.0',
+21 silly publish   description: 'Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer',
+21 silly publish   author: { name: 'Mickael SURREL', email: 'ALPIXEL' },
+21 silly publish   license: 'MIT',
+21 silly publish   keywords: [ 'CSS', 'framework', 'flexbox', 'grids', 'less', 'responsive' ],
+21 silly publish   main: 'chuckcss/front.less',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/alpixel/ChuckCSS.git' },
+21 silly publish   bugs: { url: 'https://github.com/alpixel/ChuckCSS/issues' },
+21 silly publish   dependencies:
+21 silly publish    { gifsicle: '^3.0.3',
+21 silly publish      gulp: '^3.9.0',
+21 silly publish      autoprefixer: '^3.1.0',
+21 silly publish      'gulp-autoprefixer': '3.1.0',
+21 silly publish      'gulp-concat': '^2.6.0',
+21 silly publish      'gulp-cssnano': '^2.1.1',
+21 silly publish      'gulp-less': '^3.0.3',
+21 silly publish      'gulp-rename': '^1.2.2',
+21 silly publish      'gulp-rev': '7.0.0',
+21 silly publish      'gulp-rewrite-css': '^0.0.8',
+21 silly publish      'gulp-shell': '^0.5.2',
+21 silly publish      'gulp-uglify': '^1.2.0',
+21 silly publish      'gulp-util': '^3.0.6',
+21 silly publish      'gulp-watch': '^4.3.5' },
+21 silly publish   readme: '# [ChuckCSS](http://chuckcss.io/)\n![npm version](https://badge.fury.io/js/ChuckCSS.svg)\n\n![alt text][logo]\n\nA responsive CSS framework :\n- compiled with [LESS]\n- compiled with [Autoprefixer]\n- including [Normalize.css]\n\n**ChuckCSS include plenty of features :**\n* Flexbox grids\n* rem & em font units\n* FontAwesome & Ionicons (free iconics fonts)\n* Modals\n* Alerts & messages\n* Tabs\n* ...\n\n\n### Installation\nInstall ChuckCSS with [Bower]:\n\n```sh\n$ bower install ChuckCSS\n```\n\nInstall ChuckCSS with [NPM]:\n```sh\n$ npm install ChuckCSS\n```\n\n### Documentation\nFull documentation on [ChuckCSS website]\n\n\n### Issues\nTo report any problems or improvements, please [open an issue on Github]\n\n\n### License\nCode copyright 2016 Mickaël SURREL for [ALPIXEL].\nChuckCSS is under [MIT License].\n\n\n[LESS]: <http://lesscss.org/>\n[Autoprefixer]: <https://github.com/postcss/autoprefixer>\n[MIT License]: <https://opensource.org/licenses/MIT>\n[ChuckCSS website]: <http://chuckcss.io/>\n[open an issue on Github]: <https://github.com/alpixel/ChuckCSS/issues/new>\n[Normalize.css]: <https://necolas.github.io/normalize.css/>\n[Bower]: <http://bower.io/search/?q=ChuckCSS>\n[ALPIXEL]: <https://github.com/alpixel>\n[logo]: http://chuckcss.io/img/chuckcss-github-logo.jpg "ChuckCSS framework"\n[NPM]: <https://www.npmjs.com/package/ChuckCSS>\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '6e7aa11962f9e928132a72f1f5b9788cfd94625e',
+21 silly publish   homepage: 'https://github.com/alpixel/ChuckCSS#readme',
+21 silly publish   _id: 'ChuckCSS@3.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '7ec37bd51d81ac872b6c27e022151ce86d33bec7',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name ChuckCSS
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/ChuckCSS
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /home/mickael/.npm/ChuckCSS/3.0.0/package.tgz
+29 verbose request uri https://registry.npmjs.org/ChuckCSS
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 16:20:37
+32 verbose request using bearer token for auth
+33 verbose request id a13ade3e53b3990c
+34 http request PUT https://registry.npmjs.org/ChuckCSS
+35 http 403 https://registry.npmjs.org/ChuckCSS
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Thu, 08 Dec 2016 15:20:39 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-cdg8722-CDG',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1481210437.292502,VS0,VE2680',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /home/mickael/.npm/registry.npmjs.org/ChuckCSS on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 3.0.0." : ChuckCSS
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:100:13)
+39 verbose stack     at Request.emit (events.js:185:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:95:20)
+39 verbose stack     at Request.emit (events.js:182:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid ChuckCSS
+42 verbose cwd /var/www/mickael/workspace/ChuckCSS
+43 error Linux 3.2.0-98-generic
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v5.6.0
+46 error npm  v3.7.4
+47 error code E403
+48 error "You cannot publish over the previously published version 3.0.0." : ChuckCSS
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

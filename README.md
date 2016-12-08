@@ -1,5 +1,4 @@
-# [ChuckCSS](http://chuckcss.io/)
-![npm version](https://badge.fury.io/js/ChuckCSS.svg)
+# [ChuckCSS](http://chuckcss.io/) - ![npm version](https://badge.fury.io/js/ChuckCSS.svg)
 
 ![alt text][logo]
 
