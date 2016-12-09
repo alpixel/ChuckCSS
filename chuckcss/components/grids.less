@@ -9,11 +9,10 @@
 */
 
 ._generateColumns();
+._media-xs-up({._generateColumns(-s);});
+._media-s-up({._generateColumns(-m);});
+._media-m-up({._generateColumns(-l);});
 ._media-l-up({._generateColumns(-xl);});
-._media-l({._generateColumns(-l);});
-._media-m({._generateColumns(-m);});
-._media-s({._generateColumns(-s);});
-._media-xs({._generateColumns(-xs);});
 
 .columns {
     display:flex;
@@ -87,71 +86,56 @@
         }
     }
 
-
-    /* X-Large screens rules */
-    ._media-l-up({
+    /* Small screens rules */
+    ._media-xs-up({
         & > *.cc {
-            &-first-xl {
-                order:-2;
+            &-first-s {
+                order:-2
             }
 
-            &-last-xl {
-                order:2;
-            }
-        }
-    });
-
-    /* Large screens rules */
-    ._media-l({
-        & > *.cc {
-            &-first-l {
-                order:-3;
-            }
-
-            &-last-l {
-                order:3;
+            &-last-s {
+                order:2
             }
         }
     });
 
     /* Medium screens rules */
-    ._media-m({
+    ._media-s-up({
         & > *.cc {
 
             &-first-m {
-                order:-4;
+                order:-3
             }
 
             &-last-m {
-                order:4;
+                order:3
             }
         }
     });
 
-    /* Small screens rules */
-    ._media-s({
+    /* Large screens rules */
+    ._media-m-up({
         & > *.cc {
-            &-first-s {
-                order:-5;
+            &-first-l {
+                order:-4
             }
 
-            &-last-s {
+            &-last-l {
+                order:4
+            }
+        }
+    });
+
+    /* X-Large screens rules */
+    ._media-l-up({
+        & > *.cc {
+            &-first-xl {
+                order:-5
+            }
+
+            &-last-xl {
                 order:5
             }
         }
     });
-
-    /* X-Small screens rules */
-    ._media-xs({
-        & > *.cc {
-            &-first-xs {
-                order:-6;
-            }
-
-            &-last-xs {
-                order:6
-            }
-        }
-    });
 }
-

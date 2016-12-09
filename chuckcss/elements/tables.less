@@ -5,9 +5,10 @@
 /* ********************* */
 
 table {
-    width:100%;
     border-collapse: collapse;
+    overflow-x:auto;
     margin:1em 0;
+    display:block;
 
     /* headers & footer default style */
     /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
@@ -37,6 +38,7 @@ table {
             padding:@tables-cells-pa;
             border-bottom:1px solid @tables-ending;
             vertical-align:middle;
+            font-size:@text-fs*9/10;
         }
     }
 
@@ -111,13 +113,13 @@ table {
 
 
     /* RESPONSIVE TABLES */
-    ._media-s({
-        overflow-x:auto;
-        width:100%;
+    ._media-s-up({
+        overflow-x:initial;
+        display:table;
 
         tbody {
             td {
-                font-size:@text-fs*9/10;
+                font-size:@text-fs;
             }
         }
     });

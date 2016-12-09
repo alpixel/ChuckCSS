@@ -34,11 +34,12 @@ body.opened-modal {
 
         .modal-close {
             ._transition(0.3s, top, ease-out, 0.3s);
-            top:20px;
+            top:8px;
 
-            // Set top to 8px on small devices
-            ._media-s({
-                top:8px;
+
+            // Set top to 20px on medium devices
+            ._media-s-up({
+                top:20px;
             });
         }
 
@@ -50,21 +51,17 @@ body.opened-modal {
 
     /* Sizes */
     &.modal {
-        &-large {
-            .modal-content {
-                width:80%;
+        // only on meduim devices and up
+        ._media-s-up({
+            &-large {
+                .modal-content {
+                    width:80%;
+                }
             }
-        }
-        &-small {
-            .modal-content {
-                width:30%
-            }
-        }
-
-        // Set width 90% on small devices.
-        ._media-s({
-            .modal-content {
-                width:90%;
+            &-small {
+                .modal-content {
+                    width:30%
+                }
             }
         });
     }
@@ -111,7 +108,7 @@ body.opened-modal {
 
     /* Content */
     &-content {
-        width:50%;
+        width:90%;
         max-height:80vh;
         overflow-y:auto;
         overflow-x:hidden;
@@ -137,6 +134,10 @@ body.opened-modal {
         .modal-footer {
             border-top:1px solid #cecece;
         }
+
+        ._media-s-up({
+            width:50%;
+        });
     }
 
     /* Overlay */
