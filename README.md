@@ -1,6 +1,8 @@
 # [ChuckCSS Framework](http://chuckcss.io/) - ![npm version](https://badge.fury.io/js/ChuckCSS.svg)
 
-![alt text][logo]
+<p align="center">
+    ![alt text][logo]
+</p>
 
 A responsive CSS framework :
 - compiled with [LESS]
