@@ -390,7 +390,7 @@
                 </p>
             </div>
 
-            <div class="main cc-tabs">
+            <div class="main cc-tabs active">
 
                 <div class="tabs-basic">
                     <h3 class="title">Basics Tabs</h3>
@@ -1066,10 +1066,8 @@
                     </pre>
 
                     <div class="columns">
-                        <div class="cc-orange">auto</div>
-                        <div class="cc-blue">auto</div>
-                        <div class="cc-orange">auto</div>
-                        <div class="cc-bg-blue cc-2">2</div>
+                        <div class="cc-orange cc-12 cc-6-m cc-4-xl">auto</div>
+                        <div class="cc-bg-blue cc-12 cc-6-m cc-4-xl">2</div>
                     </div>
 
                     <div class="columns">
@@ -1109,8 +1107,8 @@
                     <pre class="HTML">
                         <code class="language-markup">&lt;div class="columns">
                                 &lt;div class="cc-2">...&lt;/div>
-                                &lt;div class="cc-5-l">...&lt;/div>
-                                &lt;div class="cc-7-s">...&lt;/div>
+                                &lt;div class="cc-2 cc-5-m">...&lt;/div>
+                                &lt;div class="cc-7">...&lt;/div>
                                 ...
                             &lt;/div>
                         </code>
@@ -1122,8 +1120,8 @@
 
                     <div class="columns">
                         <div class="cc-orange">auto</div>
-                        <div class="cc-blue cc-5-l cc-2-s">L:5 - S:2</div>
-                        <div class="cc-orange cc-7-s">S:7</div>
+                        <div class="cc-blue cc-2 cc-5-m">L:5 - S:2</div>
+                        <div class="cc-orange cc-7">S:7</div>
                     </div>
                 </div>
 
@@ -1156,7 +1154,7 @@
                         <div class="cc-blue cc-offset-1">auto with offset 1</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-blue cc-4 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-12-s">XL : offset 6<br />L: offset 3<br />M: offset 5<br />S: offset 0 and 100%</div>
+                        <div class="cc-blue cc-12 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-4-m">XL : offset 6<br />L: offset 3<br />M: offset 5<br />S: offset 0 and 100%</div>
                     </div>
                 </div>
 
@@ -1165,27 +1163,33 @@
                     <pre class="HTML">
                         <code class="language-markup">
                             &lt;div class="columns">
-                                &lt;div class="cc-orange cc-12-s cc-4">XL:1&lt;/div>
-                                &lt;div class="cc-blue cc-12-s cc-4 cc-first-l">L:1&lt;/div>
-                                &lt;div class="cc-purple cc-4 cc-12-s cc-first-m">M:1&lt;/div>
-                                &lt;div class="cc-blue cc-12-s cc-4 cc-last cc-first-s">All : last - S:1&lt;/div>
-                                &lt;div class="cc-purple cc-4 cc-12-s cc-first cc-first-xs">All : 1 - XS:1&lt;/div>
+                                &lt;div class="cc-orange  cc-3">...&lt;/div>
+                                &lt;div class="cc-blue cc-first-l cc-3 ">first-l&lt;/div>
+                                &lt;div class="cc-purple cc-first-xl cc-12-xl cc-3">first-xl 12-xl&lt;/div>
+                                &lt;div class="cc-primary cc-3 cc-first-m">first-m&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
                     <div class="columns">
-                        <div class="cc-orange cc-12-s cc-4">XL:1</div>
-                        <div class="cc-blue cc-12-s cc-4 cc-first-l">L:1</div>
-                        <div class="cc-purple cc-4 cc-12-s cc-first-m">M:1</div>
-                        <div class="cc-blue cc-12-s cc-4 cc-last cc-first-s">All : last - S:1</div>
-                        <div class="cc-purple cc-4 cc-12-s cc-first cc-first-xs">All : 1 - XS:1</div>
+                        <div class="cc-orange  cc-3">...</div>
+                        <div class="cc-blue cc-first-l cc-3 ">first-l</div>
+                        <div class="cc-purple cc-first-xl cc-12-xl cc-3">first-xl 12-xl</div>
+                        <div class="cc-primary cc-3 cc-first-m">first-m</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-purple cc-4 cc-12-s cc-last-xs">XS:last</div>
-                        <div class="cc-blue cc-12-s cc-4 cc-last-s">S:last</div>
-                        <div class="cc-purple cc-4 cc-12-s cc-last-m">M:last</div>
-                        <div class="cc-orange cc-4 cc-12-s cc-last-l">L:last</div>
-                        <div class="cc-blue cc-12-s cc-4 cc-last-xl">XL:last</div>
+                        <div class="cc-purple cc-12 ">...</div>
+                        <div class="cc-blue cc-12 cc-last-s">S:last</div>
+                        <div class="cc-purple cc-12 cc-last-m">M:last</div>
+                        <div class="cc-orange cc-12 cc-last-l">L:last</div>
+                        <div class="cc-blue cc-12 cc-last-xl">XL:last</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-purple cc-12 ">...</div>
+                        <div class="cc-blue cc-12 cc-first-s">S:first</div>
+                        <div class="cc-purple cc-12 cc-first-m">M:first</div>
+                        <div class="cc-orange cc-12 cc-first-l">L:first</div>
+                        <div class="cc-blue cc-12 cc-first-xl">XL:first</div>
                     </div>
                 </div>
 
@@ -1971,6 +1975,8 @@
                                     &lt;th>ID&lt;/th>
                                     &lt;th>Last Name&lt;/th>
                                     &lt;th>First Name&lt;/th>
+                                    &lt;td>Function&lt;/td>
+                                    &lt;td>Summary&lt;/td>
                                     &lt;th>&lt;/th>
                                 &lt;/tr>
                             &lt;/thead>
@@ -1987,6 +1993,8 @@
                                     &lt;td>1&lt;/td>
                                     &lt;td>Smith&lt;/td>
                                     &lt;td>Will&lt;/td>
+                                    &lt;td>Pellentesque in ipsum id orci porta dapibus.&lt;/td>
+                                    &lt;td>Pellentesque in ipsum id orci porta dapibus.&lt;/td>
                                     &lt;td class="cc-txt-right">
                                         &lt;a href="#" class="btn cc-bg-blue fa-eye">See&lt;/a>
                                         &lt;a href="#" class="btn cc-bg-green fa-pencil">Edit&lt;/a>
@@ -2005,6 +2013,8 @@
                                     &lt;td>2&lt;/td>
                                     &lt;td>MacQueen&lt;/td>
                                     &lt;td>Steve&lt;/td>
+                                    &lt;td>Pellentesque in ipsum id orci porta dapibus.&lt;/td>
+                                    &lt;td>Pellentesque in ipsum id orci porta dapibus.&lt;/td>
                                     &lt;td class="cc-txt-right">
                                         &lt;a href="#" class="btn cc-bg-blue fa-eye">See&lt;/a>
                                         &lt;a href="#" class="btn cc-bg-green fa-pencil">Edit&lt;/a>
@@ -2018,6 +2028,8 @@
                                     &lt;td>ID&lt;/td>
                                     &lt;td>Last Name&lt;/td>
                                     &lt;td>First Name&lt;/td>
+                                    &lt;td>Function&lt;/td>
+                                    &lt;td>Summary&lt;/td>
                                     &lt;td>&lt;/td>
                                 &lt;/tr>
                             &lt;/tfoot>
@@ -2032,6 +2044,8 @@
                             <th>ID</th>
                             <th>Last Name</th>
                             <th>First Name</th>
+                            <td>Function</td>
+                            <td>Summary</td>
                             <th></th>
                         </tr>
                     </thead>
@@ -2048,6 +2062,8 @@
                             <td>1</td>
                             <td>Smith</td>
                             <td>Will</td>
+                            <td>Pellentesque in ipsum id orci porta dapibus.</td>
+                            <td>Pellentesque in ipsum id orci porta dapibus.</td>
                             <td class="cc-txt-right">
                                 <a href="#" class="btn cc-bg-blue fa-eye">See</a>
                                 <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
@@ -2066,6 +2082,8 @@
                             <td>2</td>
                             <td>MacQueen</td>
                             <td>Steve</td>
+                            <td>Pellentesque in ipsum id orci porta dapibus.</td>
+                            <td>Pellentesque in ipsum id orci porta dapibus.</td>
                             <td class="cc-txt-right">
                                 <a href="#" class="btn cc-bg-blue fa-eye">See</a>
                                 <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
@@ -2079,6 +2097,8 @@
                             <td>ID</td>
                             <td>Last Name</td>
                             <td>First Name</td>
+                            <td>Function</td>
+                            <td>Summary</td>
                             <td></td>
                         </tr>
                     </tfoot>
