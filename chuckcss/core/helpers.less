@@ -65,6 +65,10 @@
 
         // Small screens
         &-s {
+            ._media-xs-up({
+                display:none;
+            });
+
             // Hide on S screens ONLY
             &-only {
                 ._media-s-only({
@@ -81,6 +85,9 @@
 
         // Medium screens
         &-m {
+            ._media-s-up({
+                display:none;
+            });
             // Hide on M screens ONLY
             &-only {
                 ._media-m-only({
@@ -97,6 +104,9 @@
 
         // Large screens
         &-l {
+            ._media-m-up({
+                display:none;
+            });
             // Hide on L screens ONLY
             &-only {
                 ._media-l-only({
@@ -113,6 +123,10 @@
 
         // X-Large screens
         &-xl {
+            ._media-l-up({
+                display:none;
+            });
+
             // Hide on screens > 1199px ONLY
             &-only {
                 ._media-l-up({

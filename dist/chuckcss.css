@@ -6347,6 +6347,11 @@ span.badge[class*="ion-"]:before {
     display: none;
   }
 }
+@media screen and (min-width: 360px) {
+  .cc-hidden-s {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) and (min-width: 360px) {
   .cc-hidden-s-only {
     display: none;
@@ -6354,6 +6359,11 @@ span.badge[class*="ion-"]:before {
 }
 @media screen and (max-width: 767px) {
   .cc-hidden-s-down {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cc-hidden-m {
     display: none;
   }
 }
@@ -6367,6 +6377,11 @@ span.badge[class*="ion-"]:before {
     display: none;
   }
 }
+@media screen and (min-width: 990px) {
+  .cc-hidden-l {
+    display: none;
+  }
+}
 @media screen and (max-width: 1199px) and (min-width: 990px) {
   .cc-hidden-l-only {
     display: none;
@@ -6374,6 +6389,11 @@ span.badge[class*="ion-"]:before {
 }
 @media screen and (max-width: 1199px) {
   .cc-hidden-l-down {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cc-hidden-xl {
     display: none;
   }
 }

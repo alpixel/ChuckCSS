@@ -398,7 +398,7 @@
                 </p>
             </div>
 
-            <div class="main cc-tabs active">
+            <div class="main cc-tabs">
 
                 <div class="tabs-basic">
                     <h3 class="title">Basics Tabs</h3>
@@ -906,7 +906,7 @@
                 </div>
             </div>
 
-            <div class="main cc-helpers-blocks">
+            <div class="main cc-helpers-blocks active">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
@@ -971,25 +971,32 @@
 
 
                     <h3>Hidden blocks on targeted devices</h3>
-                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices</p>
-                    <p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : shown<br />S : shown<br />XS : shown</p>
-                    <p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : shown<br />S : shown<br />XS : shown</p>
-                    <p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : shown<br />XS : shown</p>
-                    <p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : shown</p>
-                    <p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
+                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">cc-hidden</p>
+                    <p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl-only</p>
+                    <p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l-only</p>
+                    <p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m-only</p>
+                    <p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s-only</p>
+                    <p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xs-only</p>
 
                     <h3>Hidden blocks on devices and less</h3>
-                    <p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : shown<br />M : shown<br />S : shown<br />XS : hidden</p>
+                    <p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l-down</p>
+                    <p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m-down</p>
+                    <p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s-down</p>
+                    <p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xs-down</p>
+
+                    <h3>Hidden blocks on devices and up</h3>
+                    <p class="cc-hidden-xl cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl</p>
+                    <p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l</p>
+                    <p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m</p>
+                    <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s</p>
+
 
                     <h3>Show on targeted device</h3>
-                    <p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : shown<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : shown<br />M : hidden<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : shown<br />S : hidden<br />XS : hidden</p>
-                    <p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : hidden<br />S : shown<br />XS : hidden</p>
-                    <p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden<br />L : hidden<br />M : hidden<br />S : hidden<br />XS : shown</p>
+                    <p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-xl-only</p>
+                    <p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-l-only</p>
+                    <p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-m-only</p>
+                    <p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-s-only</p>
+                    <p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-xs-only</p>
 
 
                     <h3>Width</h3>
