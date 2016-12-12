@@ -819,6 +819,7 @@ button {
   font-size: 1.5rem;
   vertical-align: middle;
   border-radius: 3px;
+  cursor: pointer;
   background-color: white;
   /* If Hover is specified */
   /* else */
@@ -1948,6 +1949,7 @@ img.cc-shadowed {
   padding: 1em;
   height: 100%;
   background-color: transparent;
+  cursor: pointer;
   opacity: 1;
 }
 .alert button.close i {
@@ -3325,6 +3327,13 @@ img.cc-shadowed {
           flex: 1 1 0%;
   /* Nested columns */
 }
+@media screen and (max-width: 767px) {
+  .columns > * {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
 .columns > *.columns {
   padding: 0em 0em;
 }
@@ -3927,6 +3936,7 @@ a.btn.cc-fat span.badge:before {
 /** MODALS **/
 /* ******** */
 /* ********************* */
+html.opened-modal,
 body.opened-modal {
   overflow: hidden !important;
 }

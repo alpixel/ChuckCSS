@@ -23,7 +23,7 @@
             var modal = $(this).data('target');
 
             if($('#'+modal).length) {
-                $('body').addClass('opened-modal');
+                $('html,body').addClass('opened-modal');
                 $('#'+modal).addClass('active');
             } else {
                 alert('ChuckCSS error : modal with attribute id="'+modal+'" does not exist!');
@@ -40,7 +40,7 @@
                     $(this).parents('.modal').removeClass('active');
 
                 if(!$('.modal.active').length)
-                    $('body').removeClass('opened-modal');
+                    $('html,body').removeClass('opened-modal');
             });
 
 
