@@ -8,6 +8,14 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
+        <link rel="icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="img/favicons/manifest.json">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg">
+        <meta name="theme-color" content="#ffffff">
+
         <!-- CSS -->
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
@@ -25,7 +33,7 @@
         <header id="main-header">
             <div class="columns">
                 <div class="cc-12 cc-txt-center">
-                    <img src="img/chuckcss-logo.png" alt="" />
+                    <img src="img/logo-chuckcss-header.png" alt="" />
                 </div>
                 <div class="cc-12 cc-txt-center">
                     <h1>
