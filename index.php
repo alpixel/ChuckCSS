@@ -1572,65 +1572,65 @@
                 <div class="grids-align-self">
                     <h3 class="title">Positioning columns</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">
+                        <code class="language-markup">
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-orange cc-align-self-top">
                                     &lt;p>
-                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
+                                        align self top&lt;br />&lt;br />
+                                        Vestibulum ac diam sit ...
                                     &lt;/p>
                                 &lt;/div>
-                                &lt;div class="columns cc-blue cc-9">
-                                    &lt;div class="cc-orange cc-align-self-top cc-3">
-                                        &lt;p>
-                                            align self top
-                                        &lt;/p>
-                                    &lt;/div>
-                                    &lt;div class="cc-orange cc-align-self-bottom cc-3">
-                                        &lt;p>
-                                            align self bottom
-                                        &lt;/p>
-                                    &lt;/div>
-                                    &lt;div class="cc-orange cc-align-self-center cc-3">
-                                        &lt;p>
-                                            align self center
-                                        &lt;/p>
-                                    &lt;/div>
-                                    &lt;div class="cc-orange cc-align-self-stretch cc-3">
-                                        &lt;p>
-                                            align self stretch
-                                        &lt;/p>
-                                    &lt;/div>
+                                &lt;div class="cc-bg-primary cc-align-self-bottom">
+                                    &lt;p>
+                                        align self bottom
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-bg-orange cc-align-self-center">
+                                    &lt;p>
+                                        align self center
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-bg-primary cc-align-self-stretch">
+                                    &lt;p>
+                                        align self stretch
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="cc-bg-orange cc-align-self-baseline">
+                                    &lt;p>
+                                        align self baseline
+                                    &lt;/p>
                                 &lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
 
-                    <div class="columns ">
-                        <div class="cc-orange cc-3">
+
+                    <div class="columns">
+                        <div class="cc-bg-orange cc-align-self-top">
                             <p>
-                                Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
+                                align self top<br /><br />
+                                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
                             </p>
                         </div>
-                        <div class="columns cc-blue cc-9">
-                            <div class="cc-orange cc-align-self-top cc-3">
-                                <p>
-                                    align self top
-                                </p>
-                            </div>
-                            <div class="cc-orange cc-align-self-bottom cc-3">
-                                <p>
-                                    align self bottom
-                                </p>
-                            </div>
-                            <div class="cc-orange cc-align-self-center cc-3">
-                                <p>
-                                    align self center
-                                </p>
-                            </div>
-                            <div class="cc-orange cc-align-self-stretch cc-3">
-                                <p>
-                                    align self stretch
-                                </p>
-                            </div>
+                        <div class="cc-bg-primary cc-align-self-bottom">
+                            <p>
+                                align self bottom
+                            </p>
+                        </div>
+                        <div class="cc-bg-orange cc-align-self-center">
+                            <p>
+                                align self center
+                            </p>
+                        </div>
+                        <div class="cc-bg-primary cc-align-self-stretch">
+                            <p>
+                                align self stretch
+                            </p>
+                        </div>
+                        <div class="cc-bg-orange cc-align-self-baseline">
+                            <p>
+                                align self baseline
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1641,7 +1641,7 @@
 
                 <pre class="HTML">
                     <code class="language-markup">
-                        &lt;div class="columns cc-masonry cc-6 cc-3-t cc-2-s">
+                        &lt;div class="columns cc-masonry cc-6 cc-12-xl cc-3-l cc-2-m cc-1-s">
                             &lt;?php
                                 for ($i=1;$i&lt;25;$i++) {
                                     $height = rand(60,350);
