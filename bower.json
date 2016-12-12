@@ -1,6 +1,6 @@
 {
   "name": "chuckcss",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
   "authors": {
     "name": "Mickael SURREL <ALPIXEL>",
@@ -31,7 +31,7 @@
     "font-awesome": "4.*",
     "ionicons": "2.*"
   },
-  "homepage": "https://www.chuckcss.io",
+  "homepage": "http://chuckcss.io",
   "main": [
     "chuckcss/front.less"
   ]
