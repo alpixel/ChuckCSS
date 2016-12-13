@@ -32,7 +32,6 @@
         }
         &-align {
             &-center {
-                display:flex;
                 justify-content:center;
             }
             &-left {
@@ -44,8 +43,8 @@
             &-stretch {
                 justify-content:center;
 
-                &>li {
-                    flex:1 0 auto;
+                & > li {
+                    flex:1;
                     text-align:center;
                 }
             }
@@ -207,6 +206,142 @@
     }
 
 
+
+
+
+
+
+
+    // Small screens rules for alignments
+    ._media-xs-up({
+
+        &.cc {
+            &-align {
+                &-stretch-s {
+                    justify-content:center;
+
+                    & > li {
+                        flex:1;
+                        text-align:center;
+                    }
+                }
+
+                &-left-s {
+                    justify-content:flex-start;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+
+                &-right-s {
+                    justify-content:flex-end;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+
+                &-center-s {
+                    justify-content:center;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+            }
+        }
+    });
+
+    // Medium screens rules
+    ._media-s-up({
+        &.cc {
+            &-align {
+                &-stretch-m {
+                    justify-content:center;
+
+                    & > li {
+                        flex:1;
+                        text-align:center;
+                    }
+                }
+
+                &-left-m {
+                    justify-content:flex-start;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+
+                &-right-m {
+                    justify-content:flex-end;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+
+                &-center-m {
+                    justify-content:center;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+            }
+        }
+    });
+
+    // Large screens rules
+    ._media-m-up({
+        &.cc {
+            &-align {
+                &-stretch-l {
+                    justify-content:center;
+
+                    & > li {
+                        flex:1;
+                        text-align:center;
+                    }
+                }
+
+                &-left-l {
+                    justify-content:flex-start;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+
+                &-right-l {
+                    justify-content:flex-end;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+
+                &-center-l {
+                    justify-content:center;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
+                }
+            }
+        }
+    });
+
     // X-Large screens rules
     ._media-l-up({
         &.cc {
@@ -214,78 +349,37 @@
                 &-stretch-xl {
                     justify-content:center;
 
-                    &>li {
-                        flex:1 0 auto;
+                    & > li {
+                        flex:1;
                         text-align:center;
                     }
                 }
 
                 &-left-xl {
                     justify-content:flex-start;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
                 }
 
                 &-right-xl {
                     justify-content:flex-end;
+
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
+                    }
                 }
 
                 &-center-xl {
                     justify-content:center;
-                }
-            }
-        }
-    });
 
-    // Large screens rules
-    ._media-l({
-        &.cc {
-            &-align {
-                &-stretch-l {
-                    justify-content:center;
-
-                    &>li {
-                        flex:1 0 auto;
-                        text-align:center;
+                    & > li {
+                        flex:0 1 auto;
+                        text-align:inherit;
                     }
-                }
-
-                &-left-l {
-                    justify-content:flex-start;
-                }
-
-                &-right-l {
-                    justify-content:flex-end;
-                }
-
-                &-center-l {
-                    justify-content:center;
-                }
-            }
-        }
-    });
-
-    // Medium screens rules
-    ._media-m({
-        &.cc {
-            &-align {
-                &-stretch-m {
-                    justify-content:center;
-
-                    &>li {
-                        flex:1 0 auto;
-                        text-align:center;
-                    }
-                }
-
-                &-left-m {
-                    justify-content:flex-start;
-                }
-
-                &-right-m {
-                    justify-content:flex-end;
-                }
-
-                &-center-m {
-                    justify-content:center;
                 }
             }
         }
@@ -304,26 +398,6 @@
             &-thin {
                 line-height:@text-lh*1.5;
             }
-
-            &-align {
-                &-left {
-                    &>li {
-                        text-align:left;
-                    }
-                }
-                &-stretch,
-                &-center {
-                    &>li {
-                        text-align:center;
-                    }
-                }
-                &-right {
-                    &>li {
-                        text-align:right;
-                    }
-                }
-            }
-
             &-bordered {
                 border-bottom-width:0px;
 
@@ -337,7 +411,55 @@
                             border-radius:0px;
                         }
                     }
+                }
+            }
 
+            &-align {
+                &-stretch {
+                    & > li {
+                        text-align: center;
+                    }
+
+                    &-s {
+                        & > li {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &-left {
+                    & > li {
+                        text-align: left;
+                    }
+
+                    &-s {
+                        & > li {
+                            text-align: left;
+                        }
+                    }
+                }
+
+                &-right {
+                    & > li {
+                        text-align: right;
+                    }
+
+                    &-s {
+                        & > li {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                &-center {
+                    & > li {
+                        text-align: center;
+                    }
+                    &-s {
+                        & > li {
+                            text-align: center;
+                        }
+                    }
                 }
             }
 
@@ -386,8 +508,9 @@
                 margin-left:inherit;
             }
         }
-
     });
+
+
 
 
 }

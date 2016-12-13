@@ -398,7 +398,7 @@
                 </p>
             </div>
 
-            <div class="main cc-tabs">
+            <div class="main cc-tabs active">
 
                 <div class="tabs-basic">
                     <h3 class="title">Basics Tabs</h3>
@@ -669,52 +669,137 @@
                     <h3 class="title">Responsive tabs</h3>
                     <pre class="HTML">
                         <code class="language-markup">
-                            &lt;ul class="tabs cc-align-center-l cc-align-right-xl cc-align-stretch-m">
-                                &lt;li>&lt;a href="#" class="fa-user">Right on XL screens, Align center on L screens, stretch on M !&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
-                            &lt;/ul>
+
                         </code>
                     </pre>
-                    <ul class="tabs cc-align-center-l cc-align-right-xl cc-align-stretch-m">
-                        <li><a href="#" class="fa-user">Right on XL screens, Align center on L screens, stretch on M !</a></li>
+
+                    <ul class="tabs cc-pills cc-align-left-xl cc-align-center-l cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-left-xl cc-align-center-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-right-xl cc-align-stretch-l cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-right-xl cc-align-stretch-l</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-center-l cc-align-stretch-m cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-center-l cc-align-stretch-m</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-stretch-xl cc-align-right-l cc-align-stretch-m cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-stretch-xl cc-align-right-l cc-align-stretch-m</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+
+
+                    <ul class="tabs cc-pills cc-align-left-l cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-left-l</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-right-l cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-right-l</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
                     <ul class="tabs cc-pills cc-align-center-l cc-mat-20">
-                        <li><a href="#" class="fa-user">Align center on L screens !</a></li>
+                        <li><a href="#" class="fa-user">cc-align-center-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
                     </ul>
-                    <ul class="tabs cc-bordered cc-align-right-l cc-mat-20">
-                        <li><a href="#" class="fa-user">Align right on L screens !</a></li>
+                    <ul class="tabs cc-pills cc-align-stretch-l cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-stretch-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
                     </ul>
-                    <ul class="tabs cc-pills cc-unchained cc-align-stretch-l cc-mat-20">
-                        <li><a href="#" class="fa-user">Align stretch on L screens !</a></li>
+
+
+                    <ul class="tabs cc-pills cc-align-left-m cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-left-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-right-m cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-right-m</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-center-m cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-center-m</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-stretch-m cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-stretch-m</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+
+
+                    <ul class="tabs cc-pills cc-align-left-s cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-left-s</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-right-s cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-right-s</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-center-s cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-center-s</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-stretch-s cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-stretch-s</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+
+
+                    <ul class="tabs cc-pills cc-align-left cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-left</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-right cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-right</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-center cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-center</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
+                    </ul>
+                    <ul class="tabs cc-pills cc-align-stretch cc-mat-20">
+                        <li><a href="#" class="fa-user">cc-align-stretch</a></li>
+                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
+                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
                 </div>
 
@@ -906,7 +991,7 @@
                 </div>
             </div>
 
-            <div class="main cc-helpers-blocks active">
+            <div class="main cc-helpers-blocks">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
