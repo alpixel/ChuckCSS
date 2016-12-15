@@ -398,7 +398,7 @@
                 </p>
             </div>
 
-            <div class="main cc-tabs active">
+            <div class="main cc-tabs">
 
                 <div class="tabs-basic">
                     <h3 class="title">Basics Tabs</h3>
