@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
     == ChuckCSS Framework ==
-    @What : A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
+    @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
     @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
     @Twitter : https://twitter.com/chuckcss
     @Github : https://github.com/alpixel/ChuckCSS
@@ -999,7 +999,6 @@ table {
   border-collapse: collapse;
   overflow-x: auto;
   margin: 1em 0;
-  display: block;
   width: 100%;
   /* headers & footer default style */
   /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
