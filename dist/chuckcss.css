@@ -1963,8 +1963,8 @@ img.cc-shadowed {
   font-size: 2.25rem;
 }
 .alert-primary {
-  background-color: #e9f8fc;
-  border-color: #d3f0f9;
+  background-color: #d3f0f9;
+  border-color: #e9f8fc;
   color: #29b7e1;
 }
 .alert-primary p,
