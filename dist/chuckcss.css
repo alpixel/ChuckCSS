@@ -703,8 +703,8 @@ ol {
 ***** */
 h1,
 .h1-like {
-  font-size: 3rem;
-  line-height: 5.4rem;
+  font-size: 2em;
+  line-height: 1.5;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;
@@ -717,8 +717,8 @@ h1 small,
 }
 h2,
 .h2-like {
-  font-size: 2.7rem;
-  line-height: 4.86rem;
+  font-size: 1.8em;
+  line-height: 1.5;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;
@@ -731,8 +731,8 @@ h2 small,
 }
 h3,
 .h3-like {
-  font-size: 2.4rem;
-  line-height: 4.32rem;
+  font-size: 1.6em;
+  line-height: 1.5;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;
@@ -745,8 +745,8 @@ h3 small,
 }
 h4,
 .h4-like {
-  font-size: 2.1rem;
-  line-height: 3.78rem;
+  font-size: 1.4em;
+  line-height: 1.5;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;
@@ -759,8 +759,8 @@ h4 small,
 }
 h5,
 .h5-like {
-  font-size: 1.9rem;
-  line-height: 3.42rem;
+  font-size: 1.26666667em;
+  line-height: 1.5;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;
@@ -773,8 +773,8 @@ h5 small,
 }
 h6,
 .h6-like {
-  font-size: 1.8rem;
-  line-height: 3.24rem;
+  font-size: 1.2em;
+  line-height: 1.5;
   margin: 0;
   font-weight: 400;
   color: #3a3a3a;

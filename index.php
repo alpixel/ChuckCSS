@@ -1774,7 +1774,7 @@
                 </p>
             </header>
 
-            <div class="main cc-titles">
+            <div class="main cc-titles active">
                 <h3 class="title">Titles Hn</h3>
                 <pre class="HTML">
                     <code class="language-markup">&lt;h1>Heading 1 - Amet urna ultrices magna diam!&lt;/h1>
