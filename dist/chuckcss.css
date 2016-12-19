@@ -982,13 +982,14 @@ button.icon-right:before {
           order: 2;
   margin: 0 0 0 0.8em;
 }
-/* Hack Firefox for .icon-right on button elements (hide icon) */
+/* Hack Firefox for .icon-right on button elements */
 @-moz-document url-prefix() {
   button.icon-right {
     display: inline-block;
   }
+  button.icon-right.cc-thin:before,
   button.icon-right:before {
-    display: none;
+    margin: 0 0.8em 0 0;
   }
 }
 /* ******** */

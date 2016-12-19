@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="main cc-badges active">
+            <div class="main cc-badges">
                 <h3 class="title">Badges</h3>
 
                 <pre class="HTML">
@@ -1155,7 +1155,7 @@
                 </p>
             </header>
 
-            <div class="main cc-grids">
+            <div class="main cc-grids active">
 
                 <div class="grids-basics">
                     <h3 class="title">Basic grid</h3>
@@ -1778,7 +1778,7 @@
                 </p>
             </header>
 
-            <div class="main cc-titles active">
+            <div class="main cc-titles">
                 <h3 class="title">Titles Hn</h3>
                 <pre class="HTML">
                     <code class="language-markup">&lt;h1>Heading 1 - Amet urna ultrices magna diam!&lt;/h1>

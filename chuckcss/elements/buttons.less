@@ -171,12 +171,13 @@ button {
 }
 
 
-/* Hack Firefox for .icon-right on button elements (hide icon) */
+/* Hack Firefox for .icon-right on button elements */
 @-moz-document url-prefix() {
     button.icon-right {
         display:inline-block;
+        &.cc-thin:before,
         &:before {
-            display:none;
+            margin:0 0.8em 0 0;
         }
     }
 }
