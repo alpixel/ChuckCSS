@@ -225,77 +225,73 @@
     }
 
     /* Tabs */
-    .tabs {
+    .tabs.cc-@{colorName} {
+        &.cc {
+            &-bordered {
+                &>li {
+                    &:hover,
+                    &.active {
+                        a:not(.btn) {
+                            border-color: @colorValue @colorValue white @colorValue;
+                        }
+                    }
+                }
+            }
+            &-pills {
+                &>li {
+                    &.active,
+                    &:hover {
+                        a:not(.btn) {
+                            background-color:@colorValue;
+                            border-top:1px solid @colorValue;
+                            border-bottom:1px solid @colorValue;
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
 
-        &.cc-@{colorName} {
 
+        &>li {
+            /* Active child */
+            &:hover,
+            &.active {
+                a:not(.btn) {
+                    color:@colorValue;
+                    border-bottom-color:@colorValue;
+                }
+            }
+        }
+
+
+        /* Small screen ruleset */
+        ._media-s({
             &.cc {
                 &-bordered {
                     &>li {
                         &:hover,
                         &.active {
                             a:not(.btn) {
-                                border-color: @colorValue @colorValue white @colorValue;
+                                border-color:@colorValue;
                             }
                         }
                     }
                 }
+
                 &-pills {
+                    &.cc-unchained > li,
                     &>li {
                         &.active,
                         &:hover {
                             a:not(.btn) {
-                                background-color:@colorValue;
-                                border-top:1px solid @colorValue;
-                                border-bottom:1px solid @colorValue;
-                                color:white;
+                                border:1px solid @colorValue;
                             }
                         }
                     }
                 }
             }
 
-
-            &>li {
-                /* Active child */
-                &:hover,
-                &.active {
-                    a:not(.btn) {
-                        color:@colorValue;
-                        border-bottom-color:@colorValue;
-                    }
-                }
-            }
-        }
-
-        /* Small screen ruleset */
-        ._media-s({
-            &.cc-@{colorName} {
-                &.cc {
-                    &-bordered {
-                        &>li {
-                            &:hover,
-                            &.active {
-                                a:not(.btn) {
-                                    border-color:@colorValue;
-                                }
-                            }
-                        }
-                    }
-
-                    &-pills {
-                        &.cc-unchained > li,
-                        &>li {
-                            &.active,
-                            &:hover {
-                                a:not(.btn) {
-                                    border:1px solid @colorValue;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         });
     }
 
