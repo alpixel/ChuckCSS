@@ -1076,7 +1076,6 @@ table.cc-unbordered thead tr th {
 @media screen and (min-width: 768px) {
   table {
     overflow-x: initial;
-    display: table;
   }
   table tbody td {
     font-size: 1.5rem;
@@ -4325,6 +4324,26 @@ a.cc-bg-primary {
   color: white;
   background-color: #29b7e1;
 }
+h1.cc-bg-primary .badge,
+h2.cc-bg-primary .badge,
+h3.cc-bg-primary .badge,
+h4.cc-bg-primary .badge,
+h5.cc-bg-primary .badge,
+h6.cc-bg-primary .badge,
+p.cc-bg-primary .badge,
+div.cc-bg-primary .badge,
+section.cc-bg-primary .badge,
+aside.cc-bg-primary .badge,
+header.cc-bg-primary .badge,
+footer.cc-bg-primary .badge,
+article.cc-bg-primary .badge,
+main.cc-bg-primary .badge,
+span.cc-bg-primary .badge,
+i.cc-bg-primary .badge,
+a.cc-bg-primary .badge {
+  background-color: white;
+  color: #29b7e1;
+}
 /* lists */
 li.cc-bg-primary {
   background-color: #29b7e1;
@@ -4424,8 +4443,8 @@ a.btn.cc-bg-primary.cc-outlined.cc-loading:before,
 button.cc-bg-primary.cc-outlined.cc-loading:before {
   border-color: #29b7e1 #afe4f4 #afe4f4 #afe4f4;
 }
-a.btn.cc-bg-primary span.badge,
-button.cc-bg-primary span.badge {
+a.btn.cc-bg-primary .badge,
+button.cc-bg-primary .badge {
   background-color: white;
   color: #29b7e1;
 }
@@ -4564,6 +4583,26 @@ a.cc-bg-green {
   color: white;
   background-color: #80ae37;
 }
+h1.cc-bg-green .badge,
+h2.cc-bg-green .badge,
+h3.cc-bg-green .badge,
+h4.cc-bg-green .badge,
+h5.cc-bg-green .badge,
+h6.cc-bg-green .badge,
+p.cc-bg-green .badge,
+div.cc-bg-green .badge,
+section.cc-bg-green .badge,
+aside.cc-bg-green .badge,
+header.cc-bg-green .badge,
+footer.cc-bg-green .badge,
+article.cc-bg-green .badge,
+main.cc-bg-green .badge,
+span.cc-bg-green .badge,
+i.cc-bg-green .badge,
+a.cc-bg-green .badge {
+  background-color: white;
+  color: #80ae37;
+}
 /* lists */
 li.cc-bg-green {
   background-color: #80ae37;
@@ -4663,8 +4702,8 @@ a.btn.cc-bg-green.cc-outlined.cc-loading:before,
 button.cc-bg-green.cc-outlined.cc-loading:before {
   border-color: #80ae37 #c7e09e #c7e09e #c7e09e;
 }
-a.btn.cc-bg-green span.badge,
-button.cc-bg-green span.badge {
+a.btn.cc-bg-green .badge,
+button.cc-bg-green .badge {
   background-color: white;
   color: #80ae37;
 }
@@ -4803,6 +4842,26 @@ a.cc-bg-red {
   color: white;
   background-color: #c41515;
 }
+h1.cc-bg-red .badge,
+h2.cc-bg-red .badge,
+h3.cc-bg-red .badge,
+h4.cc-bg-red .badge,
+h5.cc-bg-red .badge,
+h6.cc-bg-red .badge,
+p.cc-bg-red .badge,
+div.cc-bg-red .badge,
+section.cc-bg-red .badge,
+aside.cc-bg-red .badge,
+header.cc-bg-red .badge,
+footer.cc-bg-red .badge,
+article.cc-bg-red .badge,
+main.cc-bg-red .badge,
+span.cc-bg-red .badge,
+i.cc-bg-red .badge,
+a.cc-bg-red .badge {
+  background-color: white;
+  color: #c41515;
+}
 /* lists */
 li.cc-bg-red {
   background-color: #c41515;
@@ -4902,8 +4961,8 @@ a.btn.cc-bg-red.cc-outlined.cc-loading:before,
 button.cc-bg-red.cc-outlined.cc-loading:before {
   border-color: #c41515 #f18181 #f18181 #f18181;
 }
-a.btn.cc-bg-red span.badge,
-button.cc-bg-red span.badge {
+a.btn.cc-bg-red .badge,
+button.cc-bg-red .badge {
   background-color: white;
   color: #c41515;
 }
@@ -5042,6 +5101,26 @@ a.cc-bg-blue {
   color: white;
   background-color: #3498db;
 }
+h1.cc-bg-blue .badge,
+h2.cc-bg-blue .badge,
+h3.cc-bg-blue .badge,
+h4.cc-bg-blue .badge,
+h5.cc-bg-blue .badge,
+h6.cc-bg-blue .badge,
+p.cc-bg-blue .badge,
+div.cc-bg-blue .badge,
+section.cc-bg-blue .badge,
+aside.cc-bg-blue .badge,
+header.cc-bg-blue .badge,
+footer.cc-bg-blue .badge,
+article.cc-bg-blue .badge,
+main.cc-bg-blue .badge,
+span.cc-bg-blue .badge,
+i.cc-bg-blue .badge,
+a.cc-bg-blue .badge {
+  background-color: white;
+  color: #3498db;
+}
 /* lists */
 li.cc-bg-blue {
   background-color: #3498db;
@@ -5141,8 +5220,8 @@ a.btn.cc-bg-blue.cc-outlined.cc-loading:before,
 button.cc-bg-blue.cc-outlined.cc-loading:before {
   border-color: #3498db #b6daf2 #b6daf2 #b6daf2;
 }
-a.btn.cc-bg-blue span.badge,
-button.cc-bg-blue span.badge {
+a.btn.cc-bg-blue .badge,
+button.cc-bg-blue .badge {
   background-color: white;
   color: #3498db;
 }
@@ -5281,6 +5360,26 @@ a.cc-bg-purple {
   color: white;
   background-color: #8e44ad;
 }
+h1.cc-bg-purple .badge,
+h2.cc-bg-purple .badge,
+h3.cc-bg-purple .badge,
+h4.cc-bg-purple .badge,
+h5.cc-bg-purple .badge,
+h6.cc-bg-purple .badge,
+p.cc-bg-purple .badge,
+div.cc-bg-purple .badge,
+section.cc-bg-purple .badge,
+aside.cc-bg-purple .badge,
+header.cc-bg-purple .badge,
+footer.cc-bg-purple .badge,
+article.cc-bg-purple .badge,
+main.cc-bg-purple .badge,
+span.cc-bg-purple .badge,
+i.cc-bg-purple .badge,
+a.cc-bg-purple .badge {
+  background-color: white;
+  color: #8e44ad;
+}
 /* lists */
 li.cc-bg-purple {
   background-color: #8e44ad;
@@ -5380,8 +5479,8 @@ a.btn.cc-bg-purple.cc-outlined.cc-loading:before,
 button.cc-bg-purple.cc-outlined.cc-loading:before {
   border-color: #8e44ad #cfacde #cfacde #cfacde;
 }
-a.btn.cc-bg-purple span.badge,
-button.cc-bg-purple span.badge {
+a.btn.cc-bg-purple .badge,
+button.cc-bg-purple .badge {
   background-color: white;
   color: #8e44ad;
 }
@@ -5520,6 +5619,26 @@ a.cc-bg-orange {
   color: white;
   background-color: #f39c12;
 }
+h1.cc-bg-orange .badge,
+h2.cc-bg-orange .badge,
+h3.cc-bg-orange .badge,
+h4.cc-bg-orange .badge,
+h5.cc-bg-orange .badge,
+h6.cc-bg-orange .badge,
+p.cc-bg-orange .badge,
+div.cc-bg-orange .badge,
+section.cc-bg-orange .badge,
+aside.cc-bg-orange .badge,
+header.cc-bg-orange .badge,
+footer.cc-bg-orange .badge,
+article.cc-bg-orange .badge,
+main.cc-bg-orange .badge,
+span.cc-bg-orange .badge,
+i.cc-bg-orange .badge,
+a.cc-bg-orange .badge {
+  background-color: white;
+  color: #f39c12;
+}
 /* lists */
 li.cc-bg-orange {
   background-color: #f39c12;
@@ -5619,8 +5738,8 @@ a.btn.cc-bg-orange.cc-outlined.cc-loading:before,
 button.cc-bg-orange.cc-outlined.cc-loading:before {
   border-color: #f39c12 #fad9a4 #fad9a4 #fad9a4;
 }
-a.btn.cc-bg-orange span.badge,
-button.cc-bg-orange span.badge {
+a.btn.cc-bg-orange .badge,
+button.cc-bg-orange .badge {
   background-color: white;
   color: #f39c12;
 }
@@ -5759,6 +5878,26 @@ a.cc-bg-yellow {
   color: white;
   background-color: #f1c40f;
 }
+h1.cc-bg-yellow .badge,
+h2.cc-bg-yellow .badge,
+h3.cc-bg-yellow .badge,
+h4.cc-bg-yellow .badge,
+h5.cc-bg-yellow .badge,
+h6.cc-bg-yellow .badge,
+p.cc-bg-yellow .badge,
+div.cc-bg-yellow .badge,
+section.cc-bg-yellow .badge,
+aside.cc-bg-yellow .badge,
+header.cc-bg-yellow .badge,
+footer.cc-bg-yellow .badge,
+article.cc-bg-yellow .badge,
+main.cc-bg-yellow .badge,
+span.cc-bg-yellow .badge,
+i.cc-bg-yellow .badge,
+a.cc-bg-yellow .badge {
+  background-color: white;
+  color: #f1c40f;
+}
 /* lists */
 li.cc-bg-yellow {
   background-color: #f1c40f;
@@ -5858,8 +5997,8 @@ a.btn.cc-bg-yellow.cc-outlined.cc-loading:before,
 button.cc-bg-yellow.cc-outlined.cc-loading:before {
   border-color: #f1c40f #f9e8a0 #f9e8a0 #f9e8a0;
 }
-a.btn.cc-bg-yellow span.badge,
-button.cc-bg-yellow span.badge {
+a.btn.cc-bg-yellow .badge,
+button.cc-bg-yellow .badge {
   background-color: white;
   color: #f1c40f;
 }

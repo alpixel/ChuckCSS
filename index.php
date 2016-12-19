@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="main cc-badges">
+            <div class="main cc-badges active">
                 <h3 class="title">Badges</h3>
 
                 <pre class="HTML">
@@ -396,6 +396,10 @@
                         Button <span class="badge"><i class="fa fa-user"></i></span>
                     </button>
                 </p>
+
+                <div class="cc-bg-blue cc-pa">
+                    Mauris blandit aliquet elit, <span class="badge">54</span> eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.
+                </div>
             </div>
 
             <div class="main cc-tabs">
