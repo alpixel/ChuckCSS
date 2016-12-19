@@ -982,13 +982,14 @@ button.icon-right:before {
           order: 2;
   margin: 0 0 0 0.8em;
 }
-/* Hack Firefox for .icon-right on button elements (hide icon) */
+/* Hack Firefox for .icon-right on button elements */
 @-moz-document url-prefix() {
   button.icon-right {
     display: inline-block;
   }
+  button.icon-right.cc-thin:before,
   button.icon-right:before {
-    display: none;
+    margin: 0 0.8em 0 0;
   }
 }
 /* ******** */
@@ -4490,7 +4491,7 @@ form.cc-primary button[type="submit"]:hover {
   background-color: #1a98bd;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-primary {
   /* Small screen ruleset */
 }
 .tabs.cc-primary.cc-bordered > li:hover a:not(.btn),
@@ -4749,7 +4750,7 @@ form.cc-green button[type="submit"]:hover {
   background-color: #63872b;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-green {
   /* Small screen ruleset */
 }
 .tabs.cc-green.cc-bordered > li:hover a:not(.btn),
@@ -5008,7 +5009,7 @@ form.cc-red button[type="submit"]:hover {
   background-color: #961010;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-red {
   /* Small screen ruleset */
 }
 .tabs.cc-red.cc-bordered > li:hover a:not(.btn),
@@ -5267,7 +5268,7 @@ form.cc-blue button[type="submit"]:hover {
   background-color: #217dbb;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-blue {
   /* Small screen ruleset */
 }
 .tabs.cc-blue.cc-bordered > li:hover a:not(.btn),
@@ -5526,7 +5527,7 @@ form.cc-purple button[type="submit"]:hover {
   background-color: #703688;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-purple {
   /* Small screen ruleset */
 }
 .tabs.cc-purple.cc-bordered > li:hover a:not(.btn),
@@ -5785,7 +5786,7 @@ form.cc-orange button[type="submit"]:hover {
   background-color: #c87f0a;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-orange {
   /* Small screen ruleset */
 }
 .tabs.cc-orange.cc-bordered > li:hover a:not(.btn),
@@ -6044,7 +6045,7 @@ form.cc-yellow button[type="submit"]:hover {
   background-color: #c29d0b;
 }
 /* Tabs */
-.tabs {
+.tabs.cc-yellow {
   /* Small screen ruleset */
 }
 .tabs.cc-yellow.cc-bordered > li:hover a:not(.btn),
