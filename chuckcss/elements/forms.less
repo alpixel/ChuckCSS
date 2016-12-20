@@ -32,6 +32,12 @@ form {
                 &:nth-child(1) {
                     margin-left:0;
                 }
+
+                // Screen < 768px
+                ._media-s({
+                    display:block;
+                    margin-left:0;
+                });
             }
 
 
@@ -74,6 +80,25 @@ form {
                         border-radius:@border-radius;
                     }
                 }
+
+                // Screen < 768px
+                ._media-s({
+                    input {
+                        border-radius: @border-radius;
+                        display:block;
+                        width:100%;
+                        margin:1em 0;
+
+                        &:first-of-type,
+                        &:last-child {
+                            border-radius: @border-radius;
+                        }
+                    }
+
+                    button[type="submit"] {
+                        border-radius:@border-radius;
+                    }
+                });
             }
         }
 
@@ -122,6 +147,14 @@ form {
                     color:@suffix-tc;
                 }
             }
+
+            // Screen < 768px
+            ._media-s({
+                input {
+                    display: inline-block;
+                    width:auto;
+                }
+            });
         }
 
 
@@ -216,6 +249,14 @@ form {
 
                 }
             }
+
+            // Screen < 768px
+            ._media-s({
+                input {
+                    display: inline-block;
+                    width:14px;
+                }
+            });
         }
 
         /*
@@ -291,6 +332,13 @@ form {
         &.error {
             color:@red;
         }
+
+        // Screen < 768px
+        ._media-s({
+            display:block;
+            line-height:2em;
+            padding-right:0;
+        });
     }
 
 
@@ -360,6 +408,12 @@ form {
         &::-moz-placeholder {color:@gray;}
         &::-ms-input-placeholder {color:@gray;}
         &::-webkit-input-placeholder {color:@gray;}
+
+        // Screen < 768px
+        ._media-s({
+            display:block;
+            width:100%;
+        });
     }
 
     /*
@@ -396,6 +450,12 @@ form {
             outline:none;
             border-color:@form-mc;
         }
+
+        // Screen < 768px
+        ._media-s({
+            display:block;
+            width:100%;
+        });
     }
 
     /*
@@ -423,5 +483,12 @@ form {
                 margin-right:1em;
             }
         }
+
+        // Screen < 768px
+        ._media-s({
+            display:block;
+            width:100%;
+            margin:1em 0;
+        });
     }
 }

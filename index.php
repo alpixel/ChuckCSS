@@ -1155,7 +1155,7 @@
                 </p>
             </header>
 
-            <div class="main cc-grids active">
+            <div class="main cc-grids">
 
                 <div class="grids-basics">
                     <h3 class="title">Basic grid</h3>
@@ -2912,7 +2912,7 @@
                 </table>
             </div>
 
-            <div class="main cc-forms">
+            <div class="main cc-forms active">
                 <h3 class="title">Forms</h3>
 
                 <pre class="HTML">
