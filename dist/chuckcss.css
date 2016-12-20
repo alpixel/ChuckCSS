@@ -1153,6 +1153,14 @@ ul.cc-horizontal li[class*="ion-"].icon-right:before {
     display: block;
     margin: 1em 0;
   }
+  ul.cc-horizontal li[class*="fa-"].icon-right,
+  ul.cc-horizontal li[class*="ion-"].icon-right {
+    display: block;
+  }
+  ul.cc-horizontal li[class*="fa-"].icon-right:before,
+  ul.cc-horizontal li[class*="ion-"].icon-right:before {
+    margin: 0 0.8em 0 0;
+  }
 }
 /* Ordered lists */
 ol li {
