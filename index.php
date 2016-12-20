@@ -2937,6 +2937,11 @@
                         <label class="block">Block Label</label>
                         <input type="text" placeholder="placeholder" value="" name="" />
                     </div>
+
+                    <div class="form-item error">
+                        <label class="block">Block Label</label>
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                    </div>
                 </form>
 
 
@@ -3097,8 +3102,8 @@
                     <div class="form-item">
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
-                    <div class="form-item">
-                        <input type="text"  placeholder="* mandatory" value="" name="" class="error" />
+                    <div class="form-item error">
+                        <input type="text"  placeholder="* mandatory" value="" name="" />
                     </div>
                     <div class="form-item">
                         <input type="text" disabled="disabled" placeholder="inactive" value="" name="" />
@@ -3113,6 +3118,14 @@
                         <input type="file" placeholder="key-words..." value="" name="" />
                     </div>
                     <div class="form-item">
+                        <select name="">
+                            <option selected="selected" disabled="disabled">-- Choose --</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form-item error">
                         <select name="">
                             <option selected="selected" disabled="disabled">-- Choose --</option>
                             <option>Option 1</option>
@@ -3139,9 +3152,9 @@
                                 Choice 3 disabled
                             </label>
                         </div>
-                        <div class="form-radio">
+                        <div class="form-radio error">
                             <label>
-                                <input type="radio" name="radio" value="f" class="error" />
+                                <input type="radio" name="radio" value="f"/>
                                 Choice 4 (error)
                             </label>
                         </div>
@@ -3165,9 +3178,9 @@
                                 Choice 3 disabled
                             </label>
                         </div>
-                        <div class="form-radio block">
+                        <div class="form-radio block error">
                             <label>
-                                <input type="radio" name="radio" value="f" class="error" />
+                                <input type="radio" name="radio" value="f" />
                                 Choice 4 (error)
                             </label>
                         </div>
@@ -3191,9 +3204,9 @@
                                 Choice 3 (disabled)
                             </label>
                         </div>
-                        <div class="form-checkbox">
+                        <div class="form-checkbox error">
                             <label>
-                                <input type="checkbox" name="" value="f" class="error" />
+                                <input type="checkbox" name="" value="f" />
                                 Choice 4 (error)
                             </label>
                         </div>
@@ -3217,9 +3230,9 @@
                                 Choice 3 (disabled)
                             </label>
                         </div>
-                        <div class="form-checkbox block">
+                        <div class="form-checkbox block error">
                             <label>
-                                <input type="checkbox" name="" value="f" class="error" />
+                                <input type="checkbox" name="" value="f" />
                                 Choice 4 (error)
                             </label>
                         </div>
@@ -3230,6 +3243,14 @@
                     <div class="clearfix"></div>
 
 
+                    <div class="form-item error">
+                        <label>With Prefix and Suffix</label>
+                        <div class="form-ps">
+                            <span>$</span>
+                            <input type="text"  placeholder="price" value="" name="" />
+                            <span>.00</span>
+                        </div>
+                    </div>
                     <div class="form-item cc-inline">
                         <label>With Prefix and Suffix</label>
                         <div class="form-ps">
@@ -3256,6 +3277,15 @@
 
                     <div class="form-item cc-chained">
                         <label class="block">Chained inputs</label>
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="submit" value="envoyer" name="" />
+                    </div>
+
+                    <div class="form-item cc-chained error">
+                        <label class="block">Chained error inputs</label>
                         <input type="text" placeholder="placeholder" value="" name="" />
                         <input type="text" placeholder="placeholder" value="" name="" />
                         <input type="text" placeholder="placeholder" value="" name="" />
@@ -3346,8 +3376,8 @@
                     <div class="form-item">
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>
-                    <div class="form-item">
-                        <input type="text"  placeholder="* mandatory" value="" name="" class="error" />
+                    <div class="form-item error">
+                        <input type="text"  placeholder="* mandatory" value="" name="" />
                     </div>
                     <div class="form-item">
                         <input type="text" disabled="disabled" placeholder="inactive" value="" name="" />
@@ -3359,6 +3389,17 @@
                         <input type="search" placeholder="key-words..." value="" name="" />
                     </div>
                     <div class="form-item">
+                        <input type="file" placeholder="key-words..." value="" name="" />
+                    </div>
+                    <div class="form-item">
+                        <select name="">
+                            <option selected="selected" disabled="disabled">-- Choose --</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form-item error">
                         <select name="">
                             <option selected="selected" disabled="disabled">-- Choose --</option>
                             <option>Option 1</option>
@@ -3385,6 +3426,12 @@
                                 Choice 3 disabled
                             </label>
                         </div>
+                        <div class="form-radio error">
+                            <label>
+                                <input type="radio" name="radio" value="f"/>
+                                Choice 4 (error)
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <div class="form-radio block">
@@ -3403,6 +3450,12 @@
                             <label>
                                 <input type="radio" name="radio2" value="0" disabled="disabled" />
                                 Choice 3 disabled
+                            </label>
+                        </div>
+                        <div class="form-radio block error">
+                            <label>
+                                <input type="radio" name="radio" value="f" />
+                                Choice 4 (error)
                             </label>
                         </div>
                     </div>
@@ -3425,6 +3478,12 @@
                                 Choice 3 (disabled)
                             </label>
                         </div>
+                        <div class="form-checkbox error">
+                            <label>
+                                <input type="checkbox" name="" value="f" />
+                                Choice 4 (error)
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <div class="form-checkbox block">
@@ -3445,11 +3504,27 @@
                                 Choice 3 (disabled)
                             </label>
                         </div>
+                        <div class="form-checkbox block error">
+                            <label>
+                                <input type="checkbox" name="" value="f" />
+                                Choice 4 (error)
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <textarea name="" placeholder="Your message..."></textarea>
                     </div>
                     <div class="clearfix"></div>
+
+
+                    <div class="form-item error">
+                        <label>With Prefix and Suffix</label>
+                        <div class="form-ps">
+                            <span>$</span>
+                            <input type="text"  placeholder="price" value="" name="" />
+                            <span>.00</span>
+                        </div>
+                    </div>
                     <div class="form-item cc-inline">
                         <label>With Prefix and Suffix</label>
                         <div class="form-ps">
@@ -3483,9 +3558,19 @@
                         <input type="submit" value="envoyer" name="" />
                     </div>
 
+                    <div class="form-item cc-chained error">
+                        <label class="block">Chained error inputs</label>
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="text" placeholder="placeholder" value="" name="" />
+                        <input type="submit" value="envoyer" name="" />
+                    </div>
+
                     <div class="form-item">
                         <button type="submit">I'm a submit button</button>
                         <input type="submit" value="I'm a submit input" />
+                        <button type="submit" class="ion-ios-cloud-upload-outline">Upload</button>
                     </div>
                 </form>
             </div>

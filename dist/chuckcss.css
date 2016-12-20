@@ -1305,6 +1305,7 @@ form .form-item {
   margin: 0.8em 0;
   /* Display as inline-block */
   /* Chained inputs */
+  /* Error style */
 }
 form .form-item:before,
 form .form-item:after {
@@ -1377,6 +1378,42 @@ form .form-item.cc-chained .form-ps + button[type="submit"] {
     border-radius: 2px;
   }
 }
+form .form-item.error label {
+  color: #c41515;
+}
+form .form-item.error input:not([type="submit"]),
+form .form-item.error textarea {
+  box-shadow: none;
+  background-color: #fbdddd;
+  border-color: #f6afaf;
+  color: #961010;
+  /* placeholder color */
+}
+form .form-item.error input:not([type="submit"]):focus,
+form .form-item.error textarea:focus {
+  outline: none;
+  border-color: #e82424;
+}
+form .form-item.error input:not([type="submit"])::-moz-placeholder,
+form .form-item.error textarea::-moz-placeholder {
+  color: #ef6a6a;
+}
+form .form-item.error input:not([type="submit"])::-ms-input-placeholder,
+form .form-item.error textarea::-ms-input-placeholder {
+  color: #ef6a6a;
+}
+form .form-item.error input:not([type="submit"])::-webkit-input-placeholder,
+form .form-item.error textarea::-webkit-input-placeholder {
+  color: #ef6a6a;
+}
+form .form-item.error select {
+  background-color: #fbdddd;
+  border: 1px solid #f6afaf;
+}
+form .form-item.error .form-ps span {
+  background-color: #ed5252;
+  color: white;
+}
 form .form-ps {
   font-size: 0;
   /* Collpase span with input */
@@ -1422,6 +1459,7 @@ form .form-radio {
   margin-right: 1em;
   /* Disabled radio or checkbox inputs */
   /* Change viewport appearance */
+  /* Error */
 }
 form .form-checkbox.block,
 form .form-radio.block {
@@ -1443,18 +1481,6 @@ form .form-checkbox label,
 form .form-radio label {
   cursor: pointer;
   position: relative;
-}
-form .form-checkbox label.checked.error,
-form .form-radio label.checked.error,
-form .form-checkbox label.error,
-form .form-radio label.error {
-  color: #961010;
-}
-form .form-checkbox label.checked.error:before,
-form .form-radio label.checked.error:before,
-form .form-checkbox label.error:before,
-form .form-radio label.error:before {
-  color: #961010;
 }
 form .form-checkbox label::-moz-selection,
 form .form-radio label::-moz-selection {
@@ -1493,6 +1519,14 @@ form .form-radio input:before {
   left: 50%;
   margin: -3px 0 0 -3px;
 }
+form .form-checkbox.error label,
+form .form-radio.error label {
+  color: #c41515;
+}
+form .form-checkbox.error input:focus,
+form .form-radio.error input:focus {
+  border-color: #f6afaf;
+}
 @media screen and (max-width: 767px) {
   form .form-checkbox input,
   form .form-radio input {
@@ -1520,7 +1554,11 @@ form .form-checkbox input:checked:before {
           transform: rotate(-45deg);
   /* Perspective */
 }
-form .form-checkbox input:checked.error {
+form .form-checkbox.error input {
+  border-color: #f6afaf;
+  background-color: #f9c6c6;
+}
+form .form-checkbox.error input:checked {
   background-color: #ed5252;
   border-color: #ed5252;
 }
@@ -1541,10 +1579,11 @@ form .form-radio input:checked {
 form .form-radio input:checked:before {
   background-color: #29b7e1;
 }
-form .form-radio input:checked.error {
-  border-color: #ed5252;
+form .form-radio.error input {
+  border-color: #f6afaf;
+  background-color: #f9c6c6;
 }
-form .form-radio input:checked.error:before {
+form .form-radio.error input:checked:before {
   background-color: #ed5252;
 }
 form label {
@@ -1560,9 +1599,6 @@ form label.block {
   display: block;
   line-height: 2em;
   padding-right: 0;
-}
-form label.error {
-  color: #c41515;
 }
 @media screen and (max-width: 767px) {
   form label {
@@ -1586,7 +1622,6 @@ form input {
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   line-height: inherit;
-  /* Error inputs */
   /* number : fix right padding */
   /* disabled element */
   /* Reset type file input */
@@ -1596,31 +1631,6 @@ form textarea:focus,
 form input:focus {
   outline: none;
   border-color: #29b7e1;
-}
-form textarea.error,
-form input.error {
-  box-shadow: none;
-  background-color: #fbdddd;
-  border-color: #f6afaf;
-  color: #961010;
-  /* placeholder color */
-}
-form textarea.error:focus,
-form input.error:focus {
-  outline: none;
-  border-color: #e82424;
-}
-form textarea.error::-moz-placeholder,
-form input.error::-moz-placeholder {
-  color: #ef6a6a;
-}
-form textarea.error::-ms-input-placeholder,
-form input.error::-ms-input-placeholder {
-  color: #ef6a6a;
-}
-form textarea.error::-webkit-input-placeholder,
-form input.error::-webkit-input-placeholder {
-  color: #ef6a6a;
 }
 form textarea[type="number"],
 form input[type="number"] {
@@ -4523,34 +4533,26 @@ button.cc-bg-primary .badge {
   color: #29b7e1;
 }
 /* Colored forms */
-form.cc-primary .form-checkbox input:focus {
+form.cc-primary .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-primary .form-checkbox input:checked {
+form.cc-primary .form-checkbox:not(.error) input:checked {
   background-color: #29b7e1;
   border-color: #29b7e1;
 }
-form.cc-primary .form-radio input:focus {
+form.cc-primary .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-primary .form-radio input:checked:before {
+form.cc-primary .form-radio:not(.error) input:checked:before {
   background-color: #29b7e1;
 }
 form.cc-primary .form-ps span {
-  background-color: #29b7e1;
-}
-form.cc-primary .form-ps span:last-child {
   background-color: #29b7e1;
 }
 form.cc-primary select:focus,
 form.cc-primary textarea:focus,
 form.cc-primary input:focus {
   border-color: #29b7e1;
-}
-form.cc-primary select.error:focus,
-form.cc-primary textarea.error:focus,
-form.cc-primary input.error:focus {
-  border-color: #e82424;
 }
 form.cc-primary input[type="submit"],
 form.cc-primary button[type="submit"] {
@@ -4782,34 +4784,26 @@ button.cc-bg-green .badge {
   color: #80ae37;
 }
 /* Colored forms */
-form.cc-green .form-checkbox input:focus {
+form.cc-green .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-green .form-checkbox input:checked {
+form.cc-green .form-checkbox:not(.error) input:checked {
   background-color: #80ae37;
   border-color: #80ae37;
 }
-form.cc-green .form-radio input:focus {
+form.cc-green .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-green .form-radio input:checked:before {
+form.cc-green .form-radio:not(.error) input:checked:before {
   background-color: #80ae37;
 }
 form.cc-green .form-ps span {
-  background-color: #80ae37;
-}
-form.cc-green .form-ps span:last-child {
   background-color: #80ae37;
 }
 form.cc-green select:focus,
 form.cc-green textarea:focus,
 form.cc-green input:focus {
   border-color: #80ae37;
-}
-form.cc-green select.error:focus,
-form.cc-green textarea.error:focus,
-form.cc-green input.error:focus {
-  border-color: #e82424;
 }
 form.cc-green input[type="submit"],
 form.cc-green button[type="submit"] {
@@ -5041,34 +5035,26 @@ button.cc-bg-red .badge {
   color: #c41515;
 }
 /* Colored forms */
-form.cc-red .form-checkbox input:focus {
+form.cc-red .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-red .form-checkbox input:checked {
+form.cc-red .form-checkbox:not(.error) input:checked {
   background-color: #c41515;
   border-color: #c41515;
 }
-form.cc-red .form-radio input:focus {
+form.cc-red .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-red .form-radio input:checked:before {
+form.cc-red .form-radio:not(.error) input:checked:before {
   background-color: #c41515;
 }
 form.cc-red .form-ps span {
-  background-color: #c41515;
-}
-form.cc-red .form-ps span:last-child {
   background-color: #c41515;
 }
 form.cc-red select:focus,
 form.cc-red textarea:focus,
 form.cc-red input:focus {
   border-color: #c41515;
-}
-form.cc-red select.error:focus,
-form.cc-red textarea.error:focus,
-form.cc-red input.error:focus {
-  border-color: #e82424;
 }
 form.cc-red input[type="submit"],
 form.cc-red button[type="submit"] {
@@ -5300,34 +5286,26 @@ button.cc-bg-blue .badge {
   color: #3498db;
 }
 /* Colored forms */
-form.cc-blue .form-checkbox input:focus {
+form.cc-blue .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-blue .form-checkbox input:checked {
+form.cc-blue .form-checkbox:not(.error) input:checked {
   background-color: #3498db;
   border-color: #3498db;
 }
-form.cc-blue .form-radio input:focus {
+form.cc-blue .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-blue .form-radio input:checked:before {
+form.cc-blue .form-radio:not(.error) input:checked:before {
   background-color: #3498db;
 }
 form.cc-blue .form-ps span {
-  background-color: #3498db;
-}
-form.cc-blue .form-ps span:last-child {
   background-color: #3498db;
 }
 form.cc-blue select:focus,
 form.cc-blue textarea:focus,
 form.cc-blue input:focus {
   border-color: #3498db;
-}
-form.cc-blue select.error:focus,
-form.cc-blue textarea.error:focus,
-form.cc-blue input.error:focus {
-  border-color: #e82424;
 }
 form.cc-blue input[type="submit"],
 form.cc-blue button[type="submit"] {
@@ -5559,34 +5537,26 @@ button.cc-bg-purple .badge {
   color: #8e44ad;
 }
 /* Colored forms */
-form.cc-purple .form-checkbox input:focus {
+form.cc-purple .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-purple .form-checkbox input:checked {
+form.cc-purple .form-checkbox:not(.error) input:checked {
   background-color: #8e44ad;
   border-color: #8e44ad;
 }
-form.cc-purple .form-radio input:focus {
+form.cc-purple .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-purple .form-radio input:checked:before {
+form.cc-purple .form-radio:not(.error) input:checked:before {
   background-color: #8e44ad;
 }
 form.cc-purple .form-ps span {
-  background-color: #8e44ad;
-}
-form.cc-purple .form-ps span:last-child {
   background-color: #8e44ad;
 }
 form.cc-purple select:focus,
 form.cc-purple textarea:focus,
 form.cc-purple input:focus {
   border-color: #8e44ad;
-}
-form.cc-purple select.error:focus,
-form.cc-purple textarea.error:focus,
-form.cc-purple input.error:focus {
-  border-color: #e82424;
 }
 form.cc-purple input[type="submit"],
 form.cc-purple button[type="submit"] {
@@ -5818,34 +5788,26 @@ button.cc-bg-orange .badge {
   color: #f39c12;
 }
 /* Colored forms */
-form.cc-orange .form-checkbox input:focus {
+form.cc-orange .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-orange .form-checkbox input:checked {
+form.cc-orange .form-checkbox:not(.error) input:checked {
   background-color: #f39c12;
   border-color: #f39c12;
 }
-form.cc-orange .form-radio input:focus {
+form.cc-orange .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-orange .form-radio input:checked:before {
+form.cc-orange .form-radio:not(.error) input:checked:before {
   background-color: #f39c12;
 }
 form.cc-orange .form-ps span {
-  background-color: #f39c12;
-}
-form.cc-orange .form-ps span:last-child {
   background-color: #f39c12;
 }
 form.cc-orange select:focus,
 form.cc-orange textarea:focus,
 form.cc-orange input:focus {
   border-color: #f39c12;
-}
-form.cc-orange select.error:focus,
-form.cc-orange textarea.error:focus,
-form.cc-orange input.error:focus {
-  border-color: #e82424;
 }
 form.cc-orange input[type="submit"],
 form.cc-orange button[type="submit"] {
@@ -6077,34 +6039,26 @@ button.cc-bg-yellow .badge {
   color: #f1c40f;
 }
 /* Colored forms */
-form.cc-yellow .form-checkbox input:focus {
+form.cc-yellow .form-checkbox:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-yellow .form-checkbox input:checked {
+form.cc-yellow .form-checkbox:not(.error) input:checked {
   background-color: #f1c40f;
   border-color: #f1c40f;
 }
-form.cc-yellow .form-radio input:focus {
+form.cc-yellow .form-radio:not(.error) input:focus {
   border-color: #ddd;
 }
-form.cc-yellow .form-radio input:checked:before {
+form.cc-yellow .form-radio:not(.error) input:checked:before {
   background-color: #f1c40f;
 }
 form.cc-yellow .form-ps span {
-  background-color: #f1c40f;
-}
-form.cc-yellow .form-ps span:last-child {
   background-color: #f1c40f;
 }
 form.cc-yellow select:focus,
 form.cc-yellow textarea:focus,
 form.cc-yellow input:focus {
   border-color: #f1c40f;
-}
-form.cc-yellow select.error:focus,
-form.cc-yellow textarea.error:focus,
-form.cc-yellow input.error:focus {
-  border-color: #e82424;
 }
 form.cc-yellow input[type="submit"],
 form.cc-yellow button[type="submit"] {
