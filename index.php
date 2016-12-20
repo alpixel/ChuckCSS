@@ -3139,6 +3139,12 @@
                                 Choice 3 disabled
                             </label>
                         </div>
+                        <div class="form-radio">
+                            <label>
+                                <input type="radio" name="radio" value="f" class="error" />
+                                Choice 4 (error)
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <div class="form-radio block">
@@ -3157,6 +3163,12 @@
                             <label>
                                 <input type="radio" name="radio2" value="0" disabled="disabled" />
                                 Choice 3 disabled
+                            </label>
+                        </div>
+                        <div class="form-radio block">
+                            <label>
+                                <input type="radio" name="radio" value="f" class="error" />
+                                Choice 4 (error)
                             </label>
                         </div>
                     </div>
@@ -3179,6 +3191,12 @@
                                 Choice 3 (disabled)
                             </label>
                         </div>
+                        <div class="form-checkbox">
+                            <label>
+                                <input type="checkbox" name="" value="f" class="error" />
+                                Choice 4 (error)
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <div class="form-checkbox block">
@@ -3197,6 +3215,12 @@
                             <label>
                                 <input type="checkbox" name="" value="0" disabled="disabled" />
                                 Choice 3 (disabled)
+                            </label>
+                        </div>
+                        <div class="form-checkbox block">
+                            <label>
+                                <input type="checkbox" name="" value="f" class="error" />
+                                Choice 4 (error)
                             </label>
                         </div>
                     </div>

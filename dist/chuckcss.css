@@ -1520,6 +1520,10 @@ form .form-checkbox input:checked:before {
           transform: rotate(-45deg);
   /* Perspective */
 }
+form .form-checkbox input:checked.error {
+  background-color: #ed5252;
+  border-color: #ed5252;
+}
 form .form-radio input {
   border-radius: 100%;
 }
@@ -1536,6 +1540,12 @@ form .form-radio input:checked {
 }
 form .form-radio input:checked:before {
   background-color: #29b7e1;
+}
+form .form-radio input:checked.error {
+  border-color: #ed5252;
+}
+form .form-radio input:checked.error:before {
+  background-color: #ed5252;
 }
 form label {
   padding: 0;

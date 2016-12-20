@@ -281,6 +281,11 @@ form {
                         display:block;
                         ._rotate(-45deg);
                     }
+
+                    &.error {
+                        background-color:lighten(@red,20%);
+                        border-color:lighten(@red,20%);
+                    }
                 }
             }
         }
@@ -306,6 +311,14 @@ form {
 
                     &:before {
                         background-color:@form-mc;
+                    }
+
+                    &.error {
+                        border-color:lighten(@red,20%);
+
+                        &:before {
+                            background-color:lighten(@red,20%);
+                        }
                     }
                 }
             }
