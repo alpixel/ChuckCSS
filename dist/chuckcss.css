@@ -1324,6 +1324,12 @@ form .form-item.cc-inline {
 form .form-item.cc-inline:nth-child(1) {
   margin-left: 0;
 }
+@media screen and (max-width: 767px) {
+  form .form-item.cc-inline {
+    display: block;
+    margin-left: 0;
+  }
+}
 form .form-item.cc-chained {
   font-size: 0;
   /* Border-radius calculation */
@@ -1356,6 +1362,21 @@ form .form-item.cc-chained .form-ps + input[type="submit"],
 form .form-item.cc-chained .form-ps + button[type="submit"] {
   border-radius: 2px;
 }
+@media screen and (max-width: 767px) {
+  form .form-item.cc-chained input {
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+  }
+  form .form-item.cc-chained input:first-of-type,
+  form .form-item.cc-chained input:last-child {
+    border-radius: 2px;
+  }
+  form .form-item.cc-chained button[type="submit"] {
+    border-radius: 2px;
+  }
+}
 form .form-ps {
   font-size: 0;
   /* Collpase span with input */
@@ -1387,6 +1408,12 @@ form .form-ps span:last-child {
   background-color: #29b7e1;
   padding: 0 1.2em;
   color: white;
+}
+@media screen and (max-width: 767px) {
+  form .form-ps input {
+    display: inline-block;
+    width: auto;
+  }
 }
 form .form-checkbox,
 form .form-radio {
@@ -1466,6 +1493,13 @@ form .form-radio input:before {
   left: 50%;
   margin: -3px 0 0 -3px;
 }
+@media screen and (max-width: 767px) {
+  form .form-checkbox input,
+  form .form-radio input {
+    display: inline-block;
+    width: 14px;
+  }
+}
 form .form-checkbox input:before {
   display: none;
   width: 6px;
@@ -1519,6 +1553,13 @@ form label.block {
 }
 form label.error {
   color: #c41515;
+}
+@media screen and (max-width: 767px) {
+  form label {
+    display: block;
+    line-height: 2em;
+    padding-right: 0;
+  }
 }
 form textarea,
 form input {
@@ -1603,6 +1644,13 @@ form textarea::-webkit-input-placeholder,
 form input::-webkit-input-placeholder {
   color: #bababa;
 }
+@media screen and (max-width: 767px) {
+  form textarea,
+  form input {
+    display: block;
+    width: 100%;
+  }
+}
 form textarea {
   padding: 0.8em 1em;
   line-height: 1.5;
@@ -1629,6 +1677,12 @@ form select {
 form select:focus {
   outline: none;
   border-color: #29b7e1;
+}
+@media screen and (max-width: 767px) {
+  form select {
+    display: block;
+    width: 100%;
+  }
 }
 form input[type="submit"],
 form button[type="submit"] {
@@ -1663,6 +1717,14 @@ form button[type="submit"][class*="fa-"]:before,
 form input[type="submit"][class*="ion-"]:before,
 form button[type="submit"][class*="ion-"]:before {
   margin-right: 1em;
+}
+@media screen and (max-width: 767px) {
+  form input[type="submit"],
+  form button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+  }
 }
 /* ******** */
 /** IMAGES **/
