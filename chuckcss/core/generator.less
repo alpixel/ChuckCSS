@@ -173,7 +173,7 @@
     form.cc-@{colorName} {
 
         .form {
-            &-checkbox input {
+            &-checkbox:not(.error) input {
                 &:focus {
                     border-color:@input-bc;
                 }
@@ -183,7 +183,7 @@
                 }
             }
 
-            &-radio input {
+            &-radio:not(.error) input {
                 &:focus {
                     border-color:@input-bc;
                 }
@@ -198,23 +198,16 @@
             &-ps {
                 span {
                     background-color:@colorValue;
-
-                    &:last-child {
-                        background-color:@colorValue;
-                    }
                 }
             }
         }
+
 
         select,
         textarea,
         input {
             &:focus {
                 border-color:@colorValue;
-            }
-
-            &.error:focus {
-                border-color:lighten(@red,10%);
             }
         }
 
