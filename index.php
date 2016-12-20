@@ -1832,7 +1832,7 @@
                 </p>
             </div>
 
-            <div class="main cc-lists">
+            <div class="main cc-lists active">
                 <h3 class="title">Lists</h3>
 
                 <pre class="HTML">
@@ -2912,7 +2912,7 @@
                 </table>
             </div>
 
-            <div class="main cc-forms active">
+            <div class="main cc-forms">
                 <h3 class="title">Forms</h3>
 
                 <pre class="HTML">
