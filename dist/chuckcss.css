@@ -1148,6 +1148,12 @@ ul.cc-horizontal li[class*="ion-"].icon-right:before {
           order: 2;
   margin: 0 0 0 0.8em;
 }
+@media screen and (max-width: 767px) {
+  ul.cc-horizontal li {
+    display: block;
+    margin: 1em 0;
+  }
+}
 /* Ordered lists */
 ol li {
   list-style: decimal outside;
