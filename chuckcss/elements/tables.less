@@ -189,6 +189,21 @@ table {
                     }
                 }
             }
+
+            &.cc-unbordered {
+                thead,tbody {
+                    border:0;
+
+                    tr td,
+                    tr th {
+                        border:0;
+
+                        &:nth-child(1) {
+                            border-top-width:0px;
+                        }
+                    }
+                }
+            }
         });
     }
 }
