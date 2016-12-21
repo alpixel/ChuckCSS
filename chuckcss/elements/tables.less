@@ -6,7 +6,6 @@
 
 table {
     border-collapse: collapse;
-    overflow-x:auto;
     margin:1em 0;
     width:100%;
 
@@ -111,15 +110,91 @@ table {
         }
     }
 
-
-    /* RESPONSIVE TABLES */
+    // Set font-size on meduim and up screens
     ._media-s-up({
-        overflow-x:initial;
-
         tbody {
             td {
                 font-size:@text-fs;
             }
         }
     });
+
+    // Responsive table
+    &.cc-responsive {
+        ._media-s({
+            display:flex;
+            overflow: hidden;
+            max-width:100%;
+            vertical-align: top;
+            white-space: nowrap;
+            border-collapse: collapse;
+            border-spacing: 0;
+
+            tfoot {
+                display:none;
+            }
+
+            thead {
+                display: flex;
+                flex-negative: 0;
+                flex-shrink: 0;
+                min-width: min-content;
+
+                tr {
+                    display: flex;
+                    flex-direction: column;
+                    min-width: min-content;
+                    flex-negative: 0;
+                    flex-shrink: 0;
+
+                    td, th {
+                        display:block;
+                        border:1px solid @tables-ending;
+                        border-top-width:0px;
+                        flex: 1;
+
+                        &:nth-child(1) {
+                            border-top-width:1px;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                display: flex;
+                flex:1;
+                position: relative;
+                overflow-x: auto;
+                overflow-y: hidden;
+                border-right:1px solid @tables-ending;
+
+                tr {
+                    display: flex;
+                    flex:1;
+                    flex-direction: column;
+                    min-width: min-content;
+                    flex-negative: 0;
+
+
+                    td {
+                        display:block;
+                        flex: 1;
+                        border:1px solid @tables-ending;
+                        border-top-width:0px;
+                        border-left-width:0px;
+
+                        &:nth-child(1) {
+                            border-top-width:1px;
+                        }
+                    }
+                }
+            }
+        });
+    }
+}
+
+// Table wrapper for small screens
+.wrap-table {
+    max-width:100%;
+    overflow-x:auto;
 }

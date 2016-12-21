@@ -999,13 +999,11 @@ button.icon-right:before {
 /* ********************* */
 table {
   border-collapse: collapse;
-  overflow-x: auto;
   margin: 1em 0;
   width: 100%;
   /* headers & footer default style */
   /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
   /* Cells default style */
-  /* RESPONSIVE TABLES */
 }
 table tfoot td,
 table thead td,
@@ -1076,12 +1074,121 @@ table.cc-unbordered thead tr th {
   border: 0;
 }
 @media screen and (min-width: 768px) {
-  table {
-    overflow-x: initial;
-  }
   table tbody td {
     font-size: 1.5rem;
   }
+}
+@media screen and (max-width: 767px) {
+  table.cc-responsive {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    vertical-align: top;
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  table.cc-responsive tfoot {
+    display: none;
+  }
+  table.cc-responsive thead {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-negative: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+  table.cc-responsive thead tr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    flex-negative: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+  }
+  table.cc-responsive thead tr td,
+  table.cc-responsive thead tr th {
+    display: block;
+    border: 1px solid #e0e0e0;
+    border-top-width: 0px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  table.cc-responsive thead tr td:nth-child(1),
+  table.cc-responsive thead tr th:nth-child(1) {
+    border-top-width: 1px;
+  }
+  table.cc-responsive tbody {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 1px solid #e0e0e0;
+  }
+  table.cc-responsive tbody tr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    flex-negative: 0;
+  }
+  table.cc-responsive tbody tr td {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 1px solid #e0e0e0;
+    border-top-width: 0px;
+    border-left-width: 0px;
+  }
+  table.cc-responsive tbody tr td:nth-child(1) {
+    border-top-width: 1px;
+  }
+}
+.wrap-table {
+  max-width: 100%;
+  overflow-x: auto;
 }
 /* ******* */
 /** LISTS **/
