@@ -1185,6 +1185,22 @@ table.cc-unbordered thead tr th {
   table.cc-responsive tbody tr td:nth-child(1) {
     border-top-width: 1px;
   }
+  table.cc-responsive.cc-unbordered thead,
+  table.cc-responsive.cc-unbordered tbody {
+    border: 0;
+  }
+  table.cc-responsive.cc-unbordered thead tr td,
+  table.cc-responsive.cc-unbordered tbody tr td,
+  table.cc-responsive.cc-unbordered thead tr th,
+  table.cc-responsive.cc-unbordered tbody tr th {
+    border: 0;
+  }
+  table.cc-responsive.cc-unbordered thead tr td:nth-child(1),
+  table.cc-responsive.cc-unbordered tbody tr td:nth-child(1),
+  table.cc-responsive.cc-unbordered thead tr th:nth-child(1),
+  table.cc-responsive.cc-unbordered tbody tr th:nth-child(1) {
+    border-top-width: 0px;
+  }
 }
 .wrap-table {
   max-width: 100%;
