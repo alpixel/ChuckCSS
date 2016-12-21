@@ -60,6 +60,17 @@ ul {
                 ._media-s({
                     display:block;
                     margin:1em 0;
+
+                    &[class*="fa-"],
+                    &[class*="ion-"] {
+                        &.icon-right {
+                            display:block;
+
+                            &:before {
+                                margin:0 0.8em 0 0;
+                            }
+                        }
+                    }
                 });
             }
         }

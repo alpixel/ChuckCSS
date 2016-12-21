@@ -1832,7 +1832,7 @@
                 </p>
             </div>
 
-            <div class="main cc-lists active">
+            <div class="main cc-lists">
                 <h3 class="title">Lists</h3>
 
                 <pre class="HTML">
@@ -2068,7 +2068,7 @@
                 </blockquote>
             </div>
 
-            <div class="main cc-tables">
+            <div class="main cc-tables active">
                 <h3 class="title">Tables</h3>
 
                 <pre class="HTML">
@@ -2140,7 +2140,6 @@
                         &lt;/table>
                     </code>
                 </pre>
-
                 <table>
                     <thead>
                         <tr>
@@ -2157,7 +2156,7 @@
                         <tr>
                             <td>
                                 <form>
-                                    <div class="form-item form-checkbox">
+                                    <div class="form-checkbox">
                                         <label><input type="checkbox" name="" value="" />
                                         </div>
                                     </div>
@@ -2167,7 +2166,7 @@
                             <td>Smith</td>
                             <td>Will</td>
                             <td>Pellentesque in ipsum id orci porta dapibus.</td>
-                            <td>Pellentesque in ipsum id orci porta dapibus.</td>
+                            <td>Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</td>
                             <td class="cc-txt-right">
                                 <a href="#" class="btn cc-bg-blue fa-eye">See</a>
                                 <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
@@ -2177,7 +2176,7 @@
                         <tr>
                             <td>
                                 <form>
-                                    <div class="form-item form-checkbox">
+                                    <div class="form-checkbox">
                                         <label><input type="checkbox" name="" value="" />
                                         </div>
                                     </div>
@@ -2208,13 +2207,132 @@
                     </tfoot>
                 </table>
 
+
+                <pre class="HTML">
+                    <code class="language-markup">&lt;div class="wrap-table">
+                            &lt;table>
+                                ...
+                            &lt;/table>
+                        &lt;/div>
+
+                        &lt;!-- for simple tables -->
+                        &lt;table class="cc-responsive">
+                                ...
+                        &lt;/table>
+                    </code>
+                </pre>
+                <div class="wrap-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Last Name</th>
+                                <th>First Name</th>
+                                <td>Function</td>
+                                <td>Summary</td>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <form>
+                                        <div class="form-checkbox">
+                                            <label><input type="checkbox" name="" value="" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>1</td>
+                                <td>Smith</td>
+                                <td>Will</td>
+                                <td>Pellentesque in ipsum id orci porta dapibus.</td>
+                                <td>Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</td>
+                                <td class="cc-txt-right">
+                                    <a href="#" class="btn cc-bg-blue fa-eye">See</a>
+                                    <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
+                                    <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form>
+                                        <div class="form-checkbox">
+                                            <label><input type="checkbox" name="" value="" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>2</td>
+                                <td>MacQueen</td>
+                                <td>Steve</td>
+                                <td>Pellentesque in ipsum id orci porta dapibus.</td>
+                                <td>Pellentesque in ipsum id orci porta dapibus.</td>
+                                <td class="cc-txt-right">
+                                    <a href="#" class="btn cc-bg-blue fa-eye">See</a>
+                                    <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
+                                    <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>ID</td>
+                                <td>Last Name</td>
+                                <td>First Name</td>
+                                <td>Function</td>
+                                <td>Summary</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <table class="cc-responsive cc-mat-30">
+                    <thead>
+                        <tr>
+                            <th>coucou</th>
+                            <th>ID</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Coucou toi
+                            </td>
+                            <td>1</td>
+                            <td>Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</td>
+                            <td>Will</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Coucou toi
+                            </td>
+                            <td>1</td>
+                            <td>Donec sollicitudin molestie malesuada.</td>
+                            <td>Will</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>coucou</td>
+                            <td>ID</td>
+                            <td>Last Name</td>
+                            <td>First Name</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
                 <pre class="HTML">
                     <code class="language-markup">&lt;table class="cc-unbordered">
                             ...
                         &lt;/table>
                     </code>
                 </pre>
-
                 <table class="cc-unbordered">
                     <thead>
                         <tr>
@@ -2281,7 +2399,6 @@
                         &lt;/table>
                     </code>
                 </pre>
-
                 <table class="cc-equal-cols">
                     <thead>
                         <tr>
@@ -2347,7 +2464,6 @@
                         &lt;/table>
                     </code>
                 </pre>
-
                 <table class="cc-valign-top">
                     <thead>
                         <tr>
@@ -2414,7 +2530,6 @@
                         &lt;/table>
                     </code>
                 </pre>
-
                 <table class="cc-bordered">
                     <thead>
                         <tr>
