@@ -19,6 +19,9 @@ The ChuckCSS [issue tracker](https://github.com/alpixel/ChuckCSS/issues) is the 
 > Full description of my problem. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit.
 
 > Windows
+
 > Chrome 50.0
+
 > 990px width
+
 > [Problem here](http://chuckcss.io/)
