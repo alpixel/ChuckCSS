@@ -1,4 +1,4 @@
-# [ChuckCSS Framework](http://chuckcss.io/) - [![GitHub release](https://img.shields.io/npm/v/ChuckCSS.svg)]
+# [ChuckCSS Framework](http://chuckcss.io/) - ![GitHub release](https://img.shields.io/npm/v/ChuckCSS.svg)
 
 <p align="center">
     <img src="http://chuckcss.io/img/chuckcss-github-logo.png" alt="ChuckCSS framework"/>
