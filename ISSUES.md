@@ -12,7 +12,7 @@ The ChuckCSS [issue tracker](https://github.com/alpixel/ChuckCSS/issues) is the 
 * Inform what screen width you experience the problem
 * If you can, inform a web address where we can experience the problem
 * Apply a label (bug) to your issue
-* 
+
 
 
 ## Exemple
