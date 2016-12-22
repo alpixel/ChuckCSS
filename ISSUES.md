@@ -9,10 +9,10 @@ The ChuckCSS [issue tracker](https://github.com/alpixel/ChuckCSS/issues) is the 
 * Be the more explicit you can (detail the issue with as much details as possible)
 * Apply a label (bug) to your issue
 * Inform :
-    * What browser and version you experience the problem
-    * What OS you experience the problem
-    * What screen width you experience the problem
-    * If you can, a web address where we can experience the problem
+    * **What browser and version** you experience the problem
+    * **What OS** you experience the problem
+    * **What screen width** you experience the problem
+    * If you can, **a web address** where we can experience the problem
 
 
 
