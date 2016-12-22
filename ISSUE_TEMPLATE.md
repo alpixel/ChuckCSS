@@ -2,10 +2,6 @@
 
 Before opening an new issue, please read this document, and follow this guideline.
 
-
-## Using the issue tracker on GitHub
-The ChuckCSS [issue tracker](https://github.com/alpixel/ChuckCSS/issues) is the best way to submit issues. Please respect the following instructions :
-
 * Be the more explicit you can (detail the issue with as much details as possible)
 * Tag your issue with the bug label
 * Inform :
