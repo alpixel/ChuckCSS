@@ -24,4 +24,4 @@ The ChuckCSS [issue tracker](https://github.com/alpixel/ChuckCSS/issues) is the 
 
 > - 990px and upper
 
-> Webpage where you can see the problem : [Problem here](http://chuckcss.io/)
+> - Webpage where you can see the problem : [Problem here](http://chuckcss.io/)
