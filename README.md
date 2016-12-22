@@ -36,7 +36,7 @@ Full documentation on [ChuckCSS website]
 
 
 ### Issues
-Before reporting an issue, [please read the guideline](https://github.com/alpixel/ChuckCSS/blob/master/ISSUES.md).
+Before reporting an issue, [please read the guideline](https://github.com/alpixel/ChuckCSS/blob/master/CONTRIBUTING.md).
 
 To report any problems or improvements, please [open an issue on Github]
 
