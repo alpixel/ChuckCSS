@@ -1,5 +1,3 @@
-# How to open an issue
-
 Before opening an new issue, please read this document, and follow this guideline.
 
 * Be the more explicit you can (detail the issue with as much details as possible)
