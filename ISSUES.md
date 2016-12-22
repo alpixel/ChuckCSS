@@ -8,7 +8,7 @@ The ChuckCSS [issue tracker](https://github.com/alpixel/ChuckCSS/issues) is the 
 
 * Be the more explicit you can (detail the issue with as much details as possible)
 * Inform :
-** - what browser and version you experience the problem
+    * - what browser and version you experience the problem
 * Inform what OS you experience the problem
 * Inform what screen width you experience the problem
 * If you can, inform a web address where we can experience the problem
