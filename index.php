@@ -33,12 +33,12 @@
         <header id="main-header">
             <div class="columns">
                 <div class="cc-12 cc-txt-center">
-                    <img src="img/logo-chuckcss-header.png" alt="" />
+                    <a href="http://chuckcss.io"><img src="img/logo-chuckcss-header.png" alt="" /></a>
                 </div>
                 <div class="cc-12 cc-txt-center">
                     <h1>
                         In ChuckCSS We Trust<br />
-                        <small>A responsive CSS framework, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on <span>FlexBox grids</span></small>
+                        <small>Your are on the test page. It helps me to develop ChuckCSS</small>
                     </h1>
                 </div>
             </div>
@@ -63,56 +63,56 @@
                 <h3 class="title">Alerts</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="alert alert-primary fa-bolt">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;div class="alert alert-primary fa-bolt">
                             &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            &lt;strong>Primary color&lt;/strong> alert with &lt;strong>FontAwesome icon&lt;/strong>.
-                        &lt;/div>
-
-
-                        &lt;div class="alert alert-info fa-exclamation-circle">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            &lt;strong>Info&lt;/strong> alert with &lt;strong>FontAwesome icon&lt;/strong>.
-                        &lt;/div>
-
-                        &lt;div class="alert alert-warning ion-android-bicycle">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            &lt;strong>Warning&lt;/strong> alert with &lt;strong>Ionicons icon&lt;/strong>.
-                        &lt;/div>
-
-                        &lt;div class="alert alert-error">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            &lt;i class="fa fa-hand-spock-o">&lt;/i> &lt;strong>Error&lt;/strong> alert.
-                            &lt;p>A list exemple below :&lt;/p>
-                            &lt;ul>
-                                &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                            &lt;/ul>
-                        &lt;/div>
-
-                        &lt;div class="alert alert-success">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            &lt;i class="ion-android-checkmark-circle">&lt;/i>  &lt;strong>Success&lt;/strong> alert.
+                            ...
                         &lt;/div>
                     </code>
                 </pre>
-
                 <div class="alert alert-primary fa-bolt">
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
-
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;div class="alert alert-info fa-exclamation-circle">
+                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="alert alert-info fa-exclamation-circle">
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <strong>Info</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;div class="alert alert-warning ion-android-bicycle">
+                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="alert alert-warning ion-android-bicycle">
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <strong>Warning</strong> alert with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;div class="alert alert-error">
+                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="alert alert-error">
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <i class="fa fa-hand-spock-o"></i> <strong>Error</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
@@ -124,6 +124,15 @@
                     </ul>
                 </div>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;div class="alert alert-success">
+                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="alert alert-success">
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <i class="ion-android-checkmark-circle"></i>  <strong>Success</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
@@ -134,44 +143,49 @@
                 <h3 class="title">Messages</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="message message-primary ion-ios-pricetags">
-                            &lt;strong>Primary color&lt;/strong> message with &lt;strong>FontAwesome icon&lt;/strong>.
-                        &lt;/div>
-                        &lt;div class="message message-info fa-exclamation-circle">
-                            &lt;strong>Status&lt;/strong> message with &lt;strong>FontAwesome icon&lt;/strong>.
-                        &lt;/div>
-
-                        &lt;div class="message message-warning ion-android-bicycle">
-                            &lt;strong>Warning&lt;/strong> message with &lt;strong>Ionicons icon&lt;/strong>.
-                        &lt;/div>
-
-                        &lt;div class="message message-error">
-                            &lt;i class="fa fa-hand-spock-o">&lt;/i> &lt;strong>Error&lt;/strong> message.
-                            &lt;p>A list exemple below :&lt;/p>
-                            &lt;ul>
-                                &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                            &lt;/ul>
-                        &lt;/div>
-
-                        &lt;div class="message message-success">
-                            &lt;i class="ion-android-checkmark-circle">&lt;/i>  &lt;strong>Success&lt;/strong> message.
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;div class="message message-primary ion-ios-pricetags">
+                            ...
                         &lt;/div>
                     </code>
                 </pre>
-
                 <div class="message message-primary ion-ios-pricetags">
                     <strong>Primary color</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;div class="message message-info fa-exclamation-circle">
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="message message-info fa-exclamation-circle">
                     <strong>Status</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;div class="message message-warning ion-android-bicycle">
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="message message-warning ion-android-bicycle">
                     <strong>Warning</strong> message with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;div class="message message-error">
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
                 <div class="message message-error">
                     <i class="fa fa-hand-spock-o"></i> <strong>Error</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                     <p>A list exemple below :</p>
@@ -182,6 +196,15 @@
                     </ul>
                 </div>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;div class="message message-success">
+                            ...
+                        &lt;/div>
+                    </code>
+                </pre>
+
                 <div class="message message-success">
                     <i class="ion-android-checkmark-circle"></i>  <strong>Success</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
@@ -191,10 +214,32 @@
                 <h3 class="title">Badges</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;p>
-                            Donec rutrum congue leo eget malesuada. Vestibulum ac diam &lt;span class="badge cc-bg-primary">54&lt;/span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;p>
+                            Donec rutrum... &lt;span class="badge cc-bg-primary">54&lt;/span> Donec rutrum...
                         &lt;/p>
+                    </code>
+                </pre>
+                <p>
+                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge cc-bg-primary">54</span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.
+                </p>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;p class="cc-bg-primary">
+                            Donec rutrum... &lt;span class="badge">54&lt;/span> Donec rutrum...
+                        &lt;/p>
+                    </code>
+                </pre>
+                <p class="cc-bg-primary">
+                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge">54</span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.
+                </p>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
                         &lt;p>
                             &lt;button class="cc-thin">
                                 Button &lt;span class="badge">54&lt;/span>
@@ -206,6 +251,23 @@
                                 Button &lt;span class="badge">4&lt;/span>
                             &lt;/button>
                         &lt;/p>
+                    </code>
+                </pre>
+                <p>
+                    <button class="cc-thin">
+                        Button <span class="badge">54</span>
+                    </button>
+                    <button>
+                        Button <span class="badge">554</span>
+                    </button>
+                    <button class="cc-fat">
+                        Button <span class="badge">4</span>
+                    </button>
+                </p>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
                         &lt;p class="cc-mat-20">
                             &lt;button>
                                 Button &lt;span class="badge cc-bg-primary">45&lt;/span>
@@ -232,84 +294,8 @@
                                 Button &lt;span class="badge cc-bg-yellow">$ 19.99&lt;/span>
                             &lt;/button>
                         &lt;/p>
-                        &lt;p class="cc-mat-20">
-                            &lt;a href="#">
-                                Link &lt;span class="badge">4&lt;/span>
-                            &lt;/a>
-                            &lt;a href="#">
-                                Link &lt;span class="badge cc-bg-primary">4&lt;/span>
-                            &lt;/a>
-                            &lt;a href="#" class="btn">
-                                Link &lt;span class="badge cc-bg-primary">4&lt;/span>
-                            &lt;/a>
-                        &lt;/p>
-
-                        &lt;p class="cc-mat-20">
-                            &lt;a href="#" class="btn cc-bg-primary">
-                                Message &lt;span class="badge">46&lt;/span>
-                            &lt;/a>
-                            &lt;button class="cc-bg-red">
-                                Button &lt;span class="badge cc-bg-purple">9856&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-green">
-                                Sales ! &lt;span class="badge cc-bg-orange">&lt;i class="ion-ios-pricetags-outline">&lt;/i> 45 %&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-blue">
-                                Button &lt;span class="badge cc-bg-yellow">4&lt;/span>
-                            &lt;/button>
-
-                            &lt;button class="cc-bg-primary cc-thin">
-                                Button &lt;span class="badge">4&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-red cc-fat">
-                                Button &lt;span class="badge cc-bg-purple">&lt;i class="ion-ios-pulse-strong">&lt;/i> 90 bpm&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-green cc-thin">
-                                Button &lt;span class="badge cc-bg-orange">4&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-blue cc-fat">
-                                &lt;i class="ion-ios-cart-outline">&lt;/i> &lt;span class="badge cc-yellow">0 product&lt;/span>
-                            &lt;/button>
-                        &lt;/p>
-
-                        &lt;p class="cc-mat-20">
-                            &lt;button>
-                                Button &lt;span class="badge">&lt;i class="ion-ios-gear">&lt;/i>&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge fa-user">&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-thin">
-                                Button &lt;span class="badge ion-ios-gear">&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-thin">
-                                Button &lt;span class="badge">&lt;i class="fa fa-user">&lt;/i>&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-fat">
-                                Button &lt;span class="badge ion-ios-gear">&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-fat">
-                                Button &lt;span class="badge">&lt;i class="fa fa-user">&lt;/i>&lt;/span>
-                            &lt;/button>
-                        &lt;/p>
                     </code>
                 </pre>
-
-                <p>
-                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge cc-bg-primary">54</span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.
-                </p>
-
-                <p>
-                    <button class="cc-thin">
-                        Button <span class="badge">54</span>
-                    </button>
-                    <button>
-                        Button <span class="badge">554</span>
-                    </button>
-                    <button class="cc-fat">
-                        Button <span class="badge">4</span>
-                    </button>
-                </p>
                 <p class="cc-mat-20">
                     <button>
                         Button <span class="badge cc-bg-primary">45</span>
@@ -336,6 +322,23 @@
                         Button <span class="badge cc-bg-yellow">$ 19.99</span>
                     </button>
                 </p>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;p class="cc-mat-20">
+                            &lt;a href="#">
+                                Link &lt;span class="badge">4&lt;/span>
+                            &lt;/a>
+                            &lt;a href="#">
+                                Link &lt;span class="badge cc-bg-primary">4&lt;/span>
+                            &lt;/a>
+                            &lt;a href="#" class="btn">
+                                Link &lt;span class="badge cc-bg-primary">4&lt;/span>
+                            &lt;/a>
+                        &lt;/p>
+                    </code>
+                </pre>
                 <p class="cc-mat-20">
                     <a href="#">
                         Link <span class="badge">4</span>
@@ -348,6 +351,38 @@
                     </a>
                 </p>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;p class="cc-mat-20">
+                            &lt;a href="#" class="btn cc-bg-primary">
+                                Message &lt;span class="badge">46&lt;/span>
+                            &lt;/a>
+                            &lt;button class="cc-bg-red">
+                                Button &lt;span class="badge cc-bg-purple">9856&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-bg-green">
+                                Sales ! &lt;span class="badge cc-bg-orange">&lt;i class="ion-ios-pricetags-outline">&lt;/i> 45 %&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-bg-blue">
+                                Button &lt;span class="badge cc-bg-yellow">4&lt;/span>
+                            &lt;/button>
+
+                            &lt;button class="cc-bg-primary cc-thin">
+                                Button &lt;span class="badge">4&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-bg-red cc-fat">
+                                Button &lt;span class="badge cc-bg-purple">&lt;i class="ion-ios-pulse-strong">&lt;/i> 90 bpm&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-bg-green cc-thin">
+                                Button &lt;span class="badge cc-bg-orange">4&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-bg-blue cc-fat">
+                                &lt;i class="ion-ios-cart-outline">&lt;/i> &lt;span class="badge cc-bg-yellow">0 product&lt;/span>
+                            &lt;/button>
+                        &lt;/p>
+                    </code>
+                </pre>
                 <p class="cc-mat-20">
                     <a href="#" class="btn cc-bg-primary">
                         Message <span class="badge">46</span>
@@ -372,10 +407,35 @@
                         Button <span class="badge cc-bg-orange">4</span>
                     </button>
                     <button class="cc-bg-blue cc-fat">
-                        <i class="ion-ios-cart-outline"></i> <span class="badge cc-yellow">0 product</span>
+                        <i class="ion-ios-cart-outline"></i> <span class="badge cc-bg-yellow">0 product</span>
                     </button>
                 </p>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        <!-- -->
+                        &lt;p class="cc-mat-20">
+                            &lt;button>
+                                Button &lt;span class="badge">&lt;i class="ion-ios-gear">&lt;/i>&lt;/span>
+                            &lt;/button>
+                            &lt;button>
+                                Button &lt;span class="badge fa-user">&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-thin">
+                                Button &lt;span class="badge ion-ios-gear">&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-thin">
+                                Button &lt;span class="badge">&lt;i class="fa fa-user">&lt;/i>&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-fat">
+                                Button &lt;span class="badge ion-ios-gear">&lt;/span>
+                            &lt;/button>
+                            &lt;button class="cc-fat">
+                                Button &lt;span class="badge">&lt;i class="fa fa-user">&lt;/i>&lt;/span>
+                            &lt;/button>
+                        &lt;/p>
+                    </code>
+                </pre>
                 <p class="cc-mat-20">
                     <button>
                         Button <span class="badge"><i class="ion-ios-gear"></i></span>
@@ -396,19 +456,15 @@
                         Button <span class="badge"><i class="fa fa-user"></i></span>
                     </button>
                 </p>
-
-                <div class="cc-bg-blue cc-pa">
-                    Mauris blandit aliquet elit, <span class="badge">54</span> eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.
-                </div>
             </div>
 
             <div class="main cc-tabs">
 
                 <div class="tabs-basic">
-                    <h3 class="title">Basics Tabs</h3>
-
                     <pre class="HTML">
-                        <code class="language-markup">&lt;ul class="tabs">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;ul class="tabs">
                                 &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
                                 &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
                                 &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
@@ -427,10 +483,9 @@
                     </ul>
 
                     <pre class="HTML">
-                        <code class="language-markup">&lt;ul class="tabs cc-underlined">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;ul class="tabs cc-underlined">
                                 ...
                             &lt;/ul>
                         </code>
@@ -447,34 +502,22 @@
                 </div>
 
                 <div class="tabs-alignment">
-                    <h3 class="title">Tabs alignments</h3>
-
                     <pre class="HTML">
-                        <code class="language-markup">&lt;ul class="tabs cc-align-left">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;ul class="tabs cc-align-left">
                                 ...
                             &lt;/ul>
 
                             &lt;ul class="tabs cc-align-center">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
                                 ...
                             &lt;/ul>
 
                             &lt;ul class="tabs cc-align-right">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
                                 ...
                             &lt;/ul>
 
                             &lt;ul class="tabs cc-align-stretch">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
                                 ...
                             &lt;/ul>
                         </code>
@@ -521,19 +564,14 @@
                 </div>
 
                 <div class="tabs-thickness">
-                    <h3 class="title">Tabs thickness</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;ul class="tabs cc-fat cc-underlined">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;ul class="tabs cc-fat cc-underlined">
                                 ...
                             &lt;/ul>
 
                             &lt;ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
                                 ...
                             &lt;/ul>
                         </code>
@@ -559,16 +597,11 @@
                 </div>
 
                 <div class="tabs-bordered">
-                    <h3 class="title">Tabs bordered</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;ul class="tabs cc-bordered">
-                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-ios-paw">Link 4&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 5&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;ul class="tabs cc-bordered">
+                                ...
                             &lt;/ul>
                         </code>
                     </pre>
@@ -584,20 +617,15 @@
                 </div>
 
                 <div class="tabs-li-last">
-                    <h3 class="title">Float &lt;li></h3>
-
                     <pre class="HTML">
-                        <code class="language-markup">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
                             &lt;ul class="tabs">
-                                &lt;li>...&lt;/li>
-                                &lt;li class="active">...&lt;/li>
                                 ...
                                 &lt;li class="cc-last">&lt;a href="#" class="btn cc-bg-red fa-times">Exit!&lt;/a>&lt;/li>
                                 ...
                             &lt;/ul>
-                            &lt;ul class="tabs">
-                                &lt;li>...&lt;/li>
-                                &lt;li class="active">...&lt;/li>
+                            &lt;ul class="tabs cc-bordered cc-mat-20">
                                 ...
                                 &lt;li class="cc-last">&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
                                 ...
@@ -625,27 +653,14 @@
                 </div>
 
                 <div class="tabs-pills">
-                    <h3 class="title">Pills</h3>
-
                     <pre class="HTML">
-                        <code class="language-markup">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
                             &lt;ul class="tabs cc-pills">
-                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                                ...
                             &lt;/ul>
                             &lt;ul class="tabs cc-pills cc-unchained cc-mat-20">
-                                &lt;li>&lt;a href="#" class="fa-user">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#" class="fa-edit">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-android-plane">Link 3&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="ion-ios-paw">Nice dog&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 6&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 7&lt;/a>&lt;/li>
+                                ...
                             &lt;/ul>
                         </code>
                     </pre>
@@ -670,31 +685,60 @@
                 </div>
 
                 <div class="tabs-responsive">
-                    <h3 class="title">Responsive tabs</h3>
                     <pre class="HTML">
-                        <code class="language-markup">
-
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-left-xl cc-align-center-l cc-mat-20">
+                                ...
+                            &lt;/ul>
                         </code>
                     </pre>
-
                     <ul class="tabs cc-pills cc-align-left-xl cc-align-center-l cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-left-xl cc-align-center-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-right-xl cc-align-stretch-l cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-right-xl cc-align-stretch-l cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-right-xl cc-align-stretch-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-center-l cc-align-stretch-m cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-center-l cc-align-stretch-m cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-center-l cc-align-stretch-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-stretch-xl cc-align-right-l cc-align-stretch-m cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-stretch-xl cc-align-right-l cc-align-stretch-m cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-stretch-xl cc-align-right-l cc-align-stretch-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
@@ -702,25 +746,59 @@
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
 
-
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-left-l cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-left-l cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-left-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-right-l cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-right-l cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-right-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-center-l cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-center-l cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-center-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-stretch-l cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-stretch-l cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-stretch-l</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
@@ -728,25 +806,59 @@
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
 
-
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-left-m cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-left-m cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-left-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-right-m cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-right-m cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-right-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-center-m cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-center-m cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-center-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
+
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-stretch-m cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-stretch-m cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-stretch-m</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
@@ -755,6 +867,23 @@
                     </ul>
 
 
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-left-s cc-mat-20">
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-align-right-s cc-mat-20">
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-align-center-s cc-mat-20">
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-align-stretch-s cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-left-s cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-left-s</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
@@ -780,7 +909,23 @@
                         <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
                     </ul>
 
-
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            <!-- -->
+                            &lt;ul class="tabs cc-pills cc-align-left cc-mat-20">
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-align-right cc-mat-20">
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-align-center cc-mat-20">
+                                ...
+                            &lt;/ul>
+                            &lt;ul class="tabs cc-pills cc-align-stretch cc-mat-20">
+                                ...
+                            &lt;/ul>
+                        </code>
+                    </pre>
                     <ul class="tabs cc-pills cc-align-left cc-mat-20">
                         <li><a href="#" class="fa-user">cc-align-left</a></li>
                         <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
@@ -808,9 +953,10 @@
                 </div>
 
                 <div class="tabs-color">
-                    <h3 class="title">Change main color</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;ul class="tabs cc-green">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;ul class="tabs cc-green">
                         </code>
                     </pre>
                     <ul class="tabs cc-green">
@@ -975,34 +1121,47 @@
                 <h3 class="title">Texts helpers (alignments, paddings, margins, colors)</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;p class="cc-txt-left">I'm a left text !&lt;/p>
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;p class="cc-txt-left">I'm a left text !&lt;/p>
                         &lt;p class="cc-txt-center">I'm a centered text !&lt;/p>
                         &lt;p class="cc-txt-right">I'm a right text !&lt;/p>
                         &lt;p class="cc-txt-justify">I'm a justified text ! .&lt;/p>
+                    </code>
+                </pre>
+                <p class="cc-txt-left">I'm a left text !</p>
+                <p class="cc-txt-center">I'm a centered text !</p>
+                <p class="cc-txt-right">I'm a right text !</p>
+                <p class="cc-txt-justify">I'm a justified text ! Bacon ipsum dolor amet alcatra doner bresaola cow turkey ground round picanha short loin corned beef. Beef ribs tail brisket tenderloin pork landjaeger boudin. Meatball ground round tail, chicken pork chop porchetta venison. Boudin jerky fatback sirloin sausage landjaeger pancetta pork chop venison meatball pork belly meatloaf. Leberkas ham hock meatloaf, venison turducken pork loin turkey sausage shoulder tongue. Hamburger strip steak beef biltong.<br />Ham hock strip steak porchetta shoulder ground round jowl bacon capicola shankle sirloin tri-tip. Tongue tenderloin ribeye, andouille pork chop drumstick short ribs chicken pork loin tail filet mignon. Prosciutto frankfurter t-bone, meatloaf pig fatback capicola chuck corned beef bacon. Prosciutto tail filet mignon, pork belly kielbasa beef chicken pork. Ham flank leberkas drumstick hamburger tenderloin spare ribs pork loin bacon picanha tri-tip fatback. Alcatra ribeye bacon pig picanha, landjaeger andouille jerky pork belly cow tri-tip beef ribs. Chicken swine salami turkey frankfurter chuck shankle prosciutto capicola pastrami pig andouille.</p>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
                         &lt;p class="cc-blue cc-txt-center">I'm written in blue and centered&lt;/p>
                         &lt;p class="cc-bg-blue">I have a blue background-color&lt;/p>
                     </code>
                 </pre>
-
-                <div>
-                    <p class="cc-txt-left">I'm a left text !</p>
-                    <p class="cc-txt-center">I'm a centered text !</p>
-                    <p class="cc-txt-right">I'm a right text !</p>
-                    <p class="cc-txt-justify">I'm a justified text ! Bacon ipsum dolor amet alcatra doner bresaola cow turkey ground round picanha short loin corned beef. Beef ribs tail brisket tenderloin pork landjaeger boudin. Meatball ground round tail, chicken pork chop porchetta venison. Boudin jerky fatback sirloin sausage landjaeger pancetta pork chop venison meatball pork belly meatloaf. Leberkas ham hock meatloaf, venison turducken pork loin turkey sausage shoulder tongue. Hamburger strip steak beef biltong.<br />Ham hock strip steak porchetta shoulder ground round jowl bacon capicola shankle sirloin tri-tip. Tongue tenderloin ribeye, andouille pork chop drumstick short ribs chicken pork loin tail filet mignon. Prosciutto frankfurter t-bone, meatloaf pig fatback capicola chuck corned beef bacon. Prosciutto tail filet mignon, pork belly kielbasa beef chicken pork. Ham flank leberkas drumstick hamburger tenderloin spare ribs pork loin bacon picanha tri-tip fatback. Alcatra ribeye bacon pig picanha, landjaeger andouille jerky pork belly cow tri-tip beef ribs. Chicken swine salami turkey frankfurter chuck shankle prosciutto capicola pastrami pig andouille.</p>
-
-                    <p class="cc-blue cc-txt-center">I'm written in blue and centered</p>
-                    <p class="cc-bg-blue">I have a blue background-color</p>
-                </div>
+                <p class="cc-blue cc-txt-center">I'm written in blue and centered</p>
+                <p class="cc-bg-blue">I have a blue background-color</p>
             </div>
 
             <div class="main cc-helpers-blocks">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;p class="cc-block cc-pa cc-mat-20 cc-bg-primary">I'm shown as a block element.&lt;/p>
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;p class="cc-block cc-pa cc-mat-20 cc-bg-primary">I'm shown as a block element.&lt;/p>
                         &lt;p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.&lt;/p>
+                    </code>
+                </pre>
+                <p class="cc-block cc-pa cc-mat-20 cc-bg-primary">I'm shown as a block element.</p>
+                <p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.</p>
 
-
+                <h3 class="title">Hidden blocks on targeted devices only</h3>
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
                         &lt;h3>Hidden blocks on device ONLY&lt;/h3>
                         &lt;p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">Hidden on all devices&lt;/p>
                         &lt;p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : shown&lt;/p>
@@ -1010,20 +1169,71 @@
                         &lt;p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : shown&lt;/p>
                         &lt;p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
                         &lt;p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+                    </code>
+                </pre>
+                <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">cc-hidden</p>
+                <p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl-only</p>
+                <p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l-only</p>
+                <p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m-only</p>
+                <p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s-only</p>
+                <p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xs-only</p>
 
-                        &lt;h3>Hidden blocks on devices and less&lt;/h3>
+                <h3 class="title">Hidden blocks on devices and lower</h3>
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;h3>Hidden blocks on devices and lower&lt;/h3>
                         &lt;p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : shown&lt;br />M : shown&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
+                    </code>
+                </pre>
 
+                <p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l-down</p>
+                <p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m-down</p>
+                <p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s-down</p>
+                <p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xs-down</p>
+
+                <h3 class="title">Hidden blocks on devices and upper</h3>
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;h3>Hidden blocks on devices and upper&lt;/h3>
+                        &lt;p class="cc-hidden-xl cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl&lt;/p>
+                        &lt;p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l&lt;/p>
+                        &lt;p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m&lt;/p>
+                        &lt;p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s&lt;/p>
+                    </code>
+                </pre>
+
+                <p class="cc-hidden-xl cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl</p>
+                <p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l</p>
+                <p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m</p>
+                <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s</p>
+
+                <h3 class="title">Show on targeted device</h3>
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
                         &lt;h3>Show on device only&lt;/h3>
                         &lt;p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">XL : shown&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : shown&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : shown&lt;br />S : hidden&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : shown&lt;br />XS : hidden&lt;/p>
                         &lt;p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">XL : hidden&lt;br />L : hidden&lt;br />M : hidden&lt;br />S : hidden&lt;br />XS : shown&lt;/p>
+                    </code>
+                </pre>
 
+                <p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-xl-only</p>
+                <p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-l-only</p>
+                <p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-m-only</p>
+                <p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-s-only</p>
+                <p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-xs-only</p>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
                         &lt;h3>Width&lt;/h3>
                         &lt;div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
                             ".cc-w-quarter cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
@@ -1033,7 +1243,21 @@
                                &lt;?php print $i;?>% width
                             &lt;/div>
                         &lt;?php } ?>
+                    </code>
+                </pre>
+                <h3 class="title">Width</h3>
+                <div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
+                    ".cc-w-quarter cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
+                </div>
+                <?php for($i=5;$i<=100;$i+=5) { ?>
+                    <div class="cc-centered cc-pa cc-w-<?php print $i;?> cc-mat-20 cc-bg-primary cc-txt-center">
+                       <?php print $i;?>% width
+                    </div>
+                <?php } ?>
 
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
                         &lt;h3>Margin & Padding&lt;/h3>
                         &lt;p class="cc-bg-primary cc-pa-10">I have a padding of 10px&lt;/p>
                         &lt;p class="cc-bg-primary cc-pa-16">I have a padding of 16px&lt;/p>
@@ -1050,78 +1274,33 @@
                         &lt;p class="cc-bg-primary cc-mab">I have the default margin-bottom set in settings.less file&lt;/p>
                         &lt;p class="cc-bg-primary cc-mal">I have the default margin-left set in settings.less file&lt;/p>
                         &lt;p class="cc-bg-primary cc-pal-18">I have a custom padding-left of 18px&lt;/p>
-
                     </code>
                 </pre>
-
-                <div>
-                    <p class="cc-block cc-pa cc-mat-20 cc-bg-primary">I'm shown as a block element.</p>
-                    <p class="cc-inline cc-pa cc-mat-20 cc-bg-primary">I'm shown as an inline-block element.</p>
-
-
-                    <h3>Hidden blocks on targeted devices</h3>
-                    <p class="cc-hidden cc-pa cc-mat-20 cc-bg-primary">cc-hidden</p>
-                    <p class="cc-hidden-xl-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl-only</p>
-                    <p class="cc-hidden-l-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l-only</p>
-                    <p class="cc-hidden-m-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m-only</p>
-                    <p class="cc-hidden-s-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s-only</p>
-                    <p class="cc-hidden-xs-only cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xs-only</p>
-
-                    <h3>Hidden blocks on devices and less</h3>
-                    <p class="cc-hidden-l-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l-down</p>
-                    <p class="cc-hidden-m-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m-down</p>
-                    <p class="cc-hidden-s-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s-down</p>
-                    <p class="cc-hidden-xs-down cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xs-down</p>
-
-                    <h3>Hidden blocks on devices and up</h3>
-                    <p class="cc-hidden-xl cc-pa cc-mat-20 cc-bg-primary">cc-hidden-xl</p>
-                    <p class="cc-hidden-l cc-pa cc-mat-20 cc-bg-primary">cc-hidden-l</p>
-                    <p class="cc-hidden-m cc-pa cc-mat-20 cc-bg-primary">cc-hidden-m</p>
-                    <p class="cc-hidden-s cc-pa cc-mat-20 cc-bg-primary">cc-hidden-s</p>
-
-
-                    <h3>Show on targeted device</h3>
-                    <p class="cc-shown-xl-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-xl-only</p>
-                    <p class="cc-shown-l-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-l-only</p>
-                    <p class="cc-shown-m-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-m-only</p>
-                    <p class="cc-shown-s-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-s-only</p>
-                    <p class="cc-shown-xs-only cc-pa cc-mat-20 cc-bg-primary">cc-shown-xs-only</p>
-
-
-                    <h3>Width</h3>
-                    <div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
-                        ".cc-w-quarter cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
-                    </div>
-                    <?php for($i=5;$i<=100;$i+=5) { ?>
-                        <div class="cc-centered cc-pa cc-w-<?php print $i;?> cc-mat-20 cc-bg-primary cc-txt-center">
-                           <?php print $i;?>% width
-                        </div>
-                    <?php } ?>
-
-                    <h3>Margin & Padding</h3>
-                    <p class="cc-bg-primary cc-pa-10">I have a padding of 10px</p>
-                    <p class="cc-bg-primary cc-pa-16">I have a padding of 16px</p>
-                    <p class="cc-bg-primary cc-ma-6">I have a margin of 5px</p>
-                    <p class="cc-bg-primary cc-mat-22">I have a margin-top of 22px</p>
-                    <p class="cc-bg-primary cc-pa">I have the default padding set in settings.less file</p>
-                    <p class="cc-bg-primary cc-pat">I have the default padding-top set in settings.less file</p>
-                    <p class="cc-bg-primary cc-par">I have the default padding-right set in settings.less file</p>
-                    <p class="cc-bg-primary cc-pab">I have the default padding-bottom set in settings.less file</p>
-                    <p class="cc-bg-primary cc-pal">I have the default padding-left set in settings.less file</p>
-                    <p class="cc-bg-primary cc-ma">I have the default margin set in settings.less file</p>
-                    <p class="cc-bg-primary cc-mat">I have the default margin-top set in settings.less file</p>
-                    <p class="cc-bg-primary cc-mar">I have the default margin-right set in settings.less file</p>
-                    <p class="cc-bg-primary cc-mab">I have the default margin-bottom set in settings.less file</p>
-                    <p class="cc-bg-primary cc-mal">I have the default margin-left set in settings.less file</p>
-                    <p class="cc-bg-primary cc-pal-18">I have a custom padding-left of 18px</p>
-                </div>
+                <h3>Margin & Padding</h3>
+                <p class="cc-bg-primary cc-pa-10">I have a padding of 10px</p>
+                <p class="cc-bg-primary cc-pa-16">I have a padding of 16px</p>
+                <p class="cc-bg-primary cc-ma-6">I have a margin of 5px</p>
+                <p class="cc-bg-primary cc-mat-22">I have a margin-top of 22px</p>
+                <p class="cc-bg-primary cc-pa">I have the default padding set in settings.less file</p>
+                <p class="cc-bg-primary cc-pat">I have the default padding-top set in settings.less file</p>
+                <p class="cc-bg-primary cc-par">I have the default padding-right set in settings.less file</p>
+                <p class="cc-bg-primary cc-pab">I have the default padding-bottom set in settings.less file</p>
+                <p class="cc-bg-primary cc-pal">I have the default padding-left set in settings.less file</p>
+                <p class="cc-bg-primary cc-ma">I have the default margin set in settings.less file</p>
+                <p class="cc-bg-primary cc-mat">I have the default margin-top set in settings.less file</p>
+                <p class="cc-bg-primary cc-mar">I have the default margin-right set in settings.less file</p>
+                <p class="cc-bg-primary cc-mab">I have the default margin-bottom set in settings.less file</p>
+                <p class="cc-bg-primary cc-mal">I have the default margin-left set in settings.less file</p>
+                <p class="cc-bg-primary cc-pal-18">I have a custom padding-left of 18px</p>
             </div>
 
             <div class="main cc-colors">
                 <h3 class="title">Colors</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;div class="cc-bg-primary cc-txt-center">Primary&lt;/div>
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;div class="cc-bg-primary cc-txt-center">Primary&lt;/div>
                         &lt;div class="cc-bg-green cc-txt-center">Green&lt;/div>
                         &lt;div class="cc-bg-red cc-txt-center">Red&lt;/div>
                         &lt;div class="cc-bg-blue cc-txt-center">Blue&lt;/div>
@@ -1160,7 +1339,9 @@
                 <div class="grids-basics">
                     <h3 class="title">Basic grid</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;div class="columns">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;div class="columns">
                                 &lt;div>...&lt;/div>
                                 &lt;div>...&lt;/div>
                                 &lt;div>...&lt;/div>
@@ -1170,250 +1351,124 @@
                     </pre>
 
                     <div class="columns">
-                        <div class="cc-orange cc-12 cc-6-m cc-4-xl">auto</div>
-                        <div class="cc-bg-blue cc-12 cc-6-m cc-4-xl">2</div>
-                    </div>
-
-                    <div class="columns">
-                        <div class="cc-orange">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
+                        <div class="cc-bg-orange">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-orange cc-3">3</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-bg-orange">auto</div>
+                        <div class="cc-bg-blue">auto</div>
+                        <div class="cc-bg-orange">auto</div>
+                        <div class="cc-bg-blue">auto</div>
                     </div>
 
-                    <div class="columns">
-                        <div class="cc-orange cc-7">7</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                    </div>
-
-                    <div class="columns">
-                        <div class="cc-orange cc-10">10</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                    </div>
-                </div>
-
-                <div class="grids-responsive">
-                    <h3 class="title">Responsive grid</h3>
+                    <h3 class="title">Items width</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;div class="columns">
-                                &lt;div class="cc-2">...&lt;/div>
-                                &lt;div class="cc-2 cc-5-m">...&lt;/div>
-                                &lt;div class="cc-7">...&lt;/div>
-                                ...
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-orange cc-12 cc-6-m cc-4-xl">cc-12 cc-6-m cc-4-xl&lt;/div>
+                                &lt;div class="cc-bg-blue cc-12 cc-6-m cc-4-xl">cc-12 cc-6-m cc-4-xl&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
 
                     <div class="columns">
-                        <div class="cc-orange">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div><div class="cc-orange cc-1">1</div><div class="cc-blue cc-1">1</div>
+                        <div class="cc-bg-orange">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div>
+                    </div>
+                    <div class="columns">
+                        <div class="cc-bg-orange cc-12 cc-8-m cc-7-xl">cc-12 cc-8-m cc-7-xl</div>
+                        <div class="cc-bg-blue cc-12 cc-4-m cc-5-xl">cc-12 cc-4-m cc-5-xl</div>
                     </div>
 
-                    <div class="columns">
-                        <div class="cc-orange">auto</div>
-                        <div class="cc-blue cc-2 cc-5-m">L:5 - S:2</div>
-                        <div class="cc-orange cc-7">S:7</div>
-                    </div>
                 </div>
 
                 <div class="grids-offset">
                     <h3 class="title">Offsets</h3>
                     <pre class="HTML">
-                        <code class="language-markup">&lt;div class="columns">
-                                &lt;div class="cc-orange cc-offset-1 cc-offset-{x}-{letter}">1&lt;/div>
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-blue cc-6 cc-offset-1">6 with offset 1&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-blue cc-offset-1">auto with offset 1&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-blue cc-12 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-4-m">XL : offset 6&lt;br />L: offset 3&lt;br />M: offset 5&lt;br />S: offset 0 and 100%&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
                     <div class="columns">
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
-                        <div class="cc-orange cc-1">1</div>
-                        <div class="cc-blue cc-1">1</div>
+                        <div class="cc-bg-orange cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-orange cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-orange cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-orange cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-orange cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-orange cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-blue cc-6 cc-offset-1">6 with offset 1</div>
+                        <div class="cc-bg-blue cc-6 cc-offset-1">6 with offset 1</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-blue cc-offset-1">auto with offset 1</div>
+                        <div class="cc-bg-blue cc-offset-1">auto with offset 1</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-blue cc-12 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-4-m">XL : offset 6<br />L: offset 3<br />M: offset 5<br />S: offset 0 and 100%</div>
+                        <div class="cc-bg-blue cc-12 cc-offset-6-xl cc-offset-3-l cc-offset-5-m cc-offset-0-s cc-4-m">XL : offset 6<br />L: offset 3<br />M: offset 5<br />S: offset 0 and 100%</div>
                     </div>
                 </div>
 
                 <div class="grids-ordering">
                     <h3 class="title">Ordering</h3>
                     <pre class="HTML">
-                        <code class="language-markup">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Ordering -->
                             &lt;div class="columns">
-                                &lt;div class="cc-orange  cc-3">...&lt;/div>
-                                &lt;div class="cc-blue cc-first-l cc-3 ">first-l&lt;/div>
-                                &lt;div class="cc-purple cc-first-xl cc-12-xl cc-3">first-xl 12-xl&lt;/div>
-                                &lt;div class="cc-primary cc-3 cc-first-m">first-m&lt;/div>
-                            &lt;/div>
-                        </code>
-                    </pre>
-                    <div class="columns">
-                        <div class="cc-orange  cc-3">...</div>
-                        <div class="cc-blue cc-first-l cc-3 ">first-l</div>
-                        <div class="cc-purple cc-first-xl cc-12-xl cc-3">first-xl 12-xl</div>
-                        <div class="cc-primary cc-3 cc-first-m">first-m</div>
-                    </div>
-                    <div class="columns">
-                        <div class="cc-purple cc-12 ">...</div>
-                        <div class="cc-blue cc-12 cc-last-s">S:last</div>
-                        <div class="cc-purple cc-12 cc-last-m">M:last</div>
-                        <div class="cc-orange cc-12 cc-last-l">L:last</div>
-                        <div class="cc-blue cc-12 cc-last-xl">XL:last</div>
-                    </div>
-
-                    <div class="columns">
-                        <div class="cc-purple cc-12 ">...</div>
-                        <div class="cc-blue cc-12 cc-first-s">S:first</div>
-                        <div class="cc-purple cc-12 cc-first-m">M:first</div>
-                        <div class="cc-orange cc-12 cc-first-l">L:first</div>
-                        <div class="cc-blue cc-12 cc-first-xl">XL:first</div>
-                    </div>
-                </div>
-
-                <div class="grids-columns-alignments">
-                    <h3 class="title">Columns Alignments</h3>
-                    <pre class="HTML">
-                        <code class="language-markup">&lt;div class="columns">
-                                &lt;div class="cc-blue cc-6 cc-left">6 align left&lt;/div>
-                            &lt;/div>
-                            &lt;div class="columns">
-                                &lt;div class="cc-blue cc-6 cc-right">6 align right&lt;/div>
-                            &lt;/div>
-                            &lt;div class="columns">
-                                &lt;div class="cc-blue cc-6 cc-center">6 align center&lt;/div>
+                                &lt;div class="cc-last">I'm the last item but first in HTML!&lt;/div>
+                                &lt;div>Lorem ipsum..&lt;/div>
+                                &lt;div class="cc-first">I'm the first item but third in HTML!&lt;/div>
+                                &lt;div>Lorem ipsum..&lt;/div>
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="cc-blue cc-3">3&lt;/div>
-                                &lt;div class="cc-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
-                                &lt;div class="cc-blue cc-2">2 right&lt;/div>
-                            &lt;/div>
-
-                            &lt;div class="columns cc-bg-orange">
-                                &lt;div class="cc-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
-                                &lt;div class="cc-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
-                            &lt;/div>
-                        </code>
-                    </pre>
-                    <div class="columns">
-                        <div class="cc-blue cc-6 cc-left">6 align left</div>
-                    </div>
-                    <div class="columns">
-                        <div class="cc-blue cc-6 cc-right">6 align right</div>
-                    </div>
-                    <div class="columns">
-                        <div class="cc-blue cc-6 cc-center">6 align center</div>
-                    </div>
-
-                    <div class="columns">
-                        <div class="cc-blue cc-3 cc-left">3</div>
-                        <div class="cc-blue cc-4 cc-center">4 centered between 3 and 2</div>
-                        <div class="cc-blue cc-2 cc-right">2 right</div>
-                    </div>
-
-                    <div class="columns cc-bg-orange">
-                        <div class="cc-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
-                        <div class="cc-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
-                    </div>
-                </div>
-
-                <div class="grids-nested">
-                    <h3 class="title">Nested grids</h3>
-                    <pre class="HTML">
-                        <code class="language-markup">&lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">3&lt;/div>
-                                &lt;div class="cc-orange cc-9">9&lt;/div>
+                                &lt;div class="cc-last-s">S:last&lt;/div>
+                                &lt;div class="cc-last-m">M:last&lt;/div>
+                                &lt;div class="cc-last-l">L:last&lt;/div>
+                                &lt;div class="cc-last-xl">XL:last&lt;/div>
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="columns cc-blue cc-3">
-                                    &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
-                                    &lt;div class="cc-orange cc-6">6 in 3&lt;/div>
-                                &lt;/div>
-                                &lt;div class="cc-orange cc-9 columns">
-                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                    &lt;div class="cc-blue cc-4">4 in 9&lt;/div>
-                                &lt;/div>
-                            &lt;/div>
-
-                            &lt;div class="columns">
-                                &lt;div class="cc-orange cc-8">8&lt;/div>
-                                &lt;div class="cc-blue cc-4">4&lt;/div>
-                            &lt;/div>
-                            &lt;div class="columns">
-                                &lt;div class="columns cc-orange cc-8">
-                                    &lt;div class=" cc-4">4 in 8&lt;/div>
-                                    &lt;div class=" ">auto | Ridiculus ridiculus ...&lt;/div>
-                                    &lt;div class=" cc-2">2 in 8&lt;/div>
-                                &lt;/div>
-                                &lt;div class="columns cc-orange cc-4">
-                                    &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
-                                    &lt;div class="cc-blue cc-6">6 in 4&lt;/div>
-                                &lt;/div>
-                            &lt;/div>>
+                                &lt;div class="cc-first-s">S:first&lt;/div>
+                                &lt;div class="cc-first-m">M:first&lt;/div>
+                                &lt;div class="cc-first-l">L:first&lt;/div>
+                                &lt;div class="cc-first-xl">XL:first&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
 
                     <div class="columns">
-                        <div class="cc-orange cc-3">3</div>
-                        <div class="cc-blue cc-9">9</div>
+                        <div class="cc-last cc-bg-blue">I'm the last item but first in HTML!</div>
+                        <div class="cc-bg-primary">Lorem ipsum..</div>
+                        <div class="cc-first cc-bg-blue">I'm the first item but third in HTML!</div>
+                        <div  class="cc-bg-primary">Lorem ipsum..</div>
                     </div>
 
-                    <div class="columns">
-                        <div class="columns cc-blue cc-3">
-                            <div class="cc-orange cc-6">6 in 3</div>
-                            <div class="cc-orange cc-6">6 in 3</div>
-                        </div>
-                        <div class="cc-orange cc-9 columns">
-                            <div class="cc-blue cc-4">4 in 9</div>
-                            <div class="cc-blue cc-4">4 in 9</div>
-                            <div class="cc-blue cc-4">4 in 9</div>
-                        </div>
+                    <div class="columns cc-mat-20">
+                        <div class="cc-last-s cc-bg-blue">S:last</div>
+                        <div class="cc-last-m cc-bg-purple">M:last</div>
+                        <div class="cc-last-l cc-bg-green">L:last</div>
+                        <div class="cc-last-xl cc-bg-red">XL:last</div>
                     </div>
 
-                    <div class="columns">
-                        <div class="cc-orange cc-8">8</div>
-                        <div class="cc-blue cc-4">4</div>
-                    </div>
-                    <div class="columns">
-                        <div class="columns cc-orange cc-8">
-                            <div class=" cc-4">4 in 8</div>
-                            <div class=" ">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
-                            <div class=" cc-2">2 in 8</div>
-                        </div>
-                        <div class="columns cc-orange cc-4">
-                            <div class="cc-blue cc-6">6 in 4</div>
-                            <div class="cc-blue cc-6">6 in 4</div>
-                        </div>
+                    <div class="columns cc-mat-20">
+                        <div class="cc-first-s cc-bg-blue">S:first</div>
+                        <div class="cc-first-m cc-bg-purple">M:first</div>
+                        <div class="cc-first-l cc-bg-green">L:first</div>
+                        <div class="cc-first-xl cc-bg-red">XL:first</div>
                     </div>
                 </div>
 
@@ -1421,14 +1476,14 @@
                     <h3 class="title">No-Multiligne</h3>
                     <pre class="HTML">
                         <code class="language-markup">&lt;div class="columns cc-no-multiligne">
-                                &lt;div class="cc-blue cc-7">7&lt;/div>
-                                &lt;div class="cc-orange cc-6">6 /!\ TOO LARGE&lt;/div>
+                                &lt;div class="cc-bg-blue cc-7">7&lt;/div>
+                                &lt;div class="cc-bg-orange cc-6">6 /!\ TOO LARGE&lt;/div>
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="cc-blue cc-5 columns cc-no-multiligne">
-                                    &lt;div class="cc-6 cc-orange">6&lt;/div>
-                                    &lt;div class="cc-7 cc-orange">7 /!\ too large but on the same line&lt;/div>
+                                &lt;div class="cc-bg-blue cc-5 columns cc-no-multiligne">
+                                    &lt;div class="cc-6 cc-bg-orange">6&lt;/div>
+                                    &lt;div class="cc-7 cc-bg-orange">7 /!\ too large but on the same line&lt;/div>
                                 &lt;/div>
                             &lt;/div>
 
@@ -1436,14 +1491,14 @@
                     </pre>
 
                     <div class="columns cc-no-multiligne">
-                        <div class="cc-blue cc-7">7</div>
-                        <div class="cc-orange cc-6">6 /!\ TOO LARGE</div>
+                        <div class="cc-bg-blue cc-7">7</div>
+                        <div class="cc-bg-orange cc-6">6 /!\ TOO LARGE</div>
                     </div>
 
                     <div class="columns">
-                        <div class="cc-blue cc-5 columns cc-no-multiligne">
-                            <div class="cc-6 cc-orange">6</div>
-                            <div class="cc-7 cc-orange">7 /!\ too large but on the same line</div>
+                        <div class="cc-bg-blue cc-5 columns cc-no-multiligne">
+                            <div class="cc-6 cc-bg-orange">6</div>
+                            <div class="cc-7 cc-bg-orange">7 /!\ too large but on the same line</div>
                         </div>
                     </div>
                 </div>
@@ -1452,70 +1507,178 @@
                     <h3 class="title">Columns reverse</h3>
                     <pre class="HTML">
                         <code class="language-markup">&lt;div class="columns cc-reverse">
-                                &lt;div class="cc-blue cc-3">First in html&lt;/div>
-                                &lt;div class="cc-orange cc-3">Second in html&lt;/div>
-                                &lt;div class="cc-blue cc-3">Third in html&lt;/div>
-                                &lt;div class="cc-orange cc-3">Fourth in html&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">First in html&lt;/div>
+                                &lt;div class="cc-bg-orange cc-3">Second in html&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Third in html&lt;/div>
+                                &lt;div class="cc-bg-orange cc-3">Fourth in html&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
                     <div class="columns cc-reverse">
-                        <div class="cc-blue cc-3">First in html</div>
-                        <div class="cc-orange cc-3">Second in html</div>
-                        <div class="cc-blue cc-3">Third in html</div>
-                        <div class="cc-orange cc-3">Fourth in html</div>
+                        <div class="cc-bg-blue cc-3">First in html</div>
+                        <div class="cc-bg-orange cc-3">Second in html</div>
+                        <div class="cc-bg-blue cc-3">Third in html</div>
+                        <div class="cc-bg-orange cc-3">Fourth in html</div>
+                    </div>
+                </div>
+
+                <div class="grids-nested">
+                    <h3 class="title">Nested grids</h3>
+                    <pre class="HTML">
+                        <code class="language-markup">&lt;div class="columns">
+                                &lt;div class="cc-bg-orange cc-3">3&lt;/div>
+                                &lt;div class="cc-bg-orange cc-9">9&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="columns cc-bg-blue cc-3">
+                                    &lt;div class="cc-bg-orange cc-6">6 in 3&lt;/div>
+                                    &lt;div class="cc-bg-orange cc-6">6 in 3&lt;/div>
+                                &lt;/div>
+                                &lt;div class="cc-bg-orange cc-9 columns">
+                                    &lt;div class="cc-bg-blue cc-4">4 in 9&lt;/div>
+                                    &lt;div class="cc-bg-blue cc-4">4 in 9&lt;/div>
+                                    &lt;div class="cc-bg-blue cc-4">4 in 9&lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-orange cc-8">8&lt;/div>
+                                &lt;div class="cc-bg-blue cc-4">4&lt;/div>
+                            &lt;/div>
+                            &lt;div class="columns">
+                                &lt;div class="columns cc-bg-orange cc-8">
+                                    &lt;div class=" cc-4">4 in 8&lt;/div>
+                                    &lt;div class=" ">auto | Ridiculus ridiculus ...&lt;/div>
+                                    &lt;div class=" cc-2">2 in 8&lt;/div>
+                                &lt;/div>
+                                &lt;div class="columns cc-bg-orange cc-4">
+                                    &lt;div class="cc-bg-blue cc-6">6 in 4&lt;/div>
+                                    &lt;div class="cc-bg-blue cc-6">6 in 4&lt;/div>
+                                &lt;/div>
+                            &lt;/div>>
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                    <div class="columns">
+                        <div class="cc-bg-orange cc-3">3</div>
+                        <div class="cc-bg-blue cc-9">9</div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="columns cc-bg-blue cc-3">
+                            <div class="cc-bg-orange cc-6">6 in 3</div>
+                            <div class="cc-bg-orange cc-6">6 in 3</div>
+                        </div>
+                        <div class="cc-bg-orange cc-9 columns">
+                            <div class="cc-bg-blue cc-4">4 in 9</div>
+                            <div class="cc-bg-blue cc-4">4 in 9</div>
+                            <div class="cc-bg-blue cc-4">4 in 9</div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-bg-orange cc-8">8</div>
+                        <div class="cc-bg-blue cc-4">4</div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns cc-bg-orange cc-8">
+                            <div class=" cc-4">4 in 8</div>
+                            <div class=" ">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
+                            <div class=" cc-2">2 in 8</div>
+                        </div>
+                        <div class="columns cc-bg-orange cc-4">
+                            <div class="cc-bg-blue cc-6">6 in 4</div>
+                            <div class="cc-bg-blue cc-6">6 in 4</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="grids-justify-columns">
-                    <h3 class="title">Justify columns</h3>
+                    <h3 class="title">Columns alignments on X axis</h3>
                     <pre class="HTML">
                         <code class="language-markup">&lt;div class="columns cc-justify-end">
-                                &lt;div class="cc-blue cc-3">Ending&lt;/div>
-                                &lt;div class="cc-blue cc-3">Ending&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Ending&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Ending&lt;/div>
                             &lt;/div>
                             &lt;div class="columns cc-justify-center">
-                                &lt;div class="cc-blue cc-3">Centered&lt;/div>
-                                &lt;div class="cc-blue cc-3">Centered&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Centered&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Centered&lt;/div>
                             &lt;/div>
                             &lt;div class="columns cc-justify-between">
-                                &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
-                                &lt;div class="cc-blue cc-5">Spacing on 100% width&lt;/div>
-                                &lt;div class="cc-blue cc-3">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-bg-blue cc-5">Spacing on 100% width&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Spacing on 100% width&lt;/div>
                             &lt;/div>
                             &lt;div class="columns cc-justify-around">
-                                &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
-                                &lt;div class="cc-blue cc-5">Equal spacing&lt;/div>
-                                &lt;div class="cc-blue cc-3">Equal spacing&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Equal spacing&lt;/div>
+                                &lt;div class="cc-bg-blue cc-5">Equal spacing&lt;/div>
+                                &lt;div class="cc-bg-blue cc-3">Equal spacing&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
                     <div class="columns cc-justify-end">
-                        <div class="cc-blue cc-3">Ending</div>
-                        <div class="cc-orange cc-3">Ending</div>
+                        <div class="cc-bg-blue cc-3">Ending</div>
+                        <div class="cc-bg-orange cc-3">Ending</div>
                     </div>
                     <div class="columns cc-justify-center">
-                        <div class="cc-blue cc-3">Centered</div>
-                        <div class="cc-orange cc-3">Centered</div>
+                        <div class="cc-bg-blue cc-3">Centered</div>
+                        <div class="cc-bg-orange cc-3">Centered</div>
                     </div>
                     <div class="columns cc-justify-between">
-                        <div class="cc-blue cc-3">Spacing on 100% width</div>
-                        <div class="cc-orange cc-5">Spacing on 100% width</div>
-                        <div class="cc-blue cc-3">Spacing on 100% width</div>
+                        <div class="cc-bg-blue cc-3">Spacing on 100% width</div>
+                        <div class="cc-bg-orange cc-5">Spacing on 100% width</div>
+                        <div class="cc-bg-blue cc-3">Spacing on 100% width</div>
                     </div>
                     <div class="columns cc-justify-around">
-                        <div class="cc-blue cc-3">Equal spacing</div>
-                        <div class="cc-orange cc-5">Equal spacing</div>
-                        <div class="cc-blue cc-3">Equal spacing</div>
+                        <div class="cc-bg-blue cc-3">Equal spacing</div>
+                        <div class="cc-bg-orange cc-5">Equal spacing</div>
+                        <div class="cc-bg-blue cc-3">Equal spacing</div>
                     </div>
                 </div>
 
+                <div class="grids-columns-alignments">
+                    <h3 class="title">Targeted column alignment on X axis</h3>
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- -->
+                            &lt;div class="columns">
+                                &lt;div class="cc-bg-blue cc-3">3&lt;/div>
+                                &lt;div class="cc-bg-blue cc-4 cc-center">4 centered between 3 and 2&lt;/div>
+                                &lt;div class="cc-bg-blue cc-2">2 right&lt;/div>
+                            &lt;/div>
+
+                            &lt;div class="columns cc-bg-orange">
+                                &lt;div class="cc-bg-blue cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
+                                &lt;div class="cc-bg-blue cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns">
+                        <div class="cc-bg-blue cc-3 cc-left">3</div>
+                        <div class="cc-bg-blue cc-4 cc-center">4 centered between 3 and 2</div>
+                        <div class="cc-bg-blue cc-2 cc-right">2 right</div>
+                    </div>
+
+                    <div class="columns cc-bg-orange">
+                        <div class="cc-bg-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
+                        <div class="cc-bg-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
                 <div class="grids-align-items">
-                    <h3 class="title">Justify content in a column</h3>
+                    <h3 class="title">Columns alignments on Y axis</h3>
                     <pre class="HTML">
                         <code class="language-markup">
                             &lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">
+                                &lt;div class="cc-bg-orange cc-3">
                                     &lt;p>
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
@@ -1529,7 +1692,7 @@
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">
+                                &lt;div class="cc-bg-orange cc-3">
                                     &lt;p>
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
@@ -1543,7 +1706,7 @@
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">
+                                &lt;div class="cc-bg-orange cc-3">
                                     &lt;p>
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
@@ -1557,7 +1720,7 @@
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">
+                                &lt;div class="cc-bg-orange cc-3">
                                     &lt;p>
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
@@ -1571,7 +1734,7 @@
                             &lt;/div>
 
                             &lt;div class="columns">
-                                &lt;div class="cc-orange cc-3">
+                                &lt;div class="cc-bg-orange cc-3">
                                     &lt;p>
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip...
                                     &lt;/p>
@@ -1588,7 +1751,7 @@
                     </pre>
 
                     <div class="columns">
-                        <div class="cc-orange cc-3">
+                        <div class="cc-bg-orange cc-3">
                             <p>
                                 Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
@@ -1602,7 +1765,7 @@
                     </div>
 
                     <div class="columns">
-                        <div class="cc-orange cc-3">
+                        <div class="cc-bg-orange cc-3">
                             <p>
                                 Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
@@ -1616,7 +1779,7 @@
                     </div>
 
                     <div class="columns">
-                        <div class="cc-orange cc-3">
+                        <div class="cc-bg-orange cc-3">
                             <p>
                                 Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
@@ -1630,7 +1793,7 @@
                     </div>
 
                     <div class="columns">
-                        <div class="cc-orange cc-3">
+                        <div class="cc-bg-orange cc-3">
                             <p>
                                 Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
@@ -1644,7 +1807,7 @@
                     </div>
 
                     <div class="columns">
-                        <div class="cc-orange cc-3">
+                        <div class="cc-bg-orange cc-3">
                             <p>
                                 Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. Laborum eiusmod pork belly pork chop frankfurter consequat corned beef velit aliqua qui aliquip excepteur pig.
                             </p>
@@ -1659,7 +1822,7 @@
                 </div>
 
                 <div class="grids-align-self">
-                    <h3 class="title">Positioning columns</h3>
+                    <h3 class="title">Targeted column alignment on Y axis</h3>
                     <pre class="HTML">
                         <code class="language-markup">
                             &lt;div class="columns">
@@ -1735,7 +1898,7 @@
                                 for ($i=1;$i&lt;25;$i++) {
                                     $height = rand(60,350);
                             ?>
-                                &lt;div class="&lt;?php if ($i%2==0) echo 'cc-blue'; else echo 'cc-orange';?>" style="height:&lt;?php echo $height;?>px">
+                                &lt;div class="&lt;?php if ($i%2==0) echo 'cc-bg-blue'; else echo 'cc-bg-orange';?>" style="height:&lt;?php echo $height;?>px">
                                     I'm &lt;strong>n°&lt;?php echo $i;?>&lt;/strong> in HTML
                                 &lt;/div>
                             &lt;?php
@@ -1749,7 +1912,7 @@
                         for ($i=1;$i<50;$i++) {
                             $height = rand(60,350);
                     ?>
-                        <div class="<?php if ($i%2==0) echo 'cc-blue'; else echo 'cc-orange';?>" style="height:<?php echo $height;?>px">
+                        <div class="<?php if ($i%2==0) echo 'cc-bg-blue'; else echo 'cc-bg-orange';?>" style="height:<?php echo $height;?>px">
                             I'm <strong>n°<?php echo $i;?></strong> in HTML
                         </div>
                     <?php
@@ -1817,7 +1980,7 @@
             </div>
 
             <div class="main cc-paragraphs">
-                <h3 class="title cc-purple">Paragraphs</h3>
+                <h3 class="title">Paragraphs</h3>
 
                 <pre class="HTML">
                     <code class="language-markup">&lt;p>
@@ -2068,11 +2231,13 @@
                 </blockquote>
             </div>
 
-            <div class="main cc-tables active">
+            <div class="main cc-tables">
                 <h3 class="title">Tables</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;table>
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;table>
                             &lt;thead>
                                 &lt;tr>
                                     &lt;th>&lt;/th>
@@ -2214,11 +2379,6 @@
                                 ...
                             &lt;/table>
                         &lt;/div>
-
-                        &lt;!-- for simple tables -->
-                        &lt;table class="cc-responsive">
-                                ...
-                        &lt;/table>
                     </code>
                 </pre>
                 <div class="wrap-table">
@@ -2289,10 +2449,19 @@
                         </tfoot>
                     </table>
                 </div>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- for simple tables -->
+                        &lt;table class="cc-responsive">
+                                ...
+                        &lt;/table>
+                    </code>
+                </pre>
                 <table class="cc-responsive cc-mat-30">
                     <thead>
                         <tr>
-                            <th>coucou</th>
+                            <th>#</th>
                             <th>ID</th>
                             <th>Last Name</th>
                             <th>First Name</th>
@@ -2301,7 +2470,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                Coucou toi
+                                ##
                             </td>
                             <td>1</td>
                             <td>Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.</td>
@@ -2309,7 +2478,7 @@
                         </tr>
                         <tr>
                             <td>
-                                Coucou toi
+                                ##
                             </td>
                             <td>1</td>
                             <td>Donec sollicitudin molestie malesuada.</td>
@@ -2318,7 +2487,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td>coucou</td>
+                            <td>#</td>
                             <td>ID</td>
                             <td>Last Name</td>
                             <td>First Name</td>
@@ -2459,7 +2628,7 @@
                 </table>
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;table class="cc-vaign-top">
+                    <code class="language-markup">&lt;table class="cc-valign-top">
                             ...
                         &lt;/table>
                     </code>
@@ -3040,6 +3209,11 @@
                                 &lt;label class="block">Block Label&lt;/label>
                                 &lt;input type="text" placeholder="placeholder" value="" name="" />
                             &lt;/div>
+
+                            &lt;div class="form-item error">
+                                &lt;label class="block">Block Label&lt;/label>
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                            &lt;/div>
                         &lt;/form>
                     </code>
                 </pre>
@@ -3061,12 +3235,14 @@
 
 
                 <pre class="HTML">
-                    <code class="language-markup">&lt;form>
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;form>
                             &lt;div class="form-item">
                                 &lt;input type="text"  placeholder="placeholder" value="" name="" />
                             &lt;/div>
-                            &lt;div class="form-item">
-                                &lt;input type="text"  placeholder="* mandatory" value="" name="" class="error" />
+                            &lt;div class="form-item error">
+                                &lt;input type="text"  placeholder="* mandatory" value="" name="" />
                             &lt;/div>
                             &lt;div class="form-item">
                                 &lt;input type="text" disabled="disabled" placeholder="inactive" value="" name="" />
@@ -3088,127 +3264,19 @@
                                     &lt;option>Option 3&lt;/option>
                                 &lt;/select>
                             &lt;/div>
-                            &lt;div class="form-item">
-                                &lt;div class="form-radio">
-                                    &lt;label>
-                                        &lt;input type="radio" name="radio" value="m" />
-                                        Choice 1
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-radio">
-                                    &lt;label>
-                                        &lt;input type="radio" name="radio" checked="checked" value="f" />
-                                        Choice 2 (checked)
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-radio disabled">
-                                    &lt;label>
-                                        &lt;input type="radio" name="radio" value="0" disabled="disabled" />
-                                        Choice 3 disabled
-                                    &lt;/label>
-                                &lt;/div>
-                            &lt;/div>
-                            &lt;div class="form-item">
-                                &lt;div class="form-radio block">
-                                    &lt;label>
-                                        &lt;input type="radio" name="radio2" value="m" />
-                                        Choice 1
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-radio block">
-                                    &lt;label>
-                                        &lt;input type="radio" name="radio2" checked="checked" value="f" />
-                                        Choice 2 (checked)
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-radio block disabled">
-                                    &lt;label>
-                                        &lt;input type="radio" name="radio2" value="0" disabled="disabled" />
-                                        Choice 3 disabled
-                                    &lt;/label>
-                                &lt;/div>
-                            &lt;/div>
-                            &lt;div class="form-item">
-                                &lt;div class="form-checkbox">
-                                    &lt;label>
-                                        &lt;input type="checkbox" name="" value="m" checked="checked" />
-                                        Choice 1 (checked)
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-checkbox">
-                                    &lt;label>
-                                        &lt;input type="checkbox" name="" value="f" />
-                                        Choice 2
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-checkbox disabled">
-                                    &lt;label>
-                                        &lt;input type="checkbox" name="" value="0" disabled="disabled" />
-                                        Choice 3 (disabled)
-                                    &lt;/label>
-                                &lt;/div>
-                            &lt;/div>
-                            &lt;div class="form-item">
-                                &lt;div class="form-checkbox block">
-                                    &lt;label>
-                                        &lt;input type="checkbox" name="" value="m" checked="checked" />
-                                        Choice 1 (checked)
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-checkbox block">
-                                    &lt;label>
-                                        &lt;input type="checkbox" name="" value="f" />
-                                        Choice 2
-                                    &lt;/label>
-                                &lt;/div>
-                                &lt;div class="form-checkbox block disabled">
-                                    &lt;label>
-                                        &lt;input type="checkbox" name="" value="0" disabled="disabled" />
-                                        Choice 3 (disabled)
-                                    &lt;/label>
-                                &lt;/div>
+                            &lt;div class="form-item error">
+                                &lt;select name="">
+                                    &lt;option selected="selected" disabled="disabled">-- Choose --&lt;/option>
+                                    &lt;option>Option 1&lt;/option>
+                                    &lt;option>Option 2&lt;/option>
+                                    &lt;option>Option 3&lt;/option>
+                                &lt;/select>
                             &lt;/div>
                             &lt;div class="form-item">
                                 &lt;textarea name="" placeholder="Your message...">&lt;/textarea>
                             &lt;/div>
-                            &lt;div class="clearfix">&lt;/div>
-                            &lt;div class="form-item cc-inline">
-                                &lt;label>With Prefix and Suffix&lt;/label>
-                                &lt;div class="form-ps">
-                                    &lt;span>$&lt;/span>
-                                    &lt;input type="text"  placeholder="price" value="" name="" />
-                                    &lt;span>.00&lt;/span>
-                                &lt;/div>
-                            &lt;/div>
-                            &lt;div class="form-item cc-inline">
-                                &lt;label>Prefix only&lt;/label>
-                                &lt;div class="form-ps">
-                                    &lt;span>$&lt;/span>
-                                    &lt;input type="text"  placeholder="price" value="" name="" />
-                                &lt;/div>
-                            &lt;/div>
-                            &lt;div class="form-item cc-inline">
-                                &lt;label>Suffix only&lt;/label>
-                                &lt;div class="form-ps">
-                                    &lt;input type="text"  placeholder="price" value="" name="" />
-                                    &lt;span>€&lt;/span>
-                                &lt;/div>
-                            &lt;/div>
-                            &lt;div class="clearfix">&lt;/div>
-
-                            &lt;div class="form-item cc-chained">
-                                &lt;label class="block">Chained inputs&lt;/label>
-                                &lt;input type="text" placeholder="placeholder" value="" name="" />
-                                &lt;input type="text" placeholder="placeholder" value="" name="" />
-                                &lt;input type="text" placeholder="placeholder" value="" name="" />
-                                &lt;input type="text" placeholder="placeholder" value="" name="" />
-                                &lt;input type="submit" value="envoyer" name="" />
-                            &lt;/div>
-
-                            &lt;div class="form-item">
-                                &lt;button type="submit">I'm a submit button&lt;/button>
-                                &lt;input type="submit" value="I'm a submit input" />
-                                &lt;button type="submit" class="ion-ios-cloud-upload-outline">Upload&lt;/button>
+                            &lt;div class="form-item error">
+                                &lt;textarea name="" placeholder="Your message...">&lt;/textarea>
                             &lt;/div>
                         &lt;/form>
                     </code>
@@ -3248,6 +3316,74 @@
                             <option>Option 3</option>
                         </select>
                     </div>
+                    <div class="form-item">
+                        <textarea name="" placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="form-item error">
+                        <textarea name="" placeholder="Your message..."></textarea>
+                    </div>
+                </form>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;form>
+                            &lt;div class="form-item">
+                                &lt;div class="form-radio">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio" value="m" />
+                                        Choice 1
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-radio">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio" checked="checked" value="f" />
+                                        Choice 2 (checked)
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-radio disabled">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio" value="0" disabled="disabled" />
+                                        Choice 3 disabled
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-radio error">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio" value="f"/>
+                                        Choice 4 (error)
+                                    &lt;/label>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="form-item">
+                                &lt;div class="form-radio block">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio2" value="m" />
+                                        Choice 1
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-radio block">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio2" checked="checked" value="f" />
+                                        Choice 2 (checked)
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-radio block disabled">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio2" value="0" disabled="disabled" />
+                                        Choice 3 disabled
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-radio block error">
+                                    &lt;label>
+                                        &lt;input type="radio" name="radio" value="f" />
+                                        Choice 4 (error)
+                                    &lt;/label>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/form>
+                    </code>
+                </pre>
+                <form>
                     <div class="form-item">
                         <div class="form-radio">
                             <label>
@@ -3300,6 +3436,68 @@
                             </label>
                         </div>
                     </div>
+                </form>
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;form>
+                            &lt;div class="form-item">
+                                &lt;div class="form-checkbox">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="m" checked="checked" />
+                                        Choice 1 (checked)
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-checkbox">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="f" />
+                                        Choice 2
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-checkbox disabled">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="0" disabled="disabled" />
+                                        Choice 3 (disabled)
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-checkbox error">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="f" />
+                                        Choice 4 (error)
+                                    &lt;/label>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="form-item">
+                                &lt;div class="form-checkbox block">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="m" checked="checked" />
+                                        Choice 1 (checked)
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-checkbox block">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="f" />
+                                        Choice 2
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-checkbox block disabled">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="0" disabled="disabled" />
+                                        Choice 3 (disabled)
+                                    &lt;/label>
+                                &lt;/div>
+                                &lt;div class="form-checkbox block error">
+                                    &lt;label>
+                                        &lt;input type="checkbox" name="" value="f" />
+                                        Choice 4 (error)
+                                    &lt;/label>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/form>
+                    </code>
+                </pre>
+                <form>
                     <div class="form-item">
                         <div class="form-checkbox">
                             <label>
@@ -3352,12 +3550,45 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <textarea name="" placeholder="Your message..."></textarea>
-                    </div>
-                    <div class="clearfix"></div>
+                </form>
 
-
+                <pre class="HTML">
+                    <code class="language-markup">&lt;form>
+                            &lt;div class="form-item error">
+                                &lt;label>With Prefix and Suffix&lt;/label>
+                                &lt;div class="form-ps">
+                                    &lt;span>$&lt;/span>
+                                    &lt;input type="text"  placeholder="price" value="" name="" />
+                                    &lt;span>.00&lt;/span>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="form-item cc-inline">
+                                &lt;label>With Prefix and Suffix&lt;/label>
+                                &lt;div class="form-ps">
+                                    &lt;span>$&lt;/span>
+                                    &lt;input type="text"  placeholder="price" value="" name="" />
+                                    &lt;span>.00&lt;/span>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="form-item cc-inline">
+                                &lt;label>Prefix only&lt;/label>
+                                &lt;div class="form-ps">
+                                    &lt;span>$&lt;/span>
+                                    &lt;input type="text"  placeholder="price" value="" name="" />
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="form-item cc-inline">
+                                &lt;label>Suffix only&lt;/label>
+                                &lt;div class="form-ps">
+                                    &lt;input type="text"  placeholder="price" value="" name="" />
+                                    &lt;span>€&lt;/span>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/form>
+                        &lt;/form>
+                    </code>
+                </pre>
+                <form>
                     <div class="form-item error">
                         <label>With Prefix and Suffix</label>
                         <div class="form-ps">
@@ -3388,8 +3619,32 @@
                             <span>€</span>
                         </div>
                     </div>
-                    <div class="clearfix"></div>
+                </form>
 
+                <pre class="HTML">
+                    <code class="language-markup">
+                        &lt;form>
+                            &lt;div class="form-item cc-chained">
+                                &lt;label class="block">Chained inputs&lt;/label>
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="submit" value="envoyer" name="" />
+                            &lt;/div>
+
+                            &lt;div class="form-item cc-chained error">
+                                &lt;label class="block">Chained error inputs&lt;/label>
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                &lt;input type="submit" value="envoyer" name="" />
+                            &lt;/div>
+                        &lt;/form>
+                    </code>
+                </pre>
+                <form>
                     <div class="form-item cc-chained">
                         <label class="block">Chained inputs</label>
                         <input type="text" placeholder="placeholder" value="" name="" />
@@ -3407,13 +3662,27 @@
                         <input type="text" placeholder="placeholder" value="" name="" />
                         <input type="submit" value="envoyer" name="" />
                     </div>
+                </form>
 
+                <pre class="HTML">
+                    <code class="language-markup">&lt;form>
+                            &lt;div class="form-item">
+                                &lt;button type="submit">I'm a submit button&lt;/button>
+                                &lt;input type="submit" value="I'm a submit input" />
+                                &lt;button type="submit" class="ion-ios-cloud-upload-outline">Upload&lt;/button>
+                            &lt;/div>
+                        &lt;/form>
+                    </code>
+                </pre>
+                <form>
                     <div class="form-item">
                         <button type="submit">I'm a submit button</button>
                         <input type="submit" value="I'm a submit input" />
                         <button type="submit" class="ion-ios-cloud-upload-outline">Upload</button>
                     </div>
                 </form>
+
+
 
 
                 <pre class="HTML">
@@ -4129,7 +4398,7 @@
                                 for ($i=1;$i<12;$i++) {
                                     $height = rand(60,350);
                             ?>
-                                <div class="<?php if ($i%2==0) echo 'cc-blue'; else echo 'cc-orange';?>" style="height:<?php echo $height;?>px">
+                                <div class="<?php if ($i%2==0) echo 'cc-bg-blue'; else echo 'cc-bg-orange';?>" style="height:<?php echo $height;?>px">
                                     I'm <strong>n°<?php echo $i;?></strong> in HTML
                                 </div>
                             <?php
@@ -4320,12 +4589,12 @@
                     <pre class="HTML">
                     <code class="language-markup">
                         // Button in footer
-                        &lt;button data-target="modal-id-2" class="modal-open cc-primary"&gt;Open another modal&lt;/button&gt;
+                        &lt;button data-target="modal-id-2" class="modal-open cc-bg-primary"&gt;Open another modal&lt;/button&gt;
                     </code>
                 </pre>
                 </div>
                 <div class="modal-footer cc-txt-center">
-                    <button data-target="modal-id-2" class="modal-open cc-primary">Open another modal</button>
+                    <button data-target="modal-id-2" class="modal-open cc-bg-primary">Open another modal</button>
                 </div>
             </div>
         </div>
@@ -4344,7 +4613,7 @@
                     </p>
                 </div>
                 <div class="modal-footer cc-txt-center">
-                    <button data-target="modal-id-3" class="modal-open cc-primary">Open another modal</button>
+                    <button data-target="modal-id-3" class="modal-open cc-bg-primary">Open another modal</button>
                 </div>
             </div>
         </div>

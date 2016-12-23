@@ -76,12 +76,16 @@ body.test {
 				color:@blue-da;
 				padding-bottom:10px;
 				border-bottom:2px solid @blue-da;
-				margin: 50px 0 20px
+				margin: 50px 0 20px;
+
+                & + pre {
+                    margin-top:20px;
+                }
 			}
 
 			pre {
 				outline:3px dashed #272727;
-				margin-top:30px;
+				margin-top:90px;
                 padding:15px;
 			}
 
@@ -116,62 +120,4 @@ body.test {
 
         }
     });
-}
-
-._generatecolumnsbg(@iterator:1) when(@iterator <= length(@aColors)) {
-    @colorName: extract(extract(@aColors, @iterator),1);
-    @colorValue : extract(extract(@aColors, @iterator),2);
-
-    // Grids
-    .columns {
-        .cc-@{colorName} {
-            background-color:@colorValue;
-            color:white;
-        }
-    }
-    ._generatecolumnsbg((@iterator + 1));
-}
-._generatecolumnsbg; // Launch _generateColorsClass
-
-
-
-/*
-==============================================
-alpixel animation
-  * "X" of ALPIXEL on footer
-==============================================
-*/
-._alpixel(){
-  animation-name: alpixel;
-  -webkit-animation-name: alpixel;
-
-  animation-duration: 0.6s;
-  -webkit-animation-duration: 0.6s;
-
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-
-  transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-}
-@keyframes alpixel {
-  0% {
-    transform: translate3d(0,0,0) scaleY(1);
-  }
-  60%{
-    transform: translate3d(0,-50%,0) scaleY(1.1);
-  }
-  70%{
-    transform: translate3d(0,0,0) scaleY(0.95) scaleX(1.05);
-  }
-  80%{
-    transform: translate3d(0,0,0) scaleY(1.05) scaleX(1);
-  }
-  90%{
-    transform: translate3d(0,0,0) scaleY(0.95) scaleX(1);
-  }
-  100%{
-    transform: translate3d(0,0,0) scaleY(1) scaleX(1);
-  }
 }

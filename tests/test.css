@@ -512,9 +512,12 @@ body.test > section .main .title {
   border-bottom: 2px solid #217dbb;
   margin: 50px 0 20px;
 }
+body.test > section .main .title + pre {
+  margin-top: 20px;
+}
 body.test > section .main pre {
   outline: 3px dashed #272727;
-  margin-top: 30px;
+  margin-top: 90px;
   padding: 15px;
 }
 body.test > section .main.cc-buttons p {
@@ -534,91 +537,5 @@ body.test > section.tests p {
   body.test > section {
     width: 95%;
     margin: 0 auto 40px;
-  }
-}
-.columns .cc-primary {
-  background-color: #29b7e1;
-  color: white;
-}
-.columns .cc-green {
-  background-color: #80ae37;
-  color: white;
-}
-.columns .cc-red {
-  background-color: #c41515;
-  color: white;
-}
-.columns .cc-blue {
-  background-color: #3498db;
-  color: white;
-}
-.columns .cc-purple {
-  background-color: #8e44ad;
-  color: white;
-}
-.columns .cc-orange {
-  background-color: #f39c12;
-  color: white;
-}
-.columns .cc-yellow {
-  background-color: #f1c40f;
-  color: white;
-}
-/*
-==============================================
-alpixel animation
-  * "X" of ALPIXEL on footer
-==============================================
-*/
-@-webkit-keyframes alpixel {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(1);
-            transform: translate3d(0, 0, 0) scaleY(1);
-  }
-  60% {
-    -webkit-transform: translate3d(0, -50%, 0) scaleY(1.1);
-            transform: translate3d(0, -50%, 0) scaleY(1.1);
-  }
-  70% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
-            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
-  }
-  80% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
-  }
-  90% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-  }
-}
-@keyframes alpixel {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(1);
-            transform: translate3d(0, 0, 0) scaleY(1);
-  }
-  60% {
-    -webkit-transform: translate3d(0, -50%, 0) scaleY(1.1);
-            transform: translate3d(0, -50%, 0) scaleY(1.1);
-  }
-  70% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
-            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1.05);
-  }
-  80% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleY(1.05) scaleX(1);
-  }
-  90% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleY(0.95) scaleX(1);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
   }
 }
