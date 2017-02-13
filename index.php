@@ -1334,8 +1334,7 @@
                 </p>
             </header>
 
-            <div class="main cc-grids">
-
+            <div class="main cc-grids active">
                 <div class="grids-basics">
                     <h3 class="title">Basic grid</h3>
                     <pre class="HTML">
@@ -1375,10 +1374,9 @@
                         <div class="cc-bg-orange">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div><div class="cc-bg-orange cc-1">1</div><div class="cc-bg-blue cc-1">1</div>
                     </div>
                     <div class="columns">
-                        <div class="cc-bg-orange cc-12 cc-8-m cc-7-xl">cc-12 cc-8-m cc-7-xl</div>
-                        <div class="cc-bg-blue cc-12 cc-4-m cc-5-xl">cc-12 cc-4-m cc-5-xl</div>
+                        <div class="cc-bg-orange cc-8-xs cc-6-s cc-8-m cc-7-xl">cc-8-m cc-7-xl</div>
+                        <div class="cc-bg-blue cc-4-xs cc-6-s cc-4-m cc-5-xl">cc-4-m cc-5-xl</div>
                     </div>
-
                 </div>
 
                 <div class="grids-offset">
@@ -1666,12 +1664,6 @@
                         <div class="cc-bg-blue cc-w-auto cc-right">auto align right<br />(float:right like)</div>
                     </div>
                 </div>
-
-
-
-
-
-
 
                 <div class="grids-align-items">
                     <h3 class="title">Columns alignments on Y axis</h3>

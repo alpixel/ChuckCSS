@@ -9,6 +9,7 @@
 */
 
 ._generateColumns();
+._media-xs-only({._generateColumns(-xs);});
 ._media-xs-up({._generateColumns(-s);});
 ._media-s-up({._generateColumns(-m);});
 ._media-m-up({._generateColumns(-l);});
@@ -58,7 +59,7 @@
         padding:@cols-pa;
         margin:@cols-mat @cols-gutter/2 @cols-mab;
         flex:1 1 0%;
-        
+
         // Small devices : set flex-basis to 100%
         ._media-s({
             flex-basis:100%;
