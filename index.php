@@ -4,7 +4,7 @@
         <!-- META -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>ChuckCSS.io | Tests</title>
-        <base href="http://alpixel.rocks/mickael/workspace/ChuckCSS/" />
+        <!-- <base href="http://alpixel.rocks/mickael/workspace/ChuckCSS/" /> -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
