@@ -1,5 +1,10 @@
 # ChuckCSS Changelog
 
+## 3.0.4
+
+* Fix: add 'cc-X-xs' class for tiny screens in grids container
+
+
 ## 3.0.1
 
 * Fix: add an overflox hidden to html element when modal is opened
