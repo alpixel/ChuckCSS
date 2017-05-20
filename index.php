@@ -25,6 +25,7 @@
     </head>
 
     <body class="test">
+        <!-- Show screen infos -->
         <div id="screen-infos">
             <span class="screen-width">...DIOT...</span>px<br />
             "<span class="screen-media">...DIOT...</span>" screen
@@ -44,6 +45,7 @@
             </div>
         </header>
 
+        <!-- COMPONENTS -->
         <section class="components">
             <header>
                 <h2 class="title">Components</h2>
@@ -1041,7 +1043,7 @@
                 </div>
             </div>
 
-            <div class="main cc-modals">
+            <div class="main cc-modals active">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -1085,6 +1087,27 @@
                                 &lt;/div>
                             &lt;/div>
                         &lt;/div>
+
+
+                        &lt;div id="modal-id" class="modal" data-fullscreen>
+                            &lt;button class="modal-close">&lt;/button>
+
+                            &lt;div class="modal-overlay">&lt;/div>
+
+                            &lt;div class="modal-content">
+                                &lt;div class="modal-header">
+                                    ...
+                                &lt;/div>
+                                &lt;section class="wrap-modal-body">
+                                    &lt;div class="modal-body">
+                                        ...
+                                    &lt;/div>
+                                &lt;/section>
+                                &lt;div class="modal-footer">
+                                    ...
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
                     </code>
                 </pre>
 
@@ -1092,6 +1115,7 @@
                     <button data-target="modal-id" class="modal-open">Launch default modal (with form & masonry layout exemple)</button>
                     <button data-target="modal-id-large" class="modal-open">Launch large modal</button>
                     <button data-target="modal-id-small" class="modal-open">Launch small modal</button>
+                    <button data-target="modal-fullscreen" class="modal-open">Launch fullscreen modal</button>
                     <button data-target="modal-id-long" class="modal-open">Launch modal with long content</button>
                     <button data-target="modal-id-long-fixed-header" class="modal-open">Fixed Header / Footer</button>
                 </div>
@@ -1104,6 +1128,7 @@
             </div>
         </section>
 
+        <!-- HELPERS -->
         <section class="helpers">
             <header>
                 <h2 class="title">Helpers</h2>
@@ -1322,6 +1347,7 @@
             </div>
         </section>
 
+        <!-- GRIDS -->
         <section class="grids">
             <header>
                 <h2 class="title">Grids system</h2>
@@ -1914,6 +1940,7 @@
             </div>
         </section>
 
+        <!-- ELEMENTS -->
         <section class="elements">
             <header>
                 <h2 class="title">HTML Elements</h2>
@@ -4454,6 +4481,40 @@
                         <button type="submit"  class="fa-save">Save</button>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div id="modal-fullscreen" class="modal" data-fullscreen data-fixed-hf>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a fullscreen modal (100% width &amp; height)
+                </div>
+
+                <section class="wrap-modal-body">
+                    <div class="modal-body">
+                        <p>
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                        </p>
+                    </div>
+                </section>
+
+                <div class="modal-footer cc-txt-center">
+                    <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
+                </div>
             </div>
         </div>
         <div id="modal-id-long" class="modal">
