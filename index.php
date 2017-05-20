@@ -1334,7 +1334,7 @@
                 </p>
             </header>
 
-            <div class="main cc-grids active">
+            <div class="main cc-grids">
                 <div class="grids-basics">
                     <h3 class="title">Basic grid</h3>
                     <pre class="HTML">
