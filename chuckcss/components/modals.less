@@ -171,4 +171,21 @@ body.opened-modal {
             flex-shrink:1;
         }
     }
+
+    // Fullscreen modals
+    &[data-fullscreen] {
+        align-items: flex-end;
+
+        .modal-content {
+            width:  100vw;
+            height: ~"calc(100vh - 56px)";
+            max-height: ~"calc(100vh - 56px)";
+            border-radius: 0px;
+
+            ._media-s-up({
+                height: ~"calc(100vh - 80px)";
+                max-height: ~"calc(100vh - 80px)";
+            });
+        }
+    }
 }
