@@ -1,16 +1,18 @@
 # ChuckCSS Changelog
 
-## 3.0.4
+## 3.0.5
+* Added: 'data-fullscreen' attribute for modals
+* Changed: 'data-close-modal' attribute binded by chuckcss.js file for closing modals
 
-* Fix: add 'cc-X-xs' class for tiny screens in grids container
+
+## 3.0.4
+* Fixed: add 'cc-X-xs' class for tiny screens in grids container
 
 
 ## 3.0.1
-
-* Fix: add an overflow hidden to html element when modal is opened
-* Added : `cc-responsive` for tables
+* Fixed: add an overflow hidden to html element when modal is opened
+* Added: `cc-responsive` for tables
 
 
 ## 3.0.0
-
 * Changed: breakpoints, mobile-first. v3.0.0 is not compatible with lower versions.
