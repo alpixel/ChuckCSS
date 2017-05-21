@@ -32,7 +32,6 @@
         /* Close modal */
         $('.modal:not([data-disabled-overlay])')
             .find('.modal-overlay')
-            .add('.modal .modal-close')
             .add('.modal *[data-close-modal]')
             .on('click',function(e) {
                 e.preventDefault();

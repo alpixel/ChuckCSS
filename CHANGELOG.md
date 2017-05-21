@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 3.0.6
+* Removed : 'modal-close' class on closure button (modal) and replaced by 'data-close-modal' attribute
+* Changed : chuckcss.js file for modals closures ('.modal-close' selector removed)
+
 ## 3.0.5
 * Added: 'data-fullscreen' attribute for modals
 * Changed: 'data-close-modal' attribute binded by chuckcss.js file for closing modals
