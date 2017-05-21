@@ -1050,7 +1050,7 @@
                     <code class="language-markup">&lt;button data-target="modal-id" class="modal-open">Launch modal&lt;/button>
 
                         &lt;div id="modal-id" class="modal modal-large modal-small" data-disabled-overlay>
-                            &lt;button class="modal-close">&lt;/button>
+                            &lt;button data-close-modal>&lt;/button>
 
                             &lt;div class="modal-overlay">&lt;/div>
 
@@ -1069,7 +1069,7 @@
 
 
                         &lt;div id="modal-id" class="modal" data-fixed-hf>
-                            &lt;button class="modal-close">&lt;/button>
+                            &lt;button data-close-modal>&lt;/button>
 
                             &lt;div class="modal-overlay">&lt;/div>
 
@@ -1090,7 +1090,7 @@
 
 
                         &lt;div id="modal-id" class="modal" data-fullscreen>
-                            &lt;button class="modal-close">&lt;/button>
+                            &lt;button data-close-modal">&lt;/button>
 
                             &lt;div class="modal-overlay">&lt;/div>
 
@@ -4393,7 +4393,7 @@
 
         <!-- Modals exemples -->
         <div id="modal-id" class="modal">
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4426,13 +4426,13 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="fa-save">Save</button>
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </form>
             </div>
         </div>
         <div id="modal-id-large" class="modal modal-large">
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4452,13 +4452,13 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="fa-save">Save</button>
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </form>
             </div>
         </div>
         <div id="modal-id-small" class="modal modal-small">
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4478,13 +4478,13 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit"  class="fa-save">Save</button>
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </form>
             </div>
         </div>
         <div id="modal-fullscreen" class="modal" data-fullscreen data-fixed-hf>
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4518,7 +4518,7 @@
             </div>
         </div>
         <div id="modal-id-long" class="modal">
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4549,13 +4549,13 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="fa-save">Save</button>
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </form>
             </div>
         </div>
         <div id="modal-id-long-fixed-header" class="modal" data-fixed-hf>
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4604,13 +4604,13 @@
                 </section>
                 <div class="modal-footer cc-txt-center">
                     <button type="submit" class="cc-bg-green fa-save">Save</button>
-                    <a href="#" class="btn cc-thin cc-bg-red">Annuler</a>
+                    <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Cancel</a>
                 </div>
 
             </div>
         </div>
         <div id="modal-id-no-closable" class="modal" data-disabled-overlay>
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4627,7 +4627,7 @@
             </div>
         </div>
         <div id="modal-id-nested" class="modal">
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4652,7 +4652,7 @@
             </div>
         </div>
         <div id="modal-id-2" class="modal">
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 
@@ -4671,7 +4671,7 @@
             </div>
         </div>
         <div id="modal-id-3" class="modal" data-disabled-overlay>
-            <button class="modal-close"></button>
+            <button data-close-modal></button>
 
             <div class="modal-overlay"></div>
 

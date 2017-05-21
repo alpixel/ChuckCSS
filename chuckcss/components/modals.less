@@ -32,7 +32,9 @@ body.opened-modal {
             ._scale(1);
         }
 
-        .modal-close {
+        .modal-close, // for chuckcss version < 3.0.6
+        & > [data-close-modal]  // for chuckcss version >= 3.0.6
+        {
             ._transition(0.3s, top, ease-out, 0.3s);
             top:8px;
 
@@ -67,7 +69,9 @@ body.opened-modal {
     }
 
     /* Close button */
-    &-close {
+    &-close, // for chuckcss version < 3.0.6
+    & > [data-close-modal] // for chuckcss version >= 3.0.6
+    {
         ._reset;
         position:fixed;
         top:-60px;
@@ -186,6 +190,15 @@ body.opened-modal {
                 height: ~"calc(100vh - 80px)";
                 max-height: ~"calc(100vh - 80px)";
             });
+        }
+
+        .modal-footer,
+        .modal-header {
+            flex:0 0 auto;
+        }
+        .wrap-modal-body {
+            overflow-y: auto;
+            flex-grow:1;
         }
     }
 }

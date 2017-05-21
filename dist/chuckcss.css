@@ -4477,12 +4477,14 @@ body.opened-modal {
           transform: scale(1);
   /* X & Y empty : default value */
 }
-.modal.active .modal-close {
+.modal.active .modal-close,
+.modal.active > [data-close-modal] {
   transition: 0.3s top ease-out 0.3s;
   top: 8px;
 }
 @media screen and (min-width: 768px) {
-  .modal.active .modal-close {
+  .modal.active .modal-close,
+  .modal.active > [data-close-modal] {
     top: 20px;
   }
 }
@@ -4497,7 +4499,8 @@ body.opened-modal {
     width: 30%;
   }
 }
-.modal-close {
+.modal-close,
+.modal > [data-close-modal] {
   padding: 0;
   margin: 0;
   border: 0;
@@ -4514,7 +4517,9 @@ body.opened-modal {
   margin-left: -20px;
 }
 .modal-close:after,
-.modal-close:before {
+.modal > [data-close-modal]:after,
+.modal-close:before,
+.modal > [data-close-modal]:before {
   display: inline-block;
   content: ' ';
   width: 19px;
@@ -4525,19 +4530,22 @@ body.opened-modal {
   top: 19px;
   left: 10px;
 }
-.modal-close:before {
+.modal-close:before,
+.modal > [data-close-modal]:before {
   /* Not perspective */
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   /* Perspective */
 }
-.modal-close:after {
+.modal-close:after,
+.modal > [data-close-modal]:after {
   /* Not perspective */
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   /* Perspective */
 }
-.modal-close:hover {
+.modal-close:hover,
+.modal > [data-close-modal]:hover {
   background-color: #ef6a6a;
 }
 .modal-content {
@@ -4628,6 +4636,20 @@ body.opened-modal {
     height: calc(100vh - 80px);
     max-height: calc(100vh - 80px);
   }
+}
+.modal[data-fullscreen] .modal-footer,
+.modal[data-fullscreen] .modal-header {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.modal[data-fullscreen] .wrap-modal-body {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 /*
     * IMPORT GENERATOR & HELPERS FILEs *
