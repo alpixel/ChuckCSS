@@ -1043,7 +1043,7 @@
                 </div>
             </div>
 
-            <div class="main cc-modals active">
+            <div class="main cc-modals">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -3978,7 +3978,7 @@
                 </form>
             </div>
 
-            <div class="main cc-buttons">
+            <div class="main cc-buttons active">
                 <h3 class="title">Links / Buttons</h3>
 
                 <pre class="HTML">
@@ -4192,7 +4192,7 @@
                         &lt;p>
                             &lt;button class="cc-outlined cc-bg-primary cc-disabled">Button&lt;/button>
                             &lt;button class="cc-outlined cc-bg-red cc-disabled">Button&lt;/button>
-                            &lt;button class="c-outlined cc-bg-green cc-disabled">Button&lt;/button>
+                            &lt;button class="cc-outlined cc-bg-green cc-disabled">Button&lt;/button>
                             &lt;button class="cc-outlined cc-bg-blue cc-disabled">Button&lt;/button>
                             &lt;button class="cc-outlined cc-bg-purple cc-disabled">Button&lt;/button>
                             &lt;button class="cc-outlined cc-bg-orange cc-disabled">Button&lt;/button>
@@ -4216,7 +4216,7 @@
                 <p>
                     <button class="cc-outlined cc-bg-primary cc-disabled">Button</button>
                     <button class="cc-outlined cc-bg-red cc-disabled">Button</button>
-                    <button class="c-outlined cc-bg-green cc-disabled">Button</button>
+                    <button class="cc-outlined cc-bg-green cc-disabled">Button</button>
                     <button class="cc-outlined cc-bg-blue cc-disabled">Button</button>
                     <button class="cc-outlined cc-bg-purple cc-disabled">Button</button>
                     <button class="cc-outlined cc-bg-orange cc-disabled">Button</button>
