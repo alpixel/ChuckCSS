@@ -4,7 +4,6 @@
         <!-- META -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>ChuckCSS.io | Tests</title>
-        <!-- <base href="http://alpixel.rocks/mickael/workspace/ChuckCSS/" /> -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
@@ -17,8 +16,6 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
         <link rel="stylesheet" href="dist/chuckcss.min.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/prism.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/test.css" type="text/css" media="screen" charset="utf-8" />
