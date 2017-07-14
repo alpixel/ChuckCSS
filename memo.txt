@@ -1,10 +1,10 @@
 ========
-How to Update ChuckCSS on NPM, GIT, BOWER
+How to Update ChuckCSS on NPM, GIT
 ========
 
 1. Make changes in the code (bug fix, enhancement, etc..)
 
-2. Update the version string in package.json and bower.json by hand to x.x.x.
+2. Update the version string in package.json by hand to x.x.x.
 
 3. Update CHANGELOG.md file with changes
 
@@ -17,10 +17,6 @@ How to Update ChuckCSS on NPM, GIT, BOWER
 7. npm publish
 
 
-
-
-=== Check version on BOWER ===
-$ bower info ChuckCSS
 
 === Chuck version on NPM ===
 $ npm dist-tag ls ChuckCSS

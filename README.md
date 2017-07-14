@@ -5,9 +5,9 @@
 </p>
 
 A responsive CSS framework :
-- compiled with [LESS]
-- compiled with [Autoprefixer]
-- including [Normalize.css]
+- Developed with [LESS]
+- Compiled with [Autoprefixer]
+- Including [Normalize.css], [Font-Awesome], [Ionicons]
 
 **ChuckCSS include plenty of features :**
 * Flexbox grids
@@ -20,12 +20,6 @@ A responsive CSS framework :
 
 
 ### Installation
-Install ChuckCSS with [Bower]:
-
-```sh
-$ bower install ChuckCSS
-```
-
 Install ChuckCSS with [NPM]:
 ```sh
 $ npm install ChuckCSS
@@ -52,7 +46,8 @@ ChuckCSS is under [MIT License].
 [ChuckCSS website]: <http://chuckcss.io/>
 [open an issue on Github]: <https://github.com/alpixel/ChuckCSS/issues/new>
 [Normalize.css]: <https://necolas.github.io/normalize.css/>
-[Bower]: <http://bower.io/search/?q=ChuckCSS>
+[Font-Awesome]: <http://fontawesome.io/>
+[Ionicons]: <http://ionicons.com/>
 [ALPIXEL]: <https://github.com/alpixel>
 [logo]: http://chuckcss.io/img/chuckcss-github-logo.png "ChuckCSS framework"
 [NPM]: <https://www.npmjs.com/package/ChuckCSS>

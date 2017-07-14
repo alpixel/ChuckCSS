@@ -1,6 +1,6 @@
 {
   "name": "ChuckCSS",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "Responsive CSS framework based on Flexbox grids compiled with LESS and Autoprefixer",
   "author": {
     "name": "Mickael SURREL <ALPIXEL>",
@@ -24,11 +24,9 @@
     "url": "https://github.com/alpixel/ChuckCSS/issues"
   },
   "dependencies": {
-    "font-awesome": "4.*",
-    "ionicons": "2.*",
+    "autoprefixer": "^3.1.0",
     "gifsicle": "^3.0.3",
     "gulp": "^3.9.0",
-    "autoprefixer": "^3.1.0",
     "gulp-autoprefixer": "3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.1",
@@ -40,5 +38,5 @@
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5"
-    }
+  }
 }

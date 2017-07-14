@@ -1,7 +1,7 @@
 /*
     == ChuckCSS Framework ==
     @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
-    @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
+    @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (https://www.alpixel.fr)
     @Twitter : https://twitter.com/chuckcss
     @Github : https://github.com/alpixel/ChuckCSS
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
@@ -10,19 +10,27 @@
 @charset "UTF-8";
 
 /*
+    * External & Optional (but recommended) libraries
+        • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
+        • font-awesome.min.css from maxcdn | http://fontawesome.io/
+        • ionicons.min.css from ionicframework | http://ionicons.com
+*/
+@import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+/*
     settings.less
 */
 @import (reference) "settings";
 
 /*
     * /core/ - IMPORT CORE FILES *
-    • normalize.less : HTML5-ready alternative to CSS resets | http://necolas.github.io/normalize.css/
-    • functions.less : main usefull functions|mixins for integration project
-    • responsive.less : responsive mixins
-    • animations.less : keyframes file
-    • base.less : base file with <html>, <body> styles
+        • functions.less : main usefull less functions|mixins for integration project
+        • responsive.less : responsive less mixins
+        • animations.less : keyframes file
+        • base.less : base file with <html>, <body> styles
 */
-@import "core/normalize";
 @import (reference) "core/functions";
 @import (reference) "core/responsive";
 @import "core/animations";

@@ -4,9 +4,7 @@
 .project
 .settings
 _notes
-.grunt
 node_modules
 ._*
-bower_components
 npm-debug*
-.vagrant
+

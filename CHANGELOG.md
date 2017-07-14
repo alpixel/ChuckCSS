@@ -1,5 +1,12 @@
 # ChuckCSS Changelog
 
+## 3.0.8
+* Added : add CDN libraries in front.less file (normalize, font-awesome, ionicons)
+* Removed : 
+	* Bower support (NPM only) and bower.json file
+	* Vagrantfile (ChuckCSS works with Homestead now)
+	* normalize.less file in core folder (Normalize is now included width CDN in front.less file)
+	
 ## 3.0.7
 * Added : new settings for links/buttons :
     * @links-btn-bw => default border-width
