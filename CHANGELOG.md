@@ -1,5 +1,11 @@
 # ChuckCSS Changelog
 
+## 3.1.0
+* Updated : FontAwesome CDN with v5.0.8
+* Updated : Normalize.css v8.0.0
+* Fixed : 
+    * FontAwesome 5 compatibilities (Free version) with "far", "fal", "fas", "fab" class
+
 ## 3.0.8
 * Added : add CDN libraries in front.less file (normalize, font-awesome, ionicons)
 * Removed : 
