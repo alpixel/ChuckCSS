@@ -356,7 +356,6 @@
             -moz-osx-font-smoothing: grayscale;
             line-height: 1;
             font-style: normal;
-            font-weight: normal;
             font-variant: normal;
             text-transform: none;
             text-rendering: auto;
@@ -382,9 +381,11 @@
             }
         }
 
-        span.badge& {
+        // Remove margin-right
+        span.badge&,
+        i& {
             &:before {
-                margin-right:0;
+                margin-right:0px;
             }
         }
     }
@@ -393,13 +394,40 @@
     [class*="ion-"] {
         &:before {
             font-family: "Ionicons";
+            font-weight: normal;
         }
     }
 
-    /* FontAwesome */
-    [class*="fa-"] {
+    /* FontAwesome Solid */
+    [class*="fa-"],
+    [class*="fas fa-"] {
         &:before {
-            font-family: "FontAwesome";
+            font-family: @fa-typo;
+            font-weight: 900;
+        }
+    }
+
+    /* FontAwesome Regular */
+    [class*="far fa-"] {
+        &:before {
+            font-family: @fa-typo;
+            font-weight: 400;
+        }
+    }
+
+    /* FontAwesome Brands */
+    [class*="fab fa-"] {
+        &:before {
+            font-family: @fa-brands;
+            font-weight: 400;
+        }
+    }
+
+    /* FontAwesome Light Pro */
+    [class*="fal fa-"] {
+        &:before {
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 300;
         }
     }
 }

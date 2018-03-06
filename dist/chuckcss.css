@@ -2,26 +2,31 @@
 /*
     == ChuckCSS Framework ==
     @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
-    @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
+    @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (https://www.alpixel.fr)
     @Twitter : https://twitter.com/chuckcss
     @Github : https://github.com/alpixel/ChuckCSS
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
 
 */
 /*
+    * External & Optional (but recommended) libraries
+        • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
+        • fontAwesome css CDN | https://fontawesome.com/get-started/web-fonts-with-css
+        • ionicons.min.css from ionicframework | http://ionicons.com
+*/
+@import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
+@import "//use.fontawesome.com/releases/v5.0.8/css/all.css";
+@import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+/*
     settings.less
 */
 /*
     * /core/ - IMPORT CORE FILES *
-    • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
-    • functions.less : main usefull less functions|mixins for integration project
-    • responsive.less : responsive less mixins
-    • animations.less : keyframes file
-    • base.less : base file with <html>, <body> styles
+        • functions.less : main usefull less functions|mixins for integration project
+        • responsive.less : responsive less mixins
+        • animations.less : keyframes file
+        • base.less : base file with <html>, <body> styles
 */
-@import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
-@import "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-@import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 /*
     == ANIMATIONS ==
 */
@@ -441,6 +446,12 @@ button:visited {
 a.btn:hover,
 button:hover {
   border-color: #bababa;
+}
+a.btn i[class*="fa-"]:before,
+button i[class*="fa-"]:before,
+a.btn i[class*="ion-"]:before,
+button i[class*="ion-"]:before {
+  margin-right: 10px;
 }
 a.btn.cc,
 button.cc {
@@ -920,7 +931,7 @@ blockquote.cc-quoted:before {
   left: 11px;
   top: 9px;
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -928,7 +939,7 @@ blockquote.cc-quoted:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
-  content: '\f10d';
+  content: '\f10e';
   color: #29b7e1;
 }
 blockquote.cc-reverse {
@@ -953,7 +964,7 @@ blockquote footer {
 }
 blockquote footer:before {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -6580,7 +6591,6 @@ form.cc-yellow button[type="submit"]:hover {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   font-style: normal;
-  font-weight: normal;
   font-variant: normal;
   text-transform: none;
   text-rendering: auto;
@@ -6604,16 +6614,36 @@ ul.cc-horizontal li[class*="ion-"]:before {
   position: static;
 }
 span.badge[class*="fa-"]:before,
-span.badge[class*="ion-"]:before {
-  margin-right: 0;
+span.badge[class*="ion-"]:before,
+i[class*="fa-"]:before,
+i[class*="ion-"]:before {
+  margin-right: 0px;
 }
 /* Ionicons */
 [class*="ion-"]:before {
   font-family: "Ionicons";
+  font-weight: normal;
 }
-/* FontAwesome */
-[class*="fa-"]:before {
-  font-family: "FontAwesome";
+/* FontAwesome Solid */
+[class*="fa-"]:before,
+[class*="fas fa-"]:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+/* FontAwesome Regular */
+[class*="far fa-"]:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+/* FontAwesome Brands */
+[class*="fab fa-"]:before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+/* FontAwesome Light Pro */
+[class*="fal fa-"]:before {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300;
 }
 /* *****
     @name : ._generateColumns
