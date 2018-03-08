@@ -12,10 +12,10 @@
 /*
     * External & Optional (but recommended) libraries
         • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
-        • font-awesome.min.css from maxcdn | http://fontawesome.io/
+        • fontAwesome css CDN | https://fontawesome.com/get-started/web-fonts-with-css
         • ionicons.min.css from ionicframework | http://ionicons.com
 */
-@import "//cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
 @import "//use.fontawesome.com/releases/v5.0.8/css/all.css";
 @import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 
@@ -62,7 +62,9 @@
     * IMPORT GENERATOR & HELPERS FILEs *
     • generator.less : Engine generator for colors, grids, icons...
     • helpers.less : text and blocks helpers
+    • fontawesome.less : icons tools
     /!\ Import this files after elements and others components
 */
 @import "core/helpers";
+@import "core/fontawesome";
 @import "core/generator";

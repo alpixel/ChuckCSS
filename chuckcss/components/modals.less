@@ -33,7 +33,7 @@ body.opened-modal {
         }
 
         .modal-close, // for chuckcss version < 3.0.6
-        & > button[data-close-modal]  // for chuckcss version >= 3.0.6
+        & > [data-close-modal]  // for chuckcss version >= 3.0.6
         {
             ._transition(0.3s, top, ease-out, 0.3s);
             top:8px;
@@ -70,7 +70,7 @@ body.opened-modal {
 
     /* Close button */
     &-close, // for chuckcss version < 3.0.6
-    & > button[data-close-modal] // for chuckcss version >= 3.0.6
+    & > [data-close-modal] // for chuckcss version >= 3.0.6
     {
         ._reset;
         position:fixed;

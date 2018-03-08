@@ -52,35 +52,11 @@ button {
         border-color:@gray;
     }
 
-    i[class*="fa-"],
-    i[class*="ion-"] {
-        &:before {
-            margin-right:10px;
-        }
-    }
-
 
     &.cc {
         /* Thins buttons, .btn links */
         &-thin {
             font-size:@links-btn-thin-fs;
-
-            &[class*="fa-"],
-            &[class*="ion-"] {
-                &:before {
-                    font-size:inherit;
-                    margin-right:7px;
-                }
-            }
-
-            i:before {
-                font-size:inherit;
-                margin-right:7px;
-            }
-
-            &.icon-right:before {
-                margin-right:0;
-            }
 
             /* Thin Loading buttons */
             &.cc-loading {
@@ -96,14 +72,6 @@ button {
         /* Fats buttons, .btn links */
         &-fat {
             font-size:@links-btn-fat-fs;
-
-            &[class*="fa-"],
-            &[class*="ion-"] {
-                &:before {
-                    font-size:inherit;
-                }
-            }
-            i:before { font-size:inherit;}
 
             /* Thin Loading buttons */
             &.cc-loading {
@@ -158,34 +126,6 @@ button {
                 margin-right:0;
                 ._loading-spin;
             }
-
-        }
-    }
-
-    /* Icon right */
-    &.icon-right {
-        position:relative;
-        display:inline-flex;
-        justify-content:center;
-        align-content:center;
-        align-items:center;
-
-        i:before,
-        &:before {
-            order:2;
-            margin:0 0 0 0.8em;
-        }
-    }
-}
-
-
-/* Hack Firefox for .icon-right on button elements */
-@-moz-document url-prefix() {
-    button.icon-right {
-        display:inline-block;
-        &.cc-thin:before,
-        &:before {
-            margin:0 0.8em 0 0;
         }
     }
 }

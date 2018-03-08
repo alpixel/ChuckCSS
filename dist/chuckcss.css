@@ -11,10 +11,10 @@
 /*
     * External & Optional (but recommended) libraries
         • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
-        • font-awesome.min.css from maxcdn | http://fontawesome.io/
+        • fontAwesome css CDN | https://fontawesome.com/get-started/web-fonts-with-css
         • ionicons.min.css from ionicframework | http://ionicons.com
 */
-@import "//cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
 @import "//use.fontawesome.com/releases/v5.0.8/css/all.css";
 @import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 /*
@@ -34,7 +34,7 @@
     @name : ._loading-spin
     @description : animate loading buttons
 ***** */
-@keyframes loading-spin {
+@-webkit-keyframes loading-spin {
   from {
     /* Not perspective */
     -webkit-transform: rotate(0deg);
@@ -48,7 +48,7 @@
     /* Perspective */
   }
 }
-@-webkit-keyframes loading-spin {
+@keyframes loading-spin {
   from {
     /* Not perspective */
     -webkit-transform: rotate(0deg);
@@ -429,7 +429,6 @@ button {
   /* else */
   transition: 0.2s all ease-out 0s;
   /* hover : default, change border-color */
-  /* Icon right */
 }
 a.btn:hover,
 button:hover {
@@ -447,12 +446,6 @@ a.btn:hover,
 button:hover {
   border-color: #bababa;
 }
-a.btn i[class*="fa-"]:before,
-button i[class*="fa-"]:before,
-a.btn i[class*="ion-"]:before,
-button i[class*="ion-"]:before {
-  margin-right: 10px;
-}
 a.btn.cc,
 button.cc {
   /* Thins buttons, .btn links */
@@ -465,22 +458,6 @@ button.cc-thin {
   font-size: 1.05rem;
   /* Thin Loading buttons */
 }
-a.btn.cc-thin[class*="fa-"]:before,
-button.cc-thin[class*="fa-"]:before,
-a.btn.cc-thin[class*="ion-"]:before,
-button.cc-thin[class*="ion-"]:before {
-  font-size: inherit;
-  margin-right: 7px;
-}
-a.btn.cc-thin i:before,
-button.cc-thin i:before {
-  font-size: inherit;
-  margin-right: 7px;
-}
-a.btn.cc-thin.icon-right:before,
-button.cc-thin.icon-right:before {
-  margin-right: 0;
-}
 a.btn.cc-thin.cc-loading:before,
 button.cc-thin.cc-loading:before {
   width: 10px;
@@ -492,16 +469,6 @@ a.btn.cc-fat,
 button.cc-fat {
   font-size: 1.95rem;
   /* Thin Loading buttons */
-}
-a.btn.cc-fat[class*="fa-"]:before,
-button.cc-fat[class*="fa-"]:before,
-a.btn.cc-fat[class*="ion-"]:before,
-button.cc-fat[class*="ion-"]:before {
-  font-size: inherit;
-}
-a.btn.cc-fat i:before,
-button.cc-fat i:before {
-  font-size: inherit;
 }
 a.btn.cc-fat.cc-loading:before,
 button.cc-fat.cc-loading:before {
@@ -562,45 +529,6 @@ button.cc-loading:before {
           transform-origin: 50% 50%;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-}
-a.btn.icon-right,
-button.icon-right {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-a.btn.icon-right i:before,
-button.icon-right i:before,
-a.btn.icon-right:before,
-button.icon-right:before {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-  margin: 0 0 0 0.8em;
-}
-/* Hack Firefox for .icon-right on button elements */
-@-moz-document url-prefix() {
-  button.icon-right {
-    display: inline-block;
-  }
-  button.icon-right.cc-thin:before,
-  button.icon-right:before {
-    margin: 0 0.8em 0 0;
-  }
 }
 /* ******** */
 /** TABLES **/
@@ -853,45 +781,10 @@ ul.cc-horizontal li {
   display: inline-block;
   margin: 0 1.5em;
 }
-ul.cc-horizontal li[class*="fa-"].icon-right,
-ul.cc-horizontal li[class*="ion-"].icon-right {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-ul.cc-horizontal li[class*="fa-"].icon-right:before,
-ul.cc-horizontal li[class*="ion-"].icon-right:before {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-  margin: 0 0 0 0.8em;
-}
 @media screen and (max-width: 767px) {
   ul.cc-horizontal li {
     display: block;
     margin: 1em 0;
-  }
-  ul.cc-horizontal li[class*="fa-"].icon-right,
-  ul.cc-horizontal li[class*="ion-"].icon-right {
-    display: block;
-  }
-  ul.cc-horizontal li[class*="fa-"].icon-right:before,
-  ul.cc-horizontal li[class*="ion-"].icon-right:before {
-    margin: 0 0.8em 0 0;
   }
 }
 /* Ordered lists */
@@ -1471,18 +1364,6 @@ form button[type="submit"] {
 form input[type="submit"]:hover,
 form button[type="submit"]:hover {
   background-color: #1a98bd;
-}
-form input[type="submit"][class*="fa-"],
-form button[type="submit"][class*="fa-"],
-form input[type="submit"][class*="ion-"],
-form button[type="submit"][class*="ion-"] {
-  padding-left: 1.5em;
-}
-form input[type="submit"][class*="fa-"]:before,
-form button[type="submit"][class*="fa-"]:before,
-form input[type="submit"][class*="ion-"]:before,
-form button[type="submit"][class*="ion-"]:before {
-  margin-right: 1em;
 }
 @media screen and (max-width: 767px) {
   form input[type="submit"],
@@ -4091,13 +3972,13 @@ body.opened-modal {
   /* X & Y empty : default value */
 }
 .modal.active .modal-close,
-.modal.active > button[data-close-modal] {
+.modal.active > [data-close-modal] {
   transition: 0.3s top ease-out 0.3s;
   top: 8px;
 }
 @media screen and (min-width: 768px) {
   .modal.active .modal-close,
-  .modal.active > button[data-close-modal] {
+  .modal.active > [data-close-modal] {
     top: 20px;
   }
 }
@@ -4113,7 +3994,7 @@ body.opened-modal {
   }
 }
 .modal-close,
-.modal > button[data-close-modal] {
+.modal > [data-close-modal] {
   padding: 0;
   margin: 0;
   border: 0;
@@ -4130,9 +4011,9 @@ body.opened-modal {
   margin-left: -20px;
 }
 .modal-close:after,
-.modal > button[data-close-modal]:after,
+.modal > [data-close-modal]:after,
 .modal-close:before,
-.modal > button[data-close-modal]:before {
+.modal > [data-close-modal]:before {
   display: inline-block;
   content: ' ';
   width: 19px;
@@ -4144,21 +4025,21 @@ body.opened-modal {
   left: 10px;
 }
 .modal-close:before,
-.modal > button[data-close-modal]:before {
+.modal > [data-close-modal]:before {
   /* Not perspective */
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   /* Perspective */
 }
 .modal-close:after,
-.modal > button[data-close-modal]:after {
+.modal > [data-close-modal]:after {
   /* Not perspective */
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   /* Perspective */
 }
 .modal-close:hover,
-.modal > button[data-close-modal]:hover {
+.modal > [data-close-modal]:hover {
   background-color: #ef6a6a;
 }
 .modal-content {
@@ -4268,6 +4149,7 @@ body.opened-modal {
     * IMPORT GENERATOR & HELPERS FILEs *
     • generator.less : Engine generator for colors, grids, icons...
     • helpers.less : text and blocks helpers
+    • fontawesome.less : icons tools
     /!\ Import this files after elements and others components
 */
 /*
@@ -4469,13 +4351,38 @@ body.opened-modal {
   clear: both;
 }
 /*
+    == FONTAWESOME ==
+*/
+.fa,
+.far,
+.fal,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+}
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+.fa.icon-left,
+.far.icon-left,
+.fal.icon-left,
+.fas.icon-left,
+[class*="ion-"].icon-left {
+  margin-right: 8px;
+}
+.fa.icon-right,
+.far.icon-right,
+.fal.icon-right,
+.fas.icon-right,
+[class*="ion-"].icon-right {
+  margin-left: 8px;
+}
+/*
     == GENERATORS ==
 */
 /*
 ** Mixins list **
     ._generateColorsClass
     ._generatePaddingMarginClass
-    ._generateIcons
     ._generateColumns
     ._generatePercentWidth
 */
@@ -6574,76 +6481,6 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-mal-50 {
   margin-left: 50px;
-}
-/* *****
-    @name : ._generateIcons
-    @description : Generate icons  when using fa- & -ion class
-    @Used : in alerts, buttons, lists, messages, badges
-***** */
-[class*="fa-"],
-[class*="ion-"] {
-  /* Icon */
-}
-[class*="fa-"]:before,
-[class*="ion-"]:before {
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  speak: none;
-  margin-right: 10px;
-}
-li[class*="fa-"],
-li[class*="ion-"] {
-  list-style: none;
-  position: relative;
-  /* Override horizontal lists */
-}
-li[class*="fa-"]:before,
-li[class*="ion-"]:before {
-  position: absolute;
-  left: -1.3em;
-  top: 4px;
-}
-ul.cc-horizontal li[class*="fa-"]:before,
-ul.cc-horizontal li[class*="ion-"]:before {
-  position: static;
-}
-span.badge[class*="fa-"]:before,
-span.badge[class*="ion-"]:before,
-i[class*="fa-"]:before,
-i[class*="ion-"]:before {
-  margin-right: 0px;
-}
-/* Ionicons */
-[class*="ion-"]:before {
-  font-family: "Ionicons";
-  font-weight: normal;
-}
-/* FontAwesome Solid */
-[class*="fa-"]:before,
-[class*="fas fa-"]:before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-}
-/* FontAwesome Regular */
-[class*="far fa-"]:before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400;
-}
-/* FontAwesome Brands */
-[class*="fab fa-"]:before {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-}
-/* FontAwesome Light Pro */
-[class*="fal fa-"]:before {
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 300;
 }
 /* *****
     @name : ._generateColumns

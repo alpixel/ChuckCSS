@@ -1,5 +1,10 @@
 # ChuckCSS Changelog
 
+## 3.1.1
+* Removed : 
+    * "fa-" class applied to another element but i
+    * "._generateIcons" mixin in generator.less
+
 ## 3.1.0
 * Updated : FontAwesome CDN with v5.0.8
 * Updated : Normalize.css v8.0.0
