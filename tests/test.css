@@ -26,6 +26,7 @@
         "-tc" : text-color
         "-su" : success
         "-wa" : warning
+        "fa-" : fontawesome
 */
 /* ********* */
 /* VARIABLES */
@@ -72,6 +73,8 @@
 /* Texts font-size ~ Used for old browsers that doesn't support rem units */
 /* Textes font-size (applied to <body>) */
 /* Texts line-height : ~= font-size*1.5 */
+/* Change with Pro version if you use FontAwesome 5 Pro */
+/* FontAwesome Brands */
 /*
     -- @ Links @ --
 */

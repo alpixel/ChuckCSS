@@ -64,27 +64,29 @@
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
                         &lt;!-- -->
-                        &lt;div class="alert alert-primary fa-bolt">
+                        &lt;div class="alert alert-primary ion-minus-circled">
                             &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
                             ...
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="alert alert-primary fa-bolt">
-                    <button class="close"><i class="ion-ios-close-outline"></i></button>
+                <div class="alert alert-primary ion-minus-circled">
+                    <button class="close"><i class="ion-ios-close-outline icon-left"></i></button>
                     <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
                         &lt;!-- -->
-                        &lt;div class="alert alert-info fa-exclamation-circle">
+                        &lt;div class="alert alert-info">
+                            &lt;i class="far fa-check-circle">&lt;/i>
                             &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
                             ...
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="alert alert-info fa-exclamation-circle">
+                <div class="alert alert-info">
+                    <i class="far fa-check-circle icon-left"></i>
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <strong>Info</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
@@ -98,7 +100,8 @@
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="alert alert-warning ion-android-bicycle">
+                <div class="alert alert-warning">
+                    <i class="ion-android-bicycle icon-left"></i>
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
                     <strong>Warning</strong> alert with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
@@ -114,7 +117,7 @@
                 </pre>
                 <div class="alert alert-error">
                     <button class="close"><i class="ion-ios-close-outline"></i></button>
-                    <i class="fa fa-hand-spock-o"></i> <strong>Error</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                    <i class="fas fa-hand-spock"></i> <strong>Error</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                     <p>A list exemple below :</p>
                     <ul>
                         <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
@@ -156,12 +159,14 @@
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
                         <!-- -->
-                        &lt;div class="message message-info fa-exclamation-circle">
+                        &lt;div class="message message-info">
+                            &lt;i class="fas fa-exclamation-circle">&lt;/i>
                             ...
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="message message-info fa-exclamation-circle">
+                <div class="message message-info">
+                    <i class="fas fa-exclamation-circle"></i>
                     <strong>Status</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                 </div>
 
@@ -186,7 +191,7 @@
                     </code>
                 </pre>
                 <div class="message message-error">
-                    <i class="fa fa-hand-spock-o"></i> <strong>Error</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                    <i class="fas fa-hand-spock"></i> <strong>Error</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
                     <p>A list exemple below :</p>
                     <ul>
                         <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
@@ -371,7 +376,7 @@
                                 Button &lt;span class="badge">4&lt;/span>
                             &lt;/button>
                             &lt;button class="cc-bg-red cc-fat">
-                                Button &lt;span class="badge cc-bg-purple">&lt;i class="ion-ios-pulse-strong">&lt;/i> 90 bpm&lt;/span>
+                                Button &lt;span class="badge cc-bg-purple">&lt;i class="fas fa-heartbeat">&lt;/i> 90 bpm&lt;/span>
                             &lt;/button>
                             &lt;button class="cc-bg-green cc-thin">
                                 Button &lt;span class="badge cc-bg-orange">4&lt;/span>
@@ -400,7 +405,7 @@
                         Button <span class="badge">4</span>
                     </button>
                     <button class="cc-bg-red cc-fat">
-                        Button <span class="badge cc-bg-purple"><i class="ion-ios-pulse-strong"></i> 90 bpm</span>
+                        Button <span class="badge cc-bg-purple"><i class="fas fa-heartbeat icon-left"></i> 90 bpm</span>
                     </button>
                     <button class="cc-bg-green cc-thin">
                         Button <span class="badge cc-bg-orange">4</span>
@@ -418,7 +423,7 @@
                                 Button &lt;span class="badge">&lt;i class="ion-ios-gear">&lt;/i>&lt;/span>
                             &lt;/button>
                             &lt;button>
-                                Button &lt;span class="badge fa-user">&lt;/span>
+                                Button &lt;span class="badge">&lt;i class="fas fa-user">&lt;/i>&lt;/span>
                             &lt;/button>
                             &lt;button class="cc-thin">
                                 Button &lt;span class="badge ion-ios-gear">&lt;/span>
@@ -440,7 +445,7 @@
                         Button <span class="badge"><i class="ion-ios-gear"></i></span>
                     </button>
                     <button>
-                        Button <span class="badge fa-user"></span>
+                        Button <span class="badge"><i class="fas fa-user"></i></span>
                     </button>
                     <button class="cc-thin">
                         Button <span class="badge ion-ios-gear"></span>
@@ -605,8 +610,8 @@
                         </code>
                     </pre>
                     <ul class="tabs cc-bordered">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
+                        <li><a href="#"><i class="fas fa-user icon-left"></i>Link 1</a></li>
+                        <li class="active"><a href="#"><i class="fas fa-edit icon-left"></i>Link 2</a></li>
                         <li><a href="#" class="ion-android-plane">Link 3</a></li>
                         <li><a href="#" class="ion-ios-paw">Link 4</a></li>
                         <li><a href="#">Link 5</a></li>
@@ -1136,6 +1141,7 @@
                     <a href="#" data-rel="cc-helpers-txt" class="btn cc-bg-primary">Texts helpers</a>
                     <a href="#" data-rel="cc-helpers-blocks" class="btn cc-bg-primary">Blocks helpers</a>
                     <a href="#" data-rel="cc-colors" class="btn cc-bg-primary">Colors</a>
+                    <a href="#" data-rel="cc-fontawesome" class="btn cc-bg-primary">FontAwesome 5</a>
                 </p>
             </header>
 
@@ -1340,6 +1346,26 @@
                     <div class="cc-bg-purple cc-txt-center">Purple</div>
                     <div class="cc-bg-orange cc-txt-center">Orange</div>
                     <div class="cc-bg-yellow cc-txt-center">Yellow</div>
+                </div>
+            </div>
+
+            <div class="main cc-fontawesome active">
+                <h3 class="title">Work with FontAwesome</h3>
+
+                <div class="columns">
+                    <div>
+                        <i class="fas fa-arrow-circle-right"></i>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </div>
+                </div>
+
+                <h3 class="title">Work with Ionicons</h3>
+
+                <div class="columns">
+                    <div>
+                        <i class="ion-ionic"></i>
+                        <i class="ion-trash-a"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -2090,14 +2116,14 @@
                     <li>
                         Bacon ipsum
                     </li>
-                    <li class="fa-user cc-blue">
+                    <li class="cc-blue">
                         Short ribs.
                     </li>
                     <li>
-                        <a href="#" class="btn cc-bg-orange ion-ios-contact">Contacts</a>
+                        <a href="#" class="btn cc-bg-orange"><i class="fas fa-user icon-left"></i>Contacts</a>
                     </li>
-                    <li class="fa-plug cc-primary icon-right">
-                        Short ribs ".icon-right"
+                    <li class="cc-primary icon-right">
+                        Short ribs <i class="fas fa-user icon-right"></i>
                     </li>
                     <li>
                         <a href="#" class="btn cc-bg-purple ion-ios-contact icon-right">Contacts ."icon-right"</a>
@@ -3694,7 +3720,8 @@
                     <div class="form-item">
                         <button type="submit">I'm a submit button</button>
                         <input type="submit" value="I'm a submit input" />
-                        <button type="submit" class="ion-ios-cloud-upload-outline">Upload</button>
+                        <button type="submit"><i class="ion-ios-cloud-upload-outline icon-left"></i>Upload</button>
+                        <button type="submit">Upload <i class="far fa-user-circle icon-right"></i></button>
                     </div>
                 </form>
 
@@ -3975,7 +4002,7 @@
                 </form>
             </div>
 
-            <div class="main cc-buttons active">
+            <div class="main cc-buttons">
                 <h3 class="title">Links / Buttons</h3>
 
                 <pre class="HTML">
@@ -4127,12 +4154,12 @@
                     </code>
                 </pre>
                 <p>
-                    <a href="#" class="btn cc-bg-blue cc-thin ion-social-chrome">Blue link with icon</a>
-                    <button class="cc-bg-red cc-thin fa-times">Red button with icon</button>
-                    <a href="#" class="btn cc-bg-blue ion-social-chrome">Blue link with icon</a>
-                    <button class="cc-bg-red fa-times">Red button with icon</button>
-                    <a href="#" class="btn cc-bg-blue cc-fat ion-social-chrome">Blue link with icon</a>
-                    <button class="cc-bg-red cc-fat fa-times">Red button with icon</button>
+                    <a href="#" class="btn cc-bg-blue cc-thin"><i class="ion-social-chrome icon-left"></i>Blue link with icon</a>
+                    <button class="cc-bg-red cc-thin">Red button with icon <i class="ion-social-chrome icon-right"></i></button>
+                    <a href="#" class="btn cc-bg-blue"><i class="ion-social-chrome icon-left"></i>Blue link with icon</a>
+                    <button class="cc-bg-red">Red button with icon <i class="ion-social-chrome icon-right"></i></button>
+                    <a href="#" class="btn cc-bg-blue cc-fat"><i class="ion-social-chrome icon-left"></i>Blue link with icon</a>
+                    <button class="cc-bg-red cc-fat">Red button with icon <i class="ion-social-chrome icon-right"></i></button>
                 </p>
                 <p>
                     <a href="#" class="btn cc-thin cc-bg-green"><i class="ion-social-nodejs"></i> Green link with icon</a>
@@ -4166,10 +4193,10 @@
                     <button class="cc-bg-purple cc-outlined fa-bug icon-right">Purple button with icon</button>
                 </p>
                 <p>
-                    <a href="#" class="btn cc-bg-green cc-outlined"><i class="ion-social-nodejs"></i> Green link with icon</a>
-                    <button class="cc-bg-purple cc-outlined"><i class=" fa fa-bug"></i> Purple button with icon</button>
-                    <a href="#" class="btn cc-bg-green cc-outlined icon-right">Green link with icon <i class="ion-social-nodejs"></i></a>
-                    <button class="cc-bg-purple cc-outlined icon-right">Purple button with icon <i class=" fa fa-bug"></i></button>
+                    <a href="#" class="btn cc-bg-green cc-outlined"><i class="ion-social-nodejs icon-left"></i> Green link with icon</a>
+                    <button class="cc-bg-purple cc-outlined"><i class="fas fa-heartbeat icon-left"></i> Purple button with icon</button>
+                    <a href="#" class="btn cc-bg-green cc-outlined">Green link with icon <i class="fas fa-heartbeat icon-right"></i></a>
+                    <button class="cc-bg-purple cc-outlined">Purple button with icon <i class="fas fa-heartbeat icon-right"></i></button>
                 </p>
 
                 <pre class="HTML">

@@ -40,37 +40,10 @@ ul {
                 display:inline-block;
                 margin:0 1.5em;
 
-                &[class*="fa-"],
-                &[class*="ion-"] {
-                    &.icon-right {
-                        position:relative;
-                        display:inline-flex;
-                        justify-content:space-between;
-                        align-content:center;
-                        align-items:center;
-
-                        &:before {
-                            order:2;
-                            margin:0 0 0 0.8em;
-                        }
-                    }
-                }
-
                 // On screen < 768px, display li as block
                 ._media-s({
                     display:block;
                     margin:1em 0;
-
-                    &[class*="fa-"],
-                    &[class*="ion-"] {
-                        &.icon-right {
-                            display:block;
-
-                            &:before {
-                                margin:0 0.8em 0 0;
-                            }
-                        }
-                    }
                 });
             }
         }

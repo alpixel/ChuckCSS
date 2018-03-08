@@ -6,7 +6,6 @@
 ** Mixins list **
     ._generateColorsClass
     ._generatePaddingMarginClass
-    ._generateIcons
     ._generateColumns
     ._generatePercentWidth
 */
@@ -337,101 +336,6 @@
 }
 ._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
 
-
-
-/* *****
-    @name : ._generateIcons
-    @description : Generate icons  when using fa- & -ion class
-    @Used : in alerts, buttons, lists, messages, badges
-***** */
-._generateIcons() {
-
-    [class*="fa-"],
-    [class*="ion-"] {
-
-        /* Icon */
-        &:before {
-            display:inline-block;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            line-height: 1;
-            font-style: normal;
-            font-variant: normal;
-            text-transform: none;
-            text-rendering: auto;
-            speak: none;
-            margin-right: 10px;
-        }
-
-        li& {
-            list-style:none;
-            position:relative;
-
-            &:before {
-                position:absolute;
-                left: -1.3em;
-                top: 4px;
-            }
-
-            /* Override horizontal lists */
-            ul.cc-horizontal & {
-                &:before {
-                    position:static;
-                }
-            }
-        }
-
-        // Remove margin-right
-        span.badge&,
-        i& {
-            &:before {
-                margin-right:0px;
-            }
-        }
-    }
-
-    /* Ionicons */
-    [class*="ion-"] {
-        &:before {
-            font-family: "Ionicons";
-            font-weight: normal;
-        }
-    }
-
-    /* FontAwesome Solid */
-    [class*="fa-"],
-    [class*="fas fa-"] {
-        &:before {
-            font-family: @fa-typo;
-            font-weight: 900;
-        }
-    }
-
-    /* FontAwesome Regular */
-    [class*="far fa-"] {
-        &:before {
-            font-family: @fa-typo;
-            font-weight: 400;
-        }
-    }
-
-    /* FontAwesome Brands */
-    [class*="fab fa-"] {
-        &:before {
-            font-family: @fa-brands;
-            font-weight: 400;
-        }
-    }
-
-    /* FontAwesome Light Pro */
-    [class*="fal fa-"] {
-        &:before {
-            font-family: 'Font Awesome 5 Pro';
-            font-weight: 300;
-        }
-    }
-}
-._generateIcons; // Launch _generateIcons
 
 
 
