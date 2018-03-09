@@ -7,7 +7,7 @@
 
 ## 3.1.0
 * Updated : FontAwesome CDN with v5.0.8
-* Updated : Normalize.css v8.0.0
+* Updated : Normalize.css v7.0.0
 * Fixed : 
     * FontAwesome 5 compatibilities (Free version) with "far", "fal", "fas", "fab" class
 
