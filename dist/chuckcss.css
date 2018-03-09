@@ -4366,6 +4366,7 @@ body.opened-modal {
 .far.icon-left,
 .fal.icon-left,
 .fas.icon-left,
+.fab.icon-left,
 [class*="ion-"].icon-left {
   margin-right: 8px;
 }
@@ -4373,6 +4374,7 @@ body.opened-modal {
 .far.icon-right,
 .fal.icon-right,
 .fas.icon-right,
+.fab.icon-right,
 [class*="ion-"].icon-right {
   margin-left: 8px;
 }

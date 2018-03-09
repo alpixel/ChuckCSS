@@ -1,0 +1,32 @@
+/*
+    == FONTAWESOME ==
+*/
+// Solid, Regular, Light, Fontawesome < 5
+.fa,
+.far,
+.fal,
+.fas {
+    font-family: @fa-typo;
+}
+// Brands
+.fab {
+    font-family: @fa-brands;
+}
+
+// Icons placement
+.fa,
+.far,
+.fal,
+.fas,
+.fab,
+[class*="ion-"] {
+    // Add a small margin to the right
+    &.icon-left {
+        margin-right: 8px;
+    }
+
+    // Add a small margin to the left
+    &.icon-right {
+        margin-left: 8px;
+    }
+}
