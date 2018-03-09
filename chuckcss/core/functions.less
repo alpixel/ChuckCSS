@@ -13,7 +13,7 @@
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._reset
     ._uppercase
-    ._fa
+    ._fa, ._fas, ._far, ._fal, ._fab
     ._io
     ._cover
     ._truncate
@@ -241,17 +241,109 @@
 /* *****
     @name : ._fa
     @description : Generate fontAwesome icon
-    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
-    @link : All icons at http://fortawesome.github.io/Font-Awesome/icons/
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa), @weight (font-weight)
+    @link : All icons at https://fontawesome.com/icons?d=gallery
 
     @exemple :
       el:before {
-        ._fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
+        ._fa('\f00c'); // An icon "fa fa-check" from FontAwesome will be displayed in the el:before element
       }
 ***** */
-._fa(@content, @size:10pt, @color:#000){
+._fa(@content, @size:10pt, @color:#000, @weight:900){
     display: inline-block;
     font-family: @fa-typo;
+    font-style: normal;
+    font-weight: @weight;
+    line-height: 1;
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:@color;
+    content:@content;
+}
+/* *****
+    @name : ._fas
+    @description : Generate a Solid fontAwesome icon
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at https://fontawesome.com/icons?d=gallery&s=solid
+
+    @exemple :
+      el:before {
+        ._fas('\f00c'); // An icon "fas fa-check" from FontAwesome will be displayed in the el:before element
+      }
+***** */
+._fas(@content, @size:10pt, @color:#000){
+    display: inline-block;
+    font-family: @fa-typo;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:@color;
+    content:@content;
+}
+/* *****
+    @name : ._far
+    @description : Generate a Regular fontAwesome icon
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at https://fontawesome.com/icons?d=gallery&s=regular
+
+    @exemple :
+      el:before {
+        ._far('\f00c'); // An icon "far fa-check" from FontAwesome will be displayed in the el:before element
+      }
+***** */
+._far(@content, @size:10pt, @color:#000){
+    display: inline-block;
+    font-family: @fa-typo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:@color;
+    content:@content;
+}
+/* *****
+    @name : ._fal
+    @description : Generate a Light fontAwesome icon (PRO ONLY)
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at https://fontawesome.com/icons?d=gallery&s=light
+
+    @exemple :
+      el:before {
+        ._fal('\f00c'); // An icon "fal fa-check" from FontAwesome will be displayed in the el:before element
+      }
+***** */
+._fal(@content, @size:10pt, @color:#000){
+    display: inline-block;
+    font-family: @fa-typo;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1;
+    font-size:@size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:@color;
+    content:@content;
+}
+/* *****
+    @name : ._fab
+    @description : Generate a Brand fontAwesome icon
+    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
+    @link : All icons at https://fontawesome.com/icons?d=gallery&s=brands
+
+    @exemple :
+      el:before {
+        ._fab('\f179'); // An icon "fab fa-appel" from FontAwesome will be displayed in the el:before element
+      }
+***** */
+._fab(@content, @size:10pt, @color:#000){
+    display: inline-block;
+    font-family: @fa-brands;
     font-style: normal;
     font-weight: normal;
     line-height: 1;

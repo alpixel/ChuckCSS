@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 3.1.2
+* Add : 
+    * New mixins for FontAwesome icons generator, regarding the font-weight (fontAwesome 5)
+
 ## 3.1.1
 * Removed : 
     * "fa-" class applied to another element but i
