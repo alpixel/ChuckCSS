@@ -1,5 +1,8 @@
 # ChuckCSS Changelog
 
+## 3.2.1
+* Fixed font-size generator mixin in generator.less file
+
 ## 3.2.0
 * Added : 
     * New mixin for Font-Size generator

@@ -7,12 +7,11 @@
 A responsive CSS framework :
 - Developed with [LESS]
 - Compiled with [Autoprefixer]
-- Including [Normalize.css], [Font-Awesome], [Ionicons]
+- Including [Normalize.css]
 
 **ChuckCSS include plenty of features :**
 * Flexbox grids
 * rem & em font units
-* FontAwesome & Ionicons (free iconics fonts)
 * Modals
 * Alerts & messages
 * Tabs
@@ -46,8 +45,6 @@ ChuckCSS is under [MIT License].
 [ChuckCSS website]: <http://chuckcss.io/>
 [open an issue on Github]: <https://github.com/alpixel/ChuckCSS/issues/new>
 [Normalize.css]: <https://necolas.github.io/normalize.css/>
-[Font-Awesome]: <http://fontawesome.io/>
-[Ionicons]: <http://ionicons.com/>
 [ALPIXEL]: <https://github.com/alpixel>
 [logo]: http://chuckcss.io/img/chuckcss-github-logo.png "ChuckCSS framework"
 [NPM]: <https://www.npmjs.com/package/ChuckCSS>
