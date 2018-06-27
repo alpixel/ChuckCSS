@@ -12,9 +12,6 @@
     ._rotate | ._scale | ._translate | ._skew
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._reset
-    ._uppercase
-    ._fa
-    ._io
     ._cover
     ._truncate
     ._btn
@@ -229,64 +226,6 @@
     padding:0;
     margin:0;
     border:0;
-}
-/* *****
-    @name : ._uppercase
-    @description : set string to uppercase
-    @wtf : just because it's boring to write the whole property
-***** */
-._uppercase() {
-    text-transform:uppercase;
-}
-/* *****
-    @name : ._fa
-    @description : Generate fontAwesome icon
-    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
-    @link : All icons at http://fortawesome.github.io/Font-Awesome/icons/
-
-    @exemple :
-      el:before {
-        ._fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
-      }
-***** */
-._fa(@content, @size:10pt, @color:#000){
-    display: inline-block;
-    font-family: @fa-typo;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size:@size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color:@color;
-    content:@content;
-}
-/* *****
-    @name : ._io
-    @description : Generate Ionicons icon
-    @params : @content (unicode from Ionicon i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
-    @link : All icons at http://ionicons.com/cheatsheet.html
-
-     @exemple :
-      el:before {
-        ._io('\f101'); // The icon "ion-alter" from Ionicons will be displayed in the el:before element
-      }
-***** */
-._io(@content, @size:10pt, @color:#000){
-    display: inline-block;
-    font-family: "Ionicons";
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    text-rendering: auto;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size:@size;
-    color:@color;
-    content:@content;
 }
 /* *****
     @name : ._cover

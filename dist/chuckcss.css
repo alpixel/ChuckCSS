@@ -11,12 +11,8 @@
 /*
     * External & Optional (but recommended) libraries
         • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
-        • fontAwesome css CDN | https://fontawesome.com/get-started/web-fonts-with-css
-        • ionicons.min.css from ionicframework | http://ionicons.com
 */
 @import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
-@import "//use.fontawesome.com/releases/v5.0.8/css/all.css";
-@import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 /*
     settings.less
 */
@@ -799,28 +795,7 @@ blockquote {
   /* Footer into Blockquote */
 }
 blockquote.cc {
-  /* Quoted blockquote */
   /* Reverse blockquote : right alignment */
-}
-blockquote.cc-quoted {
-  position: relative;
-  padding-left: 3.5em;
-}
-blockquote.cc-quoted:before {
-  position: absolute;
-  left: 11px;
-  top: 9px;
-  display: inline-block;
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #000;
-  content: '\f10e';
-  color: #29b7e1;
 }
 blockquote.cc-reverse {
   text-align: right;
@@ -828,32 +803,11 @@ blockquote.cc-reverse {
   border-left: 0;
   border-right: 4px solid #29b7e1;
 }
-blockquote.cc-reverse.cc-quoted {
-  padding-left: 0;
-  padding-right: 3.5em;
-}
-blockquote.cc-reverse.cc-quoted:before {
-  left: inherit;
-  right: 11px;
-}
 blockquote footer {
   font-style: normal;
   font-size: 80%;
   color: #bababa;
   padding-top: 1em;
-}
-blockquote footer:before {
-  display: inline-block;
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #bababa;
-  content: '\f105';
-  margin-right: 5px;
 }
 /* ******* */
 /** FORMS **/
@@ -4185,15 +4139,6 @@ body.opened-modal {
 /*
     == FONTAWESOME ==
 */
-.fa,
-.far,
-.fal,
-.fas {
-  font-family: 'Font Awesome 5 Free';
-}
-.fab {
-  font-family: 'Font Awesome 5 Brands';
-}
 .fa.icon-left,
 .far.icon-left,
 .fal.icon-left,
@@ -4219,6 +4164,7 @@ body.opened-modal {
     ._generatePaddingMarginClass
     ._generateColumns
     ._generatePercentWidth
+    ._generateFontSize
 */
 /* *****
     @name : ._generateColorsClass
@@ -6386,4 +6332,311 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-w-100 {
   width: 100%;
+}
+/* *****
+    @name : ._generateFontSize
+    @description : Generate font-size from 0rem to 10rem;
+***** */
+.cc-fs-0 {
+  font-size: 0rem;
+}
+.cc-fs-1 {
+  font-size: 0.1rem;
+}
+.cc-fs-2 {
+  font-size: 0.2rem;
+}
+.cc-fs-3 {
+  font-size: 0.3rem;
+}
+.cc-fs-4 {
+  font-size: 0.4rem;
+}
+.cc-fs-5 {
+  font-size: 0.5rem;
+}
+.cc-fs-6 {
+  font-size: 0.6rem;
+}
+.cc-fs-7 {
+  font-size: 0.7rem;
+}
+.cc-fs-8 {
+  font-size: 0.8rem;
+}
+.cc-fs-9 {
+  font-size: 0.9rem;
+}
+.cc-fs-10 {
+  font-size: 1rem;
+}
+.cc-fs-11 {
+  font-size: 1.1rem;
+}
+.cc-fs-12 {
+  font-size: 1.2rem;
+}
+.cc-fs-13 {
+  font-size: 1.3rem;
+}
+.cc-fs-14 {
+  font-size: 1.4rem;
+}
+.cc-fs-15 {
+  font-size: 1.5rem;
+}
+.cc-fs-16 {
+  font-size: 1.6rem;
+}
+.cc-fs-17 {
+  font-size: 1.7rem;
+}
+.cc-fs-18 {
+  font-size: 1.8rem;
+}
+.cc-fs-19 {
+  font-size: 1.9rem;
+}
+.cc-fs-20 {
+  font-size: 2rem;
+}
+.cc-fs-21 {
+  font-size: 2.1rem;
+}
+.cc-fs-22 {
+  font-size: 2.2rem;
+}
+.cc-fs-23 {
+  font-size: 2.3rem;
+}
+.cc-fs-24 {
+  font-size: 2.4rem;
+}
+.cc-fs-25 {
+  font-size: 2.5rem;
+}
+.cc-fs-26 {
+  font-size: 2.6rem;
+}
+.cc-fs-27 {
+  font-size: 2.7rem;
+}
+.cc-fs-28 {
+  font-size: 2.8rem;
+}
+.cc-fs-29 {
+  font-size: 2.9rem;
+}
+.cc-fs-30 {
+  font-size: 3rem;
+}
+.cc-fs-31 {
+  font-size: 3.1rem;
+}
+.cc-fs-32 {
+  font-size: 3.2rem;
+}
+.cc-fs-33 {
+  font-size: 3.3rem;
+}
+.cc-fs-34 {
+  font-size: 3.4rem;
+}
+.cc-fs-35 {
+  font-size: 3.5rem;
+}
+.cc-fs-36 {
+  font-size: 3.6rem;
+}
+.cc-fs-37 {
+  font-size: 3.7rem;
+}
+.cc-fs-38 {
+  font-size: 3.8rem;
+}
+.cc-fs-39 {
+  font-size: 3.9rem;
+}
+.cc-fs-40 {
+  font-size: 4rem;
+}
+.cc-fs-41 {
+  font-size: 4.1rem;
+}
+.cc-fs-42 {
+  font-size: 4.2rem;
+}
+.cc-fs-43 {
+  font-size: 4.3rem;
+}
+.cc-fs-44 {
+  font-size: 4.4rem;
+}
+.cc-fs-45 {
+  font-size: 4.5rem;
+}
+.cc-fs-46 {
+  font-size: 4.6rem;
+}
+.cc-fs-47 {
+  font-size: 4.7rem;
+}
+.cc-fs-48 {
+  font-size: 4.8rem;
+}
+.cc-fs-49 {
+  font-size: 4.9rem;
+}
+.cc-fs-50 {
+  font-size: 5rem;
+}
+.cc-fs-51 {
+  font-size: 5.1rem;
+}
+.cc-fs-52 {
+  font-size: 5.2rem;
+}
+.cc-fs-53 {
+  font-size: 5.3rem;
+}
+.cc-fs-54 {
+  font-size: 5.4rem;
+}
+.cc-fs-55 {
+  font-size: 5.5rem;
+}
+.cc-fs-56 {
+  font-size: 5.6rem;
+}
+.cc-fs-57 {
+  font-size: 5.7rem;
+}
+.cc-fs-58 {
+  font-size: 5.8rem;
+}
+.cc-fs-59 {
+  font-size: 5.9rem;
+}
+.cc-fs-60 {
+  font-size: 6rem;
+}
+.cc-fs-61 {
+  font-size: 6.1rem;
+}
+.cc-fs-62 {
+  font-size: 6.2rem;
+}
+.cc-fs-63 {
+  font-size: 6.3rem;
+}
+.cc-fs-64 {
+  font-size: 6.4rem;
+}
+.cc-fs-65 {
+  font-size: 6.5rem;
+}
+.cc-fs-66 {
+  font-size: 6.6rem;
+}
+.cc-fs-67 {
+  font-size: 6.7rem;
+}
+.cc-fs-68 {
+  font-size: 6.8rem;
+}
+.cc-fs-69 {
+  font-size: 6.9rem;
+}
+.cc-fs-70 {
+  font-size: 7rem;
+}
+.cc-fs-71 {
+  font-size: 7.1rem;
+}
+.cc-fs-72 {
+  font-size: 7.2rem;
+}
+.cc-fs-73 {
+  font-size: 7.3rem;
+}
+.cc-fs-74 {
+  font-size: 7.4rem;
+}
+.cc-fs-75 {
+  font-size: 7.5rem;
+}
+.cc-fs-76 {
+  font-size: 7.6rem;
+}
+.cc-fs-77 {
+  font-size: 7.7rem;
+}
+.cc-fs-78 {
+  font-size: 7.8rem;
+}
+.cc-fs-79 {
+  font-size: 7.9rem;
+}
+.cc-fs-80 {
+  font-size: 8rem;
+}
+.cc-fs-81 {
+  font-size: 8.1rem;
+}
+.cc-fs-82 {
+  font-size: 8.2rem;
+}
+.cc-fs-83 {
+  font-size: 8.3rem;
+}
+.cc-fs-84 {
+  font-size: 8.4rem;
+}
+.cc-fs-85 {
+  font-size: 8.5rem;
+}
+.cc-fs-86 {
+  font-size: 8.6rem;
+}
+.cc-fs-87 {
+  font-size: 8.7rem;
+}
+.cc-fs-88 {
+  font-size: 8.8rem;
+}
+.cc-fs-89 {
+  font-size: 8.9rem;
+}
+.cc-fs-90 {
+  font-size: 9rem;
+}
+.cc-fs-91 {
+  font-size: 9.1rem;
+}
+.cc-fs-92 {
+  font-size: 9.2rem;
+}
+.cc-fs-93 {
+  font-size: 9.3rem;
+}
+.cc-fs-94 {
+  font-size: 9.4rem;
+}
+.cc-fs-95 {
+  font-size: 9.5rem;
+}
+.cc-fs-96 {
+  font-size: 9.6rem;
+}
+.cc-fs-97 {
+  font-size: 9.7rem;
+}
+.cc-fs-98 {
+  font-size: 9.8rem;
+}
+.cc-fs-99 {
+  font-size: 9.9rem;
+}
+.cc-fs-100 {
+  font-size: 10rem;
 }

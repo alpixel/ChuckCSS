@@ -8,6 +8,7 @@
     ._generatePaddingMarginClass
     ._generateColumns
     ._generatePercentWidth
+    ._generateFontSize
 */
 
 /* *****
@@ -338,7 +339,6 @@
 
 
 
-
 /* *****
     @name : ._generateColumns
     @description : Generate columns width in flexbox parent
@@ -366,6 +366,8 @@
     ._generateColumns(@keyWord,(@iterator + 1));
 }
 
+
+
 /* *****
     @name : ._generatePercentWidth
     @description : Generate width for block helpers in %
@@ -380,3 +382,20 @@
     ._generatePercentWidth(@iterator + 5);
 }
 ._generatePercentWidth; // Launch _generatePercentWidth
+
+
+
+/* *****
+    @name : ._generateFontSize
+    @description : Generate font-size from 0rem to 10rem;
+***** */
+._generateFontSize(@iterator:0) when(@iterator <= 100) {
+    .cc {
+        &-fs-@{iterator} {
+            font-size:unit(@iterator,rem) / 10;
+        }
+    }
+
+    ._generateFontSize(@iterator + 1);
+}
+._generateFontSize; // Launch _generatePercentWidth

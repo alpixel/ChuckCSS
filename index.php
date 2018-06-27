@@ -1146,7 +1146,7 @@
             </header>
 
             <div class="main cc-helpers-txt">
-                <h3 class="title">Texts helpers (alignments, paddings, margins, colors)</h3>
+                <h3 class="title">Texts helpers (alignments, paddings, margins, colors, font-size)</h3>
 
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
@@ -1171,6 +1171,19 @@
                 </pre>
                 <p class="cc-blue cc-txt-center">I'm written in blue and centered</p>
                 <p class="cc-bg-blue">I have a blue background-color</p>
+
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;p class="cc-blue cc-txt-center">I'm written in blue and centered&lt;/p>
+                        &lt;p class="cc-bg-blue">I have a blue background-color&lt;/p>
+                    </code>
+                </pre>
+                <p class="cc-fs-10">font-size 1rem</p>
+                <p class="cc-fs-20">font-size 2rem;</p>
+                <p class="cc-fs-38">font-size 3.8rem;</p>
+
             </div>
 
             <div class="main cc-helpers-blocks">
@@ -2234,40 +2247,26 @@
 
                 <pre class="HTML">
                     <code class="language-markup">
-                        &lt;blockquote class="cc-quoted">
-                            Bacon ipsum dolor amet venison chu...
-                            &lt;footer>M. Bacon, Pig Company Manager&lt;/footer>
-                        &lt;/blockquote>
-                    </code>
-                </pre>
-                <blockquote class="cc-quoted">
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
-                    <footer>M. Bacon, Pig Company Manager</footer>
-                </blockquote>
-
-
-                <pre class="HTML">
-                    <code class="language-markup">
-                        &lt;blockquote class="cc-quoted cc-purple">
+                        &lt;blockquote class="cc-purple">
                             Bacon ipsum dolor amet venison chuc...
                             &lt;footer>M. Bacon, Pig Company Manager&lt;/footer>
                         &lt;/blockquote>
                     </code>
                 </pre>
-                <blockquote class="cc-quoted cc-purple">
+                <blockquote class="cc-purple">
                     Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
                     <footer>M. Bacon, Pig Company Manager</footer>
                 </blockquote>
 
                 <pre class="HTML">
                     <code class="language-markup">
-                        &lt;blockquote class="cc-reverse cc-quoted cc-purple">
+                        &lt;blockquote class="cc-reverse cc-purple">
                             Bacon ipsum dolor amet venison c...
                             &lt;footer>M. Bacon, Pig Company Manager&lt;/footer>
                         &lt;/blockquote>
                     </code>
                 </pre>
-                <blockquote class="cc-reverse cc-quoted cc-purple">
+                <blockquote class="cc-reverse cc-purple">
                     Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
                     <footer>M. Bacon, Pig Company Manager</footer>
                 </blockquote>

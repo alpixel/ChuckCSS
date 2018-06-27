@@ -12,20 +12,6 @@ blockquote {
     margin:1.5em 0;
 
     &.cc {
-        /* Quoted blockquote */
-        &-quoted {
-            position:relative;
-            padding-left:3.5em;
-
-            &:before {
-                position:absolute;
-                left:11px;
-                top:9px;
-                ._fa('\f10e', inherit);
-                color:@blockquotes-ic;
-            }
-        }
-
         /* Reverse blockquote : right alignment */
         &-reverse {
             text-align:right;
@@ -33,15 +19,7 @@ blockquote {
             border-left:0;
             border-right:4px solid @blockquotes-bc;
 
-            &.cc-quoted {
-                padding-left:0;
-                padding-right:3.5em;
-
-                &:before {
-                    left:inherit;
-                    right:11px;
-                }
-            }
+            
         }
     }
 
@@ -52,10 +30,5 @@ blockquote {
         font-size:80%;
         color:@blockquotes-footer-tc;
         padding-top:1em;
-
-        &:before {
-            ._fa('\f105', 100%, @blockquotes-footer-tc);
-            margin-right:5px;
-        }
     }
 }

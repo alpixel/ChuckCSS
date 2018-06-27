@@ -26,7 +26,6 @@
         "-tc" : text-color
         "-su" : success
         "-wa" : warning
-        "fa-" : fontawesome
 */
 /* ********* */
 /* VARIABLES */
@@ -73,8 +72,6 @@
 /* Texts font-size ~ Used for old browsers that doesn't support rem units */
 /* Textes font-size (applied to <body>) */
 /* Texts line-height : ~= font-size*1.5 */
-/* Change with Pro version if you use FontAwesome 5 Pro */
-/* FontAwesome Brands */
 /*
     -- @ Links @ --
 */
@@ -221,6 +218,8 @@
     @name : ._clearfix
     @description : reset floated elements
 ***** */
+@import "//use.fontawesome.com/releases/v5.1.0/css/all.css";
+@import "//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 .clearfix {
   zoom: 1;
 }
