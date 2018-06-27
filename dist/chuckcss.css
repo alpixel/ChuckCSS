@@ -799,28 +799,7 @@ blockquote {
   /* Footer into Blockquote */
 }
 blockquote.cc {
-  /* Quoted blockquote */
   /* Reverse blockquote : right alignment */
-}
-blockquote.cc-quoted {
-  position: relative;
-  padding-left: 3.5em;
-}
-blockquote.cc-quoted:before {
-  position: absolute;
-  left: 11px;
-  top: 9px;
-  display: inline-block;
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 900;
-  line-height: 1;
-  font-size: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #000;
-  content: '\f10e';
-  color: #29b7e1;
 }
 blockquote.cc-reverse {
   text-align: right;
@@ -828,32 +807,11 @@ blockquote.cc-reverse {
   border-left: 0;
   border-right: 4px solid #29b7e1;
 }
-blockquote.cc-reverse.cc-quoted {
-  padding-left: 0;
-  padding-right: 3.5em;
-}
-blockquote.cc-reverse.cc-quoted:before {
-  left: inherit;
-  right: 11px;
-}
 blockquote footer {
   font-style: normal;
   font-size: 80%;
   color: #bababa;
   padding-top: 1em;
-}
-blockquote footer:before {
-  display: inline-block;
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 900;
-  line-height: 1;
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #bababa;
-  content: '\f105';
-  margin-right: 5px;
 }
 /* ******* */
 /** FORMS **/
@@ -1341,8 +1299,8 @@ form button[type="submit"] {
   vertical-align: middle;
   box-shadow: none;
   border-radius: 2px;
-  transition: 0.2s all ease-out 0s;
   text-transform: uppercase;
+  transition: 0.2s all ease-out 0s;
   background-color: #29b7e1;
   /* If Hover is specified */
   /* else */
@@ -4185,15 +4143,6 @@ body.opened-modal {
 /*
     == FONTAWESOME ==
 */
-.fa,
-.far,
-.fal,
-.fas {
-  font-family: 'Font Awesome 5 Free';
-}
-.fab {
-  font-family: 'Font Awesome 5 Brands';
-}
 .fa.icon-left,
 .far.icon-left,
 .fal.icon-left,
@@ -4219,6 +4168,7 @@ body.opened-modal {
     ._generatePaddingMarginClass
     ._generateColumns
     ._generatePercentWidth
+    ._generateFontSize
 */
 /* *****
     @name : ._generateColorsClass
@@ -6386,4 +6336,71 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-w-100 {
   width: 100%;
+}
+/* *****
+    @name : ._generateFontSize
+    @description : Generate font-size from 0 to 10rem (0.1, 0.2, 0.3... rem)
+***** */
+.cc-fs-0 {
+  font-size: 0rem;
+}
+.cc-fs-5 {
+  font-size: 0.5rem;
+}
+.cc-fs-10 {
+  font-size: 1rem;
+}
+.cc-fs-15 {
+  font-size: 1.5rem;
+}
+.cc-fs-20 {
+  font-size: 2rem;
+}
+.cc-fs-25 {
+  font-size: 2.5rem;
+}
+.cc-fs-30 {
+  font-size: 3rem;
+}
+.cc-fs-35 {
+  font-size: 3.5rem;
+}
+.cc-fs-40 {
+  font-size: 4rem;
+}
+.cc-fs-45 {
+  font-size: 4.5rem;
+}
+.cc-fs-50 {
+  font-size: 5rem;
+}
+.cc-fs-55 {
+  font-size: 5.5rem;
+}
+.cc-fs-60 {
+  font-size: 6rem;
+}
+.cc-fs-65 {
+  font-size: 6.5rem;
+}
+.cc-fs-70 {
+  font-size: 7rem;
+}
+.cc-fs-75 {
+  font-size: 7.5rem;
+}
+.cc-fs-80 {
+  font-size: 8rem;
+}
+.cc-fs-85 {
+  font-size: 8.5rem;
+}
+.cc-fs-90 {
+  font-size: 9rem;
+}
+.cc-fs-95 {
+  font-size: 9.5rem;
+}
+.cc-fs-100 {
+  font-size: 10rem;
 }

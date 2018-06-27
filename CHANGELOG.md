@@ -1,13 +1,23 @@
 # ChuckCSS Changelog
 
+## 3.2.0
+* Added : 
+    * New mixin for Font-Size generator
+    * "cc-fs-X" class for font-size (from 0rem to 10rem with increments of 0.1rem)
+* Removed : 
+    * FontAwesome and Ionicons CDN in front.less (you have to include FA and/or Ionicons by yourself)
+    * mixins : "fa()", "io()", "uppercase()" in functions.less
+    * "cc-quoted" class for blockquotes
+* Updated : Normalize.css v8.0.0
+
 ## 3.1.2
-* Add : 
+* Added : 
     * New mixins for FontAwesome icons generator, regarding the font-weight (fontAwesome 5)
 
 ## 3.1.1
 * Removed : 
     * "fa-" class applied to another element but i
-    * "._generateIcons" mixin in generator.less
+    * "generateIcons" mixin in generator.less
 
 ## 3.1.0
 * Updated : FontAwesome CDN with v5.0.8
