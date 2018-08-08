@@ -1146,7 +1146,7 @@
             </header>
 
             <div class="main cc-helpers-txt">
-                <h3 class="title">Texts helpers (alignments, paddings, margins, colors, font-size)</h3>
+                <h3 class="title">Texts helpers (alignments, paddings, margins, colors, font-size, font-weight)</h3>
 
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
@@ -1175,14 +1175,44 @@
 
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
-                        &lt;!-- -->
-                        &lt;p class="cc-blue cc-txt-center">I'm written in blue and centered&lt;/p>
-                        &lt;p class="cc-bg-blue">I have a blue background-color&lt;/p>
+                        &lt;!-- Font-size -->
+                        &lt;p class="cc-fs-10">font-size 1rem&lt;/p>
+                        &lt;p class="cc-fs-20">font-size 2rem;&lt;/p>
+                        &lt;p class="cc-fs-38">font-size 3.8rem;&lt;/p>
                     </code>
                 </pre>
+
+
                 <p class="cc-fs-10">font-size 1rem</p>
                 <p class="cc-fs-20">font-size 2rem;</p>
                 <p class="cc-fs-38">font-size 3.8rem;</p>
+
+
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- Font-weight -->
+                        &lt;p class="cc-fw-100">font-weight 100&lt;/p>
+                        &lt;p class="cc-fw-200">font-size 200&lt;/p>
+                        &lt;p class="cc-fw-300">font-size 300&lt;/p>
+                        &lt;p class="cc-fw-400">font-weight 400&lt;/p>
+                        &lt;p class="cc-fw-500">font-size 500&lt;/p>
+                        &lt;p class="cc-fw-600">font-size 600&lt;/p>
+                        &lt;p class="cc-fw-700">font-weight 700&lt;/p>
+                        &lt;p class="cc-fw-800">font-size 800&lt;/p>
+                        &lt;p class="cc-fw-900">font-size 900&lt;/p>
+                    </code>
+                </pre>
+
+
+                <p class="cc-fw-100">font-weight 100</p>
+                <p class="cc-fw-200">font-size 200</p>
+                <p class="cc-fw-300">font-size 300</p>
+                <p class="cc-fw-400">font-weight 400</p>
+                <p class="cc-fw-500">font-size 500</p>
+                <p class="cc-fw-600">font-size 600</p>
+                <p class="cc-fw-700">font-weight 700</p>
+                <p class="cc-fw-800">font-size 800</p>
+                <p class="cc-fw-900">font-size 900</p>
 
             </div>
 
@@ -1362,7 +1392,7 @@
                 </div>
             </div>
 
-            <div class="main cc-fontawesome active">
+            <div class="main cc-fontawesome">
                 <h3 class="title">Work with FontAwesome</h3>
 
                 <div class="columns">

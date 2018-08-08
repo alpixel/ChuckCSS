@@ -119,7 +119,6 @@
     -- @ Blockquotes @ --
 */
 /* Blockquote ~ border-left color */
-/* Blockquote ~ FontAwesome icon color (only for <blockquote.quoted>) */
 /* Blockquote ~ footer text-color */
 /*
     -- @ Alerts @ --
@@ -199,9 +198,6 @@
     ._rotate | ._scale | ._translate | ._skew
     ._filter (grayscale, blur, sepia, etc..) | all CSS3 "filter" properties
     ._reset
-    ._uppercase
-    ._fa
-    ._io
     ._cover
     ._truncate
     ._btn
@@ -348,33 +344,6 @@
     @exemple :
       el {
         ._reset; // Let be safe that <el> has no border, no padding, mo margin
-      }
-***** */
-/* *****
-    @name : ._uppercase
-    @description : set string to uppercase
-    @wtf : just because it's boring to write the whole property
-***** */
-/* *****
-    @name : ._fa
-    @description : Generate fontAwesome icon
-    @params : @content (unicode from FontAwesome : i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
-    @link : All icons at http://fortawesome.github.io/Font-Awesome/icons/
-
-    @exemple :
-      el:before {
-        ._fa('\f00c'); // An icon "fa-check" from FontAwesome will be displayed in the el:before element
-      }
-***** */
-/* *****
-    @name : ._io
-    @description : Generate Ionicons icon
-    @params : @content (unicode from Ionicon i.e. '\f0d0'), @size (px, pt, etc...), @color (rgba, hexa)
-    @link : All icons at http://ionicons.com/cheatsheet.html
-
-     @exemple :
-      el:before {
-        ._io('\f101'); // The icon "ion-alter" from Ionicons will be displayed in the el:before element
       }
 ***** */
 /* *****
