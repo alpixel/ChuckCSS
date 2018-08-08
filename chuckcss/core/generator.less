@@ -9,6 +9,7 @@
     ._generateColumns
     ._generatePercentWidth
     ._generateFontSize
+    ._generateFontWeight
 */
 
 /* *****
@@ -36,6 +37,10 @@
             &-bg-@{colorName} {
                 color:white;
                 background-color:@colorValue;
+
+                a:not(.btn) {
+                    color: white;
+                }
 
                 // Badges
                 .badge {
@@ -399,3 +404,19 @@
     ._generateFontSize(@iterator + 1);
 }
 ._generateFontSize; // Launch _generateFontSize
+
+
+/* *****
+    @name : ._generateFontWeight
+    @description : Generate font-weight from 100 to 900
+***** */
+._generateFontWeight(@iterator:100) when(@iterator <= 900) {
+    .cc {
+        &-fw-@{iterator} {
+            font-weight:@iterator;
+        }
+    }
+
+    ._generateFontWeight(@iterator + 100);
+}
+._generateFontWeight; // Launch _generateFontWeight

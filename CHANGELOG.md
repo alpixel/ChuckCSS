@@ -1,5 +1,15 @@
 # ChuckCSS Changelog
 
+
+## 3.2.2
+* Added : 
+    * New mixin for Font-Weight generator
+    * "cc-fw-X" class for font-weight (from 100 to 900 with increments of 100)
+* Removed : 
+    * "@blockquotes-ic" var in settings.less file
+* Fixed : 
+    * HTMl links - a:not(.btn) - are white written if they are included into a bg-colorized parent.
+
 ## 3.2.1
 * Fixed font-size generator mixin in generator.less file
 

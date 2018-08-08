@@ -4165,6 +4165,7 @@ body.opened-modal {
     ._generateColumns
     ._generatePercentWidth
     ._generateFontSize
+    ._generateFontWeight
 */
 /* *****
     @name : ._generateColorsClass
@@ -4229,6 +4230,25 @@ i.cc-bg-primary,
 a.cc-bg-primary {
   color: white;
   background-color: #29b7e1;
+}
+h1.cc-bg-primary a:not(.btn),
+h2.cc-bg-primary a:not(.btn),
+h3.cc-bg-primary a:not(.btn),
+h4.cc-bg-primary a:not(.btn),
+h5.cc-bg-primary a:not(.btn),
+h6.cc-bg-primary a:not(.btn),
+p.cc-bg-primary a:not(.btn),
+div.cc-bg-primary a:not(.btn),
+section.cc-bg-primary a:not(.btn),
+aside.cc-bg-primary a:not(.btn),
+header.cc-bg-primary a:not(.btn),
+footer.cc-bg-primary a:not(.btn),
+article.cc-bg-primary a:not(.btn),
+main.cc-bg-primary a:not(.btn),
+span.cc-bg-primary a:not(.btn),
+i.cc-bg-primary a:not(.btn),
+a.cc-bg-primary a:not(.btn) {
+  color: white;
 }
 h1.cc-bg-primary .badge,
 h2.cc-bg-primary .badge,
@@ -4481,6 +4501,25 @@ a.cc-bg-green {
   color: white;
   background-color: #80ae37;
 }
+h1.cc-bg-green a:not(.btn),
+h2.cc-bg-green a:not(.btn),
+h3.cc-bg-green a:not(.btn),
+h4.cc-bg-green a:not(.btn),
+h5.cc-bg-green a:not(.btn),
+h6.cc-bg-green a:not(.btn),
+p.cc-bg-green a:not(.btn),
+div.cc-bg-green a:not(.btn),
+section.cc-bg-green a:not(.btn),
+aside.cc-bg-green a:not(.btn),
+header.cc-bg-green a:not(.btn),
+footer.cc-bg-green a:not(.btn),
+article.cc-bg-green a:not(.btn),
+main.cc-bg-green a:not(.btn),
+span.cc-bg-green a:not(.btn),
+i.cc-bg-green a:not(.btn),
+a.cc-bg-green a:not(.btn) {
+  color: white;
+}
 h1.cc-bg-green .badge,
 h2.cc-bg-green .badge,
 h3.cc-bg-green .badge,
@@ -4731,6 +4770,25 @@ i.cc-bg-red,
 a.cc-bg-red {
   color: white;
   background-color: #c41515;
+}
+h1.cc-bg-red a:not(.btn),
+h2.cc-bg-red a:not(.btn),
+h3.cc-bg-red a:not(.btn),
+h4.cc-bg-red a:not(.btn),
+h5.cc-bg-red a:not(.btn),
+h6.cc-bg-red a:not(.btn),
+p.cc-bg-red a:not(.btn),
+div.cc-bg-red a:not(.btn),
+section.cc-bg-red a:not(.btn),
+aside.cc-bg-red a:not(.btn),
+header.cc-bg-red a:not(.btn),
+footer.cc-bg-red a:not(.btn),
+article.cc-bg-red a:not(.btn),
+main.cc-bg-red a:not(.btn),
+span.cc-bg-red a:not(.btn),
+i.cc-bg-red a:not(.btn),
+a.cc-bg-red a:not(.btn) {
+  color: white;
 }
 h1.cc-bg-red .badge,
 h2.cc-bg-red .badge,
@@ -4983,6 +5041,25 @@ a.cc-bg-blue {
   color: white;
   background-color: #3498db;
 }
+h1.cc-bg-blue a:not(.btn),
+h2.cc-bg-blue a:not(.btn),
+h3.cc-bg-blue a:not(.btn),
+h4.cc-bg-blue a:not(.btn),
+h5.cc-bg-blue a:not(.btn),
+h6.cc-bg-blue a:not(.btn),
+p.cc-bg-blue a:not(.btn),
+div.cc-bg-blue a:not(.btn),
+section.cc-bg-blue a:not(.btn),
+aside.cc-bg-blue a:not(.btn),
+header.cc-bg-blue a:not(.btn),
+footer.cc-bg-blue a:not(.btn),
+article.cc-bg-blue a:not(.btn),
+main.cc-bg-blue a:not(.btn),
+span.cc-bg-blue a:not(.btn),
+i.cc-bg-blue a:not(.btn),
+a.cc-bg-blue a:not(.btn) {
+  color: white;
+}
 h1.cc-bg-blue .badge,
 h2.cc-bg-blue .badge,
 h3.cc-bg-blue .badge,
@@ -5233,6 +5310,25 @@ i.cc-bg-purple,
 a.cc-bg-purple {
   color: white;
   background-color: #8e44ad;
+}
+h1.cc-bg-purple a:not(.btn),
+h2.cc-bg-purple a:not(.btn),
+h3.cc-bg-purple a:not(.btn),
+h4.cc-bg-purple a:not(.btn),
+h5.cc-bg-purple a:not(.btn),
+h6.cc-bg-purple a:not(.btn),
+p.cc-bg-purple a:not(.btn),
+div.cc-bg-purple a:not(.btn),
+section.cc-bg-purple a:not(.btn),
+aside.cc-bg-purple a:not(.btn),
+header.cc-bg-purple a:not(.btn),
+footer.cc-bg-purple a:not(.btn),
+article.cc-bg-purple a:not(.btn),
+main.cc-bg-purple a:not(.btn),
+span.cc-bg-purple a:not(.btn),
+i.cc-bg-purple a:not(.btn),
+a.cc-bg-purple a:not(.btn) {
+  color: white;
 }
 h1.cc-bg-purple .badge,
 h2.cc-bg-purple .badge,
@@ -5485,6 +5581,25 @@ a.cc-bg-orange {
   color: white;
   background-color: #f39c12;
 }
+h1.cc-bg-orange a:not(.btn),
+h2.cc-bg-orange a:not(.btn),
+h3.cc-bg-orange a:not(.btn),
+h4.cc-bg-orange a:not(.btn),
+h5.cc-bg-orange a:not(.btn),
+h6.cc-bg-orange a:not(.btn),
+p.cc-bg-orange a:not(.btn),
+div.cc-bg-orange a:not(.btn),
+section.cc-bg-orange a:not(.btn),
+aside.cc-bg-orange a:not(.btn),
+header.cc-bg-orange a:not(.btn),
+footer.cc-bg-orange a:not(.btn),
+article.cc-bg-orange a:not(.btn),
+main.cc-bg-orange a:not(.btn),
+span.cc-bg-orange a:not(.btn),
+i.cc-bg-orange a:not(.btn),
+a.cc-bg-orange a:not(.btn) {
+  color: white;
+}
 h1.cc-bg-orange .badge,
 h2.cc-bg-orange .badge,
 h3.cc-bg-orange .badge,
@@ -5735,6 +5850,25 @@ i.cc-bg-yellow,
 a.cc-bg-yellow {
   color: white;
   background-color: #f1c40f;
+}
+h1.cc-bg-yellow a:not(.btn),
+h2.cc-bg-yellow a:not(.btn),
+h3.cc-bg-yellow a:not(.btn),
+h4.cc-bg-yellow a:not(.btn),
+h5.cc-bg-yellow a:not(.btn),
+h6.cc-bg-yellow a:not(.btn),
+p.cc-bg-yellow a:not(.btn),
+div.cc-bg-yellow a:not(.btn),
+section.cc-bg-yellow a:not(.btn),
+aside.cc-bg-yellow a:not(.btn),
+header.cc-bg-yellow a:not(.btn),
+footer.cc-bg-yellow a:not(.btn),
+article.cc-bg-yellow a:not(.btn),
+main.cc-bg-yellow a:not(.btn),
+span.cc-bg-yellow a:not(.btn),
+i.cc-bg-yellow a:not(.btn),
+a.cc-bg-yellow a:not(.btn) {
+  color: white;
 }
 h1.cc-bg-yellow .badge,
 h2.cc-bg-yellow .badge,
@@ -6639,4 +6773,35 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-fs-100 {
   font-size: 10rem;
+}
+/* *****
+    @name : ._generateFontWeight
+    @description : Generate font-weight from 100 to 900
+***** */
+.cc-fw-100 {
+  font-weight: 100;
+}
+.cc-fw-200 {
+  font-weight: 200;
+}
+.cc-fw-300 {
+  font-weight: 300;
+}
+.cc-fw-400 {
+  font-weight: 400;
+}
+.cc-fw-500 {
+  font-weight: 500;
+}
+.cc-fw-600 {
+  font-weight: 600;
+}
+.cc-fw-700 {
+  font-weight: 700;
+}
+.cc-fw-800 {
+  font-weight: 800;
+}
+.cc-fw-900 {
+  font-weight: 900;
 }
