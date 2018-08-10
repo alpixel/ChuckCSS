@@ -132,16 +132,18 @@
         &.cc-bg-@{colorName} {
             color:@links-btn-tc;
             ._btn(@colorValue);
-            border-color:@colorValue;
+            // border-color:@colorValue;
 
             &:hover {
                 color:@links-btn-hover-tc;
-                border-color:@colorValue;
+                // border-color:@colorValue;
             }
 
-            /* Loading buttons : show white loader */
-            &.cc-loading:before {
-                border-color:white rgba(255,255,255,0.2) rgba(255,255,255,0.2) rgba(255,255,255,0.2);
+            /* Loading + outlined buttons */
+            &.cc-loading {
+                &:before {
+                    border-color: transparent white white white
+                }
             }
 
             /* Outlined buttons / links */
@@ -160,7 +162,7 @@
                     color:transparent;
 
                     &:before {
-                        border-color: @colorValue lighten(@colorValue,30%) lighten(@colorValue,30%) lighten(@colorValue,30%);
+                        border-color: transparent @colorValue @colorValue @colorValue;
                     }
                 }
             }

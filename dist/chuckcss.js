@@ -4,7 +4,7 @@
         /*!
             -- @ Close alerts @ --
         */
-        $('.alert .close').on('click',function(e){
+        $(document).on('click', '.alert .close', function(e){
             e.preventDefault();
 
             $(this).parent().fadeOut(500,function(){
@@ -17,30 +17,67 @@
             -- @ Modals @ --
         */
         /* Open modal */
-        $('.modal-open').on('click',function(e){
+        $(document).on('click', '.modal-open',function(e){
             e.preventDefault();
 
-            var modal = $(this).data('target');
+            var 
+                modalId = $(this).data('target'),
+                $modal = $('#'+modalId);
 
-            if($('#'+modal).length) {
+            if($modal.length) {
+
                 $('html,body').addClass('opened-modal');
-                $('#'+modal).addClass('active');
+                $modal.addClass('active');
+
+                // Callback
+                $modal.trigger('cc.modal.open');
             } else {
-                alert('ChuckCSS error : modal with attribute id="'+modal+'" does not exist!');
+                alert('ChuckCSS error : modal with attribute id="'+modalId+'" does not exist!');
             }
         });
+        
         /* Close modal */
-        $('.modal:not([data-disabled-overlay])')
-            .find('.modal-overlay')
-            .add('.modal *[data-close-modal]')
-            .on('click',function(e) {
+        $(document).on('click', '.modal:not([data-disabled-overlay]) .modal-overlay, .modal *[data-close-modal]', function(e) {
                 e.preventDefault();
 
-                if($(this).parents('.modal').hasClass('active'))
-                    $(this).parents('.modal').removeClass('active');
+                var $modal = $(this).parents('.modal');
+
+
+                if($modal.hasClass('active'))
+                    $modal.removeClass('active');
 
                 if(!$('.modal.active').length)
                     $('html,body').removeClass('opened-modal');
+
+                // Callback
+                $modal.trigger('cc.modal.close');
+            });
+
+
+        /* Modal callback */
+        /* 
+            EXEMPLES ONLY
+            -- Bind your own modal callback by changing the selector
+        */
+        $('#modal-id-small')
+            .on('cc.modal.open', function(){
+                // alert('modal small open');
+                // Do something...
+            })
+            .on('cc.modal.close', function(){
+                // alert('modal small close');
+                // Do something...
+            });
+
+        // Modal callback
+        $('#modal-id-large')
+            .on('cc.modal.open', function(){
+                // alert('modal large open');
+                // Do something...
+            })
+            .on('cc.modal.close', function(){
+                // alert('modal large closed');
+                // Do something...
             });
 
 

@@ -9,23 +9,25 @@
         "-br" : border-radius
         "-bw" : border-width
         "-da" : dark (colors only)
-        "-er" : error
-        "-fs" : font-size (fonts only)
-        "-he" : height
-        "-ic" : icon color
-        "-in" : info
-        "-lh" : line-height
         "-li" : light (colors only)
+        "-na" : name (colors only)
+        "-fs" : font-size (fonts only)
+        "-ic" : icon color
+        "-he" : height
+        "-wi" : width
+        "-lh" : line-height
         "-ma" : margin (for grid containers, and helpers paddings and margins)
-        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-mc" : main-color
         "-mw" : max-width (media queries)
-        "-na" : name (colors only)
         "-pa" : padding (for grid columns, and helpers paddings and margins)
+        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
-        "-su" : success
-        "-wa" : warning
+        "-in" : info (alerts / messages)
+        "-er" : error (alerts / messages)
+        "-su" : success (alerts / messages)
+        "-wa" : warning (alerts / messages)
+        "-pr" : primary (alerts / messages)
 */
 /* ********* */
 /* VARIABLES */
@@ -121,7 +123,7 @@
 /* Blockquote ~ border-left color */
 /* Blockquote ~ footer text-color */
 /*
-    -- @ Alerts @ --
+    -- @ Alerts / Messages @ --
 */
 /* primary */
 /* success */
@@ -154,6 +156,16 @@
 /* Used for helpers cc-mar */
 /* Used for helpers cc-mab */
 /* Used for helpers cc-mal */
+/*
+    -- @ Lists @ --
+*/
+/* Padding-left applied onto the <li>, in pixels */
+/* Dot background-color */
+/* Dot width, in pixel */
+/* Dot height, in pixel */
+/* Dot height, in pixel */
+/* Dot top position, in pixel */
+/* Dot left position, in pixel */
 /*
     -- @ Loader @ --
 */
@@ -446,7 +458,8 @@ body.test > section {
   background-color: white;
   padding: 30px;
   margin-bottom: 50px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   /* header */
   /* content */
 }

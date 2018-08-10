@@ -9,23 +9,25 @@
         "-br" : border-radius
         "-bw" : border-width
         "-da" : dark (colors only)
-        "-er" : error
-        "-fs" : font-size (fonts only)
-        "-he" : height
-        "-ic" : icon color
-        "-in" : info
-        "-lh" : line-height
         "-li" : light (colors only)
+        "-na" : name (colors only)
+        "-fs" : font-size (fonts only)
+        "-ic" : icon color
+        "-he" : height
+        "-wi" : width
+        "-lh" : line-height
         "-ma" : margin (for grid containers, and helpers paddings and margins)
-        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-mc" : main-color
         "-mw" : max-width (media queries)
-        "-na" : name (colors only)
         "-pa" : padding (for grid columns, and helpers paddings and margins)
+        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
-        "-su" : success
-        "-wa" : warning
+        "-in" : info (alerts / messages)
+        "-er" : error (alerts / messages)
+        "-su" : success (alerts / messages)
+        "-wa" : warning (alerts / messages)
+        "-pr" : primary (alerts / messages)
 */
 
 
@@ -115,7 +117,6 @@
 
 
 
-
 /*
     -- @ Links @ --
 */
@@ -199,9 +200,9 @@
 
 
 /*
-    -- @ Alerts @ --
+    -- @ Alerts / Messages @ --
 */
-@alert-br : 2; // Alerts border-radius (in pixel)
+@alert-br : 2; // Alerts / messages border-radius (in pixel)
 /* primary */
 @alert-pr-bg : lighten(@primary,38%);
 @alert-pr-bc : lighten(@primary,30%);
@@ -257,6 +258,21 @@
 @helper-mar : 1em;     /* Used for helpers cc-mar */
 @helper-mab : 1em;     /* Used for helpers cc-mab */
 @helper-mal : 1em;     /* Used for helpers cc-mal */
+
+
+
+/*
+    -- @ Lists @ --
+*/
+// Dotted lists
+@list-dot-pal: 15;       /* Padding-left applied onto the <li>, in pixels */
+@list-dot-bg : @primary; /* Dot background-color */
+@list-dot-wi : 6;        /* Dot width, in pixel */
+@list-dot-he : 6;        /* Dot height, in pixel */
+@list-dot-br : 100%;        /* Dot height, in pixel */
+@list-dot-top : 9;       /* Dot top position, in pixel */
+@list-dot-left : 0;      /* Dot left position, in pixel */
+
 
 
 

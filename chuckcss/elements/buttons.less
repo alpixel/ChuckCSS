@@ -38,7 +38,6 @@ button {
     vertical-align:middle;
     border-radius:unit(@links-btn-br,px);
     cursor:pointer;
-    ._btn(white, white);
     ._transition;
 
     &:focus,
@@ -65,6 +64,7 @@ button {
                     height: 10px;
                     margin-top:-5px;
                     margin-left:-5px;
+                    border-width: 1px;
                 }
             }
         }
@@ -109,11 +109,12 @@ button {
 
             &:before {
                 display:block;
-                border:2px solid @gray-li;
-                border-top-color: @gray-li;
-                border-right-color: lighten(@gray-li,50%);
-                border-bottom-color: lighten(@gray-li,50%);
-                border-left-color: lighten(@gray-li,50%);
+                border-width:2px;
+                border-style: solid;
+                border-top-color: transparent;
+                border-right-color: @gray-li;
+                border-bottom-color: @gray-li;
+                border-left-color: @gray-li;
                 border-radius :50%;
                 content: " ";
                 width: 16px;

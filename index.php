@@ -1045,7 +1045,7 @@
                 </div>
             </div>
 
-            <div class="main cc-modals">
+            <div class="main cc-modals active">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -2124,6 +2124,32 @@
                     </code>
                 </pre>
                 <ul class="cc-unstyled">
+                    <li>
+                        Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                    </li>
+                    <li>
+                        Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                    </li>
+                    <li>
+                        Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
+                    </li>
+                </ul>
+
+                <pre class="HTML">
+                    <code class="language-markup">&lt;ul class="cc-dotted">
+                            &lt;li>
+                                Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                            &lt;/li>
+                            &lt;li>
+                                Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                            &lt;/li>
+                            &lt;li>
+                                Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
+                            &lt;/li>
+                        &lt;/ul>
+                    </code>
+                </pre>
+                <ul class="cc-dotted">
                     <li>
                         Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
                     </li>
@@ -4282,8 +4308,10 @@
                             &lt;a href="#" class="btn cc-bg-primary cc-loading">Classic loading blue link&lt;/a>
                             &lt;a href="#" class="btn cc-bg-blue cc-loading">Classic loading blue link&lt;/a>
                             &lt;a href="#" class="btn cc-bg-red cc-loading">Classic loading red link&lt;/a>
+                            &lt;a href="#" class="btn cc-loading">Classic loading link&lt;/a>
                         &lt;/p>
                         &lt;p>
+                            &lt;button class="cc-loading">Button&lt;/button>
                             &lt;button class="cc-bg-primary cc-loading">Button&lt;/button>
                             &lt;button class="cc-bg-red cc-loading">Button&lt;/button>
                             &lt;button class="cc-bg-green cc-thin cc-loading">Button&lt;/button>
@@ -4307,8 +4335,14 @@
                     <a href="#" class="btn cc-bg-primary cc-loading">Classic loading blue link</a>
                     <a href="#" class="btn cc-bg-blue cc-loading">Classic loading blue link</a>
                     <a href="#" class="btn cc-bg-red cc-loading">Classic loading red link</a>
+                    <a href="#" class="btn cc-loading">Classic loading link</a>
+                    <a href="#" class="btn cc-fat cc-loading">Classic loading link</a>
+                    <a href="#" class="btn cc-thin cc-loading">Classic loading link</a>
                 </p>
                 <p>
+                    <button class="cc-loading cc-thin">Button</button>
+                    <button class="cc-loading">Button</button>
+                    <button class="cc-loading cc-fat">Button</button>
                     <button class="cc-bg-primary cc-loading">Button</button>
                     <button class="cc-bg-red cc-loading">Button</button>
                     <button class="cc-bg-green cc-thin cc-loading">Button</button>
