@@ -9,24 +9,23 @@
         "-br" : border-radius
         "-bw" : border-width
         "-da" : dark (colors only)
-        "-er" : error
-        "-fs" : font-size (fonts only)
-        "-he" : height
-        "-ic" : icon color
-        "-in" : info
-        "-lh" : line-height
         "-li" : light (colors only)
+        "-na" : name (colors only)
+        "-fs" : font-size (fonts only)
+        "-ic" : icon color
+        "-he" : height
+        "-lh" : line-height
         "-ma" : margin (for grid containers, and helpers paddings and margins)
-        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-mc" : main-color
         "-mw" : max-width (media queries)
-        "-na" : name (colors only)
         "-pa" : padding (for grid columns, and helpers paddings and margins)
+        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
+        "-in" : info
+        "-er" : error
         "-su" : success
         "-wa" : warning
-        "fa-" : fontawesome
 */
 
 
@@ -113,8 +112,6 @@
 @text-fs-old : 15px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
 @text-fs: unit(@text-fs-old/10,rem);    /* Textes font-size (applied to <body>) */
 @text-lh : 1.5;                         /* Texts line-height : ~= font-size*1.5 */
-@fa-typo : 'Font Awesome 5 Free';       /* Change with Pro version if you use FontAwesome 5 Pro */
-@fa-brands : 'Font Awesome 5 Brands';   /* FontAwesome Brands */
 
 
 

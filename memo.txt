@@ -14,7 +14,7 @@ How to Update ChuckCSS on NPM, GIT
 
 6. git push origin BRANCH && git push --tags
 
-7. npm publish
+7. npm publish (you must be logged to a npm account with command 'npm login')
 
 
 
