@@ -279,16 +279,19 @@
     @bgHover : darken(@bg,10%);
 
     &:hover {
-        background-color:@bgHover;
+        background-color: @bgHover;
+        border-color: @bgHover;
     }
 }
 ._btn(@bg : @primary, @bgHover :~'') when (iscolor(@bg)) {
     background-color:@bg;
+    border-color: @bg;
 
     /* If Hover is specified */
     & when (iscolor(@bgHover)) {
         &:hover {
-            background-color:@bgHover;
+            background-color: @bgHover;
+            border-color: @bgHover;
         }
     }
     /* else */

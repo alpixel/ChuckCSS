@@ -1,13 +1,16 @@
 # ChuckCSS Changelog
 
 
+## 3.2.3
+* Added: `cc-dotted` for dotted lists
+
 ## 3.2.2
-* Added : 
+* Added :
     * New mixin for Font-Weight generator
     * "cc-fw-X" class for font-weight (from 100 to 900 with increments of 100)
-* Removed : 
+* Removed :
     * "@blockquotes-ic" var in settings.less file
-* Fixed : 
+* Fixed :
     * HTMl links - a:not(.btn) - are white written if they are included into a bg-colorized parent.
 
 ## 3.2.1
@@ -17,7 +20,7 @@
 * Added : 
     * New mixin for Font-Size generator
     * "cc-fs-X" class for font-size (from 0rem to 10rem with increments of 0.1rem)
-* Removed : 
+* Removed :
     * FontAwesome and Ionicons CDN in front.less (you have to include FA and/or Ionicons by yourself)
     * mixins : "fa()", "io()", "uppercase()" in functions.less
     * "cc-quoted" class for blockquotes

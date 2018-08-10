@@ -5,6 +5,11 @@ html {
     font-size:62.5%;
     font-size:~'calc(1em*0.625)';
     overflow-x: hidden;
+
+    // Phone menu
+    &.opened-menu {
+        overflow: hidden !important;
+    }
 }
 
 body {
@@ -24,8 +29,24 @@ body {
         box-sizing:border-box;
     }
 
-    // Affix - Override Bootstrap CSS
-    &.affix { position:relative; }
+    // Phone menu
+    &.opened-menu {
+        overflow-y: hidden
+    }
+
+    // Dev environment
+    // Debug links
+    // a[href="GOTOLINK"],
+    // a[href="#"] {
+    //     &:not(.btn) {
+    //         color:red !important;
+    //     }
+
+    //     &.btn {
+    //         color: white;
+    //         ._btn(@red) !important;
+    //     }
+    // }
 }
 
 div,dl,dd,dt,p,ul,li,ol {
