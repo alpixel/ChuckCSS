@@ -1,12 +1,11 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var shell = require('gulp-shell');
-var cssnano = require('gulp-cssnano');
 var watch = require('gulp-watch');
 var rename = require('gulp-rename');
-var concat = require('gulp-concat');
-var gutil = require('gulp-util');
-var autoprefixer = require('gulp-autoprefixer');
+var plumber = require('gulp-plumber');
+var cssnano = require('gulp-cssnano');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 
 /*
@@ -14,23 +13,19 @@ var autoprefixer = require('gulp-autoprefixer');
 */
 gulp.task('chuckcss_minify_less', function() {
     gulp.src('chuckcss/front.less')
+        .pipe(plumber())
         .pipe(less())
-        .pipe(cssnano({
-            'postcss-minify-font-values': true
-        }))
-        .pipe(autoprefixer({
-            browsers:"> 1%, last 2 versions, Safari >= 8"
-        }))
+        .pipe(cssnano())
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(rename({basename: 'chuckcss', suffix: '.min'}))
         .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('chuckcss_less', function() {
     gulp.src('chuckcss/front.less')
+        .pipe(plumber())
         .pipe(less())
-        .pipe(autoprefixer({
-            browsers:"> 1%, last 2 versions, Safari >= 8"
-        }))
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(rename({basename: 'chuckcss'}))
         .pipe(gulp.dest('dist/'));
 });
@@ -40,13 +35,10 @@ gulp.task('chuckcss_less', function() {
 */
 gulp.task('chuckcss_print', function() {
     gulp.src('chuckcss/print.less')
+        .pipe(plumber())
         .pipe(less())
-        .pipe(cssnano({
-            'postcss-minify-font-values': true
-        }))
-        .pipe(autoprefixer({
-            browsers:"> 1%, last 2 versions, Safari >= 8"
-        }))
+        .pipe(cssnano())
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(rename({basename: 'print'}))
         .pipe(gulp.dest('dist/'));
 });
@@ -56,13 +48,10 @@ gulp.task('chuckcss_print', function() {
 */
 gulp.task('test', function() {
     gulp.src('tests/test.less')
+        .pipe(plumber())
         .pipe(less())
-        // .pipe(cssnano({
-        //     'postcss-minify-font-values': true
-        // }))
-        .pipe(autoprefixer({
-            browsers:"> 1%, last 2 versions, Safari >= 8"
-        }))
+        .pipe(cssnano())
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(rename({basename: 'test'}))
         .pipe(gulp.dest('tests/'));
 });
@@ -78,5 +67,6 @@ gulp.task('default', [
   'chuckcss_less',
   'chuckcss_minify_less',
   'chuckcss_print',
-  'test'
+  'test',
+  'watch'
 ]);

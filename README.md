@@ -6,7 +6,7 @@
 
 A responsive CSS framework :
 - Developed with [LESS]
-- Compiled with [Autoprefixer]
+- Compiled with PostCSS - [Autoprefixer]
 - Including [Normalize.css]
 
 **ChuckCSS include plenty of features :**
