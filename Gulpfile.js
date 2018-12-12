@@ -43,30 +43,17 @@ gulp.task('chuckcss_print', function() {
         .pipe(gulp.dest('dist/'));
 });
 
-/*
-    * TEST FILE (index)
-*/
-gulp.task('test', function() {
-    gulp.src('tests/test.less')
-        .pipe(plumber())
-        .pipe(less())
-        .pipe(cssnano())
-        .pipe(postcss([ autoprefixer() ]))
-        .pipe(rename({basename: 'test'}))
-        .pipe(gulp.dest('tests/'));
-});
+
 
 gulp.task('watch', function() {
     gulp.watch('chuckcss/**/*.less', ['chuckcss_minify_less', 'chuckcss_less']);
     gulp.watch('chuckcss/print.less', ['chuckcss_print']);
-    gulp.watch('tests/test.less', ['test']);
-
 });
 
 gulp.task('default', [
   'chuckcss_less',
   'chuckcss_minify_less',
   'chuckcss_print',
-  'test',
+
   'watch'
 ]);

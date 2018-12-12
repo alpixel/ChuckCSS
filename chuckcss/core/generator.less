@@ -21,17 +21,27 @@
     @colorName: extract(extract(@aColors, @iterator),1);
     @colorValue : extract(extract(@aColors, @iterator),2);
 
-    /* texts */
+    /* titles */
     h1,h2,h3,h4,h5,h6,
-    p,div,section,aside,header,footer,article,main,
-    span,i,a {
+    .h1-like,.h2-like,.h3-like,.h4-like,.h5-like,.h6-like {
         &.cc {
             &-@{colorName} {
                 color: @colorValue;
+            }
 
-                small {
-                     color:lighten(@colorValue,10%)
-                }
+            &-bg-@{colorName} {
+                color:white;
+                background-color:@colorValue;
+            }
+        }
+    }
+
+    /* elements */
+    p,div,section,aside,header,footer,article,main,nav,
+    span,i,a,strong,em,code,small {
+        &.cc {
+            &-@{colorName} {
+                color: @colorValue;
             }
 
             &-bg-@{colorName} {
@@ -49,7 +59,6 @@
                 }
             }
         }
-
     }
 
     /* lists */
@@ -305,72 +314,75 @@
     @name : ._generatePaddingMarginClass
     @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
 ***** */
-._generatePaddingMarginClass(@iterator:0) when(@iterator <= 50) {
+._generatePaddingMarginClass(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
 
     .cc {
-        &-pa-@{iterator} {
+        &-pa-@{iterator}@{breakpoint} {
             padding:unit(@iterator,px);
         }
-        &-pat-@{iterator} {
+        &-pat-@{iterator}@{breakpoint} {
             padding-top:unit(@iterator,px);
         }
-        &-par-@{iterator} {
+        &-par-@{iterator}@{breakpoint} {
             padding-right:unit(@iterator,px);
         }
-        &-pab-@{iterator} {
+        &-pab-@{iterator}@{breakpoint} {
             padding-bottom:unit(@iterator,px);
         }
-        &-pal-@{iterator} {
+        &-pal-@{iterator}@{breakpoint} {
             padding-left:unit(@iterator,px);
         }
-        &-ma-@{iterator} {
+        &-ma-@{iterator}@{breakpoint} {
             margin:unit(@iterator,px);
         }
-        &-mat-@{iterator} {
+        &-mat-@{iterator}@{breakpoint} {
             margin-top:unit(@iterator,px);
         }
-        &-mar-@{iterator} {
+        &-mar-@{iterator}@{breakpoint} {
             margin-right:unit(@iterator,px);
         }
-        &-mab-@{iterator} {
+        &-mab-@{iterator}@{breakpoint} {
             margin-bottom:unit(@iterator,px);
         }
-        &-mal-@{iterator} {
+        &-mal-@{iterator}@{breakpoint} {
             margin-left:unit(@iterator,px);
         }
     }
 
-    ._generatePaddingMarginClass((@iterator + 5));
+    ._generatePaddingMarginClass(@breakpoint, (@iterator + 5));
 }
 ._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
-
+._media-xs-up({._generatePaddingMarginClass(-s);});
+._media-s-up({._generatePaddingMarginClass(-m);});
+._media-m-up({._generatePaddingMarginClass(-l);});
+._media-l-up({._generatePaddingMarginClass(-xl);});
 
 
 /* *****
     @name : ._generateColumns
     @description : Generate columns width in flexbox parent
 ***** */
-._generateColumns(@keyWord:~'',@iterator:0) when(@iterator <= @cols-total) {
+._generateColumns(@breakpoint:~'',@iterator:0) when(@iterator <= @cols-total) {
 
-    .columns > .cc-@{iterator}@{keyWord} {
+    .columns > .cc-@{iterator}@{breakpoint} {
         flex:0 0 auto;
         width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
         max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
     /* Offsets calculations with gutters */
-    .columns > .cc-offset-@{iterator}@{keyWord} {
+    .columns > .cc-offset-@{iterator}@{breakpoint} {
         margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
     /* Masonry layout */
     .columns.cc-masonry.cc {
-        &-@{iterator}@{keyWord} {
+        &-@{iterator}@{breakpoint} {
             column-count: @iterator;
         }
     }
 
-    ._generateColumns(@keyWord,(@iterator + 1));
+    ._generateColumns(@breakpoint,(@iterator + 1));
 }
 
 
@@ -379,33 +391,40 @@
     @name : ._generatePercentWidth
     @description : Generate width for block helpers in %
 ***** */
-._generatePercentWidth(@iterator:0) when(@iterator <= 100) {
+._generatePercentWidth(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
     .cc {
-        &-w-@{iterator} {
+        &-w-@{iterator}@{breakpoint} {
             width:unit(@iterator,%);
         }
     }
 
-    ._generatePercentWidth(@iterator + 5);
+    ._generatePercentWidth(@breakpoint,@iterator + 5);
 }
 ._generatePercentWidth; // Launch _generatePercentWidth
-
+._media-xs-up({._generatePercentWidth(-s);});
+._media-s-up({._generatePercentWidth(-m);});
+._media-m-up({._generatePercentWidth(-l);});
+._media-l-up({._generatePercentWidth(-xl);});
 
 
 /* *****
     @name : ._generateFontSize
     @description : Generate font-size from 0rem to 10rem;
 ***** */
-._generateFontSize(@iterator:0) when(@iterator <= 100) {
+._generateFontSize(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
     .cc {
-        &-fs-@{iterator} {
+        &-fs-@{iterator}@{breakpoint} {
             font-size:unit(@iterator,rem) / 10;
         }
     }
 
-    ._generateFontSize(@iterator + 1);
+    ._generateFontSize(@breakpoint,@iterator + 1);
 }
-._generateFontSize; // Launch _generatePercentWidth
+._generateFontSize; // Launch _generateFontSize
+._media-xs-up({._generateFontSize(-s);});
+._media-s-up({._generateFontSize(-m);});
+._media-m-up({._generateFontSize(-l);});
+._media-l-up({._generateFontSize(-xl);});
 
 
 
@@ -413,13 +432,17 @@
     @name : ._generateFontWeight
     @description : Generate font-weight from 100 to 900
 ***** */
-._generateFontWeight(@iterator:100) when(@iterator <= 900) {
+._generateFontWeight(@breakpoint:~'',@iterator:100) when(@iterator <= 900) {
     .cc {
-        &-fw-@{iterator} {
+        &-fw-@{iterator}@{breakpoint} {
             font-weight:@iterator;
         }
     }
 
-    ._generateFontWeight(@iterator + 100);
+    ._generateFontWeight(@breakpoint,@iterator + 100);
 }
 ._generateFontWeight; // Launch _generateFontWeight
+._media-xs-up({._generateFontWeight(-s);});
+._media-s-up({._generateFontWeight(-m);});
+._media-m-up({._generateFontWeight(-l);});
+._media-l-up({._generateFontWeight(-xl);});
