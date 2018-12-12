@@ -1,5 +1,13 @@
 # ChuckCSS Changelog
 
+
+- Change titles default font-sizes in settings file
+- Add font-size responsive by adding class cc-fs-{number}-{letter} (mobile-first)
+- Add font-weight responsive by adding class cc-fw-{number}-{letter} (mobile-first)
+- Add width on block elements responsive by adding class cc-w-{number}-{letter} (mobile-first)
+- Add padding and margin on block elements responsive by adding class cc-pa{letter}-{number}-{letter (mobile-first)
+- optimize colors and background-colors on elements
+
 ## 3.0.8
 * Added : add CDN libraries in front.less file (normalize, font-awesome, ionicons)
 * Removed : 

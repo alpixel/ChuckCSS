@@ -1045,7 +1045,7 @@
                 </div>
             </div>
 
-            <div class="main cc-modals active">
+            <div class="main cc-modals">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -1321,7 +1321,7 @@
                     ".cc-w-quarter cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
                 </div>
                 <?php for($i=5;$i<=100;$i+=5) { ?>
-                    <div class="cc-centered cc-pa cc-w-<?php print $i;?> cc-mat-20 cc-bg-primary cc-txt-center">
+                    <div class="cc-centered cc-pa cc-w-<?php print $i;?> cc-w-<?php print $i*2;?>-s cc-mat-20 cc-bg-primary cc-txt-center">
                        <?php print $i;?>% width
                     </div>
                 <?php } ?>
@@ -1349,7 +1349,7 @@
                 </pre>
                 <h3>Margin & Padding</h3>
                 <p class="cc-bg-primary cc-pa-10">I have a padding of 10px</p>
-                <p class="cc-bg-primary cc-pa-16">I have a padding of 16px</p>
+                <p class="cc-bg-primary cc-pa-15 cc-pa-30-s cc-pa-100-l">I have a padding of 16px</p>
                 <p class="cc-bg-primary cc-ma-6">I have a margin of 5px</p>
                 <p class="cc-bg-primary cc-mat-22">I have a margin-top of 22px</p>
                 <p class="cc-bg-primary cc-pa">I have the default padding set in settings.less file</p>
@@ -1357,12 +1357,17 @@
                 <p class="cc-bg-primary cc-par">I have the default padding-right set in settings.less file</p>
                 <p class="cc-bg-primary cc-pab">I have the default padding-bottom set in settings.less file</p>
                 <p class="cc-bg-primary cc-pal">I have the default padding-left set in settings.less file</p>
+
+
                 <p class="cc-bg-primary cc-ma">I have the default margin set in settings.less file</p>
                 <p class="cc-bg-primary cc-mat">I have the default margin-top set in settings.less file</p>
                 <p class="cc-bg-primary cc-mar">I have the default margin-right set in settings.less file</p>
                 <p class="cc-bg-primary cc-mab">I have the default margin-bottom set in settings.less file</p>
                 <p class="cc-bg-primary cc-mal">I have the default margin-left set in settings.less file</p>
-                <p class="cc-bg-primary cc-pal-18">I have a custom padding-left of 18px</p>
+
+
+
+                <p class="cc-bg-primary cc-pa-10 cc-pa-15-m cc-pa-25-l cc-mat-15 cc-mab-30 cc-mab-50-m cc-mat-100-l">I have the default margin-left set in settings.less file</p>
             </div>
 
             <div class="main cc-colors">
@@ -2078,6 +2083,50 @@
                     Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon. Sausage jowl tail ham doner tongue porchetta frankfurter bresaola spare ribs short ribs brisket pastrami.<br /><br />
                     Kielbasa ham turkey bresaola, frankfurter swine meatball andouille biltong salami pancetta filet mignon brisket ribeye jowl. Ground round tongue ham, boudin jowl sausage hamburger tail capicola shankle salami. Strip steak tri-tip boudin pork belly. Ground round bacon short ribs chicken. Landjaeger turducken tongue boudin brisket. Ham hock hamburger spare ribs, pork loin prosciutto filet mignon beef ribs. Ham hock pastrami jowl kielbasa chuck beef ribs ground round venison cow sirloin jerky meatball picanha short loin.
                 </p>
+
+
+                <h3 class="title">Font-size</h3>
+
+                <pre class="HTML">
+                    <code class="language-markup">&lt;p class="cc-fs-number-breakpoint">
+                            Bacon ipsum dolor...
+                        &lt;/p>
+                    </code>
+                </pre>
+
+                <p>
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+                <p class="cc-fs-20 cc-fs-30-s">
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+                <p class="cc-fs-25 cc-fs-40-l">
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+                <p class="cc-fs-30 cc-fs-50-xl">
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+
+                <h3 class="title">Font-weight</h3>
+
+                <pre class="HTML">
+                    <code class="language-markup">&lt;p class="cc-fw-number-breakpoint">
+                            Bacon ipsum dolor...
+                        &lt;/p>
+                    </code>
+                </pre>
+
+                <p>
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+                <p class="cc-fw-700">
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+
+                <p class=" cc-fw-700-m cc-fw-400-l cc-fw-700-xl cc-fs-40-xl">
+                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
+                </p>
+               
             </div>
 
             <div class="main cc-lists">
