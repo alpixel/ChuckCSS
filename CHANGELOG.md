@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 3.3.1
+* Added : 
+    * Responsive texts aligments : class `cc-txt-{aligment}-{breakpoint}` (mobile-first respected)
+    * Responsive padding and margin for block elements are completed : class `cc-pa-{breakpoint}`, `cc-ma-{breakpoint}`, `cc-pa{side}-{breakpoint}`, `cc-ma{side}-{breakpoint}` (mobile-first respected)
 
 ## 3.3.0
 * Changed : changed default font-size for titles (Hn) in settings file (now in `rem` units)
