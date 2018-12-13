@@ -4144,48 +4144,6 @@ body.opened-modal {
   margin-left: auto;
   margin-right: auto;
 }
-.cc-txt-left {
-  text-align: left;
-}
-.cc-txt-center {
-  text-align: center;
-}
-.cc-txt-right {
-  text-align: right;
-}
-.cc-txt-justify {
-  text-align: justify;
-}
-.cc-pa {
-  padding: 1em;
-}
-.cc-pat {
-  padding-top: 1em;
-}
-.cc-par {
-  padding-right: 1em;
-}
-.cc-pab {
-  padding-bottom: 1em;
-}
-.cc-pal {
-  padding-left: 1em;
-}
-.cc-ma {
-  margin: 1em;
-}
-.cc-mat {
-  margin-top: 1em;
-}
-.cc-mar {
-  margin-right: 1em;
-}
-.cc-mab {
-  margin-bottom: 1em;
-}
-.cc-mal {
-  margin-left: 1em;
-}
 .cc-hidden {
   display: none;
 }
@@ -4349,6 +4307,7 @@ body.opened-modal {
     ._generatePercentWidth
     ._generateFontSize
     ._generateFontWeight
+    ._generateTextsAligments
 */
 /* *****
     @name : ._generateColorsClass
@@ -6326,6 +6285,21 @@ form.cc-yellow button[type="submit"]:hover {
     @name : ._generatePaddingMarginClass
     @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
 ***** */
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-0 {
   padding: 0px;
 }
@@ -6340,6 +6314,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-0 {
   padding-left: 0px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-0 {
   margin: 0px;
@@ -6356,6 +6345,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-0 {
   margin-left: 0px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-5 {
   padding: 5px;
 }
@@ -6370,6 +6374,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-5 {
   padding-left: 5px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-5 {
   margin: 5px;
@@ -6386,6 +6405,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-5 {
   margin-left: 5px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-10 {
   padding: 10px;
 }
@@ -6400,6 +6434,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-10 {
   padding-left: 10px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-10 {
   margin: 10px;
@@ -6416,6 +6465,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-10 {
   margin-left: 10px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-15 {
   padding: 15px;
 }
@@ -6430,6 +6494,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-15 {
   padding-left: 15px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-15 {
   margin: 15px;
@@ -6446,6 +6525,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-15 {
   margin-left: 15px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-20 {
   padding: 20px;
 }
@@ -6460,6 +6554,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-20 {
   padding-left: 20px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-20 {
   margin: 20px;
@@ -6476,6 +6585,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-20 {
   margin-left: 20px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-25 {
   padding: 25px;
 }
@@ -6490,6 +6614,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-25 {
   padding-left: 25px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-25 {
   margin: 25px;
@@ -6506,6 +6645,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-25 {
   margin-left: 25px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-30 {
   padding: 30px;
 }
@@ -6520,6 +6674,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-30 {
   padding-left: 30px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-30 {
   margin: 30px;
@@ -6536,6 +6705,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-30 {
   margin-left: 30px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-35 {
   padding: 35px;
 }
@@ -6550,6 +6734,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-35 {
   padding-left: 35px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-35 {
   margin: 35px;
@@ -6566,6 +6765,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-35 {
   margin-left: 35px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-40 {
   padding: 40px;
 }
@@ -6580,6 +6794,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-40 {
   padding-left: 40px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-40 {
   margin: 40px;
@@ -6596,6 +6825,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-40 {
   margin-left: 40px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-45 {
   padding: 45px;
 }
@@ -6610,6 +6854,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-45 {
   padding-left: 45px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-45 {
   margin: 45px;
@@ -6626,6 +6885,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-45 {
   margin-left: 45px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-50 {
   padding: 50px;
 }
@@ -6640,6 +6914,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-50 {
   padding-left: 50px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-50 {
   margin: 50px;
@@ -6656,6 +6945,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-50 {
   margin-left: 50px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-55 {
   padding: 55px;
 }
@@ -6670,6 +6974,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-55 {
   padding-left: 55px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-55 {
   margin: 55px;
@@ -6686,6 +7005,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-55 {
   margin-left: 55px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-60 {
   padding: 60px;
 }
@@ -6700,6 +7034,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-60 {
   padding-left: 60px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-60 {
   margin: 60px;
@@ -6716,6 +7065,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-60 {
   margin-left: 60px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-65 {
   padding: 65px;
 }
@@ -6730,6 +7094,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-65 {
   padding-left: 65px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-65 {
   margin: 65px;
@@ -6746,6 +7125,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-65 {
   margin-left: 65px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-70 {
   padding: 70px;
 }
@@ -6760,6 +7154,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-70 {
   padding-left: 70px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-70 {
   margin: 70px;
@@ -6776,6 +7185,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-70 {
   margin-left: 70px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-75 {
   padding: 75px;
 }
@@ -6790,6 +7214,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-75 {
   padding-left: 75px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-75 {
   margin: 75px;
@@ -6806,6 +7245,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-75 {
   margin-left: 75px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-80 {
   padding: 80px;
 }
@@ -6820,6 +7274,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-80 {
   padding-left: 80px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-80 {
   margin: 80px;
@@ -6836,6 +7305,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-80 {
   margin-left: 80px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-85 {
   padding: 85px;
 }
@@ -6850,6 +7334,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-85 {
   padding-left: 85px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-85 {
   margin: 85px;
@@ -6866,6 +7365,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-85 {
   margin-left: 85px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-90 {
   padding: 90px;
 }
@@ -6880,6 +7394,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-90 {
   padding-left: 90px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-90 {
   margin: 90px;
@@ -6896,6 +7425,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-90 {
   margin-left: 90px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-95 {
   padding: 95px;
 }
@@ -6910,6 +7454,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-95 {
   padding-left: 95px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-95 {
   margin: 95px;
@@ -6926,6 +7485,21 @@ form.cc-yellow button[type="submit"]:hover {
 .cc-mal-95 {
   margin-left: 95px;
 }
+.cc-pa {
+  padding: 1em;
+}
+.cc-pat {
+  padding-top: 1em;
+}
+.cc-par {
+  padding-right: 1em;
+}
+.cc-pab {
+  padding-bottom: 1em;
+}
+.cc-pal {
+  padding-left: 1em;
+}
 .cc-pa-100 {
   padding: 100px;
 }
@@ -6940,6 +7514,21 @@ form.cc-yellow button[type="submit"]:hover {
 }
 .cc-pal-100 {
   padding-left: 100px;
+}
+.cc-ma {
+  margin: 1em;
+}
+.cc-mat {
+  margin-top: 1em;
+}
+.cc-mar {
+  margin-right: 1em;
+}
+.cc-mab {
+  margin-bottom: 1em;
+}
+.cc-mal {
+  margin-left: 1em;
 }
 .cc-ma-100 {
   margin: 100px;
@@ -6957,6 +7546,21 @@ form.cc-yellow button[type="submit"]:hover {
   margin-left: 100px;
 }
 @media screen and (min-width: 360px) {
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-0-s {
     padding: 0px;
   }
@@ -6971,6 +7575,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-0-s {
     padding-left: 0px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-0-s {
     margin: 0px;
@@ -6987,6 +7606,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-0-s {
     margin-left: 0px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-5-s {
     padding: 5px;
   }
@@ -7001,6 +7635,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-5-s {
     padding-left: 5px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-5-s {
     margin: 5px;
@@ -7017,6 +7666,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-5-s {
     margin-left: 5px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-10-s {
     padding: 10px;
   }
@@ -7031,6 +7695,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-10-s {
     padding-left: 10px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-10-s {
     margin: 10px;
@@ -7047,6 +7726,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-10-s {
     margin-left: 10px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-15-s {
     padding: 15px;
   }
@@ -7061,6 +7755,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-15-s {
     padding-left: 15px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-15-s {
     margin: 15px;
@@ -7077,6 +7786,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-15-s {
     margin-left: 15px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-20-s {
     padding: 20px;
   }
@@ -7091,6 +7815,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-20-s {
     padding-left: 20px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-20-s {
     margin: 20px;
@@ -7107,6 +7846,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-20-s {
     margin-left: 20px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-25-s {
     padding: 25px;
   }
@@ -7121,6 +7875,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-25-s {
     padding-left: 25px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-25-s {
     margin: 25px;
@@ -7137,6 +7906,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-25-s {
     margin-left: 25px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-30-s {
     padding: 30px;
   }
@@ -7151,6 +7935,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-30-s {
     padding-left: 30px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-30-s {
     margin: 30px;
@@ -7167,6 +7966,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-30-s {
     margin-left: 30px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-35-s {
     padding: 35px;
   }
@@ -7181,6 +7995,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-35-s {
     padding-left: 35px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-35-s {
     margin: 35px;
@@ -7197,6 +8026,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-35-s {
     margin-left: 35px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-40-s {
     padding: 40px;
   }
@@ -7211,6 +8055,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-40-s {
     padding-left: 40px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-40-s {
     margin: 40px;
@@ -7227,6 +8086,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-40-s {
     margin-left: 40px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-45-s {
     padding: 45px;
   }
@@ -7241,6 +8115,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-45-s {
     padding-left: 45px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-45-s {
     margin: 45px;
@@ -7257,6 +8146,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-45-s {
     margin-left: 45px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-50-s {
     padding: 50px;
   }
@@ -7271,6 +8175,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-50-s {
     padding-left: 50px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-50-s {
     margin: 50px;
@@ -7287,6 +8206,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-50-s {
     margin-left: 50px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-55-s {
     padding: 55px;
   }
@@ -7301,6 +8235,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-55-s {
     padding-left: 55px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-55-s {
     margin: 55px;
@@ -7317,6 +8266,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-55-s {
     margin-left: 55px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-60-s {
     padding: 60px;
   }
@@ -7331,6 +8295,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-60-s {
     padding-left: 60px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-60-s {
     margin: 60px;
@@ -7347,6 +8326,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-60-s {
     margin-left: 60px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-65-s {
     padding: 65px;
   }
@@ -7361,6 +8355,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-65-s {
     padding-left: 65px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-65-s {
     margin: 65px;
@@ -7377,6 +8386,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-65-s {
     margin-left: 65px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-70-s {
     padding: 70px;
   }
@@ -7391,6 +8415,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-70-s {
     padding-left: 70px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-70-s {
     margin: 70px;
@@ -7407,6 +8446,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-70-s {
     margin-left: 70px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-75-s {
     padding: 75px;
   }
@@ -7421,6 +8475,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-75-s {
     padding-left: 75px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-75-s {
     margin: 75px;
@@ -7437,6 +8506,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-75-s {
     margin-left: 75px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-80-s {
     padding: 80px;
   }
@@ -7451,6 +8535,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-80-s {
     padding-left: 80px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-80-s {
     margin: 80px;
@@ -7467,6 +8566,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-80-s {
     margin-left: 80px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-85-s {
     padding: 85px;
   }
@@ -7481,6 +8595,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-85-s {
     padding-left: 85px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-85-s {
     margin: 85px;
@@ -7497,6 +8626,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-85-s {
     margin-left: 85px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-90-s {
     padding: 90px;
   }
@@ -7511,6 +8655,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-90-s {
     padding-left: 90px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-90-s {
     margin: 90px;
@@ -7527,6 +8686,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-90-s {
     margin-left: 90px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-95-s {
     padding: 95px;
   }
@@ -7541,6 +8715,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-95-s {
     padding-left: 95px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-95-s {
     margin: 95px;
@@ -7557,6 +8746,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-95-s {
     margin-left: 95px;
   }
+  .cc-pa-s {
+    padding: 1em;
+  }
+  .cc-pat-s {
+    padding-top: 1em;
+  }
+  .cc-par-s {
+    padding-right: 1em;
+  }
+  .cc-pab-s {
+    padding-bottom: 1em;
+  }
+  .cc-pal-s {
+    padding-left: 1em;
+  }
   .cc-pa-100-s {
     padding: 100px;
   }
@@ -7571,6 +8775,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-100-s {
     padding-left: 100px;
+  }
+  .cc-ma-s {
+    margin: 1em;
+  }
+  .cc-mat-s {
+    margin-top: 1em;
+  }
+  .cc-mar-s {
+    margin-right: 1em;
+  }
+  .cc-mab-s {
+    margin-bottom: 1em;
+  }
+  .cc-mal-s {
+    margin-left: 1em;
   }
   .cc-ma-100-s {
     margin: 100px;
@@ -7589,6 +8808,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 @media screen and (min-width: 768px) {
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-0-m {
     padding: 0px;
   }
@@ -7603,6 +8837,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-0-m {
     padding-left: 0px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-0-m {
     margin: 0px;
@@ -7619,6 +8868,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-0-m {
     margin-left: 0px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-5-m {
     padding: 5px;
   }
@@ -7633,6 +8897,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-5-m {
     padding-left: 5px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-5-m {
     margin: 5px;
@@ -7649,6 +8928,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-5-m {
     margin-left: 5px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-10-m {
     padding: 10px;
   }
@@ -7663,6 +8957,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-10-m {
     padding-left: 10px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-10-m {
     margin: 10px;
@@ -7679,6 +8988,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-10-m {
     margin-left: 10px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-15-m {
     padding: 15px;
   }
@@ -7693,6 +9017,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-15-m {
     padding-left: 15px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-15-m {
     margin: 15px;
@@ -7709,6 +9048,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-15-m {
     margin-left: 15px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-20-m {
     padding: 20px;
   }
@@ -7723,6 +9077,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-20-m {
     padding-left: 20px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-20-m {
     margin: 20px;
@@ -7739,6 +9108,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-20-m {
     margin-left: 20px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-25-m {
     padding: 25px;
   }
@@ -7753,6 +9137,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-25-m {
     padding-left: 25px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-25-m {
     margin: 25px;
@@ -7769,6 +9168,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-25-m {
     margin-left: 25px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-30-m {
     padding: 30px;
   }
@@ -7783,6 +9197,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-30-m {
     padding-left: 30px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-30-m {
     margin: 30px;
@@ -7799,6 +9228,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-30-m {
     margin-left: 30px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-35-m {
     padding: 35px;
   }
@@ -7813,6 +9257,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-35-m {
     padding-left: 35px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-35-m {
     margin: 35px;
@@ -7829,6 +9288,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-35-m {
     margin-left: 35px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-40-m {
     padding: 40px;
   }
@@ -7843,6 +9317,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-40-m {
     padding-left: 40px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-40-m {
     margin: 40px;
@@ -7859,6 +9348,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-40-m {
     margin-left: 40px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-45-m {
     padding: 45px;
   }
@@ -7873,6 +9377,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-45-m {
     padding-left: 45px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-45-m {
     margin: 45px;
@@ -7889,6 +9408,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-45-m {
     margin-left: 45px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-50-m {
     padding: 50px;
   }
@@ -7903,6 +9437,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-50-m {
     padding-left: 50px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-50-m {
     margin: 50px;
@@ -7919,6 +9468,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-50-m {
     margin-left: 50px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-55-m {
     padding: 55px;
   }
@@ -7933,6 +9497,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-55-m {
     padding-left: 55px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-55-m {
     margin: 55px;
@@ -7949,6 +9528,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-55-m {
     margin-left: 55px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-60-m {
     padding: 60px;
   }
@@ -7963,6 +9557,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-60-m {
     padding-left: 60px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-60-m {
     margin: 60px;
@@ -7979,6 +9588,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-60-m {
     margin-left: 60px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-65-m {
     padding: 65px;
   }
@@ -7993,6 +9617,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-65-m {
     padding-left: 65px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-65-m {
     margin: 65px;
@@ -8009,6 +9648,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-65-m {
     margin-left: 65px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-70-m {
     padding: 70px;
   }
@@ -8023,6 +9677,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-70-m {
     padding-left: 70px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-70-m {
     margin: 70px;
@@ -8039,6 +9708,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-70-m {
     margin-left: 70px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-75-m {
     padding: 75px;
   }
@@ -8053,6 +9737,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-75-m {
     padding-left: 75px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-75-m {
     margin: 75px;
@@ -8069,6 +9768,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-75-m {
     margin-left: 75px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-80-m {
     padding: 80px;
   }
@@ -8083,6 +9797,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-80-m {
     padding-left: 80px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-80-m {
     margin: 80px;
@@ -8099,6 +9828,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-80-m {
     margin-left: 80px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-85-m {
     padding: 85px;
   }
@@ -8113,6 +9857,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-85-m {
     padding-left: 85px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-85-m {
     margin: 85px;
@@ -8129,6 +9888,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-85-m {
     margin-left: 85px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-90-m {
     padding: 90px;
   }
@@ -8143,6 +9917,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-90-m {
     padding-left: 90px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-90-m {
     margin: 90px;
@@ -8159,6 +9948,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-90-m {
     margin-left: 90px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-95-m {
     padding: 95px;
   }
@@ -8173,6 +9977,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-95-m {
     padding-left: 95px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-95-m {
     margin: 95px;
@@ -8189,6 +10008,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-95-m {
     margin-left: 95px;
   }
+  .cc-pa-m {
+    padding: 1em;
+  }
+  .cc-pat-m {
+    padding-top: 1em;
+  }
+  .cc-par-m {
+    padding-right: 1em;
+  }
+  .cc-pab-m {
+    padding-bottom: 1em;
+  }
+  .cc-pal-m {
+    padding-left: 1em;
+  }
   .cc-pa-100-m {
     padding: 100px;
   }
@@ -8203,6 +10037,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-100-m {
     padding-left: 100px;
+  }
+  .cc-ma-m {
+    margin: 1em;
+  }
+  .cc-mat-m {
+    margin-top: 1em;
+  }
+  .cc-mar-m {
+    margin-right: 1em;
+  }
+  .cc-mab-m {
+    margin-bottom: 1em;
+  }
+  .cc-mal-m {
+    margin-left: 1em;
   }
   .cc-ma-100-m {
     margin: 100px;
@@ -8221,6 +10070,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 @media screen and (min-width: 990px) {
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-0-l {
     padding: 0px;
   }
@@ -8235,6 +10099,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-0-l {
     padding-left: 0px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-0-l {
     margin: 0px;
@@ -8251,6 +10130,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-0-l {
     margin-left: 0px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-5-l {
     padding: 5px;
   }
@@ -8265,6 +10159,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-5-l {
     padding-left: 5px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-5-l {
     margin: 5px;
@@ -8281,6 +10190,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-5-l {
     margin-left: 5px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-10-l {
     padding: 10px;
   }
@@ -8295,6 +10219,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-10-l {
     padding-left: 10px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-10-l {
     margin: 10px;
@@ -8311,6 +10250,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-10-l {
     margin-left: 10px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-15-l {
     padding: 15px;
   }
@@ -8325,6 +10279,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-15-l {
     padding-left: 15px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-15-l {
     margin: 15px;
@@ -8341,6 +10310,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-15-l {
     margin-left: 15px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-20-l {
     padding: 20px;
   }
@@ -8355,6 +10339,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-20-l {
     padding-left: 20px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-20-l {
     margin: 20px;
@@ -8371,6 +10370,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-20-l {
     margin-left: 20px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-25-l {
     padding: 25px;
   }
@@ -8385,6 +10399,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-25-l {
     padding-left: 25px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-25-l {
     margin: 25px;
@@ -8401,6 +10430,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-25-l {
     margin-left: 25px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-30-l {
     padding: 30px;
   }
@@ -8415,6 +10459,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-30-l {
     padding-left: 30px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-30-l {
     margin: 30px;
@@ -8431,6 +10490,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-30-l {
     margin-left: 30px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-35-l {
     padding: 35px;
   }
@@ -8445,6 +10519,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-35-l {
     padding-left: 35px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-35-l {
     margin: 35px;
@@ -8461,6 +10550,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-35-l {
     margin-left: 35px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-40-l {
     padding: 40px;
   }
@@ -8475,6 +10579,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-40-l {
     padding-left: 40px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-40-l {
     margin: 40px;
@@ -8491,6 +10610,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-40-l {
     margin-left: 40px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-45-l {
     padding: 45px;
   }
@@ -8505,6 +10639,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-45-l {
     padding-left: 45px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-45-l {
     margin: 45px;
@@ -8521,6 +10670,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-45-l {
     margin-left: 45px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-50-l {
     padding: 50px;
   }
@@ -8535,6 +10699,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-50-l {
     padding-left: 50px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-50-l {
     margin: 50px;
@@ -8551,6 +10730,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-50-l {
     margin-left: 50px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-55-l {
     padding: 55px;
   }
@@ -8565,6 +10759,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-55-l {
     padding-left: 55px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-55-l {
     margin: 55px;
@@ -8581,6 +10790,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-55-l {
     margin-left: 55px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-60-l {
     padding: 60px;
   }
@@ -8595,6 +10819,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-60-l {
     padding-left: 60px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-60-l {
     margin: 60px;
@@ -8611,6 +10850,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-60-l {
     margin-left: 60px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-65-l {
     padding: 65px;
   }
@@ -8625,6 +10879,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-65-l {
     padding-left: 65px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-65-l {
     margin: 65px;
@@ -8641,6 +10910,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-65-l {
     margin-left: 65px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-70-l {
     padding: 70px;
   }
@@ -8655,6 +10939,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-70-l {
     padding-left: 70px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-70-l {
     margin: 70px;
@@ -8671,6 +10970,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-70-l {
     margin-left: 70px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-75-l {
     padding: 75px;
   }
@@ -8685,6 +10999,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-75-l {
     padding-left: 75px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-75-l {
     margin: 75px;
@@ -8701,6 +11030,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-75-l {
     margin-left: 75px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-80-l {
     padding: 80px;
   }
@@ -8715,6 +11059,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-80-l {
     padding-left: 80px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-80-l {
     margin: 80px;
@@ -8731,6 +11090,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-80-l {
     margin-left: 80px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-85-l {
     padding: 85px;
   }
@@ -8745,6 +11119,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-85-l {
     padding-left: 85px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-85-l {
     margin: 85px;
@@ -8761,6 +11150,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-85-l {
     margin-left: 85px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-90-l {
     padding: 90px;
   }
@@ -8775,6 +11179,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-90-l {
     padding-left: 90px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-90-l {
     margin: 90px;
@@ -8791,6 +11210,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-90-l {
     margin-left: 90px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-95-l {
     padding: 95px;
   }
@@ -8805,6 +11239,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-95-l {
     padding-left: 95px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-95-l {
     margin: 95px;
@@ -8821,6 +11270,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-95-l {
     margin-left: 95px;
   }
+  .cc-pa-l {
+    padding: 1em;
+  }
+  .cc-pat-l {
+    padding-top: 1em;
+  }
+  .cc-par-l {
+    padding-right: 1em;
+  }
+  .cc-pab-l {
+    padding-bottom: 1em;
+  }
+  .cc-pal-l {
+    padding-left: 1em;
+  }
   .cc-pa-100-l {
     padding: 100px;
   }
@@ -8835,6 +11299,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-100-l {
     padding-left: 100px;
+  }
+  .cc-ma-l {
+    margin: 1em;
+  }
+  .cc-mat-l {
+    margin-top: 1em;
+  }
+  .cc-mar-l {
+    margin-right: 1em;
+  }
+  .cc-mab-l {
+    margin-bottom: 1em;
+  }
+  .cc-mal-l {
+    margin-left: 1em;
   }
   .cc-ma-100-l {
     margin: 100px;
@@ -8853,6 +11332,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 @media screen and (min-width: 1200px) {
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-0-xl {
     padding: 0px;
   }
@@ -8867,6 +11361,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-0-xl {
     padding-left: 0px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-0-xl {
     margin: 0px;
@@ -8883,6 +11392,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-0-xl {
     margin-left: 0px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-5-xl {
     padding: 5px;
   }
@@ -8897,6 +11421,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-5-xl {
     padding-left: 5px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-5-xl {
     margin: 5px;
@@ -8913,6 +11452,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-5-xl {
     margin-left: 5px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-10-xl {
     padding: 10px;
   }
@@ -8927,6 +11481,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-10-xl {
     padding-left: 10px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-10-xl {
     margin: 10px;
@@ -8943,6 +11512,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-10-xl {
     margin-left: 10px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-15-xl {
     padding: 15px;
   }
@@ -8957,6 +11541,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-15-xl {
     padding-left: 15px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-15-xl {
     margin: 15px;
@@ -8973,6 +11572,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-15-xl {
     margin-left: 15px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-20-xl {
     padding: 20px;
   }
@@ -8987,6 +11601,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-20-xl {
     padding-left: 20px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-20-xl {
     margin: 20px;
@@ -9003,6 +11632,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-20-xl {
     margin-left: 20px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-25-xl {
     padding: 25px;
   }
@@ -9017,6 +11661,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-25-xl {
     padding-left: 25px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-25-xl {
     margin: 25px;
@@ -9033,6 +11692,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-25-xl {
     margin-left: 25px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-30-xl {
     padding: 30px;
   }
@@ -9047,6 +11721,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-30-xl {
     padding-left: 30px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-30-xl {
     margin: 30px;
@@ -9063,6 +11752,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-30-xl {
     margin-left: 30px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-35-xl {
     padding: 35px;
   }
@@ -9077,6 +11781,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-35-xl {
     padding-left: 35px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-35-xl {
     margin: 35px;
@@ -9093,6 +11812,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-35-xl {
     margin-left: 35px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-40-xl {
     padding: 40px;
   }
@@ -9107,6 +11841,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-40-xl {
     padding-left: 40px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-40-xl {
     margin: 40px;
@@ -9123,6 +11872,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-40-xl {
     margin-left: 40px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-45-xl {
     padding: 45px;
   }
@@ -9137,6 +11901,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-45-xl {
     padding-left: 45px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-45-xl {
     margin: 45px;
@@ -9153,6 +11932,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-45-xl {
     margin-left: 45px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-50-xl {
     padding: 50px;
   }
@@ -9167,6 +11961,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-50-xl {
     padding-left: 50px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-50-xl {
     margin: 50px;
@@ -9183,6 +11992,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-50-xl {
     margin-left: 50px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-55-xl {
     padding: 55px;
   }
@@ -9197,6 +12021,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-55-xl {
     padding-left: 55px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-55-xl {
     margin: 55px;
@@ -9213,6 +12052,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-55-xl {
     margin-left: 55px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-60-xl {
     padding: 60px;
   }
@@ -9227,6 +12081,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-60-xl {
     padding-left: 60px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-60-xl {
     margin: 60px;
@@ -9243,6 +12112,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-60-xl {
     margin-left: 60px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-65-xl {
     padding: 65px;
   }
@@ -9257,6 +12141,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-65-xl {
     padding-left: 65px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-65-xl {
     margin: 65px;
@@ -9273,6 +12172,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-65-xl {
     margin-left: 65px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-70-xl {
     padding: 70px;
   }
@@ -9287,6 +12201,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-70-xl {
     padding-left: 70px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-70-xl {
     margin: 70px;
@@ -9303,6 +12232,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-70-xl {
     margin-left: 70px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-75-xl {
     padding: 75px;
   }
@@ -9317,6 +12261,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-75-xl {
     padding-left: 75px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-75-xl {
     margin: 75px;
@@ -9333,6 +12292,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-75-xl {
     margin-left: 75px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-80-xl {
     padding: 80px;
   }
@@ -9347,6 +12321,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-80-xl {
     padding-left: 80px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-80-xl {
     margin: 80px;
@@ -9363,6 +12352,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-80-xl {
     margin-left: 80px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-85-xl {
     padding: 85px;
   }
@@ -9377,6 +12381,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-85-xl {
     padding-left: 85px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-85-xl {
     margin: 85px;
@@ -9393,6 +12412,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-85-xl {
     margin-left: 85px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-90-xl {
     padding: 90px;
   }
@@ -9407,6 +12441,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-90-xl {
     padding-left: 90px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-90-xl {
     margin: 90px;
@@ -9423,6 +12472,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-90-xl {
     margin-left: 90px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-95-xl {
     padding: 95px;
   }
@@ -9437,6 +12501,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-95-xl {
     padding-left: 95px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-95-xl {
     margin: 95px;
@@ -9453,6 +12532,21 @@ form.cc-yellow button[type="submit"]:hover {
   .cc-mal-95-xl {
     margin-left: 95px;
   }
+  .cc-pa-xl {
+    padding: 1em;
+  }
+  .cc-pat-xl {
+    padding-top: 1em;
+  }
+  .cc-par-xl {
+    padding-right: 1em;
+  }
+  .cc-pab-xl {
+    padding-bottom: 1em;
+  }
+  .cc-pal-xl {
+    padding-left: 1em;
+  }
   .cc-pa-100-xl {
     padding: 100px;
   }
@@ -9467,6 +12561,21 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-pal-100-xl {
     padding-left: 100px;
+  }
+  .cc-ma-xl {
+    margin: 1em;
+  }
+  .cc-mat-xl {
+    margin-top: 1em;
+  }
+  .cc-mar-xl {
+    margin-right: 1em;
+  }
+  .cc-mab-xl {
+    margin-bottom: 1em;
+  }
+  .cc-mal-xl {
+    margin-left: 1em;
   }
   .cc-ma-100-xl {
     margin: 100px;
@@ -11487,5 +14596,77 @@ form.cc-yellow button[type="submit"]:hover {
   }
   .cc-fw-900-xl {
     font-weight: 900;
+  }
+}
+/* *****
+    @name : ._generateTextsAligments
+    @description : Generate texts aligments
+***** */
+.cc-txt-center {
+  text-align: center;
+}
+.cc-txt-left {
+  text-align: left;
+}
+.cc-txt-right {
+  text-align: right;
+}
+.cc-txt-justify {
+  text-align: justify;
+}
+@media screen and (min-width: 360px) {
+  .cc-txt-center-s {
+    text-align: center;
+  }
+  .cc-txt-left-s {
+    text-align: left;
+  }
+  .cc-txt-right-s {
+    text-align: right;
+  }
+  .cc-txt-justify-s {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cc-txt-center-m {
+    text-align: center;
+  }
+  .cc-txt-left-m {
+    text-align: left;
+  }
+  .cc-txt-right-m {
+    text-align: right;
+  }
+  .cc-txt-justify-m {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 990px) {
+  .cc-txt-center-l {
+    text-align: center;
+  }
+  .cc-txt-left-l {
+    text-align: left;
+  }
+  .cc-txt-right-l {
+    text-align: right;
+  }
+  .cc-txt-justify-l {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cc-txt-center-xl {
+    text-align: center;
+  }
+  .cc-txt-left-xl {
+    text-align: left;
+  }
+  .cc-txt-right-xl {
+    text-align: right;
+  }
+  .cc-txt-justify-xl {
+    text-align: justify;
   }
 }

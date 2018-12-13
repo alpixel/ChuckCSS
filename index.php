@@ -1157,8 +1157,8 @@
                         &lt;p class="cc-txt-justify">I'm a justified text ! .&lt;/p>
                     </code>
                 </pre>
-                <p class="cc-txt-left">I'm a left text !</p>
-                <p class="cc-txt-center">I'm a centered text !</p>
+                <p class="cc-txt-left cc-txt-right-m">cc-txt-left cc-txt-right-m</p>
+                <p class="cc-txt-center cc-txt-right-l cc-txt-left-xl">cc-txt-center cc-txt-right-l cc-txt-left-xl</p>
                 <p class="cc-txt-right">I'm a right text !</p>
                 <p class="cc-txt-justify">I'm a justified text ! Bacon ipsum dolor amet alcatra doner bresaola cow turkey ground round picanha short loin corned beef. Beef ribs tail brisket tenderloin pork landjaeger boudin. Meatball ground round tail, chicken pork chop porchetta venison. Boudin jerky fatback sirloin sausage landjaeger pancetta pork chop venison meatball pork belly meatloaf. Leberkas ham hock meatloaf, venison turducken pork loin turkey sausage shoulder tongue. Hamburger strip steak beef biltong.<br />Ham hock strip steak porchetta shoulder ground round jowl bacon capicola shankle sirloin tri-tip. Tongue tenderloin ribeye, andouille pork chop drumstick short ribs chicken pork loin tail filet mignon. Prosciutto frankfurter t-bone, meatloaf pig fatback capicola chuck corned beef bacon. Prosciutto tail filet mignon, pork belly kielbasa beef chicken pork. Ham flank leberkas drumstick hamburger tenderloin spare ribs pork loin bacon picanha tri-tip fatback. Alcatra ribeye bacon pig picanha, landjaeger andouille jerky pork belly cow tri-tip beef ribs. Chicken swine salami turkey frankfurter chuck shankle prosciutto capicola pastrami pig andouille.</p>
 
@@ -1216,7 +1216,7 @@
 
             </div>
 
-            <div class="main cc-helpers-blocks">
+            <div class="main cc-helpers-blocks active">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
@@ -1348,7 +1348,7 @@
                     </code>
                 </pre>
                 <h3>Margin & Padding</h3>
-                <p class="cc-bg-primary cc-pa-10">I have a padding of 10px</p>
+                <p class="cc-bg-primary cc-mat-m cc-mat-50-l">I have a padding of 10px</p>
                 <p class="cc-bg-primary cc-pa-15 cc-pa-30-s cc-pa-100-l">I have a padding of 16px</p>
                 <p class="cc-bg-primary cc-ma-6">I have a margin of 5px</p>
                 <p class="cc-bg-primary cc-mat-22">I have a margin-top of 22px</p>
