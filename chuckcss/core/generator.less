@@ -406,13 +406,6 @@
         margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
-    /* Masonry layout */
-    .columns.cc-masonry.cc {
-        &-@{iterator}@{breakpoint} {
-            column-count: @iterator;
-        }
-    }
-
     ._generateColumns(@breakpoint,(@iterator + 1));
 }
 
@@ -429,7 +422,7 @@
         }
     }
 
-    ._generatePercentWidth(@breakpoint,@iterator + 5);
+    ._generatePercentWidth(@breakpoint,@iterator + 1);
 }
 ._generatePercentWidth; // Launch _generatePercentWidth
 ._media-xs-up({._generatePercentWidth(-s);});

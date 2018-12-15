@@ -1,12 +1,15 @@
 # ChuckCSS Changelog
 
+- change attribute to close alert button ([data-close-alert])
+- New alerts skin
+- Remove Messages (in v4.0.0). 
+- Remove Masonry layouts
+- Remove class 
+	- cc-w-quarter (was the same as cc-w-25)
+	- cc-w-half (same as cc-w-50)
+	- cc-w-threequarter (same as cc-w-75)
+- cc-w-{int} class are now incremented to 1, from 0 to 100
 
-- Change titles default font-sizes in settings file
-- Add font-size responsive by adding class cc-fs-{number}-{letter} (mobile-first)
-- Add font-weight responsive by adding class cc-fw-{number}-{letter} (mobile-first)
-- Add width on block elements responsive by adding class cc-w-{number}-{letter} (mobile-first)
-- Add padding and margin on block elements responsive by adding class cc-pa{letter}-{number}-{letter (mobile-first)
-- optimize colors and background-colors on elements
 
 ## 3.0.8
 * Added : add CDN libraries in front.less file (normalize, font-awesome, ionicons)

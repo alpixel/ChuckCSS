@@ -200,29 +200,28 @@
 
 
 /*
-    -- @ Alerts / Messages @ --
+    -- @ Alerts @ --
 */
-@alert-br : 2; // Alerts / messages border-radius (in pixel)
+@alert-br : 5; // Alerts / messages border-radius (in pixel)
+@alert-pa : 20px; // Alerts paddings
+@alert-fs: 120%; // Alerts font-size
+@alert-ma: 1em 0; // Alerts margins
+@alert-btw: 10px; // Alerts border-top-width
 /* primary */
-@alert-pr-bg : lighten(@primary,38%);
-@alert-pr-bc : lighten(@primary,30%);
+@alert-pr-bc : @primary;
 @alert-pr-tc : @primary;
 /* success */
-@alert-su-bg : #dff0d8;
-@alert-su-bc : #d6e9c6;
 @alert-su-tc : #468847;
+@alert-su-bc : @alert-su-tc;
 /* error */
-@alert-er-bg : #f2dede;
-@alert-er-bc : #ebccd1;
 @alert-er-tc : #b94a48;
+@alert-er-bc : @alert-er-tc;
 /* warning */
-@alert-wa-bg : #fcf8e3;
-@alert-wa-bc : #faebcc;
 @alert-wa-tc : #c09853;
+@alert-wa-bc : @alert-wa-tc;
 /* info */
-@alert-in-bg : #d9edf7;
-@alert-in-bc : #bce8f1;
 @alert-in-tc : #3a87ad;
+@alert-in-bc : @alert-in-tc;
 
 
 
@@ -241,7 +240,6 @@
 @cols-pa : 1em;             /* Each column padding  */
 @cols-mat : 0em;            /* Each column margin top */
 @cols-mab : @cols-mat;      /* Each column margin bottom */
-@cols-masonry-gap : 1.5em;  /* Gap between each column with masonry layout */
 
 
 

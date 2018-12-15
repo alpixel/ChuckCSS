@@ -16,6 +16,8 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/chuckcss.min.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/prism.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/test.css" type="text/css" media="screen" charset="utf-8" />
@@ -51,7 +53,6 @@
                 </p>
                 <p class="description">
                     <a href="#" data-rel="cc-alerts" class="btn cc-bg-primary">Alerts</a>
-                    <a href="#" data-rel="cc-messages" class="btn cc-bg-primary">Messages</a>
                     <a href="#" data-rel="cc-badges" class="btn cc-bg-primary">Badges</a>
                     <a href="#" data-rel="cc-tabs" class="btn cc-bg-primary">Tabs</a>
                     <a href="#" data-rel="cc-modals" class="btn cc-bg-primary">Modals</a>
@@ -64,153 +65,51 @@
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
                         &lt;!-- -->
-                        &lt;div class="alert alert-primary ion-minus-circled">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            ...
+                        &lt;div class="alert alert-{type}">
+                            &lt;button class="close" role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
+                            &lt;i class="fab fa-apple">&lt;/i>
+                            &lt;div>...&lt;/div>
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="alert alert-primary ion-minus-circled">
-                    <button class="close"><i class="ion-ios-close-outline icon-left"></i></button>
-                    <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                <div class="alert alert-primary">
+                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+                    <i class="fab fa-apple"></i> 
+                    <div>
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
+                    </div>
                 </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        &lt;!-- -->
-                        &lt;div class="alert alert-info">
-                            &lt;i class="far fa-check-circle">&lt;/i>
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
                 <div class="alert alert-info">
-                    <i class="far fa-check-circle icon-left"></i>
-                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                    <strong>Info</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+                    <i class="fab fa-apple"></i> 
+                    <div>
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
+                    </div>
                 </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        &lt;!-- -->
-                        &lt;div class="alert alert-warning ion-android-bicycle">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
                 <div class="alert alert-warning">
-                    <i class="ion-android-bicycle icon-left"></i>
-                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                    <strong>Warning</strong> alert with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+                    <i class="fab fa-apple"></i> 
+                    <div>
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
+                    </div>
                 </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        &lt;!-- -->
-                        &lt;div class="alert alert-error">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
                 <div class="alert alert-error">
-                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                    <i class="fas fa-hand-spock"></i> <strong>Error</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                    <p>A list exemple below :</p>
-                    <ul>
-                        <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                        <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                        <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                    </ul>
+                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+                    <i class="fab fa-apple"></i> 
+                    <div>
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
+                        <ul>
+                            <li>Prénom obligatoire</li>
+                            <li>Nom obligatoire</li>
+                        </ul>
+                        <a href=""><i class="fas fa-arrow-circle-left icon-left"></i> Retour</a>
+                    </div>
                 </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        &lt;!-- -->
-                        &lt;div class="alert alert-success">
-                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
                 <div class="alert alert-success">
-                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                    <i class="ion-android-checkmark-circle"></i>  <strong>Success</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                </div>
-            </div>
-
-            <div class="main cc-messages">
-                <h3 class="title">Messages</h3>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;div class="message message-primary ion-ios-pricetags">
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="message message-primary ion-ios-pricetags">
-                    <strong>Primary color</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;div class="message message-info">
-                            &lt;i class="fas fa-exclamation-circle">&lt;/i>
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="message message-info">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <strong>Status</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;div class="message message-warning ion-android-bicycle">
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="message message-warning ion-android-bicycle">
-                    <strong>Warning</strong> message with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;div class="message message-error">
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="message message-error">
-                    <i class="fas fa-hand-spock"></i> <strong>Error</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                    <p>A list exemple below :</p>
-                    <ul>
-                        <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                        <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                        <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                    </ul>
-                </div>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;div class="message message-success">
-                            ...
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="message message-success">
-                    <i class="ion-android-checkmark-circle"></i>  <strong>Success</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+                    <div>
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>
+                    </div>
                 </div>
             </div>
 
@@ -1114,7 +1013,7 @@
                 </pre>
 
                 <div>
-                    <button data-target="modal-id" class="modal-open">Launch default modal (with form & masonry layout exemple)</button>
+                    <button data-target="modal-id" class="modal-open">Launch default modal</button>
                     <button data-target="modal-id-large" class="modal-open">Launch large modal</button>
                     <button data-target="modal-id-small" class="modal-open">Launch small modal</button>
                     <button data-target="modal-fullscreen" class="modal-open">Launch fullscreen modal</button>
@@ -1213,10 +1112,9 @@
                 <p class="cc-fw-700">font-weight 700</p>
                 <p class="cc-fw-800">font-size 800</p>
                 <p class="cc-fw-900">font-size 900</p>
-
             </div>
 
-            <div class="main cc-helpers-blocks active">
+            <div class="main cc-helpers-blocks">
                 <h3 class="title">Blocks helpers (alignments, displays...)</h3>
 
                 <pre class="HTML">
@@ -1306,8 +1204,8 @@
                     <code class="language-markup"><!-- -->
                         &lt;!-- -->
                         &lt;h3>Width&lt;/h3>
-                        &lt;div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
-                            ".cc-w-quarter cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
+                        &lt;div class="cc-centered cc-pa cc-w-25 cc-mat-20 cc-bg-primary">
+                            ".cc-w-25 cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
                         &lt;/div>
                         &lt;?php for($i=5;$i&lt;=100;$i+=5) { ?>
                             &lt;div class="cc-centered cc-pa cc-w-&lt;?php print $i;?> cc-mat-20 cc-bg-primary cc-txt-center">
@@ -1317,11 +1215,13 @@
                     </code>
                 </pre>
                 <h3 class="title">Width</h3>
-                <div class="cc-centered cc-pa cc-w-quarter cc-mat-20 cc-bg-primary">
-                    ".cc-w-quarter cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
+                <div class="cc-centered cc-pa cc-w-25 cc-mat-20 cc-bg-primary">
+                    ".cc-w-25 cc-centered" -> Yololo ! I have a quarter width (25.00%) and centered
                 </div>
-                <?php for($i=5;$i<=100;$i+=5) { ?>
-                    <div class="cc-centered cc-pa cc-w-<?php print $i;?> cc-w-<?php print $i*2;?>-s cc-mat-20 cc-bg-primary cc-txt-center">
+
+
+                <?php for($i=0;$i<=100;$i+=1) { ?>
+                    <div class="cc-centered cc-pa cc-w-<?php print $i;?> cc-w-<?php print $i*2;?>-xl cc-mat-5 cc-bg-primary cc-txt-center">
                        <?php print $i;?>% width
                     </div>
                 <?php } ?>
@@ -1405,16 +1305,7 @@
                         <i class="fas fa-arrow-circle-right"></i>
                         <i class="far fa-arrow-alt-circle-right"></i>
                     </div>
-                </div>
-
-                <h3 class="title">Work with Ionicons</h3>
-
-                <div class="columns">
-                    <div>
-                        <i class="ion-ionic"></i>
-                        <i class="ion-trash-a"></i>
-                    </div>
-                </div>
+                </div>                
             </div>
         </section>
 
@@ -1427,7 +1318,6 @@
                 </p>
                 <p class="description">
                     <a href="#" data-rel="cc-grids" class="btn cc-bg-primary">Grids</a>
-                    <a href="#" data-rel="cc-masonry-grids" class="btn cc-bg-primary">Masonry layout</a>
                 </p>
             </header>
 
@@ -1976,39 +1866,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="main cc-masonry-grids">
-                <h3 class="title">Masonry</h3>
-
-                <pre class="HTML">
-                    <code class="language-markup">
-                        &lt;div class="columns cc-masonry cc-6 cc-12-xl cc-3-l cc-2-m cc-1-s">
-                            &lt;?php
-                                for ($i=1;$i&lt;25;$i++) {
-                                    $height = rand(60,350);
-                            ?>
-                                &lt;div class="&lt;?php if ($i%2==0) echo 'cc-bg-blue'; else echo 'cc-bg-orange';?>" style="height:&lt;?php echo $height;?>px">
-                                    I'm &lt;strong>n°&lt;?php echo $i;?>&lt;/strong> in HTML
-                                &lt;/div>
-                            &lt;?php
-                                }
-                            ?>
-                        &lt;/div>
-                    </code>
-                </pre>
-                <div class="columns cc-masonry cc-6 cc-12-xl cc-3-l cc-2-m cc-1-s">
-                    <?php
-                        for ($i=1;$i<50;$i++) {
-                            $height = rand(60,350);
-                    ?>
-                        <div class="<?php if ($i%2==0) echo 'cc-bg-blue'; else echo 'cc-bg-orange';?>" style="height:<?php echo $height;?>px">
-                            I'm <strong>n°<?php echo $i;?></strong> in HTML
-                        </div>
-                    <?php
-                        }
-                    ?>
-                </div>
-            </div>
         </section>
 
         <!-- ELEMENTS -->
@@ -2020,7 +1877,6 @@
                 </p>
                 <p class="description">
                     <a href="#" data-rel="cc-titles" class="btn cc-bg-primary">Titles</a>
-                    <a href="#" data-rel="cc-paragraphs" class="btn cc-bg-primary">Paragraph</a>
                     <a href="#" data-rel="cc-lists" class="btn cc-bg-primary">Lists</a>
                     <a href="#" data-rel="cc-blockquotes" class="btn cc-bg-primary">blockquotes</a>
                     <a href="#" data-rel="cc-tables" class="btn cc-bg-primary">Tables</a>
@@ -2067,66 +1923,6 @@
                     </code>
                 </pre>
                 <h1>Heading 1 <small>I'm the subtitle</small></h1>
-            </div>
-
-            <div class="main cc-paragraphs">
-                <h3 class="title">Paragraphs</h3>
-
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p>
-                            Bacon ipsum dolor...
-                        &lt;/p>
-                    </code>
-                </pre>
-
-                <p>
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon. Sausage jowl tail ham doner tongue porchetta frankfurter bresaola spare ribs short ribs brisket pastrami.<br /><br />
-                    Kielbasa ham turkey bresaola, frankfurter swine meatball andouille biltong salami pancetta filet mignon brisket ribeye jowl. Ground round tongue ham, boudin jowl sausage hamburger tail capicola shankle salami. Strip steak tri-tip boudin pork belly. Ground round bacon short ribs chicken. Landjaeger turducken tongue boudin brisket. Ham hock hamburger spare ribs, pork loin prosciutto filet mignon beef ribs. Ham hock pastrami jowl kielbasa chuck beef ribs ground round venison cow sirloin jerky meatball picanha short loin.
-                </p>
-
-
-                <h3 class="title">Font-size</h3>
-
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p class="cc-fs-number-breakpoint">
-                            Bacon ipsum dolor...
-                        &lt;/p>
-                    </code>
-                </pre>
-
-                <p>
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-                <p class="cc-fs-20 cc-fs-30-s">
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-                <p class="cc-fs-25 cc-fs-40-l">
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-                <p class="cc-fs-30 cc-fs-50-xl">
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-
-                <h3 class="title">Font-weight</h3>
-
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p class="cc-fw-number-breakpoint">
-                            Bacon ipsum dolor...
-                        &lt;/p>
-                    </code>
-                </pre>
-
-                <p>
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-                <p class="cc-fw-700">
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-
-                <p class=" cc-fw-700-m cc-fw-400-l cc-fw-700-xl cc-fs-40-xl">
-                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                </p>
-               
             </div>
 
             <div class="main cc-lists">
@@ -2274,51 +2070,6 @@
                         Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
                     </li>
                 </ol>
-
-
-                <pre class="HTML">
-                    <code class="language-markup">&lt;ul>
-                            &lt;li class="cc-green fa-apple">
-                                &lt;strong>FontAwesome Icon&lt;/strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
-                            &lt;/li>
-                            &lt;li class="fa-facebook cc-red">
-                                &lt;strong>FontAwesome Icon&lt;/strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                            &lt;/li>
-                            &lt;li class="fa-twitter cc-blue">
-                                &lt;strong>FontAwesome Icon&lt;/strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
-                            &lt;/li>
-                            &lt;li class="cc-green ion-ionic">
-                                &lt;strong>Ionicons Icon&lt;/strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
-                            &lt;/li>
-                            &lt;li class="cc-red ion-paper-airplane">
-                                &lt;strong>Ionicons Icon&lt;/strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                            &lt;/li>
-                            &lt;li class="ion-nuclear cc-blue">
-                                &lt;strong>Ionicons Icon&lt;/strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
-                            &lt;/li>
-                        &lt;/ul>
-                    </code>
-                </pre>
-                <ul>
-                    <li class="cc-green fa-apple">
-                        <strong>FontAwesome Icon</strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
-                    </li>
-                    <li class="fa-facebook cc-red">
-                        <strong>FontAwesome Icon</strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                    </li>
-                    <li class="fa-twitter cc-blue">
-                        <strong>FontAwesome Icon</strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
-                    </li>
-                    <li class="cc-green ion-ionic">
-                        <strong>Ionicons Icon</strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
-                    </li>
-                    <li class="cc-red ion-paper-airplane">
-                        <strong>Ionicons Icon</strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs.
-                    </li>
-                    <li class="ion-nuclear cc-blue">
-                        <strong>Ionicons Icon</strong> Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin.
-                    </li>
-                </ul>
             </div>
 
             <div class="main cc-blockquotes">
@@ -4546,19 +4297,6 @@
                         <div class="form-item">
                             <label>Label</label>
                             <input type="text" placeholder="placeholder" />
-                        </div>
-
-                        <div class="columns cc-masonry cc-3">
-                            <?php
-                                for ($i=1;$i<12;$i++) {
-                                    $height = rand(60,350);
-                            ?>
-                                <div class="<?php if ($i%2==0) echo 'cc-bg-blue'; else echo 'cc-bg-orange';?>" style="height:<?php echo $height;?>px">
-                                    I'm <strong>n°<?php echo $i;?></strong> in HTML
-                                </div>
-                            <?php
-                                }
-                            ?>
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">

@@ -7,15 +7,31 @@
 /*
     - General alerts styles
     - types : warning, error, success, info
+
+    <div class="alert alert-{type}">
+        ...
+    </div>
 */
 
 .alert {
-    padding: 1em;
-    padding-right:45px;
-    border: 1px solid transparent;
-    margin:1.5em 0;
+    padding: @alert-pa;
+    padding-right:60px;
+    margin:@alert-ma;
+    font-size: @alert-fs;
     position:relative;
     border-radius:unit(@alert-br,px);
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    display: flex;
+
+    & > div {
+        flex:1;
+    }
+
+    & > i {
+        padding-right:15px;
+        font-size:3rem;
+    }
 
     /* Links inside a .alert element */
     a {
@@ -24,22 +40,30 @@
 
     /* List : add margin */
     ul {
-        width:90%;
+        padding-left:20px;
         margin:1em auto;
+
+        li {
+            list-style-position: inside;
+        }
     }
 
-    /* Closed icon */
-    button.close {
+    /* Closed button */
+    [data-close-alert] {
         ._reset;
         display:block;
         position:absolute;
         right:0px;
         top:0px;
-        padding:1em;
-        height:100%;
         background-color:transparent;
         cursor:pointer;
-        opacity:1;
+        padding:20px;
+        opacity: 0.4;
+        ._transition;
+
+        &:hover {
+            opacity: 1;
+        }
 
         i {
             ._reset;
@@ -53,58 +77,79 @@
 
     /* Alerts types */
     &-primary {
-        background-color: @alert-pr-bg;
-        border-color: @alert-pr-bc;
+        border-top:@alert-btw solid @alert-pr-bc;
         color:@alert-pr-tc;
 
         p,div,ul,
-        button.close,
+        [data-close-alert],
         a {
             color:@primary;
         }
     }
     &-info {
-        background-color: @alert-in-bg;
-        border-color: @alert-in-bc;
+        border-top:@alert-btw solid @alert-in-bc;
         color:@alert-in-tc;
 
         p,div,ul,
-        button.close,
+        [data-close-alert],
         a {
             color:@alert-in-tc;
         }
     }
     &-warning {
-        background-color: @alert-wa-bg;
-        border-color: @alert-wa-bc;
+        border-top:@alert-btw solid @alert-wa-bc;
         color:@alert-wa-tc;
 
         p,div,ul,
-        button.close,
+        [data-close-alert],
         a {
             color:@alert-wa-tc;
         }
     }
     &-error {
-        background-color: @alert-er-bg;
-        border-color: @alert-er-bc;
+        border-top:@alert-btw solid @alert-er-bc;
         color:@alert-er-tc;
 
         p,div,ul,
-        button.close,
+        [data-close-alert],
         a {
             color:@alert-er-tc;
         }
     }
     &-success {
-        background-color: @alert-su-bg;
-        border-color: @alert-su-bc;
+        border-top:@alert-btw solid @alert-su-bc;
         color:@alert-su-tc;
 
         p,div,ul,
-        button.close,
+        [data-close-alert],
         a {
             color:@alert-su-tc;
         }
     }
+
+    // Screens > 767px
+    ._media-s-up({
+        padding-right:80px;
+
+        // Icon left
+        & > i {
+            margin:0 40px 0 20px;
+            padding:0;
+            font-size: 6rem;
+        }
+    });
+}
+
+
+/* ********** */
+/** MESSAGES **/
+/* ********** */
+/*
+    DEPRECIATED SINCE V3.4.0
+    Use '.alert' instead
+    Will be deleted in v4.0.0
+*/
+.message {
+    // Extend all alert properties
+    &:extend(.alert all);
 }

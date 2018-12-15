@@ -38,19 +38,6 @@
             &-baseline      {align-items:baseline}
             &-stretch       {align-items:stretch}
         }
-        &-masonry {
-            display:block;
-            margin:0;
-            column-gap: @cols-masonry-gap;
-
-            & > * {
-                display:inline-block;
-                width:100%;
-                max-width:100%;
-                flex:none;
-                margin:@cols-masonry-gap/2 0;
-            }
-        }
     }
 
     // Children - Flex item
