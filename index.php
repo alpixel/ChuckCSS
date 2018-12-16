@@ -63,8 +63,7 @@
                 <h3 class="title">Alerts</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        &lt;!-- -->
+                    <code class="language-markup">&lt;!-- -->
                         &lt;div class="alert alert-{type}">
                             &lt;button class="close" role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                             &lt;i class="fab fa-apple">&lt;/i>
@@ -76,6 +75,8 @@
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                     <i class="fab fa-apple"></i> 
                     <div>
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
                     </div>
                 </div>
@@ -90,7 +91,7 @@
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                     <i class="fab fa-apple"></i> 
                     <div>
-                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
+                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
                     </div>
                 </div>
                 <div class="alert alert-error">
@@ -102,7 +103,7 @@
                             <li>Prénom obligatoire</li>
                             <li>Nom obligatoire</li>
                         </ul>
-                        <a href=""><i class="fas fa-arrow-circle-left icon-left"></i> Retour</a>
+                        <a href="" class="btn"><i class="fas fa-arrow-circle-left icon-left"></i> Retour</a>
                     </div>
                 </div>
                 <div class="alert alert-success">
@@ -117,46 +118,22 @@
                 <h3 class="title">Badges</h3>
 
                 <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
+                    <code class="language-markup">&lt;!-- -->
                         &lt;p>
                             Donec rutrum... &lt;span class="badge cc-bg-primary">54&lt;/span> Donec rutrum...
                         &lt;/p>
-                    </code>
-                </pre>
-                <p>
-                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge cc-bg-primary">54</span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.
-                </p>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
                         &lt;p class="cc-bg-primary">
                             Donec rutrum... &lt;span class="badge">54&lt;/span> Donec rutrum...
                         &lt;/p>
                     </code>
                 </pre>
-                <p class="cc-bg-primary">
-                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge">54</span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.
-                </p>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;p>
-                            &lt;button class="cc-thin">
-                                Button &lt;span class="badge">54&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge">554&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-fat">
-                                Button &lt;span class="badge">4&lt;/span>
-                            &lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
                 <p>
+                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge cc-bg-primary">54</span> Donec rutrum congue leo eget malesuada.
+                </p>
+                <p class="cc-bg-primary cc-mat-20 cc-pa">
+                    Donec rutrum congue leo eget malesuada. Vestibulum ac diam <span class="badge cc-bg-red">54</span> Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam.
+                </p>
+                <p class="cc-mat-20">
                     <button class="cc-thin">
                         Button <span class="badge">54</span>
                     </button>
@@ -167,38 +144,6 @@
                         Button <span class="badge">4</span>
                     </button>
                 </p>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;p class="cc-mat-20">
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-primary">45&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-green">9&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-red">17&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-blue">42550&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-red">4 &lt;i class="ion-ios-gear">&lt;/i>&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-purple">45&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-orange">0&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge cc-bg-yellow">$ 19.99&lt;/span>
-                            &lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
                 <p class="cc-mat-20">
                     <button>
                         Button <span class="badge cc-bg-primary">45</span>
@@ -213,7 +158,7 @@
                         Button <span class="badge cc-bg-blue">42550</span>
                     </button>
                     <button>
-                        Button <span class="badge cc-bg-red">4 <i class="ion-ios-gear"></i></span>
+                        Button <span class="badge cc-bg-red">4 <i class="fas fa-user icon-right"></i></span>
                     </button>
                     <button>
                         Button <span class="badge cc-bg-purple">45</span>
@@ -225,23 +170,6 @@
                         Button <span class="badge cc-bg-yellow">$ 19.99</span>
                     </button>
                 </p>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;p class="cc-mat-20">
-                            &lt;a href="#">
-                                Link &lt;span class="badge">4&lt;/span>
-                            &lt;/a>
-                            &lt;a href="#">
-                                Link &lt;span class="badge cc-bg-primary">4&lt;/span>
-                            &lt;/a>
-                            &lt;a href="#" class="btn">
-                                Link &lt;span class="badge cc-bg-primary">4&lt;/span>
-                            &lt;/a>
-                        &lt;/p>
-                    </code>
-                </pre>
                 <p class="cc-mat-20">
                     <a href="#">
                         Link <span class="badge">4</span>
@@ -252,40 +180,10 @@
                     <a href="#" class="btn">
                         Link <span class="badge cc-bg-primary">4</span>
                     </a>
+                    <a href="#" class="btn cc-bg-primary">
+                        Link <span class="badge">4</span>
+                    </a>
                 </p>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;p class="cc-mat-20">
-                            &lt;a href="#" class="btn cc-bg-primary">
-                                Message &lt;span class="badge">46&lt;/span>
-                            &lt;/a>
-                            &lt;button class="cc-bg-red">
-                                Button &lt;span class="badge cc-bg-purple">9856&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-green">
-                                Sales ! &lt;span class="badge cc-bg-orange">&lt;i class="ion-ios-pricetags-outline">&lt;/i> 45 %&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-blue">
-                                Button &lt;span class="badge cc-bg-yellow">4&lt;/span>
-                            &lt;/button>
-
-                            &lt;button class="cc-bg-primary cc-thin">
-                                Button &lt;span class="badge">4&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-red cc-fat">
-                                Button &lt;span class="badge cc-bg-purple">&lt;i class="fas fa-heartbeat">&lt;/i> 90 bpm&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-green cc-thin">
-                                Button &lt;span class="badge cc-bg-orange">4&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-bg-blue cc-fat">
-                                &lt;i class="ion-ios-cart-outline">&lt;/i> &lt;span class="badge cc-bg-yellow">0 product&lt;/span>
-                            &lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
                 <p class="cc-mat-20">
                     <a href="#" class="btn cc-bg-primary">
                         Message <span class="badge">46</span>
@@ -294,12 +192,11 @@
                         Button <span class="badge cc-bg-purple">9856</span>
                     </button>
                     <button class="cc-bg-green">
-                        Sales ! <span class="badge cc-bg-orange"><i class="ion-ios-pricetags-outline"></i> 45 %</span>
+                        Sales ! <span class="badge cc-bg-orange"><i class="fas fa-user icon-left"></i> 45 %</span>
                     </button>
                     <button class="cc-bg-blue">
                         Button <span class="badge cc-bg-yellow">4</span>
                     </button>
-
                     <button class="cc-bg-primary cc-thin">
                         Button <span class="badge">4</span>
                     </button>
@@ -310,35 +207,9 @@
                         Button <span class="badge cc-bg-orange">4</span>
                     </button>
                     <button class="cc-bg-blue cc-fat">
-                        <i class="ion-ios-cart-outline"></i> <span class="badge cc-bg-yellow">0 product</span>
+                        <i class="fas fa-shopping-cart icon-left"></i> <span class="badge cc-bg-yellow">0 product</span>
                     </button>
                 </p>
-
-                <pre class="HTML">
-                    <code class="language-markup"><!-- -->
-                        <!-- -->
-                        &lt;p class="cc-mat-20">
-                            &lt;button>
-                                Button &lt;span class="badge">&lt;i class="ion-ios-gear">&lt;/i>&lt;/span>
-                            &lt;/button>
-                            &lt;button>
-                                Button &lt;span class="badge">&lt;i class="fas fa-user">&lt;/i>&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-thin">
-                                Button &lt;span class="badge ion-ios-gear">&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-thin">
-                                Button &lt;span class="badge">&lt;i class="fa fa-user">&lt;/i>&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-fat">
-                                Button &lt;span class="badge ion-ios-gear">&lt;/span>
-                            &lt;/button>
-                            &lt;button class="cc-fat">
-                                Button &lt;span class="badge">&lt;i class="fa fa-user">&lt;/i>&lt;/span>
-                            &lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
                 <p class="cc-mat-20">
                     <button>
                         Button <span class="badge"><i class="ion-ios-gear"></i></span>
@@ -362,586 +233,328 @@
             </div>
 
             <div class="main cc-tabs">
+                <h3 class="title">Tabs</h3>
+                <pre class="HTML">
+                    <code class="language-markup"><!-- -->
+                        &lt;!-- -->
+                        &lt;ul class="tabs">
+                            &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+                            &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
+                            &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+                            ...
+                        &lt;/ul>
+                    </code>
+                </pre>
+                <ul class="tabs">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-underlined cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-align-left cc-mat-50">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-align-center cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-align-right cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-align-stretch cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-fat cc-underlined cc-mat-50">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-thin cc-mat-20 cc-underlined">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-bordered cc-mat-50">
+                    <li><a href="#"><i class="fas fa-user icon-left"></i>Link 1</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-edit icon-left"></i>Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-mat-50">
+                    <li><a href="#" class="fa-user">Link 1</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-edit icon-left"></i>Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#" class="btn cc-bg-red">item X</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit (last but not last in html) !</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-bordered cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#"><i class="fas fa-times icon-left"></i> Exit!</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-mat-50">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li><a href="#">Exit!</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-unchained cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li><a href="#">Exit!</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-left-xl cc-align-center-l cc-mat-50">
+                    <li><a href="#">cc-align-left-xl cc-align-center-l</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-right-xl cc-align-stretch-l cc-mat-50">
+                    <li><a href="#">cc-align-right-xl cc-align-stretch-l</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-center-l cc-align-stretch-m cc-mat-50">
+                    <li><a href="#">cc-align-center-l cc-align-stretch-m</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-stretch-xl cc-align-right-l cc-align-stretch-m cc-mat-50">
+                    <li><a href="#">cc-align-stretch-xl cc-align-right-l cc-align-stretch-m</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-left-l cc-mat-50">
+                    <li><a href="#">cc-align-left-l</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-right-l cc-mat-20">
+                    <li><a href="#">cc-align-right-l</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-center-l cc-mat-20">
+                    <li><a href="#">cc-align-center-l</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-stretch-l cc-mat-20">
+                    <li><a href="#">cc-align-stretch-l</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-left-m cc-mat-50">
+                    <li><a href="#">cc-align-left-m</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-right-m cc-mat-20">
+                    <li><a href="#">cc-align-right-m</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-center-m cc-mat-20">
+                    <li><a href="#">cc-align-center-m</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-stretch-m cc-mat-20">
+                    <li><a href="#">cc-align-stretch-m</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-left-s cc-mat-50">
+                    <li><a href="#">cc-align-left-s</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-right-s cc-mat-20">
+                    <li><a href="#">cc-align-right-s</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-center-s cc-mat-20">
+                    <li><a href="#">cc-align-center-s</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-stretch-s cc-mat-20">
+                    <li><a href="#">cc-align-stretch-s</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
 
-                <div class="tabs-basic">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs">
-                                &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
-                                &lt;li class="active">&lt;a href="#">Link 2&lt;/a>&lt;/li>
-                                &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs cc-underlined">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-underlined">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-alignment">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs cc-align-left">
-                                ...
-                            &lt;/ul>
-
-                            &lt;ul class="tabs cc-align-center">
-                                ...
-                            &lt;/ul>
-
-                            &lt;ul class="tabs cc-align-right">
-                                ...
-                            &lt;/ul>
-
-                            &lt;ul class="tabs cc-align-stretch">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-align-left">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-align-center">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-align-right">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-align-stretch">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-thickness">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs cc-fat cc-underlined">
-                                ...
-                            &lt;/ul>
-
-                            &lt;ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-fat cc-underlined">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                    <ul class="tabs cc-thin cc-mat-20 cc-underlined">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-bordered">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs cc-bordered">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-bordered">
-                        <li><a href="#"><i class="fas fa-user icon-left"></i>Link 1</a></li>
-                        <li class="active"><a href="#"><i class="fas fa-edit icon-left"></i>Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-li-last">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs">
-                                ...
-                                &lt;li class="cc-last">&lt;a href="#" class="btn cc-bg-red fa-times">Exit!&lt;/a>&lt;/li>
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-bordered cc-mat-20">
-                                ...
-                                &lt;li class="cc-last">&lt;a href="#" class="fa-times">Exit!&lt;/a>&lt;/li>
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="btn cc-bg-red ion-ios-paw">First item</a></li>
-                        <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                    <ul class="tabs cc-bordered cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li class="cc-last"><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-pills">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs cc-pills">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-unchained cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-unchained cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-responsive">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-left-xl cc-align-center-l cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-left-xl cc-align-center-l cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-left-xl cc-align-center-l</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-right-xl cc-align-stretch-l cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-right-xl cc-align-stretch-l cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-right-xl cc-align-stretch-l</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-center-l cc-align-stretch-m cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-center-l cc-align-stretch-m cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-center-l cc-align-stretch-m</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-stretch-xl cc-align-right-l cc-align-stretch-m cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-stretch-xl cc-align-right-l cc-align-stretch-m cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-stretch-xl cc-align-right-l cc-align-stretch-m</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-left-l cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-left-l cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-left-l</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-right-l cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-right-l cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-right-l</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-center-l cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-center-l cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-center-l</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-stretch-l cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-stretch-l cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-stretch-l</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-left-m cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-left-m cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-left-m</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-right-m cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-right-m cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-right-m</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-center-m cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-center-m cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-center-m</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-stretch-m cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-stretch-m cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-stretch-m</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-left-s cc-mat-20">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-align-right-s cc-mat-20">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-align-center-s cc-mat-20">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-align-stretch-s cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-left-s cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-left-s</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-align-right-s cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-right-s</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-align-center-s cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-center-s</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-align-stretch-s cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-stretch-s</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            <!-- -->
-                            &lt;ul class="tabs cc-pills cc-align-left cc-mat-20">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-align-right cc-mat-20">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-align-center cc-mat-20">
-                                ...
-                            &lt;/ul>
-                            &lt;ul class="tabs cc-pills cc-align-stretch cc-mat-20">
-                                ...
-                            &lt;/ul>
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-pills cc-align-left cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-left</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-align-right cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-right</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-align-center cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-center</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                    <ul class="tabs cc-pills cc-align-stretch cc-mat-20">
-                        <li><a href="#" class="fa-user">cc-align-stretch</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                    </ul>
-                </div>
-
-                <div class="tabs-color">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- -->
-                            &lt;ul class="tabs cc-green">
-                        </code>
-                    </pre>
-                    <ul class="tabs cc-green">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-underlined cc-green cc-mat-20">
-                        <li><a href="#">Link 1</a></li>
-                        <li class="active"><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-bordered cc-green cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li class="cc-last"><a href="#" class="btn cc-bg-red fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-align-stretch cc-bordered cc-green cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-pills cc-green cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-pills cc-mat-20 cc-align-stretch cc-green cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-pills cc-align-center cc-green cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-
-                    <ul class="tabs cc-pills cc-align-right cc-green cc-mat-20">
-                        <li><a href="#" class="fa-user">Link 1</a></li>
-                        <li class="active"><a href="#" class="fa-edit">Link 2</a></li>
-                        <li><a href="#" class="ion-android-plane">Link 3</a></li>
-                        <li><a href="#" class="ion-ios-paw">Nice dog</a></li>
-                        <li><a href="#" class="fa-times">Exit!</a></li>
-                        <li><a href="#">Link 6</a></li>
-                        <li><a href="#">Link 7</a></li>
-                    </ul>
-                </div>
+                <ul class="tabs cc-pills cc-align-left cc-mat-50">
+                    <li><a href="#">cc-align-left</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-right cc-mat-20">
+                    <li><a href="#">cc-align-right</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-center cc-mat-20">
+                    <li><a href="#">cc-align-center</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-stretch cc-mat-20">
+                    <li><a href="#">cc-align-stretch</a></li>
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                </ul>
+                <ul class="tabs cc-green cc-mat-50">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-underlined cc-green cc-mat-20">
+                    <li><a href="#">Link 1</a></li>
+                    <li class="active"><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-bordered cc-green cc-mat-20">
+                    <li><a href="#"><i class="fas fa-user ionc-left"></i> Link 1</a></li>
+                    <li class="active"><a href="#">Active Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit!<i class="fas fa-times icon-right"></i></a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-align-stretch cc-bordered cc-green cc-mat-20">
+                    <li><a href="#"><i class="fas fa-user ionc-left"></i> Link 1</a></li>
+                    <li class="active"><a href="#">Active Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit!<i class="fas fa-times icon-right"></i></a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-green cc-mat-20">
+                    <li><a href="#"><i class="fas fa-user ionc-left"></i> Link 1</a></li>
+                    <li class="active"><a href="#">Active Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit!<i class="fas fa-times icon-right"></i></a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-mat-20 cc-align-stretch cc-green cc-mat-20">
+                    <li><a href="#"><i class="fas fa-user ionc-left"></i> Link 1</a></li>
+                    <li class="active"><a href="#">Active Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit!<i class="fas fa-times icon-right"></i></a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-center cc-green cc-mat-20">
+                    <li><a href="#"><i class="fas fa-user ionc-left"></i> Link 1</a></li>
+                    <li class="active"><a href="#">Active Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit!<i class="fas fa-times icon-right"></i></a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
+                <ul class="tabs cc-pills cc-align-right cc-green cc-mat-20">
+                    <li><a href="#"><i class="fas fa-user ionc-left"></i> Link 1</a></li>
+                    <li class="active"><a href="#">Active Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Nice dog</a></li>
+                    <li class="cc-last"><a href="#" class="btn cc-bg-red">Exit!<i class="fas fa-times icon-right"></i></a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                </ul>
             </div>
 
             <div class="main cc-modals">
@@ -1016,14 +629,16 @@
                     <button data-target="modal-id" class="modal-open">Launch default modal</button>
                     <button data-target="modal-id-large" class="modal-open">Launch large modal</button>
                     <button data-target="modal-id-small" class="modal-open">Launch small modal</button>
-                    <button data-target="modal-fullscreen" class="modal-open">Launch fullscreen modal</button>
                     <button data-target="modal-id-long" class="modal-open">Launch modal with long content</button>
+                </div>
+                <div class="cc-mat-20">
+                    <button data-target="modal-id-no-closable" class="modal-open">Disabled overlay click</button>
+                    <button data-target="modal-fullscreen" class="modal-open">Launch fullscreen modal</button>
                     <button data-target="modal-id-long-fixed-header" class="modal-open">Fixed Header / Footer</button>
+                    <button data-target="modal-id-nested" class="modal-open">Nested modals</button>
                 </div>
 
                 <div class="cc-mat-20">
-                    <button data-target="modal-id-no-closable" class="modal-open">Disabled overlay click</button>
-                    <button data-target="modal-id-nested" class="modal-open">Nested modals</button>
                     <button data-target="this_id_does_not_exist" class="modal-open">Call a non existing modal (show an alert)</button>
                 </div>
             </div>
@@ -1050,8 +665,8 @@
                 <pre class="HTML">
                     <code class="language-markup"><!-- -->
                         &lt;!-- -->
-                        &lt;p class="cc-txt-left">I'm a left text !&lt;/p>
-                        &lt;p class="cc-txt-center">I'm a centered text !&lt;/p>
+                        &lt;p class="cc-txt-left cc-txt-right-m">I'm a left text !&lt;/p>
+                        &lt;p class="cc-txt-center cc-txt-right-l cc-txt-left-xl">I'm a centered text !&lt;/p>
                         &lt;p class="cc-txt-right">I'm a right text !&lt;/p>
                         &lt;p class="cc-txt-justify">I'm a justified text ! .&lt;/p>
                     </code>
@@ -3867,298 +3482,150 @@
                     </code>
                 </pre>
                 <p>
-                    <a href="#">Classic link</a>
-                    <a href="#" class="btn">Classic link with .btn class</a>
-                    <button>Button</button>
+                    <a href="#">classic a</a>
+                    <a href="#" class="btn">a.btn</a>
+                    <button>button</button>
+                </p>
+                <p class="cc-mat-20">
+                    <a href="#" class="btn cc-thin">a.btn.cc-thin</a>
+                    <a href="#" class="btn cc-fat">a.btn.cc-fat</a>
+                    <button class="cc-thin">button.cc-thin</button>
+                    <button class="cc-fat">button.cc-fat</button>
+                </p>
+                <p class="cc-mat-20">
+                    <a href="#" class="cc-primary">a.cc-primary</a>
+                    <a href="#" class="cc-red">a.cc-red</a>
+                    <a href="#" class="btn cc-bg-primary">a.btn.cc-bg-primary</a>
+                </p>
+                <p class="cc-mat-20">
+                    <button class="cc-bg-primary">button.cc-bg-primary</button>
+                    <button class="cc-bg-red">button.cc-bg-red</button>
+                    <button class="cc-bg-green">button.cc-bg-green</button>
+                    <button class="cc-bg-blue">button.cc-bg-blue</button>
+                    <button class="cc-bg-purple">button.cc-bg-purple</button>
+                    <button class="cc-bg-orange">button.cc-bg-orange</button>
+                    <button class="cc-bg-yellow">button.cc-bg-yellow</button>
+                </p>
+
+                
+                <p class="cc-mat-20">
+                    <a href="#" class="btn cc-bg-blue cc-outlined">a.btn.cc-bg-blue.cc-outlined</a>
+                    <a href="#" class="btn cc-bg-red cc-outlined">a.btn.cc-bg-red.cc-outlined</a>
+                </p>
+                <p>
+                    <button class="cc-bg-primary cc-outlined">button.cc-outlined.cc-bg-color</button>
+                    <button class="cc-bg-red cc-outlined">button.cc-outlined.cc-bg-color</button>
+                    <button class="cc-bg-green cc-outlined">button.cc-outlined.cc-bg-color</button>
+                    <button class="cc-bg-blue cc-outlined">button.cc-outlined.cc-bg-color</button>
+                    <button class="cc-bg-purple cc-outlined">button.cc-outlined.cc-bg-color</button>
+                    <button class="cc-bg-orange cc-outlined">button.cc-outlined.cc-bg-color</button>
+                    <button class="cc-bg-yellow cc-outlined">button.cc-outlined.cc-bg-color</button>
+                </p>
+
+               
+                <p class="cc-mat-20">
+                    <a href="#" class="btn cc-thin"><i class="fas fa-user icon-left"></i>a.btn.cc-thin</a>
+                    <a href="#" class="btn"><i class="fas fa-user icon-left"></i>a.btn</a>
+                    <a href="#" class="btn cc-fat"><i class="fas fa-user icon-left"></i>a.btn.cc-fat</a>
+                    <a href="#" class="btn cc-thin">a.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="btn">a.btn <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="btn cc-fat">a.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                </p>
+                <p class="cc-mat-20">
+                    <a href="#" class="cc-bg-red btn cc-thin"><i class="fas fa-user icon-left"></i>a.cc-bg-red.btn.cc-thin</a>
+                    <a href="#" class="cc-bg-red btn"><i class="fas fa-user icon-left"></i>a.cc-bg-red.btn</a>
+                    <a href="#" class="cc-bg-red btn cc-fat"><i class="fas fa-user icon-left"></i>a.cc-bg-red.btn.cc-fat</a>
+                    <a href="#" class="cc-bg-red btn cc-thin">a.cc-bg-red.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="cc-bg-red btn">a.cc-bg-red.btn <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="cc-bg-red btn cc-fat">a.cc-bg-red.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                </p>
+
+                <p class="cc-mat-20">
+                    <button class=" cc-thin"><i class="fas fa-user icon-left"></i>button.cc-thin</button>
+                    <button class=""><i class="fas fa-user icon-left"></i>button</button>
+                    <button class=" cc-fat"><i class="fas fa-user icon-left"></i>button.cc-fat</button>
+                    <button class=" cc-thin">button.cc-thin <i class="fas fa-user icon-right"></i></button>
+                    <button class="">button <i class="fas fa-user icon-right"></i></button>
+                    <button class=" cc-fat">button.cc-fat <i class="fas fa-user icon-right"></i></button> 
+                </p>
+                <p class="cc-mat-20">
+                    <button class="cc-bg-red  cc-thin"><i class="fas fa-user icon-left"></i>button.cc-bg-red.cc-thin</button>
+                    <button class="cc-bg-red "><i class="fas fa-user icon-left"></i>button.cc-bg-red</button>
+                    <button class="cc-bg-red  cc-fat"><i class="fas fa-user icon-left"></i>button.cc-bg-red.cc-fat</button>
+                    <button class="cc-bg-red  cc-thin">button.cc-bg-red.cc-thin <i class="fas fa-user icon-right"></i></button>
+                    <button class="cc-bg-red ">button.cc-bg-red <i class="fas fa-user icon-right"></i></button>
+                    <button class="cc-bg-red  cc-fat">button.cc-bg-red.cc-fat <i class="fas fa-user icon-right"></i></button> 
                 </p>
 
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;a href="#" class="btn cc-thin">&lt; a /> .btn.cc-thin&lt;/a>
-                        &lt;a href="#" class="btn cc-fat">&lt; a /> .btn.cc-fat&lt;/a>
-                        &lt;button class="cc-thin">Button.cc-thin&lt;/button>
-                        &lt;button class="cc-fat">Button.cc-fat&lt;/button>
-                    </code>
-                </pre>
-                <p>
-                    <a href="#" class="btn cc-thin">< a /> .btn.cc-thin</a>
-                    <a href="#" class="btn cc-fat">< a /> .btn.cc-fat</a>
-                    <button class="cc-thin">Button.cc-thin</button>
-                    <button class="cc-fat">Button.cc-fat</button>
+                <p class="cc-mat-20">
+                    <a href="#" class="cc-outlined btn cc-thin"><i class="fas fa-user icon-left"></i>a.cc-outlined.btn.cc-thin</a>
+                    <a href="#" class="cc-outlined btn"><i class="fas fa-user icon-left"></i>a.cc-outlined.btn</a>
+                    <a href="#" class="cc-outlined btn cc-fat"><i class="fas fa-user icon-left"></i>a.cc-outlined.btn.cc-fat</a>
+                    <a href="#" class="cc-outlined btn cc-thin">a.cc-outlined.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="cc-outlined btn">a.cc-outlined.btn <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="cc-outlined btn cc-fat">a.cc-outlined.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                </p>
+                <p class="cc-mat-20">
+                    <a href="#" class="cc-outlined cc-bg-red btn cc-thin"><i class="fas fa-user icon-left"></i>a.cc-outlined.cc-bg-red.btn.cc-thin</a>
+                    <a href="#" class="cc-outlined cc-bg-red btn"><i class="fas fa-user icon-left"></i>a.cc-outlined.cc-bg-red.btn</a>
+                    <a href="#" class="cc-outlined cc-bg-red btn cc-fat"><i class="fas fa-user icon-left"></i>a.cc-outlined.cc-bg-red.btn.cc-fat</a>
+                    <a href="#" class="cc-outlined cc-bg-red btn cc-thin">a.cc-outlined.cc-bg-red.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="cc-outlined cc-bg-red btn">a.cc-outlined.cc-bg-red.btn <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="cc-outlined cc-bg-red btn cc-fat">a.cc-outlined.cc-bg-red.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                </p>
+
+                <p class="cc-mat-20">
+                    <button class="cc-outlined  cc-thin"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-thin</button>
+                    <button class="cc-outlined "><i class="fas fa-user icon-left"></i>button.cc-outlined</button>
+                    <button class="cc-outlined  cc-fat"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-fat</button>
+                    <button class="cc-outlined  cc-thin">button.cc-outlined.cc-thin <i class="fas fa-user icon-right"></i></button>
+                    <button class="cc-outlined ">button.cc-outlined <i class="fas fa-user icon-right"></i></button>
+                    <button class="cc-outlined  cc-fat">button.cc-outlined.cc-fat <i class="fas fa-user icon-right"></i></button> 
+                </p>
+                <p class="cc-mat-20">
+                    <button class="cc-outlined cc-bg-red  cc-thin"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-bg-red.cc-thin</button>
+                    <button class="cc-outlined cc-bg-red "><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-bg-red</button>
+                    <button class="cc-outlined cc-bg-red  cc-fat"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-bg-red.cc-fat</button>
+                    <button class="cc-outlined cc-bg-red  cc-thin">button.cc-outlined.cc-bg-red.cc-thin <i class="fas fa-user icon-right"></i></button>
+                    <button class="cc-outlined cc-bg-red ">button.cc-outlined.cc-bg-red <i class="fas fa-user icon-right"></i></button>
+                    <button class="cc-outlined cc-bg-red  cc-fat">button.cc-outlined.cc-bg-red.cc-fat <i class="fas fa-user icon-right"></i></button> 
                 </p>
 
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p>
-                            &lt;a href="#" class="cc-primary">Classic Primary color link&lt;/a>
-                            &lt;a href="#" class="cc-blue">Classic blue link&lt;/a>
-                            &lt;a href="#" class="cc-red">Classic red link&lt;/a>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-bg-primary">Btn primary color link&lt;/a>
-                            &lt;a href="#" class="btn cc-bg-blue">Btn blue link&lt;/a>
-                            &lt;a href="#" class="btn cc-bg-red">Btn red link&lt;/a>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;button class="cc-bg-primary">Button&lt;/button>
-                            &lt;button class="cc-bg-red">Button&lt;/button>
-                            &lt;button class="cc-bg-green">Button&lt;/button>
-                            &lt;button class="cc-bg-blue">Button&lt;/button>
-                            &lt;button class="cc-bg-purple">Button&lt;/button>
-                            &lt;button class="cc-bg-orange">Button&lt;/button>
-                            &lt;button class="cc-bg-yellow">Button&lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
-                <p>
-                    <a href="#" class="cc-primary">Classic Primary color link</a>
-                    <a href="#" class="cc-blue">Classic blue link</a>
-                    <a href="#" class="cc-red">Classic red link</a>
+                <p class="cc-mat-50">
+                    <a href="#" class="cc-disabled">a.cc-disabled</a>
+                    <a href="#" class="btn cc-bg-blue cc-disabled">a.cc-disabled.btn.cc-bg-blue</a>
+                    <a href="#" class="btn cc-bg-red cc-outlined cc-disabled">a.cc-disabled.btn.cc-oulined.cc-bg-red</a>
+                    <a href="#" class="btn cc-bg-red cc-outlined cc-disabled"><i class="fas fa-user icon-left"></i>a.cc-disabled.btn.cc-oulined.cc-bg-red</a>
+                    <a href="#" class="btn cc-bg-red cc-outlined cc-disabled">a.cc-disabled.btn.cc-oulined.cc-bg-red <i class="fas fa-user icon-right"></i></a>
+                    <a href="#" class="btn cc-thin cc-bg-red cc-outlined cc-disabled"><i class="fas fa-user icon-left"></i>a.cc-thin.cc-disabled.btn.cc-oulined.cc-bg-red</a>
+                    <a href="#" class="btn cc-fat cc-bg-red cc-outlined cc-disabled">a.cc-fat.cc-disabled.btn.cc-oulined.cc-bg-red <i class="fas fa-user icon-right"></i></a>
                 </p>
-                <p>
-                    <a href="#" class="btn cc-bg-primary">Btn primary color link</a>
-                    <a href="#" class="btn cc-bg-blue">Btn blue link</a>
-                    <a href="#" class="btn cc-bg-red">Btn red link</a>
-                </p>
-                <p>
-                    <button class="cc-bg-primary">Button</button>
-                    <button class="cc-bg-red">Button</button>
-                    <button class="cc-bg-green">Button</button>
-                    <button class="cc-bg-blue">Button</button>
-                    <button class="cc-bg-purple">Button</button>
-                    <button class="cc-bg-orange">Button</button>
-                    <button class="cc-bg-yellow">Button</button>
+                <p class="cc-mat-20">
+                    <button class="cc-disabled">button.cc-disabled</button>
+                    <button class="cc-bg-primary cc-disabled">button.cc-disabled.cc-bg-primary</button>
+                    <button class="cc-bg-red cc-disabled cc-outlined">button.cc-disabled.cc-bg-primary.cc-outliend</button>
                 </p>
 
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p>
-                            &lt;a href="#" class="btn cc-bg-blue cc-outlined">Classic blue link&lt;/a>
-                            &lt;a href="#" class="btn cc-bg-red cc-outlined">Classic red link&lt;/a>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;button class="cc-bg-primary cc-outlined">Button&lt;/button>
-                            &lt;button class="cc-bg-red cc-outlined">Button&lt;/button>
-                            &lt;button class="cc-bg-green cc-outlined">Button&lt;/button>
-                            &lt;button class="cc-bg-blue cc-outlined">Button&lt;/button>
-                            &lt;button class="cc-bg-purple cc-outlined">Button&lt;/button>
-                            &lt;button class="cc-bg-orange cc-outlined">Button&lt;/button>
-                            &lt;button class="cc-bg-yellow cc-outlined">Button&lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
-                <p>
-                    <a href="#" class="btn cc-bg-blue cc-outlined">Classic blue link</a>
-                    <a href="#" class="btn cc-bg-red cc-outlined">Classic red link</a>
+                
+                <p class="cc-mat-50">
+                    <a href="#" class="btn cc-loading">a.btn.cc-loading</a>
+                    <a href="#" class="btn cc-thin cc-loading">a.btn.cc-loading.cc-thin</a>
+                    <a href="#" class="btn cc-fat cc-loading">a.btn.cc-loading.cc-fat</a>
+                    <a href="#" class="btn cc-bg-primary cc-loading">a.btn.cc-loading.cc.bg-primary</a>
+                    <a href="#" class="btn cc-bg-primary cc-loading cc-outlined">a.btn.cc-loading.cc-bg-primary.cc-outlined</a>
+                    <a href="#" class="btn cc-disabled cc-loading">a.btn.cc-loading.cc-disabled</a>
+                    <a href="#" class="btn cc-bg-primary cc-disabled cc-loading">a.btn.cc-bg-primary.cc-disabled.cc-loading</a>
                 </p>
-                <p>
-                    <button class="cc-bg-primary cc-outlined">Button</button>
-                    <button class="cc-bg-red cc-outlined">Button</button>
-                    <button class="cc-bg-green cc-outlined">Button</button>
-                    <button class="cc-bg-blue cc-outlined">Button</button>
-                    <button class="cc-bg-purple cc-outlined">Button</button>
-                    <button class="cc-bg-orange cc-outlined">Button</button>
-                    <button class="cc-bg-yellow cc-outlined">Button</button>
-                </p>
-
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p>
-                            &lt;a href="#" class="btn cc-bg-blue cc-thin ion-social-chrome">Blue link with icon&lt;/a>
-                            &lt;button class="cc-bg-red cc-thin fa-times">Red button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-blue ion-social-chrome">Blue link with icon&lt;/a>
-                            &lt;button class="cc-bg-red fa-times">Red button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-blue cc-fat ion-social-chrome">Blue link with icon&lt;/a>
-                            &lt;button class="cc-bg-red cc-fat fa-times">Red button with icon&lt;/button>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-thin cc-bg-green">&lt;i class="ion-social-nodejs">&lt;/i> Green link with icon&lt;/a>
-                            &lt;button class="cc-thin cc-bg-purple">&lt;i class=" fa fa-bug">&lt;/i> Purple button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-green">&lt;i class="ion-social-nodejs">&lt;/i> Green link with icon&lt;/a>
-                            &lt;button class="cc-bg-purple">&lt;i class=" fa fa-bug">&lt;/i> Purple button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-fat cc-bg-green">&lt;i class="ion-social-nodejs">&lt;/i> Green link with icon&lt;/a>
-                            &lt;button class="cc-fat cc-bg-purple">&lt;i class=" fa fa-bug">&lt;/i> Purple button with icon&lt;/button>
-                        &lt;/p>
-
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-bg-blue cc-thin ion-social-chrome icon-right">Blue link with icon&lt;/a>
-                            &lt;button class="cc-bg-red cc-thin fa-times icon-right">Red button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-blue ion-social-chrome icon-right">Blue link with icon&lt;/a>
-                            &lt;button class="cc-bg-red fa-times icon-right">Red button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-blue cc-fat ion-social-chrome icon-right">Blue link with icon&lt;/a>
-                            &lt;button class="cc-bg-red cc-fat fa-times icon-right">Red button with icon&lt;/button>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-thin cc-bg-green icon-right">Green link with icon &lt;i class="ion-social-nodejs">&lt;/i>&lt;/a>
-                            &lt;button class="cc-thin cc-bg-purple icon-right">Purple button with icon &lt;i class=" fa fa-bug">&lt;/i>&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-green icon-right">Green link with icon &lt;i class="ion-social-nodejs">&lt;/i>&lt;/a>
-                            &lt;button class="cc-bg-purple icon-right">Purple button with icon &lt;i class=" fa fa-bug">&lt;/i>&lt;/button>
-                            &lt;a href="#" class="btn cc-fat cc-bg-green icon-right">Green link with icon &lt;i class="ion-social-nodejs">&lt;/i>&lt;/a>
-                            &lt;button class="cc-fat cc-bg-purple icon-right">Purple button with icon &lt;i class=" fa fa-bug">&lt;/i>&lt;/button>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-bg-orange fa-anchor cc-outlined">Orange link with icon&lt;/a>
-                            &lt;button class="cc-bg-purple cc-outlined fa-bug">Purple button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-orange fa-anchor cc-outlined icon-right">Orange link with icon&lt;/a>
-                            &lt;button class="cc-bg-purple cc-outlined fa-bug icon-right">Purple button with icon&lt;/button>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-bg-green cc-outlined">&lt;i class="ion-social-nodejs">&lt;/i> Green link with icon&lt;/a>
-                            &lt;button class="cc-bg-purple cc-outlined">&lt;i class=" fa fa-bug">&lt;/i> Purple button with icon&lt;/button>
-                            &lt;a href="#" class="btn cc-bg-green cc-outlined icon-right">Green link with icon &lt;i class="ion-social-nodejs">&lt;/i>&lt;/a>
-                            &lt;button class="cc-bg-purple cc-outlined icon-right">Purple button with icon &lt;i class=" fa fa-bug">&lt;/i>&lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
-                <p>
-                    <a href="#" class="btn cc-bg-blue cc-thin"><i class="ion-social-chrome icon-left"></i>Blue link with icon</a>
-                    <button class="cc-bg-red cc-thin">Red button with icon <i class="ion-social-chrome icon-right"></i></button>
-                    <a href="#" class="btn cc-bg-blue"><i class="ion-social-chrome icon-left"></i>Blue link with icon</a>
-                    <button class="cc-bg-red">Red button with icon <i class="ion-social-chrome icon-right"></i></button>
-                    <a href="#" class="btn cc-bg-blue cc-fat"><i class="ion-social-chrome icon-left"></i>Blue link with icon</a>
-                    <button class="cc-bg-red cc-fat">Red button with icon <i class="ion-social-chrome icon-right"></i></button>
-                </p>
-                <p>
-                    <a href="#" class="btn cc-thin cc-bg-green"><i class="ion-social-nodejs"></i> Green link with icon</a>
-                    <button class="cc-thin cc-bg-purple"><i class=" fa fa-bug"></i> Purple button with icon</button>
-                    <a href="#" class="btn cc-bg-green"><i class="ion-social-nodejs"></i> Green link with icon</a>
-                    <button class="cc-bg-purple"><i class=" fa fa-bug"></i> Purple button with icon</button>
-                    <a href="#" class="btn cc-fat cc-bg-green"><i class="ion-social-nodejs"></i> Green link with icon</a>
-                    <button class="cc-fat cc-bg-purple"><i class=" fa fa-bug"></i> Purple button with icon</button>
-                </p>
-
-                <p>
-                    <a href="#" class="btn cc-bg-blue cc-thin ion-social-chrome icon-right">Blue link with icon</a>
-                    <button class="cc-bg-red cc-thin fa-times icon-right">Red button with icon</button>
-                    <a href="#" class="btn cc-bg-blue ion-social-chrome icon-right">Blue link with icon</a>
-                    <button class="cc-bg-red fa-times icon-right">Red button with icon</button>
-                    <a href="#" class="btn cc-bg-blue cc-fat ion-social-chrome icon-right">Blue link with icon</a>
-                    <button class="cc-bg-red cc-fat fa-times icon-right">Red button with icon</button>
-                </p>
-                <p>
-                    <a href="#" class="btn cc-thin cc-bg-green icon-right">Green link with icon <i class="ion-social-nodejs"></i></a>
-                    <button class="cc-thin cc-bg-purple icon-right">Purple button with icon <i class=" fa fa-bug"></i></button>
-                    <a href="#" class="btn cc-bg-green icon-right">Green link with icon <i class="ion-social-nodejs"></i></a>
-                    <button class="cc-bg-purple icon-right">Purple button with icon <i class=" fa fa-bug"></i></button>
-                    <a href="#" class="btn cc-fat cc-bg-green icon-right">Green link with icon <i class="ion-social-nodejs"></i></a>
-                    <button class="cc-fat cc-bg-purple icon-right">Purple button with icon <i class=" fa fa-bug"></i></button>
-                </p>
-                <p>
-                    <a href="#" class="btn cc-bg-orange fa-anchor cc-outlined">Orange link with icon</a>
-                    <button class="cc-bg-purple cc-outlined fa-bug">Purple button with icon</button>
-                    <a href="#" class="btn cc-bg-orange fa-anchor cc-outlined icon-right">Orange link with icon</a>
-                    <button class="cc-bg-purple cc-outlined fa-bug icon-right">Purple button with icon</button>
-                </p>
-                <p>
-                    <a href="#" class="btn cc-bg-green cc-outlined"><i class="ion-social-nodejs icon-left"></i> Green link with icon</a>
-                    <button class="cc-bg-purple cc-outlined"><i class="fas fa-heartbeat icon-left"></i> Purple button with icon</button>
-                    <a href="#" class="btn cc-bg-green cc-outlined">Green link with icon <i class="fas fa-heartbeat icon-right"></i></a>
-                    <button class="cc-bg-purple cc-outlined">Purple button with icon <i class="fas fa-heartbeat icon-right"></i></button>
-                </p>
-
-                <pre class="HTML">
-                    <code class="language-markup">&lt;p>
-                            &lt;a href="#" class="btn cc-bg-blue cc-disabled">Classic disabled blue link&lt;/a>
-                            &lt;a href="#" class="btn cc-bg-red cc-disabled">Classic disabled red link&lt;/a>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;button class="cc-bg-primary cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-bg-red cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-bg-green cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-bg-blue cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-bg-purple cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-bg-orange cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-bg-yellow cc-disabled">Button&lt;/button>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;button class="cc-outlined cc-bg-primary cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-red cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-green cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-blue cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-purple cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-orange cc-disabled">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-yellow cc-disabled">Button&lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
-                <p>
-                    <a href="#" class="btn cc-bg-blue cc-disabled">Classic disabled blue link</a>
-                    <a href="#" class="btn cc-bg-red cc-disabled">Classic disabled red link</a>
-                </p>
-                <p>
-                    <button class="cc-bg-primary cc-disabled">Button</button>
-                    <button class="cc-bg-red cc-disabled">Button</button>
-                    <button class="cc-bg-green cc-disabled">Button</button>
-                    <button class="cc-bg-blue cc-disabled">Button</button>
-                    <button class="cc-bg-purple cc-disabled">Button</button>
-                    <button class="cc-bg-orange cc-disabled">Button</button>
-                    <button class="cc-bg-yellow cc-disabled">Button</button>
-                </p>
-                <p>
-                    <button class="cc-outlined cc-bg-primary cc-disabled">Button</button>
-                    <button class="cc-outlined cc-bg-red cc-disabled">Button</button>
-                    <button class="cc-outlined cc-bg-green cc-disabled">Button</button>
-                    <button class="cc-outlined cc-bg-blue cc-disabled">Button</button>
-                    <button class="cc-outlined cc-bg-purple cc-disabled">Button</button>
-                    <button class="cc-outlined cc-bg-orange cc-disabled">Button</button>
-                    <button class="cc-outlined cc-bg-yellow cc-disabled">Button</button>
-                </p>
-
-                <pre class="HTML">
-                    <code class="language-markup">
-                        &lt;p>
-                            &lt;a href="#" class="btn cc-bg-primary cc-loading">Classic loading blue link&lt;/a>
-                            &lt;a href="#" class="btn cc-bg-blue cc-loading">Classic loading blue link&lt;/a>
-                            &lt;a href="#" class="btn cc-bg-red cc-loading">Classic loading red link&lt;/a>
-                            &lt;a href="#" class="btn cc-loading">Classic loading link&lt;/a>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;button class="cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-primary cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-red cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-green cc-thin cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-blue cc-fat cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-purple cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-orange cc-loading">Button&lt;/button>
-                            &lt;button class="cc-bg-yellow cc-loading">Button&lt;/button>
-                        &lt;/p>
-                        &lt;p>
-                            &lt;button class="cc-outlined cc-bg-primary cc-loading">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-red cc-loading">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-green cc-thin cc-loading">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-blue cc-fat cc-loading">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-purple cc-loading">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-orange cc-loading">Button&lt;/button>
-                            &lt;button class="cc-outlined cc-bg-yellow cc-loading">Button&lt;/button>
-                        &lt;/p>
-                    </code>
-                </pre>
-                <p>
-                    <a href="#" class="btn cc-bg-primary cc-loading">Classic loading blue link</a>
-                    <a href="#" class="btn cc-bg-blue cc-loading">Classic loading blue link</a>
-                    <a href="#" class="btn cc-bg-red cc-loading">Classic loading red link</a>
-                    <a href="#" class="btn cc-loading">Classic loading link</a>
-                    <a href="#" class="btn cc-fat cc-loading">Classic loading link</a>
-                    <a href="#" class="btn cc-thin cc-loading">Classic loading link</a>
-                </p>
-                <p>
-                    <button class="cc-loading cc-thin">Button</button>
-                    <button class="cc-loading">Button</button>
-                    <button class="cc-loading cc-fat">Button</button>
-                    <button class="cc-bg-primary cc-loading">Button</button>
-                    <button class="cc-bg-red cc-loading">Button</button>
-                    <button class="cc-bg-green cc-thin cc-loading">Button</button>
-                    <button class="cc-bg-blue cc-fat cc-loading">Button</button>
-                    <button class="cc-bg-purple cc-loading">Button</button>
-                    <button class="cc-bg-orange cc-loading">Button</button>
-                    <button class="cc-bg-yellow cc-loading">Button</button>
-                </p>
-                <p>
-                    <button class="cc-outlined cc-bg-primary cc-loading">Button</button>
-                    <button class="cc-outlined cc-bg-red cc-loading">Button</button>
-                    <button class="cc-outlined cc-bg-green cc-thin cc-loading">Button</button>
-                    <button class="cc-outlined cc-bg-blue cc-fat cc-loading">Button</button>
-                    <button class="cc-outlined cc-bg-purple cc-loading">Button</button>
-                    <button class="cc-outlined cc-bg-orange cc-loading">Button</button>
-                    <button class="cc-outlined cc-bg-yellow cc-loading">Button</button>
+                <p class="cc-mat-20">
+                    <button class="cc-loading">a.btn.cc-loading</button>
+                    <button class="cc-thin cc-loading">a.btn.cc-loading.cc-thin</button>
+                    <button class="cc-fat cc-loading">a.btn.cc-loading.cc-fat</button>
+                    <button class="cc-bg-primary cc-loading">a.btn.cc-loading.cc.bg-primary</button>
+                    <button class="cc-bg-primary cc-loading cc-outlined">a.btn.cc-loading.cc-bg-primary.cc-outlined</button>
+                    <button class="cc-disabled cc-loading">a.btn.cc-loading.cc-disabled</button>
+                    <button class="cc-bg-primary cc-disabled cc-loading">a.btn.cc-bg-primary.cc-disabled.cc-loading</button>
                 </p>
             </div>
 

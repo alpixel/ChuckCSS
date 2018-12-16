@@ -1,6 +1,6 @@
 # ChuckCSS Changelog
 
-- change attribute to close alert button ([data-close-alert])
+- Change attribute to close alert button ([data-close-alert])
 - New alerts skin
 - Remove Messages (in v4.0.0). 
 - Remove Masonry layouts
@@ -9,6 +9,7 @@
 	- cc-w-half (same as cc-w-50)
 	- cc-w-threequarter (same as cc-w-75)
 - cc-w-{int} class are now incremented to 1, from 0 to 100
+- Change "badges" default background-color
 
 
 ## 3.0.8

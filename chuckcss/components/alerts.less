@@ -6,59 +6,75 @@
 
 /*
     - General alerts styles
-    - types : warning, error, success, info
+    - {type} : warning, error, success, info
 
     <div class="alert alert-{type}">
-        ...
+        <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+        <i class="fab fa-apple"></i> 
+        <div>
+            <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
+        </div>
     </div>
 */
+._setAlertStyles(@textColor, @borderColor) {
+    border-top:@alert-btw solid @borderColor;
+    color:@textColor;
+
+    p,div,ul,
+    [data-close-alert],
+    a {
+        color:@textColor;
+    
+        &.btn {
+            text-decoration: none;
+            ._btn(@textColor);
+            color: white;
+        }
+    }
+}
 
 .alert {
-    padding: @alert-pa;
-    padding-right:60px;
+    display: flex;
+    align-items: center;
     margin:@alert-ma;
     font-size: @alert-fs;
-    position:relative;
     border-radius:unit(@alert-br,px);
     background-color: white;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
-    display: flex;
 
+    // Alerts content
     & > div {
         flex:1;
-    }
+        padding: @alert-pa;
 
-    & > i {
-        padding-right:15px;
-        font-size:3rem;
-    }
+        a {
+            text-decoration:underline;
+        }
 
-    /* Links inside a .alert element */
-    a {
-        text-decoration:underline;
-    }
+        ul {
+            padding-left:20px;
+            margin:1em auto;
 
-    /* List : add margin */
-    ul {
-        padding-left:20px;
-        margin:1em auto;
-
-        li {
-            list-style-position: inside;
+            li {
+                list-style-position: inside;
+            }
         }
     }
 
-    /* Closed button */
+    // Alerts main left icon
+    & > i {
+        padding: @alert-pa;
+        font-size:3rem;
+    }
+
+    // Alerts close button
     [data-close-alert] {
-        ._reset;
-        display:block;
-        position:absolute;
-        right:0px;
-        top:0px;
-        background-color:transparent;
+        border:0;
         cursor:pointer;
-        padding:20px;
+        padding: @alert-pa;
         opacity: 0.4;
+        order:2;
+        background-color: transparent;
         ._transition;
 
         &:hover {
@@ -77,64 +93,26 @@
 
     /* Alerts types */
     &-primary {
-        border-top:@alert-btw solid @alert-pr-bc;
-        color:@alert-pr-tc;
-
-        p,div,ul,
-        [data-close-alert],
-        a {
-            color:@primary;
-        }
+        ._setAlertStyles(@alert-pr-tc, @alert-pr-bc);
     }
     &-info {
-        border-top:@alert-btw solid @alert-in-bc;
-        color:@alert-in-tc;
-
-        p,div,ul,
-        [data-close-alert],
-        a {
-            color:@alert-in-tc;
-        }
+        ._setAlertStyles(@alert-in-tc, @alert-in-bc);
     }
     &-warning {
-        border-top:@alert-btw solid @alert-wa-bc;
-        color:@alert-wa-tc;
-
-        p,div,ul,
-        [data-close-alert],
-        a {
-            color:@alert-wa-tc;
-        }
+        ._setAlertStyles(@alert-wa-tc, @alert-wa-bc);
     }
     &-error {
-        border-top:@alert-btw solid @alert-er-bc;
-        color:@alert-er-tc;
-
-        p,div,ul,
-        [data-close-alert],
-        a {
-            color:@alert-er-tc;
-        }
+        ._setAlertStyles(@alert-er-tc, @alert-er-bc);
     }
     &-success {
-        border-top:@alert-btw solid @alert-su-bc;
-        color:@alert-su-tc;
-
-        p,div,ul,
-        [data-close-alert],
-        a {
-            color:@alert-su-tc;
-        }
+        ._setAlertStyles(@alert-su-tc, @alert-su-bc);
     }
 
     // Screens > 767px
     ._media-s-up({
-        padding-right:80px;
 
-        // Icon left
+        // Alerts main left icon
         & > i {
-            margin:0 40px 0 20px;
-            padding:0;
             font-size: 6rem;
         }
     });
