@@ -39,7 +39,7 @@
 
     /* elements */
     p,div,section,aside,header,footer,article,main,nav,
-    span,i,a,strong,em,code,small {
+    td,th,span,i,a,strong,em,code,small {
         &.cc {
             &-@{colorName} {
                 color: @colorValue;
@@ -117,13 +117,11 @@
         }
 
 
-        tbody tr {
-            &.cc-bg-@{colorName} {
-                td {
-                    background-color:@colorValue;
-                    color:white;
-                    border-bottom:0;
-                }
+        tr.cc-bg-@{colorName} {
+            td {
+                background-color:@colorValue;
+                color:white;
+                border-bottom:0;
             }
         }
     }

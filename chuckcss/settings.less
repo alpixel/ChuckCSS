@@ -23,11 +23,11 @@
         "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
-        "-in" : info (alerts / messages)
-        "-er" : error (alerts / messages)
-        "-su" : success (alerts / messages)
-        "-wa" : warning (alerts / messages)
-        "-pr" : primary (alerts / messages)
+        "-in" : info (alerts)
+        "-er" : error (alerts)
+        "-su" : success (alerts)
+        "-wa" : warning (alerts)
+        "-pr" : primary (alerts)
 */
 
 
@@ -159,12 +159,21 @@
 /*
     -- @ Tables @ --
 */
-@tables-cells-pa : 8px;         /* <th> & <td> padding */
-@tables-ending : #e0e0e0;       /* Line below tables */
+@tables-th-pa : 8px;        // <th> padding
+@tables-th-bg: white;     // <th> background-colors
+@tables-th-tc : #9E9E9E;      // <th> main color
+@tables-th-fw : 400;        // <th> font-weight
+
+@tables-td-pa : 8px;        // <td> padding
+@tables-td-bg: white;       // <td> background-colors
+@tables-td-tc : @text-mc;   // <td> main color
+@tables-td-fw : 400;        // <th> font-weight
+
+@tables-bc : #e0e0e0;       /* th & td border-colors */
 @tables-striped-even : #ffffff; /* Even lines bg-color */
 @tables-striped-odd : #f0f0f0;  /* Odd lines bg-color */
 @tables-hover-bg : #f0f0f0;     /* Hovered lines bg-color (only for table.hovered) */
-@tables-th-mc : #9e9e9e;        /* <thead><th> main color */
+@tables-hover-tc : @tables-td-tc;     /* Hovered lines bg-color (only for table.hovered) */
 
 
 
@@ -202,7 +211,7 @@
 /*
     -- @ Alerts @ --
 */
-@alert-br : 5; // Alerts / messages border-radius (in pixel)
+@alert-br : 5; // Alerts border-radius (in pixel)
 @alert-pa : 20px; // Alerts paddings
 @alert-fs: 120%; // Alerts font-size
 @alert-ma: 1em 0; // Alerts margins
@@ -292,14 +301,6 @@
 @loader-spinner-bw : 2; /* Loader spinner : border-width */
 
 
-
-
-/*
-    -- @ FONTS MIXINS @ --
-    * LESS call
-        .font(){font-family:'My font',sans-serif;}
-*/
-._helvetica() {font-family: 'Helvetica Neue', sans-serif;} /* Used for <body> (default font) */
 
 
 /*

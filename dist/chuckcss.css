@@ -253,7 +253,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 15px;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -543,23 +543,28 @@ table tfoot td,
 table thead td,
 table tfoot th,
 table thead th {
+  text-align: left;
+  border: 0;
   font-weight: 400;
   font-size: 1.5rem;
   padding: 8px;
-  border: 0;
   border-bottom: 1px solid #e0e0e0;
-  text-align: left;
-  vertical-align: top;
-  color: #9e9e9e;
+  color: #9E9E9E;
+  background-color: white;
 }
 table tfoot td {
   border: 0;
 }
 table tbody td {
+  color: #3a3a3a;
   padding: 8px;
   border-bottom: 1px solid #e0e0e0;
   vertical-align: middle;
   font-size: 1.35rem;
+  background-color: white;
+  font-weight: 400;
+  -webkit-transition: 0.2s background-color ease-out 0s;
+  transition: 0.2s background-color ease-out 0s;
 }
 table.cc {
   /* Layout fixed tables */
@@ -585,8 +590,9 @@ table.cc-striped-col tbody tr td:nth-child(2n+1) {
 table.cc-striped-col tbody tr td:nth-child(2n) {
   background-color: #f0f0f0;
 }
-table.cc-hovered tbody tr:hover td {
+table.cc-hovered tbody tr:hover td:not([class^="cc-bg"]) {
   background-color: #f0f0f0;
+  color: #3a3a3a;
 }
 table.cc-valign-top tbody td {
   vertical-align: top;
@@ -3929,6 +3935,8 @@ footer.cc-primary,
 article.cc-primary,
 main.cc-primary,
 nav.cc-primary,
+td.cc-primary,
+th.cc-primary,
 span.cc-primary,
 i.cc-primary,
 a.cc-primary,
@@ -3947,6 +3955,8 @@ footer.cc-bg-primary,
 article.cc-bg-primary,
 main.cc-bg-primary,
 nav.cc-bg-primary,
+td.cc-bg-primary,
+th.cc-bg-primary,
 span.cc-bg-primary,
 i.cc-bg-primary,
 a.cc-bg-primary,
@@ -3966,6 +3976,8 @@ footer.cc-bg-primary a:not(.btn),
 article.cc-bg-primary a:not(.btn),
 main.cc-bg-primary a:not(.btn),
 nav.cc-bg-primary a:not(.btn),
+td.cc-bg-primary a:not(.btn),
+th.cc-bg-primary a:not(.btn),
 span.cc-bg-primary a:not(.btn),
 i.cc-bg-primary a:not(.btn),
 a.cc-bg-primary a:not(.btn),
@@ -4018,7 +4030,7 @@ table.cc-primary.cc-bordered thead th {
 table.cc-primary.cc-bordered tbody tr td {
   border-color: #1a98bd;
 }
-table tbody tr.cc-bg-primary td {
+table tr.cc-bg-primary td {
   background-color: #29b7e1;
   color: white;
   border-bottom: 0;
@@ -4186,6 +4198,8 @@ footer.cc-green,
 article.cc-green,
 main.cc-green,
 nav.cc-green,
+td.cc-green,
+th.cc-green,
 span.cc-green,
 i.cc-green,
 a.cc-green,
@@ -4204,6 +4218,8 @@ footer.cc-bg-green,
 article.cc-bg-green,
 main.cc-bg-green,
 nav.cc-bg-green,
+td.cc-bg-green,
+th.cc-bg-green,
 span.cc-bg-green,
 i.cc-bg-green,
 a.cc-bg-green,
@@ -4223,6 +4239,8 @@ footer.cc-bg-green a:not(.btn),
 article.cc-bg-green a:not(.btn),
 main.cc-bg-green a:not(.btn),
 nav.cc-bg-green a:not(.btn),
+td.cc-bg-green a:not(.btn),
+th.cc-bg-green a:not(.btn),
 span.cc-bg-green a:not(.btn),
 i.cc-bg-green a:not(.btn),
 a.cc-bg-green a:not(.btn),
@@ -4275,7 +4293,7 @@ table.cc-green.cc-bordered thead th {
 table.cc-green.cc-bordered tbody tr td {
   border-color: #63872b;
 }
-table tbody tr.cc-bg-green td {
+table tr.cc-bg-green td {
   background-color: #80ae37;
   color: white;
   border-bottom: 0;
@@ -4443,6 +4461,8 @@ footer.cc-red,
 article.cc-red,
 main.cc-red,
 nav.cc-red,
+td.cc-red,
+th.cc-red,
 span.cc-red,
 i.cc-red,
 a.cc-red,
@@ -4461,6 +4481,8 @@ footer.cc-bg-red,
 article.cc-bg-red,
 main.cc-bg-red,
 nav.cc-bg-red,
+td.cc-bg-red,
+th.cc-bg-red,
 span.cc-bg-red,
 i.cc-bg-red,
 a.cc-bg-red,
@@ -4480,6 +4502,8 @@ footer.cc-bg-red a:not(.btn),
 article.cc-bg-red a:not(.btn),
 main.cc-bg-red a:not(.btn),
 nav.cc-bg-red a:not(.btn),
+td.cc-bg-red a:not(.btn),
+th.cc-bg-red a:not(.btn),
 span.cc-bg-red a:not(.btn),
 i.cc-bg-red a:not(.btn),
 a.cc-bg-red a:not(.btn),
@@ -4532,7 +4556,7 @@ table.cc-red.cc-bordered thead th {
 table.cc-red.cc-bordered tbody tr td {
   border-color: #961010;
 }
-table tbody tr.cc-bg-red td {
+table tr.cc-bg-red td {
   background-color: #c41515;
   color: white;
   border-bottom: 0;
@@ -4700,6 +4724,8 @@ footer.cc-blue,
 article.cc-blue,
 main.cc-blue,
 nav.cc-blue,
+td.cc-blue,
+th.cc-blue,
 span.cc-blue,
 i.cc-blue,
 a.cc-blue,
@@ -4718,6 +4744,8 @@ footer.cc-bg-blue,
 article.cc-bg-blue,
 main.cc-bg-blue,
 nav.cc-bg-blue,
+td.cc-bg-blue,
+th.cc-bg-blue,
 span.cc-bg-blue,
 i.cc-bg-blue,
 a.cc-bg-blue,
@@ -4737,6 +4765,8 @@ footer.cc-bg-blue a:not(.btn),
 article.cc-bg-blue a:not(.btn),
 main.cc-bg-blue a:not(.btn),
 nav.cc-bg-blue a:not(.btn),
+td.cc-bg-blue a:not(.btn),
+th.cc-bg-blue a:not(.btn),
 span.cc-bg-blue a:not(.btn),
 i.cc-bg-blue a:not(.btn),
 a.cc-bg-blue a:not(.btn),
@@ -4789,7 +4819,7 @@ table.cc-blue.cc-bordered thead th {
 table.cc-blue.cc-bordered tbody tr td {
   border-color: #217dbb;
 }
-table tbody tr.cc-bg-blue td {
+table tr.cc-bg-blue td {
   background-color: #3498db;
   color: white;
   border-bottom: 0;
@@ -4957,6 +4987,8 @@ footer.cc-purple,
 article.cc-purple,
 main.cc-purple,
 nav.cc-purple,
+td.cc-purple,
+th.cc-purple,
 span.cc-purple,
 i.cc-purple,
 a.cc-purple,
@@ -4975,6 +5007,8 @@ footer.cc-bg-purple,
 article.cc-bg-purple,
 main.cc-bg-purple,
 nav.cc-bg-purple,
+td.cc-bg-purple,
+th.cc-bg-purple,
 span.cc-bg-purple,
 i.cc-bg-purple,
 a.cc-bg-purple,
@@ -4994,6 +5028,8 @@ footer.cc-bg-purple a:not(.btn),
 article.cc-bg-purple a:not(.btn),
 main.cc-bg-purple a:not(.btn),
 nav.cc-bg-purple a:not(.btn),
+td.cc-bg-purple a:not(.btn),
+th.cc-bg-purple a:not(.btn),
 span.cc-bg-purple a:not(.btn),
 i.cc-bg-purple a:not(.btn),
 a.cc-bg-purple a:not(.btn),
@@ -5046,7 +5082,7 @@ table.cc-purple.cc-bordered thead th {
 table.cc-purple.cc-bordered tbody tr td {
   border-color: #703688;
 }
-table tbody tr.cc-bg-purple td {
+table tr.cc-bg-purple td {
   background-color: #8e44ad;
   color: white;
   border-bottom: 0;
@@ -5214,6 +5250,8 @@ footer.cc-orange,
 article.cc-orange,
 main.cc-orange,
 nav.cc-orange,
+td.cc-orange,
+th.cc-orange,
 span.cc-orange,
 i.cc-orange,
 a.cc-orange,
@@ -5232,6 +5270,8 @@ footer.cc-bg-orange,
 article.cc-bg-orange,
 main.cc-bg-orange,
 nav.cc-bg-orange,
+td.cc-bg-orange,
+th.cc-bg-orange,
 span.cc-bg-orange,
 i.cc-bg-orange,
 a.cc-bg-orange,
@@ -5251,6 +5291,8 @@ footer.cc-bg-orange a:not(.btn),
 article.cc-bg-orange a:not(.btn),
 main.cc-bg-orange a:not(.btn),
 nav.cc-bg-orange a:not(.btn),
+td.cc-bg-orange a:not(.btn),
+th.cc-bg-orange a:not(.btn),
 span.cc-bg-orange a:not(.btn),
 i.cc-bg-orange a:not(.btn),
 a.cc-bg-orange a:not(.btn),
@@ -5303,7 +5345,7 @@ table.cc-orange.cc-bordered thead th {
 table.cc-orange.cc-bordered tbody tr td {
   border-color: #c87f0a;
 }
-table tbody tr.cc-bg-orange td {
+table tr.cc-bg-orange td {
   background-color: #f39c12;
   color: white;
   border-bottom: 0;
@@ -5471,6 +5513,8 @@ footer.cc-yellow,
 article.cc-yellow,
 main.cc-yellow,
 nav.cc-yellow,
+td.cc-yellow,
+th.cc-yellow,
 span.cc-yellow,
 i.cc-yellow,
 a.cc-yellow,
@@ -5489,6 +5533,8 @@ footer.cc-bg-yellow,
 article.cc-bg-yellow,
 main.cc-bg-yellow,
 nav.cc-bg-yellow,
+td.cc-bg-yellow,
+th.cc-bg-yellow,
 span.cc-bg-yellow,
 i.cc-bg-yellow,
 a.cc-bg-yellow,
@@ -5508,6 +5554,8 @@ footer.cc-bg-yellow a:not(.btn),
 article.cc-bg-yellow a:not(.btn),
 main.cc-bg-yellow a:not(.btn),
 nav.cc-bg-yellow a:not(.btn),
+td.cc-bg-yellow a:not(.btn),
+th.cc-bg-yellow a:not(.btn),
 span.cc-bg-yellow a:not(.btn),
 i.cc-bg-yellow a:not(.btn),
 a.cc-bg-yellow a:not(.btn),
@@ -5560,7 +5608,7 @@ table.cc-yellow.cc-bordered thead th {
 table.cc-yellow.cc-bordered tbody tr td {
   border-color: #c29d0b;
 }
-table tbody tr.cc-bg-yellow td {
+table tr.cc-bg-yellow td {
   background-color: #f1c40f;
   color: white;
   border-bottom: 0;

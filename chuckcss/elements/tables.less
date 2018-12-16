@@ -14,14 +14,14 @@ table {
     tfoot,
     thead {
         td,th {
-            font-weight:400;
-            font-size:@text-fs;
-            padding:@tables-cells-pa;
-            border:0;
-            border-bottom:1px solid @tables-ending;
             text-align:left;
-            vertical-align:top;
-            color:@tables-th-mc;
+            border:0;
+            font-weight:@tables-th-fw;
+            font-size:@text-fs;
+            padding:@tables-th-pa;
+            border-bottom:1px solid @tables-bc;
+            color:@tables-th-tc;
+            background-color: @tables-th-bg;
         }
     }
     tfoot {
@@ -34,10 +34,14 @@ table {
     /* Cells default style */
     tbody {
         td {
-            padding:@tables-cells-pa;
-            border-bottom:1px solid @tables-ending;
+            color:@tables-td-tc;
+            padding:@tables-td-pa;
+            border-bottom:1px solid @tables-bc;
             vertical-align:middle;
             font-size:@text-fs*9/10;
+            background-color: @tables-td-bg;
+            font-weight:@tables-td-fw;
+            ._transition(0.2s, background-color); // Animate background-color
         }
     }
 
@@ -73,8 +77,9 @@ table {
 
         /* hovered : highlight the hovered line */
         &-hovered {
-            tbody tr:hover td {
+            tbody tr:hover td:not([class^="cc-bg"]) {
                 background-color:@tables-hover-bg;
+                color: @tables-hover-tc;
             }
         }
 
@@ -91,7 +96,7 @@ table {
             tfoot,
             thead {
                 td,th {
-                    border:1px solid  @tables-ending;
+                    border:1px solid  @tables-bc;
                 }
             }
         }
@@ -149,7 +154,7 @@ table {
 
                     td, th {
                         display:block;
-                        border:1px solid @tables-ending;
+                        border:1px solid @tables-bc;
                         border-top-width:0px;
                         flex: 1;
 
@@ -166,7 +171,7 @@ table {
                 position: relative;
                 overflow-x: auto;
                 overflow-y: hidden;
-                border-right:1px solid @tables-ending;
+                border-right:1px solid @tables-bc;
 
                 tr {
                     display: flex;
@@ -179,7 +184,7 @@ table {
                     td {
                         display:block;
                         flex: 1;
-                        border:1px solid @tables-ending;
+                        border:1px solid @tables-bc;
                         border-top-width:0px;
                         border-left-width:0px;
 

@@ -1743,7 +1743,7 @@
                 </blockquote>
             </div>
 
-            <div class="main cc-tables">
+            <div class="main cc-tables active">
                 <h3 class="title">Tables</h3>
 
                 <pre class="HTML">
@@ -2630,13 +2630,13 @@
                         &lt;/table>
                     </code>
                 </pre>
-                <table>
+                <table class="cc-hovered cc-primary">
                     <thead>
                         <tr>
                             <th></th>
-                            <th>ID</th>
+                            <th class="cc-bg-red">ID</th>
                             <th>Last Name</th>
-                            <th>First Name</th>
+                            <th class="cc-yellow">First Name</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -2654,9 +2654,7 @@
                             <td>Smith</td>
                             <td>Will</td>
                             <td class="cc-txt-right">
-                                <a href="#" class="btn cc-bg-blue fa-eye">See</a>
-                                <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
-                                <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                Actions btns
                             </td>
                         </tr>
                         <tr>
@@ -2669,12 +2667,10 @@
                                 </form>
                             </td>
                             <td>2</td>
-                            <td>MacQueen</td>
-                            <td>Steve</td>
+                            <td class="cc-bg-primary">MacQueen</td>
+                            <td class="cc-primary">Steve</td>
                             <td class="cc-txt-right">
-                                <a href="#" class="btn cc-bg-blue fa-eye">See</a>
-                                <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
-                                <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                Actions btns
                             </td>
                         </tr>
                         <tr>
@@ -2690,9 +2686,7 @@
                             <td>Wayne</td>
                             <td>John</td>
                             <td class="cc-txt-right">
-                                <a href="#" class="btn cc-bg-blue fa-eye">See</a>
-                                <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
-                                <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                Actions btns
                             </td>
                         </tr>
                     </tbody>

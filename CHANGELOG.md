@@ -1,5 +1,7 @@
 # ChuckCSS Changelog
 
+- debug cc-bg-color & cc-color on th, td
+- Change font-family by native font stack
 - Change attribute to close alert button ([data-close-alert])
 - New alerts skin
 - Remove Messages (in v4.0.0). 
