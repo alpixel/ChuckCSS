@@ -1620,7 +1620,7 @@ img.cc-shadowed {
       -ms-flex-align: center;
           align-items: center;
   margin: 1em 0;
-  font-size: 120%;
+  font-size: 100%;
   border-radius: 5px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
