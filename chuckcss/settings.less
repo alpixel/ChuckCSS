@@ -23,11 +23,11 @@
         "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
         "-tc" : text-color
-        "-in" : info (alerts / messages)
-        "-er" : error (alerts / messages)
-        "-su" : success (alerts / messages)
-        "-wa" : warning (alerts / messages)
-        "-pr" : primary (alerts / messages)
+        "-in" : info (alerts)
+        "-er" : error (alerts)
+        "-su" : success (alerts)
+        "-wa" : warning (alerts)
+        "-pr" : primary (alerts)
 */
 
 
@@ -122,11 +122,11 @@
 */
 @links-tc : @text-mc;               /* Links ~ Text color */
 @links-fs : @text-fs;               /* Links ~ Font-size */
-@links-btn-bw : 1;                      /* Links ~ Border-width */
+@links-btn-bw : 1;                  /* Links ~ Border-width */
 @links-btn-tc : white;              /* Links ~ buttons text color when colorized */
 @links-btn-hover-tc : white;        /* Links ~ buttons text color on hover when colorized */
 @links-btn-lh : 1.8;                /* Links ~ buttons line-height : ~= font-size*1.8 */
-@links-btn-pa : 0.3em 1em;              /* Links ~ buttons padding left & right : ~= font-size */
+@links-btn-pa : 0.3em 1em;          /* Links ~ buttons padding left & right : ~= font-size */
 @links-btn-br : 3;                  /* Links ~ buttons border-radius (in px) */
 @links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn cc-thin"> font-size */
 @links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn cc-fat"> font-size */
@@ -159,12 +159,21 @@
 /*
     -- @ Tables @ --
 */
-@tables-cells-pa : 8px;         /* <th> & <td> padding */
-@tables-ending : #e0e0e0;       /* Line below tables */
+@tables-th-pa : 8px;        // <th> padding
+@tables-th-bg: white;     // <th> background-colors
+@tables-th-tc : #9E9E9E;      // <th> main color
+@tables-th-fw : 400;        // <th> font-weight
+
+@tables-td-pa : 8px;        // <td> padding
+@tables-td-bg: white;       // <td> background-colors
+@tables-td-tc : @text-mc;   // <td> main color
+@tables-td-fw : 400;        // <th> font-weight
+
+@tables-bc : #e0e0e0;       /* th & td border-colors */
 @tables-striped-even : #ffffff; /* Even lines bg-color */
 @tables-striped-odd : #f0f0f0;  /* Odd lines bg-color */
 @tables-hover-bg : #f0f0f0;     /* Hovered lines bg-color (only for table.hovered) */
-@tables-th-mc : #9e9e9e;        /* <thead><th> main color */
+@tables-hover-tc : @tables-td-tc;     /* Hovered lines bg-color (only for table.hovered) */
 
 
 
@@ -200,37 +209,36 @@
 
 
 /*
-    -- @ Alerts / Messages @ --
+    -- @ Alerts @ --
 */
-@alert-br : 2; // Alerts / messages border-radius (in pixel)
+@alert-br : 5; // Alerts border-radius (in pixel)
+@alert-pa : 20px; // Alerts paddings
+@alert-fs: 100%; // Alerts font-size
+@alert-ma: 1em 0; // Alerts margins
+@alert-btw: 10px; // Alerts border-top-width
 /* primary */
-@alert-pr-bg : lighten(@primary,38%);
-@alert-pr-bc : lighten(@primary,30%);
+@alert-pr-bc : @primary;
 @alert-pr-tc : @primary;
 /* success */
-@alert-su-bg : #dff0d8;
-@alert-su-bc : #d6e9c6;
 @alert-su-tc : #468847;
+@alert-su-bc : @alert-su-tc;
 /* error */
-@alert-er-bg : #f2dede;
-@alert-er-bc : #ebccd1;
 @alert-er-tc : #b94a48;
+@alert-er-bc : @alert-er-tc;
 /* warning */
-@alert-wa-bg : #fcf8e3;
-@alert-wa-bc : #faebcc;
 @alert-wa-tc : #c09853;
+@alert-wa-bc : @alert-wa-tc;
 /* info */
-@alert-in-bg : #d9edf7;
-@alert-in-bc : #bce8f1;
 @alert-in-tc : #3a87ad;
+@alert-in-bc : @alert-in-tc;
 
 
 
 /*
     -- @ Badges @ --
 */
-@badges-br : 5;         /* Badges - border-radius in pixel */
-
+@badges-br : 5;       // Badges border-radius in pixel
+@badges-bg : #3A3A3A; // Badges default background color
 
 
 /*
@@ -241,7 +249,6 @@
 @cols-pa : 1em;             /* Each column padding  */
 @cols-mat : 0em;            /* Each column margin top */
 @cols-mab : @cols-mat;      /* Each column margin bottom */
-@cols-masonry-gap : 1.5em;  /* Gap between each column with masonry layout */
 
 
 
@@ -294,14 +301,6 @@
 @loader-spinner-bw : 2; /* Loader spinner : border-width */
 
 
-
-
-/*
-    -- @ FONTS MIXINS @ --
-    * LESS call
-        .font(){font-family:'My font',sans-serif;}
-*/
-._helvetica() {font-family: 'Helvetica Neue', sans-serif;} /* Used for <body> (default font) */
 
 
 /*

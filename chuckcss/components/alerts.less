@@ -6,40 +6,80 @@
 
 /*
     - General alerts styles
-    - types : warning, error, success, info
+    - {type} : warning, error, success, info
+
+    <div class="alert alert-{type}">
+        <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+        <i class="fab fa-apple"></i> 
+        <div>
+            <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
+        </div>
+    </div>
 */
+._setAlertStyles(@textColor, @borderColor) {
+    border-top:@alert-btw solid @borderColor;
+    color:@textColor;
+
+    p,div,ul,
+    [data-close-alert],
+    a {
+        color:@textColor;
+    
+        &.btn {
+            text-decoration: none;
+            ._btn(@textColor);
+            color: white;
+        }
+    }
+}
 
 .alert {
-    padding: 1em;
-    padding-right:45px;
-    border: 1px solid transparent;
-    margin:1.5em 0;
-    position:relative;
+    display: flex;
+    align-items: center;
+    margin:@alert-ma;
+    font-size: @alert-fs;
     border-radius:unit(@alert-br,px);
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
 
-    /* Links inside a .alert element */
-    a {
-        text-decoration:underline;
+    // Alerts content
+    & > div {
+        flex:1;
+        padding: @alert-pa;
+
+        a {
+            text-decoration:underline;
+        }
+
+        ul {
+            padding-left:20px;
+            margin:1em auto;
+
+            li {
+                list-style-position: inside;
+            }
+        }
     }
 
-    /* List : add margin */
-    ul {
-        width:90%;
-        margin:1em auto;
+    // Alerts main left icon
+    & > i {
+        padding: @alert-pa;
+        font-size:3rem;
     }
 
-    /* Closed icon */
-    button.close {
-        ._reset;
-        display:block;
-        position:absolute;
-        right:0px;
-        top:0px;
-        padding:1em;
-        height:100%;
-        background-color:transparent;
+    // Alerts close button
+    [data-close-alert] {
+        border:0;
         cursor:pointer;
-        opacity:1;
+        padding: @alert-pa;
+        opacity: 0.4;
+        order:2;
+        background-color: transparent;
+        ._transition;
+
+        &:hover {
+            opacity: 1;
+        }
 
         i {
             ._reset;
@@ -53,58 +93,41 @@
 
     /* Alerts types */
     &-primary {
-        background-color: @alert-pr-bg;
-        border-color: @alert-pr-bc;
-        color:@alert-pr-tc;
-
-        p,div,ul,
-        button.close,
-        a {
-            color:@primary;
-        }
+        ._setAlertStyles(@alert-pr-tc, @alert-pr-bc);
     }
     &-info {
-        background-color: @alert-in-bg;
-        border-color: @alert-in-bc;
-        color:@alert-in-tc;
-
-        p,div,ul,
-        button.close,
-        a {
-            color:@alert-in-tc;
-        }
+        ._setAlertStyles(@alert-in-tc, @alert-in-bc);
     }
     &-warning {
-        background-color: @alert-wa-bg;
-        border-color: @alert-wa-bc;
-        color:@alert-wa-tc;
-
-        p,div,ul,
-        button.close,
-        a {
-            color:@alert-wa-tc;
-        }
+        ._setAlertStyles(@alert-wa-tc, @alert-wa-bc);
     }
     &-error {
-        background-color: @alert-er-bg;
-        border-color: @alert-er-bc;
-        color:@alert-er-tc;
-
-        p,div,ul,
-        button.close,
-        a {
-            color:@alert-er-tc;
-        }
+        ._setAlertStyles(@alert-er-tc, @alert-er-bc);
     }
     &-success {
-        background-color: @alert-su-bg;
-        border-color: @alert-su-bc;
-        color:@alert-su-tc;
-
-        p,div,ul,
-        button.close,
-        a {
-            color:@alert-su-tc;
-        }
+        ._setAlertStyles(@alert-su-tc, @alert-su-bc);
     }
+
+    // Screens > 767px
+    ._media-s-up({
+
+        // Alerts main left icon
+        & > i {
+            font-size: 6rem;
+        }
+    });
+}
+
+
+/* ********** */
+/** MESSAGES **/
+/* ********** */
+/*
+    DEPRECIATED SINCE V3.4.0
+    Use '.alert' instead
+    Will be deleted in v4.0.0
+*/
+.message {
+    // Extend all alert properties
+    &:extend(.alert all);
 }

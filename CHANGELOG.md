@@ -1,5 +1,20 @@
 # ChuckCSS Changelog
 
+## 3.4.0
+
+* Changed : 
+    * Badges default background-color (now `#3A3A3A`)
+    * class `cc-w-{int}` with `int` from 0 to 100 (+1 increment)
+    * Default font-family applied onto the body : now native font stack 
+    * Alerts skins
+    * Bindable attribute on alerts buttons in order to close alerts
+* REMOVED :
+	* class `cc-w-quarter`, `cc-w-half`, `cc-w-threequarter` (remplaced by class `cc-w-25`, `cc-w-50`, `cc-w-75`)
+	* Masonry layouts
+	* Messages (class `message message-{type}` are now the same as class `alert alert-{type}`)
+* Fixed :
+	* class `cc-bg-{color}` and `cc-{color}` onto `th` and `td` elements
+
 ## 3.3.1
 * Added : 
     * Responsive texts aligments : class `cc-txt-{aligment}-{breakpoint}` (mobile-first respected)

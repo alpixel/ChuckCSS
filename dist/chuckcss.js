@@ -4,7 +4,7 @@
         /*!
             -- @ Close alerts @ --
         */
-        $(document).on('click', '.alert .close', function(e){
+        $(document).on('click', '[data-close-alert]', function(e){
             e.preventDefault();
 
             $(this).parent().fadeOut(500,function(){

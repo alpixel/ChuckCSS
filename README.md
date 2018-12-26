@@ -13,7 +13,7 @@ A responsive CSS framework :
 * Flexbox grids
 * rem & em font units
 * Modals
-* Alerts & messages
+* Alerts
 * Tabs
 * ...
 
@@ -35,7 +35,7 @@ To report any problems or improvements, please [open an issue on Github]
 
 
 ### License
-Code copyright 2016-2018 Mickaël SURREL for [ALPIXEL].
+Code copyright 2016-2019 Mickaël SURREL for [ALPIXEL].
 ChuckCSS is under [MIT License].
 
 
