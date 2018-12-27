@@ -1,7 +1,16 @@
 # ChuckCSS Changelog
 
-## 3.4.0
+## 3.5.0
+* Changed : 
+    * Rename `fontawesome.less` with `icons.less` (in `core` folder)
+    * Replace class `modal-open` by attribute `data-modal="modal_id"` on buttons who fired modals
+* Added :
+	* `@modals-zi` and `@modals-zi-active` variables in `settings.less` for modals z-index property
+	* `@icon-mal` and `@icon-mar` variables in `settings.less` for icons margin right and left when used with `icon-left` and `icon-right` class
+* NEW :
+	* Add openings effects for modals, binded with a data attribute : `data-open="slideInLeft"` and `data-open="slideInRight"`
 
+## 3.4.0
 * Changed : 
     * Badges default background-color (now `#3A3A3A`)
     * class `cc-w-{int}` with `int` from 0 to 100 (+1 increment)

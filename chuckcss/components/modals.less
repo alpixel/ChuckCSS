@@ -3,10 +3,7 @@
 /* ******** */
 
 /* ********************* */
-html.opened-modal,
-body.opened-modal {
-    overflow:hidden !important;
-}
+
 
 /* Modal wrapper */
 .modal {
@@ -14,7 +11,7 @@ body.opened-modal {
     justify-content:center;
     align-items:center;
     box-shadow:none;
-    z-index:-1;
+    z-index:@modals-zi;
     position:fixed;
     top:0px;
     bottom:0px;
@@ -25,7 +22,7 @@ body.opened-modal {
     /* Shown modal */
     &.active {
         opacity:1;
-        z-index:99;
+        z-index:@modals-zi-active;
 
         .modal-content {
             opacity:1;
@@ -76,7 +73,7 @@ body.opened-modal {
         position:fixed;
         top:-60px;
         left:50%;
-        z-index:98;
+        z-index:2;
         background:none;
         border-radius:100%;
         line-height:inherit;
@@ -84,7 +81,6 @@ body.opened-modal {
         width:40px;
         height:40px;
         margin-left:-20px;
-
 
         &:after,
         &:before {
@@ -117,7 +113,7 @@ body.opened-modal {
         overflow-y:auto;
         overflow-x:hidden;
         background-color:white;
-        z-index:99;
+        z-index:2;
         border-radius:4px;
         opacity:0;
         ._transition;
@@ -154,7 +150,7 @@ body.opened-modal {
         bottom:0px;
         width:100vw;
         height:100vh;
-        z-index:97;
+        z-index:1;
     }
 
 
@@ -200,5 +196,145 @@ body.opened-modal {
             overflow-y: auto;
             flex-grow:1;
         }
+    }
+}
+
+
+/* 
+    * OPENING EFFECTS *
+*/
+// Common style for slides effects
+[data-open] {
+    // Active modal
+    &.active {
+        .modal-content {
+            ._translate(0%,0%,0%);
+        }
+    }
+
+    // Content modal
+    .modal-content {
+        ._scale(1);
+    }
+
+    /*
+        Combine with data-fullscreen
+    */
+    &[data-fullscreen] {
+        
+        // Opened modal
+        &.active {
+            ._media-s-up({
+                &.modal-large {
+                    .modal-content {                        
+                        ._translate(0%,0%,0%);
+                    }
+                }
+            });
+        }
+
+        .modal-content {
+            height:100vh;
+            max-height:100vh;
+            width: ~"calc(100vw - 80px)";
+        }
+
+        ._media-s-up({
+            .modal-content {
+                width:50%;
+            }
+            &.modal-small .modal-content {
+                width:30%;
+            }
+            &.modal-large .modal-content {
+                width:80%;
+            }
+        });  
+    }
+}
+
+
+// slideInRight
+[data-open="slideInRight"] {
+
+    // Content modal
+    .modal-content {
+        ._translate(200px,0%,0%);
+    }
+
+    /*
+        Combine with data-fullscreen
+    */
+    &[data-fullscreen] {
+        justify-content: flex-end;
+
+        &.active {
+            .modal-close, // for chuckcss version < 3.0.6
+            & > [data-close-modal] // for chuckcss version >= 3.0.6
+            {
+                left:20px;
+                ._transition(0.3s, left, ease-out, 0.3s);
+            }
+        }
+
+        /* Close button */
+        .modal-close, // for chuckcss version < 3.0.6
+        & > [data-close-modal] // for chuckcss version >= 3.0.6
+        {
+            left:-100px;
+            margin-left:0;
+        }
+    
+        /* Sizes */
+        ._media-s-up({
+            &.modal-large {
+                .modal-content {
+                    ._translate(400px,0%,0%);
+                }
+            }
+        });
+    }
+}
+
+
+// slideInLeft
+[data-open="slideInLeft"] {
+
+    // Content modal
+    .modal-content {
+        ._translate(-200px,0%,0%);
+    }
+
+    /*
+        Combine with data-fullscreen
+    */
+    &[data-fullscreen] {
+        justify-content: flex-start;
+
+        &.active {
+            .modal-close, // for chuckcss version < 3.0.6
+            & > [data-close-modal] // for chuckcss version >= 3.0.6
+            {
+                right:20px;
+                ._transition(0.3s, right, ease-out, 0.3s);
+            }
+        }
+
+        /* Close button */
+        .modal-close, // for chuckcss version < 3.0.6
+        & > [data-close-modal] // for chuckcss version >= 3.0.6
+        {
+            left:initial;
+            right:-100px;
+        }
+
+        /* Sizes */
+        ._media-s-up({
+            &.modal-large {
+                .modal-content {
+                    ._translate(-400px,0%,0%);
+                }
+            }
+        });
     }
 }

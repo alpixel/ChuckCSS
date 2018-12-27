@@ -17,11 +17,11 @@
             -- @ Modals @ --
         */
         /* Open modal */
-        $(document).on('click', '.modal-open',function(e){
+        $(document).on('click', '.modal-open, [data-modal]',function(e){
             e.preventDefault();
 
             var 
-                modalId = $(this).data('target'),
+                modalId = $(this).data('target') || $(this).data('modal'),
                 $modal = $('#'+modalId);
 
             if($modal.length) {
