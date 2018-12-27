@@ -1,45 +1,7 @@
 # ChuckCSS Changelog
 
-- debug cc-bg-color & cc-color on th, td
-- Change font-family by native font stack
-- Change attribute to close alert button ([data-close-alert])
-- New alerts skin
-- Remove Messages (in v4.0.0). 
-- Remove Masonry layouts
-- Remove class 
-	- cc-w-quarter (was the same as cc-w-25)
-	- cc-w-half (same as cc-w-50)
-	- cc-w-threequarter (same as cc-w-75)
-- cc-w-{int} class are now incremented to 1, from 0 to 100
-- Change "badges" default background-color
-
-
-## 3.0.8
-* Added : add CDN libraries in front.less file (normalize, font-awesome, ionicons)
-* Removed : 
-	* Bower support (NPM only) and bower.json file
-	* Vagrantfile (ChuckCSS works with Homestead now)
-
-## 3.0.7
-* Added : new settings for links/buttons :
-    * @links-btn-bw => default border-width
-    * @links-btn-pa => default padding
-* Fixed : force border-radius for input[type="checkbox"] to 2px without taking the @input-br var
-
-## 3.0.6
-* Removed : 'modal-close' class on closure button (modal) and replaced by 'data-close-modal' attribute
-* Changed : chuckcss.js file for modals closures ('.modal-close' selector removed)
-
-## 3.0.5
-* Added: 'data-fullscreen' attribute for modals
-* Changed: 'data-close-modal' attribute binded by chuckcss.js file for closing modals
-
-## 3.0.4
-* Fixed: add 'cc-X-xs' class for tiny screens in grids container
-
-## 3.0.1
-* Fixed: add an overflow hidden to html element when modal is opened
-* Added: `cc-responsive` for tables
-
-## 3.0.0
-* Changed: breakpoints, mobile-first. v3.0.0 is not compatible with lower versions.
+rename file fontawesome.less to icons.less
+Set margin-left and margin-right as variables for icons
+Set z-index for modals as variables
+Replace class class modal-open on buttons who fires modals, by attribute data-modal="modal-id"
+Add opening effects for modals slideinleft and slideinright

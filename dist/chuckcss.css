@@ -239,14 +239,21 @@
   }
 }
 /*
-    == DESKTOP / GENERAL CSS ==
+    == BASE : Define <html>, <body> and selection styles ==
 */
 html {
   font-size: 62.5%;
   font-size: calc(1em*0.625);
   overflow-x: hidden;
 }
+html.opened-modal,
 html.opened-menu {
+  overflow: hidden !important;
+}
+body.opened-menu {
+  overflow-y: hidden;
+}
+body.opened-modal {
   overflow: hidden !important;
 }
 body {
@@ -269,9 +276,6 @@ body *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body.opened-menu {
-  overflow-y: hidden;
-}
 div,
 dl,
 dd,
@@ -283,6 +287,8 @@ ol {
   padding: 0;
   margin: 0;
   border: 0;
+}
+li {
   list-style: none;
 }
 /* define text selection */
@@ -3491,10 +3497,6 @@ a.btn.cc-fat span.badge:before {
 /** MODALS **/
 /* ******** */
 /* ********************* */
-html.opened-modal,
-body.opened-modal {
-  overflow: hidden !important;
-}
 /* Modal wrapper */
 .modal {
   display: -webkit-box;
@@ -3508,7 +3510,7 @@ body.opened-modal {
           align-items: center;
   -webkit-box-shadow: none;
           box-shadow: none;
-  z-index: -1;
+  z-index: -2;
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -3524,7 +3526,7 @@ body.opened-modal {
 }
 .modal.active {
   opacity: 1;
-  z-index: 99;
+  z-index: 10;
 }
 .modal.active .modal-content {
   opacity: 1;
@@ -3565,7 +3567,7 @@ body.opened-modal {
   position: fixed;
   top: -60px;
   left: 50%;
-  z-index: 98;
+  z-index: 2;
   background: none;
   border-radius: 100%;
   line-height: inherit;
@@ -3612,7 +3614,7 @@ body.opened-modal {
   overflow-y: auto;
   overflow-x: hidden;
   background-color: white;
-  z-index: 99;
+  z-index: 2;
   border-radius: 4px;
   opacity: 0;
   -webkit-transition: 0.2s all ease-out 0s;
@@ -3650,7 +3652,7 @@ body.opened-modal {
   bottom: 0px;
   width: 100vw;
   height: 100vh;
-  z-index: 97;
+  z-index: 1;
 }
 .modal[data-fixed-hf] .modal-content {
   overflow: hidden;
@@ -3702,6 +3704,113 @@ body.opened-modal {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+/* 
+    * OPENING EFFECTS *
+*/
+[data-open] {
+  /*
+        Combine with data-fullscreen
+    */
+}
+[data-open].active .modal-content {
+  -webkit-transform: translate3d(0%, 0%, 0%);
+          transform: translate3d(0%, 0%, 0%);
+}
+[data-open] .modal-content {
+  /* X != Y */
+  /* X only */
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  /* X & Y empty : default value */
+}
+@media screen and (min-width: 768px) {
+  [data-open][data-fullscreen].active.modal-large .modal-content {
+    -webkit-transform: translate3d(0%, 0%, 0%);
+            transform: translate3d(0%, 0%, 0%);
+  }
+}
+[data-open][data-fullscreen] .modal-content {
+  height: 100vh;
+  max-height: 100vh;
+  width: calc(100vw - 80px);
+}
+@media screen and (min-width: 768px) {
+  [data-open][data-fullscreen] .modal-content {
+    width: 50%;
+  }
+  [data-open][data-fullscreen].modal-small .modal-content {
+    width: 30%;
+  }
+  [data-open][data-fullscreen].modal-large .modal-content {
+    width: 80%;
+  }
+}
+[data-open="slideInRight"] {
+  /*
+        Combine with data-fullscreen
+    */
+}
+[data-open="slideInRight"] .modal-content {
+  -webkit-transform: translate3d(200px, 0%, 0%);
+          transform: translate3d(200px, 0%, 0%);
+}
+[data-open="slideInRight"][data-fullscreen] {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /* Close button */
+  /* Sizes */
+}
+[data-open="slideInRight"][data-fullscreen].active .modal-close,
+[data-open="slideInRight"][data-fullscreen].active > [data-close-modal] {
+  left: 20px;
+  -webkit-transition: 0.3s left ease-out 0.3s;
+  transition: 0.3s left ease-out 0.3s;
+}
+[data-open="slideInRight"][data-fullscreen] .modal-close,
+[data-open="slideInRight"][data-fullscreen] > [data-close-modal] {
+  left: -100px;
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  [data-open="slideInRight"][data-fullscreen].modal-large .modal-content {
+    -webkit-transform: translate3d(400px, 0%, 0%);
+            transform: translate3d(400px, 0%, 0%);
+  }
+}
+[data-open="slideInLeft"] {
+  /*
+        Combine with data-fullscreen
+    */
+}
+[data-open="slideInLeft"] .modal-content {
+  -webkit-transform: translate3d(-200px, 0%, 0%);
+          transform: translate3d(-200px, 0%, 0%);
+}
+[data-open="slideInLeft"][data-fullscreen] {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /* Close button */
+  /* Sizes */
+}
+[data-open="slideInLeft"][data-fullscreen].active .modal-close,
+[data-open="slideInLeft"][data-fullscreen].active > [data-close-modal] {
+  right: 20px;
+  -webkit-transition: 0.3s right ease-out 0.3s;
+  transition: 0.3s right ease-out 0.3s;
+}
+[data-open="slideInLeft"][data-fullscreen] .modal-close,
+[data-open="slideInLeft"][data-fullscreen] > [data-close-modal] {
+  left: initial;
+  right: -100px;
+}
+@media screen and (min-width: 768px) {
+  [data-open="slideInLeft"][data-fullscreen].modal-large .modal-content {
+    -webkit-transform: translate3d(-400px, 0%, 0%);
+            transform: translate3d(-400px, 0%, 0%);
+  }
 }
 /*
     * IMPORT GENERATOR & HELPERS FILEs *

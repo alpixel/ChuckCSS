@@ -14,8 +14,12 @@
     animation-iteration-count: infinite;
 }
 @keyframes loading-spin {
-    from {._rotate(0deg);}
-    to{._rotate(360deg);}
+    from {
+        ._rotate(0deg)
+    }
+    to{
+        ._rotate(360deg)
+    }
 }
 
 /* *****
@@ -23,8 +27,12 @@
     @description : animate dots loader
 ***** */
 @keyframes loaderDots {
-    0%, 39%, 100% { opacity:0 }
-    40% { opacity:1; }
+    0%, 39%, 100% { 
+        opacity:0 
+    }
+    40% { 
+        opacity:1
+    }
 }
 
 /* *****
@@ -32,8 +40,12 @@
     @description : animate spinner loader
 ***** */
 @keyframes loaderSpinner {
-    0% { ._rotate(0deg) }
-    100% { ._rotate(360deg) }
+    0% { 
+        ._rotate(0deg) 
+    }
+    100% { 
+        ._rotate(360deg) 
+    }
 }
 
 
@@ -42,12 +54,34 @@
     @description : animate caterpillar loader
 ***** */
 @keyframes loaderCaterpillar{
-  0% { left: 100px; top:0}
-  80% { left: 0; top:0;}
-  85% { left: 0; top: -20px; width: 20px; height: 20px;}
-  90% { width: 40px; height: 15px; }
-  95% { left: 100px; top: -20px; width: 20px; height: 20px;}
-  100% { left: 100px; top:0; }
+    0% { 
+        left: 100px;
+        top:0
+    }
+    80% { 
+        left: 0;
+        top:0
+    }
+    85% { 
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px
+    }
+    90% { 
+        width: 40px;
+        height: 15px
+    }
+    95% { 
+        left: 100px;
+        top: -20px;
+        width: 20px;
+        height: 20px
+    }
+    100% { 
+        left: 100px;
+        top:0
+    }
 }
 
 /* *****
@@ -57,13 +91,13 @@
 @keyframes checkdio {
     0% {
         opacity:.4;
-        ._scale(3);
+        ._scale(3)
     }
     10% {
-        ._scale(2.5);
+        ._scale(2.5)
     }
     90% {
-        ._scale(1);
+        ._scale(1)
     }
     100% {
         transform:none
