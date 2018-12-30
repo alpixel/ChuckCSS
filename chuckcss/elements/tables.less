@@ -48,7 +48,7 @@ table {
 
 
     // Specific ChuckCSS styles
-    &.cc {
+    &.@{css-prefix} {
 
         /* Layout fixed tables */
         &-equal-cols {
@@ -77,7 +77,7 @@ table {
 
         /* hovered : highlight the hovered line */
         &-hovered {
-            tbody tr:hover td:not([class^="cc-bg"]) {
+            tbody tr:hover td:not([class^="@{css-prefix}-bg"]) {
                 background-color:@tables-hover-bg;
                 color: @tables-hover-tc;
             }
@@ -125,7 +125,7 @@ table {
     });
 
     // Responsive table
-    &.cc-responsive {
+    &.@{css-prefix}-responsive {
         ._media-s({
             display:flex;
             overflow: hidden;
@@ -195,7 +195,7 @@ table {
                 }
             }
 
-            &.cc-unbordered {
+            &.@{css-prefix}-unbordered {
                 thead,tbody {
                     border:0;
 

@@ -20,7 +20,7 @@
     line-height:@text-lh*1.5;
 
 
-    &.cc {
+    &.@{css-prefix} {
         &-underlined {
             border-bottom:1px solid @gray-li;
         }
@@ -68,7 +68,7 @@
         &-pills {
             border:0;
 
-            &.cc-unchained {
+            &.@{css-prefix}-unchained {
                 &>li {
                     margin-left:1.5em;
 
@@ -121,7 +121,7 @@
                     }
 
                     // Right
-                    &.cc-last {
+                    &.@{css-prefix}-last {
                         a:not(.btn) {
                             border-radius:3px;
                         }
@@ -135,7 +135,7 @@
                     }
 
                     // Right
-                    &.cc-last {
+                    &.@{css-prefix}-last {
                         a:not(.btn) {
                             border-radius:3px;
                         }
@@ -194,11 +194,11 @@
         }
 
         // Pulled right item
-        &.cc-last {
+        &.@{css-prefix}-last {
             order:1;
             margin-left:auto;
 
-            .cc-pills& a {
+            .@{css-prefix}-pills& a {
                 border-width:1px;
                 border-radius:3px;
             }
@@ -209,7 +209,7 @@
     // Small screens rules for alignments
     ._media-xs-up({
 
-        &.cc {
+        &.@{css-prefix} {
             &-align {
                 &-stretch-s {
                     justify-content:center;
@@ -252,7 +252,7 @@
 
     // Medium screens rules
     ._media-s-up({
-        &.cc {
+        &.@{css-prefix} {
             &-align {
                 &-stretch-m {
                     justify-content:center;
@@ -295,7 +295,7 @@
 
     // Large screens rules
     ._media-m-up({
-        &.cc {
+        &.@{css-prefix} {
             &-align {
                 &-stretch-l {
                     justify-content:center;
@@ -338,7 +338,7 @@
 
     // X-Large screens rules
     ._media-l-up({
-        &.cc {
+        &.@{css-prefix} {
             &-align {
                 &-stretch-xl {
                     justify-content:center;
@@ -383,7 +383,7 @@
     ._media-s({
         flex-direction:column;
 
-        &.cc {
+        &.@{css-prefix} {
             &-underlined {
                 border-bottom-width:0px;
             }
@@ -459,7 +459,7 @@
 
             &-pills {
 
-                &.cc-unchained > li,
+                &.@{css-prefix}-unchained > li,
                 &>li {
                     margin-left:0;
                     margin-top:5px;
@@ -497,7 +497,7 @@
         &> li {
             margin-left:0;
 
-            &.cc-last {
+            &.@{css-prefix}-last {
                 order:1;
                 margin-left:inherit;
             }

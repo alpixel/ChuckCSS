@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 3.5.1
+* Changed : 
+    * class prefix (`cc`) is set as a variable into `settings.less` file. You can now change it as you want.
+
 ## 3.5.0
 * Changed : 
     * Rename `fontawesome.less` with `icons.less` (in `core` folder)
