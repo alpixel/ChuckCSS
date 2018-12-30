@@ -634,7 +634,7 @@
                 </p>
             </header>
 
-            <div class="main cc-helpers-txt">
+            <div class="main cc-helpers-txt active">
                 <h3 class="title">Texts helpers (alignments, paddings, margins, colors, font-size, font-weight)</h3>
 
                 <pre class="HTML">
