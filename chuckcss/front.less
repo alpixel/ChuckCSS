@@ -1,4 +1,4 @@
-/*! ChuckCSS v3.6.0 */
+/*! ChuckCSS v3.6.1 */
 /*
     == ChuckCSS Framework ==
     @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -12,7 +12,7 @@
 /*
     Normalize
 */
-@import "core/normalize";
+@import "main/normalize";
 
 
 /*
@@ -21,16 +21,16 @@
 @import (reference) "settings";
 
 /*
-    * /core/ - IMPORT CORE FILES *
-        • functions.less : main usefull less functions|mixins for integration project
-        • responsive.less : responsive less mixins
+    * /main/ - IMPORT main FILES *
         • animations.less : keyframes file
         • base.less : base file with <html>, <body> styles
+        • functions.less : main usefull less functions|mixins for integration project
+        • responsive.less : responsive less mixins
 */
-@import (reference) "core/functions";
-@import (reference) "core/responsive";
-@import "core/animations";
-@import "core/base"; // <==== <html> & <body>
+@import (reference) "main/functions";
+@import (reference) "main/responsive";
+@import "main/animations";
+@import "main/base"; // <==== <html> & <body>
 
 /*
     * /elements/ - IMPORTS FILES *
@@ -57,9 +57,9 @@
     * IMPORT GENERATOR & HELPERS FILEs *
     • generator.less : Engine generator for colors, grids, icons...
     • helpers.less : text and blocks helpers
-    • fontawesome.less : icons tools
+    • icons.less : icons tools
     /!\ Import this files after elements and others components
 */
-@import "core/helpers";
-@import "core/icons";
-@import "core/generator";
+@import "main/helpers";
+@import "main/icons";
+@import "main/generator";

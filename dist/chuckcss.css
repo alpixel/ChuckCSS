@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ChuckCSS v3.6.0 */
+/*! ChuckCSS v3.6.1 */
 /*
     == ChuckCSS Framework ==
     @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -324,11 +324,11 @@ template {
     settings.less
 */
 /*
-    * /core/ - IMPORT CORE FILES *
-        • functions.less : main usefull less functions|mixins for integration project
-        • responsive.less : responsive less mixins
+    * /main/ - IMPORT main FILES *
         • animations.less : keyframes file
         • base.less : base file with <html>, <body> styles
+        • functions.less : main usefull less functions|mixins for integration project
+        • responsive.less : responsive less mixins
 */
 /*
     == ANIMATIONS ==
@@ -4173,7 +4173,7 @@ a.btn.cc-fat span.badge:before {
     * IMPORT GENERATOR & HELPERS FILEs *
     • generator.less : Engine generator for colors, grids, icons...
     • helpers.less : text and blocks helpers
-    • fontawesome.less : icons tools
+    • icons.less : icons tools
     /!\ Import this files after elements and others components
 */
 /*

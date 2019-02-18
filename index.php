@@ -869,10 +869,6 @@
                         &lt;div class="cc-bg-primary cc-txt-center">Primary&lt;/div>
                         &lt;div class="cc-bg-green cc-txt-center">Green&lt;/div>
                         &lt;div class="cc-bg-red cc-txt-center">Red&lt;/div>
-                        &lt;div class="cc-bg-blue cc-txt-center">Blue&lt;/div>
-                        &lt;div class="cc-bg-purple cc-txt-center">Purple&lt;/div>
-                        &lt;div class="cc-bg-orange cc-txt-center">Orange&lt;/div>
-                        &lt;div class="cc-bg-yellow cc-txt-center">Yellow&lt;/div>
                     </code>
                 </pre>
 
@@ -880,10 +876,6 @@
                     <div class="cc-bg-primary cc-txt-center">Primary</div>
                     <div class="cc-bg-green cc-txt-center">Green</div>
                     <div class="cc-bg-red  cc-txt-center">Red</div>
-                    <div class="cc-bg-blue cc-txt-center">Blue</div>
-                    <div class="cc-bg-purple cc-txt-center">Purple</div>
-                    <div class="cc-bg-orange cc-txt-center">Orange</div>
-                    <div class="cc-bg-yellow cc-txt-center">Yellow</div>
                 </div>
             </div>
 
