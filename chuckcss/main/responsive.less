@@ -1,0 +1,113 @@
+/*
+    equivalent to RESPONSIVE / MEDIA QUERIES equivalent to
+*/
+
+/* *****
+    @name : ._media-{key}
+    @description : A way for responsive integration. Apply rules for media queries tablet, phone, ...
+    @params : @rules (CSS rules)
+
+    @exemple :
+      el {
+        background-color:white; // Default : Apply a white bg-color to the <el>
+
+        ._media-xs-up({
+          background-color:red; // Apply a red bg-color to the <el> on screen > 359px
+        }); // don't forget the ;
+      }
+***** */
+
+/*
+    * X-Small media
+*/
+// screen <= 359px | equivalent to ._tiny({}) mixin in ChuckCSS < v3.0.0
+._media-xs(@rules) {
+    @media screen and (max-width: (@xs-media-mw)) {
+        @rules();
+    }
+}
+// screen > 359px | equivalent to .phoneUp({}) mixin  in ChuckCSS < v3.0.0
+._media-xs-up(@rules) {
+    @media screen and (min-width: (@xs-media-mw + 1)) {
+        @rules();
+    }
+}
+// 0px <= screens <= 359px
+._media-xs-only(@rules) {
+    @media screen and (max-width: @xs-media-mw) and (min-width: 0px){
+        @rules();
+    }
+}
+
+/*
+    * Small media
+*/
+// screen <= 767px | equivalent to ._phone({}) mixin in ChuckCSS < v3.0.0
+._media-s(@rules) {
+    @media screen and (max-width: @s-media-mw) {
+        @rules();
+    }
+}
+// screen > 767px | equivalent to ._tabletUp({}) mixin in ChuckCSS < v3.0.0
+._media-s-up(@rules) {
+    @media screen and (min-width: (@s-media-mw + 1)) {
+        @rules();
+    }
+}
+// 360px <= screen <= 767px
+._media-s-only(@rules) {
+    @media screen and (max-width: @s-media-mw) and (min-width: (@xs-media-mw + 1)) {
+        @rules();
+    }
+}
+
+/*
+    * Medium media
+*/
+// screen <= 989px
+._media-m(@rules) {
+    @media screen and (max-width: @m-media-mw) {
+        @rules();
+    }
+}
+// screen > 989px
+._media-m-up(@rules) {
+    @media screen and (min-width: (@m-media-mw + 1)) {
+        @rules();
+    }
+}
+// 768px <= screen <= 990px
+._media-m-only(@rules) {
+    @media screen and (max-width: @m-media-mw) and (min-width: (@s-media-mw + 1)) {
+        @rules();
+    }
+}
+
+/*
+    * Large media
+*/
+// screen <= 1199px | equivalent to ._tablet({}) mixin in ChuckCSS < v3.0.0
+._media-l(@rules) {
+    @media screen and (max-width: @l-media-mw) {
+        @rules();
+    }
+}
+// screen > 1199px | equivalent to ._desktop({}) mixin in ChuckCSS < v3.0.0
+._media-l-up(@rules) {
+    @media screen and (min-width: (@l-media-mw + 1)) {
+        @rules();
+    }
+}
+// 990px <= screen <= 1199px
+._media-l-only(@rules) {
+    @media screen and (max-width: @l-media-mw) and (min-width: (@m-media-mw + 1)) {
+        @rules();
+    }
+}
+
+// For IE only -- Yo_oY
+._ie(@rules) {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @rules();
+    }
+}
