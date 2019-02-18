@@ -55,4 +55,4 @@ ChuckCSS is under [MIT License].
 [ALPIXEL]: <https://github.com/alpixel>
 [logo]: http://chuckcss.io/img/chuckcss-github-logo.png "ChuckCSS framework"
 [NPM]: <https://www.npmjs.com/package/ChuckCSS>
-[NPM]: <https://yarnpkg.com/en/package/ChuckCSS>
+[YARN]: <https://yarnpkg.com/en/package/ChuckCSS>
