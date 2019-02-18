@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 3.6.1
+* Changed : 
+    * Rename `core` folder to `main` folder
+
 ## 3.6.0
 * REMOVED : 
     * 4 default colors : blue, purple, yellow, orange (descrease ChuckCSS weight)
