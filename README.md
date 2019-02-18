@@ -7,21 +7,28 @@
 A responsive CSS framework :
 - Developed with [LESS]
 - Compiled with PostCSS - [Autoprefixer]
-- Including [Normalize.css]
+
 
 **ChuckCSS include plenty of features :**
+* Mobile-first
 * Flexbox grids
-* rem & em font units
+* Rem units
 * Modals
 * Alerts
 * Tabs
-* ...
+* Forms elements
+* Usefull class helpers for margins, paddings, font-sizes, texts alignments... regarding the screens widths
 
 
 ### Installation
 Install ChuckCSS with [NPM]:
 ```sh
 $ npm install ChuckCSS
+```
+
+Install ChuckCSS with [YARN]:
+```sh
+$ yarn add ChuckCSS
 ```
 
 ### Documentation
@@ -48,3 +55,4 @@ ChuckCSS is under [MIT License].
 [ALPIXEL]: <https://github.com/alpixel>
 [logo]: http://chuckcss.io/img/chuckcss-github-logo.png "ChuckCSS framework"
 [NPM]: <https://www.npmjs.com/package/ChuckCSS>
+[NPM]: <https://yarnpkg.com/en/package/ChuckCSS>

@@ -1,5 +1,12 @@
 # ChuckCSS Changelog
 
+## 3.6.0
+* REMOVED : 
+    * 4 default colors : blue, purple, yellow, orange (descrease ChuckCSS weight)
+    * CDN Normalize.css. Normalize is now included as an internal flie in `core` folder (inscrease "Google Lighthouse" performance)
+* Added :
+    * `showLazyImg` animation (smoothly fade appearances) for images loaded with a lazy loader library (Lozad.js for exemple)
+
 ## 3.5.1
 * Changed : 
     * class prefix (`cc`) is set as a variable into `settings.less` file. You can now change it as you want.

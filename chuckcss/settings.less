@@ -77,40 +77,13 @@
 @gray-li : lighten(@gray,10%);          /* Lighten gray */
 @gray-da : darken(@gray,10%);           /* Darken gray */
 
-// blue
-@blue : #3498db;
-@blue-na : blue;                        /* Name of the color, for @aColors array */
-@blue-li : lighten(@blue,10%);          /* Lighten blue */
-@blue-da : darken(@blue,10%);           /* Darken blue */
-
-// purple
-@purple : #8e44ad;
-@purple-na : purple;                    /* Name of the color, for @aColors array */
-@purple-li : lighten(@purple,10%);      /* Lighten purple */
-@purple-da : darken(@purple,10%);       /* Darken purple */
-
-// orange
-@orange : #f39c12;
-@orange-na : orange;                    /* Name of the color, for @aColors array */
-@orange-li : lighten(@orange,10%);      /* Lighten orange */
-@orange-da : darken(@orange,10%);       /* Darken orange */
-
-// yellow
-@yellow : #f1c40f;
-@yellow-na : yellow;                    /* Name of the color, for @aColors array */
-@yellow-li : lighten(@yellow,10%);      /* Lighten yellow */
-@yellow-da : darken(@yellow,10%);       /* Darken yellow */
 
 // Colors array : Add any color you want \m/
 // array(@color1-name @color1-value, @color2-name @color2-value,...);
 @aColors :
     @primary-na @primary,
     @green-na @green,
-    @red-na @red,
-    @blue-na @blue,
-    @purple-na @purple,
-    @orange-na @orange,
-    @yellow-na @yellow;
+    @red-na @red;
 
 
 
@@ -118,9 +91,26 @@
     -- @ Texts @ --
 */
 @text-mc: #3a3a3a;                      /* Texts ~ Main color (hexa, rgb, rgba...) */
-@text-fs-old : 15px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
-@text-fs: unit(@text-fs-old/10,rem);    /* Textes font-size (applied to <body>) */
-@text-lh : 1.5;                         /* Texts line-height : ~= font-size*1.5 */
+
+// Font-size && line-height for small screens (<= 359px)
+@text-fs: 1.6rem;       /* applied to <body> */
+@text-lh : 1.5;         /* Texts line-height : ~= font-size*1.5 */
+
+// Font-size && line-height for phone screens (>= 360px)
+@text-fs-s: 1.6rem;     /* Textes font-size (applied to <body>) */
+@text-lh-s : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+// Font-size && line-height for medium screens (>= 768px)
+@text-fs-m: 1.6rem;     /* Textes font-size (applied to <body>) */
+@text-lh-m : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+// Font-size && line-height for large screens (>= 989px)
+@text-fs-l: 1.6rem;     /* Textes font-size (applied to <body>) */
+@text-lh-l : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+// Font-size && line-height for x-large screens (>= 1200px)
+@text-fs-xl: 1.6rem;    /* Textes font-size (applied to <body>) */
+@text-lh-xl : 1.5;      /* Texts line-height : ~= font-size*1.5 */
 
 
 
