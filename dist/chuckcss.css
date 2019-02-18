@@ -5150,6 +5150,1058 @@ form.cc-red button[type="submit"]:hover {
     border: 1px solid #c41515;
   }
 }
+/* titles */
+h1.cc-blue,
+h2.cc-blue,
+h3.cc-blue,
+h4.cc-blue,
+h5.cc-blue,
+h6.cc-blue,
+.h1-like.cc-blue,
+.h2-like.cc-blue,
+.h3-like.cc-blue,
+.h4-like.cc-blue,
+.h5-like.cc-blue,
+.h6-like.cc-blue {
+  color: #3498db;
+}
+h1.cc-bg-blue,
+h2.cc-bg-blue,
+h3.cc-bg-blue,
+h4.cc-bg-blue,
+h5.cc-bg-blue,
+h6.cc-bg-blue,
+.h1-like.cc-bg-blue,
+.h2-like.cc-bg-blue,
+.h3-like.cc-bg-blue,
+.h4-like.cc-bg-blue,
+.h5-like.cc-bg-blue,
+.h6-like.cc-bg-blue {
+  color: white;
+  background-color: #3498db;
+}
+/* elements */
+p.cc-blue,
+div.cc-blue,
+section.cc-blue,
+aside.cc-blue,
+header.cc-blue,
+footer.cc-blue,
+article.cc-blue,
+main.cc-blue,
+nav.cc-blue,
+td.cc-blue,
+th.cc-blue,
+span.cc-blue,
+i.cc-blue,
+a.cc-blue,
+strong.cc-blue,
+em.cc-blue,
+code.cc-blue,
+small.cc-blue {
+  color: #3498db;
+}
+p.cc-bg-blue,
+div.cc-bg-blue,
+section.cc-bg-blue,
+aside.cc-bg-blue,
+header.cc-bg-blue,
+footer.cc-bg-blue,
+article.cc-bg-blue,
+main.cc-bg-blue,
+nav.cc-bg-blue,
+td.cc-bg-blue,
+th.cc-bg-blue,
+span.cc-bg-blue,
+i.cc-bg-blue,
+a.cc-bg-blue,
+strong.cc-bg-blue,
+em.cc-bg-blue,
+code.cc-bg-blue,
+small.cc-bg-blue {
+  color: white;
+  background-color: #3498db;
+}
+p.cc-bg-blue a:not(.btn),
+div.cc-bg-blue a:not(.btn),
+section.cc-bg-blue a:not(.btn),
+aside.cc-bg-blue a:not(.btn),
+header.cc-bg-blue a:not(.btn),
+footer.cc-bg-blue a:not(.btn),
+article.cc-bg-blue a:not(.btn),
+main.cc-bg-blue a:not(.btn),
+nav.cc-bg-blue a:not(.btn),
+td.cc-bg-blue a:not(.btn),
+th.cc-bg-blue a:not(.btn),
+span.cc-bg-blue a:not(.btn),
+i.cc-bg-blue a:not(.btn),
+a.cc-bg-blue a:not(.btn),
+strong.cc-bg-blue a:not(.btn),
+em.cc-bg-blue a:not(.btn),
+code.cc-bg-blue a:not(.btn),
+small.cc-bg-blue a:not(.btn) {
+  color: white;
+}
+/* lists */
+li.cc-bg-blue {
+  background-color: #3498db;
+  color: white;
+}
+li.cc-blue:before {
+  color: #3498db;
+}
+/* blockquotes */
+blockquote.cc-blue {
+  border-left: 4px solid #3498db;
+}
+blockquote.cc-blue.cc-quoted:before {
+  color: #3498db;
+}
+blockquote.cc-blue.cc-reverse {
+  border-left-width: 0px;
+  border-right-color: #3498db;
+}
+/* Tables */
+table.cc-blue {
+  /* Bordered & Colored tables */
+}
+table.cc-blue thead td,
+table.cc-blue tfoot td,
+table.cc-blue thead th,
+table.cc-blue tfoot th {
+  background-color: #3498db;
+  color: white;
+  border-bottom-color: #196090;
+}
+table.cc-blue tbody tr td {
+  border-bottom: 1px solid #3498db;
+}
+table.cc-blue.cc-bordered tfoot td,
+table.cc-blue.cc-bordered thead td,
+table.cc-blue.cc-bordered tfoot th,
+table.cc-blue.cc-bordered thead th {
+  border-color: #217dbb;
+}
+table.cc-blue.cc-bordered tbody tr td {
+  border-color: #217dbb;
+}
+table tr.cc-bg-blue td {
+  background-color: #3498db;
+  color: white;
+  border-bottom: 0;
+}
+/* Links / Buttons */
+a.btn.cc-bg-blue,
+button.cc-bg-blue {
+  color: white;
+  background-color: #3498db;
+  border-color: #3498db;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+  /* Loading + outlined buttons */
+  /* Outlined buttons / links */
+}
+a.btn.cc-bg-blue:hover,
+button.cc-bg-blue:hover {
+  background-color: #217dbb;
+  border-color: #217dbb;
+}
+a.btn.cc-bg-blue:hover,
+button.cc-bg-blue:hover {
+  color: white;
+}
+a.btn.cc-bg-blue.cc-loading:before,
+button.cc-bg-blue.cc-loading:before {
+  border-color: transparent white white white;
+}
+a.btn.cc-bg-blue.cc-outlined,
+button.cc-bg-blue.cc-outlined {
+  color: #3498db;
+  background-color: transparent;
+  border-color: transparent;
+  /* If Hover is specified */
+  /* else */
+  border: 1px solid #3498db;
+  /* Loading + outlined buttons */
+}
+a.btn.cc-bg-blue.cc-outlined:hover,
+button.cc-bg-blue.cc-outlined:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+a.btn.cc-bg-blue.cc-outlined:hover,
+button.cc-bg-blue.cc-outlined:hover {
+  border-color: #196090;
+  color: #196090;
+}
+a.btn.cc-bg-blue.cc-outlined.cc-loading,
+button.cc-bg-blue.cc-outlined.cc-loading {
+  color: transparent;
+}
+a.btn.cc-bg-blue.cc-outlined.cc-loading:before,
+button.cc-bg-blue.cc-outlined.cc-loading:before {
+  border-color: transparent #3498db #3498db #3498db;
+}
+/* Colored forms */
+form.cc-blue .form-checkbox:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-blue .form-checkbox:not(.error) input:checked {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+form.cc-blue .form-radio:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-blue .form-radio:not(.error) input:checked:before {
+  background-color: #3498db;
+}
+form.cc-blue .form-ps span {
+  background-color: #3498db;
+}
+form.cc-blue select:focus,
+form.cc-blue textarea:focus,
+form.cc-blue input:focus {
+  border-color: #3498db;
+}
+form.cc-blue input[type="submit"],
+form.cc-blue button[type="submit"] {
+  background-color: #3498db;
+  border-color: #3498db;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+}
+form.cc-blue input[type="submit"]:hover,
+form.cc-blue button[type="submit"]:hover {
+  background-color: #217dbb;
+  border-color: #217dbb;
+}
+/* Tabs */
+.tabs.cc-blue {
+  /* Small screen ruleset */
+}
+.tabs.cc-blue.cc-bordered > li:hover a:not(.btn),
+.tabs.cc-blue.cc-bordered > li.active a:not(.btn) {
+  border-color: #3498db #3498db white #3498db;
+}
+.tabs.cc-blue.cc-pills > li.active a:not(.btn),
+.tabs.cc-blue.cc-pills > li:hover a:not(.btn) {
+  background-color: #3498db;
+  border-top: 1px solid #3498db;
+  border-bottom: 1px solid #3498db;
+  color: white;
+}
+.tabs.cc-blue > li {
+  /* Active child */
+}
+.tabs.cc-blue > li:hover a:not(.btn),
+.tabs.cc-blue > li.active a:not(.btn) {
+  color: #3498db;
+  border-bottom-color: #3498db;
+}
+@media screen and (max-width: 767px) {
+  .tabs.cc-blue.cc-bordered > li:hover a:not(.btn),
+  .tabs.cc-blue.cc-bordered > li.active a:not(.btn) {
+    border-color: #3498db;
+  }
+  .tabs.cc-blue.cc-pills.cc-unchained > li.active a:not(.btn),
+  .tabs.cc-blue.cc-pills > li.active a:not(.btn),
+  .tabs.cc-blue.cc-pills.cc-unchained > li:hover a:not(.btn),
+  .tabs.cc-blue.cc-pills > li:hover a:not(.btn) {
+    border: 1px solid #3498db;
+  }
+}
+/* titles */
+h1.cc-purple,
+h2.cc-purple,
+h3.cc-purple,
+h4.cc-purple,
+h5.cc-purple,
+h6.cc-purple,
+.h1-like.cc-purple,
+.h2-like.cc-purple,
+.h3-like.cc-purple,
+.h4-like.cc-purple,
+.h5-like.cc-purple,
+.h6-like.cc-purple {
+  color: #8e44ad;
+}
+h1.cc-bg-purple,
+h2.cc-bg-purple,
+h3.cc-bg-purple,
+h4.cc-bg-purple,
+h5.cc-bg-purple,
+h6.cc-bg-purple,
+.h1-like.cc-bg-purple,
+.h2-like.cc-bg-purple,
+.h3-like.cc-bg-purple,
+.h4-like.cc-bg-purple,
+.h5-like.cc-bg-purple,
+.h6-like.cc-bg-purple {
+  color: white;
+  background-color: #8e44ad;
+}
+/* elements */
+p.cc-purple,
+div.cc-purple,
+section.cc-purple,
+aside.cc-purple,
+header.cc-purple,
+footer.cc-purple,
+article.cc-purple,
+main.cc-purple,
+nav.cc-purple,
+td.cc-purple,
+th.cc-purple,
+span.cc-purple,
+i.cc-purple,
+a.cc-purple,
+strong.cc-purple,
+em.cc-purple,
+code.cc-purple,
+small.cc-purple {
+  color: #8e44ad;
+}
+p.cc-bg-purple,
+div.cc-bg-purple,
+section.cc-bg-purple,
+aside.cc-bg-purple,
+header.cc-bg-purple,
+footer.cc-bg-purple,
+article.cc-bg-purple,
+main.cc-bg-purple,
+nav.cc-bg-purple,
+td.cc-bg-purple,
+th.cc-bg-purple,
+span.cc-bg-purple,
+i.cc-bg-purple,
+a.cc-bg-purple,
+strong.cc-bg-purple,
+em.cc-bg-purple,
+code.cc-bg-purple,
+small.cc-bg-purple {
+  color: white;
+  background-color: #8e44ad;
+}
+p.cc-bg-purple a:not(.btn),
+div.cc-bg-purple a:not(.btn),
+section.cc-bg-purple a:not(.btn),
+aside.cc-bg-purple a:not(.btn),
+header.cc-bg-purple a:not(.btn),
+footer.cc-bg-purple a:not(.btn),
+article.cc-bg-purple a:not(.btn),
+main.cc-bg-purple a:not(.btn),
+nav.cc-bg-purple a:not(.btn),
+td.cc-bg-purple a:not(.btn),
+th.cc-bg-purple a:not(.btn),
+span.cc-bg-purple a:not(.btn),
+i.cc-bg-purple a:not(.btn),
+a.cc-bg-purple a:not(.btn),
+strong.cc-bg-purple a:not(.btn),
+em.cc-bg-purple a:not(.btn),
+code.cc-bg-purple a:not(.btn),
+small.cc-bg-purple a:not(.btn) {
+  color: white;
+}
+/* lists */
+li.cc-bg-purple {
+  background-color: #8e44ad;
+  color: white;
+}
+li.cc-purple:before {
+  color: #8e44ad;
+}
+/* blockquotes */
+blockquote.cc-purple {
+  border-left: 4px solid #8e44ad;
+}
+blockquote.cc-purple.cc-quoted:before {
+  color: #8e44ad;
+}
+blockquote.cc-purple.cc-reverse {
+  border-left-width: 0px;
+  border-right-color: #8e44ad;
+}
+/* Tables */
+table.cc-purple {
+  /* Bordered & Colored tables */
+}
+table.cc-purple thead td,
+table.cc-purple tfoot td,
+table.cc-purple thead th,
+table.cc-purple tfoot th {
+  background-color: #8e44ad;
+  color: white;
+  border-bottom-color: #522764;
+}
+table.cc-purple tbody tr td {
+  border-bottom: 1px solid #8e44ad;
+}
+table.cc-purple.cc-bordered tfoot td,
+table.cc-purple.cc-bordered thead td,
+table.cc-purple.cc-bordered tfoot th,
+table.cc-purple.cc-bordered thead th {
+  border-color: #703688;
+}
+table.cc-purple.cc-bordered tbody tr td {
+  border-color: #703688;
+}
+table tr.cc-bg-purple td {
+  background-color: #8e44ad;
+  color: white;
+  border-bottom: 0;
+}
+/* Links / Buttons */
+a.btn.cc-bg-purple,
+button.cc-bg-purple {
+  color: white;
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+  /* Loading + outlined buttons */
+  /* Outlined buttons / links */
+}
+a.btn.cc-bg-purple:hover,
+button.cc-bg-purple:hover {
+  background-color: #703688;
+  border-color: #703688;
+}
+a.btn.cc-bg-purple:hover,
+button.cc-bg-purple:hover {
+  color: white;
+}
+a.btn.cc-bg-purple.cc-loading:before,
+button.cc-bg-purple.cc-loading:before {
+  border-color: transparent white white white;
+}
+a.btn.cc-bg-purple.cc-outlined,
+button.cc-bg-purple.cc-outlined {
+  color: #8e44ad;
+  background-color: transparent;
+  border-color: transparent;
+  /* If Hover is specified */
+  /* else */
+  border: 1px solid #8e44ad;
+  /* Loading + outlined buttons */
+}
+a.btn.cc-bg-purple.cc-outlined:hover,
+button.cc-bg-purple.cc-outlined:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+a.btn.cc-bg-purple.cc-outlined:hover,
+button.cc-bg-purple.cc-outlined:hover {
+  border-color: #522764;
+  color: #522764;
+}
+a.btn.cc-bg-purple.cc-outlined.cc-loading,
+button.cc-bg-purple.cc-outlined.cc-loading {
+  color: transparent;
+}
+a.btn.cc-bg-purple.cc-outlined.cc-loading:before,
+button.cc-bg-purple.cc-outlined.cc-loading:before {
+  border-color: transparent #8e44ad #8e44ad #8e44ad;
+}
+/* Colored forms */
+form.cc-purple .form-checkbox:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-purple .form-checkbox:not(.error) input:checked {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+}
+form.cc-purple .form-radio:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-purple .form-radio:not(.error) input:checked:before {
+  background-color: #8e44ad;
+}
+form.cc-purple .form-ps span {
+  background-color: #8e44ad;
+}
+form.cc-purple select:focus,
+form.cc-purple textarea:focus,
+form.cc-purple input:focus {
+  border-color: #8e44ad;
+}
+form.cc-purple input[type="submit"],
+form.cc-purple button[type="submit"] {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+}
+form.cc-purple input[type="submit"]:hover,
+form.cc-purple button[type="submit"]:hover {
+  background-color: #703688;
+  border-color: #703688;
+}
+/* Tabs */
+.tabs.cc-purple {
+  /* Small screen ruleset */
+}
+.tabs.cc-purple.cc-bordered > li:hover a:not(.btn),
+.tabs.cc-purple.cc-bordered > li.active a:not(.btn) {
+  border-color: #8e44ad #8e44ad white #8e44ad;
+}
+.tabs.cc-purple.cc-pills > li.active a:not(.btn),
+.tabs.cc-purple.cc-pills > li:hover a:not(.btn) {
+  background-color: #8e44ad;
+  border-top: 1px solid #8e44ad;
+  border-bottom: 1px solid #8e44ad;
+  color: white;
+}
+.tabs.cc-purple > li {
+  /* Active child */
+}
+.tabs.cc-purple > li:hover a:not(.btn),
+.tabs.cc-purple > li.active a:not(.btn) {
+  color: #8e44ad;
+  border-bottom-color: #8e44ad;
+}
+@media screen and (max-width: 767px) {
+  .tabs.cc-purple.cc-bordered > li:hover a:not(.btn),
+  .tabs.cc-purple.cc-bordered > li.active a:not(.btn) {
+    border-color: #8e44ad;
+  }
+  .tabs.cc-purple.cc-pills.cc-unchained > li.active a:not(.btn),
+  .tabs.cc-purple.cc-pills > li.active a:not(.btn),
+  .tabs.cc-purple.cc-pills.cc-unchained > li:hover a:not(.btn),
+  .tabs.cc-purple.cc-pills > li:hover a:not(.btn) {
+    border: 1px solid #8e44ad;
+  }
+}
+/* titles */
+h1.cc-orange,
+h2.cc-orange,
+h3.cc-orange,
+h4.cc-orange,
+h5.cc-orange,
+h6.cc-orange,
+.h1-like.cc-orange,
+.h2-like.cc-orange,
+.h3-like.cc-orange,
+.h4-like.cc-orange,
+.h5-like.cc-orange,
+.h6-like.cc-orange {
+  color: #f39c12;
+}
+h1.cc-bg-orange,
+h2.cc-bg-orange,
+h3.cc-bg-orange,
+h4.cc-bg-orange,
+h5.cc-bg-orange,
+h6.cc-bg-orange,
+.h1-like.cc-bg-orange,
+.h2-like.cc-bg-orange,
+.h3-like.cc-bg-orange,
+.h4-like.cc-bg-orange,
+.h5-like.cc-bg-orange,
+.h6-like.cc-bg-orange {
+  color: white;
+  background-color: #f39c12;
+}
+/* elements */
+p.cc-orange,
+div.cc-orange,
+section.cc-orange,
+aside.cc-orange,
+header.cc-orange,
+footer.cc-orange,
+article.cc-orange,
+main.cc-orange,
+nav.cc-orange,
+td.cc-orange,
+th.cc-orange,
+span.cc-orange,
+i.cc-orange,
+a.cc-orange,
+strong.cc-orange,
+em.cc-orange,
+code.cc-orange,
+small.cc-orange {
+  color: #f39c12;
+}
+p.cc-bg-orange,
+div.cc-bg-orange,
+section.cc-bg-orange,
+aside.cc-bg-orange,
+header.cc-bg-orange,
+footer.cc-bg-orange,
+article.cc-bg-orange,
+main.cc-bg-orange,
+nav.cc-bg-orange,
+td.cc-bg-orange,
+th.cc-bg-orange,
+span.cc-bg-orange,
+i.cc-bg-orange,
+a.cc-bg-orange,
+strong.cc-bg-orange,
+em.cc-bg-orange,
+code.cc-bg-orange,
+small.cc-bg-orange {
+  color: white;
+  background-color: #f39c12;
+}
+p.cc-bg-orange a:not(.btn),
+div.cc-bg-orange a:not(.btn),
+section.cc-bg-orange a:not(.btn),
+aside.cc-bg-orange a:not(.btn),
+header.cc-bg-orange a:not(.btn),
+footer.cc-bg-orange a:not(.btn),
+article.cc-bg-orange a:not(.btn),
+main.cc-bg-orange a:not(.btn),
+nav.cc-bg-orange a:not(.btn),
+td.cc-bg-orange a:not(.btn),
+th.cc-bg-orange a:not(.btn),
+span.cc-bg-orange a:not(.btn),
+i.cc-bg-orange a:not(.btn),
+a.cc-bg-orange a:not(.btn),
+strong.cc-bg-orange a:not(.btn),
+em.cc-bg-orange a:not(.btn),
+code.cc-bg-orange a:not(.btn),
+small.cc-bg-orange a:not(.btn) {
+  color: white;
+}
+/* lists */
+li.cc-bg-orange {
+  background-color: #f39c12;
+  color: white;
+}
+li.cc-orange:before {
+  color: #f39c12;
+}
+/* blockquotes */
+blockquote.cc-orange {
+  border-left: 4px solid #f39c12;
+}
+blockquote.cc-orange.cc-quoted:before {
+  color: #f39c12;
+}
+blockquote.cc-orange.cc-reverse {
+  border-left-width: 0px;
+  border-right-color: #f39c12;
+}
+/* Tables */
+table.cc-orange {
+  /* Bordered & Colored tables */
+}
+table.cc-orange thead td,
+table.cc-orange tfoot td,
+table.cc-orange thead th,
+table.cc-orange tfoot th {
+  background-color: #f39c12;
+  color: white;
+  border-bottom-color: #976008;
+}
+table.cc-orange tbody tr td {
+  border-bottom: 1px solid #f39c12;
+}
+table.cc-orange.cc-bordered tfoot td,
+table.cc-orange.cc-bordered thead td,
+table.cc-orange.cc-bordered tfoot th,
+table.cc-orange.cc-bordered thead th {
+  border-color: #c87f0a;
+}
+table.cc-orange.cc-bordered tbody tr td {
+  border-color: #c87f0a;
+}
+table tr.cc-bg-orange td {
+  background-color: #f39c12;
+  color: white;
+  border-bottom: 0;
+}
+/* Links / Buttons */
+a.btn.cc-bg-orange,
+button.cc-bg-orange {
+  color: white;
+  background-color: #f39c12;
+  border-color: #f39c12;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+  /* Loading + outlined buttons */
+  /* Outlined buttons / links */
+}
+a.btn.cc-bg-orange:hover,
+button.cc-bg-orange:hover {
+  background-color: #c87f0a;
+  border-color: #c87f0a;
+}
+a.btn.cc-bg-orange:hover,
+button.cc-bg-orange:hover {
+  color: white;
+}
+a.btn.cc-bg-orange.cc-loading:before,
+button.cc-bg-orange.cc-loading:before {
+  border-color: transparent white white white;
+}
+a.btn.cc-bg-orange.cc-outlined,
+button.cc-bg-orange.cc-outlined {
+  color: #f39c12;
+  background-color: transparent;
+  border-color: transparent;
+  /* If Hover is specified */
+  /* else */
+  border: 1px solid #f39c12;
+  /* Loading + outlined buttons */
+}
+a.btn.cc-bg-orange.cc-outlined:hover,
+button.cc-bg-orange.cc-outlined:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+a.btn.cc-bg-orange.cc-outlined:hover,
+button.cc-bg-orange.cc-outlined:hover {
+  border-color: #976008;
+  color: #976008;
+}
+a.btn.cc-bg-orange.cc-outlined.cc-loading,
+button.cc-bg-orange.cc-outlined.cc-loading {
+  color: transparent;
+}
+a.btn.cc-bg-orange.cc-outlined.cc-loading:before,
+button.cc-bg-orange.cc-outlined.cc-loading:before {
+  border-color: transparent #f39c12 #f39c12 #f39c12;
+}
+/* Colored forms */
+form.cc-orange .form-checkbox:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-orange .form-checkbox:not(.error) input:checked {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+form.cc-orange .form-radio:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-orange .form-radio:not(.error) input:checked:before {
+  background-color: #f39c12;
+}
+form.cc-orange .form-ps span {
+  background-color: #f39c12;
+}
+form.cc-orange select:focus,
+form.cc-orange textarea:focus,
+form.cc-orange input:focus {
+  border-color: #f39c12;
+}
+form.cc-orange input[type="submit"],
+form.cc-orange button[type="submit"] {
+  background-color: #f39c12;
+  border-color: #f39c12;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+}
+form.cc-orange input[type="submit"]:hover,
+form.cc-orange button[type="submit"]:hover {
+  background-color: #c87f0a;
+  border-color: #c87f0a;
+}
+/* Tabs */
+.tabs.cc-orange {
+  /* Small screen ruleset */
+}
+.tabs.cc-orange.cc-bordered > li:hover a:not(.btn),
+.tabs.cc-orange.cc-bordered > li.active a:not(.btn) {
+  border-color: #f39c12 #f39c12 white #f39c12;
+}
+.tabs.cc-orange.cc-pills > li.active a:not(.btn),
+.tabs.cc-orange.cc-pills > li:hover a:not(.btn) {
+  background-color: #f39c12;
+  border-top: 1px solid #f39c12;
+  border-bottom: 1px solid #f39c12;
+  color: white;
+}
+.tabs.cc-orange > li {
+  /* Active child */
+}
+.tabs.cc-orange > li:hover a:not(.btn),
+.tabs.cc-orange > li.active a:not(.btn) {
+  color: #f39c12;
+  border-bottom-color: #f39c12;
+}
+@media screen and (max-width: 767px) {
+  .tabs.cc-orange.cc-bordered > li:hover a:not(.btn),
+  .tabs.cc-orange.cc-bordered > li.active a:not(.btn) {
+    border-color: #f39c12;
+  }
+  .tabs.cc-orange.cc-pills.cc-unchained > li.active a:not(.btn),
+  .tabs.cc-orange.cc-pills > li.active a:not(.btn),
+  .tabs.cc-orange.cc-pills.cc-unchained > li:hover a:not(.btn),
+  .tabs.cc-orange.cc-pills > li:hover a:not(.btn) {
+    border: 1px solid #f39c12;
+  }
+}
+/* titles */
+h1.cc-yellow,
+h2.cc-yellow,
+h3.cc-yellow,
+h4.cc-yellow,
+h5.cc-yellow,
+h6.cc-yellow,
+.h1-like.cc-yellow,
+.h2-like.cc-yellow,
+.h3-like.cc-yellow,
+.h4-like.cc-yellow,
+.h5-like.cc-yellow,
+.h6-like.cc-yellow {
+  color: #f1c40f;
+}
+h1.cc-bg-yellow,
+h2.cc-bg-yellow,
+h3.cc-bg-yellow,
+h4.cc-bg-yellow,
+h5.cc-bg-yellow,
+h6.cc-bg-yellow,
+.h1-like.cc-bg-yellow,
+.h2-like.cc-bg-yellow,
+.h3-like.cc-bg-yellow,
+.h4-like.cc-bg-yellow,
+.h5-like.cc-bg-yellow,
+.h6-like.cc-bg-yellow {
+  color: white;
+  background-color: #f1c40f;
+}
+/* elements */
+p.cc-yellow,
+div.cc-yellow,
+section.cc-yellow,
+aside.cc-yellow,
+header.cc-yellow,
+footer.cc-yellow,
+article.cc-yellow,
+main.cc-yellow,
+nav.cc-yellow,
+td.cc-yellow,
+th.cc-yellow,
+span.cc-yellow,
+i.cc-yellow,
+a.cc-yellow,
+strong.cc-yellow,
+em.cc-yellow,
+code.cc-yellow,
+small.cc-yellow {
+  color: #f1c40f;
+}
+p.cc-bg-yellow,
+div.cc-bg-yellow,
+section.cc-bg-yellow,
+aside.cc-bg-yellow,
+header.cc-bg-yellow,
+footer.cc-bg-yellow,
+article.cc-bg-yellow,
+main.cc-bg-yellow,
+nav.cc-bg-yellow,
+td.cc-bg-yellow,
+th.cc-bg-yellow,
+span.cc-bg-yellow,
+i.cc-bg-yellow,
+a.cc-bg-yellow,
+strong.cc-bg-yellow,
+em.cc-bg-yellow,
+code.cc-bg-yellow,
+small.cc-bg-yellow {
+  color: white;
+  background-color: #f1c40f;
+}
+p.cc-bg-yellow a:not(.btn),
+div.cc-bg-yellow a:not(.btn),
+section.cc-bg-yellow a:not(.btn),
+aside.cc-bg-yellow a:not(.btn),
+header.cc-bg-yellow a:not(.btn),
+footer.cc-bg-yellow a:not(.btn),
+article.cc-bg-yellow a:not(.btn),
+main.cc-bg-yellow a:not(.btn),
+nav.cc-bg-yellow a:not(.btn),
+td.cc-bg-yellow a:not(.btn),
+th.cc-bg-yellow a:not(.btn),
+span.cc-bg-yellow a:not(.btn),
+i.cc-bg-yellow a:not(.btn),
+a.cc-bg-yellow a:not(.btn),
+strong.cc-bg-yellow a:not(.btn),
+em.cc-bg-yellow a:not(.btn),
+code.cc-bg-yellow a:not(.btn),
+small.cc-bg-yellow a:not(.btn) {
+  color: white;
+}
+/* lists */
+li.cc-bg-yellow {
+  background-color: #f1c40f;
+  color: white;
+}
+li.cc-yellow:before {
+  color: #f1c40f;
+}
+/* blockquotes */
+blockquote.cc-yellow {
+  border-left: 4px solid #f1c40f;
+}
+blockquote.cc-yellow.cc-quoted:before {
+  color: #f1c40f;
+}
+blockquote.cc-yellow.cc-reverse {
+  border-left-width: 0px;
+  border-right-color: #f1c40f;
+}
+/* Tables */
+table.cc-yellow {
+  /* Bordered & Colored tables */
+}
+table.cc-yellow thead td,
+table.cc-yellow tfoot td,
+table.cc-yellow thead th,
+table.cc-yellow tfoot th {
+  background-color: #f1c40f;
+  color: white;
+  border-bottom-color: #927608;
+}
+table.cc-yellow tbody tr td {
+  border-bottom: 1px solid #f1c40f;
+}
+table.cc-yellow.cc-bordered tfoot td,
+table.cc-yellow.cc-bordered thead td,
+table.cc-yellow.cc-bordered tfoot th,
+table.cc-yellow.cc-bordered thead th {
+  border-color: #c29d0b;
+}
+table.cc-yellow.cc-bordered tbody tr td {
+  border-color: #c29d0b;
+}
+table tr.cc-bg-yellow td {
+  background-color: #f1c40f;
+  color: white;
+  border-bottom: 0;
+}
+/* Links / Buttons */
+a.btn.cc-bg-yellow,
+button.cc-bg-yellow {
+  color: white;
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+  /* Loading + outlined buttons */
+  /* Outlined buttons / links */
+}
+a.btn.cc-bg-yellow:hover,
+button.cc-bg-yellow:hover {
+  background-color: #c29d0b;
+  border-color: #c29d0b;
+}
+a.btn.cc-bg-yellow:hover,
+button.cc-bg-yellow:hover {
+  color: white;
+}
+a.btn.cc-bg-yellow.cc-loading:before,
+button.cc-bg-yellow.cc-loading:before {
+  border-color: transparent white white white;
+}
+a.btn.cc-bg-yellow.cc-outlined,
+button.cc-bg-yellow.cc-outlined {
+  color: #f1c40f;
+  background-color: transparent;
+  border-color: transparent;
+  /* If Hover is specified */
+  /* else */
+  border: 1px solid #f1c40f;
+  /* Loading + outlined buttons */
+}
+a.btn.cc-bg-yellow.cc-outlined:hover,
+button.cc-bg-yellow.cc-outlined:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+a.btn.cc-bg-yellow.cc-outlined:hover,
+button.cc-bg-yellow.cc-outlined:hover {
+  border-color: #927608;
+  color: #927608;
+}
+a.btn.cc-bg-yellow.cc-outlined.cc-loading,
+button.cc-bg-yellow.cc-outlined.cc-loading {
+  color: transparent;
+}
+a.btn.cc-bg-yellow.cc-outlined.cc-loading:before,
+button.cc-bg-yellow.cc-outlined.cc-loading:before {
+  border-color: transparent #f1c40f #f1c40f #f1c40f;
+}
+/* Colored forms */
+form.cc-yellow .form-checkbox:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-yellow .form-checkbox:not(.error) input:checked {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+form.cc-yellow .form-radio:not(.error) input:focus {
+  border-color: #ddd;
+}
+form.cc-yellow .form-radio:not(.error) input:checked:before {
+  background-color: #f1c40f;
+}
+form.cc-yellow .form-ps span {
+  background-color: #f1c40f;
+}
+form.cc-yellow select:focus,
+form.cc-yellow textarea:focus,
+form.cc-yellow input:focus {
+  border-color: #f1c40f;
+}
+form.cc-yellow input[type="submit"],
+form.cc-yellow button[type="submit"] {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+  /* If Hover is specified */
+  /* else */
+  /* Hover color will be @bg but 10% darken */
+}
+form.cc-yellow input[type="submit"]:hover,
+form.cc-yellow button[type="submit"]:hover {
+  background-color: #c29d0b;
+  border-color: #c29d0b;
+}
+/* Tabs */
+.tabs.cc-yellow {
+  /* Small screen ruleset */
+}
+.tabs.cc-yellow.cc-bordered > li:hover a:not(.btn),
+.tabs.cc-yellow.cc-bordered > li.active a:not(.btn) {
+  border-color: #f1c40f #f1c40f white #f1c40f;
+}
+.tabs.cc-yellow.cc-pills > li.active a:not(.btn),
+.tabs.cc-yellow.cc-pills > li:hover a:not(.btn) {
+  background-color: #f1c40f;
+  border-top: 1px solid #f1c40f;
+  border-bottom: 1px solid #f1c40f;
+  color: white;
+}
+.tabs.cc-yellow > li {
+  /* Active child */
+}
+.tabs.cc-yellow > li:hover a:not(.btn),
+.tabs.cc-yellow > li.active a:not(.btn) {
+  color: #f1c40f;
+  border-bottom-color: #f1c40f;
+}
+@media screen and (max-width: 767px) {
+  .tabs.cc-yellow.cc-bordered > li:hover a:not(.btn),
+  .tabs.cc-yellow.cc-bordered > li.active a:not(.btn) {
+    border-color: #f1c40f;
+  }
+  .tabs.cc-yellow.cc-pills.cc-unchained > li.active a:not(.btn),
+  .tabs.cc-yellow.cc-pills > li.active a:not(.btn),
+  .tabs.cc-yellow.cc-pills.cc-unchained > li:hover a:not(.btn),
+  .tabs.cc-yellow.cc-pills > li:hover a:not(.btn) {
+    border: 1px solid #f1c40f;
+  }
+}
 /* *****
     @name : ._generatePaddingMarginClass
     @description : Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
