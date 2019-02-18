@@ -21,7 +21,7 @@
     margin:0 -@cols-gutter/2;
 
     // Parent - Flex container
-    &.cc {
+    &.@{css-prefix} {
         &-no-multiligne {flex-wrap:nowrap}
         &-reverse{flex-direction:row-reverse}
         &-justify {
@@ -57,7 +57,7 @@
             padding:@cols-gutter @cols-gutter/2;
         }
 
-        &.cc {
+        &.@{css-prefix} {
             &-first {order:-1}
             &-last {order:1}
             &-right {margin-left:auto;}
@@ -81,7 +81,7 @@
 
     /* Small screens rules */
     ._media-xs-up({
-        & > *.cc {
+        & > *.@{css-prefix} {
             &-first-s {
                 order:-2
             }
@@ -94,7 +94,7 @@
 
     /* Medium screens rules */
     ._media-s-up({
-        & > *.cc {
+        & > *.@{css-prefix} {
 
             &-first-m {
                 order:-3
@@ -108,7 +108,7 @@
 
     /* Large screens rules */
     ._media-m-up({
-        & > *.cc {
+        & > *.@{css-prefix} {
             &-first-l {
                 order:-4
             }
@@ -121,7 +121,7 @@
 
     /* X-Large screens rules */
     ._media-l-up({
-        & > *.cc {
+        & > *.@{css-prefix} {
             &-first-xl {
                 order:-5
             }

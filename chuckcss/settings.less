@@ -35,6 +35,12 @@
 /* VARIABLES */
 /* ********* */
 /*
+    -- @ Class prefix @ --
+*/
+@css-prefix: cc; // Write prefix without quotes
+
+
+/*
     -- @ Media Queries @ --
 */
 @xs-media-mw : 359px;     /* Max-width for xs screens */
@@ -119,8 +125,8 @@
 @links-btn-lh : 1.8;                /* Links ~ buttons line-height : ~= font-size*1.8 */
 @links-btn-pa : 0.3em 1em;          /* Links ~ buttons padding left & right : ~= font-size */
 @links-btn-br : 3;                  /* Links ~ buttons border-radius (in px) */
-@links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn cc-thin"> font-size */
-@links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn cc-fat"> font-size */
+@links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn @{css-prefix}-thin"> font-size */
+@links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn @{css-prefix}-fat"> font-size */
 
 
 
@@ -258,16 +264,16 @@
 /*
     -- @ Helpers @ --
 */
-@helper-pa : 1em;      /* Used for helpers cc-pa */
-@helper-pat : 1em;     /* Used for helpers cc-pat */
-@helper-par : 1em;     /* Used for helpers cc-par */
-@helper-pab : 1em;     /* Used for helpers cc-pab */
-@helper-pal : 1em;     /* Used for helpers cc-pal */
-@helper-ma : 1em;      /* Used for helpers cc-ma */
-@helper-mat : 1em;     /* Used for helpers cc-mat */
-@helper-mar : 1em;     /* Used for helpers cc-mar */
-@helper-mab : 1em;     /* Used for helpers cc-mab */
-@helper-mal : 1em;     /* Used for helpers cc-mal */
+@helper-pa : 1em;      /* Used for helpers @{css-prefix}-pa */
+@helper-pat : 1em;     /* Used for helpers @{css-prefix}-pat */
+@helper-par : 1em;     /* Used for helpers @{css-prefix}-par */
+@helper-pab : 1em;     /* Used for helpers @{css-prefix}-pab */
+@helper-pal : 1em;     /* Used for helpers @{css-prefix}-pal */
+@helper-ma : 1em;      /* Used for helpers @{css-prefix}-ma */
+@helper-mat : 1em;     /* Used for helpers @{css-prefix}-mat */
+@helper-mar : 1em;     /* Used for helpers @{css-prefix}-mar */
+@helper-mab : 1em;     /* Used for helpers @{css-prefix}-mab */
+@helper-mal : 1em;     /* Used for helpers @{css-prefix}-mal */
 
 
 

@@ -15,7 +15,7 @@
 
 /* *****
     @name : ._generateColorsClass
-    @description : Generate colors styles when using "cc-{color}" class on an element
+    @description : Generate colors styles when using "@{css-prefix}-{color}" class on an element
     @params : @aColors : array built in settings.less file
 ***** */
 ._generateColorsClass(@iterator:1) when(@iterator <= length(@aColors)) {
@@ -25,7 +25,7 @@
     /* titles */
     h1,h2,h3,h4,h5,h6,
     .h1-like,.h2-like,.h3-like,.h4-like,.h5-like,.h6-like {
-        &.cc {
+        &.@{css-prefix} {
             &-@{colorName} {
                 color: @colorValue;
             }
@@ -40,7 +40,7 @@
     /* elements */
     p,div,section,aside,header,footer,article,main,nav,
     td,th,span,i,a,strong,em,code,small {
-        &.cc {
+        &.@{css-prefix} {
             &-@{colorName} {
                 color: @colorValue;
             }
@@ -58,7 +58,7 @@
 
     /* lists */
     li {
-        &.cc {
+        &.@{css-prefix} {
             &-bg-@{colorName} {
                 background-color:@colorValue;
                 color:white;
@@ -71,10 +71,10 @@
 
 
     /* blockquotes */
-    blockquote.cc-@{colorName} {
+    blockquote.@{css-prefix}-@{colorName} {
         border-left:4px solid @colorValue;
 
-        &.cc {
+        &.@{css-prefix} {
             &-quoted:before {
                 color:@colorValue;
             }
@@ -87,7 +87,7 @@
 
     /* Tables */
     table {
-        &.cc-@{colorName} {
+        &.@{css-prefix}-@{colorName} {
             thead,
             tfoot {
                 td,th {
@@ -102,7 +102,7 @@
             }
 
             /* Bordered & Colored tables */
-            &.cc-bordered {
+            &.@{css-prefix}-bordered {
                 tfoot,
                 thead {
                     td,th {
@@ -117,7 +117,7 @@
         }
 
 
-        tr.cc-bg-@{colorName} {
+        tr.@{css-prefix}-bg-@{colorName} {
             td {
                 background-color:@colorValue;
                 color:white;
@@ -131,7 +131,7 @@
     /* Links / Buttons */
     a.btn,
     button {
-        &.cc-bg-@{colorName} {
+        &.@{css-prefix}-bg-@{colorName} {
             color:@links-btn-tc;
             ._btn(@colorValue);
             // border-color:@colorValue;
@@ -142,14 +142,14 @@
             }
 
             /* Loading + outlined buttons */
-            &.cc-loading {
+            &.@{css-prefix}-loading {
                 &:before {
                     border-color: transparent white white white
                 }
             }
 
             /* Outlined buttons / links */
-            &.cc-outlined {
+            &.@{css-prefix}-outlined {
                 color:@colorValue;
                 ._btn(transparent,transparent);
                 border:unit(@links-btn-bw,px) solid @colorValue;
@@ -160,7 +160,7 @@
                 }
 
                 /* Loading + outlined buttons */
-                &.cc-loading {
+                &.@{css-prefix}-loading {
                     color:transparent;
 
                     &:before {
@@ -173,7 +173,7 @@
 
 
     /* Colored forms */
-    form.cc-@{colorName} {
+    form.@{css-prefix}-@{colorName} {
 
         .form {
             &-checkbox:not(.error) input {
@@ -221,8 +221,8 @@
     }
 
     /* Tabs */
-    .tabs.cc-@{colorName} {
-        &.cc {
+    .tabs.@{css-prefix}-@{colorName} {
+        &.@{css-prefix} {
             &-bordered {
                 &>li {
                     &:hover,
@@ -263,7 +263,7 @@
 
         /* Small screen ruleset */
         ._media-s({
-            &.cc {
+            &.@{css-prefix} {
                 &-bordered {
                     &>li {
                         &:hover,
@@ -276,7 +276,7 @@
                 }
 
                 &-pills {
-                    &.cc-unchained > li,
+                    &.@{css-prefix}-unchained > li,
                     &>li {
                         &.active,
                         &:hover {
@@ -299,11 +299,11 @@
 
 /* *****
     @name : ._generatePaddingMarginClass
-    @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
+    @description : Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
 ***** */
 ._generatePaddingMarginClass(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
 
-    .cc {
+    .@{css-prefix} {
         &-pa@{breakpoint} {
             padding:@helper-pa;
         }
@@ -381,14 +381,14 @@
 ***** */
 ._generateColumns(@breakpoint:~'',@iterator:0) when(@iterator <= @cols-total) {
 
-    .columns > .cc-@{iterator}@{breakpoint} {
+    .columns > .@{css-prefix}-@{iterator}@{breakpoint} {
         flex:0 0 auto;
         width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
         max-width: ~'calc(100% * @{iterator} / @{cols-total} - @{cols-gutter}  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
     /* Offsets calculations with gutters */
-    .columns > .cc-offset-@{iterator}@{breakpoint} {
+    .columns > .@{css-prefix}-offset-@{iterator}@{breakpoint} {
         margin-left: ~'calc(100% * @{iterator} / @{cols-total} + @{cols-gutter}/2  - 0.05px)'; // Substract 0.05px for IE compatibilities
     }
 
@@ -402,7 +402,7 @@
     @description : Generate width for block helpers in %
 ***** */
 ._generatePercentWidth(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
-    .cc {
+    .@{css-prefix} {
         &-w-@{iterator}@{breakpoint} {
             width:unit(@iterator,%);
         }
@@ -422,7 +422,7 @@
     @description : Generate font-size from 0rem to 10rem;
 ***** */
 ._generateFontSize(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
-    .cc {
+    .@{css-prefix} {
         &-fs-@{iterator}@{breakpoint} {
             font-size:unit(@iterator,rem) / 10;
         }
@@ -443,7 +443,7 @@
     @description : Generate font-weight from 100 to 900
 ***** */
 ._generateFontWeight(@breakpoint:~'',@iterator:100) when(@iterator <= 900) {
-    .cc {
+    .@{css-prefix} {
         &-fw-@{iterator}@{breakpoint} {
             font-weight:@iterator;
         }
@@ -464,7 +464,7 @@
     @description : Generate texts aligments
 ***** */
 ._generateTextsAligments(@breakpoint:~'') {
-    .cc {
+    .@{css-prefix} {
         &-txt-center@{breakpoint} {
             text-align: center;
         }

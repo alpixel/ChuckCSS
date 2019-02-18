@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ChuckCSS v3.5.2 */
+/*! ChuckCSS v3.6.0 */
 /*
     == ChuckCSS Framework ==
     @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -4358,7 +4358,7 @@ a.btn.cc-fat span.badge:before {
 */
 /* *****
     @name : ._generateColorsClass
-    @description : Generate colors styles when using "cc-{color}" class on an element
+    @description : Generate colors styles when using "@{css-prefix}-{color}" class on an element
     @params : @aColors : array built in settings.less file
 ***** */
 /* titles */
@@ -5152,7 +5152,7 @@ form.cc-red button[type="submit"]:hover {
 }
 /* *****
     @name : ._generatePaddingMarginClass
-    @description : Generate padding & margin "cc-pa-{number}" or/and "cc-ma-{number}" class on an element
+    @description : Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
 ***** */
 .cc-pa {
   padding: 1em;
