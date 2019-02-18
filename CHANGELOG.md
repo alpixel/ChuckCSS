@@ -1,6 +1,6 @@
 # ChuckCSS Changelog
 
-## 3.6.1
+## 3.6.1 & 3.6.2
 * Changed : 
     * Rename `core` folder to `main` folder
 
