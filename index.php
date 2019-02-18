@@ -3238,7 +3238,7 @@
                     </code>
                 </pre>
 
-                <form class="cc-purple">
+                <form class="cc-green">
                     <div class="form-item">
                         <input type="text"  placeholder="placeholder" value="" name="" />
                     </div>

@@ -103,3 +103,22 @@
         transform:none
     }
 }
+
+/* *****
+    @name : showLazyImg
+    @description : Animate img and backstretch when elements are loaded with lozad
+***** */
+img[data-loaded="true"],
+[data-loaded="true"] img {
+  animation-name: showLazyImg;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+@keyframes showLazyImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

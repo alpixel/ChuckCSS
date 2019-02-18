@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*! ChuckCSS v3.5.2 */
 /*
     == ChuckCSS Framework ==
     @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -6,13 +7,319 @@
     @Twitter : https://twitter.com/chuckcss
     @Github : https://github.com/alpixel/ChuckCSS
     @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
-
 */
 /*
-    * External & Optional (but recommended) libraries
-        • normalize.css from cdnjs | http://necolas.github.io/normalize.css/
+    Normalize
 */
-@import "//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css";
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
 /*
     settings.less
 */
@@ -238,6 +545,35 @@
             transform: none;
   }
 }
+/* *****
+    @name : showLazyImg
+    @description : Animate img and backstretch when elements are loaded with lozad
+***** */
+img[data-loaded="true"],
+[data-loaded="true"] img {
+  -webkit-animation-name: showLazyImg;
+          animation-name: showLazyImg;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes showLazyImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showLazyImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*
     == BASE : Define <html>, <body> and selection styles ==
 */
@@ -247,13 +583,9 @@ html {
   overflow-x: hidden;
 }
 html.opened-modal,
-html.opened-menu {
-  overflow: hidden !important;
-}
+body.opened-modal,
+html.opened-menu,
 body.opened-menu {
-  overflow-y: hidden;
-}
-body.opened-modal {
   overflow: hidden !important;
 }
 body {
@@ -261,14 +593,39 @@ body {
   margin: 0;
   border: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 15px;
-  font-size: 1.5rem;
-  line-height: 1.5;
   color: #3a3a3a;
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  line-height: 1.5;
   /* Box-sizing */
+}
+@media screen and (min-width: 360px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 990px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
 }
 body *,
 body *:before,
@@ -427,7 +784,7 @@ button {
   line-height: 1.8;
   border: 1px solid #d3d3d3;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   vertical-align: middle;
   border-radius: 3px;
   cursor: pointer;
@@ -456,7 +813,7 @@ button.cc {
 }
 a.btn.cc-thin,
 button.cc-thin {
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   /* Thin Loading buttons */
 }
 a.btn.cc-thin.cc-loading:before,
@@ -469,7 +826,7 @@ button.cc-thin.cc-loading:before {
 }
 a.btn.cc-fat,
 button.cc-fat {
-  font-size: 1.95rem;
+  font-size: 2.08rem;
   /* Thin Loading buttons */
 }
 a.btn.cc-fat.cc-loading:before,
@@ -552,7 +909,7 @@ table thead th {
   text-align: left;
   border: 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 8px;
   border-bottom: 1px solid #e0e0e0;
   color: #9E9E9E;
@@ -566,7 +923,7 @@ table tbody td {
   padding: 8px;
   border-bottom: 1px solid #e0e0e0;
   vertical-align: middle;
-  font-size: 1.35rem;
+  font-size: 1.44rem;
   background-color: white;
   font-weight: 400;
   -webkit-transition: 0.2s background-color ease-out 0s;
@@ -621,7 +978,7 @@ table.cc-unbordered thead tr th {
 }
 @media screen and (min-width: 768px) {
   table tbody td {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -948,7 +1305,7 @@ form .form-item.cc-chained {
   /* Input with prefix/suffix */
 }
 form .form-item.cc-chained label {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 form .form-item.cc-chained input {
   /* Middles inputs */
@@ -1044,12 +1401,12 @@ form .form-ps input:not(:first-child):not(:last-child) {
 form .form-ps span {
   display: inline-block;
   vertical-align: middle;
-  height: 4.2rem;
-  line-height: 4.2rem;
+  height: 4.48rem;
+  line-height: 4.48rem;
   background-color: #29b7e1;
   padding: 0 1.2em;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.44rem;
   /* Specific for Suffix */
 }
 form .form-ps span:last-child {
@@ -1232,8 +1589,8 @@ form input {
   padding: 0 1em;
   border: 1px solid #ddd;
   resize: none;
-  height: 4.2rem;
-  font-size: 1.35rem;
+  height: 4.48rem;
+  font-size: 1.44rem;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   line-height: inherit;
@@ -1297,11 +1654,11 @@ form textarea {
 form select {
   padding: 0 0 0 1em;
   background-color: white;
-  height: 4.2rem;
+  height: 4.48rem;
   line-height: 1;
   border: 1px solid #ddd;
   vertical-align: middle;
-  font-size: 1.35rem;
+  font-size: 1.44rem;
   -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -1326,7 +1683,7 @@ form button[type="submit"] {
   cursor: pointer;
   color: white;
   border: 0;
-  height: 4.2rem;
+  height: 4.48rem;
   padding: 0 2em;
   vertical-align: middle;
   -webkit-box-shadow: none;
@@ -1686,7 +2043,7 @@ img.cc-shadowed {
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: 2.25rem;
+  font-size: 2.4rem;
 }
 .alert-primary,
 .message-primary {
@@ -3018,7 +3375,7 @@ span.badge {
   color: white;
   padding: 0 0.5em;
   border-radius: 5px;
-  font-size: 1.25rem;
+  font-size: 1.33333333rem;
   margin-left: 5px;
   text-align: center;
   min-width: 20px;
@@ -3037,20 +3394,20 @@ span.badge i:before {
 }
 button.cc-thin span.badge,
 a.btn.cc-thin span.badge {
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   top: 0;
 }
 button.cc-thin span.badge:before,
 a.btn.cc-thin span.badge:before {
-  font-size: 1.05rem;
+  font-size: 1.12rem;
 }
 button.cc-fat span.badge,
 a.btn.cc-fat span.badge {
-  font-size: 1.625rem;
+  font-size: 1.73333333rem;
 }
 button.cc-fat span.badge:before,
 a.btn.cc-fat span.badge:before {
-  font-size: 1.625rem;
+  font-size: 1.73333333rem;
 }
 /* ****** */
 /** TABS **/
@@ -4791,1058 +5148,6 @@ form.cc-red button[type="submit"]:hover {
   .tabs.cc-red.cc-pills.cc-unchained > li:hover a:not(.btn),
   .tabs.cc-red.cc-pills > li:hover a:not(.btn) {
     border: 1px solid #c41515;
-  }
-}
-/* titles */
-h1.cc-blue,
-h2.cc-blue,
-h3.cc-blue,
-h4.cc-blue,
-h5.cc-blue,
-h6.cc-blue,
-.h1-like.cc-blue,
-.h2-like.cc-blue,
-.h3-like.cc-blue,
-.h4-like.cc-blue,
-.h5-like.cc-blue,
-.h6-like.cc-blue {
-  color: #3498db;
-}
-h1.cc-bg-blue,
-h2.cc-bg-blue,
-h3.cc-bg-blue,
-h4.cc-bg-blue,
-h5.cc-bg-blue,
-h6.cc-bg-blue,
-.h1-like.cc-bg-blue,
-.h2-like.cc-bg-blue,
-.h3-like.cc-bg-blue,
-.h4-like.cc-bg-blue,
-.h5-like.cc-bg-blue,
-.h6-like.cc-bg-blue {
-  color: white;
-  background-color: #3498db;
-}
-/* elements */
-p.cc-blue,
-div.cc-blue,
-section.cc-blue,
-aside.cc-blue,
-header.cc-blue,
-footer.cc-blue,
-article.cc-blue,
-main.cc-blue,
-nav.cc-blue,
-td.cc-blue,
-th.cc-blue,
-span.cc-blue,
-i.cc-blue,
-a.cc-blue,
-strong.cc-blue,
-em.cc-blue,
-code.cc-blue,
-small.cc-blue {
-  color: #3498db;
-}
-p.cc-bg-blue,
-div.cc-bg-blue,
-section.cc-bg-blue,
-aside.cc-bg-blue,
-header.cc-bg-blue,
-footer.cc-bg-blue,
-article.cc-bg-blue,
-main.cc-bg-blue,
-nav.cc-bg-blue,
-td.cc-bg-blue,
-th.cc-bg-blue,
-span.cc-bg-blue,
-i.cc-bg-blue,
-a.cc-bg-blue,
-strong.cc-bg-blue,
-em.cc-bg-blue,
-code.cc-bg-blue,
-small.cc-bg-blue {
-  color: white;
-  background-color: #3498db;
-}
-p.cc-bg-blue a:not(.btn),
-div.cc-bg-blue a:not(.btn),
-section.cc-bg-blue a:not(.btn),
-aside.cc-bg-blue a:not(.btn),
-header.cc-bg-blue a:not(.btn),
-footer.cc-bg-blue a:not(.btn),
-article.cc-bg-blue a:not(.btn),
-main.cc-bg-blue a:not(.btn),
-nav.cc-bg-blue a:not(.btn),
-td.cc-bg-blue a:not(.btn),
-th.cc-bg-blue a:not(.btn),
-span.cc-bg-blue a:not(.btn),
-i.cc-bg-blue a:not(.btn),
-a.cc-bg-blue a:not(.btn),
-strong.cc-bg-blue a:not(.btn),
-em.cc-bg-blue a:not(.btn),
-code.cc-bg-blue a:not(.btn),
-small.cc-bg-blue a:not(.btn) {
-  color: white;
-}
-/* lists */
-li.cc-bg-blue {
-  background-color: #3498db;
-  color: white;
-}
-li.cc-blue:before {
-  color: #3498db;
-}
-/* blockquotes */
-blockquote.cc-blue {
-  border-left: 4px solid #3498db;
-}
-blockquote.cc-blue.cc-quoted:before {
-  color: #3498db;
-}
-blockquote.cc-blue.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #3498db;
-}
-/* Tables */
-table.cc-blue {
-  /* Bordered & Colored tables */
-}
-table.cc-blue thead td,
-table.cc-blue tfoot td,
-table.cc-blue thead th,
-table.cc-blue tfoot th {
-  background-color: #3498db;
-  color: white;
-  border-bottom-color: #196090;
-}
-table.cc-blue tbody tr td {
-  border-bottom: 1px solid #3498db;
-}
-table.cc-blue.cc-bordered tfoot td,
-table.cc-blue.cc-bordered thead td,
-table.cc-blue.cc-bordered tfoot th,
-table.cc-blue.cc-bordered thead th {
-  border-color: #217dbb;
-}
-table.cc-blue.cc-bordered tbody tr td {
-  border-color: #217dbb;
-}
-table tr.cc-bg-blue td {
-  background-color: #3498db;
-  color: white;
-  border-bottom: 0;
-}
-/* Links / Buttons */
-a.btn.cc-bg-blue,
-button.cc-bg-blue {
-  color: white;
-  background-color: #3498db;
-  border-color: #3498db;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-  /* Loading + outlined buttons */
-  /* Outlined buttons / links */
-}
-a.btn.cc-bg-blue:hover,
-button.cc-bg-blue:hover {
-  background-color: #217dbb;
-  border-color: #217dbb;
-}
-a.btn.cc-bg-blue:hover,
-button.cc-bg-blue:hover {
-  color: white;
-}
-a.btn.cc-bg-blue.cc-loading:before,
-button.cc-bg-blue.cc-loading:before {
-  border-color: transparent white white white;
-}
-a.btn.cc-bg-blue.cc-outlined,
-button.cc-bg-blue.cc-outlined {
-  color: #3498db;
-  background-color: transparent;
-  border-color: transparent;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #3498db;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-bg-blue.cc-outlined:hover,
-button.cc-bg-blue.cc-outlined:hover {
-  background-color: transparent;
-  border-color: transparent;
-}
-a.btn.cc-bg-blue.cc-outlined:hover,
-button.cc-bg-blue.cc-outlined:hover {
-  border-color: #196090;
-  color: #196090;
-}
-a.btn.cc-bg-blue.cc-outlined.cc-loading,
-button.cc-bg-blue.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-bg-blue.cc-outlined.cc-loading:before,
-button.cc-bg-blue.cc-outlined.cc-loading:before {
-  border-color: transparent #3498db #3498db #3498db;
-}
-/* Colored forms */
-form.cc-blue .form-checkbox:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-blue .form-checkbox:not(.error) input:checked {
-  background-color: #3498db;
-  border-color: #3498db;
-}
-form.cc-blue .form-radio:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-blue .form-radio:not(.error) input:checked:before {
-  background-color: #3498db;
-}
-form.cc-blue .form-ps span {
-  background-color: #3498db;
-}
-form.cc-blue select:focus,
-form.cc-blue textarea:focus,
-form.cc-blue input:focus {
-  border-color: #3498db;
-}
-form.cc-blue input[type="submit"],
-form.cc-blue button[type="submit"] {
-  background-color: #3498db;
-  border-color: #3498db;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-blue input[type="submit"]:hover,
-form.cc-blue button[type="submit"]:hover {
-  background-color: #217dbb;
-  border-color: #217dbb;
-}
-/* Tabs */
-.tabs.cc-blue {
-  /* Small screen ruleset */
-}
-.tabs.cc-blue.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-blue.cc-bordered > li.active a:not(.btn) {
-  border-color: #3498db #3498db white #3498db;
-}
-.tabs.cc-blue.cc-pills > li.active a:not(.btn),
-.tabs.cc-blue.cc-pills > li:hover a:not(.btn) {
-  background-color: #3498db;
-  border-top: 1px solid #3498db;
-  border-bottom: 1px solid #3498db;
-  color: white;
-}
-.tabs.cc-blue > li {
-  /* Active child */
-}
-.tabs.cc-blue > li:hover a:not(.btn),
-.tabs.cc-blue > li.active a:not(.btn) {
-  color: #3498db;
-  border-bottom-color: #3498db;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-blue.cc-bordered > li:hover a:not(.btn),
-  .tabs.cc-blue.cc-bordered > li.active a:not(.btn) {
-    border-color: #3498db;
-  }
-  .tabs.cc-blue.cc-pills.cc-unchained > li.active a:not(.btn),
-  .tabs.cc-blue.cc-pills > li.active a:not(.btn),
-  .tabs.cc-blue.cc-pills.cc-unchained > li:hover a:not(.btn),
-  .tabs.cc-blue.cc-pills > li:hover a:not(.btn) {
-    border: 1px solid #3498db;
-  }
-}
-/* titles */
-h1.cc-purple,
-h2.cc-purple,
-h3.cc-purple,
-h4.cc-purple,
-h5.cc-purple,
-h6.cc-purple,
-.h1-like.cc-purple,
-.h2-like.cc-purple,
-.h3-like.cc-purple,
-.h4-like.cc-purple,
-.h5-like.cc-purple,
-.h6-like.cc-purple {
-  color: #8e44ad;
-}
-h1.cc-bg-purple,
-h2.cc-bg-purple,
-h3.cc-bg-purple,
-h4.cc-bg-purple,
-h5.cc-bg-purple,
-h6.cc-bg-purple,
-.h1-like.cc-bg-purple,
-.h2-like.cc-bg-purple,
-.h3-like.cc-bg-purple,
-.h4-like.cc-bg-purple,
-.h5-like.cc-bg-purple,
-.h6-like.cc-bg-purple {
-  color: white;
-  background-color: #8e44ad;
-}
-/* elements */
-p.cc-purple,
-div.cc-purple,
-section.cc-purple,
-aside.cc-purple,
-header.cc-purple,
-footer.cc-purple,
-article.cc-purple,
-main.cc-purple,
-nav.cc-purple,
-td.cc-purple,
-th.cc-purple,
-span.cc-purple,
-i.cc-purple,
-a.cc-purple,
-strong.cc-purple,
-em.cc-purple,
-code.cc-purple,
-small.cc-purple {
-  color: #8e44ad;
-}
-p.cc-bg-purple,
-div.cc-bg-purple,
-section.cc-bg-purple,
-aside.cc-bg-purple,
-header.cc-bg-purple,
-footer.cc-bg-purple,
-article.cc-bg-purple,
-main.cc-bg-purple,
-nav.cc-bg-purple,
-td.cc-bg-purple,
-th.cc-bg-purple,
-span.cc-bg-purple,
-i.cc-bg-purple,
-a.cc-bg-purple,
-strong.cc-bg-purple,
-em.cc-bg-purple,
-code.cc-bg-purple,
-small.cc-bg-purple {
-  color: white;
-  background-color: #8e44ad;
-}
-p.cc-bg-purple a:not(.btn),
-div.cc-bg-purple a:not(.btn),
-section.cc-bg-purple a:not(.btn),
-aside.cc-bg-purple a:not(.btn),
-header.cc-bg-purple a:not(.btn),
-footer.cc-bg-purple a:not(.btn),
-article.cc-bg-purple a:not(.btn),
-main.cc-bg-purple a:not(.btn),
-nav.cc-bg-purple a:not(.btn),
-td.cc-bg-purple a:not(.btn),
-th.cc-bg-purple a:not(.btn),
-span.cc-bg-purple a:not(.btn),
-i.cc-bg-purple a:not(.btn),
-a.cc-bg-purple a:not(.btn),
-strong.cc-bg-purple a:not(.btn),
-em.cc-bg-purple a:not(.btn),
-code.cc-bg-purple a:not(.btn),
-small.cc-bg-purple a:not(.btn) {
-  color: white;
-}
-/* lists */
-li.cc-bg-purple {
-  background-color: #8e44ad;
-  color: white;
-}
-li.cc-purple:before {
-  color: #8e44ad;
-}
-/* blockquotes */
-blockquote.cc-purple {
-  border-left: 4px solid #8e44ad;
-}
-blockquote.cc-purple.cc-quoted:before {
-  color: #8e44ad;
-}
-blockquote.cc-purple.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #8e44ad;
-}
-/* Tables */
-table.cc-purple {
-  /* Bordered & Colored tables */
-}
-table.cc-purple thead td,
-table.cc-purple tfoot td,
-table.cc-purple thead th,
-table.cc-purple tfoot th {
-  background-color: #8e44ad;
-  color: white;
-  border-bottom-color: #522764;
-}
-table.cc-purple tbody tr td {
-  border-bottom: 1px solid #8e44ad;
-}
-table.cc-purple.cc-bordered tfoot td,
-table.cc-purple.cc-bordered thead td,
-table.cc-purple.cc-bordered tfoot th,
-table.cc-purple.cc-bordered thead th {
-  border-color: #703688;
-}
-table.cc-purple.cc-bordered tbody tr td {
-  border-color: #703688;
-}
-table tr.cc-bg-purple td {
-  background-color: #8e44ad;
-  color: white;
-  border-bottom: 0;
-}
-/* Links / Buttons */
-a.btn.cc-bg-purple,
-button.cc-bg-purple {
-  color: white;
-  background-color: #8e44ad;
-  border-color: #8e44ad;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-  /* Loading + outlined buttons */
-  /* Outlined buttons / links */
-}
-a.btn.cc-bg-purple:hover,
-button.cc-bg-purple:hover {
-  background-color: #703688;
-  border-color: #703688;
-}
-a.btn.cc-bg-purple:hover,
-button.cc-bg-purple:hover {
-  color: white;
-}
-a.btn.cc-bg-purple.cc-loading:before,
-button.cc-bg-purple.cc-loading:before {
-  border-color: transparent white white white;
-}
-a.btn.cc-bg-purple.cc-outlined,
-button.cc-bg-purple.cc-outlined {
-  color: #8e44ad;
-  background-color: transparent;
-  border-color: transparent;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #8e44ad;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-bg-purple.cc-outlined:hover,
-button.cc-bg-purple.cc-outlined:hover {
-  background-color: transparent;
-  border-color: transparent;
-}
-a.btn.cc-bg-purple.cc-outlined:hover,
-button.cc-bg-purple.cc-outlined:hover {
-  border-color: #522764;
-  color: #522764;
-}
-a.btn.cc-bg-purple.cc-outlined.cc-loading,
-button.cc-bg-purple.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-bg-purple.cc-outlined.cc-loading:before,
-button.cc-bg-purple.cc-outlined.cc-loading:before {
-  border-color: transparent #8e44ad #8e44ad #8e44ad;
-}
-/* Colored forms */
-form.cc-purple .form-checkbox:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-purple .form-checkbox:not(.error) input:checked {
-  background-color: #8e44ad;
-  border-color: #8e44ad;
-}
-form.cc-purple .form-radio:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-purple .form-radio:not(.error) input:checked:before {
-  background-color: #8e44ad;
-}
-form.cc-purple .form-ps span {
-  background-color: #8e44ad;
-}
-form.cc-purple select:focus,
-form.cc-purple textarea:focus,
-form.cc-purple input:focus {
-  border-color: #8e44ad;
-}
-form.cc-purple input[type="submit"],
-form.cc-purple button[type="submit"] {
-  background-color: #8e44ad;
-  border-color: #8e44ad;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-purple input[type="submit"]:hover,
-form.cc-purple button[type="submit"]:hover {
-  background-color: #703688;
-  border-color: #703688;
-}
-/* Tabs */
-.tabs.cc-purple {
-  /* Small screen ruleset */
-}
-.tabs.cc-purple.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-purple.cc-bordered > li.active a:not(.btn) {
-  border-color: #8e44ad #8e44ad white #8e44ad;
-}
-.tabs.cc-purple.cc-pills > li.active a:not(.btn),
-.tabs.cc-purple.cc-pills > li:hover a:not(.btn) {
-  background-color: #8e44ad;
-  border-top: 1px solid #8e44ad;
-  border-bottom: 1px solid #8e44ad;
-  color: white;
-}
-.tabs.cc-purple > li {
-  /* Active child */
-}
-.tabs.cc-purple > li:hover a:not(.btn),
-.tabs.cc-purple > li.active a:not(.btn) {
-  color: #8e44ad;
-  border-bottom-color: #8e44ad;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-purple.cc-bordered > li:hover a:not(.btn),
-  .tabs.cc-purple.cc-bordered > li.active a:not(.btn) {
-    border-color: #8e44ad;
-  }
-  .tabs.cc-purple.cc-pills.cc-unchained > li.active a:not(.btn),
-  .tabs.cc-purple.cc-pills > li.active a:not(.btn),
-  .tabs.cc-purple.cc-pills.cc-unchained > li:hover a:not(.btn),
-  .tabs.cc-purple.cc-pills > li:hover a:not(.btn) {
-    border: 1px solid #8e44ad;
-  }
-}
-/* titles */
-h1.cc-orange,
-h2.cc-orange,
-h3.cc-orange,
-h4.cc-orange,
-h5.cc-orange,
-h6.cc-orange,
-.h1-like.cc-orange,
-.h2-like.cc-orange,
-.h3-like.cc-orange,
-.h4-like.cc-orange,
-.h5-like.cc-orange,
-.h6-like.cc-orange {
-  color: #f39c12;
-}
-h1.cc-bg-orange,
-h2.cc-bg-orange,
-h3.cc-bg-orange,
-h4.cc-bg-orange,
-h5.cc-bg-orange,
-h6.cc-bg-orange,
-.h1-like.cc-bg-orange,
-.h2-like.cc-bg-orange,
-.h3-like.cc-bg-orange,
-.h4-like.cc-bg-orange,
-.h5-like.cc-bg-orange,
-.h6-like.cc-bg-orange {
-  color: white;
-  background-color: #f39c12;
-}
-/* elements */
-p.cc-orange,
-div.cc-orange,
-section.cc-orange,
-aside.cc-orange,
-header.cc-orange,
-footer.cc-orange,
-article.cc-orange,
-main.cc-orange,
-nav.cc-orange,
-td.cc-orange,
-th.cc-orange,
-span.cc-orange,
-i.cc-orange,
-a.cc-orange,
-strong.cc-orange,
-em.cc-orange,
-code.cc-orange,
-small.cc-orange {
-  color: #f39c12;
-}
-p.cc-bg-orange,
-div.cc-bg-orange,
-section.cc-bg-orange,
-aside.cc-bg-orange,
-header.cc-bg-orange,
-footer.cc-bg-orange,
-article.cc-bg-orange,
-main.cc-bg-orange,
-nav.cc-bg-orange,
-td.cc-bg-orange,
-th.cc-bg-orange,
-span.cc-bg-orange,
-i.cc-bg-orange,
-a.cc-bg-orange,
-strong.cc-bg-orange,
-em.cc-bg-orange,
-code.cc-bg-orange,
-small.cc-bg-orange {
-  color: white;
-  background-color: #f39c12;
-}
-p.cc-bg-orange a:not(.btn),
-div.cc-bg-orange a:not(.btn),
-section.cc-bg-orange a:not(.btn),
-aside.cc-bg-orange a:not(.btn),
-header.cc-bg-orange a:not(.btn),
-footer.cc-bg-orange a:not(.btn),
-article.cc-bg-orange a:not(.btn),
-main.cc-bg-orange a:not(.btn),
-nav.cc-bg-orange a:not(.btn),
-td.cc-bg-orange a:not(.btn),
-th.cc-bg-orange a:not(.btn),
-span.cc-bg-orange a:not(.btn),
-i.cc-bg-orange a:not(.btn),
-a.cc-bg-orange a:not(.btn),
-strong.cc-bg-orange a:not(.btn),
-em.cc-bg-orange a:not(.btn),
-code.cc-bg-orange a:not(.btn),
-small.cc-bg-orange a:not(.btn) {
-  color: white;
-}
-/* lists */
-li.cc-bg-orange {
-  background-color: #f39c12;
-  color: white;
-}
-li.cc-orange:before {
-  color: #f39c12;
-}
-/* blockquotes */
-blockquote.cc-orange {
-  border-left: 4px solid #f39c12;
-}
-blockquote.cc-orange.cc-quoted:before {
-  color: #f39c12;
-}
-blockquote.cc-orange.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #f39c12;
-}
-/* Tables */
-table.cc-orange {
-  /* Bordered & Colored tables */
-}
-table.cc-orange thead td,
-table.cc-orange tfoot td,
-table.cc-orange thead th,
-table.cc-orange tfoot th {
-  background-color: #f39c12;
-  color: white;
-  border-bottom-color: #976008;
-}
-table.cc-orange tbody tr td {
-  border-bottom: 1px solid #f39c12;
-}
-table.cc-orange.cc-bordered tfoot td,
-table.cc-orange.cc-bordered thead td,
-table.cc-orange.cc-bordered tfoot th,
-table.cc-orange.cc-bordered thead th {
-  border-color: #c87f0a;
-}
-table.cc-orange.cc-bordered tbody tr td {
-  border-color: #c87f0a;
-}
-table tr.cc-bg-orange td {
-  background-color: #f39c12;
-  color: white;
-  border-bottom: 0;
-}
-/* Links / Buttons */
-a.btn.cc-bg-orange,
-button.cc-bg-orange {
-  color: white;
-  background-color: #f39c12;
-  border-color: #f39c12;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-  /* Loading + outlined buttons */
-  /* Outlined buttons / links */
-}
-a.btn.cc-bg-orange:hover,
-button.cc-bg-orange:hover {
-  background-color: #c87f0a;
-  border-color: #c87f0a;
-}
-a.btn.cc-bg-orange:hover,
-button.cc-bg-orange:hover {
-  color: white;
-}
-a.btn.cc-bg-orange.cc-loading:before,
-button.cc-bg-orange.cc-loading:before {
-  border-color: transparent white white white;
-}
-a.btn.cc-bg-orange.cc-outlined,
-button.cc-bg-orange.cc-outlined {
-  color: #f39c12;
-  background-color: transparent;
-  border-color: transparent;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #f39c12;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-bg-orange.cc-outlined:hover,
-button.cc-bg-orange.cc-outlined:hover {
-  background-color: transparent;
-  border-color: transparent;
-}
-a.btn.cc-bg-orange.cc-outlined:hover,
-button.cc-bg-orange.cc-outlined:hover {
-  border-color: #976008;
-  color: #976008;
-}
-a.btn.cc-bg-orange.cc-outlined.cc-loading,
-button.cc-bg-orange.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-bg-orange.cc-outlined.cc-loading:before,
-button.cc-bg-orange.cc-outlined.cc-loading:before {
-  border-color: transparent #f39c12 #f39c12 #f39c12;
-}
-/* Colored forms */
-form.cc-orange .form-checkbox:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-orange .form-checkbox:not(.error) input:checked {
-  background-color: #f39c12;
-  border-color: #f39c12;
-}
-form.cc-orange .form-radio:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-orange .form-radio:not(.error) input:checked:before {
-  background-color: #f39c12;
-}
-form.cc-orange .form-ps span {
-  background-color: #f39c12;
-}
-form.cc-orange select:focus,
-form.cc-orange textarea:focus,
-form.cc-orange input:focus {
-  border-color: #f39c12;
-}
-form.cc-orange input[type="submit"],
-form.cc-orange button[type="submit"] {
-  background-color: #f39c12;
-  border-color: #f39c12;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-orange input[type="submit"]:hover,
-form.cc-orange button[type="submit"]:hover {
-  background-color: #c87f0a;
-  border-color: #c87f0a;
-}
-/* Tabs */
-.tabs.cc-orange {
-  /* Small screen ruleset */
-}
-.tabs.cc-orange.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-orange.cc-bordered > li.active a:not(.btn) {
-  border-color: #f39c12 #f39c12 white #f39c12;
-}
-.tabs.cc-orange.cc-pills > li.active a:not(.btn),
-.tabs.cc-orange.cc-pills > li:hover a:not(.btn) {
-  background-color: #f39c12;
-  border-top: 1px solid #f39c12;
-  border-bottom: 1px solid #f39c12;
-  color: white;
-}
-.tabs.cc-orange > li {
-  /* Active child */
-}
-.tabs.cc-orange > li:hover a:not(.btn),
-.tabs.cc-orange > li.active a:not(.btn) {
-  color: #f39c12;
-  border-bottom-color: #f39c12;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-orange.cc-bordered > li:hover a:not(.btn),
-  .tabs.cc-orange.cc-bordered > li.active a:not(.btn) {
-    border-color: #f39c12;
-  }
-  .tabs.cc-orange.cc-pills.cc-unchained > li.active a:not(.btn),
-  .tabs.cc-orange.cc-pills > li.active a:not(.btn),
-  .tabs.cc-orange.cc-pills.cc-unchained > li:hover a:not(.btn),
-  .tabs.cc-orange.cc-pills > li:hover a:not(.btn) {
-    border: 1px solid #f39c12;
-  }
-}
-/* titles */
-h1.cc-yellow,
-h2.cc-yellow,
-h3.cc-yellow,
-h4.cc-yellow,
-h5.cc-yellow,
-h6.cc-yellow,
-.h1-like.cc-yellow,
-.h2-like.cc-yellow,
-.h3-like.cc-yellow,
-.h4-like.cc-yellow,
-.h5-like.cc-yellow,
-.h6-like.cc-yellow {
-  color: #f1c40f;
-}
-h1.cc-bg-yellow,
-h2.cc-bg-yellow,
-h3.cc-bg-yellow,
-h4.cc-bg-yellow,
-h5.cc-bg-yellow,
-h6.cc-bg-yellow,
-.h1-like.cc-bg-yellow,
-.h2-like.cc-bg-yellow,
-.h3-like.cc-bg-yellow,
-.h4-like.cc-bg-yellow,
-.h5-like.cc-bg-yellow,
-.h6-like.cc-bg-yellow {
-  color: white;
-  background-color: #f1c40f;
-}
-/* elements */
-p.cc-yellow,
-div.cc-yellow,
-section.cc-yellow,
-aside.cc-yellow,
-header.cc-yellow,
-footer.cc-yellow,
-article.cc-yellow,
-main.cc-yellow,
-nav.cc-yellow,
-td.cc-yellow,
-th.cc-yellow,
-span.cc-yellow,
-i.cc-yellow,
-a.cc-yellow,
-strong.cc-yellow,
-em.cc-yellow,
-code.cc-yellow,
-small.cc-yellow {
-  color: #f1c40f;
-}
-p.cc-bg-yellow,
-div.cc-bg-yellow,
-section.cc-bg-yellow,
-aside.cc-bg-yellow,
-header.cc-bg-yellow,
-footer.cc-bg-yellow,
-article.cc-bg-yellow,
-main.cc-bg-yellow,
-nav.cc-bg-yellow,
-td.cc-bg-yellow,
-th.cc-bg-yellow,
-span.cc-bg-yellow,
-i.cc-bg-yellow,
-a.cc-bg-yellow,
-strong.cc-bg-yellow,
-em.cc-bg-yellow,
-code.cc-bg-yellow,
-small.cc-bg-yellow {
-  color: white;
-  background-color: #f1c40f;
-}
-p.cc-bg-yellow a:not(.btn),
-div.cc-bg-yellow a:not(.btn),
-section.cc-bg-yellow a:not(.btn),
-aside.cc-bg-yellow a:not(.btn),
-header.cc-bg-yellow a:not(.btn),
-footer.cc-bg-yellow a:not(.btn),
-article.cc-bg-yellow a:not(.btn),
-main.cc-bg-yellow a:not(.btn),
-nav.cc-bg-yellow a:not(.btn),
-td.cc-bg-yellow a:not(.btn),
-th.cc-bg-yellow a:not(.btn),
-span.cc-bg-yellow a:not(.btn),
-i.cc-bg-yellow a:not(.btn),
-a.cc-bg-yellow a:not(.btn),
-strong.cc-bg-yellow a:not(.btn),
-em.cc-bg-yellow a:not(.btn),
-code.cc-bg-yellow a:not(.btn),
-small.cc-bg-yellow a:not(.btn) {
-  color: white;
-}
-/* lists */
-li.cc-bg-yellow {
-  background-color: #f1c40f;
-  color: white;
-}
-li.cc-yellow:before {
-  color: #f1c40f;
-}
-/* blockquotes */
-blockquote.cc-yellow {
-  border-left: 4px solid #f1c40f;
-}
-blockquote.cc-yellow.cc-quoted:before {
-  color: #f1c40f;
-}
-blockquote.cc-yellow.cc-reverse {
-  border-left-width: 0px;
-  border-right-color: #f1c40f;
-}
-/* Tables */
-table.cc-yellow {
-  /* Bordered & Colored tables */
-}
-table.cc-yellow thead td,
-table.cc-yellow tfoot td,
-table.cc-yellow thead th,
-table.cc-yellow tfoot th {
-  background-color: #f1c40f;
-  color: white;
-  border-bottom-color: #927608;
-}
-table.cc-yellow tbody tr td {
-  border-bottom: 1px solid #f1c40f;
-}
-table.cc-yellow.cc-bordered tfoot td,
-table.cc-yellow.cc-bordered thead td,
-table.cc-yellow.cc-bordered tfoot th,
-table.cc-yellow.cc-bordered thead th {
-  border-color: #c29d0b;
-}
-table.cc-yellow.cc-bordered tbody tr td {
-  border-color: #c29d0b;
-}
-table tr.cc-bg-yellow td {
-  background-color: #f1c40f;
-  color: white;
-  border-bottom: 0;
-}
-/* Links / Buttons */
-a.btn.cc-bg-yellow,
-button.cc-bg-yellow {
-  color: white;
-  background-color: #f1c40f;
-  border-color: #f1c40f;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-  /* Loading + outlined buttons */
-  /* Outlined buttons / links */
-}
-a.btn.cc-bg-yellow:hover,
-button.cc-bg-yellow:hover {
-  background-color: #c29d0b;
-  border-color: #c29d0b;
-}
-a.btn.cc-bg-yellow:hover,
-button.cc-bg-yellow:hover {
-  color: white;
-}
-a.btn.cc-bg-yellow.cc-loading:before,
-button.cc-bg-yellow.cc-loading:before {
-  border-color: transparent white white white;
-}
-a.btn.cc-bg-yellow.cc-outlined,
-button.cc-bg-yellow.cc-outlined {
-  color: #f1c40f;
-  background-color: transparent;
-  border-color: transparent;
-  /* If Hover is specified */
-  /* else */
-  border: 1px solid #f1c40f;
-  /* Loading + outlined buttons */
-}
-a.btn.cc-bg-yellow.cc-outlined:hover,
-button.cc-bg-yellow.cc-outlined:hover {
-  background-color: transparent;
-  border-color: transparent;
-}
-a.btn.cc-bg-yellow.cc-outlined:hover,
-button.cc-bg-yellow.cc-outlined:hover {
-  border-color: #927608;
-  color: #927608;
-}
-a.btn.cc-bg-yellow.cc-outlined.cc-loading,
-button.cc-bg-yellow.cc-outlined.cc-loading {
-  color: transparent;
-}
-a.btn.cc-bg-yellow.cc-outlined.cc-loading:before,
-button.cc-bg-yellow.cc-outlined.cc-loading:before {
-  border-color: transparent #f1c40f #f1c40f #f1c40f;
-}
-/* Colored forms */
-form.cc-yellow .form-checkbox:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-yellow .form-checkbox:not(.error) input:checked {
-  background-color: #f1c40f;
-  border-color: #f1c40f;
-}
-form.cc-yellow .form-radio:not(.error) input:focus {
-  border-color: #ddd;
-}
-form.cc-yellow .form-radio:not(.error) input:checked:before {
-  background-color: #f1c40f;
-}
-form.cc-yellow .form-ps span {
-  background-color: #f1c40f;
-}
-form.cc-yellow select:focus,
-form.cc-yellow textarea:focus,
-form.cc-yellow input:focus {
-  border-color: #f1c40f;
-}
-form.cc-yellow input[type="submit"],
-form.cc-yellow button[type="submit"] {
-  background-color: #f1c40f;
-  border-color: #f1c40f;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-}
-form.cc-yellow input[type="submit"]:hover,
-form.cc-yellow button[type="submit"]:hover {
-  background-color: #c29d0b;
-  border-color: #c29d0b;
-}
-/* Tabs */
-.tabs.cc-yellow {
-  /* Small screen ruleset */
-}
-.tabs.cc-yellow.cc-bordered > li:hover a:not(.btn),
-.tabs.cc-yellow.cc-bordered > li.active a:not(.btn) {
-  border-color: #f1c40f #f1c40f white #f1c40f;
-}
-.tabs.cc-yellow.cc-pills > li.active a:not(.btn),
-.tabs.cc-yellow.cc-pills > li:hover a:not(.btn) {
-  background-color: #f1c40f;
-  border-top: 1px solid #f1c40f;
-  border-bottom: 1px solid #f1c40f;
-  color: white;
-}
-.tabs.cc-yellow > li {
-  /* Active child */
-}
-.tabs.cc-yellow > li:hover a:not(.btn),
-.tabs.cc-yellow > li.active a:not(.btn) {
-  color: #f1c40f;
-  border-bottom-color: #f1c40f;
-}
-@media screen and (max-width: 767px) {
-  .tabs.cc-yellow.cc-bordered > li:hover a:not(.btn),
-  .tabs.cc-yellow.cc-bordered > li.active a:not(.btn) {
-    border-color: #f1c40f;
-  }
-  .tabs.cc-yellow.cc-pills.cc-unchained > li.active a:not(.btn),
-  .tabs.cc-yellow.cc-pills > li.active a:not(.btn),
-  .tabs.cc-yellow.cc-pills.cc-unchained > li:hover a:not(.btn),
-  .tabs.cc-yellow.cc-pills > li:hover a:not(.btn) {
-    border: 1px solid #f1c40f;
   }
 }
 /* *****
