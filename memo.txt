@@ -4,7 +4,7 @@ How to Update ChuckCSS on NPM, GIT, BOWER
 
 1. Make changes in the code (bug fix, enhancement, etc..)
 
-2. Update the version string in package.json and fronts.less by hand to x.x.x.
+2. Update the version string in package.json and front (2*) files by hand to x.x.x.
 
 3. git commit -am "MY FABULOUS COMMENT"
 

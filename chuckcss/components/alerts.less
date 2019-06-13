@@ -6,7 +6,7 @@
 
 /*
     - General alerts styles
-    - {type} : warning, error, success, info
+    - {type}: warning, error, success, info
 
     <div class="alert alert-{type}">
         <button data-close-alert role="button"><i class="fas fa-times"></i></button>
@@ -17,13 +17,13 @@
     </div>
 */
 ._setAlertStyles(@textColor, @borderColor) {
-    border-top:@alert-btw solid @borderColor;
-    color:@textColor;
+    border-top: @alert[btw] solid @borderColor;
+    color: @textColor;
 
     p,div,ul,
     [data-close-alert],
     a {
-        color:@textColor;
+        color: @textColor;
     
         &.btn {
             text-decoration: none;
@@ -36,16 +36,16 @@
 .alert {
     display: flex;
     align-items: center;
-    margin:@alert-ma;
-    font-size: @alert-fs;
-    border-radius:unit(@alert-br,px);
+    margin: @alert[ma];
+    font-size: @alert[fs];
+    border-radius:unit(@alert[br],px);
     background-color: white;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
 
     // Alerts content
     & > div {
         flex:1;
-        padding: @alert-pa;
+        padding: @alert[pa];
 
         a {
             text-decoration:underline;
@@ -63,7 +63,7 @@
 
     // Alerts main left icon
     & > i {
-        padding: @alert-pa;
+        padding: @alert[pa];
         font-size:3rem;
     }
 
@@ -71,7 +71,7 @@
     [data-close-alert] {
         border:0;
         cursor:pointer;
-        padding: @alert-pa;
+        padding: @alert[pa];
         opacity: 0.4;
         order:2;
         background-color: transparent;
@@ -86,26 +86,26 @@
 
             &:before {
                 ._reset;
-                font-size:@text-fs*1.5;
+                font-size: @text[fs]*1.5;
             }
         }
     }
 
     /* Alerts types */
     &-primary {
-        ._setAlertStyles(@alert-pr-tc, @alert-pr-bc);
+        ._setAlertStyles(@alert[pr-tc], @alert[pr-bc]);
     }
     &-info {
-        ._setAlertStyles(@alert-in-tc, @alert-in-bc);
+        ._setAlertStyles(@alert[in-tc], @alert[in-bc]);
     }
     &-warning {
-        ._setAlertStyles(@alert-wa-tc, @alert-wa-bc);
+        ._setAlertStyles(@alert[wa-tc], @alert[wa-bc]);
     }
     &-error {
-        ._setAlertStyles(@alert-er-tc, @alert-er-bc);
+        ._setAlertStyles(@alert[er-tc], @alert[er-bc]);
     }
     &-success {
-        ._setAlertStyles(@alert-su-tc, @alert-su-bc);
+        ._setAlertStyles(@alert[su-tc], @alert[su-bc]);
     }
 
     // Screens > 767px
@@ -116,18 +116,4 @@
             font-size: 6rem;
         }
     });
-}
-
-
-/* ********** */
-/** MESSAGES **/
-/* ********** */
-/*
-    DEPRECIATED SINCE V3.4.0
-    Use '.alert' instead
-    Will be deleted in v4.0.0
-*/
-.message {
-    // Extend all alert properties
-    &:extend(.alert all);
 }

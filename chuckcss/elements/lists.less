@@ -3,13 +3,13 @@
 /* ******* */
 
 
-/* Specific for Drupal : reset list style margin, padding & border */
+/* Specific for Drupal: reset list style margin, padding & border */
 .item-list ul li {._reset;}
 
 
 ul, dl, ol {
-    color:@text-mc;
-    margin:@helper-ma;
+    color: @text[mc];
+    margin: @helper[ma];
 }
 
 /* ul */
@@ -53,18 +53,18 @@ ul {
             li {
                 list-style: none;
                 position: relative;
-                padding-left:unit(@list-dot-pal, px);
+                padding-left:unit(@list-dot[pal], px);
 
                 &:before {
                     content:' ';
                     display: block;
                     position: absolute;
-                    border-radius: @list-dot-br;
-                    width: unit(@list-dot-wi, px);
-                    height: unit(@list-dot-he, px);
-                    background-color: @list-dot-bg;
-                    top:unit(@list-dot-top, px);
-                    left:unit(@list-dot-left, px);
+                    border-radius: @list-dot[br];
+                    width: unit(@list-dot[wi], px);
+                    height: unit(@list-dot[he], px);
+                    background-color: @list-dot[bg];
+                    top:unit(@list-dot[top], px);
+                    left:unit(@list-dot[left], px);
                 }
             }
         }

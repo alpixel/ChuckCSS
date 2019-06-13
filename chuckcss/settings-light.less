@@ -75,18 +75,6 @@
 @blue: #3498db;
 @blue-na: blue;     /* Name of the color, for @aColors array */
 
-// purple
-@purple: #8e44ad;
-@purple-na: purple;     /* Name of the color, for @aColors array */
-
-// orange
-@orange: #f39c12;
-@orange-na: orange;     /* Name of the color, for @aColors array */
-
-// yellow
-@yellow: #f1c40f;
-@yellow-na: yellow;     /* Name of the color, for @aColors array */
-
 
 // Colors array: Add any color you want \m/
 // array(@color1-name @color1-value, @color2-name @color2-value,...);
@@ -94,10 +82,7 @@
     @primary-na @primary,
     @green-na @green,
     @red-na @red,
-    @blue-na @blue,
-    @purple-na @purple,
-    @orange-na @orange,
-    @yellow-na @yellow;
+    @blue-na @blue;
 
 
 
@@ -133,7 +118,7 @@
     btn-pa: 0.3em 1em;          /* Links ~ buttons padding left & right: ~= font-size */
     btn-br: 3;                  /* Links ~ buttons border-radius (in px) */
     btn-thin-fs: @text[fs] * 0.7; /* <a class="btn @{css-prefix}-thin"> font-size */
-    btn-fat-fs: @text[fs] * 1.3;  /* <a class="btn @{css-prefix}-fat"> font-size */
+    btn-fat-fs: @text[fs] * 1.3;   /* <a class="btn @{css-prefix}-fat"> font-size */
 }
 
 
@@ -321,33 +306,12 @@
 
 
 /*
-    -- @ Badges @ --
-*/
-@badges: {
-    br: 5;       // Badges border-radius in pixel
-    bg: #3A3A3A; // Badges default background color
-}
-
-
-
-/*
     -- @ Icons margin @ --
 */
 @icon: {
     mal: 8px;       // Icons margin-left
     mar: 8px;       // Icons margin-right
 }
-
-
-
-/*
-    -- @ Grids @ --
-*/
-@cols-gutter: 0em;        /* Gutter between 2 cols = Each column margin-left & margin-right */
-@cols-total: 12;           /* Total of cols in grid */
-@cols-pa: 1em;             /* Each column padding  */
-@cols-mat: 0em;            /* Each column margin top */
-@cols-mab: @cols-mat;      /* Each column margin bottom */
 
 
 
@@ -389,9 +353,9 @@
     -- @ Loader @ --
 */
 @loader: {
-    bg: @primary;  /* Loader main color */
-    wi: 60;        /* Loader wrapper width (in pixels) */
-    he: 60;        /* Loader wrapper height (in pixels): recommended width = height */
-    speed: 1;      /* Loader speed animation (in seconds) */
+    bg: @primary;      /* Loader main color */
+    wi: 60;            /* Loader wrapper width (in pixels) */
+    he: 60;    /* Loader wrapper height (in pixels): recommended width = height */
+    speed: 1;          /* Loader speed animation (in seconds) */
     spinner-bw: 2; /* Loader spinner: border-width */
 }

@@ -3,31 +3,150 @@
 /* ******** */
 
 /* *****
-    @name : ._generateTitles
-    @description : Generate title <hn> styles
+    @name: ._generateTitles
+    @description: Generate title <hn> styles
 ***** */
-._generateTitles(@iterator:1) when(@iterator <= 6) {
+h1,
+.h1-like {
+    color: @h1[mc];
+    font-size: @h1[fs];
+    line-height: @h1[lh];
+    font-weight: @h1[fw];
 
-    h@{iterator},
-    .h@{iterator}-like {
+    // screens >= 359px
+    ._media-xs-up({ font-size: @h1[fs-s]; });
 
-        // Define vars regarding settings.less file
-        @fontSize : 'title-h@{iterator}-fs';
-        @lineHeight : 'title-h@{iterator}-lh';
+    // screens >= 767px
+    ._media-s-up({ font-size: @h1[fs-m]; });
 
-        font-size:@@fontSize;
-        line-height:@@lineHeight;
-        margin: 0;
-        font-weight:400;
-        color:@title-mc;
+    // screens >= 989px
+    ._media-m-up({ font-size: @h1[fs-l]; });
 
-        small {
-            font-weight:400;
-            color:@subtitle-mc;
-            font-size:@subtitle-fs;
-        }
-    }
-
-    ._generateTitles((@iterator + 1));
+    // screens >= 1199px
+    ._media-l-up({ font-size: @h1[fs-xl]; });
 }
-._generateTitles;
+
+h2,
+.h2-like {
+    color: @h2[mc];
+    font-size: @h2[fs];
+    line-height: @h2[lh];
+    font-weight: @h2[fw];
+
+    // screens >= 359px
+    ._media-xs-up({ font-size: @h2[fs-s]; });
+
+    // screens >= 767px
+    ._media-s-up({ font-size: @h2[fs-m]; });
+
+    // screens >= 989px
+    ._media-m-up({ font-size: @h2[fs-l]; });
+
+    // screens >= 1199px
+    ._media-l-up({ font-size: @h2[fs-xl]; });
+}
+
+h3,
+.h3-like {
+    color: @h3[mc];
+    font-size: @h3[fs];
+    line-height: @h3[lh];
+    font-weight: @h3[fw];
+
+    // screens >= 359px
+    ._media-xs-up({ font-size: @h3[fs-s]; });
+
+    // screens >= 767px
+    ._media-s-up({ font-size: @h3[fs-m]; });
+
+    // screens >= 989px
+    ._media-m-up({ font-size: @h3[fs-l]; });
+
+    // screens >= 1199px
+    ._media-l-up({ font-size: @h3[fs-xl]; });
+}
+
+h4,
+.h4-like {
+    color: @h4[mc];
+    font-size: @h4[fs];
+    line-height: @h4[lh];
+    font-weight: @h4[fw];
+
+    // screens >= 359px
+    ._media-xs-up({ font-size: @h4[fs-s]; });
+
+    // screens >= 767px
+    ._media-s-up({ font-size: @h4[fs-m]; });
+
+    // screens >= 989px
+    ._media-m-up({ font-size: @h4[fs-l]; });
+
+    // screens >= 1199px
+    ._media-l-up({ font-size: @h4[fs-xl]; });
+}
+
+h5,
+.h5-like {
+    color: @h5[mc];
+    font-size: @h5[fs];
+    line-height: @h5[lh];
+    font-weight: @h5[fw];
+
+    // screens >= 359px
+    ._media-xs-up({ font-size: @h5[fs-s]; });
+
+    // screens >= 767px
+    ._media-s-up({ font-size: @h5[fs-m]; });
+
+    // screens >= 989px
+    ._media-m-up({ font-size: @h5[fs-l]; });
+
+    // screens >= 1199px
+    ._media-l-up({ font-size: @h5[fs-xl]; });
+}
+
+h6,
+.h6-like {
+    color: @h6[mc];
+    font-size: @h6[fs];
+    line-height: @h6[lh];
+    font-weight: @h6[fw];
+
+    // screens >= 359px
+    ._media-xs-up({
+        font-size: @h6[fs-s];
+    });
+
+    // screens >= 767px
+    ._media-s-up({
+        font-size: @h6[fs-m];
+    });
+
+    // screens >= 989px
+    ._media-m-up({
+        font-size: @h6[fs-l];
+    });
+
+    // screens >= 1199px
+    ._media-l-up({
+        font-size: @h6[fs-xl];
+    });
+}
+
+
+// Subtile <small>
+h1, .h1-like,
+h2, .h2-like,
+h3, .h3-like,
+h4, .h4-like,
+h5, .h5-like,
+h6, .h6-like {
+    margin: 0;
+
+    small {
+        font-weight: @subtitle[fw];
+        color: @subtitle[mc];
+        font-size: @subtitle[fs];
+    }
+}

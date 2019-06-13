@@ -6,27 +6,27 @@
 
 table {
     border-collapse: collapse;
-    margin:1em 0;
-    width:100%;
+    margin: 1em 0;
+    width: 100%;
 
     /* headers & footer default style */
-    /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
+    /* note: "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
     tfoot,
     thead {
         td,th {
-            text-align:left;
-            border:0;
-            font-weight:@tables-th-fw;
-            font-size:@text-fs;
-            padding:@tables-th-pa;
-            border-bottom:1px solid @tables-bc;
-            color:@tables-th-tc;
-            background-color: @tables-th-bg;
+            text-align: left;
+            border: 0;
+            font-weight: #tables.th[fw];
+            font-size: @text[fs];
+            padding: #tables.th[pa];
+            border-bottom: 1px solid #tables.bc[bc];
+            color: #tables.th[tc];
+            background-color: #tables.th[bg];
         }
     }
     tfoot {
         td {
-            border:0;
+            border: 0;
         }
     }
 
@@ -34,13 +34,13 @@ table {
     /* Cells default style */
     tbody {
         td {
-            color:@tables-td-tc;
-            padding:@tables-td-pa;
-            border-bottom:1px solid @tables-bc;
-            vertical-align:middle;
-            font-size:@text-fs*9/10;
-            background-color: @tables-td-bg;
-            font-weight:@tables-td-fw;
+            color: #tables.td[tc];
+            padding: #tables.td[pa];
+            border-bottom: 1px solid #tables.bc[bc];
+            vertical-align: middle;
+            font-size: @text[fs]*9/10;
+            background-color: #tables.td[bg];
+            font-weight: #tables.td[fw];
             ._transition(0.2s, background-color); // Animate background-color
         }
     }
@@ -55,31 +55,31 @@ table {
             table-layout:fixed;
         }
 
-        /* Striped tables : horizontal */
+        /* Striped tables: horizontal */
         &-striped {
             tbody tr:nth-child(2n+1) td {
-                background-color:@tables-striped-even;
+                background-color: #tables.striped[even];
             }
             tbody tr:nth-child(2n) td {
-                background-color:@tables-striped-odd;
+                background-color: #tables.striped[odd];
             }
         }
 
-        /* Striped tables : vertical */
+        /* Striped tables: vertical */
         &-striped-col {
             tbody tr td:nth-child(2n+1) {
-                background-color:@tables-striped-even;
+                background-color: #tables.striped[even];
             }
             tbody tr td:nth-child(2n) {
-                background-color:@tables-striped-odd;
+                background-color: #tables.striped[odd];
             }
         }
 
-        /* hovered : highlight the hovered line */
+        /* hovered: highlight the hovered line */
         &-hovered {
             tbody tr:hover td:not([class^="@{css-prefix}-bg"]) {
-                background-color:@tables-hover-bg;
-                color: @tables-hover-tc;
+                background-color: #tables.hover[bg];
+                color: #tables.hover[tc];
             }
         }
 
@@ -96,7 +96,7 @@ table {
             tfoot,
             thead {
                 td,th {
-                    border:1px solid  @tables-bc;
+                    border:1px solid  #tables.bc[bc];
                 }
             }
         }
@@ -119,7 +119,7 @@ table {
     ._media-s-up({
         tbody {
             td {
-                font-size:@text-fs;
+                font-size: @text[fs];
             }
         }
     });
@@ -154,7 +154,7 @@ table {
 
                     td, th {
                         display:block;
-                        border:1px solid @tables-bc;
+                        border:1px solid #tables.bc[bc];
                         border-top-width:0px;
                         flex: 1;
 
@@ -171,7 +171,7 @@ table {
                 position: relative;
                 overflow-x: auto;
                 overflow-y: hidden;
-                border-right:1px solid @tables-bc;
+                border-right:1px solid #tables.bc[bc];
 
                 tr {
                     display: flex;
@@ -184,7 +184,7 @@ table {
                     td {
                         display:block;
                         flex: 1;
-                        border:1px solid @tables-bc;
+                        border:1px solid #tables.bc[bc];
                         border-top-width:0px;
                         border-left-width:0px;
 

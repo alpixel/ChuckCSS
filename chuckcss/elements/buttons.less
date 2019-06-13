@@ -8,7 +8,7 @@
     - General links & buttons styles.
 
     /* - - -
-    /!\ : you can override ._btn bg-color in functions.less : ._btn(@bg, @bgHover); /!\
+    /!\: you can override ._btn bg-color in functions.less: ._btn(@bg, @bgHover); /!\
     /* - - -
 
 */
@@ -16,7 +16,7 @@
 /* Simple HTML links */
 a {
     text-decoration: none;
-    color:@links-tc;
+    color: @links[tc];
 
     &:focus,
     &:hover {
@@ -29,14 +29,14 @@ a {
 a.btn,
 button {
     display:inline-block;
-    color:@links-tc;
-    padding:@links-btn-pa;
-    line-height:@links-btn-lh;
-    border:unit(@links-btn-bw,px) solid @gray-li;
+    color: @links[tc];
+    padding: @links[btn-pa];
+    line-height: @links[btn-lh];
+    border:unit(@links[btn-bw],px) solid lighten(@gray, 10%);
     text-align:center;
-    font-size: @links-fs;
+    font-size: @links[fs];
     vertical-align:middle;
-    border-radius:unit(@links-btn-br,px);
+    border-radius:unit(@links[btn-br],px);
     cursor:pointer;
     ._transition;
 
@@ -46,16 +46,16 @@ button {
         outline:none;
     }
 
-    /* hover : default, change border-color */
+    /* hover: default, change border-color */
     &:hover {
-        border-color:@gray;
+        border-color: @gray;
     }
 
 
     &.@{css-prefix} {
         /* Thins buttons, .btn links */
         &-thin {
-            font-size:@links-btn-thin-fs;
+            font-size: @links[btn-thin-fs];
 
             /* Thin Loading buttons */
             &.@{css-prefix}-loading {
@@ -71,7 +71,7 @@ button {
 
         /* Fats buttons, .btn links */
         &-fat {
-            font-size:@links-btn-fat-fs;
+            font-size: @links[btn-fat-fs];
 
             /* Thin Loading buttons */
             &.@{css-prefix}-loading {
@@ -112,10 +112,10 @@ button {
                 border-width:2px;
                 border-style: solid;
                 border-top-color: transparent;
-                border-right-color: @gray-li;
-                border-bottom-color: @gray-li;
-                border-left-color: @gray-li;
-                border-radius :50%;
+                border-right-color: lighten(@gray, 10%);
+                border-bottom-color: lighten(@gray, 10%);
+                border-left-color: lighten(@gray, 10%);
+                border-radius: 50%;
                 content: " ";
                 width: 16px;
                 height: 16px;

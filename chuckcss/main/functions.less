@@ -19,12 +19,12 @@
 
 
 /* *****
-    @name : background-gradient : horizontal || vertical
-    @description : apply a grandient background color to a DOM element
-    @params : @from (rgba or HEXA code), @to (rgba or HEXA code)
+    @name: background-gradient: horizontal || vertical
+    @description: apply a grandient background color to a DOM element
+    @params: @from (rgba or HEXA code), @to (rgba or HEXA code)
 
-    NOTICE : For others background-gradients (diagonal, radial, transparent, etc...), please use the generator.
-    @Generator : http://www.colorzilla.com/gradient-editor/
+    NOTICE: For others background-gradients (diagonal, radial, transparent, etc...), please use the generator.
+    @Generator: http://www.colorzilla.com/gradient-editor/
 ***** */
 ._bg-vertical(@from:#000, @to:#fff) {
       background: @from; /* Old browsers */
@@ -35,8 +35,8 @@
       background: linear-gradient(to right,  @from 0%, @to 100%); /* W3C */
 }
 /* *****
-    @name : ._clearfix
-    @description : reset floated elements
+    @name: ._clearfix
+    @description: reset floated elements
 ***** */
 .clearfix {._clearfix;}
 ._clearfix() {
@@ -51,27 +51,27 @@
     &:after {clear: both}
 }
 /* *****
-    @name : ._inside
-    @description : Auto-center a DOM element with specific width (very usefull for responsive integration)
-    @params : @width
+    @name: ._inside
+    @description: Auto-center a DOM element with specific width (very usefull for responsive integration)
+    @params: @width
 
-    @exemple :
+    @exemple:
       el {
         ._inside; // <el> is now horizontaly centered in the page, with responsive behavior
       }
 ***** */
-._inside(@width:@l-media-mw) when (isnumber(@width)) {
+._inside(@width: @breakpoints[l]) when (isnumber(@width)) {
     width: @width;
     margin:0 auto;
     ._transition(.2s,width);
 }
 /* *****
-    @name : ._transition
-    @description : animate a DOM element with transition property
-    @params : @duration (0 - ∞ seconds), @property (all or css rules), @effect (easing effects or Cubic-bezier curve), @delay (0 - ∞ seconds)
-    @Generator for custom & cool Cubic-Bezier effects : http://cubic-bezier.com/
+    @name: ._transition
+    @description: animate a DOM element with transition property
+    @params: @duration (0 - ∞ seconds), @property (all or css rules), @effect (easing effects or Cubic-bezier curve), @delay (0 - ∞ seconds)
+    @Generator for custom & cool Cubic-Bezier effects: http://cubic-bezier.com/
 
-    @exemple :
+    @exemple:
       a {
         opacity0.5; // Default, apply a half-opacity to <a>
         ._transition; // Animate <a> on hover (all CSS properties)
@@ -84,16 +84,16 @@
       }
 ***** */
 ._transition(@duration:.2s, @property:all, @effect:ease-out, @delay:0s) {
-    transition:@arguments;
+    transition: @arguments;
 }
 /* *****
-    @name : ._transform
-    @description : Apply transform property to a DOM element
-    @params : CSS3 transform effects : you can pass a 2D or 3D transform function in parameters : ._rotate, ._scale, ._translate, ._skew
+    @name: ._transform
+    @description: Apply transform property to a DOM element
+    @params: CSS3 transform effects: you can pass a 2D or 3D transform function in parameters: ._rotate, ._scale, ._translate, ._skew
 
-    NOTICE : You can call multi-times 2D or 3D transform function
+    NOTICE: You can call multi-times 2D or 3D transform function
 
-    @exemple :
+    @exemple:
       el {
         ._skew('',10deg,10deg);
         ._rotate(45deg);
@@ -108,7 +108,7 @@
     transform+_: @arguments;
 }
 /* *****
-    @exemples :
+    @exemples:
       el {
         ._rotate(5deg); // Default, <el> has a 5deg rotation when displayed.
 
@@ -117,7 +117,7 @@
         ._rotate(-10deg, 'X', 200); // Apply a -10deg rotation on X axis only with a 200 perspective
       }
 ***** */
-._rotate(@deg:10deg, @axis:~'',@perspective : ~'') {
+._rotate(@deg:10deg, @axis:~'',@perspective: ~'') {
     /* Not perspective */
     & when not (isnumber(@perspective)) {
         ._transform(~"rotate@{axis}(@{deg})");
@@ -128,7 +128,7 @@
     }
 }
 /* *****
-    @exemples :
+    @exemples:
       el {
         ._scale; // Default, <el> is scaled 1.2
 
@@ -137,7 +137,7 @@
         ._scale(.8, 1.3); // Two values = <el> is scaled 0.8 on X axis & 1.3 on Y axis
       }
 ***** */
-._scale(@x:~'', @y:~'', @default : 1.2) {
+._scale(@x:~'', @y:~'', @default: 1.2) {
     /* X != Y */
     & when (isnumber(@y)) and (isnumber(@x)) and not (@x = @y) {
         ._transform(scale(@x,@y));
@@ -146,13 +146,13 @@
     & when (isnumber(@x)) and not (isnumber(@y)) {
         ._transform(scale(@x));
     }
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
     & when not (isnumber(@y)) and not (isnumber(@x)) {
         ._transform(scale(@default));
     }
 }
 /* *****
-    @exemples :
+    @exemples:
       el {
         ._translate; // Default, <el> is translated to 10px on X, Y & Z axis
 
@@ -165,9 +165,9 @@
     ._transform(translate3d(@x, @y, @z));
 }
 /* *****
-    @exemples :
+    @exemples:
       el {
-        ._skew; // Non-sens :/ Params are required
+        ._skew; // Non-sens:/ Params are required
 
         ._skew('X', 10deg); // <el> is skewed to 10deg on X axis
 
@@ -183,19 +183,19 @@
     & when (isstring(@axis)) and (isnumber(@y)) and not (isnumber(@x)) {
         ._transform(~"skew@{axis}(@{y})");
     }
-    /* X and Y : no @axis */
+    /* X and Y: no @axis */
     & when (isnumber(@y)) and (isnumber(@x)) {
         ._transform(~"skew(@{x}, @{y})");
     }
 }
 /* *****
-    @name : ._filter
-    @params : all CSS3 filters : blur, grayscale, drop-shadow, sepia, brightness, constrast, invert...
-    @full exemples : http://html5-demos.appspot.com/static/css/filters/index.html
+    @name: ._filter
+    @params: all CSS3 filters: blur, grayscale, drop-shadow, sepia, brightness, constrast, invert...
+    @full exemples: http://html5-demos.appspot.com/static/css/filters/index.html
 
-    NOTICE : You can call multi-times filters funtions
+    NOTICE: You can call multi-times filters funtions
 
-    @exemple :
+    @exemple:
       el {
         // The 2 lines below...
         ._filter(blur(1px)); // Apply blur effect
@@ -205,7 +205,7 @@
         ._filter(blur(1px) sepia(1)); // Apply blur and sepia effects
       }
 
-      will compile to :
+      will compile to:
       el {
           filter: blur(1px) sepia(1);
       }
@@ -214,10 +214,10 @@
     filter+_: @arguments;
 }
 /* *****
-    @name : ._reset
-    @description : reset margin, border & padding properties in one function
+    @name: ._reset
+    @description: reset margin, border & padding properties in one function
 
-    @exemple :
+    @exemple:
       el {
         ._reset; // Let be safe that <el> has no border, no padding, mo margin
       }
@@ -228,12 +228,12 @@
     border:0;
 }
 /* *****
-    @name : ._cover
-    @description : display background-image as cover css3 property
+    @name: ._cover
+    @description: display background-image as cover css3 property
 
-    @exemple :
+    @exemple:
       el {
-        background-image : url('path_to_image/img.jpg');
+        background-image: url('path_to_image/img.jpg');
         ._cover;
       }
 ***** */
@@ -246,27 +246,27 @@
     background-position: center top\9; /* <= IE8 */
 }
 /* *****
-    @name : ._truncate
-    @description : add ellipsis to an element with specifid width;
-    @params : @width (pixels)
+    @name: ._truncate
+    @description: add ellipsis to an element with specifid width;
+    @params: @width (pixels)
 
-    @exemple :
+    @exemple:
       el {
         ._truncate(200px); // <el> will be truncate at 200px
       }
 ***** */
-._truncate(@width : 200px) when (ispixel(@width)) {
-    width:@width;
+._truncate(@width: 200px) when (ispixel(@width)) {
+    width: @width;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 /* *****
-    @name : ._btn
-    @description : generate btn links with unlimited background colors
-    @params : @bg (button color (rgba, hexa)), @bgHover (button hover color (rgba, hexa))
+    @name: ._btn
+    @description: generate btn links with unlimited background colors
+    @params: @bg (button color (rgba, hexa)), @bgHover (button hover color (rgba, hexa))
 
-    @exemple :
+    @exemple:
       button {
         // 2 colors
         ._btn(@red, @green); // <button> will be displayed with a red bg-color, and a green bg-color on hover (with smoothy animation)
@@ -276,15 +276,15 @@
       }
 ***** */
 ._setBtnBgHover(@bg) {
-    @bgHover : darken(@bg,10%);
+    @bgHover: darken(@bg,10%);
 
     &:hover {
         background-color: @bgHover;
         border-color: @bgHover;
     }
 }
-._btn(@bg : @primary, @bgHover :~'') when (iscolor(@bg)) {
-    background-color:@bg;
+._btn(@bg: @primary, @bgHover:~'') when (iscolor(@bg)) {
+    background-color: @bg;
     border-color: @bg;
 
     /* If Hover is specified */

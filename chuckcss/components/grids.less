@@ -43,18 +43,18 @@
     // Children - Flex item
     & > * {
         ._reset;
-        padding:@cols-pa;
-        margin:@cols-mat @cols-gutter/2 @cols-mab;
+        padding: @cols-pa;
+        margin: @cols-mat @cols-gutter/2 @cols-mab;
         flex:1 1 0%;
 
-        // Small devices : set flex-basis to 100%
+        // Small devices: set flex-basis to 100%
         ._media-s({
             flex-basis:100%;
         });
 
         /* Nested columns */
         &.columns {
-            padding:@cols-gutter @cols-gutter/2;
+            padding: @cols-gutter @cols-gutter/2;
         }
 
         &.@{css-prefix} {
@@ -74,7 +74,7 @@
                 &-baseline {align-self:baseline}
             }
             &-w-auto {
-                flex :0 0 auto;
+                flex:0 0 auto;
             }
         }
     }

@@ -1,152 +1,89 @@
 /* ******** */
 /** LOADER **/
 /* ******** */
-
-/* *****
-    @name : ._generateDotsLoader
-    @description : Generate dots loader
-***** */
-._generateDotsLoader(@iterator, @loaderTimer, @loaderRadius) when(@iterator <= @loader-dots-count) {
-    .@{css-prefix}-loader .dot.dot-@{iterator} {
-        ._rotate(~"@{loaderRadius}deg");
-
-        &:before {
-            animation-delay: ~"@{loaderTimer}s";
-        }
-    }
-
-    ._generateDotsLoader(@iterator + 1 , @loader-dots-animation-delay + @loaderTimer, @loaderRadius + @loader-dots-radius);
-}
-._generateDotsLoader(2, @loader-dots-animation-delay, @loader-dots-radius);
-
-
 .@{css-prefix}-loader {
-    margin: 50px auto;
-    width: unit(@loader-wi,px);
-    height: unit(@loader-he,px);
-    position: relative;
-
-    // <div class="@{css-prefix}-loader">
-    //     <div class="dot dot-1"></div>
-    //     <div class="dot dot-2"></div>
-    //     <div class="dot dot-3"></div>
-    //     <div class="dot dot-4"></div>
-    //     <div class="dot dot-5"></div>
-    //     <div class="dot dot-6"></div>
-    //     <div class="dot dot-7"></div>
-    //     <div class="dot dot-8"></div>
-    //     <div class="dot dot-9"></div>
-    //     <div class="dot dot-10"></div>
-    //     <div class="dot dot-11"></div>
-    //     <div class="dot dot-12"></div>
-    // </div>
-    .dot {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        &:before {
-            content: '';
-            display: block;
-            margin: 0 auto;
-            width: 15%;
-            height: 15%;
-            background-color:@loader-bg;
-            border-radius:100%;
-            animation: ~"loaderDots @{loader-speed}s infinite ease-in-out both";
-        }
-    }
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @speed: @loader[speed];
 
     // <div class="@{css-prefix}-loader">
     //     <div class="spinner"></div>
     // </div>
     .spinner {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-radius:50%;
-        border-color:@loader-bg transparent transparent transparent;
-        border-width:unit(@loader-spinner-bw, px);
-        border-style:solid;
-        animation: ~"loaderSpinner @{loader-speed}s infinite linear";
-        transform-origin:center center;
+        width: unit(@loader[wi],px);
+        height: unit(@loader[he],px);
+        border-radius: 50%;
+        border-color: @loader[bg] transparent transparent transparent;
+        border-width: unit(@loader[spinner-bw], px);
+        border-style: solid;
+        animation: ~"loaderSpinner @{speed}s infinite linear";
+        transform-origin: center center;
 
         &:before,
         &:after {
-            display:block;
-            position:absolute;
-            content:' ';
-            border-color:@loader-bg transparent transparent transparent;
-            border-width:unit(@loader-spinner-bw, px);
-            border-style:solid;
+            display: block;
+            position: absolute;
+            content: ' ';
+            border-color: @loader[bg] transparent transparent transparent;
+            border-width: unit(@loader[spinner-bw], px);
+            border-style: solid;
             border-radius:50%;
         }
 
         &:before {
-            top:5%;
-            left:5%;
-            right:5%;
-            bottom:5%;
-            @speed : @loader-speed * 1.5;
+            top: 5%;
+            left: 5%;
+            right: 5%;
+            bottom: 5%;
+            @speed: @loader[speed] * 1.5;
             animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
         }
 
         &:after {
-            top:14%;
-            left:14%;
-            right:14%;
-            bottom:14%;
-            @speed : @loader-speed * 0.75;
+            top: 14%;
+            left: 14%;
+            right: 14%;
+            bottom: 14%;
+            @speed: @loader[speed] * 0.75;
             animation: ~"loaderSpinner @{speed}s infinite ease-in-out";
         }
     }
 
 
-    // <div class="@{css-prefix}-loader caterpillar">
-    //     <div class="chain chain-1"></div>
-    //     <div class="chain chain-2"></div>
-    //     <div class="chain chain-3"></div>
-    //     <div class="chain chain-4"></div>
-    //     <div class="chain chain-5"></div>
+    // <div class="@{css-prefix}-loader">
+    //     <div class="sonnar"></div>
     // </div>
-    &.caterpillar {
-        height: 20px;
-        width: 100px;
+    .sonar {
+        width: unit(@loader[wi],px);
+        height: unit(@loader[he],px);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        // Caterpillar loader speed is 2 times lower than other loaders.
-        @speed : @loader-speed * 2;
-
-        .chain{
-            width: 20px;
-            height: 20px;
-            background-color: @loader-bg;
-            border-radius: 50%;
+        &:after,
+        &:before {
+            content: ' ';
+            display: block;
             position: absolute;
-
-            &-1 {
-                animation: loaderCaterpillar ~"@{speed}s" linear infinite;
-            }
-            &-2 {
-                left:20px;
-                animation: loaderCaterpillar ~"@{speed}s" linear infinite -.4s;
-            }
-            &-3 {
-                left:40px;
-                animation: loaderCaterpillar ~"@{speed}s" linear infinite -.8s;
-            }
-            &-4 {
-                left:60px;
-                animation: loaderCaterpillar ~"@{speed}s" linear infinite -1.2s;
-            }
-            &-5 {
-                left:80px;
-                animation: loaderCaterpillar ~"@{speed}s" linear infinite -1.6s;
-            }
+            border-color: @loader[bg];
+            border-width: unit(@loader[spinner-bw], px);
+            border-style: solid;
+            opacity: 1;
+            border-radius: 100%;
+            animation: ~"loaderSonar @{speed}s infinite cubic-bezier(0, 0.2, 0.8, 1)";
         }
+
+        &:after {
+            @delay: @speed / 2;
+            animation-delay: ~"-@{delay}s"
+        }
+
     }
 }

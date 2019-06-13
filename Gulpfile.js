@@ -19,6 +19,14 @@ gulp.task('chuckcss_minify_less', function() {
         .pipe(postcss([ autoprefixer() ]))
         .pipe(rename({basename: 'chuckcss', suffix: '.min'}))
         .pipe(gulp.dest('dist/'));
+
+    gulp.src('chuckcss/front-light.less')
+        .pipe(plumber())
+        .pipe(less())
+        .pipe(cssnano())
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(rename({basename: 'chuckcss-light', suffix: '.min'}))
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('chuckcss_less', function() {
@@ -27,6 +35,13 @@ gulp.task('chuckcss_less', function() {
         .pipe(less())
         .pipe(postcss([ autoprefixer() ]))
         .pipe(rename({basename: 'chuckcss'}))
+        .pipe(gulp.dest('dist/'));
+
+    gulp.src('chuckcss/front-light.less')
+        .pipe(plumber())
+        .pipe(less())
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(rename({basename: 'chuckcss-light'}))
         .pipe(gulp.dest('dist/'));
 });
 

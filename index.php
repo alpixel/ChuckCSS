@@ -18,7 +18,7 @@
         <!-- CSS -->
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-        <link rel="stylesheet" href="dist/chuckcss.min.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="dist/chuckcss.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/prism.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/test.css" type="text/css" media="screen" charset="utf-8" />
     </head>
@@ -681,27 +681,27 @@
                     <code class="language-markup"><!-- -->
                         &lt;!-- Font-weight -->
                         &lt;p class="cc-fw-100">font-weight 100&lt;/p>
-                        &lt;p class="cc-fw-200">font-size 200&lt;/p>
-                        &lt;p class="cc-fw-300">font-size 300&lt;/p>
+                        &lt;p class="cc-fw-200">font-weight 200&lt;/p>
+                        &lt;p class="cc-fw-300">font-weight 300&lt;/p>
                         &lt;p class="cc-fw-400">font-weight 400&lt;/p>
-                        &lt;p class="cc-fw-500">font-size 500&lt;/p>
-                        &lt;p class="cc-fw-600">font-size 600&lt;/p>
+                        &lt;p class="cc-fw-500">font-weight 500&lt;/p>
+                        &lt;p class="cc-fw-600">font-weight 600&lt;/p>
                         &lt;p class="cc-fw-700">font-weight 700&lt;/p>
-                        &lt;p class="cc-fw-800">font-size 800&lt;/p>
-                        &lt;p class="cc-fw-900">font-size 900&lt;/p>
+                        &lt;p class="cc-fw-800">font-weight 800&lt;/p>
+                        &lt;p class="cc-fw-900">font-weight 900&lt;/p>
                     </code>
                 </pre>
 
 
                 <p class="cc-fw-100">font-weight 100</p>
-                <p class="cc-fw-200">font-size 200</p>
-                <p class="cc-fw-300">font-size 300</p>
+                <p class="cc-fw-200">font-weight 200</p>
+                <p class="cc-fw-300">font-weight 300</p>
                 <p class="cc-fw-400">font-weight 400</p>
-                <p class="cc-fw-500">font-size 500</p>
-                <p class="cc-fw-600">font-size 600</p>
+                <p class="cc-fw-500">font-weight 500</p>
+                <p class="cc-fw-600">font-weight 600</p>
                 <p class="cc-fw-700">font-weight 700</p>
-                <p class="cc-fw-800">font-size 800</p>
-                <p class="cc-fw-900">font-size 900</p>
+                <p class="cc-fw-800">font-weight 800</p>
+                <p class="cc-fw-900">font-weight 900</p>
             </div>
 
             <div class="main cc-helpers-blocks">
@@ -3638,38 +3638,6 @@
 
             <div class="main cc-loading">
                 <h3 class="title">Loader</h3>
-                <pre class="HTML">
-                    <code class="language-markup">&lt;div class="cc-loader">
-                            &lt;div class="dot dot-1">&lt;/div>
-                            &lt;div class="dot dot-2">&lt;/div>
-                            &lt;div class="dot dot-3">&lt;/div>
-                            &lt;div class="dot dot-4">&lt;/div>
-                            &lt;div class="dot dot-5">&lt;/div>
-                            &lt;div class="dot dot-6">&lt;/div>
-                            &lt;div class="dot dot-7">&lt;/div>
-                            &lt;div class="dot dot-8">&lt;/div>
-                            &lt;div class="dot dot-9">&lt;/div>
-                            &lt;div class="dot dot-10">&lt;/div>
-                            &lt;div class="dot dot-11">&lt;/div>
-                            &lt;div class="dot dot-12">&lt;/div>
-                        &lt;/div>
-                    </code>
-                </pre>
-
-                <div class="cc-loader">
-                    <div class="dot dot-1"></div>
-                    <div class="dot dot-2"></div>
-                    <div class="dot dot-3"></div>
-                    <div class="dot dot-4"></div>
-                    <div class="dot dot-5"></div>
-                    <div class="dot dot-6"></div>
-                    <div class="dot dot-7"></div>
-                    <div class="dot dot-8"></div>
-                    <div class="dot dot-9"></div>
-                    <div class="dot dot-10"></div>
-                    <div class="dot dot-11"></div>
-                    <div class="dot dot-12"></div>
-                </div>
 
                 <pre class="HTML">
                     <code class="language-markup">
@@ -3679,28 +3647,24 @@
                     </code>
                 </pre>
 
-                <div class="cc-loader">
-                    <div class="spinner"></div>
+                <div style="position:relative;height:200px;">
+                    <div class="cc-loader">
+                        <div class="spinner"></div>
+                    </div>
                 </div>
 
                 <pre class="HTML">
                     <code class="language-markup">
-                        &lt;div class="cc-loader caterpillar">
-                            &lt;div class="chain chain-1">&lt;/div>
-                            &lt;div class="chain chain-2">&lt;/div>
-                            &lt;div class="chain chain-3">&lt;/div>
-                            &lt;div class="chain chain-4">&lt;/div>
-                            &lt;div class="chain chain-5">&lt;/div>
+                        &lt;div class="cc-loader">
+                            &lt;div class="sonar">&lt;/div>
                         &lt;/div>
                     </code>
                 </pre>
 
-                <div class="cc-loader caterpillar">
-                    <div class="chain chain-1"></div>
-                    <div class="chain chain-2"></div>
-                    <div class="chain chain-3"></div>
-                    <div class="chain chain-4"></div>
-                    <div class="chain chain-5"></div>
+                <div style="position:relative;height:200px;">
+                    <div class="cc-loader">
+                        <div class="sonar"></div>
+                    </div>
                 </div>
             </div>
         </section>

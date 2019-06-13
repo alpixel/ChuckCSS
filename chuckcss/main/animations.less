@@ -3,8 +3,8 @@
 */
 
 /* *****
-    @name : ._loading-spin
-    @description : animate loading buttons
+    @name: ._loading-spin
+    @description: animate loading buttons
 ***** */
 ._loading-spin(@duration:1s){
     animation-name: loading-spin;
@@ -22,22 +22,10 @@
     }
 }
 
-/* *****
-    @name : loaderDots
-    @description : animate dots loader
-***** */
-@keyframes loaderDots {
-    0%, 39%, 100% { 
-        opacity:0 
-    }
-    40% { 
-        opacity:1
-    }
-}
 
 /* *****
-    @name : loaderSpinner
-    @description : animate spinner loader
+    @name: loaderSpinner
+    @description: animate spinner loader
 ***** */
 @keyframes loaderSpinner {
     0% { 
@@ -48,45 +36,27 @@
     }
 }
 
-
 /* *****
-    @name : loaderCaterpillar
-    @description : animate caterpillar loader
+    @name: loaderSonar
+    @description: animate sonar loader
 ***** */
-@keyframes loaderCaterpillar{
-    0% { 
-        left: 100px;
-        top:0
+@keyframes loaderSonar {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
     }
-    80% { 
-        left: 0;
-        top:0
-    }
-    85% { 
-        left: 0;
-        top: -20px;
-        width: 20px;
-        height: 20px
-    }
-    90% { 
-        width: 40px;
-        height: 15px
-    }
-    95% { 
-        left: 100px;
-        top: -20px;
-        width: 20px;
-        height: 20px
-    }
-    100% { 
-        left: 100px;
-        top:0
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
     }
 }
 
+
 /* *****
-    @name : checkdio
-    @description : animate radio & checkox inputs when checked
+    @name: checkdio
+    @description: animate radio & checkox inputs when checked
 ***** */
 @keyframes checkdio {
     0% {
@@ -105,8 +75,8 @@
 }
 
 /* *****
-    @name : showLazyImg
-    @description : Animate img and backstretch when elements are loaded with lozad
+    @name: showLazyImg
+    @description: Animate img and backstretch when elements are loaded with lozad
 ***** */
 img[data-loaded="true"],
 [data-loaded="true"] img {

@@ -7,19 +7,17 @@
 blockquote {
     ._reset;
     padding:0.3em 0.3em 0.3em 2em;
-    border-left:4px solid @blockquotes-bc;
+    border-left:4px solid @blockquotes[bc];
     font-style:italic;
     margin:1.5em 0;
 
     &.@{css-prefix} {
-        /* Reverse blockquote : right alignment */
+        /* Reverse blockquote: right alignment */
         &-reverse {
             text-align:right;
             padding:0.3em 2em 0.3em 0.3em;
             border-left:0;
-            border-right:4px solid @blockquotes-bc;
-
-            
+            border-right:4px solid @blockquotes[bc];
         }
     }
 
@@ -28,7 +26,7 @@ blockquote {
     footer {
         font-style:normal;
         font-size:80%;
-        color:@blockquotes-footer-tc;
+        color: @blockquotes[footer-tc];
         padding-top:1em;
     }
 }
