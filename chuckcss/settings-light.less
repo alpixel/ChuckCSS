@@ -1,0 +1,361 @@
+/*
+    * SETTINGS.LESS
+    ~ Configuration file
+
+    * HOW TO UNDERSTAND VAR SUFFIX ?
+
+        "-bc": border-color
+        "-bg": background-color
+        "-br": border-radius
+        "-bw": border-width
+        "-da": dark (colors only)
+        "-li": light (colors only)
+        "-na": name (colors only)
+        "-fs": font-size (fonts only)
+        "-ic": icon color
+        "-he": height
+        "-wi": width
+        "-lh": line-height
+        "-ma": margin (for grid containers, and helpers paddings and margins)
+        "-mc": main-color
+        "-mw": max-width (media queries)
+        "-pa": padding (for grid columns, and helpers paddings and margins)
+        "-ma{letter}": {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
+        "-pa{letter}": {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
+        "-tc": text-color
+        "-in": info (alerts)
+        "-er": error (alerts)
+        "-su": success (alerts)
+        "-wa": warning (alerts)
+        "-pr": primary (alerts)
+        "-zi": z-index (modals)
+*/
+
+/* ********* */
+/* VARIABLES */
+/* ********* */
+/*
+    -- @ Class prefix @ --
+*/
+@css-prefix: cc; // Write prefix without quotes
+
+
+
+/*
+    -- @ Media Queries @ --
+*/
+@breakpoints: {
+    xs: 359px; /* Max-width for x-small devices */
+    s: 767px;  /* Max-width for small devices */
+    m: 989px;  /* Max-width for medium devices */
+    l: 1199px; /* Max-width for large devices */
+}
+
+
+
+/*
+    -- @ Colors @ --
+*/
+/* Primary color */
+@primary: #29b7e1;
+@primary-na: primary;   /* Name of the color, for @aColors array */
+
+// Green
+@green: #80ae37;
+@green-na: green;   /* Name of the color, for @aColors array */
+
+// red
+@red:   #c41515;
+@red-na: red;   /* Name of the color, for @aColors array */
+
+// gray
+@gray: #bababa;
+
+// blue
+@blue: #3498db;
+@blue-na: blue;     /* Name of the color, for @aColors array */
+
+
+// Colors array: Add any color you want \m/
+// array(@color1-name @color1-value, @color2-name @color2-value,...);
+@aColors:
+    @primary-na @primary,
+    @green-na @green,
+    @red-na @red,
+    @blue-na @blue;
+
+
+
+/*
+    -- @ Texts @ --
+*/
+@text: {
+    mc: #3a3a3a; /* Texts ~ Main color (hexa, rgb, rgba...) */
+    fs: 1.6rem; // Font-size && line-height for small screens (<= 359px)
+    lh: 1.5;
+    fs-s: 1.6rem; // Font-size && line-height for phone screens (>= 360px)
+    lh-s: 1.5;
+    fs-m: 1.6rem; // Font-size && line-height for medium screens (>= 768px)
+    lh-m: 1.5;
+    fs-l: 1.6rem; // Font-size && line-height for large screens (>= 989px)
+    lh-l: 1.5;
+    fs-xl: 1.6rem; // Font-size && line-height for x-large screens (>= 1200px)
+    lh-xl: 1.5;
+}
+
+
+
+/*
+    -- @ Links @ --
+*/
+@links: {
+    tc: @text[mc];              /* Links ~ Text color */
+    fs: @text[fs];              /* Links ~ Font-size */
+    btn-bw: 1;                  /* Links ~ Border-width */
+    btn-tc: white;              /* Links ~ buttons text color when colorized */
+    btn-hover-tc: white;        /* Links ~ buttons text color on hover when colorized */
+    btn-lh: 1.8;                /* Links ~ buttons line-height: ~= font-size*1.8 */
+    btn-pa: 0.3em 1em;          /* Links ~ buttons padding left & right: ~= font-size */
+    btn-br: 3;                  /* Links ~ buttons border-radius (in px) */
+    btn-thin-fs: @text[fs] * 0.7; /* <a class="btn @{css-prefix}-thin"> font-size */
+    btn-fat-fs: @text[fs] * 1.3;   /* <a class="btn @{css-prefix}-fat"> font-size */
+}
+
+
+
+/*
+    -- @ Titles @ --
+*/
+@h1: {
+    mc: @text[mc];
+    fs: 2rem;
+    fs-s: 2rem;
+    fs-m: 2.5rem;
+    fs-l: 3rem;
+    fs-xl: 3rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h2: {
+    mc: @text[mc];
+    fs: 1.8rem;
+    fs-s: 1.8rem;
+    fs-m: 2.2rem;
+    fs-l: 2.7rem;
+    fs-xl: 2.7rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h3: {
+    mc: @text[mc];
+    fs: 1.6rem;
+    fs-s: 1.6rem;
+    fs-m: 2rem;
+    fs-l: 2.3rem;
+    fs-xl: 2.3rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h4: {
+    mc: @text[mc];
+    fs: 1.5rem;
+    fs-s: 1.5rem;
+    fs-m: 1.7rem;
+    fs-l: 2rem;
+    fs-xl: 2rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h5: {
+    mc: @text[mc];
+    fs: 1.4rem;
+    fs-s: 1.4rem;
+    fs-m: 1.6rem;
+    fs-l: 1.9rem;
+    fs-xl: 1.9rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h6: {
+    mc: @text[mc];
+    fs: 1.3rem;
+    fs-s: 1.3rem;
+    fs-m: 1.5rem;
+    fs-l: 1.7rem;
+    fs-xl: 1.7rem;
+    lh: 1.5;
+    fw: 400;
+}
+@subtitle: {
+    mc: lighten(@text[mc],25%);  /* Subtitle font-color */
+    fs: 70%;
+    fw: 400;
+}
+
+
+
+/*
+    -- @ Tables @ --
+*/
+#tables() {
+    .bc() {
+        bc: #e0e0e0;    // <th> & <td> border-color
+    }
+    .th() {
+        pa: 8px;        // <th> padding
+        bg: white;      // <th> background-color
+        tc: #9E9E9E;    // <th> text color
+        fw: 400;        // <th> font-weight
+    }
+    .td() {
+        pa: 8px;        // <td> padding
+        bg: white;      // <td> background-color
+        tc: @text[mc];  // <td> text color
+        fw: 400;        // <td> font-weight
+    }
+    .striped() {
+        even: #FFFFFF;  // Even lines background-color
+        odd: #F0F0F0;   // Odd liens background-color
+    }
+    .hover() {
+        bg: #F0F0F0;    // Hovered liens background-color (table.hovered)
+        tc: @text[mc];  // Hovered lines text color (only for table.hovered)
+    }
+}
+
+
+
+/*
+    -- @ Forms @ --
+*/
+// http://lesscss.org/features/#maps-feature
+#form() {
+    .mc() {
+        mc: @primary;
+    }
+    .input() {
+        bg: white;              /* Input : background-color */
+        fs: @text[fs] * (9/10); /* Input ~ font-size = @text[fs] (can be changed by custom value) */
+        lh: @text[fs] * 2.8;    /* Input ~ line-height (Submit buttons too) */
+        bc: #ddd;               /* Input border-color */
+        br: 2;
+    }
+    .submit() {
+        bg: @primary;           /* Submit input/button bg-color */
+    }
+    .prefix() {
+        bg: @primary;           /* Prefix bgColor */
+        pa: 0 1.2em;            /* Prefix padding */
+        tc: white;              /* Prefix text color */
+    }
+    .suffix() {
+        bg: @primary;           /* Suffix bgColor */
+        pa: 0 1.2em;            /* Suffix padding */
+        tc: white;              /* Suffix text color */
+    }
+}
+
+
+
+/*
+    -- @ Blockquotes @ --
+*/
+@blockquotes: {
+    bc: @primary;         /* Blockquote ~ border-left color */
+    footer-tc: @gray;     /* Blockquote ~ footer text-color */
+}
+
+
+
+/*
+    -- @ Alerts @ --
+*/
+@alert: {
+    br: 5; // Alerts border-radius (in pixel)
+    pa: 20px; // Alerts paddings
+    fs: 100%; // Alerts font-size
+    ma: 1em 0; // Alerts margins
+    btw: 10px; // Alerts border-top-width
+    /* primary */
+    pr-bc: @primary;
+    pr-tc: @primary;
+    /* success */
+    su-tc: #468847;
+    su-bc: #468847;
+    /* error */
+    er-tc: #b94a48;
+    er-bc: #b94a48;
+    /* warning */
+    wa-tc: #c09853;
+    wa-bc: #c09853;
+    /* info */
+    in-tc: #3a87ad;
+    in-bc: #3a87ad;
+}
+
+
+
+/*
+    -- @ Modals @ --
+*/
+@modals: {
+    zi: -2; // Modals default z-index
+    zi-active: 10; // Modals z-index when displayed
+}
+
+
+
+/*
+    -- @ Icons margin @ --
+*/
+@icon: {
+    mal: 8px;       // Icons margin-left
+    mar: 8px;       // Icons margin-right
+}
+
+
+
+/*
+    -- @ Helpers @ --
+*/
+@helper: {
+    pa: 1em;      /* Used for helpers @{css-prefix}-pa */
+    pat: 1em;     /* Used for helpers @{css-prefix}-pat */
+    par: 1em;     /* Used for helpers @{css-prefix}-par */
+    pab: 1em;     /* Used for helpers @{css-prefix}-pab */
+    pal: 1em;     /* Used for helpers @{css-prefix}-pal */
+    ma: 1em;      /* Used for helpers @{css-prefix}-ma */
+    mat: 1em;     /* Used for helpers @{css-prefix}-mat */
+    mar: 1em;     /* Used for helpers @{css-prefix}-mar */
+    mab: 1em;     /* Used for helpers @{css-prefix}-mab */
+    mal: 1em;     /* Used for helpers @{css-prefix}-mal */
+}
+
+
+
+/*
+    -- @ Lists @ --
+*/
+// Dotted lists
+@list-dot: {
+    pal: 15;       /* Padding-left applied onto the <li>, in pixels */
+    bg: @primary; /* Dot background-color */
+    wi: 6;        /* Dot width, in pixel */
+    he: 6;        /* Dot height, in pixel */
+    br: 100%;        /* Dot height, in pixel */
+    top: 9;       /* Dot top position, in pixel */
+    left: 0;      /* Dot left position, in pixel */
+}
+
+
+
+/*
+    -- @ Loader @ --
+*/
+@loader: {
+    bg: @primary;      /* Loader main color */
+    wi: 60;            /* Loader wrapper width (in pixels) */
+    he: 60;    /* Loader wrapper height (in pixels): recommended width = height */
+    speed: 1;          /* Loader speed animation (in seconds) */
+    spinner-bw: 2; /* Loader spinner: border-width */
+}

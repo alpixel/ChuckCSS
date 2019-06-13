@@ -1,0 +1,266 @@
+/*
+    == GENERATORS ==
+*/
+
+/*
+** Mixins list **
+    ._generateColorsClass
+    ._generatePaddingMarginClass
+    ._generateColumns
+    ._generatePercentWidth
+    ._generateFontSize
+    ._generateFontWeight
+    ._generateTextsAligments
+*/
+
+/* *****
+    @name: ._generateColorsClass
+    @description: Generate colors styles when using "@{css-prefix}-{color}" class on an element
+    @params: @aColors: array built in settings.less file
+***** */
+._generateColorsClass(@iterator:1) when(@iterator <= length(@aColors)) {
+    @colorName: extract(extract(@aColors, @iterator),1);
+    @colorValue: extract(extract(@aColors, @iterator),2);
+
+    /* titles */
+    h1,h2,h3,h4,h5,h6,
+    .h1-like,.h2-like,.h3-like,.h4-like,.h5-like,.h6-like {
+        &.@{css-prefix} {
+            &-@{colorName} {
+                color: @colorValue;
+            }
+
+            &-bg-@{colorName} {
+                color:white;
+                background-color: @colorValue;
+            }
+        }
+    }
+
+    /* elements */
+    p,div,section,aside,header,footer,article,main,nav,
+    td,th,span,i,a,strong,em,code,small {
+        &.@{css-prefix} {
+            &-@{colorName} {
+                color: @colorValue;
+            }
+
+            &-bg-@{colorName} {
+                color:white;
+                background-color: @colorValue;
+
+                a:not(.btn) {
+                    color:white;
+                }
+            }
+        }
+    }
+
+    /* lists */
+    li {
+        &.@{css-prefix} {
+            &-bg-@{colorName} {
+                background-color: @colorValue;
+                color:white;
+            }
+            &-@{colorName}:before {
+                color: @colorValue;
+            }
+        }
+    }
+
+
+    /* Links / Buttons */
+    a.btn,
+    button {
+        &.@{css-prefix}-bg-@{colorName} {
+            color: @links[btn-tc];
+            ._btn(@colorValue);
+            // border-color: @colorValue;
+
+            &:hover {
+                color: @links[btn-hover-tc];
+                // border-color: @colorValue;
+            }
+
+            /* Loading + outlined buttons */
+            &.@{css-prefix}-loading {
+                &:before {
+                    border-color: transparent @links[btn-hover-tc] @links[btn-hover-tc] @links[btn-hover-tc];
+                }
+            }
+        }
+    }
+
+    ._generateColorsClass((@iterator + 1));
+}
+._generateColorsClass; // Launch _generateColorsClass
+
+
+
+/* *****
+    @name: ._generatePaddingMarginClass
+    @description: Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
+***** */
+._generatePaddingMarginClass(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
+
+    .@{css-prefix} {
+        &-pa@{breakpoint} {
+            padding: @helper[pa];
+        }
+        &-pat@{breakpoint} {
+            padding-top: @helper[pat];
+        }
+        &-par@{breakpoint} {
+            padding-right: @helper[par];
+        }
+        &-pab@{breakpoint} {
+            padding-bottom: @helper[pab];
+        }
+        &-pal@{breakpoint} {
+            padding-left: @helper[pal];
+        }
+        &-pa-@{iterator}@{breakpoint} {
+            padding:unit(@iterator,px);
+        }
+        &-pat-@{iterator}@{breakpoint} {
+            padding-top:unit(@iterator,px);
+        }
+        &-par-@{iterator}@{breakpoint} {
+            padding-right:unit(@iterator,px);
+        }
+        &-pab-@{iterator}@{breakpoint} {
+            padding-bottom:unit(@iterator,px);
+        }
+        &-pal-@{iterator}@{breakpoint} {
+            padding-left:unit(@iterator,px);
+        }
+        &-ma@{breakpoint} {
+            margin: @helper[ma];
+        }
+        &-mat@{breakpoint} {
+            margin-top: @helper[mat];
+        }
+        &-mar@{breakpoint} {
+            margin-right: @helper[mar];
+        }
+        &-mab@{breakpoint} {
+            margin-bottom: @helper[mab];
+        }
+        &-mal@{breakpoint} {
+            margin-left: @helper[mal];
+        }
+        &-ma-@{iterator}@{breakpoint} {
+            margin:unit(@iterator,px);
+        }
+        &-mat-@{iterator}@{breakpoint} {
+            margin-top:unit(@iterator,px);
+        }
+        &-mar-@{iterator}@{breakpoint} {
+            margin-right:unit(@iterator,px);
+        }
+        &-mab-@{iterator}@{breakpoint} {
+            margin-bottom:unit(@iterator,px);
+        }
+        &-mal-@{iterator}@{breakpoint} {
+            margin-left:unit(@iterator,px);
+        }
+    }
+
+    ._generatePaddingMarginClass(@breakpoint, (@iterator + 5));
+}
+._generatePaddingMarginClass; // Launch _generatePaddingMarginClass
+._media-xs-up({._generatePaddingMarginClass(-s);});
+._media-s-up({._generatePaddingMarginClass(-m);});
+._media-m-up({._generatePaddingMarginClass(-l);});
+._media-l-up({._generatePaddingMarginClass(-xl);});
+
+
+
+/* *****
+    @name: ._generatePercentWidth
+    @description: Generate width for block helpers in %
+***** */
+._generatePercentWidth(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
+    .@{css-prefix} {
+        &-w-@{iterator}@{breakpoint} {
+            width:unit(@iterator,%);
+        }
+    }
+
+    ._generatePercentWidth(@breakpoint,@iterator + 1);
+}
+._generatePercentWidth; // Launch _generatePercentWidth
+._media-xs-up({._generatePercentWidth(-s);});
+._media-s-up({._generatePercentWidth(-m);});
+._media-m-up({._generatePercentWidth(-l);});
+._media-l-up({._generatePercentWidth(-xl);});
+
+
+/* *****
+    @name: ._generateFontSize
+    @description: Generate font-size from 0rem to 10rem;
+***** */
+._generateFontSize(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
+    .@{css-prefix} {
+        &-fs-@{iterator}@{breakpoint} {
+            font-size:unit(@iterator,rem) / 10;
+        }
+    }
+
+    ._generateFontSize(@breakpoint,@iterator + 1);
+}
+._generateFontSize; // Launch _generateFontSize
+._media-xs-up({._generateFontSize(-s);});
+._media-s-up({._generateFontSize(-m);});
+._media-m-up({._generateFontSize(-l);});
+._media-l-up({._generateFontSize(-xl);});
+
+
+
+/* *****
+    @name: ._generateFontWeight
+    @description: Generate font-weight from 100 to 900
+***** */
+._generateFontWeight(@breakpoint:~'',@iterator:100) when(@iterator <= 900) {
+    .@{css-prefix} {
+        &-fw-@{iterator}@{breakpoint} {
+            font-weight: @iterator;
+        }
+    }
+
+    ._generateFontWeight(@breakpoint,@iterator + 100);
+}
+._generateFontWeight; // Launch _generateFontWeight
+._media-xs-up({._generateFontWeight(-s);});
+._media-s-up({._generateFontWeight(-m);});
+._media-m-up({._generateFontWeight(-l);});
+._media-l-up({._generateFontWeight(-xl);});
+
+
+
+/* *****
+    @name: ._generateTextsAligments
+    @description: Generate texts aligments
+***** */
+._generateTextsAligments(@breakpoint:~'') {
+    .@{css-prefix} {
+        &-txt-center@{breakpoint} {
+            text-align: center;
+        }
+        &-txt-left@{breakpoint} {
+            text-align: left;
+        }
+        &-txt-right@{breakpoint} {
+            text-align: right;
+        }
+        &-txt-justify@{breakpoint} {
+            text-align: justify;
+        }
+    }
+}
+._generateTextsAligments; // Launch _generateFontWeight
+._media-xs-up({._generateTextsAligments(-s);});
+._media-s-up({._generateTextsAligments(-m);});
+._media-m-up({._generateTextsAligments(-l);});
+._media-l-up({._generateTextsAligments(-xl);});

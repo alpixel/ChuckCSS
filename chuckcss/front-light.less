@@ -1,0 +1,62 @@
+/*! ChuckCSS v4.0.0 */
+/*
+    == ChuckCSS Framework : Light version ==
+    @What: A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
+    @Author: Mickael SURREL, ALPIXEL Agency: Fresh & French Web Agency (https://www.alpixel.fr)
+    @Twitter: https://twitter.com/chuckcss
+    @Github: https://github.com/alpixel/ChuckCSS
+    @Licence: Under MIT Licence (https://opensource.org/licenses/mit-license.php)
+*/
+@charset "UTF-8";
+
+/*
+    Normalize
+*/
+@import "main/normalize";
+
+
+/*
+    settings.less
+*/
+@import (reference) "settings-light";
+
+/*
+    * /main/ - IMPORT main FILES *
+        • animations.less: keyframes file
+        • base.less: base file with <html>, <body> styles
+        • functions.less: main usefull less functions|mixins for integration project
+        • responsive.less: responsive less mixins
+*/
+@import (reference) "main/functions";
+@import (reference) "main/responsive";
+@import (optional) "main/animations";
+@import (optional) "main/base"; // <==== <html> & <body>
+
+/*
+    * /elements/ - IMPORTS FILES *
+*/
+@import (optional) "elements/titles";
+@import (optional) "elements/buttons";
+@import (optional) "elements/tables";
+@import (optional) "elements/lists";
+@import (optional) "elements/blockquotes";
+@import (optional) "elements/forms";
+@import (optional) "elements/images";
+@import (optional) "elements/loaders";
+
+/*
+    * /components/ - IMPORTS FILES *
+*/
+@import (optional) "components/alerts";
+@import (optional) "components/modals";
+
+/*
+    * IMPORT GENERATOR & HELPERS FILEs *
+    • generator.less: Engine generator for colors, grids, icons...
+    • helpers.less: text and blocks helpers
+    • icons.less: icons tools
+    /!\ Import this files after elements and others components
+*/
+@import (optional) "main/helpers";
+@import (optional) "main/icons";
+@import (optional) "main/generator-light";
