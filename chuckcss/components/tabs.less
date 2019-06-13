@@ -17,18 +17,18 @@
     ._reset;
     display:flex;
     flex-wrap:wrap;
-    line-height:@text-lh*1.5;
+    line-height: @text[lh]*1.5;
 
 
     &.@{css-prefix} {
         &-underlined {
-            border-bottom:1px solid @gray-li;
+            border-bottom:1px solid lighten(@gray, 10%);
         }
         &-fat {
-            line-height:@text-lh*2.5;
+            line-height: @text[lh]*2.5;
         }
         &-thin {
-            line-height:@text-lh;
+            line-height: @text[lh];
         }
         &-align {
             &-center {
@@ -50,7 +50,7 @@
             }
         }
         &-bordered {
-            border-bottom:1px solid @gray-li;
+            border-bottom:1px solid lighten(@gray, 10%);
 
             &>li {
 
@@ -81,7 +81,7 @@
                         &.active,
                         &:hover {
                             a:not(.btn) {
-                                border-left-color:@primary;
+                                border-left-color: @primary;
                             }
                         }
                     }
@@ -90,7 +90,7 @@
                     }
 
                     a:not(.btn) {
-                        border:1px solid @gray-li;
+                        border:1px solid lighten(@gray, 10%);
                         border-radius:3px;
                     }
 
@@ -112,7 +112,7 @@
                     &.active,
                     &:hover {
                         a:not(.btn) {
-                            border-left-color:@gray-li;
+                            border-left-color: lighten(@gray, 10%);
                         }
                     }
 
@@ -145,14 +145,14 @@
 
                 a:not(.btn) {
                     top:0px;
-                    border:1px solid @gray-li;
+                    border:1px solid lighten(@gray, 10%);
                     border-right-width:0px;
                 }
 
                 &.active,
                 &:hover {
                     a:not(.btn) {
-                        background-color:@primary;
+                        background-color: @primary;
                         color:white;
                         border-top:1px solid @primary;
                         border-bottom:1px solid @primary;
@@ -188,8 +188,8 @@
         &:hover,
         &.active {
             a:not(.btn) {
-                color:@primary;
-                border-bottom-color:@primary;
+                color: @primary;
+                border-bottom-color: @primary;
             }
         }
 
@@ -390,7 +390,7 @@
 
             &-fat,
             &-thin {
-                line-height:@text-lh*1.5;
+                line-height: @text[lh]*1.5;
             }
             &-bordered {
                 border-bottom-width:0px;
@@ -400,7 +400,7 @@
                     &.active {
                         a:not(.btn) {
                             border-width:1px;
-                            border-color:@primary;
+                            border-color: @primary;
                             border-style:solid;
                             border-radius:0px;
                         }

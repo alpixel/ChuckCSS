@@ -14,13 +14,13 @@
 */
 
 /* *****
-    @name : ._generateColorsClass
-    @description : Generate colors styles when using "@{css-prefix}-{color}" class on an element
-    @params : @aColors : array built in settings.less file
+    @name: ._generateColorsClass
+    @description: Generate colors styles when using "@{css-prefix}-{color}" class on an element
+    @params: @aColors: array built in settings.less file
 ***** */
 ._generateColorsClass(@iterator:1) when(@iterator <= length(@aColors)) {
     @colorName: extract(extract(@aColors, @iterator),1);
-    @colorValue : extract(extract(@aColors, @iterator),2);
+    @colorValue: extract(extract(@aColors, @iterator),2);
 
     /* titles */
     h1,h2,h3,h4,h5,h6,
@@ -32,7 +32,7 @@
 
             &-bg-@{colorName} {
                 color:white;
-                background-color:@colorValue;
+                background-color: @colorValue;
             }
         }
     }
@@ -47,7 +47,7 @@
 
             &-bg-@{colorName} {
                 color:white;
-                background-color:@colorValue;
+                background-color: @colorValue;
 
                 a:not(.btn) {
                     color:white;
@@ -60,7 +60,7 @@
     li {
         &.@{css-prefix} {
             &-bg-@{colorName} {
-                background-color:@colorValue;
+                background-color: @colorValue;
                 color:white;
             }
             &-@{colorName}:before {
@@ -76,11 +76,11 @@
 
         &.@{css-prefix} {
             &-quoted:before {
-                color:@colorValue;
+                color: @colorValue;
             }
             &-reverse {
                 border-left-width:0px;
-                border-right-color:@colorValue;
+                border-right-color: @colorValue;
             }
         }
     }
@@ -91,7 +91,7 @@
             thead,
             tfoot {
                 td,th {
-                    background-color:@colorValue;
+                    background-color: @colorValue;
                     color:white;
                     border-bottom-color:darken(@colorValue,20%);
                 }
@@ -119,7 +119,7 @@
 
         tr.@{css-prefix}-bg-@{colorName} {
             td {
-                background-color:@colorValue;
+                background-color: @colorValue;
                 color:white;
                 border-bottom:0;
             }
@@ -132,27 +132,27 @@
     a.btn,
     button {
         &.@{css-prefix}-bg-@{colorName} {
-            color:@links-btn-tc;
+            color: @links[btn-tc];
             ._btn(@colorValue);
-            // border-color:@colorValue;
+            // border-color: @colorValue;
 
             &:hover {
-                color:@links-btn-hover-tc;
-                // border-color:@colorValue;
+                color: @links[btn-hover-tc];
+                // border-color: @colorValue;
             }
 
             /* Loading + outlined buttons */
             &.@{css-prefix}-loading {
                 &:before {
-                    border-color: transparent white white white
+                    border-color: transparent @links[btn-hover-tc] @links[btn-hover-tc] @links[btn-hover-tc];
                 }
             }
 
             /* Outlined buttons / links */
             &.@{css-prefix}-outlined {
-                color:@colorValue;
+                color: @colorValue;
                 ._btn(transparent,transparent);
-                border:unit(@links-btn-bw,px) solid @colorValue;
+                border:unit(@links[btn-bw],px) solid @colorValue;
 
                 &:hover {
                     border-color:darken(@colorValue,20%);
@@ -178,21 +178,21 @@
         .form {
             &-checkbox:not(.error) input {
                 &:focus {
-                    border-color:@input-bc;
+                    border-color: #form.input[bc];
                 }
                 &:checked {
-                    background-color:@colorValue;
-                    border-color:@colorValue;
+                    background-color: @colorValue;
+                    border-color: @colorValue;
                 }
             }
 
             &-radio:not(.error) input {
                 &:focus {
-                    border-color:@input-bc;
+                    border-color: #form.input[bc];
                 }
                 &:checked {
                     &:before {
-                        background-color:@colorValue;
+                        background-color: @colorValue;
                     }
                 }
             }
@@ -200,7 +200,7 @@
 
             &-ps {
                 span {
-                    background-color:@colorValue;
+                    background-color: @colorValue;
                 }
             }
         }
@@ -210,7 +210,7 @@
         textarea,
         input {
             &:focus {
-                border-color:@colorValue;
+                border-color: @colorValue;
             }
         }
 
@@ -238,7 +238,7 @@
                     &.active,
                     &:hover {
                         a:not(.btn) {
-                            background-color:@colorValue;
+                            background-color: @colorValue;
                             border-top:1px solid @colorValue;
                             border-bottom:1px solid @colorValue;
                             color:white;
@@ -254,8 +254,8 @@
             &:hover,
             &.active {
                 a:not(.btn) {
-                    color:@colorValue;
-                    border-bottom-color:@colorValue;
+                    color: @colorValue;
+                    border-bottom-color: @colorValue;
                 }
             }
         }
@@ -269,7 +269,7 @@
                         &:hover,
                         &.active {
                             a:not(.btn) {
-                                border-color:@colorValue;
+                                border-color: @colorValue;
                             }
                         }
                     }
@@ -298,26 +298,26 @@
 
 
 /* *****
-    @name : ._generatePaddingMarginClass
-    @description : Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
+    @name: ._generatePaddingMarginClass
+    @description: Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
 ***** */
 ._generatePaddingMarginClass(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
 
     .@{css-prefix} {
         &-pa@{breakpoint} {
-            padding:@helper-pa;
+            padding: @helper[pa];
         }
         &-pat@{breakpoint} {
-            padding-top:@helper-pat;
+            padding-top: @helper[pat];
         }
         &-par@{breakpoint} {
-            padding-right:@helper-par;
+            padding-right: @helper[par];
         }
         &-pab@{breakpoint} {
-            padding-bottom:@helper-pab;
+            padding-bottom: @helper[pab];
         }
         &-pal@{breakpoint} {
-            padding-left:@helper-pal;
+            padding-left: @helper[pal];
         }
         &-pa-@{iterator}@{breakpoint} {
             padding:unit(@iterator,px);
@@ -335,19 +335,19 @@
             padding-left:unit(@iterator,px);
         }
         &-ma@{breakpoint} {
-            margin:@helper-ma;
+            margin: @helper[ma];
         }
         &-mat@{breakpoint} {
-            margin-top:@helper-mat;
+            margin-top: @helper[mat];
         }
         &-mar@{breakpoint} {
-            margin-right:@helper-mar;
+            margin-right: @helper[mar];
         }
         &-mab@{breakpoint} {
-            margin-bottom:@helper-mab;
+            margin-bottom: @helper[mab];
         }
         &-mal@{breakpoint} {
-            margin-left:@helper-mal;
+            margin-left: @helper[mal];
         }
         &-ma-@{iterator}@{breakpoint} {
             margin:unit(@iterator,px);
@@ -376,8 +376,8 @@
 
 
 /* *****
-    @name : ._generateColumns
-    @description : Generate columns width in flexbox parent
+    @name: ._generateColumns
+    @description: Generate columns width in flexbox parent
 ***** */
 ._generateColumns(@breakpoint:~'',@iterator:0) when(@iterator <= @cols-total) {
 
@@ -398,8 +398,8 @@
 
 
 /* *****
-    @name : ._generatePercentWidth
-    @description : Generate width for block helpers in %
+    @name: ._generatePercentWidth
+    @description: Generate width for block helpers in %
 ***** */
 ._generatePercentWidth(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
     .@{css-prefix} {
@@ -418,8 +418,8 @@
 
 
 /* *****
-    @name : ._generateFontSize
-    @description : Generate font-size from 0rem to 10rem;
+    @name: ._generateFontSize
+    @description: Generate font-size from 0rem to 10rem;
 ***** */
 ._generateFontSize(@breakpoint:~'',@iterator:0) when(@iterator <= 100) {
     .@{css-prefix} {
@@ -439,13 +439,13 @@
 
 
 /* *****
-    @name : ._generateFontWeight
-    @description : Generate font-weight from 100 to 900
+    @name: ._generateFontWeight
+    @description: Generate font-weight from 100 to 900
 ***** */
 ._generateFontWeight(@breakpoint:~'',@iterator:100) when(@iterator <= 900) {
     .@{css-prefix} {
         &-fw-@{iterator}@{breakpoint} {
-            font-weight:@iterator;
+            font-weight: @iterator;
         }
     }
 
@@ -460,8 +460,8 @@
 
 
 /* *****
-    @name : ._generateTextsAligments
-    @description : Generate texts aligments
+    @name: ._generateTextsAligments
+    @description: Generate texts aligments
 ***** */
 ._generateTextsAligments(@breakpoint:~'') {
     .@{css-prefix} {

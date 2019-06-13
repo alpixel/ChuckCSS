@@ -1,12 +1,12 @@
 @charset "UTF-8";
-/*! ChuckCSS v3.6.1 */
+/*! ChuckCSS v4.0.0 */
 /*
     == ChuckCSS Framework ==
-    @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
-    @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (https://www.alpixel.fr)
-    @Twitter : https://twitter.com/chuckcss
-    @Github : https://github.com/alpixel/ChuckCSS
-    @Licence : Under MIT Licence (https://opensource.org/licenses/mit-license.php)
+    @What: A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
+    @Author: Mickael SURREL, ALPIXEL Agency: Fresh & French Web Agency (https://www.alpixel.fr)
+    @Twitter: https://twitter.com/chuckcss
+    @Github: https://github.com/alpixel/ChuckCSS
+    @Licence: Under MIT Licence (https://opensource.org/licenses/mit-license.php)
 */
 /*
     Normalize
@@ -123,7 +123,7 @@ small {
  */
 sub,
 sup {
-  font-size: 75%;
+  font-size: 13px;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -325,17 +325,17 @@ template {
 */
 /*
     * /main/ - IMPORT main FILES *
-        • animations.less : keyframes file
-        • base.less : base file with <html>, <body> styles
-        • functions.less : main usefull less functions|mixins for integration project
-        • responsive.less : responsive less mixins
+        • animations.less: keyframes file
+        • base.less: base file with <html>, <body> styles
+        • functions.less: main usefull less functions|mixins for integration project
+        • responsive.less: responsive less mixins
 */
 /*
     == ANIMATIONS ==
 */
 /* *****
-    @name : ._loading-spin
-    @description : animate loading buttons
+    @name: ._loading-spin
+    @description: animate loading buttons
 ***** */
 @-webkit-keyframes loading-spin {
   from {
@@ -366,32 +366,8 @@ template {
   }
 }
 /* *****
-    @name : loaderDots
-    @description : animate dots loader
-***** */
-@-webkit-keyframes loaderDots {
-  0%,
-  39%,
-  100% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-}
-@keyframes loaderDots {
-  0%,
-  39%,
-  100% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-}
-/* *****
-    @name : loaderSpinner
-    @description : animate spinner loader
+    @name: loaderSpinner
+    @description: animate spinner loader
 ***** */
 @-webkit-keyframes loaderSpinner {
   0% {
@@ -422,72 +398,36 @@ template {
   }
 }
 /* *****
-    @name : loaderCaterpillar
-    @description : animate caterpillar loader
+    @name: loaderSonar
+    @description: animate sonar loader
 ***** */
-@-webkit-keyframes loaderCaterpillar {
+@-webkit-keyframes loaderSonar {
   0% {
-    left: 100px;
-    top: 0;
-  }
-  80% {
-    left: 0;
-    top: 0;
-  }
-  85% {
-    left: 0;
-    top: -20px;
-    width: 20px;
-    height: 20px;
-  }
-  90% {
-    width: 40px;
-    height: 15px;
-  }
-  95% {
-    left: 100px;
-    top: -20px;
-    width: 20px;
-    height: 20px;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
   100% {
-    left: 100px;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
   }
 }
-@keyframes loaderCaterpillar {
+@keyframes loaderSonar {
   0% {
-    left: 100px;
-    top: 0;
-  }
-  80% {
-    left: 0;
-    top: 0;
-  }
-  85% {
-    left: 0;
-    top: -20px;
-    width: 20px;
-    height: 20px;
-  }
-  90% {
-    width: 40px;
-    height: 15px;
-  }
-  95% {
-    left: 100px;
-    top: -20px;
-    width: 20px;
-    height: 20px;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
   100% {
-    left: 100px;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
   }
 }
 /* *****
-    @name : checkdio
-    @description : animate radio & checkox inputs when checked
+    @name: checkdio
+    @description: animate radio & checkox inputs when checked
 ***** */
 @-webkit-keyframes checkdio {
   0% {
@@ -496,21 +436,21 @@ template {
     /* X only */
     -webkit-transform: scale(3);
             transform: scale(3);
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
   }
   10% {
     /* X != Y */
     /* X only */
     -webkit-transform: scale(2.5);
             transform: scale(2.5);
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
   }
   90% {
     /* X != Y */
     /* X only */
     -webkit-transform: scale(1);
             transform: scale(1);
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
   }
   100% {
     -webkit-transform: none;
@@ -524,21 +464,21 @@ template {
     /* X only */
     -webkit-transform: scale(3);
             transform: scale(3);
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
   }
   10% {
     /* X != Y */
     /* X only */
     -webkit-transform: scale(2.5);
             transform: scale(2.5);
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
   }
   90% {
     /* X != Y */
     /* X only */
     -webkit-transform: scale(1);
             transform: scale(1);
-    /* X & Y empty : default value */
+    /* X & Y empty: default value */
   }
   100% {
     -webkit-transform: none;
@@ -546,8 +486,8 @@ template {
   }
 }
 /* *****
-    @name : showLazyImg
-    @description : Animate img and backstretch when elements are loaded with lozad
+    @name: showLazyImg
+    @description: Animate img and backstretch when elements are loaded with lozad
 ***** */
 img[data-loaded="true"],
 [data-loaded="true"] img {
@@ -575,7 +515,7 @@ img[data-loaded="true"],
   }
 }
 /*
-    == BASE : Define <html>, <body> and selection styles ==
+    == BASE: Define <html>, <body> and selection styles ==
 */
 html {
   font-size: 62.5%;
@@ -646,7 +586,7 @@ ol {
   border: 0;
 }
 li {
-  list-style: none;
+  list-style: disc inside;
 }
 /* define text selection */
 ::selection {
@@ -661,87 +601,219 @@ li {
 /** TITLES **/
 /* ******** */
 /* *****
-    @name : ._generateTitles
-    @description : Generate title <hn> styles
+    @name: ._generateTitles
+    @description: Generate title <hn> styles
 ***** */
 h1,
 .h1-like {
-  font-size: 3rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
   color: #3a3a3a;
-}
-h1 small,
-.h1-like small {
+  font-size: 2rem;
+  line-height: 1.5;
   font-weight: 400;
-  color: #7a7a7a;
-  font-size: 70%;
+}
+@media screen and (min-width: 360px) {
+  h1,
+  .h1-like {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1,
+  .h1-like {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  h1,
+  .h1-like {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1,
+  .h1-like {
+    font-size: 3rem;
+  }
 }
 h2,
 .h2-like {
-  font-size: 2.7rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
   color: #3a3a3a;
-}
-h2 small,
-.h2-like small {
+  font-size: 1.8rem;
+  line-height: 1.5;
   font-weight: 400;
-  color: #7a7a7a;
-  font-size: 70%;
+}
+@media screen and (min-width: 360px) {
+  h2,
+  .h2-like {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h2,
+  .h2-like {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  h2,
+  .h2-like {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2,
+  .h2-like {
+    font-size: 2.7rem;
+  }
 }
 h3,
 .h3-like {
-  font-size: 2.3rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
   color: #3a3a3a;
-}
-h3 small,
-.h3-like small {
+  font-size: 1.6rem;
+  line-height: 1.5;
   font-weight: 400;
-  color: #7a7a7a;
-  font-size: 70%;
+}
+@media screen and (min-width: 360px) {
+  h3,
+  .h3-like {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3,
+  .h3-like {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  h3,
+  .h3-like {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h3,
+  .h3-like {
+    font-size: 2.3rem;
+  }
 }
 h4,
 .h4-like {
-  font-size: 2rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
   color: #3a3a3a;
-}
-h4 small,
-.h4-like small {
+  font-size: 1.5rem;
+  line-height: 1.5;
   font-weight: 400;
-  color: #7a7a7a;
-  font-size: 70%;
+}
+@media screen and (min-width: 360px) {
+  h4,
+  .h4-like {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h4,
+  .h4-like {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  h4,
+  .h4-like {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h4,
+  .h4-like {
+    font-size: 2rem;
+  }
 }
 h5,
 .h5-like {
-  font-size: 1.9rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
   color: #3a3a3a;
-}
-h5 small,
-.h5-like small {
+  font-size: 1.4rem;
+  line-height: 1.5;
   font-weight: 400;
-  color: #7a7a7a;
-  font-size: 70%;
+}
+@media screen and (min-width: 360px) {
+  h5,
+  .h5-like {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h5,
+  .h5-like {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  h5,
+  .h5-like {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h5,
+  .h5-like {
+    font-size: 1.9rem;
+  }
 }
 h6,
 .h6-like {
-  font-size: 1.7rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
   color: #3a3a3a;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
+@media screen and (min-width: 360px) {
+  h6,
+  .h6-like {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h6,
+  .h6-like {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  h6,
+  .h6-like {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h6,
+  .h6-like {
+    font-size: 1.7rem;
+  }
+}
+h1,
+.h1-like,
+h2,
+.h2-like,
+h3,
+.h3-like,
+h4,
+.h4-like,
+h5,
+.h5-like,
+h6,
+.h6-like {
+  margin: 0;
+}
+h1 small,
+.h1-like small,
+h2 small,
+.h2-like small,
+h3 small,
+.h3-like small,
+h4 small,
+.h4-like small,
+h5 small,
+.h5-like small,
 h6 small,
 .h6-like small {
   font-weight: 400;
@@ -756,7 +828,7 @@ h6 small,
     - General links & buttons styles.
 
     /* - - -
-    /!\ : you can override ._btn bg-color in functions.less : ._btn(@bg, @bgHover); /!\
+    /!\: you can override ._btn bg-color in functions.less: ._btn(@bg, @bgHover); /!\
     /* - - -
 
 */
@@ -785,7 +857,7 @@ button {
   cursor: pointer;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
-  /* hover : default, change border-color */
+  /* hover: default, change border-color */
 }
 a.btn:focus,
 button:focus,
@@ -889,7 +961,7 @@ table {
   margin: 1em 0;
   width: 100%;
   /* headers & footer default style */
-  /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
+  /* note: "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
   /* Cells default style */
 }
 table tfoot td,
@@ -921,9 +993,9 @@ table tbody td {
 }
 table.cc {
   /* Layout fixed tables */
-  /* Striped tables : horizontal */
-  /* Striped tables : vertical */
-  /* hovered : highlight the hovered line */
+  /* Striped tables: horizontal */
+  /* Striped tables: vertical */
+  /* hovered: highlight the hovered line */
   /* Top alignment cells */
   /* Bordered table */
   /* Unbordered tables */
@@ -932,19 +1004,19 @@ table.cc-equal-cols {
   table-layout: fixed;
 }
 table.cc-striped tbody tr:nth-child(2n+1) td {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 table.cc-striped tbody tr:nth-child(2n) td {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
 }
 table.cc-striped-col tbody tr td:nth-child(2n+1) {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 table.cc-striped-col tbody tr td:nth-child(2n) {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
 }
 table.cc-hovered tbody tr:hover td:not([class^="cc-bg"]) {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
   color: #3a3a3a;
 }
 table.cc-valign-top tbody td {
@@ -1102,7 +1174,7 @@ table.cc-unbordered thead tr th {
 /* ******* */
 /** LISTS **/
 /* ******* */
-/* Specific for Drupal : reset list style margin, padding & border */
+/* Specific for Drupal: reset list style margin, padding & border */
 .item-list ul li {
   padding: 0;
   margin: 0;
@@ -1185,7 +1257,7 @@ blockquote {
   /* Footer into Blockquote */
 }
 blockquote.cc {
-  /* Reverse blockquote : right alignment */
+  /* Reverse blockquote: right alignment */
 }
 blockquote.cc-reverse {
   text-align: right;
@@ -1227,7 +1299,7 @@ form {
 }
 form .form {
   /*
-            Parent element : containe label + input, textarea, select, etc...
+            Parent element: containe label + input, textarea, select, etc...
 
             <div class="form-item">
                 <label>...</label>
@@ -1357,7 +1429,7 @@ form .form-item.error textarea {
           box-shadow: none;
   background-color: #fbdddd;
   border-color: #f6afaf;
-  color: #961010;
+  color: #7f0e0e;
   /* placeholder color */
 }
 form .form-item.error input:not([type="submit"]):focus,
@@ -1592,7 +1664,7 @@ form input {
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   line-height: inherit;
-  /* number : fix right padding */
+  /* number: fix right padding */
   /* disabled element */
   /* Reset type file input */
   /* Placeholder color */
@@ -1739,150 +1811,28 @@ img.cc-shadowed {
 /* ******** */
 /** LOADER **/
 /* ******** */
-/* *****
-    @name : ._generateDotsLoader
-    @description : Generate dots loader
-***** */
-.cc-loader .dot.dot-2 {
-  /* Not perspective */
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-2:before {
-  -webkit-animation-delay: 0.08333333333333333s;
-          animation-delay: 0.08333333333333333s;
-}
-.cc-loader .dot.dot-3 {
-  /* Not perspective */
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-3:before {
-  -webkit-animation-delay: 0.16666666666666666s;
-          animation-delay: 0.16666666666666666s;
-}
-.cc-loader .dot.dot-4 {
-  /* Not perspective */
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-4:before {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-}
-.cc-loader .dot.dot-5 {
-  /* Not perspective */
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-5:before {
-  -webkit-animation-delay: 0.3333333333333333s;
-          animation-delay: 0.3333333333333333s;
-}
-.cc-loader .dot.dot-6 {
-  /* Not perspective */
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-6:before {
-  -webkit-animation-delay: 0.41666666666666663s;
-          animation-delay: 0.41666666666666663s;
-}
-.cc-loader .dot.dot-7 {
-  /* Not perspective */
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-7:before {
-  -webkit-animation-delay: 0.49999999999999994s;
-          animation-delay: 0.49999999999999994s;
-}
-.cc-loader .dot.dot-8 {
-  /* Not perspective */
-  -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-8:before {
-  -webkit-animation-delay: 0.5833333333333333s;
-          animation-delay: 0.5833333333333333s;
-}
-.cc-loader .dot.dot-9 {
-  /* Not perspective */
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-9:before {
-  -webkit-animation-delay: 0.6666666666666666s;
-          animation-delay: 0.6666666666666666s;
-}
-.cc-loader .dot.dot-10 {
-  /* Not perspective */
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-10:before {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-.cc-loader .dot.dot-11 {
-  /* Not perspective */
-  -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-11:before {
-  -webkit-animation-delay: 0.8333333333333334s;
-          animation-delay: 0.8333333333333334s;
-}
-.cc-loader .dot.dot-12 {
-  /* Not perspective */
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
-  /* Perspective */
-}
-.cc-loader .dot.dot-12:before {
-  -webkit-animation-delay: 0.9166666666666667s;
-          animation-delay: 0.9166666666666667s;
-}
 .cc-loader {
-  margin: 50px auto;
-  width: 60px;
-  height: 60px;
-  position: relative;
-}
-.cc-loader .dot {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  left: 0;
   top: 0;
-}
-.cc-loader .dot:before {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 15%;
-  height: 15%;
-  background-color: #29b7e1;
-  border-radius: 100%;
-  -webkit-animation: loaderDots 1s infinite ease-in-out both;
-          animation: loaderDots 1s infinite ease-in-out both;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .cc-loader .spinner {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border-color: #29b7e1 transparent transparent transparent;
   border-width: 2px;
@@ -1918,40 +1868,39 @@ img.cc-shadowed {
   -webkit-animation: loaderSpinner 0.75s infinite ease-in-out;
           animation: loaderSpinner 0.75s infinite ease-in-out;
 }
-.cc-loader.caterpillar {
-  height: 20px;
-  width: 100px;
+.cc-loader .sonar {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.cc-loader.caterpillar .chain {
-  width: 20px;
-  height: 20px;
-  background-color: #29b7e1;
-  border-radius: 50%;
+.cc-loader .sonar:after,
+.cc-loader .sonar:before {
+  content: ' ';
+  display: block;
   position: absolute;
+  border-color: #29b7e1;
+  border-width: 2px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 100%;
+  -webkit-animation: loaderSonar 1s infinite cubic-bezier(0, 0.2, 0.8, 1);
+          animation: loaderSonar 1s infinite cubic-bezier(0, 0.2, 0.8, 1);
 }
-.cc-loader.caterpillar .chain-1 {
-  -webkit-animation: loaderCaterpillar 2s linear infinite;
-          animation: loaderCaterpillar 2s linear infinite;
-}
-.cc-loader.caterpillar .chain-2 {
-  left: 20px;
-  -webkit-animation: loaderCaterpillar 2s linear infinite -0.4s;
-          animation: loaderCaterpillar 2s linear infinite -0.4s;
-}
-.cc-loader.caterpillar .chain-3 {
-  left: 40px;
-  -webkit-animation: loaderCaterpillar 2s linear infinite -0.8s;
-          animation: loaderCaterpillar 2s linear infinite -0.8s;
-}
-.cc-loader.caterpillar .chain-4 {
-  left: 60px;
-  -webkit-animation: loaderCaterpillar 2s linear infinite -1.2s;
-          animation: loaderCaterpillar 2s linear infinite -1.2s;
-}
-.cc-loader.caterpillar .chain-5 {
-  left: 80px;
-  -webkit-animation: loaderCaterpillar 2s linear infinite -1.6s;
-          animation: loaderCaterpillar 2s linear infinite -1.6s;
+.cc-loader .sonar:after {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
 }
 /*
     * /components/ - IMPORTS FILES *
@@ -1962,7 +1911,7 @@ img.cc-shadowed {
 /* ********************* */
 /*
     - General alerts styles
-    - {type} : warning, error, success, info
+    - {type}: warning, error, success, info
 
     <div class="alert alert-{type}">
         <button data-close-alert role="button"><i class="fas fa-times"></i></button>
@@ -1972,8 +1921,7 @@ img.cc-shadowed {
         </div>
     </div>
 */
-.alert,
-.message {
+.alert {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1990,34 +1938,28 @@ img.cc-shadowed {
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   /* Alerts types */
 }
-.alert > div,
-.message > div {
+.alert > div {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 20px;
 }
-.alert > div a,
-.message > div a {
+.alert > div a {
   text-decoration: underline;
 }
-.alert > div ul,
-.message > div ul {
+.alert > div ul {
   padding-left: 20px;
   margin: 1em auto;
 }
-.alert > div ul li,
-.message > div ul li {
+.alert > div ul li {
   list-style-position: inside;
 }
-.alert > i,
-.message > i {
+.alert > i {
   padding: 20px;
   font-size: 3rem;
 }
-.alert [data-close-alert],
-.message [data-close-alert] {
+.alert [data-close-alert] {
   border: 0;
   cursor: pointer;
   padding: 20px;
@@ -2030,25 +1972,21 @@ img.cc-shadowed {
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
-.alert [data-close-alert]:hover,
-.message [data-close-alert]:hover {
+.alert [data-close-alert]:hover {
   opacity: 1;
 }
-.alert [data-close-alert] i,
-.message [data-close-alert] i {
+.alert [data-close-alert] i {
   padding: 0;
   margin: 0;
   border: 0;
 }
-.alert [data-close-alert] i:before,
-.message [data-close-alert] i:before {
+.alert [data-close-alert] i:before {
   padding: 0;
   margin: 0;
   border: 0;
   font-size: 2.4rem;
 }
-.alert-primary,
-.message-primary {
+.alert-primary {
   border-top: 10px solid #29b7e1;
   color: #29b7e1;
 }
@@ -2056,24 +1994,14 @@ img.cc-shadowed {
 .alert-primary div,
 .alert-primary ul,
 .alert-primary [data-close-alert],
-.alert-primary a,
-.message-primary p,
-.message-primary div,
-.message-primary ul,
-.message-primary [data-close-alert],
-.message-primary a {
+.alert-primary a {
   color: #29b7e1;
 }
 .alert-primary p.btn,
 .alert-primary div.btn,
 .alert-primary ul.btn,
 .alert-primary [data-close-alert].btn,
-.alert-primary a.btn,
-.message-primary p.btn,
-.message-primary div.btn,
-.message-primary ul.btn,
-.message-primary [data-close-alert].btn,
-.message-primary a.btn {
+.alert-primary a.btn {
   text-decoration: none;
   background-color: #29b7e1;
   border-color: #29b7e1;
@@ -2086,17 +2014,11 @@ img.cc-shadowed {
 .alert-primary div.btn:hover,
 .alert-primary ul.btn:hover,
 .alert-primary [data-close-alert].btn:hover,
-.alert-primary a.btn:hover,
-.message-primary p.btn:hover,
-.message-primary div.btn:hover,
-.message-primary ul.btn:hover,
-.message-primary [data-close-alert].btn:hover,
-.message-primary a.btn:hover {
+.alert-primary a.btn:hover {
   background-color: #1a98bd;
   border-color: #1a98bd;
 }
-.alert-info,
-.message-info {
+.alert-info {
   border-top: 10px solid #3a87ad;
   color: #3a87ad;
 }
@@ -2104,24 +2026,14 @@ img.cc-shadowed {
 .alert-info div,
 .alert-info ul,
 .alert-info [data-close-alert],
-.alert-info a,
-.message-info p,
-.message-info div,
-.message-info ul,
-.message-info [data-close-alert],
-.message-info a {
+.alert-info a {
   color: #3a87ad;
 }
 .alert-info p.btn,
 .alert-info div.btn,
 .alert-info ul.btn,
 .alert-info [data-close-alert].btn,
-.alert-info a.btn,
-.message-info p.btn,
-.message-info div.btn,
-.message-info ul.btn,
-.message-info [data-close-alert].btn,
-.message-info a.btn {
+.alert-info a.btn {
   text-decoration: none;
   background-color: #3a87ad;
   border-color: #3a87ad;
@@ -2134,17 +2046,11 @@ img.cc-shadowed {
 .alert-info div.btn:hover,
 .alert-info ul.btn:hover,
 .alert-info [data-close-alert].btn:hover,
-.alert-info a.btn:hover,
-.message-info p.btn:hover,
-.message-info div.btn:hover,
-.message-info ul.btn:hover,
-.message-info [data-close-alert].btn:hover,
-.message-info a.btn:hover {
+.alert-info a.btn:hover {
   background-color: #2d6987;
   border-color: #2d6987;
 }
-.alert-warning,
-.message-warning {
+.alert-warning {
   border-top: 10px solid #c09853;
   color: #c09853;
 }
@@ -2152,24 +2058,14 @@ img.cc-shadowed {
 .alert-warning div,
 .alert-warning ul,
 .alert-warning [data-close-alert],
-.alert-warning a,
-.message-warning p,
-.message-warning div,
-.message-warning ul,
-.message-warning [data-close-alert],
-.message-warning a {
+.alert-warning a {
   color: #c09853;
 }
 .alert-warning p.btn,
 .alert-warning div.btn,
 .alert-warning ul.btn,
 .alert-warning [data-close-alert].btn,
-.alert-warning a.btn,
-.message-warning p.btn,
-.message-warning div.btn,
-.message-warning ul.btn,
-.message-warning [data-close-alert].btn,
-.message-warning a.btn {
+.alert-warning a.btn {
   text-decoration: none;
   background-color: #c09853;
   border-color: #c09853;
@@ -2182,17 +2078,11 @@ img.cc-shadowed {
 .alert-warning div.btn:hover,
 .alert-warning ul.btn:hover,
 .alert-warning [data-close-alert].btn:hover,
-.alert-warning a.btn:hover,
-.message-warning p.btn:hover,
-.message-warning div.btn:hover,
-.message-warning ul.btn:hover,
-.message-warning [data-close-alert].btn:hover,
-.message-warning a.btn:hover {
+.alert-warning a.btn:hover {
   background-color: #a47e3c;
   border-color: #a47e3c;
 }
-.alert-error,
-.message-error {
+.alert-error {
   border-top: 10px solid #b94a48;
   color: #b94a48;
 }
@@ -2200,24 +2090,14 @@ img.cc-shadowed {
 .alert-error div,
 .alert-error ul,
 .alert-error [data-close-alert],
-.alert-error a,
-.message-error p,
-.message-error div,
-.message-error ul,
-.message-error [data-close-alert],
-.message-error a {
+.alert-error a {
   color: #b94a48;
 }
 .alert-error p.btn,
 .alert-error div.btn,
 .alert-error ul.btn,
 .alert-error [data-close-alert].btn,
-.alert-error a.btn,
-.message-error p.btn,
-.message-error div.btn,
-.message-error ul.btn,
-.message-error [data-close-alert].btn,
-.message-error a.btn {
+.alert-error a.btn {
   text-decoration: none;
   background-color: #b94a48;
   border-color: #b94a48;
@@ -2230,17 +2110,11 @@ img.cc-shadowed {
 .alert-error div.btn:hover,
 .alert-error ul.btn:hover,
 .alert-error [data-close-alert].btn:hover,
-.alert-error a.btn:hover,
-.message-error p.btn:hover,
-.message-error div.btn:hover,
-.message-error ul.btn:hover,
-.message-error [data-close-alert].btn:hover,
-.message-error a.btn:hover {
+.alert-error a.btn:hover {
   background-color: #953b39;
   border-color: #953b39;
 }
-.alert-success,
-.message-success {
+.alert-success {
   border-top: 10px solid #468847;
   color: #468847;
 }
@@ -2248,24 +2122,14 @@ img.cc-shadowed {
 .alert-success div,
 .alert-success ul,
 .alert-success [data-close-alert],
-.alert-success a,
-.message-success p,
-.message-success div,
-.message-success ul,
-.message-success [data-close-alert],
-.message-success a {
+.alert-success a {
   color: #468847;
 }
 .alert-success p.btn,
 .alert-success div.btn,
 .alert-success ul.btn,
 .alert-success [data-close-alert].btn,
-.alert-success a.btn,
-.message-success p.btn,
-.message-success div.btn,
-.message-success ul.btn,
-.message-success [data-close-alert].btn,
-.message-success a.btn {
+.alert-success a.btn {
   text-decoration: none;
   background-color: #468847;
   border-color: #468847;
@@ -2278,29 +2142,15 @@ img.cc-shadowed {
 .alert-success div.btn:hover,
 .alert-success ul.btn:hover,
 .alert-success [data-close-alert].btn:hover,
-.alert-success a.btn:hover,
-.message-success p.btn:hover,
-.message-success div.btn:hover,
-.message-success ul.btn:hover,
-.message-success [data-close-alert].btn:hover,
-.message-success a.btn:hover {
+.alert-success a.btn:hover {
   background-color: #356635;
   border-color: #356635;
 }
 @media screen and (min-width: 768px) {
-  .alert > i,
-  .message > i {
+  .alert > i {
     font-size: 6rem;
   }
 }
-/* ********** */
-/** MESSAGES **/
-/* ********** */
-/*
-    DEPRECIATED SINCE V3.4.0
-    Use '.alert' instead
-    Will be deleted in v4.0.0
-*/
 /* ******** */
 /** GRIDS **/
 /* ******** */
@@ -4048,7 +3898,7 @@ a.btn.cc-fat span.badge:before {
   /* X only */
   -webkit-transform: scale(1);
           transform: scale(1);
-  /* X & Y empty : default value */
+  /* X & Y empty: default value */
 }
 .modal.active .modal-close,
 .modal.active > [data-close-modal] {
@@ -4137,7 +3987,7 @@ a.btn.cc-fat span.badge:before {
   /* X only */
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  /* X & Y empty : default value */
+  /* X & Y empty: default value */
 }
 .modal-content .modal-body,
 .modal-content .modal-footer,
@@ -4243,7 +4093,7 @@ a.btn.cc-fat span.badge:before {
   /* X only */
   -webkit-transform: scale(1);
           transform: scale(1);
-  /* X & Y empty : default value */
+  /* X & Y empty: default value */
 }
 @media screen and (min-width: 768px) {
   [data-open][data-fullscreen].active.modal-large .modal-content {
@@ -4337,9 +4187,9 @@ a.btn.cc-fat span.badge:before {
 }
 /*
     * IMPORT GENERATOR & HELPERS FILEs *
-    • generator.less : Engine generator for colors, grids, icons...
-    • helpers.less : text and blocks helpers
-    • icons.less : icons tools
+    • generator.less: Engine generator for colors, grids, icons...
+    • helpers.less: text and blocks helpers
+    • icons.less: icons tools
     /!\ Import this files after elements and others components
 */
 /*
@@ -4523,9 +4373,9 @@ a.btn.cc-fat span.badge:before {
     ._generateTextsAligments
 */
 /* *****
-    @name : ._generateColorsClass
-    @description : Generate colors styles when using "@{css-prefix}-{color}" class on an element
-    @params : @aColors : array built in settings.less file
+    @name: ._generateColorsClass
+    @description: Generate colors styles when using "@{css-prefix}-{color}" class on an element
+    @params: @aColors: array built in settings.less file
 ***** */
 /* titles */
 h1.cc-primary,
@@ -6369,8 +6219,8 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 /* *****
-    @name : ._generatePaddingMarginClass
-    @description : Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
+    @name: ._generatePaddingMarginClass
+    @description: Generate padding & margin "@{css-prefix}-pa-{number}" or/and "@{css-prefix}-ma-{number}" class on an element
 ***** */
 .cc-pa {
   padding: 1em;
@@ -12681,12 +12531,12 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 /* *****
-    @name : ._generateColumns
-    @description : Generate columns width in flexbox parent
+    @name: ._generateColumns
+    @description: Generate columns width in flexbox parent
 ***** */
 /* *****
-    @name : ._generatePercentWidth
-    @description : Generate width for block helpers in %
+    @name: ._generatePercentWidth
+    @description: Generate width for block helpers in %
 ***** */
 .cc-w-0 {
   width: 0%;
@@ -14212,8 +14062,8 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 /* *****
-    @name : ._generateFontSize
-    @description : Generate font-size from 0rem to 10rem;
+    @name: ._generateFontSize
+    @description: Generate font-size from 0rem to 10rem;
 ***** */
 .cc-fs-0 {
   font-size: 0rem;
@@ -15739,8 +15589,8 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 /* *****
-    @name : ._generateFontWeight
-    @description : Generate font-weight from 100 to 900
+    @name: ._generateFontWeight
+    @description: Generate font-weight from 100 to 900
 ***** */
 .cc-fw-100 {
   font-weight: 100;
@@ -15886,8 +15736,8 @@ form.cc-yellow button[type="submit"]:hover {
   }
 }
 /* *****
-    @name : ._generateTextsAligments
-    @description : Generate texts aligments
+    @name: ._generateTextsAligments
+    @description: Generate texts aligments
 ***** */
 .cc-txt-center {
   text-align: center;

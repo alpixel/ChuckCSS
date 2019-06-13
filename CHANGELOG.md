@@ -1,5 +1,26 @@
 # ChuckCSS Changelog
 
+## 4.0.0
+* Added : 
+    * Light version of ChuckCSS. The ChuckCSS Light is the same as ChuckCSS, but without :
+        * grids
+        * tabs
+        * badges
+        * purple, yellow, orange colors
+        * outlined buttons when using `cc-bg-color`
+    * Loader : sonar loader
+    * Titles : 
+        * Font-size definitions regarding screen width (mobile-first)
+        * Color definition for each Hn element (in `settings.less` file)
+
+* REMOVED : 
+    * Loaders : Dots and Caterpillar loaders (spinner loader kept)
+    * Messages : class `.message` does not exists anymore. Replaced by `.alert` class
+
+* Changed :
+    * Increase `sup` and `sub` font-size from 12px to 13px (inscrease Lighthouse accessibility score)
+    * ChuckCSS vars is now defined using as maps of values in `settings.less` file
+
 ## 3.6.1 & 3.6.2
 * Changed : 
     * Rename `core` folder to `main` folder

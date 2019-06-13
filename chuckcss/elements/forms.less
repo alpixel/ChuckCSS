@@ -12,7 +12,7 @@ form {
     .form {
 
         /*
-            Parent element : containe label + input, textarea, select, etc...
+            Parent element: containe label + input, textarea, select, etc...
 
             <div class="form-item">
                 <label>...</label>
@@ -44,10 +44,10 @@ form {
             /* Chained inputs */
             &.@{css-prefix}-chained {
                 font-size:0; // Collpase inputs */
-                @border-radius : unit(@input-br,px); /* Border-radius calculation */
+                @border-radius: unit(#form.input[br],px); /* Border-radius calculation */
 
                 label {
-                    font-size:@text-fs;
+                    font-size: @text[fs];
                 }
 
                 input {
@@ -56,7 +56,7 @@ form {
 
                     /* First input */
                     &:first-of-type {
-                        border-radius:@border-radius 0px 0px @border-radius;
+                        border-radius: @border-radius 0px 0px @border-radius;
                     }
 
                     /* Last input */
@@ -77,7 +77,7 @@ form {
 
                     & + input[type="submit"],
                     & + button[type="submit"] {
-                        border-radius:@border-radius;
+                        border-radius: @border-radius;
                     }
                 }
 
@@ -96,7 +96,7 @@ form {
                     }
 
                     button[type="submit"] {
-                        border-radius:@border-radius;
+                        border-radius: @border-radius;
                     }
                 });
             }
@@ -104,7 +104,7 @@ form {
             /* Error style */
             &.error {
                 label {
-                    color:@red;
+                    color: @red;
                 }
 
                 input:not([type="submit"]),
@@ -112,7 +112,7 @@ form {
                     box-shadow:none;
                     background-color:lighten(@red,50%);
                     border-color:lighten(@red,40%);
-                    color:@red-da;
+                    color: darken(@red,15%);
 
                     &:focus {
                         outline:none;
@@ -120,9 +120,9 @@ form {
                     }
 
                     /* placeholder color */
-                    &::-moz-placeholder {color:lighten(@red-li,15%);}
-                    &::-ms-input-placeholder {color:lighten(@red-li,15%);}
-                    &::-webkit-input-placeholder {color:lighten(@red-li,15%);}
+                    &::-moz-placeholder {color:lighten(@red,25%);}
+                    &::-ms-input-placeholder {color:lighten(@red,25%);}
+                    &::-webkit-input-placeholder {color:lighten(@red,25%);}
                 }
 
                 select {
@@ -154,14 +154,14 @@ form {
         */
         &-ps {
             font-size:0; /* Collpase span with input */
-            @border-radius : unit(@input-br,px); /* Border-radius calculation */
+            @border-radius: unit(#form.input[br],px); /* Border-radius calculation */
             display: inline-block;
             vertical-align: middle;
 
-            :first-child {
-                border-radius:@border-radius 0px 0px @border-radius;
+           :first-child {
+                border-radius: @border-radius 0px 0px @border-radius;
             }
-            :last-child {
+           :last-child {
                 border-radius:0px @border-radius @border-radius 0px;
             }
             input:not(:first-child):not(:last-child) {
@@ -171,18 +171,18 @@ form {
             span {
                 display: inline-block;
                 vertical-align: middle;
-                height: @input-lh;
-                line-height:@input-lh;
-                background-color:@prefix-bg;
-                padding:@prefix-pa;
-                color:@prefix-tc;
-                font-size:@input-fs;
+                height: #form.input[lh];
+                line-height: #form.input[lh];
+                background-color: #form.prefix[bg];
+                padding: #form.prefix[pa];
+                color: #form.prefix[tc];
+                font-size: #form.input[fs];
 
                 /* Specific for Suffix */
                 &:last-child {
-                    background-color:@suffix-bg;
-                    padding:@suffix-pa;
-                    color:@suffix-tc;
+                    background-color: #form.suffix[bg];
+                    padding: #form.suffix[pa];
+                    color: #form.suffix[tc];
                 }
             }
 
@@ -255,7 +255,7 @@ form {
             /* Change viewport appearance */
             input {
                 appearance:none;
-                border:1px solid @input-bc;
+                border:1px solid #form.input[bc];
                 background-color:white;
                 width:14px;
                 height:14px;
@@ -266,7 +266,7 @@ form {
 
                 &:focus {
                     outline:none;
-                    border-color:@input-bc;
+                    border-color: #form.input[bc];
                 }
 
                 &:before {
@@ -282,7 +282,7 @@ form {
             /* Error */
             &.error {
                 label {
-                    color:@red;
+                    color: @red;
                 }
 
                 input:focus {
@@ -315,8 +315,8 @@ form {
                 }
 
                 &:checked {
-                    background-color:@form-mc;
-                    border-color:@form-mc;
+                    background-color: #form.mc[mc];
+                    border-color: #form.mc[mc];
                     animation:checkdio .25s ease-out;
 
                     &:before {
@@ -358,7 +358,7 @@ form {
                     animation:checkdio .25s ease-out;
 
                     &:before {
-                        background-color:@form-mc;
+                        background-color: #form.mc[mc];
                     }
                 }
             }
@@ -407,24 +407,24 @@ form {
     textarea,
     input {
         display: inline-block;
-        box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.1);
-        border-radius:unit(@input-br,px);
+        box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.1);
+        border-radius: unit(#form.input[br],px);
         vertical-align: middle;
-        background-color:@input-bg;
+        background-color: #form.input[bg];
         padding:0 1em;
-        border:1px solid @input-bc;
+        border:1px solid #form.input[bc];
         resize:none;
-        height: @input-lh;
-        font-size:@input-fs;
+        height: #form.input[lh];
+        font-size: #form.input[fs];
         ._transition;
-        line-height:inherit;
+        line-height: inherit;
 
         &:focus {
-            outline:none;
-            border-color:@form-mc;
+            outline: none;
+            border-color: #form.mc[mc];
         }
 
-        /* number : fix right padding */
+        /* number: fix right padding */
         &[type="number"] {
             padding-right:0;
             min-width:60px;
@@ -445,9 +445,9 @@ form {
         }
 
         /* Placeholder color */
-        &::-moz-placeholder {color:@gray;}
-        &::-ms-input-placeholder {color:@gray;}
-        &::-webkit-input-placeholder {color:@gray;}
+        &::-moz-placeholder {color: @gray;}
+        &::-ms-input-placeholder {color: @gray;}
+        &::-webkit-input-placeholder {color: @gray;}
 
         // Screen < 768px
         ._media-s({
@@ -472,14 +472,14 @@ form {
     */
     select {
         padding:0 0 0 1em;
-        background-color:@input-bg;
-        height: @input-lh;
+        background-color: #form.input[bg];
+        height: #form.input[lh];
         line-height:1;
-        border:1px solid @input-bc;
+        border:1px solid #form.input[bc];
         vertical-align: middle;
-        font-size:@input-fs;
+        font-size: #form.input[fs];
         box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.1);
-        border-radius:unit(@input-br,px);
+        border-radius:unit(#form.input[br],px);
         ._transition;
 
         /* Hack IE8 & < */
@@ -488,7 +488,7 @@ form {
 
         &:focus {
             outline:none;
-            border-color:@form-mc;
+            border-color: #form.mc[mc];
         }
 
         // Screen < 768px
@@ -506,14 +506,14 @@ form {
         cursor:pointer;
         color:white;
         border:0;
-        height: @input-lh;
+        height: #form.input[lh];
         padding:0 2em;
         vertical-align: middle;
         box-shadow:none;
-        border-radius:unit(@input-br,px);
+        border-radius:unit(#form.input[br],px);
         text-transform: uppercase;
         ._transition;
-        ._btn(@submit-bg);
+        ._btn(#form.submit[bg]);
 
         // Screen < 768px
         ._media-s({

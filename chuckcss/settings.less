@@ -4,31 +4,31 @@
 
     * HOW TO UNDERSTAND VAR SUFFIX ?
 
-        "-bc" : border-color
-        "-bg" : background-color
-        "-br" : border-radius
-        "-bw" : border-width
-        "-da" : dark (colors only)
-        "-li" : light (colors only)
-        "-na" : name (colors only)
-        "-fs" : font-size (fonts only)
-        "-ic" : icon color
-        "-he" : height
-        "-wi" : width
-        "-lh" : line-height
-        "-ma" : margin (for grid containers, and helpers paddings and margins)
-        "-mc" : main-color
-        "-mw" : max-width (media queries)
-        "-pa" : padding (for grid columns, and helpers paddings and margins)
-        "-ma{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
-        "-pa{letter}" : {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
-        "-tc" : text-color
-        "-in" : info (alerts)
-        "-er" : error (alerts)
-        "-su" : success (alerts)
-        "-wa" : warning (alerts)
-        "-pr" : primary (alerts)
-        "-zi" : z-index (modals)
+        "-bc": border-color
+        "-bg": background-color
+        "-br": border-radius
+        "-bw": border-width
+        "-da": dark (colors only)
+        "-li": light (colors only)
+        "-na": name (colors only)
+        "-fs": font-size (fonts only)
+        "-ic": icon color
+        "-he": height
+        "-wi": width
+        "-lh": line-height
+        "-ma": margin (for grid containers, and helpers paddings and margins)
+        "-mc": main-color
+        "-mw": max-width (media queries)
+        "-pa": padding (for grid columns, and helpers paddings and margins)
+        "-ma{letter}": {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
+        "-pa{letter}": {letter} can be set to "t" (top) - "r" (right) - "b" (bottom) - "l" (left)
+        "-tc": text-color
+        "-in": info (alerts)
+        "-er": error (alerts)
+        "-su": success (alerts)
+        "-wa": warning (alerts)
+        "-pr": primary (alerts)
+        "-zi": z-index (modals)
 */
 
 /* ********* */
@@ -40,13 +40,16 @@
 @css-prefix: cc; // Write prefix without quotes
 
 
+
 /*
     -- @ Media Queries @ --
 */
-@xs-media-mw : 359px;     /* Max-width for xs screens */
-@s-media-mw : 767px;      /* Max-width for small devices */
-@m-media-mw : 989px;      /* Max-width for medium devices */
-@l-media-mw : 1199px;     /* Max-width for large devices */
+@breakpoints: {
+    xs: 359px; /* Max-width for x-small devices */
+    s: 767px;  /* Max-width for small devices */
+    m: 989px;  /* Max-width for medium devices */
+    l: 1199px; /* Max-width for large devices */
+}
 
 
 
@@ -54,57 +57,40 @@
     -- @ Colors @ --
 */
 /* Primary color */
-@primary : #29b7e1;
-@primary-na : primary;                  /* Name of the color, for @aColors array */
-@primary-li : lighten(@primary,10%);    /* Lighten primary */
-@primary-da : darken(@primary,10%);     /* Darken primary */
+@primary: #29b7e1;
+@primary-na: primary;   /* Name of the color, for @aColors array */
 
 // Green
-@green : #80ae37;
-@green-na : green;                      /* Name of the color, for @aColors array */
-@green-li : lighten(@green,10%);        /* Lighten green */
-@green-da : darken(@green,10%);         /* Darken green */
+@green: #80ae37;
+@green-na: green;   /* Name of the color, for @aColors array */
 
 // red
-@red :   #c41515;
-@red-na : red;                          /* Name of the color, for @aColors array */
-@red-li : lighten(@red,10%);            /* Lighten red */
-@red-da : darken(@red,10%);             /* Darken red */
+@red:   #c41515;
+@red-na: red;   /* Name of the color, for @aColors array */
 
 // gray
-@gray : #bababa;
-@gray-na : gray;                        /* Name of the color, for @aColors array */
-@gray-li : lighten(@gray,10%);          /* Lighten gray */
-@gray-da : darken(@gray,10%);           /* Darken gray */
+@gray: #bababa;
 
 // blue
-@blue : #3498db;
-@blue-na : blue;                        /* Name of the color, for @aColors array */
-@blue-li : lighten(@blue,10%);          /* Lighten blue */
-@blue-da : darken(@blue,10%);           /* Darken blue */
+@blue: #3498db;
+@blue-na: blue;     /* Name of the color, for @aColors array */
 
 // purple
-@purple : #8e44ad;
-@purple-na : purple;                    /* Name of the color, for @aColors array */
-@purple-li : lighten(@purple,10%);      /* Lighten purple */
-@purple-da : darken(@purple,10%);       /* Darken purple */
+@purple: #8e44ad;
+@purple-na: purple;     /* Name of the color, for @aColors array */
 
 // orange
-@orange : #f39c12;
-@orange-na : orange;                    /* Name of the color, for @aColors array */
-@orange-li : lighten(@orange,10%);      /* Lighten orange */
-@orange-da : darken(@orange,10%);       /* Darken orange */
+@orange: #f39c12;
+@orange-na: orange;     /* Name of the color, for @aColors array */
 
 // yellow
-@yellow : #f1c40f;
-@yellow-na : yellow;                    /* Name of the color, for @aColors array */
-@yellow-li : lighten(@yellow,10%);      /* Lighten yellow */
-@yellow-da : darken(@yellow,10%);       /* Darken yellow */
+@yellow: #f1c40f;
+@yellow-na: yellow;     /* Name of the color, for @aColors array */
 
 
-// Colors array : Add any color you want \m/
+// Colors array: Add any color you want \m/
 // array(@color1-name @color1-value, @color2-name @color2-value,...);
-@aColors :
+@aColors:
     @primary-na @primary,
     @green-na @green,
     @red-na @red,
@@ -118,190 +104,268 @@
 /*
     -- @ Texts @ --
 */
-@text-mc: #3a3a3a;                      /* Texts ~ Main color (hexa, rgb, rgba...) */
-
-// Font-size && line-height for small screens (<= 359px)
-@text-fs: 1.6rem;       /* applied to <body> */
-@text-lh : 1.5;         /* Texts line-height : ~= font-size*1.5 */
-
-// Font-size && line-height for phone screens (>= 360px)
-@text-fs-s: 1.6rem;     /* Textes font-size (applied to <body>) */
-@text-lh-s : 1.5;       /* Texts line-height : ~= font-size*1.5 */
-
-// Font-size && line-height for medium screens (>= 768px)
-@text-fs-m: 1.6rem;     /* Textes font-size (applied to <body>) */
-@text-lh-m : 1.5;       /* Texts line-height : ~= font-size*1.5 */
-
-// Font-size && line-height for large screens (>= 989px)
-@text-fs-l: 1.6rem;     /* Textes font-size (applied to <body>) */
-@text-lh-l : 1.5;       /* Texts line-height : ~= font-size*1.5 */
-
-// Font-size && line-height for x-large screens (>= 1200px)
-@text-fs-xl: 1.6rem;    /* Textes font-size (applied to <body>) */
-@text-lh-xl : 1.5;      /* Texts line-height : ~= font-size*1.5 */
+@text: {
+    mc: #3a3a3a; /* Texts ~ Main color (hexa, rgb, rgba...) */
+    fs: 1.6rem; // Font-size && line-height for small screens (<= 359px)
+    lh: 1.5;
+    fs-s: 1.6rem; // Font-size && line-height for phone screens (>= 360px)
+    lh-s: 1.5;
+    fs-m: 1.6rem; // Font-size && line-height for medium screens (>= 768px)
+    lh-m: 1.5;
+    fs-l: 1.6rem; // Font-size && line-height for large screens (>= 989px)
+    lh-l: 1.5;
+    fs-xl: 1.6rem; // Font-size && line-height for x-large screens (>= 1200px)
+    lh-xl: 1.5;
+}
 
 
 
 /*
     -- @ Links @ --
 */
-@links-tc : @text-mc;               /* Links ~ Text color */
-@links-fs : @text-fs;               /* Links ~ Font-size */
-@links-btn-bw : 1;                  /* Links ~ Border-width */
-@links-btn-tc : white;              /* Links ~ buttons text color when colorized */
-@links-btn-hover-tc : white;        /* Links ~ buttons text color on hover when colorized */
-@links-btn-lh : 1.8;                /* Links ~ buttons line-height : ~= font-size*1.8 */
-@links-btn-pa : 0.3em 1em;          /* Links ~ buttons padding left & right : ~= font-size */
-@links-btn-br : 3;                  /* Links ~ buttons border-radius (in px) */
-@links-btn-thin-fs : @text-fs*0.7;  /* <a class="btn @{css-prefix}-thin"> font-size */
-@links-btn-fat-fs : @text-fs*1.3;   /* <a class="btn @{css-prefix}-fat"> font-size */
+@links: {
+    tc: @text[mc];              /* Links ~ Text color */
+    fs: @text[fs];              /* Links ~ Font-size */
+    btn-bw: 1;                  /* Links ~ Border-width */
+    btn-tc: white;              /* Links ~ buttons text color when colorized */
+    btn-hover-tc: white;        /* Links ~ buttons text color on hover when colorized */
+    btn-lh: 1.8;                /* Links ~ buttons line-height: ~= font-size*1.8 */
+    btn-pa: 0.3em 1em;          /* Links ~ buttons padding left & right: ~= font-size */
+    btn-br: 3;                  /* Links ~ buttons border-radius (in px) */
+    btn-thin-fs: @text[fs] * 0.7; /* <a class="btn @{css-prefix}-thin"> font-size */
+    btn-fat-fs: @text[fs] * 1.3;  /* <a class="btn @{css-prefix}-fat"> font-size */
+}
 
 
 
 /*
     -- @ Titles @ --
 */
-@title-mc : @text-mc; /* Hn ~ Titles main color */
-@title-h1-fs : 3rem;
-@title-h1-lh : 1.5;
-@title-h2-fs : 2.7rem;
-@title-h2-lh : 1.5;
-@title-h3-fs : 2.3rem;
-@title-h3-lh : 1.5;
-@title-h4-fs : 2rem;
-@title-h4-lh : 1.5;
-@title-h5-fs : 1.9rem;
-@title-h5-lh : 1.5;
-@title-h6-fs : 1.7rem;
-@title-h6-lh : 1.5;
-@subtitle-mc : lighten(@title-mc,25%);  /* Subtitle font-color */
-@subtitle-fs : 70%;
+@h1: {
+    mc: @text[mc];
+    fs: 2rem;
+    fs-s: 2rem;
+    fs-m: 2.5rem;
+    fs-l: 3rem;
+    fs-xl: 3rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h2: {
+    mc: @text[mc];
+    fs: 1.8rem;
+    fs-s: 1.8rem;
+    fs-m: 2.2rem;
+    fs-l: 2.7rem;
+    fs-xl: 2.7rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h3: {
+    mc: @text[mc];
+    fs: 1.6rem;
+    fs-s: 1.6rem;
+    fs-m: 2rem;
+    fs-l: 2.3rem;
+    fs-xl: 2.3rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h4: {
+    mc: @text[mc];
+    fs: 1.5rem;
+    fs-s: 1.5rem;
+    fs-m: 1.7rem;
+    fs-l: 2rem;
+    fs-xl: 2rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h5: {
+    mc: @text[mc];
+    fs: 1.4rem;
+    fs-s: 1.4rem;
+    fs-m: 1.6rem;
+    fs-l: 1.9rem;
+    fs-xl: 1.9rem;
+    lh: 1.5;
+    fw: 400;
+}
+@h6: {
+    mc: @text[mc];
+    fs: 1.3rem;
+    fs-s: 1.3rem;
+    fs-m: 1.5rem;
+    fs-l: 1.7rem;
+    fs-xl: 1.7rem;
+    lh: 1.5;
+    fw: 400;
+}
+@subtitle: {
+    mc: lighten(@text[mc],25%);  /* Subtitle font-color */
+    fs: 70%;
+    fw: 400;
+}
 
 
 
 /*
     -- @ Tables @ --
 */
-@tables-th-pa : 8px;        // <th> padding
-@tables-th-bg: white;     // <th> background-colors
-@tables-th-tc : #9E9E9E;      // <th> main color
-@tables-th-fw : 400;        // <th> font-weight
-/* --- */
-@tables-td-pa : 8px;        // <td> padding
-@tables-td-bg: white;       // <td> background-colors
-@tables-td-tc : @text-mc;   // <td> main color
-@tables-td-fw : 400;        // <th> font-weight
-/* -- */
-@tables-bc : #e0e0e0;       /* th & td border-colors */
-@tables-striped-even : #ffffff; /* Even lines bg-color */
-@tables-striped-odd : #f0f0f0;  /* Odd lines bg-color */
-@tables-hover-bg : #f0f0f0;     /* Hovered lines bg-color (only for table.hovered) */
-@tables-hover-tc : @tables-td-tc;     /* Hovered lines bg-color (only for table.hovered) */
+#tables() {
+    .bc() {
+        bc: #e0e0e0;    // <th> & <td> border-color
+    }
+    .th() {
+        pa: 8px;        // <th> padding
+        bg: white;      // <th> background-color
+        tc: #9E9E9E;    // <th> text color
+        fw: 400;        // <th> font-weight
+    }
+    .td() {
+        pa: 8px;        // <td> padding
+        bg: white;      // <td> background-color
+        tc: @text[mc];  // <td> text color
+        fw: 400;        // <td> font-weight
+    }
+    .striped() {
+        even: #FFFFFF;  // Even lines background-color
+        odd: #F0F0F0;   // Odd liens background-color
+    }
+    .hover() {
+        bg: #F0F0F0;    // Hovered liens background-color (table.hovered)
+        tc: @text[mc];  // Hovered lines text color (only for table.hovered)
+    }
+}
 
 
 
 /*
     -- @ Forms @ --
 */
-@form-mc : @primary;            /* Primary color for forms elements */
-@input-bg : white;              /* Input ~ bg-color */
-@input-fs : @text-fs * (9/10);  /* Input ~ font-size = @text-fs (can be changed by custom value) */
-@input-lh : @text-fs*2.8;       /* Input ~ line-height (Submit buttons too) */
-@input-bc : #ddd;               /* Input border-color */
-@input-br : 2;                  /* Input ~ border-radius (in px) */
-@submit-bg : @primary;          /* Submit input/button bg-color */
-@prefix-bg : @primary;          /* Prefix bgColor */
-@prefix-pa : 0 1.2em;           /* Prefix padding */
-@prefix-tc : white;             /* Prefix text color */
-@suffix-bg : @prefix-bg;        /* Suffix bgColor */
-@suffix-pa : @prefix-pa;        /* Suffix padding */
-@suffix-tc : @prefix-tc;        /* Suffix text color */
+// http://lesscss.org/features/#maps-feature
+#form() {
+    .mc() {
+        mc: @primary;
+    }
+    .input() {
+        bg: white;              /* Input : background-color */
+        fs: @text[fs] * (9/10); /* Input ~ font-size = @text[fs] (can be changed by custom value) */
+        lh: @text[fs] * 2.8;    /* Input ~ line-height (Submit buttons too) */
+        bc: #ddd;               /* Input border-color */
+        br: 2;
+    }
+    .submit() {
+        bg: @primary;           /* Submit input/button bg-color */
+    }
+    .prefix() {
+        bg: @primary;           /* Prefix bgColor */
+        pa: 0 1.2em;            /* Prefix padding */
+        tc: white;              /* Prefix text color */
+    }
+    .suffix() {
+        bg: @primary;           /* Suffix bgColor */
+        pa: 0 1.2em;            /* Suffix padding */
+        tc: white;              /* Suffix text color */
+    }
+}
 
 
 
 /*
     -- @ Blockquotes @ --
 */
-@blockquotes-bc : @primary;         /* Blockquote ~ border-left color */
-@blockquotes-footer-tc : @gray;     /* Blockquote ~ footer text-color */
+@blockquotes: {
+    bc: @primary;         /* Blockquote ~ border-left color */
+    footer-tc: @gray;     /* Blockquote ~ footer text-color */
+}
 
 
 
 /*
     -- @ Alerts @ --
 */
-@alert-br : 5; // Alerts border-radius (in pixel)
-@alert-pa : 20px; // Alerts paddings
-@alert-fs: 100%; // Alerts font-size
-@alert-ma: 1em 0; // Alerts margins
-@alert-btw: 10px; // Alerts border-top-width
-/* primary */
-@alert-pr-bc : @primary;
-@alert-pr-tc : @primary;
-/* success */
-@alert-su-tc : #468847;
-@alert-su-bc : @alert-su-tc;
-/* error */
-@alert-er-tc : #b94a48;
-@alert-er-bc : @alert-er-tc;
-/* warning */
-@alert-wa-tc : #c09853;
-@alert-wa-bc : @alert-wa-tc;
-/* info */
-@alert-in-tc : #3a87ad;
-@alert-in-bc : @alert-in-tc;
+@alert: {
+    br: 5; // Alerts border-radius (in pixel)
+    pa: 20px; // Alerts paddings
+    fs: 100%; // Alerts font-size
+    ma: 1em 0; // Alerts margins
+    btw: 10px; // Alerts border-top-width
+    /* primary */
+    pr-bc: @primary;
+    pr-tc: @primary;
+    /* success */
+    su-tc: #468847;
+    su-bc: #468847;
+    /* error */
+    er-tc: #b94a48;
+    er-bc: #b94a48;
+    /* warning */
+    wa-tc: #c09853;
+    wa-bc: #c09853;
+    /* info */
+    in-tc: #3a87ad;
+    in-bc: #3a87ad;
+}
 
 
 
 /*
     -- @ Modals @ --
 */
-@modals-zi : -2; // Modals default z-index
-@modals-zi-active : 10; // Modals z-index when displayed
-
+@modals: {
+    zi: -2; // Modals default z-index
+    zi-active: 10; // Modals z-index when displayed
+}
 
 
 
 /*
     -- @ Badges @ --
 */
-@badges-br : 5;       // Badges border-radius in pixel
-@badges-bg : #3A3A3A; // Badges default background color
+@badges: {
+    br: 5;       // Badges border-radius in pixel
+    bg: #3A3A3A; // Badges default background color
+}
 
 
 
 /*
     -- @ Icons margin @ --
 */
-@icon-mal : 8px;       // Icons margin-left
-@icon-mar : 8px;       // Icons margin-right
+@icon: {
+    mal: 8px;       // Icons margin-left
+    mar: 8px;       // Icons margin-right
+}
 
 
 
 /*
     -- @ Grids @ --
 */
-@cols-gutter : 0em;        /* Gutter between 2 cols = Each column margin-left & margin-right */
-@cols-total : 12;           /* Total of cols in grid */
-@cols-pa : 1em;             /* Each column padding  */
-@cols-mat : 0em;            /* Each column margin top */
-@cols-mab : @cols-mat;      /* Each column margin bottom */
+@cols-gutter: 0em;        /* Gutter between 2 cols = Each column margin-left & margin-right */
+@cols-total: 12;           /* Total of cols in grid */
+@cols-pa: 1em;             /* Each column padding  */
+@cols-mat: 0em;            /* Each column margin top */
+@cols-mab: @cols-mat;      /* Each column margin bottom */
 
 
 
 /*
     -- @ Helpers @ --
 */
-@helper-pa : 1em;      /* Used for helpers @{css-prefix}-pa */
-@helper-pat : 1em;     /* Used for helpers @{css-prefix}-pat */
-@helper-par : 1em;     /* Used for helpers @{css-prefix}-par */
-@helper-pab : 1em;     /* Used for helpers @{css-prefix}-pab */
-@helper-pal : 1em;     /* Used for helpers @{css-prefix}-pal */
-@helper-ma : 1em;      /* Used for helpers @{css-prefix}-ma */
-@helper-mat : 1em;     /* Used for helpers @{css-prefix}-mat */
-@helper-mar : 1em;     /* Used for helpers @{css-prefix}-mar */
-@helper-mab : 1em;     /* Used for helpers @{css-prefix}-mab */
-@helper-mal : 1em;     /* Used for helpers @{css-prefix}-mal */
+@helper: {
+    pa: 1em;      /* Used for helpers @{css-prefix}-pa */
+    pat: 1em;     /* Used for helpers @{css-prefix}-pat */
+    par: 1em;     /* Used for helpers @{css-prefix}-par */
+    pab: 1em;     /* Used for helpers @{css-prefix}-pab */
+    pal: 1em;     /* Used for helpers @{css-prefix}-pal */
+    ma: 1em;      /* Used for helpers @{css-prefix}-ma */
+    mat: 1em;     /* Used for helpers @{css-prefix}-mat */
+    mar: 1em;     /* Used for helpers @{css-prefix}-mar */
+    mab: 1em;     /* Used for helpers @{css-prefix}-mab */
+    mal: 1em;     /* Used for helpers @{css-prefix}-mal */
+}
 
 
 
@@ -309,45 +373,25 @@
     -- @ Lists @ --
 */
 // Dotted lists
-@list-dot-pal: 15;       /* Padding-left applied onto the <li>, in pixels */
-@list-dot-bg : @primary; /* Dot background-color */
-@list-dot-wi : 6;        /* Dot width, in pixel */
-@list-dot-he : 6;        /* Dot height, in pixel */
-@list-dot-br : 100%;        /* Dot height, in pixel */
-@list-dot-top : 9;       /* Dot top position, in pixel */
-@list-dot-left : 0;      /* Dot left position, in pixel */
+@list-dot: {
+    pal: 15;       /* Padding-left applied onto the <li>, in pixels */
+    bg: @primary; /* Dot background-color */
+    wi: 6;        /* Dot width, in pixel */
+    he: 6;        /* Dot height, in pixel */
+    br: 100%;        /* Dot height, in pixel */
+    top: 9;       /* Dot top position, in pixel */
+    left: 0;      /* Dot left position, in pixel */
+}
 
 
 
 /*
     -- @ Loader @ --
 */
-/* general */
-@loader-bg : @primary;      /* Loader main color */
-@loader-wi : 60;            /* Loader wrapper width (in pixels) */
-@loader-he : @loader-wi;    /* Loader wrapper height (in pixels) : recommended width = height */
-@loader-speed : 1;          /* Loader speed animation (in seconds) */
-
-/* Dots loader vars */
-@loader-dots-count : 12;    /* Loader dots : nb of dots */
-@loader-dots-radius : 360 / @loader-dots-count;     /* Loader dots : Calculation of each dot radius */
-@loader-dots-animation-delay : @loader-speed / @loader-dots-count;      /* Loader dots  : Calculation of each dot animation delay */
-
-/* Spinner loader vars */
-@loader-spinner-bw : 2; /* Loader spinner : border-width */
-
-
-
-/*
-    -- @ Images @ --
-    NOTE : This var is not used in ChuckCSS but i usefull for front-end developments
-*/
-@imgPath : '../img'; /* Path of images files */
-
-
-/*
-    -- @ FONTS PATH @ --
-    "Here define the 'fonts' folder path"
-    NOTE : This var is not used in ChuckCSS but i usefull for front-end developments
-*/
-@fontPath : '../fonts';     /* Path of fonts files */
+@loader: {
+    bg: @primary;  /* Loader main color */
+    wi: 60;        /* Loader wrapper width (in pixels) */
+    he: 60;        /* Loader wrapper height (in pixels): recommended width = height */
+    speed: 1;      /* Loader speed animation (in seconds) */
+    spinner-bw: 2; /* Loader spinner: border-width */
+}
