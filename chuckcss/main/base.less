@@ -5,6 +5,13 @@ html {
     font-size:62.5%;
     font-size:~'calc(1em*0.625)';
     overflow-x: hidden;
+
+    // Add a padding to <html> when modal is opened (replace scrollbar width)
+    ._media-m-up({
+        &.opened-modal {
+            padding-right:15px !important;
+        }
+    });
 }
 
 html,

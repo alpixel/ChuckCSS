@@ -1,6 +1,6 @@
 # ChuckCSS Changelog
 
-## 4.0.0
+## 4.0.0 & 4.0.1
 * Added : 
     * Light version of ChuckCSS. The ChuckCSS Light is the same as ChuckCSS, but without :
         * grids
@@ -8,10 +8,14 @@
         * badges
         * purple, yellow, orange colors
         * outlined buttons when using `cc-bg-color`
-    * Loader : sonar loader
     * Titles : 
         * Font-size definitions regarding screen width (mobile-first)
         * Color definition for each Hn element (in `settings.less` file)
+    * Modals : 
+        * When modal is opened, add a paddinr-right on HTML element to prevent the loss of the scrollbar
+
+* NEW :
+    * Loader : Sonar loader
 
 * REMOVED : 
     * Loaders : Dots and Caterpillar loaders (spinner loader kept)
