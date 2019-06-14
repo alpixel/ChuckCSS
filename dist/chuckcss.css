@@ -522,16 +522,16 @@ html {
   font-size: calc(1em*0.625);
   overflow-x: hidden;
 }
+@media screen and (min-width: 990px) {
+  html.opened-modal {
+    padding-right: 15px !important;
+  }
+}
 html.opened-modal,
 body.opened-modal,
 html.opened-menu,
 body.opened-menu {
   overflow: hidden !important;
-}
-@media screen and (min-width: 1200px) {
-  html.opened-modal {
-    padding-right: 15px !important;
-  }
 }
 body {
   padding: 0;
