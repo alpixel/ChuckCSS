@@ -557,7 +557,7 @@
                 </ul>
             </div>
 
-            <div class="main cc-modals">
+            <div class="main cc-modals active">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -634,7 +634,7 @@
                 </p>
             </header>
 
-            <div class="main cc-helpers-txt active">
+            <div class="main cc-helpers-txt">
                 <h3 class="title">Texts helpers (alignments, paddings, margins, colors, font-size, font-weight)</h3>
 
                 <pre class="HTML">

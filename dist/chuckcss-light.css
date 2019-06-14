@@ -528,6 +528,11 @@ html.opened-menu,
 body.opened-menu {
   overflow: hidden !important;
 }
+@media screen and (min-width: 1200px) {
+  html.opened-modal {
+    padding-right: 15px !important;
+  }
+}
 body {
   padding: 0;
   margin: 0;
