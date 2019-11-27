@@ -20,7 +20,7 @@
         $(document).on('click', '.modal-open, [data-modal]',function(e){
             e.preventDefault();
 
-            var 
+            var
                 modalId = $(this).data('target') || $(this).data('modal'),
                 $modal = $('#'+modalId);
 
@@ -35,7 +35,7 @@
                 alert('ChuckCSS error : modal with attribute id="'+modalId+'" does not exist!');
             }
         });
-        
+
         /* Close modal */
         $(document).on('click', '.modal:not([data-disabled-overlay]) .modal-overlay, .modal *[data-close-modal]', function(e) {
                 e.preventDefault();
@@ -55,7 +55,7 @@
 
 
         /* Modal callback */
-        /* 
+        /*
             EXEMPLES ONLY
             -- Bind your own modal callback by changing the selector
         */
