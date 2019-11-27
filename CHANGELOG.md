@@ -1,5 +1,11 @@
 # ChuckCSS Changelog
 
+## 4.0.2
+* Fix vulnerability of dependencies:
+    * Update jquery version
+    * Update lodash.merge version
+    * Update mixin-ddep version
+
 ## 4.0.0 & 4.0.1
 * Added : 
     * Light version of ChuckCSS. The ChuckCSS Light is the same as ChuckCSS, but without :

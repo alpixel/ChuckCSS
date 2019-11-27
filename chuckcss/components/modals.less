@@ -200,7 +200,7 @@
 }
 
 
-/* 
+/*
     * OPENING EFFECTS *
 */
 // Common style for slides effects
@@ -211,22 +211,16 @@
             ._translate(0%,0%,0%);
         }
     }
-
-    // Content modal
-    .modal-content {
-        ._scale(1);
-    }
-
     /*
         Combine with data-fullscreen
     */
     &[data-fullscreen] {
-        
+
         // Opened modal
         &.active {
             ._media-s-up({
                 &.modal-large {
-                    .modal-content {                        
+                    .modal-content {
                         ._translate(0%,0%,0%);
                     }
                 }
@@ -249,7 +243,7 @@
             &.modal-large .modal-content {
                 width:80%;
             }
-        });  
+        });
     }
 }
 
@@ -259,7 +253,8 @@
 
     // Content modal
     .modal-content {
-        ._translate(200px,0%,0%);
+        ._scale(1);
+        ._translate(200px,0px,0px);
     }
 
     /*
@@ -284,7 +279,7 @@
             left:-100px;
             margin-left:0;
         }
-    
+
         /* Sizes */
         ._media-s-up({
             &.modal-large {
@@ -302,7 +297,8 @@
 
     // Content modal
     .modal-content {
-        ._translate(-200px,0%,0%);
+        ._scale(1);
+        ._translate(-200px,0px,0px);
     }
 
     /*

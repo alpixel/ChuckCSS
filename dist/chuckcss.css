@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ChuckCSS v4.0.1 */
+/*! ChuckCSS v4.0.2 */
 /*
     == ChuckCSS Framework ==
     @What: A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -4081,7 +4081,7 @@ a.btn.cc-fat span.badge:before {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* 
+/*
     * OPENING EFFECTS *
 */
 [data-open] {
@@ -4092,13 +4092,6 @@ a.btn.cc-fat span.badge:before {
 [data-open].active .modal-content {
   -webkit-transform: translate3d(0%, 0%, 0%);
           transform: translate3d(0%, 0%, 0%);
-}
-[data-open] .modal-content {
-  /* X != Y */
-  /* X only */
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  /* X & Y empty: default value */
 }
 @media screen and (min-width: 768px) {
   [data-open][data-fullscreen].active.modal-large .modal-content {
@@ -4128,8 +4121,11 @@ a.btn.cc-fat span.badge:before {
     */
 }
 [data-open="slideInRight"] .modal-content {
-  -webkit-transform: translate3d(200px, 0%, 0%);
-          transform: translate3d(200px, 0%, 0%);
+  /* X != Y */
+  /* X only */
+  -webkit-transform: scale(1) translate3d(200px, 0px, 0px);
+          transform: scale(1) translate3d(200px, 0px, 0px);
+  /* X & Y empty: default value */
 }
 [data-open="slideInRight"][data-fullscreen] {
   -webkit-box-pack: end;
@@ -4162,8 +4158,11 @@ a.btn.cc-fat span.badge:before {
     */
 }
 [data-open="slideInLeft"] .modal-content {
-  -webkit-transform: translate3d(-200px, 0%, 0%);
-          transform: translate3d(-200px, 0%, 0%);
+  /* X != Y */
+  /* X only */
+  -webkit-transform: scale(1) translate3d(-200px, 0px, 0px);
+          transform: scale(1) translate3d(-200px, 0px, 0px);
+  /* X & Y empty: default value */
 }
 [data-open="slideInLeft"][data-fullscreen] {
   -webkit-box-pack: start;
