@@ -16,7 +16,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
-        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/chuckcss.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/prism.css" type="text/css" media="screen" charset="utf-8" />
@@ -73,7 +73,7 @@
                 </pre>
                 <div class="alert alert-primary">
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-                    <i class="fab fa-apple"></i> 
+                    <i class="fab fa-apple"></i>
                     <div>
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
@@ -82,21 +82,21 @@
                 </div>
                 <div class="alert alert-info">
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-                    <i class="fab fa-apple"></i> 
+                    <i class="fab fa-apple"></i>
                     <div>
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
                     </div>
                 </div>
                 <div class="alert alert-warning">
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-                    <i class="fab fa-apple"></i> 
+                    <i class="fab fa-apple"></i>
                     <div>
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
                     </div>
                 </div>
                 <div class="alert alert-error">
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-                    <i class="fab fa-apple"></i> 
+                    <i class="fab fa-apple"></i>
                     <div>
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
                         <ul>
@@ -557,7 +557,7 @@
                 </ul>
             </div>
 
-            <div class="main cc-modals active">
+            <div class="main cc-modals">
                 <h3 class="title">Modals</h3>
 
                 <pre class="HTML">
@@ -887,7 +887,7 @@
                         <i class="icon-left fas fa-arrow-circle-right"></i>
                         <i class="icon-right far fa-arrow-alt-circle-right"></i>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
 
@@ -3468,7 +3468,7 @@
                     <button class="cc-bg-yellow">button.cc-bg-yellow</button>
                 </p>
 
-                
+
                 <p class="cc-mat-20">
                     <a href="#" class="btn cc-bg-blue cc-outlined">a.btn.cc-bg-blue.cc-outlined</a>
                     <a href="#" class="btn cc-bg-red cc-outlined">a.btn.cc-bg-red.cc-outlined</a>
@@ -3483,14 +3483,14 @@
                     <button class="cc-bg-yellow cc-outlined">button.cc-outlined.cc-bg-color</button>
                 </p>
 
-               
+
                 <p class="cc-mat-20">
                     <a href="#" class="btn cc-thin"><i class="fas fa-user icon-left"></i>a.btn.cc-thin</a>
                     <a href="#" class="btn"><i class="fas fa-user icon-left"></i>a.btn</a>
                     <a href="#" class="btn cc-fat"><i class="fas fa-user icon-left"></i>a.btn.cc-fat</a>
                     <a href="#" class="btn cc-thin">a.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
                     <a href="#" class="btn">a.btn <i class="fas fa-user icon-right"></i></a>
-                    <a href="#" class="btn cc-fat">a.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                    <a href="#" class="btn cc-fat">a.btn.cc-fat <i class="fas fa-user icon-right"></i></a>
                 </p>
                 <p class="cc-mat-20">
                     <a href="#" class="cc-bg-red btn cc-thin"><i class="fas fa-user icon-left"></i>a.cc-bg-red.btn.cc-thin</a>
@@ -3498,7 +3498,7 @@
                     <a href="#" class="cc-bg-red btn cc-fat"><i class="fas fa-user icon-left"></i>a.cc-bg-red.btn.cc-fat</a>
                     <a href="#" class="cc-bg-red btn cc-thin">a.cc-bg-red.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
                     <a href="#" class="cc-bg-red btn">a.cc-bg-red.btn <i class="fas fa-user icon-right"></i></a>
-                    <a href="#" class="cc-bg-red btn cc-fat">a.cc-bg-red.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                    <a href="#" class="cc-bg-red btn cc-fat">a.cc-bg-red.btn.cc-fat <i class="fas fa-user icon-right"></i></a>
                 </p>
 
                 <p class="cc-mat-20">
@@ -3507,7 +3507,7 @@
                     <button class=" cc-fat"><i class="fas fa-user icon-left"></i>button.cc-fat</button>
                     <button class=" cc-thin">button.cc-thin <i class="fas fa-user icon-right"></i></button>
                     <button class="">button <i class="fas fa-user icon-right"></i></button>
-                    <button class=" cc-fat">button.cc-fat <i class="fas fa-user icon-right"></i></button> 
+                    <button class=" cc-fat">button.cc-fat <i class="fas fa-user icon-right"></i></button>
                 </p>
                 <p class="cc-mat-20">
                     <button class="cc-bg-red  cc-thin"><i class="fas fa-user icon-left"></i>button.cc-bg-red.cc-thin</button>
@@ -3515,7 +3515,7 @@
                     <button class="cc-bg-red  cc-fat"><i class="fas fa-user icon-left"></i>button.cc-bg-red.cc-fat</button>
                     <button class="cc-bg-red  cc-thin">button.cc-bg-red.cc-thin <i class="fas fa-user icon-right"></i></button>
                     <button class="cc-bg-red ">button.cc-bg-red <i class="fas fa-user icon-right"></i></button>
-                    <button class="cc-bg-red  cc-fat">button.cc-bg-red.cc-fat <i class="fas fa-user icon-right"></i></button> 
+                    <button class="cc-bg-red  cc-fat">button.cc-bg-red.cc-fat <i class="fas fa-user icon-right"></i></button>
                 </p>
 
 
@@ -3525,7 +3525,7 @@
                     <a href="#" class="cc-outlined btn cc-fat"><i class="fas fa-user icon-left"></i>a.cc-outlined.btn.cc-fat</a>
                     <a href="#" class="cc-outlined btn cc-thin">a.cc-outlined.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
                     <a href="#" class="cc-outlined btn">a.cc-outlined.btn <i class="fas fa-user icon-right"></i></a>
-                    <a href="#" class="cc-outlined btn cc-fat">a.cc-outlined.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                    <a href="#" class="cc-outlined btn cc-fat">a.cc-outlined.btn.cc-fat <i class="fas fa-user icon-right"></i></a>
                 </p>
                 <p class="cc-mat-20">
                     <a href="#" class="cc-outlined cc-bg-red btn cc-thin"><i class="fas fa-user icon-left"></i>a.cc-outlined.cc-bg-red.btn.cc-thin</a>
@@ -3533,7 +3533,7 @@
                     <a href="#" class="cc-outlined cc-bg-red btn cc-fat"><i class="fas fa-user icon-left"></i>a.cc-outlined.cc-bg-red.btn.cc-fat</a>
                     <a href="#" class="cc-outlined cc-bg-red btn cc-thin">a.cc-outlined.cc-bg-red.btn.cc-thin <i class="fas fa-user icon-right"></i></a>
                     <a href="#" class="cc-outlined cc-bg-red btn">a.cc-outlined.cc-bg-red.btn <i class="fas fa-user icon-right"></i></a>
-                    <a href="#" class="cc-outlined cc-bg-red btn cc-fat">a.cc-outlined.cc-bg-red.btn.cc-fat <i class="fas fa-user icon-right"></i></a> 
+                    <a href="#" class="cc-outlined cc-bg-red btn cc-fat">a.cc-outlined.cc-bg-red.btn.cc-fat <i class="fas fa-user icon-right"></i></a>
                 </p>
 
                 <p class="cc-mat-20">
@@ -3542,7 +3542,7 @@
                     <button class="cc-outlined  cc-fat"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-fat</button>
                     <button class="cc-outlined  cc-thin">button.cc-outlined.cc-thin <i class="fas fa-user icon-right"></i></button>
                     <button class="cc-outlined ">button.cc-outlined <i class="fas fa-user icon-right"></i></button>
-                    <button class="cc-outlined  cc-fat">button.cc-outlined.cc-fat <i class="fas fa-user icon-right"></i></button> 
+                    <button class="cc-outlined  cc-fat">button.cc-outlined.cc-fat <i class="fas fa-user icon-right"></i></button>
                 </p>
                 <p class="cc-mat-20">
                     <button class="cc-outlined cc-bg-red  cc-thin"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-bg-red.cc-thin</button>
@@ -3550,7 +3550,7 @@
                     <button class="cc-outlined cc-bg-red  cc-fat"><i class="fas fa-user icon-left"></i>button.cc-outlined.cc-bg-red.cc-fat</button>
                     <button class="cc-outlined cc-bg-red  cc-thin">button.cc-outlined.cc-bg-red.cc-thin <i class="fas fa-user icon-right"></i></button>
                     <button class="cc-outlined cc-bg-red ">button.cc-outlined.cc-bg-red <i class="fas fa-user icon-right"></i></button>
-                    <button class="cc-outlined cc-bg-red  cc-fat">button.cc-outlined.cc-bg-red.cc-fat <i class="fas fa-user icon-right"></i></button> 
+                    <button class="cc-outlined cc-bg-red  cc-fat">button.cc-outlined.cc-bg-red.cc-fat <i class="fas fa-user icon-right"></i></button>
                 </p>
 
 
@@ -3569,7 +3569,7 @@
                     <button class="cc-bg-red cc-disabled cc-outlined">button.cc-disabled.cc-bg-primary.cc-outliend</button>
                 </p>
 
-                
+
                 <p class="cc-mat-50">
                     <a href="#" class="btn cc-loading">a.btn.cc-loading</a>
                     <a href="#" class="btn cc-thin cc-loading">a.btn.cc-loading.cc-thin</a>
@@ -3681,17 +3681,17 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p>
                         Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                     </p>
-                   
+
                 </div>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-id-large" class="modal modal-large">
@@ -3960,13 +3960,13 @@
 
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
-                       
+
                     </div>
                 </section>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinright" class="modal" data-open="slideInRight">
@@ -3979,17 +3979,17 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p>
                         Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                     </p>
-                   
+
                 </div>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinright-large" class="modal modal-large" data-open="slideInRight">
@@ -4002,17 +4002,17 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p>
                         Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                     </p>
-                   
+
                 </div>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinright-fs-small" class="modal modal-small" data-open="slideInRight" data-fixed-hf data-fullscreen>
@@ -4046,7 +4046,7 @@
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinright-fs" class="modal" data-open="slideInRight" data-fixed-hf data-fullscreen>
@@ -4059,7 +4059,7 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <section class="wrap-modal-body">
                     <div class="modal-body">
                         <p>
@@ -4081,7 +4081,7 @@
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinright-fs-large" class="modal modal-large" data-open="slideInRight" data-fixed-hf data-fullscreen>
@@ -4114,7 +4114,7 @@
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
 
@@ -4129,7 +4129,7 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p>
                         Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
@@ -4144,12 +4144,12 @@
 
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </p>
-                   
+
                 </div>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinleft" class="modal" data-open="slideInLeft">
@@ -4162,17 +4162,17 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p>
                         Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                     </p>
-                   
+
                 </div>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinleft-large" class="modal modal-large" data-open="slideInLeft">
@@ -4185,17 +4185,17 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p>
                         Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                     </p>
-                   
+
                 </div>
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinleft-fs-small" class="modal modal-small" data-open="slideInLeft" data-fixed-hf data-fullscreen>
@@ -4229,7 +4229,7 @@
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinleft-fs" class="modal" data-open="slideInLeft" data-fixed-hf data-fullscreen>
@@ -4242,7 +4242,7 @@
                     I'm a default modal (50% width)
                 </div>
 
-                
+
                 <section class="wrap-modal-body">
                     <div class="modal-body">
                         <p>
@@ -4264,7 +4264,7 @@
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
         <div id="modal-slideinleft-fs-large" class="modal modal-large" data-open="slideInLeft" data-fixed-hf data-fullscreen>
@@ -4297,7 +4297,7 @@
                 <div class="modal-footer cc-txt-center">
                     <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                 </div>
-                
+
             </div>
         </div>
 
