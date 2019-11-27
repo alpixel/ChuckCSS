@@ -932,6 +932,10 @@ button.cc-loading::-moz-selection {
   background: transparent;
   color: transparent;
 }
+a.btn.cc-loading::-moz-selection, button.cc-loading::-moz-selection {
+  background: transparent;
+  color: transparent;
+}
 a.btn.cc-loading::selection,
 button.cc-loading::selection {
   background: transparent;
@@ -1529,6 +1533,10 @@ form .form-radio label {
 }
 form .form-checkbox label::-moz-selection,
 form .form-radio label::-moz-selection {
+  background: transparent;
+  color: inherit;
+}
+form .form-checkbox label::-moz-selection, form .form-radio label::-moz-selection {
   background: transparent;
   color: inherit;
 }
