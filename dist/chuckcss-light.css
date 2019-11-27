@@ -594,6 +594,11 @@ li {
   list-style: disc inside;
 }
 /* define text selection */
+::-moz-selection {
+  background: #3a3a3a;
+  text-shadow: none;
+  color: white;
+}
 ::selection {
   background: #3a3a3a;
   text-shadow: none;
@@ -921,6 +926,15 @@ button.cc-loading {
   color: transparent !important;
   cursor: not-allowed;
   pointer-events: none;
+}
+a.btn.cc-loading::-moz-selection,
+button.cc-loading::-moz-selection {
+  background: transparent;
+  color: transparent;
+}
+a.btn.cc-loading::-moz-selection, button.cc-loading::-moz-selection {
+  background: transparent;
+  color: transparent;
 }
 a.btn.cc-loading::selection,
 button.cc-loading::selection {
@@ -1529,6 +1543,15 @@ form .form-checkbox label,
 form .form-radio label {
   cursor: pointer;
   position: relative;
+}
+form .form-checkbox label::-moz-selection,
+form .form-radio label::-moz-selection {
+  background: transparent;
+  color: inherit;
+}
+form .form-checkbox label::-moz-selection, form .form-radio label::-moz-selection {
+  background: transparent;
+  color: inherit;
 }
 form .form-checkbox label::selection,
 form .form-radio label::selection {
