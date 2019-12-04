@@ -11,6 +11,7 @@
     ._generateFontSize
     ._generateFontWeight
     ._generateTextsAligments
+    ._generateLineHeight
 */
 
 /* *****
@@ -479,8 +480,29 @@
         }
     }
 }
-._generateTextsAligments; // Launch _generateFontWeight
+._generateTextsAligments; // Launch _generateTextsAligments
 ._media-xs-up({._generateTextsAligments(-s);});
 ._media-s-up({._generateTextsAligments(-m);});
 ._media-m-up({._generateTextsAligments(-l);});
 ._media-l-up({._generateTextsAligments(-xl);});
+
+
+
+/* *****
+    @name: ._generateLineHeight
+    @description: Generate line height
+***** */
+._generateLineHeight(@breakpoint:~'',@iterator:0) when(@iterator <= 40) {
+    .@{css-prefix} {
+        &-lh-@{iterator}@{breakpoint} {
+            line-height: (@iterator / 10);
+        }
+    }
+
+    ._generateLineHeight(@breakpoint,@iterator + 1);
+}
+._generateLineHeight; // Launch _generateLineHeight
+._media-xs-up({._generateLineHeight(-s);});
+._media-s-up({._generateLineHeight(-m);});
+._media-m-up({._generateLineHeight(-l);});
+._media-l-up({._generateLineHeight(-xl);});
