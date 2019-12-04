@@ -1,5 +1,11 @@
 # ChuckCSS Changelog
 
+## 4.0.3
+* Added :
+    * New mixin for Line-Height generator
+    * Responsive line-height class : `cc-lh-{number}-{breakpoint}` (mobile-first respected) for line-height (from 0 to 40 with increments of 1). 
+    * Line-height applied is divised by 10. So `cc-lh-20` will apply the property `line-height: 2` onto the element
+
 ## 4.0.2
 * Fix vulnerability of dependencies:
     * Update jquery version
