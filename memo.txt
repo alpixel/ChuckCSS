@@ -6,13 +6,7 @@ How to Update ChuckCSS on NPM, GIT, BOWER
 
 2. Update the version string in package.json and front (2*) files by hand to x.x.x.
 
-3. git commit -am "MY FABULOUS COMMENT"
-
-4. git tag -a vx.x.x -m "My Fabulous message"
-
-5. git push origin BRANCH && git push --tags
-
-6. npm publish
+3. git commit -am "MY FABULOUS COMMENT" && git push origin BRANCH
 
 
 

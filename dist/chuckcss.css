@@ -527,6 +527,10 @@ html {
     padding-right: 15px !important;
   }
 }
+html,
+body {
+  height: 100%;
+}
 html.opened-modal,
 body.opened-modal,
 html.opened-menu,
@@ -3897,14 +3901,14 @@ a.btn.cc-fat span.badge:before {
 }
 .modal[data-fullscreen] .modal-content {
   width: 100vw;
-  height: calc(100vh - 56px);
-  max-height: calc(100vh - 56px);
+  height: calc(100% - 56px);
+  max-height: calc(100% - 56px);
   border-radius: 0px;
 }
 @media screen and (min-width: 768px) {
   .modal[data-fullscreen] .modal-content {
-    height: calc(100vh - 80px);
-    max-height: calc(100vh - 80px);
+    height: calc(100% - 80px);
+    max-height: calc(100% - 80px);
   }
 }
 .modal[data-fullscreen] .modal-footer,
