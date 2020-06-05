@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ChuckCSS v4.0.3 */
+/*! ChuckCSS v4.0.4 */
 /*
     == ChuckCSS Framework ==
     @What: A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -526,6 +526,10 @@ html {
   html.opened-modal {
     padding-right: 15px !important;
   }
+}
+html,
+body {
+  height: 100%;
 }
 html.opened-modal,
 body.opened-modal,
@@ -4043,7 +4047,7 @@ a.btn.cc-fat span.badge:before {
   right: 0px;
   bottom: 0px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
 }
 .modal[data-fixed-hf] .modal-content {
@@ -4080,14 +4084,14 @@ a.btn.cc-fat span.badge:before {
 }
 .modal[data-fullscreen] .modal-content {
   width: 100vw;
-  height: calc(100vh - 56px);
-  max-height: calc(100vh - 56px);
+  height: calc(100% - 56px);
+  max-height: calc(100% - 56px);
   border-radius: 0px;
 }
 @media screen and (min-width: 768px) {
   .modal[data-fullscreen] .modal-content {
-    height: calc(100vh - 80px);
-    max-height: calc(100vh - 80px);
+    height: calc(100% - 80px);
+    max-height: calc(100% - 80px);
   }
 }
 .modal[data-fullscreen] .modal-footer,
@@ -4123,8 +4127,8 @@ a.btn.cc-fat span.badge:before {
   }
 }
 [data-open][data-fullscreen] .modal-content {
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  max-height: 100%;
   width: calc(100vw - 80px);
 }
 @media screen and (min-width: 768px) {

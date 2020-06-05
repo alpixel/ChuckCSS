@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 4.0.4
+* Fix :
+    * Height calculation for Chrome on Android devices, regarding the browser UI bar (Add `height: 100%` to `body` and `html` elements)
+    
 ## 4.0.3
 * Added :
     * New mixin for Line-Height generator
