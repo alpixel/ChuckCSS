@@ -529,7 +529,7 @@ html {
 }
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 html.opened-modal,
 body.opened-modal,
@@ -1947,7 +1947,7 @@ img.cc-shadowed {
 
     <div class="alert alert-{type}">
         <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-        <i class="fab fa-apple"></i> 
+        <i class="fab fa-apple"></i>
         <div>
             <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
         </div>
