@@ -1,5 +1,9 @@
 # ChuckCSS Changelog
 
+## 4.1.0
+* Fix :
+    * Delete height on `body`and `html`elements (Added in V.4.0.4)
+
 ## 4.0.4
 * Fix :
     * Height calculation for Chrome on Android devices, regarding the browser UI bar (Add `height: 100%` to `body` and `html` elements)
