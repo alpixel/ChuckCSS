@@ -35,7 +35,8 @@
     "minimatch": ">=3.0.4"
   },
   "dependencies": {
-    "jquery": "^3.4.0"
+    "jquery": "^3.4.0",
+    "natives": "^1.1.6"
   },
   "browserslist": [
     "last 2 versions",
