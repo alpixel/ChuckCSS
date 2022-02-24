@@ -5,7 +5,20 @@
 
     &-block {display:block}
     &-inline {display:inline-block;}
-    &-inside{._inside;}
+    &-inside{
+        ._inside(100%);
+        padding: 0 20px;
+
+        // Screen > 989px
+        ._media-m-up({
+            ._inside(900px);
+        });
+
+        // Screen > 1249px
+        ._media-l-up({
+            ._inside(1200px);
+        });
+    }
     &-centered {
         display:block;
         margin-left:auto;

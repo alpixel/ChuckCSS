@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ChuckCSS v4.1.0 */
+/*! ChuckCSS v4.2.0 */
 /*
     == ChuckCSS Framework : Light version ==
     @What: A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -536,6 +536,10 @@ body.opened-modal,
 html.opened-menu,
 body.opened-menu {
   overflow: hidden !important;
+}
+html.cursor-cross,
+body.cursor-cross {
+  cursor: url("data:image/svg+xml,%3Csvg width='19' height='19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.514.535l-6.42 6.42L2.677.536a1.517 1.517 0 00-2.14 0 1.517 1.517 0 000 2.14l6.42 6.419-6.42 6.419a1.517 1.517 0 000 2.14 1.517 1.517 0 002.14 0l6.419-6.42 6.419 6.42a1.517 1.517 0 002.14 0 1.517 1.517 0 000-2.14l-6.42-6.42 6.42-6.418a1.517 1.517 0 000-2.14 1.516 1.516 0 00-2.14 0z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E"), auto;
 }
 body {
   padding: 0;
@@ -2205,10 +2209,10 @@ img.cc-shadowed {
           box-shadow: none;
   z-index: -2;
   position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: 0;
   /* Shown modal */
   /* Sizes */
@@ -2310,6 +2314,7 @@ img.cc-shadowed {
   z-index: 2;
   border-radius: 4px;
   opacity: 0;
+  cursor: auto;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
   /* X != Y */
@@ -2344,7 +2349,7 @@ img.cc-shadowed {
   right: 0px;
   bottom: 0px;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
 }
 .modal[data-fixed-hf] .modal-content {
@@ -2424,8 +2429,8 @@ img.cc-shadowed {
   }
 }
 [data-open][data-fullscreen] .modal-content {
-  height: 100%;
-  max-height: 100%;
+  height: 100vh;
+  max-height: 100vh;
   width: calc(100vw - 80px);
 }
 @media screen and (min-width: 768px) {
@@ -2534,10 +2539,21 @@ img.cc-shadowed {
   display: inline-block;
 }
 .cc-inside {
-  width: 1199px;
+  width: 100%;
   margin: 0 auto;
-  -webkit-transition: 0.2s width ease-out 0s;
-  transition: 0.2s width ease-out 0s;
+  padding: 0 20px;
+}
+@media screen and (min-width: 990px) {
+  .cc-inside {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cc-inside {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .cc-centered {
   display: block;

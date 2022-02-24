@@ -69,6 +69,5 @@ gulp.task('default', [
   'chuckcss_less',
   'chuckcss_minify_less',
   'chuckcss_print',
-
   'watch'
 ]);

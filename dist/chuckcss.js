@@ -26,8 +26,11 @@
 
             if($modal.length) {
 
-                $('html,body').addClass('opened-modal');
+                $('html, body').addClass('opened-modal');
                 $modal.addClass('active');
+
+                if(typeof $modal.data('disabled-overlay') == 'undefined')
+                    $('html,body').addClass('cursor-cross');
 
                 // Callback
                 $modal.trigger('cc.modal.open');
@@ -38,20 +41,19 @@
 
         /* Close modal */
         $(document).on('click', '.modal:not([data-disabled-overlay]) .modal-overlay, .modal *[data-close-modal]', function(e) {
-                e.preventDefault();
+            e.preventDefault();
 
-                var $modal = $(this).parents('.modal');
+            var $modal = $(this).parents('.modal');
 
+            if($modal.hasClass('active'))
+                $modal.removeClass('active');
 
-                if($modal.hasClass('active'))
-                    $modal.removeClass('active');
+            if(!$('.modal.active').length)
+                $('html,body').removeClass('opened-modal cursor-cross');
 
-                if(!$('.modal.active').length)
-                    $('html,body').removeClass('opened-modal');
-
-                // Callback
-                $modal.trigger('cc.modal.close');
-            });
+            // Callback
+            $modal.trigger('cc.modal.close');
+        });
 
 
         /* Modal callback */
