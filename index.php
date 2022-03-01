@@ -16,8 +16,6 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/chuckcss.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/prism.css" type="text/css" media="screen" charset="utf-8" />
         <link rel="stylesheet" href="tests/test.css" type="text/css" media="screen" charset="utf-8" />
@@ -71,15 +69,6 @@
                         &lt;/div>
                     </code>
                 </pre>
-                <div class="alert alert-primary">
-                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-                    <i class="fab fa-apple"></i>
-                    <div>
-                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
-                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
-                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
-                    </div>
-                </div>
                 <div class="alert alert-info">
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                     <i class="fab fa-apple"></i>
@@ -87,7 +76,7 @@
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et.
                     </div>
                 </div>
-                <div class="alert alert-warning">
+                <div class="alert alert-warning" data-closable>
                     <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                     <i class="fab fa-apple"></i>
                     <div>

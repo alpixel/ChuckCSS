@@ -2,86 +2,84 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var watch = require('gulp-watch');
 var rename = require('gulp-rename');
-var plumber = require('gulp-plumber');
-var cssnano = require('gulp-cssnano');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
+const csso = require('gulp-csso');
+const autoprefixer = require('gulp-autoprefixer');
 
 
 /*
     * CHUCKCSS FILES COMPILATION
 */
-gulp.task('chuckcss_minify_less', function() {
+function chuckcss_minify_less() {
     gulp.src('chuckcss/front.less')
-        .pipe(plumber())
         .pipe(less())
-        .pipe(cssnano())
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(autoprefixer())
+        .pipe(csso())
         .pipe(rename({basename: 'chuckcss', suffix: '.min'}))
         .pipe(gulp.dest('dist/'));
 
-    gulp.src('chuckcss/front-light.less')
-        .pipe(plumber())
+    return gulp.src('chuckcss/front-light.less')
         .pipe(less())
-        .pipe(cssnano())
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(autoprefixer())
+        .pipe(csso())
         .pipe(rename({basename: 'chuckcss-light', suffix: '.min'}))
         .pipe(gulp.dest('dist/'));
-});
+}
 
-gulp.task('chuckcss_less', function() {
+function chuckcss_less() {
     gulp.src('chuckcss/front.less')
-        .pipe(plumber())
         .pipe(less())
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(autoprefixer())
         .pipe(rename({basename: 'chuckcss'}))
         .pipe(gulp.dest('dist/'));
 
-    gulp.src('chuckcss/front-light.less')
-        .pipe(plumber())
+    return gulp.src('chuckcss/front-light.less')
         .pipe(less())
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(autoprefixer())
         .pipe(rename({basename: 'chuckcss-light'}))
         .pipe(gulp.dest('dist/'));
-});
+}
 
 /*
     * PRINT FILE
 */
-gulp.task('chuckcss_print', function() {
-    gulp.src('chuckcss/print.less')
-        .pipe(plumber())
+function chuckcss_print() {
+    return gulp.src('chuckcss/print.less')
         .pipe(less())
-        .pipe(cssnano())
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(autoprefixer())
+        .pipe(csso())
         .pipe(rename({basename: 'print'}))
         .pipe(gulp.dest('dist/'));
-});
+}
 
 /*
     * TEST FILE (index)
 */
-gulp.task('test', function() {
-    gulp.src('tests/test.less')
-        .pipe(plumber())
+function test() {
+    return gulp.src('tests/test.less')
         .pipe(less())
-        .pipe(cssnano())
-        .pipe(postcss([ autoprefixer() ]))
+        .pipe(autoprefixer())
+        .pipe(csso())
         .pipe(rename({basename: 'test'}))
         .pipe(gulp.dest('tests/'));
-});
+}
 
-gulp.task('watch', function() {
-    gulp.watch('chuckcss/**/*.less', ['chuckcss_minify_less', 'chuckcss_less']);
-    gulp.watch('chuckcss/print.less', ['chuckcss_print']);
-    gulp.watch('tests/test.less', ['test']);
+// Watch files
+function watchFiles() {
+    gulp.watch("chuckcss/**/*", gulp.parallel(chuckcss_minify_less, chuckcss_less));
+    gulp.watch("chuckcss/print.less", chuckcss_print);
+    gulp.watch("tests/test.less", test);
+}
 
-});
+// define complex tasks
+const build = gulp.parallel(chuckcss_less, chuckcss_minify_less, chuckcss_print);
 
-gulp.task('default', [
-  'chuckcss_less',
-  'chuckcss_minify_less',
-  'chuckcss_print',
-  'test',
-  'watch'
-]);
+
+// export tasks
+exports.chuckcss_less = chuckcss_less;
+exports.chuckcss_minify_less = chuckcss_minify_less;
+exports.chuckcss_print = chuckcss_print;
+exports.test = test;
+exports.watch = watchFiles;
+exports.build = build;
+exports.default = build;
+

@@ -10,37 +10,45 @@
 
     <div class="alert alert-{type}">
         <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-        <i class="fab fa-apple"></i> 
+        <i class="fab fa-apple"></i>
         <div>
             <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
         </div>
     </div>
 */
-._setAlertStyles(@textColor, @borderColor) {
-    border-top: @alert[btw] solid @borderColor;
+._setAlertStyles(@textColor, @borderColor, @backgroundColor) {
     color: @textColor;
+    background: @backgroundColor;
+    border:unit(@alert[bw],px) solid @borderColor;
 
     p,div,ul,
-    [data-close-alert],
     a {
         color: @textColor;
-    
+
         &.btn {
             text-decoration: none;
             ._btn(@textColor);
             color: white;
         }
     }
+
+    [data-close-alert] {
+        color: @textColor;
+    }
 }
 
 .alert {
     display: flex;
-    align-items: center;
     margin: @alert[ma];
     font-size: @alert[fs];
     border-radius:unit(@alert[br],px);
     background-color: white;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px @alert[bs];
+    position: relative;
+
+    &[data-closable] {
+        cursor: url("data:image/svg+xml,%3Csvg width='19' height='19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.514.535l-6.42 6.42L2.677.536a1.517 1.517 0 00-2.14 0 1.517 1.517 0 000 2.14l6.42 6.419-6.42 6.419a1.517 1.517 0 000 2.14 1.517 1.517 0 002.14 0l6.419-6.42 6.419 6.42a1.517 1.517 0 002.14 0 1.517 1.517 0 000-2.14l-6.42-6.42 6.42-6.418a1.517 1.517 0 000-2.14 1.516 1.516 0 00-2.14 0z' fill='000000' fill-rule='nonzero'/%3E%3C/svg%3E"), auto;
+    }
 
     // Alerts content
     & > div {
@@ -64,56 +72,45 @@
     // Alerts main left icon
     & > i {
         padding: @alert[pa];
+        padding-right: 0;
         font-size:3rem;
     }
 
     // Alerts close button
     [data-close-alert] {
+        position: absolute;
+        top: 0;
+        right: 0;
         border:0;
         cursor:pointer;
-        padding: @alert[pa];
+        padding: @alert[pa] / 2;
         opacity: 0.4;
         order:2;
         background-color: transparent;
         ._transition;
 
-        &:hover {
-            opacity: 1;
+        i {
+            display: block;
+            width: 20px;
+            height: 20px;
         }
 
-        i {
-            ._reset;
-
-            &:before {
-                ._reset;
-                font-size: @text[fs]*1.5;
-            }
+        &:hover {
+            opacity: 1;
         }
     }
 
     /* Alerts types */
-    &-primary {
-        ._setAlertStyles(@alert[pr-tc], @alert[pr-bc]);
-    }
     &-info {
-        ._setAlertStyles(@alert[in-tc], @alert[in-bc]);
+        ._setAlertStyles(@alert[in-tc], @alert[in-bc], @alert[in-bg]);
     }
     &-warning {
-        ._setAlertStyles(@alert[wa-tc], @alert[wa-bc]);
+        ._setAlertStyles(@alert[wa-tc], @alert[wa-bc], @alert[wa-bg]);
     }
     &-error {
-        ._setAlertStyles(@alert[er-tc], @alert[er-bc]);
+        ._setAlertStyles(@alert[er-tc], @alert[er-bc], @alert[er-bg]);
     }
     &-success {
-        ._setAlertStyles(@alert[su-tc], @alert[su-bc]);
+        ._setAlertStyles(@alert[su-tc], @alert[su-bc], @alert[su-bg]);
     }
-
-    // Screens > 767px
-    ._media-s-up({
-
-        // Alerts main left icon
-        & > i {
-            font-size: 6rem;
-        }
-    });
 }

@@ -2,19 +2,58 @@
     == FONTAWESOME ==
 */
 // Icons placement
+.fa-thin,
+.fa-light,
+.fa-regular,
+.fa-solid,
+.fa-duotone,
+.fa-brand,
 .fa,
 .far,
 .fal,
 .fas,
 .fab,
-[class*="ion-"] {
+.fad {
     // Add a small margin to the right
     &.icon-left {
-        margin-right: @icon[mal];
+        margin-right: #icon.margin[left];
     }
 
     // Add a small margin to the left
     &.icon-right {
-        margin-left: @icon[mar];
+        margin-left: #icon.margin[right];
+    }
+
+    // Animated drawing icon
+    &.animated {
+        path {
+            fill: transparent;
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            stroke: #000000;
+            stroke-width: 10;
+            animation: drawIcon 4s ease-in-out forwards;
+        }
+    }
+}
+
+
+// FontAwesome SVG elements
+.fa-duotone {
+    --fa-primary-opacity: #icon.duotone-theme[fa-primary-opacity];
+    --fa-secondary-opacity: #icon.duotone-theme[fa-secondary-opacity];
+    --fa-primary-color: #icon.duotone-theme[fa-primary-color];
+    --fa-secondary-color: #icon.duotone-theme[fa-secondary-color];
+
+    .fa-primary,
+    .fa-secondary {
+        ._transition;
+    }
+
+    &:hover {
+        --fa-primary-opacity: #icon.duotone-theme-hover[fa-primary-opacity];
+        --fa-secondary-opacity: #icon.duotone-theme-hover[fa-secondary-opacity];
+        --fa-primary-color: #icon.duotone-theme-hover[fa-primary-color];
+        --fa-secondary-color: #icon.duotone-theme-hover[fa-secondary-color];
     }
 }

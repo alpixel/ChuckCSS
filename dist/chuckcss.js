@@ -2,12 +2,25 @@
     $(function(){
 
         /*!
+            -- @ FontAwesome animations @ --
+            Add pathLength attribute on <path> elements for FontAwesome svg animations
+        */
+        $('svg[class*="fa-"].animated').each(function(i,el){
+            $(el).find('path').attr('pathLength', 1)
+        });
+
+        /*!
             -- @ Close alerts @ --
         */
         $(document).on('click', '[data-close-alert]', function(e){
             e.preventDefault();
-
             $(this).parent().fadeOut(500,function(){
+                $(this).remove();
+            });
+        });
+        $(document).on('click', '.alert[data-closable]', function(e){
+            e.preventDefault();
+            $(this).fadeOut(500,function(){
                 $(this).remove();
             });
         });
