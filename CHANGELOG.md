@@ -1,6 +1,6 @@
 # ChuckCSS Changelog
 
-## 4.3.0
+## 4.3.0 & 4.3.1
 * Changed :
     * Alerts design
     * Icons Duotone for FontAwesome (animations and colors settings)
