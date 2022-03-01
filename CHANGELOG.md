@@ -1,5 +1,11 @@
 # ChuckCSS Changelog
 
+## 4.3.0
+* Changed :
+    * Alerts design
+    * Icons Duotone for FontAwesome (animations and colors settings)
+    * Titles margins in settings
+    
 ##4.2.0
 * Added:
     * Change cursor when modal is open

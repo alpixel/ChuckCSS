@@ -28,11 +28,11 @@
     @description: animate spinner loader
 ***** */
 @keyframes loaderSpinner {
-    0% { 
-        ._rotate(0deg) 
+    0% {
+        ._rotate(0deg)
     }
-    100% { 
-        ._rotate(360deg) 
+    100% {
+        ._rotate(360deg)
     }
 }
 
@@ -91,4 +91,18 @@ img[data-loaded="true"],
   to {
     opacity: 1;
   }
+}
+
+
+/* *****
+    @name: drawIcon
+    @description: Drawing animation for FontAwesome icons when .animated class is added to the icon
+***** */
+@keyframes drawIcon {
+    from {
+        stroke-dashoffset: 1;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }

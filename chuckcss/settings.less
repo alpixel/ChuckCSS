@@ -150,6 +150,7 @@
     fs-xl: 3rem;
     lh: 1.5;
     fw: 400;
+    ma: 0 0 1em; // Margin
 }
 @h2: {
     mc: @text[mc];
@@ -160,6 +161,7 @@
     fs-xl: 2.7rem;
     lh: 1.5;
     fw: 400;
+    ma: 0 0 1em; // Margin
 }
 @h3: {
     mc: @text[mc];
@@ -170,6 +172,7 @@
     fs-xl: 2.3rem;
     lh: 1.5;
     fw: 400;
+    ma: 0 0 1em; // Margin
 }
 @h4: {
     mc: @text[mc];
@@ -180,6 +183,8 @@
     fs-xl: 2rem;
     lh: 1.5;
     fw: 400;
+    ma: 0 0 1em; // Margin
+
 }
 @h5: {
     mc: @text[mc];
@@ -190,6 +195,7 @@
     fs-xl: 1.9rem;
     lh: 1.5;
     fw: 400;
+    ma: 0 0 1em; // Margin
 }
 @h6: {
     mc: @text[mc];
@@ -200,6 +206,7 @@
     fs-xl: 1.7rem;
     lh: 1.5;
     fw: 400;
+    ma: 0 0 1em; // Margin
 }
 @subtitle: {
     mc: lighten(@text[mc],25%);  /* Subtitle font-color */
@@ -286,25 +293,27 @@
     -- @ Alerts @ --
 */
 @alert: {
-    br: 5; // Alerts border-radius (in pixel)
+    br: 0; // Alerts border-radius (in pixel)
+    bw: 0; // Border-width (in px)
     pa: 20px; // Alerts paddings
     fs: 100%; // Alerts font-size
     ma: 1em 0; // Alerts margins
-    btw: 10px; // Alerts border-top-width
-    /* primary */
-    pr-bc: @primary;
-    pr-tc: @primary;
+    bs: rgba(0,0,0,0.2); // Box-shadow color
     /* success */
-    su-tc: #468847;
+    su-bg: linear-gradient(to right, rgb(177, 215, 173) 0%, rgb(149, 205, 124) 100%);
+    su-tc: #3c5c32;
     su-bc: #468847;
     /* error */
-    er-tc: #b94a48;
+    er-bg: linear-gradient(to right, rgba(243,170,165,1) 0%, rgba(238,137,129,1) 100%);
+    er-tc: #641b1a;
     er-bc: #b94a48;
     /* warning */
-    wa-tc: #c09853;
+    wa-bg: linear-gradient(to right, rgba(253,210,175,1) 0%, rgba(251,188,136,1) 100%);
+    wa-tc: #5e4821;
     wa-bc: #c09853;
     /* info */
-    in-tc: #3a87ad;
+    in-bg: linear-gradient(to right, rgba(173,195,215,1) 0%, rgba(146,175,201,1) 100%);
+    in-tc: #163b4e;
     in-bc: #3a87ad;
 }
 
@@ -333,9 +342,23 @@
 /*
     -- @ Icons margin @ --
 */
-@icon: {
-    mal: 8px;       // Icons margin-left
-    mar: 8px;       // Icons margin-right
+#icon() {
+    .margin() {
+        left: 8px;
+        right: 8px;
+    }
+    .duotone-theme() {
+        fa-primary-opacity: 1;
+        fa-secondary-opacity: 1;
+        fa-primary-color: @primary;
+        fa-secondary-color: lighten(@primary, 20%);
+    }
+    .duotone-theme-hover() {
+        fa-primary-opacity: 1;
+        fa-secondary-opacity: 1;
+        fa-primary-color: @primary;
+        fa-secondary-color: lighten(@primary, 20%);
+    }
 }
 
 

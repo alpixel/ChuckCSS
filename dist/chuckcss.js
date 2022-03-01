@@ -2,12 +2,25 @@
     $(function(){
 
         /*!
+            -- @ FontAwesome animations @ --
+            Add pathLength attribute on <path> elements for FontAwesome svg animations
+        */
+        $('svg[class*="fa-"].animated').each(function(i,el){
+            $(el).find('path').attr('pathLength', 1)
+        });
+
+        /*!
             -- @ Close alerts @ --
         */
         $(document).on('click', '[data-close-alert]', function(e){
             e.preventDefault();
-
             $(this).parent().fadeOut(500,function(){
+                $(this).remove();
+            });
+        });
+        $(document).on('click', '.alert[data-closable]', function(e){
+            e.preventDefault();
+            $(this).fadeOut(500,function(){
                 $(this).remove();
             });
         });
@@ -41,19 +54,19 @@
 
         /* Close modal */
         $(document).on('click', '.modal:not([data-disabled-overlay]) .modal-overlay, .modal *[data-close-modal]', function(e) {
-            e.preventDefault();
+                e.preventDefault();
 
-            var $modal = $(this).parents('.modal');
+                var $modal = $(this).parents('.modal');
 
-            if($modal.hasClass('active'))
-                $modal.removeClass('active');
+                if($modal.hasClass('active'))
+                    $modal.removeClass('active');
 
-            if(!$('.modal.active').length)
-                $('html,body').removeClass('opened-modal cursor-cross');
+                if(!$('.modal.active').length)
+                    $('html,body').removeClass('opened-modal cursor-cross');
 
-            // Callback
-            $modal.trigger('cc.modal.close');
-        });
+                // Callback
+                $modal.trigger('cc.modal.close');
+            });
 
 
         /* Modal callback */

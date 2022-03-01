@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ChuckCSS v4.2.0 */
+/*! ChuckCSS v4.3.0 */
 /*
     == ChuckCSS Framework : Light version ==
     @What: A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
@@ -514,6 +514,26 @@ img[data-loaded="true"],
     opacity: 1;
   }
 }
+/* *****
+    @name: drawIcon
+    @description: Drawing animation for FontAwesome icons when .animated class is added to the icon
+***** */
+@-webkit-keyframes drawIcon {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawIcon {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 /*
     == BASE: Define <html>, <body> and selection styles ==
 */
@@ -628,6 +648,7 @@ h1,
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 0 1em;
 }
 @media screen and (min-width: 360px) {
   h1,
@@ -659,6 +680,7 @@ h2,
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 0 1em;
 }
 @media screen and (min-width: 360px) {
   h2,
@@ -690,6 +712,7 @@ h3,
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 0 1em;
 }
 @media screen and (min-width: 360px) {
   h3,
@@ -721,6 +744,7 @@ h4,
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 0 1em;
 }
 @media screen and (min-width: 360px) {
   h4,
@@ -752,6 +776,7 @@ h5,
   font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 0 1em;
 }
 @media screen and (min-width: 360px) {
   h5,
@@ -783,6 +808,7 @@ h6,
   font-size: 1.3rem;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 0 1em;
 }
 @media screen and (min-width: 360px) {
   h6,
@@ -807,20 +833,6 @@ h6,
   .h6-like {
     font-size: 1.7rem;
   }
-}
-h1,
-.h1-like,
-h2,
-.h2-like,
-h3,
-.h3-like,
-h4,
-.h4-like,
-h5,
-.h5-like,
-h6,
-.h6-like {
-  margin: 0;
 }
 h1 small,
 .h1-like small,
@@ -1073,7 +1085,6 @@ table.cc-unbordered thead tr th {
 @media screen and (max-width: 767px) {
   table.cc-responsive {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
@@ -1088,34 +1099,29 @@ table.cc-unbordered thead tr th {
   }
   table.cc-responsive thead {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-negative: 0;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
   table.cc-responsive thead tr {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
     flex-negative: 0;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   table.cc-responsive thead tr td,
   table.cc-responsive thead tr th {
@@ -1123,7 +1129,6 @@ table.cc-unbordered thead tr th {
     border: 1px solid #e0e0e0;
     border-top-width: 0px;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
@@ -1133,11 +1138,9 @@ table.cc-unbordered thead tr th {
   }
   table.cc-responsive tbody {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
     position: relative;
@@ -1147,16 +1150,13 @@ table.cc-unbordered thead tr th {
   }
   table.cc-responsive tbody tr {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     min-width: -webkit-min-content;
@@ -1167,7 +1167,6 @@ table.cc-unbordered thead tr th {
   table.cc-responsive tbody tr td {
     display: block;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border: 1px solid #e0e0e0;
@@ -1854,15 +1853,12 @@ img.cc-shadowed {
   right: 0;
   bottom: 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1909,15 +1905,12 @@ img.cc-shadowed {
   height: 60px;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -1951,7 +1944,7 @@ img.cc-shadowed {
 
     <div class="alert alert-{type}">
         <button data-close-alert role="button"><i class="fas fa-times"></i></button>
-        <i class="fab fa-apple"></i> 
+        <i class="fab fa-apple"></i>
         <div>
             <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
         </div>
@@ -1959,24 +1952,22 @@ img.cc-shadowed {
 */
 .alert {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 1em 0;
   font-size: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
   /* Alerts types */
+}
+.alert[data-closable] {
+  cursor: url("data:image/svg+xml,%3Csvg width='19' height='19' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.514.535l-6.42 6.42L2.677.536a1.517 1.517 0 00-2.14 0 1.517 1.517 0 000 2.14l6.42 6.419-6.42 6.419a1.517 1.517 0 000 2.14 1.517 1.517 0 002.14 0l6.419-6.42 6.419 6.42a1.517 1.517 0 002.14 0 1.517 1.517 0 000-2.14l-6.42-6.42 6.42-6.418a1.517 1.517 0 000-2.14 1.516 1.516 0 00-2.14 0z' fill='000000' fill-rule='nonzero'/%3E%3C/svg%3E"), auto;
 }
 .alert > div {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 20px;
@@ -1993,86 +1984,51 @@ img.cc-shadowed {
 }
 .alert > i {
   padding: 20px;
+  padding-right: 0;
   font-size: 3rem;
 }
 .alert [data-close-alert] {
+  position: absolute;
+  top: 0;
+  right: 0;
   border: 0;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
   opacity: 0.4;
   -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
   background-color: transparent;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
+.alert [data-close-alert] i {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
 .alert [data-close-alert]:hover {
   opacity: 1;
 }
-.alert [data-close-alert] i {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.alert [data-close-alert] i:before {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-size: 2.4rem;
-}
-.alert-primary {
-  border-top: 10px solid #29b7e1;
-  color: #29b7e1;
-}
-.alert-primary p,
-.alert-primary div,
-.alert-primary ul,
-.alert-primary [data-close-alert],
-.alert-primary a {
-  color: #29b7e1;
-}
-.alert-primary p.btn,
-.alert-primary div.btn,
-.alert-primary ul.btn,
-.alert-primary [data-close-alert].btn,
-.alert-primary a.btn {
-  text-decoration: none;
-  background-color: #29b7e1;
-  border-color: #29b7e1;
-  /* If Hover is specified */
-  /* else */
-  /* Hover color will be @bg but 10% darken */
-  color: white;
-}
-.alert-primary p.btn:hover,
-.alert-primary div.btn:hover,
-.alert-primary ul.btn:hover,
-.alert-primary [data-close-alert].btn:hover,
-.alert-primary a.btn:hover {
-  background-color: #1a98bd;
-  border-color: #1a98bd;
-}
 .alert-info {
-  border-top: 10px solid #3a87ad;
-  color: #3a87ad;
+  color: #163b4e;
+  background: -webkit-gradient(linear, left top, right top, from(#adc3d7), to(#92afc9));
+  background: linear-gradient(to right, #adc3d7 0%, #92afc9 100%);
+  border: 0px solid #3a87ad;
 }
 .alert-info p,
 .alert-info div,
 .alert-info ul,
-.alert-info [data-close-alert],
 .alert-info a {
-  color: #3a87ad;
+  color: #163b4e;
 }
 .alert-info p.btn,
 .alert-info div.btn,
 .alert-info ul.btn,
-.alert-info [data-close-alert].btn,
 .alert-info a.btn {
   text-decoration: none;
-  background-color: #3a87ad;
-  border-color: #3a87ad;
+  background-color: #163b4e;
+  border-color: #163b4e;
   /* If Hover is specified */
   /* else */
   /* Hover color will be @bg but 10% darken */
@@ -2081,30 +2037,32 @@ img.cc-shadowed {
 .alert-info p.btn:hover,
 .alert-info div.btn:hover,
 .alert-info ul.btn:hover,
-.alert-info [data-close-alert].btn:hover,
 .alert-info a.btn:hover {
-  background-color: #2d6987;
-  border-color: #2d6987;
+  background-color: #0b1d26;
+  border-color: #0b1d26;
+}
+.alert-info [data-close-alert] {
+  color: #163b4e;
 }
 .alert-warning {
-  border-top: 10px solid #c09853;
-  color: #c09853;
+  color: #5e4821;
+  background: -webkit-gradient(linear, left top, right top, from(#fdd2af), to(#fbbc88));
+  background: linear-gradient(to right, #fdd2af 0%, #fbbc88 100%);
+  border: 0px solid #c09853;
 }
 .alert-warning p,
 .alert-warning div,
 .alert-warning ul,
-.alert-warning [data-close-alert],
 .alert-warning a {
-  color: #c09853;
+  color: #5e4821;
 }
 .alert-warning p.btn,
 .alert-warning div.btn,
 .alert-warning ul.btn,
-.alert-warning [data-close-alert].btn,
 .alert-warning a.btn {
   text-decoration: none;
-  background-color: #c09853;
-  border-color: #c09853;
+  background-color: #5e4821;
+  border-color: #5e4821;
   /* If Hover is specified */
   /* else */
   /* Hover color will be @bg but 10% darken */
@@ -2113,30 +2071,32 @@ img.cc-shadowed {
 .alert-warning p.btn:hover,
 .alert-warning div.btn:hover,
 .alert-warning ul.btn:hover,
-.alert-warning [data-close-alert].btn:hover,
 .alert-warning a.btn:hover {
-  background-color: #a47e3c;
-  border-color: #a47e3c;
+  background-color: #382b14;
+  border-color: #382b14;
+}
+.alert-warning [data-close-alert] {
+  color: #5e4821;
 }
 .alert-error {
-  border-top: 10px solid #b94a48;
-  color: #b94a48;
+  color: #641b1a;
+  background: -webkit-gradient(linear, left top, right top, from(#f3aaa5), to(#ee8981));
+  background: linear-gradient(to right, #f3aaa5 0%, #ee8981 100%);
+  border: 0px solid #b94a48;
 }
 .alert-error p,
 .alert-error div,
 .alert-error ul,
-.alert-error [data-close-alert],
 .alert-error a {
-  color: #b94a48;
+  color: #641b1a;
 }
 .alert-error p.btn,
 .alert-error div.btn,
 .alert-error ul.btn,
-.alert-error [data-close-alert].btn,
 .alert-error a.btn {
   text-decoration: none;
-  background-color: #b94a48;
-  border-color: #b94a48;
+  background-color: #641b1a;
+  border-color: #641b1a;
   /* If Hover is specified */
   /* else */
   /* Hover color will be @bg but 10% darken */
@@ -2145,30 +2105,32 @@ img.cc-shadowed {
 .alert-error p.btn:hover,
 .alert-error div.btn:hover,
 .alert-error ul.btn:hover,
-.alert-error [data-close-alert].btn:hover,
 .alert-error a.btn:hover {
-  background-color: #953b39;
-  border-color: #953b39;
+  background-color: #3c100f;
+  border-color: #3c100f;
+}
+.alert-error [data-close-alert] {
+  color: #641b1a;
 }
 .alert-success {
-  border-top: 10px solid #468847;
-  color: #468847;
+  color: #3c5c32;
+  background: -webkit-gradient(linear, left top, right top, from(#b1d7ad), to(#95cd7c));
+  background: linear-gradient(to right, #b1d7ad 0%, #95cd7c 100%);
+  border: 0px solid #468847;
 }
 .alert-success p,
 .alert-success div,
 .alert-success ul,
-.alert-success [data-close-alert],
 .alert-success a {
-  color: #468847;
+  color: #3c5c32;
 }
 .alert-success p.btn,
 .alert-success div.btn,
 .alert-success ul.btn,
-.alert-success [data-close-alert].btn,
 .alert-success a.btn {
   text-decoration: none;
-  background-color: #468847;
-  border-color: #468847;
+  background-color: #3c5c32;
+  border-color: #3c5c32;
   /* If Hover is specified */
   /* else */
   /* Hover color will be @bg but 10% darken */
@@ -2177,15 +2139,12 @@ img.cc-shadowed {
 .alert-success p.btn:hover,
 .alert-success div.btn:hover,
 .alert-success ul.btn:hover,
-.alert-success [data-close-alert].btn:hover,
 .alert-success a.btn:hover {
-  background-color: #356635;
-  border-color: #356635;
+  background-color: #263b20;
+  border-color: #263b20;
 }
-@media screen and (min-width: 768px) {
-  .alert > i {
-    font-size: 6rem;
-  }
+.alert-success [data-close-alert] {
+  color: #3c5c32;
 }
 /* ******** */
 /** MODALS **/
@@ -2194,15 +2153,12 @@ img.cc-shadowed {
 /* Modal wrapper */
 .modal {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-shadow: none;
@@ -2355,12 +2311,10 @@ img.cc-shadowed {
 .modal[data-fixed-hf] .modal-content {
   overflow: hidden;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -2368,19 +2322,16 @@ img.cc-shadowed {
 .modal[data-fixed-hf] .modal-header,
 .modal[data-fixed-hf] .wrap-modal-body {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 .modal[data-fixed-hf] .wrap-modal-body {
   overflow-y: auto;
-  -webkit-flex-shrink: 1;
-      -ms-flex-negative: 1;
-          flex-shrink: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 .modal[data-fullscreen] {
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
@@ -2399,14 +2350,12 @@ img.cc-shadowed {
 .modal[data-fullscreen] .modal-footer,
 .modal[data-fullscreen] .modal-header {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
 .modal[data-fullscreen] .wrap-modal-body {
   overflow-y: auto;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
@@ -2458,7 +2407,6 @@ img.cc-shadowed {
 }
 [data-open="slideInRight"][data-fullscreen] {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   /* Close button */
@@ -2495,7 +2443,6 @@ img.cc-shadowed {
 }
 [data-open="slideInLeft"][data-fullscreen] {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   /* Close button */
@@ -2687,21 +2634,70 @@ img.cc-shadowed {
 /*
     == FONTAWESOME ==
 */
+.fa-thin.icon-left,
+.fa-light.icon-left,
+.fa-regular.icon-left,
+.fa-solid.icon-left,
+.fa-duotone.icon-left,
+.fa-brand.icon-left,
 .fa.icon-left,
 .far.icon-left,
 .fal.icon-left,
 .fas.icon-left,
 .fab.icon-left,
-[class*="ion-"].icon-left {
+.fad.icon-left {
   margin-right: 8px;
 }
+.fa-thin.icon-right,
+.fa-light.icon-right,
+.fa-regular.icon-right,
+.fa-solid.icon-right,
+.fa-duotone.icon-right,
+.fa-brand.icon-right,
 .fa.icon-right,
 .far.icon-right,
 .fal.icon-right,
 .fas.icon-right,
 .fab.icon-right,
-[class*="ion-"].icon-right {
+.fad.icon-right {
   margin-left: 8px;
+}
+.fa-thin.animated path,
+.fa-light.animated path,
+.fa-regular.animated path,
+.fa-solid.animated path,
+.fa-duotone.animated path,
+.fa-brand.animated path,
+.fa.animated path,
+.far.animated path,
+.fal.animated path,
+.fas.animated path,
+.fab.animated path,
+.fad.animated path {
+  fill: transparent;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  stroke: #000000;
+  stroke-width: 10;
+  -webkit-animation: drawIcon 4s ease-in-out forwards;
+          animation: drawIcon 4s ease-in-out forwards;
+}
+.fa-duotone {
+  --fa-primary-opacity: 1;
+  --fa-secondary-opacity: 1;
+  --fa-primary-color: #29b7e1;
+  --fa-secondary-color: #82d5ee;
+}
+.fa-duotone .fa-primary,
+.fa-duotone .fa-secondary {
+  -webkit-transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
+}
+.fa-duotone:hover {
+  --fa-primary-opacity: 1;
+  --fa-secondary-opacity: 1;
+  --fa-primary-color: #29b7e1;
+  --fa-secondary-color: #82d5ee;
 }
 /*
     == GENERATORS ==
