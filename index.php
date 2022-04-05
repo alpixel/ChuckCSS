@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="alert alert-warning" data-closable>
-                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+
                     <i class="fab fa-apple"></i>
                     <div>
                         <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>.
